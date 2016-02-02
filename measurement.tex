@@ -1,14 +1,14 @@
 \chapter{Measurement}
 \section{Measurement setup}
-This section will describe the setup of the measurements. The approach was to resort to past designs and works of a former employee of IAF. Based on the work of Stephan Maroldt, i took some MMICs and Chips to get a first realisation of the work.
+This section will describe the measurements. First of all an overview of the setup is given. Then the calibration and measurement is described and last but not least the results are discussed. The test setup is resort by an former work. Based on the work of Stephan Maroldt, some MMICs were taken to to realise the desired schematic. 
 \begin{itemize}
-	\item Keysight AWG - 1Vpp
-	\item Broadband (35k-40GHz) amplifier (5Vpp out) (digital signal with clk 1GHz, 10 harmonics -> 10GHz)
-	\item Bias Tee (DC bias)
+	\item Keysight AWG - (1V := 0dB; 0.7V := -3dB)
+	\item Broadband (35kHz-40GHz) amplifier (17dB gain) (digital signal with clk 1GHz, 10 harmonics -> 10GHz)
+	\item Bias Tees (DC bias)
 	\item DC supply (driver network, power transistor)
-	\item DUT (2x X6 + 2x Y6 Chip + filter network)
-	\item LOAD - OUTPUT
+	\item DUT
+	\item LOAD - OUTPUT ???
 \end{itemize}
-Output measurement maybe with anteverta active load pull system. 
+Output measurement maybe with anteverta active load pull system. Another option would be to scope a real time output onwafer with an oscilloscope.
 \section{Measurement results}
 how to measure at the output of the schematic? is the measurement result as expected from the simulation?

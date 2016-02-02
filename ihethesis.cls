@@ -415,7 +415,7 @@
    \end{tabular}
    \par
    \vspace{2em}
-    Freiburg, \denn@me 09.12.2015
+    Freiburg, \denn@me \@dateend
 \end{center}
 %\vfill 
 %\adressblock
