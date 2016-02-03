@@ -2,8 +2,14 @@
 Design of the rogers substrate. Filter network, chip placement, bond, input output connectors everything.
 \begin{itemize}
 	\item bypass cap dimension
-	\item DC blocking, filter caps 
-	\item bias tee make DC blocking cap obsolete
+	\begin{itemize}
+		\item large package - more inductance - lower freq
+		\item higher ESR - bad quality factor - flatten mag of imp vs. freq - broadband good
+		\item temp range, voltage range, tolerance, 
+		\item dimension: cargo cult principle - rule of thumbs
+	\end{itemize}
+	\item DC blocking, filter caps (not used) 
+	\item bias tees to add bias 
 	\item no dc input line because of the bias tee
 	\item metal pad size of chip
 	\item thermal conduction, waerme abfuehren
