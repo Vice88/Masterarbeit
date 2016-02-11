@@ -1,4 +1,4 @@
-\chapter{Fundamentals}
+\chapter{Fundamentals-Theory}
 In the following some fundamentals are described shortly.
 \section{Software-defined radio}
 The concept of software-defined radio is adapted to deal with the old problems of mobile communication. The idea is to bring the digital domain as close as possible to the RFFE. The reason is digital filtering, data processing is more efficient, easier, less complex, has less cost, and so on. The main problem of this approach is the energy consumption based on an inefficient ADC/DAC. However the concept is very helpful for future designs of an digital front end. The Software-defined radio has the advantage, that it is adaptiv for future software changes. the hardware is still the same, only the firmware has to be upgraded. broad spectrum of signal can be received with this architecture. from nearly DC to 2 GHz. For future mobile communication standards, the frequency range has to deal with frequencies beyond 2 GHz up to 6 GHz. Nowadays IEEE802.11ac standard is located at 5GHz. Based on this concept a digital-analog converter is designed to deal with a higher bandwith than other devices nowadays. The DAC is used in the transmission path of the design.
@@ -10,3 +10,5 @@ integrate a current into a capacitive load, this integration is based on Riemann
 The first approach of designing a Riemann Pump was with a concept of a Push-Pull stage. This push-pull stage should charge a capacitive load at the output, which is the same as a normal charge pump. Push-pull stages complementary switch a high- and lowside transistor as in a charge pump. This was one possible approach. Concept of Maksimovic. 
 \subsection{Problems}
 Same realisation problems, difficulties: Problem of BANDWIDTH, Vpp of control signal (5V pp for GaN transistors), high side driver, no complementary transistors available in III-V technology, low loss driver, high speed driver, digital control driver, too high energy consumption (stability???)
+\chapter{State of the art}
+First attempts on a digital to analog converter for the frequency range based on the concept of a charge pump, were designed by french people Veyrac et. al
