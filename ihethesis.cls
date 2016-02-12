@@ -1,21 +1,21 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{ihethesis}[2009/01/29 V 1.00 IHE Thesis]
 
-% IHE Vorlage f??iplom- / Studien- / Master- / Bachelorarbeien-
-% Options:  	diplom			fuer Diplomarbeit
-%       	studien   		fuer Studienarbeit
-%		master			fuer Masterarbeit
-%		bachelor		fuer Bachelorarbeit
+% IHE Vorlage für Diplom- / Studien- / Master- / Bachelorarbeiten-
+% Options:  	diplom		fuer Diplomarbeit
+%       		studien   		fuer Studienarbeit
+%			master		fuer Masterarbeit
+%			bachelor		fuer Bachelorarbeit
 %
-% Befehle:  \author{Verfasser der Arbeit}
-%	    \betreuer{Hans Mustermann}
-%           \zweitbetreuer{Hein Gro?
-%           \datestart{{1.1.1999}
-%           \dateend{1.1.2000}
-%           \title{Title der Arbeit}
+% Befehle: 	\author{Verfasser der Arbeit}
+%	    		\betreuer{Hans Mustermann}
+%           		\zweitbetreuer{Hein Gross}
+%           		\datestart{1.1.1999}
+%           		\dateend{1.1.2000}
+%           		\title{Titel der Arbeit}
 %
-%           \abstract{TEXT}
-%           \maketitle -> macht Deckblatt
+%           		\abstract{TEXT}
+%           		\maketitle
 %
 % 2009.01.29 V1.0 by M. Janson & T. Kayser
 % Based on ihescript.cls by T. Kayser
@@ -66,6 +66,9 @@
 
 \PassOptionsToPackage{top=2.5cm,bottom=2.5cm,inner=3cm,outer=3cm}{geometry}
 %\PassOptionsToPackage{top=2.5cm,bottom=2.5cm,inner=3cm,outer=3cm}{geometry}%oneside, 09.09.2010, S.Diebold
+% Internet patch für Fehlermeldung float@addtolist
+\RequirePackage{scrhack}
+\RequirePackage{floatrow}
 
 \RequirePackage{geometry}
 \RequirePackage[footsepline]{scrpage2}
