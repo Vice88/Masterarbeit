@@ -1,3 +1,3 @@
 Versionskontrolle über die Masterarbeit
-Stand: 11.02.2016
+Stand: 19.02.2016
 
