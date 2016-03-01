@@ -1,0 +1,3 @@
+losses are acceptable - down peak of Vgs(Qhs) only at ca. -6..-7V
+
+slopes of output signal good !

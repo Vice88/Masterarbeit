@@ -59,13 +59,7 @@
 %%urlcolor=black           % color of external links
 %}															
 
-\usepackage[acronym, 
-						nonumberlist, 
-						toc, 
-						nopostdot, 
-						style=alttree, 
-						nogroupskip]
-												{glossaries}
+\usepackage[acronym,nonumberlist,toc,nopostdot,style=alttree,nogroupskip]{glossaries}
 % Nopostdot omits dots at the end of each entry, alttree makes two columns (use \glssetwidest), alternative style=long, nogroupskip no groups by first letter
 \setacronymstyle{short-long}
 \glssetwidest{$L_{\left(C-package\right)_{eff}}$}% widest name
@@ -76,11 +70,11 @@
 
 
 %Abkürzungsverzeichnis
-%\usepackage[intoc]{nomencl}
-%\renewcommand{\nomname}{Abkürzungsverzeichnis}
-%\setlength{\nomlabelwidth}{.20\hsize}
-%\let\abk\nomenclature
-%\makenomenclature
+\usepackage[intoc]{nomencl}
+\renewcommand{\nomname}{Abkürzungsverzeichnis}
+\setlength{\nomlabelwidth}{.20\hsize}
+\let\abk\nomenclature
+\makenomenclature
 \makeindex
 %%%%%%%%%%%%%%%%%%%%%%
 
