@@ -1,0 +1,187 @@
+\documentclass[master, english]{ihethesis}
+
+ 
+\usepackage[nottoc,chapter]{tocbibind}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{floatrow}
+\floatsetup[table]{capposition=top}
+\usepackage{romannum}
+%\usepackage[thinspace,thinqspace,textstyle,amssymb]{SIunits}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage[product-units = single, multi-part-units = brackets, detect-all, load-configurations=abbreviations, range-units = repeat, separate-uncertainty = false, per-mode=symbol]{siunitx} % Correct use of SI units
+%\newcommand{\SIp}[2]{\SI[product-units = power]{#1}{#2}} % p for power (chip size...)
+%\newcommand{\SIrangem}[2]{\SIrange[range-phrase = --]{#1}{#2}}
+%\newcommand{\SIrangecp}[2]{\SIrange[range-phrase = --, range-units = brackets, output-complex-root = j, complex-root-position = before-number]{#1}{#2}}
+%\sisetup{separate-uncertainty}%
+\newcommand{\SIr}{\SIrange[range-units = single]}
+
+\usepackage{epstopdf}
+\usepackage{floatrow}
+\floatsetup[figure]{font=footnotesize}
+\usepackage[small]{caption}
+%\usepackage{transparent}
+\usepackage[percent]{overpic}
+\usepackage{romannum}
+\usepackage[title,header]{appendix}
+%\renewcommand{\appendixpagename}{Anhang}
+%\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{color}
+
+% Hoehe des Headings anpassen um fehler meldung zu unterdrücken, ansonsten folgende zeile wieder löschen:
+\setlength{\headheight}{1.5\baselineskip}
+
+%\usepackage{cite}
+%\usepackage{SIunitx}
+\mathchardef\mhyphen="2D
+\definecolor{grey}{RGB}{228,228,228}
+
+%\usepackage[pdftex
+%            %,colorlinks
+%            ,hidelinks %% keine roten Rahmen um Links
+%            ,hyperindex
+%            ,plainpages=false
+%            ,bookmarksopen
+%            ,bookmarksnumbered]
+%															{hyperref}
+%\hypersetup{
+%pdftitle={\@title},
+%pdfauthor={\@author},
+%pdfsubject={\@title},
+%%,pdfborder={0 0 0}
+%%colorlinks=true,
+%%linkcolor=red,          % color of internal links
+%%citecolor=black,        % color of links to bibliography
+%%filecolor=black,      % color of file links
+%%urlcolor=black           % color of external links
+%}															
+
+\usepackage[acronym,nonumberlist,toc,nopostdot,style=alttree,nogroupskip]{glossaries}
+% Nopostdot omits dots at the end of each entry, alttree makes two columns (use \glssetwidest), alternative style=long, nogroupskip no groups by first letter
+\setacronymstyle{short-long}
+\glssetwidest{$L_{\left(C-package\right)_{eff}}$}% widest name
+\renewcommand*{\glsnamefont}[1]{\textmd{#1}} % Define font of entry name
+%\input{Glossaryentries.tex} % Input glossary entries
+\makeglossaries
+\newcommand{\markup}[1]{\textbf{#1}} % vor \mainpart wird \markup so definiert, dass er nichts mehr macht.
+
+
+%Abkürzungsverzeichnis
+\usepackage[intoc]{nomencl}
+\renewcommand{\nomname}{Abkürzungsverzeichnis}
+\setlength{\nomlabelwidth}{.20\hsize}
+\let\abk\nomenclature
+\makenomenclature
+\makeindex
+%%%%%%%%%%%%%%%%%%%%%%
+
+\makeatletter
+\renewcommand\bibsection{
+      \chapter*{\bibname\@mkboth{Literaturverzeichnis}{Literaturverzeichnis}}}
+\makeatother
+
+%########
+\graphicspath{{graphics/},{graphics/snr/}}
+%############################
+
+%#################################################################
+% begin document
+%#################################################################
+
+\begin{document}
+
+\title{Evaluation, design and realisation of a Riemann Pump for the frequency range of 0..6 GHz for 5G mobile communication}
+\author{Markus Wei\ss}
+\betreuer{Prof.~Dr. Oliver Ambacher}
+\zweitbetreuer{PD~Dr.~techn. R\"udiger~Quay}
+
+\datestart{01.11.2015}					% starting and ending date
+\dateend{30.04.2016}
+
+\abstract{\input{abstract}}
+
+% generiert Titelseite, Erklärung, Zusammefassung		
+% generates title page, declaration and abstract page
+\maketitle
+\pagenumbering{roman}
+%Themenblatt
+\cleardoublepage
+\newpage
+\thispagestyle{empty}
+%\addcontentsline{toc}{chapter}{\numberline{}Themenblatt}
+
+\tableofcontents
+
+\printglossaries
+%\abstract{this is the abstract of my master thesis}
+%\include{abstract}
+
+%\printnomenclature
+
+
+%\listoffigures
+%\listoftables
+
+\cleardoublepage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\include{preface}
+\include{stateoftheart}
+\include{fundamentals}
+\include{RiemannPumpDesign}
+\include{simulation}
+\include{RiemannPumpLayout}
+\include{measurement}
+
+\include{conclusion}
+\nocite{Devrac2014}
+\nocite{Devrac2015}
+
+
+\cleardoublepage
+\clearpage
+\phantomsection
+
+%\addcontentsline{toc}{chapter}{\bibname}
+\bibliographystyle{IEEEtran}
+%\clearscrheadings
+%\manualmark
+%\markboth{Literature}{Literature}
+\bibliography{literature}
+
+
+%\include{appendix}
+%\cleardoublepage
+%$\markboth{\nomname}{\nomname}
+%\printnomenclature
+\cleardoublepage
+%\Declaration
+
+%\makeiheabstract
+
+% Anhang/Appendix
+%\begin{appendices}
+%\renewcommand{\appendixtocname}{Anhang}
+%\renewcommand{\appendixname}{Anhang}
+%\addappheadtotoc
+%\appendixpage
+%\end{appendices}
+
+
+%% ++++++++++++++++++++++++++++++++++++++++++
+%% Literatur
+%% ++++++++++++++++++++++++++++++++++++++++++
+
+
+% this generates an additional page at the end of the work containg informations about the work and abstract. 
+% Please detach this page and return it to your supervisor
+
+\end{document}
+
+
+
+	%\begin{tabular}{ll@{\hspace{1cm}}ll@{\hspace{1cm}}l}
