@@ -23,6 +23,7 @@
 \usepackage{floatrow}
 \floatsetup[figure]{font=footnotesize}
 \usepackage[small]{caption}
+%\usepackage{subcaption}%
 %\usepackage{transparent}
 \usepackage[percent]{overpic}
 \usepackage{romannum}
@@ -84,7 +85,7 @@
 \makeatother
 
 %########
-\graphicspath{{graphics/},{graphics/snr/}}
+\graphicspath{{graphics/},{graphics/snr/},{graphics/simulation/}}
 %############################
 
 %#################################################################
@@ -132,11 +133,10 @@
 \include{preface}
 \include{stateoftheart}
 \include{fundamentals}
-\include{RiemannPumpDesign}
+\include{design}
 \include{simulation}
-\include{RiemannPumpLayout}
+\include{layout}
 \include{measurement}
-
 \include{conclusion}
 \nocite{Devrac2014}
 \nocite{Devrac2015}
