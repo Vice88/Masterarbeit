@@ -1,5 +1,5 @@
 \chapter{Realization of a Riemann Pump circuit}
-Design of the rogers 4003P substrate. Filter network, chip placement, bond, input output connectors everything. Difficult to layout the 2PCB Board, because no special frequency is desired. It is a whole bandwidth and thus it makes it difficult to tune the board. So many factors come into account. Bypass, decoupling capacitors for a great bandwidth instead of a special frequency. 
+Design of the rogers 4003P substrate. Filter network, chip placement, bond, input output connectors everything. Difficult to layout the PCB, because no special frequency is desired. It is a whole bandwidth and thus it makes it difficult to tune the board. So many factors come into account. Bypass, decoupling capacitors for a great bandwidth instead of a special frequency. 
 \begin{itemize}
 	\item bypass cap dimension
 	\begin{itemize}
@@ -12,7 +12,7 @@ Design of the rogers 4003P substrate. Filter network, chip placement, bond, inpu
 	\item bias tees to add bias 
 	\item no dc input line because of the bias tee
 	\item metal pad size of chip
-	\item thermal conduction, waerme abfuehren
+	\item thermal conduction, dissipate the heat
 	\item line distance
 	\item line width, copper height, substrate height, determine the impedance of the msl
 	\item no qfn package because the heat would not be dissipated
@@ -30,10 +30,10 @@ Design of the rogers 4003P substrate. Filter network, chip placement, bond, inpu
 	\item DC power supply with -5V means that ground is 5V
 	\item two different layouts
 	\begin{itemize}
-		\item chip with gnd vias on island and nearby copper plate with thermal vias to cool down the ambient temp of the mmic
+		\item chip with gnd vias on island and nearby copper plate with thermal vias to cool down the ambient temp of the MMIC
 		\item chip without gnd via, direct soldered on the copper with thermal vias
 	\end{itemize}
 \end{itemize}
 
 Design is ordered 22nd of Feb at contag.de in Berlin.
-Also Digikey parts were ordered the week before, 15-19.02 in the netherlands. A Saegeauftrag were ordered at Axel Tessmann and M. Zink, Riessle. 
+Also Digikey parts were ordered the week before, 15-19.02 in the Netherlands. A Saegeauftrag were ordered at Axel Tessmann and M. Zink, Riessle. 

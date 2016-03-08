@@ -1,5 +1,16 @@
 \chapter{Riemann Pump Circuit design - Implementation of the Riemann Pump approach}
 In fact of the high energy consumption, the realized DAC is designed for the integration in a base station. Because it converts a digital bit sequence into an analog rf signal it is implemented in the transmitting path. Based on the idea of a push-pull stage the load impedance of the charge pump is designed first.
+\section{Implementation of the Riemann Pump}
+The concept of the Riemann Pump as seen in Fig. \ref{fig:RiemannPumpConcept} is realised with the design tool ADS.
+
+\begin{figure}[ht]
+	\centering
+  \includegraphics[width=1\textwidth]{Active_PullUp3.png}
+	\caption{Schematic of a driver circuit with push-pull stage representing one bit of the DAC called Riemann Pump}
+	\label{RiemannPump}
+\end{figure}
+
+The first approach of designing a Riemann Pump was with a concept of a Push-Pull stage. This push-pull stage should charge a capacitive load at the output, which is the same as a normal charge pump. Push-pull stages complementary switch a high- and lowside transistor as in a charge pump. This was one possible approach. Concept of Maksimovic. 
 \section{Calculation of the load impedance}
 Based on the idea to design  a DAC for the transmitting path of a base station, a pre-power amplifier is taken to calculate the load impedance. The first assumption is that the load is a pre-power amplifier which generate a power of \SI{20}{\watt}. To generate this power, the gate periphery of a GaN25 HEMT has to be \SI{4}{\milli \metre} based on the approximation(- official reference???) \SI[per-mode=fraction]{5}{\watt\per\milli\metre}. To get this gate periphery four transistor in parallel each with 8 finger and \SI{125}{\micro \metre} are designed for the power amplifier. The bias point is determined with the MAG. Therefore the following load impedance could be determined.
 \begin{equation}
@@ -46,12 +57,6 @@ Schematic design in Advanced Design System 2014. concept, ideas...
 \textbf{length of the bonds, number of bonds, thickness of bonds ask Dirk Meder. A lot of vias - more inductance - voltage drop between layers. short as possible lines, no rechtecke - para caps in the edge. first filter cap to supply pin near the chip. number and cap size determined on experience. }\\
 Control voltage of 5 V realization with OPAMPS? Possible to overdrive opamps instead of using broadband ppa. 
 
-\section{Implementation of the Riemann Pump}
-The concept of the Riemann Pump as seen in Fig. \ref{fig:RiemannPumpConcept} is realised with the design tool ADS.
 
-\begin{figure}[ht]
-	\centering
-  \includegraphics[width=1\textwidth]{Active_PullUp3.png}
-	\caption{Schematic of a driver circuit with push-pull stage representing one bit of the DAC called Riemann Pump}
-	\label{RiemannPump}
-\end{figure}
+\section{challenges to review - problems}
+Same realisation problems, difficulties: Problem of BANDWIDTH, Vpp of control signal (5V pp for GaN transistors), high side driver, no complementary transistors available in III-V technology, low loss driver, high speed driver, digital control driver, too high energy consumption (stability???)
