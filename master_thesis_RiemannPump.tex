@@ -1,42 +1,36 @@
 \documentclass[master, english]{ihethesis}
 
- 
-\usepackage[nottoc,chapter]{tocbibind}
-\usepackage{microtype}
-\usepackage{booktabs}
-\usepackage{tabularx}
-\usepackage{floatrow}
+\usepackage[nottoc,chapter]{tocbibind}					% Add bibliography/index/contents to Table of Contents
+\usepackage{microtype}									% Subliminal refinements towards typographical perfection
+\usepackage{booktabs}									% The pack­age en­hances the qual­ity of ta­bles in LaTeX
+\usepackage{tabularx}									% Tabulars with adjustable-width columns
+\usepackage{floatrow}									% Modifying the layout of floats
 \floatsetup[table]{capposition=top}
-\usepackage{romannum}
-%\usepackage[thinspace,thinqspace,textstyle,amssymb]{SIunits}
-\usepackage{amsmath}
-\usepackage{amssymb}
+\floatsetup[figure]{font=footnotesize}
+\usepackage{romannum}									% Generate roman numerals instead of arabic digits				
+\usepackage{amsmath}									% AMS mathematical facilities for LaTeX
+\usepackage{amssymb}									% TeX fonts from the American Mathematical Society
 
-\usepackage[product-units = single, multi-part-units = brackets, detect-all, load-configurations=abbreviations, range-units = repeat, separate-uncertainty = false, per-mode=symbol]{siunitx} % Correct use of SI units
+\usepackage[product-units = single, multi-part-units = brackets, detect-all, load-configurations=abbreviations, range-units = repeat, separate-uncertainty = false, per-mode=symbol]{siunitx} 			% Correct use of SI units
 %\newcommand{\SIp}[2]{\SI[product-units = power]{#1}{#2}} % p for power (chip size...)
 %\newcommand{\SIrangem}[2]{\SIrange[range-phrase = --]{#1}{#2}}
 %\newcommand{\SIrangecp}[2]{\SIrange[range-phrase = --, range-units = brackets, output-complex-root = j, complex-root-position = before-number]{#1}{#2}}
 %\sisetup{separate-uncertainty}%
 \newcommand{\SIr}{\SIrange[range-units = single]}
 
-\usepackage{epstopdf}
-\usepackage{floatrow}
-\floatsetup[figure]{font=footnotesize}
-\usepackage[small]{caption}
-%\usepackage{subcaption}%
+\usepackage{epstopdf}									% Convert EPS to 'encapsulated' PDF using Ghostscript
+\usepackage[small]{caption}								% Customising captions in floating environments
+%\usepackage{subcaption}
 %\usepackage{transparent}
-\usepackage[percent]{overpic}
-\usepackage{romannum}
-\usepackage[title,header]{appendix}
+\usepackage[percent]{overpic}							% Combine LaTeX commands over included graphics
+\usepackage[title,header]{appendix}						% Extra control of appendices
 %\renewcommand{\appendixpagename}{Anhang}
 %\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
-\usepackage{color}
+\usepackage{color}										% Colour control for LaTeX documents
 
-% Hoehe des Headings anpassen um fehler meldung zu unterdrücken, ansonsten folgende zeile wieder löschen:
+% Hoehe des Headings anpassen um Fehlermeldung zu unterdrücken, ansonsten folgende zeile wieder löschen:
 \setlength{\headheight}{1.5\baselineskip}
 
-%\usepackage{cite}
-%\usepackage{SIunitx}
 \mathchardef\mhyphen="2D
 \definecolor{grey}{RGB}{228,228,228}
 
@@ -46,8 +40,8 @@
 %            ,hyperindex
 %            ,plainpages=false
 %            ,bookmarksopen
-%            ,bookmarksnumbered]
-%															{hyperref}
+%            ,bookmarksnumbered]{hyperref}
+%            
 %\hypersetup{
 %pdftitle={\@title},
 %pdfauthor={\@author},
@@ -60,22 +54,28 @@
 %%urlcolor=black           % color of external links
 %}															
 
-\usepackage[acronym,nonumberlist,toc,nopostdot,style=alttree,nogroupskip]{glossaries}
+\usepackage[acronym, 
+						nonumberlist, 
+						toc, 
+						nopostdot, 
+						style=alttree, 
+						nogroupskip]
+												{glossaries}
 % Nopostdot omits dots at the end of each entry, alttree makes two columns (use \glssetwidest), alternative style=long, nogroupskip no groups by first letter
 \setacronymstyle{short-long}
 \glssetwidest{$L_{\left(C-package\right)_{eff}}$}% widest name
 \renewcommand*{\glsnamefont}[1]{\textmd{#1}} % Define font of entry name
-%\input{Glossaryentries.tex} % Input glossary entries
+\input{Glossaryentries} % Input glossary entries
 \makeglossaries
 \newcommand{\markup}[1]{\textbf{#1}} % vor \mainpart wird \markup so definiert, dass er nichts mehr macht.
 
 
 %Abkürzungsverzeichnis
-\usepackage[intoc]{nomencl}
-\renewcommand{\nomname}{Abkürzungsverzeichnis}
-\setlength{\nomlabelwidth}{.20\hsize}
-\let\abk\nomenclature
-\makenomenclature
+%\usepackage[intoc]{nomencl}
+%%\renewcommand{\nomname}{Abkürzungsverzeichnis}
+%\setlength{\nomlabelwidth}{.20\hsize}
+%\let\ab\nomenclature
+%\makenomenclature
 \makeindex
 %%%%%%%%%%%%%%%%%%%%%%
 
@@ -103,33 +103,28 @@
 \dateend{30.04.2016}
 
 \abstract{\input{abstract}}
+		
 
-% generiert Titelseite, Erklärung, Zusammefassung		
-% generates title page, declaration and abstract page
-\maketitle
-\pagenumbering{roman}
-%Themenblatt
+\maketitle	% generates title page, declaration and abstract page
+\pagenumbering{roman}	% pages before TOC
 \cleardoublepage
 \newpage
 \thispagestyle{empty}
+
 %\addcontentsline{toc}{chapter}{\numberline{}Themenblatt}
 
 \tableofcontents
 
 \printglossaries
-%\abstract{this is the abstract of my master thesis}
-%\include{abstract}
-
 %\printnomenclature
-
 
 %\listoffigures
 %\listoftables
 
 \cleardoublepage
 \setcounter{page}{1}
-\pagenumbering{arabic}
 
+\pagenumbering{arabic}
 \include{preface}
 \include{stateoftheart}
 \include{fundamentals}
@@ -138,6 +133,7 @@
 \include{layout}
 \include{measurement}
 \include{conclusion}
+
 \nocite{Devrac2014}
 \nocite{Devrac2015}
 
@@ -146,7 +142,7 @@
 \clearpage
 \phantomsection
 
-%\addcontentsline{toc}{chapter}{\bibname}
+\addcontentsline{toc}{chapter}{\bibname}
 \bibliographystyle{IEEEtran}
 %\clearscrheadings
 %\manualmark
@@ -157,7 +153,6 @@
 %\include{appendix}
 %\cleardoublepage
 %$\markboth{\nomname}{\nomname}
-%\printnomenclature
 \cleardoublepage
 %\Declaration
 
@@ -170,15 +165,6 @@
 %\addappheadtotoc
 %\appendixpage
 %\end{appendices}
-
-
-%% ++++++++++++++++++++++++++++++++++++++++++
-%% Literatur
-%% ++++++++++++++++++++++++++++++++++++++++++
-
-
-% this generates an additional page at the end of the work containg informations about the work and abstract. 
-% Please detach this page and return it to your supervisor
 
 \end{document}
 

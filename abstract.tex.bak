@@ -1,9 +1,9 @@
 \textbf{Agenda}
 \begin{enumerate}
 	\item literature survey
-	\item adaption of push-pull concept from Maksimovic (Talk in June2015)
-	\item GaN25 parameter simulation [S-parameter,ON/OFF switching voltage]
-	\item determine load impedance [input of PPA - GaN25]
+	\item adaption of push-pull concept from Maksimovic (Talk at Fraunhofer IAF 06/2015)
+	\item GaN25 \gls{ab:gan} parameter simulation [S-parameter,ON/OFF switching voltage]
+	\item determine load impedance [input of PPA - GaN25 \gls{ab:hemt}
 	\item determine dimension of transistors
 	\item tuning schematic parameter for optimal simulation (special freq?)
 	\item enhancement/extension of 1-bit push-pull to 3-bit push-pull stage

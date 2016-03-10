@@ -1,0 +1,23 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces scheme of a charge pump; works like a Riemann Pump with one-bit resolution\relax }}{6}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Concept of the Riemann Pump with three-bit resolution\relax }}{6}
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces slopes and corresponding code of the synthesized signal\relax }}{7}
+\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Integral of the current which pumps charges on to the cap.\relax }}{7}
+\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Code generation - error minimizing\relax }}{8}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Schematic of a driver circuit with push-pull stage representing one bit of the DAC called Riemann Pump\relax }}{9}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces smith chart representing the load impedance\relax }}{11}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces frequency dependent input capacitance of the load\relax }}{12}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Riemanncode generation for a sine wave by hand\relax }}{15}
+\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Signals based on the riemann code in fig \relax 5.1\hbox {}\relax }}{15}
+\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Synthesized sine wave with the theoretical sine wave\relax }}{16}
+\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Comparison between a theoretical and a synthesized sine wave with their spectrum\relax }}{16}
+\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces amplitude of a synthesized sine wave with signal frequency of 500 MHz, $f_{sampling} =$ \SI {4}{\GHz } in the time domain\relax }}{17}
+\contentsline {figure}{\numberline {\relax 5.6}{\ignorespaces amplitude of a synthesized sine wave with signal frequency of 1 GHz, $f_{sampling} =$ \SI {8}{\GHz } in the time domain\relax }}{17}
+\contentsline {figure}{\numberline {\relax 5.7}{\ignorespaces amplitude of a synthesized sine wave with signal frequency of 2 GHz, $f_{sampling} =$ \SI {16}{\GHz } in the time domain\relax }}{18}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

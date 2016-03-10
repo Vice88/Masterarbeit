@@ -121,14 +121,10 @@ pdfsubject={\@title},
 \tableofcontents
 
 \printglossaries
+\printnomenclature
 
-
-
-%\printnomenclature
-
-
-%\listoffigures
-%\listoftables
+\listoffigures
+\listoftables
 
 \cleardoublepage
 \setcounter{page}{1}
@@ -156,7 +152,7 @@ pdfsubject={\@title},
 \include{appendix}
 %\cleardoublepage
 %$\markboth{\nomname}{\nomname}
-%\printnomenclature
+\printnomenclature
 \cleardoublepage
 %\Declaration
 
