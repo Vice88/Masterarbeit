@@ -1,4 +1,5 @@
-\chapter{Measurement of designed layout}
+\chapter{Measurement results}
+\textit{The heart of the thesis, comprising a presentation of the functioning system and thus the culmination of the work. Important is an analysis of the results as well as a comparison with the state of the art. The reader should understand in this section why you should be awarded a MSc degree.}
 \section{Measurement setup}
 This section will describe the measurements. First of all an overview of the setup is given. Then the calibration and measurement is described and last but not least the results are discussed. The test setup is resort by an former work.
 Input control and output measurement are key factors. The input is controlled by an AWG from Keysight, programmed with a determined data set of bits. Based on the work of Stephan Maroldt, some MMICs were taken to to realise the desired schematic. 

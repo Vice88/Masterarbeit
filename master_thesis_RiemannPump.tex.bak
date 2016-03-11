@@ -142,7 +142,7 @@
 \clearpage
 \phantomsection
 
-\addcontentsline{toc}{chapter}{\bibname}
+%\addcontentsline{toc}{chapter}{\bibname}
 \bibliographystyle{IEEEtran}
 %\clearscrheadings
 %\manualmark

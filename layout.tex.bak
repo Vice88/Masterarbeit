@@ -1,4 +1,5 @@
 \chapter{Realization of a Riemann Pump circuit}
+\textit{Outline of the technologies used to fabricate and assemble your structures, if applicable. Detailed processes belong in the appendix. If numerous types of structures were fabricated, or assembly technology is extensive, there may be more than one of these chapters. \textbf{Characterization} Description of the means developed and employed to characterize the devices or systems that have been fabricated.}
 Design of the rogers 4003P substrate. Filter network, chip placement, bond, input output connectors everything. Difficult to layout the PCB, because no special frequency is desired. It is a whole bandwidth and thus it makes it difficult to tune the board. So many factors come into account. Bypass, decoupling capacitors for a great bandwidth instead of a special frequency. 
 \begin{itemize}
 	\item bypass cap dimension
