@@ -1,4 +1,4 @@
-\chapter{Riemann Pump Circuit design - Implementation of the Riemann Pump approach}
+\chapter{Riemann Pump Circuit design}
 
 \label{ch:design}
 \textit{Description of the approach you have taken to solve the scientific or technical problem which you were posed. Outline the design, the methodology and overall structure of your experimental approach}
@@ -64,9 +64,9 @@ Schematic design in Advanced Design System 2014. concept, ideas...
 Control voltage of 5 V realization with OPAMPS? Possible to overdrive opamps instead of using broadband ppa. 
 
 
-\section{summary - challenges to review - problems}
+\section{Circuit design summary and discussion}
+\textit{Drawbacks, problems, challenges.}
 Same realisation problems, difficulties: Problem of BANDWIDTH, Vpp of control signal (5V pp for GaN transistors), high side driver, no complementary transistors available in III-V technology, low loss driver, high speed driver, digital control driver, too high energy consumption (stability???)
-\section{Discussion}
 \textbf{bandwidth limitation}
 \textit{The lower bound is determined by the sampling time (inverse of the sampling frequency) and the smallest current achieved with the dimensioned transistors.
  The smallest achievable current times the smallest sampling time (highest sampling frequency) determine the smallest absolute slope achievable. \\

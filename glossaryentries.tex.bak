@@ -11,7 +11,7 @@
 
 \newglossaryentry{ab:osr}{type=abbreviations,name={OSR},description={oversampling ratio},first={OSR (oversampling ratio)}}
 
-\newglossaryentry{ab:iaf}{type=abbreviations,name={IAF},description={Fraunhofer-Institut für Angewandte Festkörperphysik}}
+\newglossaryentry{ab:iaf}{type=abbreviations,name={IAF},description={Fraunhofer-Institut f\"ur Angewandte Festk\"orperphysik}}
 
 \newglossaryentry{ab:de}{type=abbreviations,name={DE},description={drain efficiency},first={DE (drain efficiency)},firstplural={DEs (drain efficiencies)},plural={DEs}}
 

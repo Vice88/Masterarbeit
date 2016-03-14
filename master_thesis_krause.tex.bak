@@ -121,7 +121,11 @@ pdfsubject={\@title},
 \tableofcontents
 
 \printglossaries
+
+
+
 \printnomenclature
+
 
 \listoffigures
 \listoftables

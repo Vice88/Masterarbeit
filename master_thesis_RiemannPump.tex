@@ -62,6 +62,7 @@
 						nogroupskip]
 												{glossaries}
 % Nopostdot omits dots at the end of each entry, alttree makes two columns (use \glssetwidest), alternative style=long, nogroupskip no groups by first letter
+
 \setacronymstyle{short-long}
 \glssetwidest{$L_{\left(C-package\right)_{eff}}$}% widest name
 \renewcommand*{\glsnamefont}[1]{\textmd{#1}} % Define font of entry name
@@ -149,8 +150,10 @@
 %\markboth{Literature}{Literature}
 \bibliography{literature}
 
-
-%\include{appendix}
+%\printglossary[title=List of Symbols, style=long]
+%
+%\printglossary[type=\acronymtype, title=List of Abbrevations, style=long]
+\include{appendix}
 %\cleardoublepage
 %$\markboth{\nomname}{\nomname}
 \cleardoublepage

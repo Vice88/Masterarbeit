@@ -1,0 +1,4 @@
+PWD E:/Studium/Masterarbeit
+INPUT C:/Users/Vice88/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
+INPUT Glossaryentries.tex
+OUTPUT Glossaryentries.log
