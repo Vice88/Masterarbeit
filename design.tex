@@ -15,15 +15,20 @@ The concept of the Riemann Pump as seen in Fig. \ref{fig:RiemannPumpConcept} is 
 \end{figure}
 
 The first approach of designing a Riemann Pump was with a concept of a Push-Pull stage. This push-pull stage should charge a capacitive load at the output, which is the same as a normal charge pump. Push-pull stages complementary switch a high- and lowside transistor as in a charge pump. This was one possible approach. Concept of Maksimovic. 
+
+
 \section{Calculation of the load impedance}
 The transistor model \gls{ab:hemt} (IAF GE MSL A204/IAF GaN25 HEMT CS LS SHfull) used in \gls{ab:ads} were modelled at the \gls{ab:iaf}.
-\textbf{Max Gain with output amp - to tune the quiescent point, get the right impdenace}
-Based on the idea to design  a DAC for the transmitting path of a base station, a pre-power amplifier is taken to calculate the load impedance. The first assumption is that the load is a pre-power amplifier which generate a power of \SI{20}{\watt}. To generate this power, the gate periphery of a GaN25 HEMT has to be \SI{4}{\milli \metre} based on the approximation(- official reference???) \SI[per-mode=fraction]{5}{\watt\per\milli\metre}. To get this gate periphery four transistor in parallel each with 8 finger and \SI{125}{\micro \metre} are designed for the power amplifier. The bias point is determined with the MAG. Therefore the following load impedance could be determined.
+\textbf{small signal equivalent circuit for load transistor. this already shows the behavior of the load impedance}
+\textit{Max Gain with output amp - to tune the quiescent point, get the right impdenace}
+Based on the idea to design  a DAC for the transmitting path of a base station, a pre-power amplifier is taken to calculate the load impedance. The first assumption is that the load is a pre-power amplifier which generate a power of \SI{20}{\watt}. To generate this power, the gate periphery of a GaN25 HEMT has to be \SI{4}{\milli \metre} based on the approximation(- official reference???) \SI[per-mode=fraction]{5}{\watt\per\milli\metre}. To get this gate periphery four transistor in parallel each with 8 finger and \SI{125}{\micro \metre} are designed for the power amplifier. The bias point is determined with the \gls{ab:mag}. Therefore the following load impedance could be determined.
 \begin{equation}
 Z = R - jX_c
 \end{equation}
 
-In the smith chart Fig. \ref{fig:smith_load_impedance} it is shown that the input impedance of the load is capacitive. The real part of the impedance is roughly $R = \SI{1.89}{\ohm}$, while the imaginary part is capacitive. An important point is the input capacitance is increasing with frequency. While it is normal that the imaginary part of the impedance is increasing with frequency, the input capacitance is not.
+With the help of the $S_{11}$ parameter plotted in the smith chart Fig. \ref{fig:smith_load_impedance} the load impedance can be determined.
+The load impedance got a capacitive reactance.
+ The real part of the impedance is roughly $R = \SI{1.89}{\ohm}$, while the imaginary part is capacitive. An important point is the input capacitance is increasing with frequency. While it is normal that the imaginary part of the impedance is increasing with frequency, the input capacitance is not.
 
  \begin{figure}[ht]
 	\centering
@@ -32,21 +37,9 @@ In the smith chart Fig. \ref{fig:smith_load_impedance} it is shown that the inpu
 	\label{fig:smith_load_impedance}
 \end{figure}
 
-The input capacitance is calculated through the impedance with:
+The load capacitance is calculated through the complex impedance:
 \begin{equation}
-imag[Z_{in}] = X_c
-\end{equation}
-
-\begin{equation}
-imag[Z_{in}] = \frac{1}{\omega C}
-\end{equation}
-
-\begin{equation}
-imag[Z_{in}] = \frac{1}{2 \pi f C}
-\end{equation}
-
-\begin{equation}
-C = \frac{1}{2 \pi f imag[Z_{in}]}
+C = \frac{1}{2 \pi f X_c}
 \end{equation}
 
  \begin{figure}[ht]

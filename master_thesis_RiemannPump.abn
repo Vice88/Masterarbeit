@@ -5,6 +5,7 @@
 \glossaryentry{HEMT?\glossentry{ab:hemt}|setentrycounter[]{page}\glsnumberformat}{11}
 \glossaryentry{ADS?\glossentry{ab:ads}|setentrycounter[]{page}\glsnumberformat}{11}
 \glossaryentry{IAF?\glossentry{ab:iaf}|setentrycounter[]{page}\glsnumberformat}{11}
+\glossaryentry{MAG?\glossentry{ab:mag}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{DAC?\glossentry{ab:dac}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{ADS?\glossentry{ab:ads}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{OSR?\glossentry{ab:osr}|setentrycounter[]{page}\glsnumberformat}{15}
@@ -12,4 +13,6 @@
 \glossaryentry{DAC?\glossentry{ab:dac}|setentrycounter[]{page}\glsnumberformat}{16}
 \glossaryentry{DAC?\glossentry{ab:dac}|setentrycounter[]{page}\glsnumberformat}{16}
 \glossaryentry{OSR?\glossentry{ab:osr}|setentrycounter[]{page}\glsnumberformat}{16}
+\glossaryentry{DAC?\glossentry{ab:dac}|setentrycounter[]{page}\glsnumberformat}{16}
+\glossaryentry{DC?\glossentry{ab:dc}|setentrycounter[]{page}\glsnumberformat}{16}
 \glossaryentry{ADS?\glossentry{ab:ads}|setentrycounter[]{page}\glsnumberformat}{20}

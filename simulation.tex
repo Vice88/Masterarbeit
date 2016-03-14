@@ -1,7 +1,12 @@
 \chapter{Circuit simulations for generating various waveform signals}
 % Outline the simulation results based on the chosen approach in the previous chapter
-
+To validate the feasibility of the presented concept, a digital input control code is required.
+To synthesize various analog signals the corresponding digital input signal is needed. 
+In fact that no MATLAB algorithm exists which computes the Riemann code, it is done by hand. 
+In a more enhanced project a MATLAB algorithm would compute this code by minimizing the deviation between a theoretical signal and the synthesized signal.
+ The deviation of the two signals is lying in the nature of converting digital to analog in form of quantization noise.
 The \gls{ab:dac} designed in this thesis should be able to create various (arbitrary) waveform signals.
+The presented Riemann Pump converts a digital input signal into an analog signal.
  To validate the chosen approach a harmonic balance simulation is done with the design tool \gls{ab:ads}.
   With this simulation it is possible to plot the voltage amplitude across the load impedance in the time domain.
    The harmonic balance simulation has the advantage that the whole system is modelled in a steady state mode, so that no transients influences the results.\\
@@ -22,51 +27,55 @@ Simulation in time domain is required to validate the correct generation of a si
  In this section the components are optimized with respect to the signal integrity. The dimensions of the used components are tuned while simulation to provide the desired output signal.
  
 \subsection{sine wave generation in the time domain}
-The presented Riemann Pump converts a digital input signal into an analog signal. 
-To synthesize any analog signal a digital input signal is needed.  
-In fact that no MATLAB algorithm exists which computes the Riemann code, it is done by hand. 
-In a more enhanced project a MATLAB algorithm would compute this code by minimizing the deviation between a theoretical signal and the synthesized signal.
- The deviation of the two signals is lying in the nature of converting digital to analog in form of quantization noise. In Figure \ref{fig:SineWaveCodeGeneration} a sine wave is approximated with the help of eight different slopes. With the help of this slopes the Riemann code was generated. The sequence of slopes is in particular \textit{+7 +3 -3 -7 -7 -3 +3 +7}, speaking of absolute $i_0$ values.\\
+At first a sine wave is generated since this is the most powerful signal form.
+Hence a sine wave exists any other signal can be generated representing the sum of sine waves.
+To validate the feasibility of the presented concept, a digital input control code is required.
+To get this code an approximation by hand is done since no algorithm exists which can compute this.\\
+Figure \ref{fig:SineWaveCodeGeneration} presents a by hand approximated sine wave.
+This approximation is done with the help of eight different slopes which represents the three bit resolution of the \gls{ab:dac}. The sequence of slopes referred to $i_0$ values is \textit{+7 +3 -3 -7 -7 -3 +3 +7} which represents the following Riemann code:  000 010 101 111 111 101 010 000.
  
  \begin{figure}[htb!]
    \centering
-   \includegraphics[width=1\textwidth]{RCgeneration_SineWave_byHand.pdf}
+   \includegraphics[width=0.75\textwidth]{RCgeneration_SineWave_byHand.pdf} %width=1
    \caption{Riemanncode generation for a sine wave by hand}
    \label{fig:SineWaveCodeGeneration}
 \end{figure}
 
-The corresponding Riemann code of Figure \ref{fig:SineWaveCodeGeneration}  is: 000 010 101 111 111 101 010 000.
-\\
-This Riemann code is used for a few signals with different frequencies.
+This generated Riemann code was used to synthesize some sine waves in the frequency range between \gls{ab:dc} and \SI{6}{\GHz}.
 
-%\begin{figure}[htb!]
-%   \centering
-%   \includegraphics[width=0.75\textwidth]{Vout_sine_sampling_1GHz_1period.pdf}
-%   \caption{Synthesized signals}
-%   \label{fig:SynthesizedSignalWithStatedRiemanncode}
-%\end{figure}
-%
-
-
-
-
-\begin{figure}
-\centering
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=1\linewidth]{Vout_sine_sampling_1GHz_1period.pdf}
-%  \captionof{figure}{A figure}
-  \label{fig:test1}
-\end{minipage}%
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=1\linewidth]{Vout_sine_sampling_2GHz_1period.pdf}
-%  \captionof{figure}{Another figure}
-  \label{fig:test2}
-  \caption{Synthesized signal at \gls{sy:freq}= 1 GHz and 2 GHz with stated Riemann code}
-\end{minipage}
+\begin{figure}[htb!]
+   \centering
+   \includegraphics[width=0.75\textwidth]{Vout_sine_sampling_1GHz_1period.pdf}
+   \caption{Synthesized signals}
+   \label{fig:SynthesizedSignalWithStatedRiemanncode}
 \end{figure}
 
+
+\begin{figure}[htb!]
+   \centering
+   \includegraphics[width=0.75\textwidth]{Vout_sine_sampling_2GHz_1period.pdf}
+   \caption{Synthesized signals}
+   \label{fig:SynthesizedSignalWithStatedRiemanncode}
+\end{figure}
+
+%
+%\begin{figure}
+%\centering
+%\begin{minipage}{.5\textwidth}
+%  \centering
+%  \includegraphics[width=1\linewidth]{Vout_sine_sampling_1GHz_1period.pdf}
+%%  \captionof{figure}{A figure}
+%  \label{fig:test1}
+%\end{minipage}%
+%\begin{minipage}{.5\textwidth}
+%  \centering
+%  \includegraphics[width=1\linewidth]{Vout_sine_sampling_2GHz_1period.pdf}
+%%  \captionof{figure}{Another figure}
+%  \label{fig:test2}
+%  \caption{Synthesized signal at \gls{sy:freq}= 1 GHz and 2 GHz with stated Riemann code}
+%\end{minipage}
+%\end{figure}
+%
 
 
 
