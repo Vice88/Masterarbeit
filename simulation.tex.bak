@@ -1,28 +1,26 @@
 \chapter{Circuit simulations for generating various waveform signals}
 % Outline the simulation results based on the chosen approach in the previous chapter
-% laptop version 03/15/2016 12:27 p.m.
-To proof the presented concept.
-To validate the feasibility of the presented concept, a digital input control code is required.
-To synthesize various analog signals the corresponding digital input signal is needed. 
+The circuit simulations are run to validate the behaviour of the conceptual design of the Riemann pump.\\
+In a first step the theoretical concepts of chapter \ref{ch:design} are investigated using the harmonic balance simulator.
+This simulation shows the analog signal across the output impedance in the time domain. 
+This output signal already describes some fundamental ideas to understand the drawbacks and trade-offs of the designed circuit.
+The harmonic balance simulation is done with the design tool \gls{ab:ads}.
+The benefit of the harmonic balance simulation is that the whole system is modelled in a steady state mode, so that no transients influences the results. \textit{"Harmonic balance is a frequency-domain analysis technique for simulating nonlinear circuits and systems[...]"}  ADS\_Harmonic\_Balance.pdf\\
+    After various signals could synthesized a short stability and energy consumption analysis is done. This is needed to validate that the circuit do not oscillate which is undesired, as well that the circuits energy consumption is in a moderate range. \\
+    In the last step a simulation is run which makes the concept comparable to the realized circuit. 
+    This simulation uses the same transistor dimensions like the demonstrator, but it also neglects losses due to the bonds and conductors. This should give an insight to the behaviour of the constructed demonstrator.\\
+   It is important to note that all simulations are done under ideal conditions and no losses due to the bonds and \gls{ab:msl} are taken into account. 
+    The modelling of the designed circuit under real conditions, which include the exact calculation of all impedances of \gls{ab:msl} and bond wires would go beyond the scope of this thesis. Therefore a keep it small and simple approach is chosen to proof the concept.\\   
+
+\section{Generating various analog signals with digital input control}
+To synthesize various analog signals in the time domain the corresponding digital Riemann code is needed. 
 In fact that no MATLAB algorithm exists which computes the Riemann code, it is done by hand. 
-In a more enhanced project a MATLAB algorithm would compute this code by minimizing the deviation between a theoretical signal and the synthesized signal.
  The deviation of the two signals is lying in the nature of converting digital to analog in form of quantization noise.
 The \gls{ab:dac} designed in this thesis should be able to create various (arbitrary) waveform signals.
 The presented Riemann Pump converts a digital input signal into an analog signal.
- To validate the chosen approach a harmonic balance simulation is done with the design tool \gls{ab:ads}.
-  With this simulation it is possible to plot the voltage amplitude across the load impedance in the time domain.
-   The harmonic balance simulation has the advantage that the whole system is modelled in a steady state mode, so that no transients influences the results.\\
-    It is important to note that the simulations are done under ideal conditions and no losses due to conductor impedances are taken into account.
-    The modelling of a time domain simulation under real conditions with the exact number, width and length of all bonds and other effects, was(is) beyond the scope of this thesis.\\
-    A short stability and energy consumption analysis is done to get an impression of it. 
-    The realised circuit is in no way tuned or optimized with respect to these two aspects.
-     This two aspects could not be investigated in this thesis due to complexity and time issues, what its meaning is not to belittle.\\
-    
 The simulation results in which various signals are generated have the same \gls{ab:osr} in common.
 The \gls{ab:osr} is four and hence, due to the Nyquist-Shannon theorem, the sampling \gls{sy:freq} is eight times the signal frequency.
-This in mind, tuning the sampling frequency will result in tuning the signal frequency. 
-
-\section{Generating various signals with digital input control}
+This in mind, tuning the sampling frequency will result in tuning the signal frequency.
 %Time signal simulation with optimized components
 Simulation in time domain is required to validate the correct generation of a signal. In fact of the linear approximation of current charging a capacitor this is the only way to verify the output signal. If this signal is confirmed to be as good as wanted, a frequency simulation can show the spurious free dynamic range or whatever which is important to mobile communication. To follow the approach in chapter \ref{ch:design} the components are dimensioned as stated there.\\
  The signals described in this section are generated with the ( \gls{ab:dac} design) Riemann Pump circuit design stated in Chapter \ref{ch:design}. The presented \gls{ab:dac} have a resolution of three bit which generates various signals with an \gls{ab:osr} of four. 
@@ -36,64 +34,53 @@ To get this code an approximation by hand is done since no algorithm exists whic
 Figure \ref{fig:SineWaveCodeGeneration} presents a by hand approximated sine wave.
 This approximation is done with the help of eight different slopes which represents the three bit resolution of the \gls{ab:dac}. The sequence of slopes referred to $i_0$ values is \textit{+7 +3 -3 -7 -7 -3 +3 +7} which represents the following Riemann code:  000 010 101 111 111 101 010 000.
  
- \begin{figure}[htb!]
-   \centering
-   \includegraphics[width=0.75\textwidth]{RCgeneration_SineWave_byHand.pdf} %width=1
-   \caption{Riemanncode generation for a sine wave by hand}
-   \label{fig:SineWaveCodeGeneration}
-\end{figure}
+% \begin{figure}[htb!]
+%   \centering
+%   \includegraphics[width=0.75\textwidth]{RCgeneration_SineWave_byHand.pdf} %width=1
+%   \caption{Riemanncode generation for a sine wave by hand}
+%   \label{fig:SineWaveCodeGeneration}
+%\end{figure}
 
 This generated Riemann code was used to synthesize some sine waves in the frequency range between \gls{ab:dc} and \SI{6}{\GHz}.
 
-\begin{figure}[htb!]
-   \centering
-   \includegraphics[width=0.75\textwidth]{Vout_sine_sampling_1GHz_1period.pdf}
-   \caption{Synthesized signals}
-   \label{fig:SynthesizedSignalWithStatedRiemanncode}
-\end{figure}
-
-
-\begin{figure}[htb!]
-   \centering
-   \includegraphics[width=0.75\textwidth]{Vout_sine_sampling_2GHz_1period.pdf}
-   \caption{Synthesized signals}
-   \label{fig:SynthesizedSignalWithStatedRiemanncode}
-\end{figure}
-
+%This signal form is equivalent to a sine wave with a dc offset of  
 %
-%\begin{figure}
-%\centering
-%\begin{minipage}{.5\textwidth}
-%  \centering
-%  \includegraphics[width=1\linewidth]{Vout_sine_sampling_1GHz_1period.pdf}
-%%  \captionof{figure}{A figure}
-%  \label{fig:test1}
-%\end{minipage}%
-%\begin{minipage}{.5\textwidth}
-%  \centering
-%  \includegraphics[width=1\linewidth]{Vout_sine_sampling_2GHz_1period.pdf}
-%%  \captionof{figure}{Another figure}
-%  \label{fig:test2}
-%  \caption{Synthesized signal at \gls{sy:freq}= 1 GHz and 2 GHz with stated Riemann code}
-%\end{minipage}
+%\begin{figure}[htb!]
+%   \centering
+%   \includegraphics[width=0.75\textwidth]{Vout_sine_sampling_2GHz_1period.pdf}
+%   \caption{Synthesized sine wave with signal frequency of \SI{2} {\GHz}}
+%   \label{fig:SynthesizedSignalWithStatedRiemanncode2GHz}
 %\end{figure}
+
+
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{RiemannCodeGeneration.pdf}
+%  \captionof{figure}{A figure}
+  \label{fig:test1}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{SynthesizedSineWithRiemannCode.pdf}
+%  \captionof{figure}{Another figure}
+  \label{fig:test2}
+  \caption{Riemann code generation and its synthesized sine wave signal}
+\end{minipage}
+\end{figure}
 %
 
+\begin{figure}[htb!]
+   \centering
+   \includegraphics[width=0.75\textwidth]{Vout_7sine_SigBWdifferent_SameSlope_73.pdf}
+   \caption{Signals synthesized with Riemann code introduced with Figure \ref{fig:SineWaveCodeGeneration}}
+   \label{fig:7SignalsSameSlopeInOnePlot}
+\end{figure}
 
+Figure \ref{fig:7SignalsSameSlopeInOnePlot} shows seven signal waves with the generated Riemann code in \ref{fig:test1}
 
-
-
-
-
-
-
-
-
-
-
-
-
-The time domain simulation of the output voltage in the Riemann Pump circuit exhibits the desired behaviour. 
+The time domain plot( frequency domain simulation) of the output voltage of the Riemann Pump exhibits the desired behaviour. 
 As seen in Figure \ref{fig:SineWaveSynthVsTheoretical} a sine wave signal can be precisely synthesized. 
 The sine wave is expressed as 
 \begin{equation}
@@ -141,12 +128,6 @@ The maximum amplitude for the capacitor is the supply voltage of \SI{15}{\volt}.
 %A sampling frequency of \SI{4} {\GHz} means a sampling time of \SI{250}{\pico \second}, hence the output capacitance is \SI{20}{\pico \farad} it is charged with  .
 
 
-\begin{figure}[htb!]
-   \centering
-   \includegraphics[width=0.75\textwidth]{Vout_sine_7signals_inOne_3bit_osr4.pdf}
-   \caption{Signals synthesized with Riemann code introduced with Figure \ref{fig:SineWaveCodeGeneration}}
-   \label{fig:7SignalsSameSlopeInOnePlot}
-\end{figure}
 
 \subsection{rectified sine wave generation in the time domain}
 Based on the same optical approximation of the signal in Figure \ref{fig:SineWaveCodeGeneration} the riemanncode for the half sine is generated. The Riemanncode for the half sine is: 000 010 101 111 000 010 101 111
@@ -155,6 +136,7 @@ This is a triangular wave.
 
 
 \section{Stability analysis of the realised circuit}
+The stability and energy consumption analysis helps to get an impression/ understanding of figures and numbers of the designed circuit. Although this two aspect are of an important role for the development of a high speed \gls{ab:dac} this analysis are not complete. The whole detailed analysis could not be investigated in this thesis due to complexity and time issues, what its meaning is not to belittle. For these aspects it is important to state that the designed circuit is in no way optimized with respect to those \\
 The stability analysis is important to ensure that the circuit under test do not oscillate. 
  To check this, the complex impedance at specific points in the circuit is measured.
  If the real part of the impedance is positive for the whole frequency range of the simulation, it indicates in an easy way that the circuit does not oscillate.
@@ -173,5 +155,7 @@ This two bit resolution simulation is done to compare the demonstrators measurem
 The three bit resolution DAC was too complex to realize in a first approach on a hybrid substrate. Therefore an easier approach was designed to validate the proof of concept.
 
 \section{Evaluation of the simulation results for the Riemann Pump}
+ The presented results show the theoretical feasibility of the approach.
+ In a more enhanced project a MATLAB algorithm would compute this code by minimizing the deviation between a theoretical signal and the synthesized signal.
 evaluate the simulation results, what is to expect in realisation. 
 What is the expectation to the measurement?

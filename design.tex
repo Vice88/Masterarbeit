@@ -1,27 +1,37 @@
 \chapter{Riemann Pump Circuit design}
-
 \label{ch:design}
-\textit{Description of the approach you have taken to solve the scientific or technical problem which you were posed. Outline the design, the methodology and overall structure of your experimental approach}
+\textit{Description of the approach you have taken to solve the scientific or technical problem which you were posed. Outline the design, the methodology and overall structure of your experimental approach}\\ 
+The concept of the Riemann Pump as seen in Fig. \ref{fig:RiemannPumpConcept} is realised with the design tool \gls{ab:ads}.
+The first step was to design a 
 A digitally controlled charge pump with eight different slopes is created, called Riemann Pump. To show that this pump is able to convert a digital signal into an analog one an example code is generated. As a MATLAB algorithm do not exists, which computes the Riemann Code, it is done by hand.
 In fact of the high energy consumption, the realized DAC is designed for the integration in a base station. Because it converts a digital bit sequence into an analog rf signal it is implemented in the transmitting path. Based on the idea of a push-pull stage the load impedance of the charge pump is designed first.
 \section{Approach and implementation of the Riemann Pump}
-The concept of the Riemann Pump as seen in Fig. \ref{fig:RiemannPumpConcept} is realised with the design tool ADS.
+One possible approach to design a charge pump as shown in Fig. \ref{fig:RiemannPumpConcept} was with concept of a Push-Pull stage.
+The concept of the chosen push-pull stage had the advantage of an integrated driver circuit which allows to switch the high side transistor efficient.
+This concept is usually used for power electronics [-> which power electronic, refer to].
+The first approach of designing a Riemann Pump was with a concept of a Push-Pull stage. This push-pull stage should charge a capacitive load at the output, which is the same as a normal charge pump. Push-pull stages complementary switch a high- and lowside transistor as in a charge pump. This was one possible approach. Concept of Maksimovic.
 
 \begin{figure}[ht]
 	\centering
-  \includegraphics[width=1\textwidth]{Active_PullUp3.png}
+  \includegraphics[width=1\textwidth, draft]{Active_PullUp3.png}
 	\caption{Schematic of a driver circuit with push-pull stage representing one bit of the DAC called Riemann Pump}
 	\label{RiemannPump}
 \end{figure}
 
-The first approach of designing a Riemann Pump was with a concept of a Push-Pull stage. This push-pull stage should charge a capacitive load at the output, which is the same as a normal charge pump. Push-pull stages complementary switch a high- and lowside transistor as in a charge pump. This was one possible approach. Concept of Maksimovic. 
+ 
 
 
 \section{Calculation of the load impedance}
-The transistor model \gls{ab:hemt} (IAF GE MSL A204/IAF GaN25 HEMT CS LS SHfull) used in \gls{ab:ads} were modelled at the \gls{ab:iaf}.
-\textbf{small signal equivalent circuit for load transistor. this already shows the behavior of the load impedance}
-\textit{Max Gain with output amp - to tune the quiescent point, get the right impdenace}
-Based on the idea to design  a DAC for the transmitting path of a base station, a pre-power amplifier is taken to calculate the load impedance. The first assumption is that the load is a pre-power amplifier which generate a power of \SI{20}{\watt}. To generate this power, the gate periphery of a GaN25 HEMT has to be \SI{4}{\milli \metre} based on the approximation(- official reference???) \SI[per-mode=fraction]{5}{\watt\per\milli\metre}. To get this gate periphery four transistor in parallel each with 8 finger and \SI{125}{\micro \metre} are designed for the power amplifier. The bias point is determined with the \gls{ab:mag}. Therefore the following load impedance could be determined.
+For simulation purposes a suitable (appropriate) load impedance was necessary. 
+The calculation of the load was based on the idea to drive a (pre-) power amplifier with the synthesized signal.
+The advantage would be to synthesize a signal near to the RF- front end e.g. in a base station for mobile communication.
+As a \SI{20}{\watt} power amplifier would be taken for the transmitting path of a base station the corresponding gate periphery of a \gls{ab:gan}25 transistor would be \SI{4}{\milli \metre}.
+This is a keep it small and simple approach to get a first idea of the concept. Otherwise a more accurate way would be to take a broadband power amplifier as load.
+The transistor model with this gate periphery was tuned due to the \gls{ab:mag} to get the complex impedance of the power amplifier.
+After the tuning process a S-parameter simulation determined the input impedance of the power amplifier which corresponds to the load impedance of the designed Riemann pump circuit.
+This transistor model \gls{ab:hemt} (IAF\_GE\_MSL\_ A204/IAF\_GaN25\_HEMT\_CS\_LS\_SHfull) used in \gls{ab:ads} were modelled at the \gls{ab:iaf}.\\
+
+ The first assumption is that the load is a pre-power amplifier which generate a power of \SI{20}{\watt}. To generate this power, the gate periphery of a GaN25 HEMT has to be \SI{4}{\milli \metre} based on the approximation(- official reference???) \SI[per-mode=fraction]{5}{\watt\per\milli\metre}. To get this gate periphery four transistor in parallel each with 8 finger and \SI{125}{\micro \metre} are designed for the power amplifier. The bias point is determined with the \gls{ab:mag}. Therefore the following load impedance could be determined.
 \begin{equation}
 Z = R - jX_c
 \end{equation}

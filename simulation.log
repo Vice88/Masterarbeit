@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  15 MAR 2016 12:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  15 MAR 2016 14:29
 entering extended mode
 **simulation.tex
 (simulation.tex
@@ -570,8 +570,8 @@ Missing character: There is no T in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-l.10 The \gls
-             {ab:dac} designed in this thesis should be able to create vario...
+l.9 The \gls
+            {ab:dac} designed in this thesis should be able to create variou...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -804,7 +804,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
 ! Undefined control sequence.
-l.12 ...mulation is done with the design tool \gls
+l.11 ...mulation is done with the design tool \gls
                                                   {ab:ads}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1558,7 +1558,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 1--20
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--19
 []
  []
 
@@ -1569,7 +1569,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.21 T
+l.20 T
       he simulation results in which various signals are generated have the ...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -1640,7 +1640,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-l.21 ...s signals are generated have the same \gls
+l.20 ...s signals are generated have the same \gls
                                                   {ab:osr} in common.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1667,7 +1667,7 @@ Missing character: There is no T in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-l.22 The \gls
+l.21 The \gls
              {ab:osr} is four and hence, due to the Nyquist-Shannon theorem,...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1739,7 +1739,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
 ! Undefined control sequence.
-l.22 ...Nyquist-Shannon theorem, the sampling \gls
+l.21 ...Nyquist-Shannon theorem, the sampling \gls
                                                   {sy:freq} is eight times t...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1860,12 +1860,12 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 21--24
+Overfull \hbox (20.0pt too wide) in paragraph at lines 20--23
 []
  []
 
 ! Undefined control sequence.
-l.25 \section
+l.24 \section
              {Generating various signals with digital input control}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1880,7 +1880,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.25 \section{G
+l.24 \section{G
                enerating various signals with digital input control}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2276,7 +2276,7 @@ Missing character: There is no r in font nullfont!
 ! Undefined control sequence.
 <write> ...Reference `ch:design' on page \thepage 
                                                   \space undefined\on@line .
-l.27 ...ow the approach in chapter \ref{ch:design}
+l.26 ...ow the approach in chapter \ref{ch:design}
                                                    the components are dimens...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2285,7 +2285,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `ch:design' on page  undefined on input line 27.
+LaTeX Warning: Reference `ch:design' on page  undefined on input line 26.
 
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
@@ -2381,7 +2381,7 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
-l.28 ...this section are generated with the ( \gls
+l.27 ...this section are generated with the ( \gls
                                                   {ab:dac} design) Riemann P...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2444,7 +2444,7 @@ Missing character: There is no r in font nullfont!
 ! Undefined control sequence.
 <write> ...Reference `ch:design' on page \thepage 
                                                   \space undefined\on@line .
-l.28 ...t design stated in Chapter \ref{ch:design}
+l.27 ...t design stated in Chapter \ref{ch:design}
                                                   . The presented \gls{ab:da...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2453,7 +2453,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `ch:design' on page  undefined on input line 28.
+LaTeX Warning: Reference `ch:design' on page  undefined on input line 27.
 
 Missing character: There is no . in font nullfont!
 Missing character: There is no T in font nullfont!
@@ -2469,7 +2469,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 ! Undefined control sequence.
-l.28 ...hapter \ref{ch:design}. The presented \gls
+l.27 ...hapter \ref{ch:design}. The presented \gls
                                                   {ab:dac} have a resolution...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2543,7 +2543,7 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.28 ...ich generates various signals with an \gls
+l.27 ...ich generates various signals with an \gls
                                                   {ab:osr} of four.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2722,22 +2722,22 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 25--30
+Overfull \hbox (20.0pt too wide) in paragraph at lines 24--29
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 25--30
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 24--29
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 25--30
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 24--29
 []
  []
 
 ! Undefined control sequence.
-l.31 \subsection
+l.30 \subsection
                 {sine wave generation in the time domain}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2752,7 +2752,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.31 \subsection{s
+l.30 \subsection{s
                   ine wave generation in the time domain}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3104,7 +3104,7 @@ Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
 <write> ...neWaveCodeGeneration' on page \thepage 
                                                   \space undefined\on@line .
-l.36 Figure \ref{fig:SineWaveCodeGeneration}
+l.35 Figure \ref{fig:SineWaveCodeGeneration}
                                              presents a by hand approximated...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3114,7 +3114,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `fig:SineWaveCodeGeneration' on page  undefined on inp
-ut line 36.
+ut line 35.
 
 Missing character: There is no p in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -3250,7 +3250,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-l.37 ...sents the three bit resolution of the \gls
+l.36 ...sents the three bit resolution of the \gls
                                                   {ab:dac}. The sequence of ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3295,9 +3295,9 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 37.
+(Font)              <7> on input line 36.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 37.
+(Font)              <5> on input line 36.
 Missing character: There is no v in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -3371,77 +3371,77 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 31--38
+Overfull \hbox (20.0pt too wide) in paragraph at lines 30--37
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 31--38
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 30--37
 []
  []
 
 
-Overfull \hbox (7.93126pt too wide) in paragraph at lines 31--38
+Overfull \hbox (7.93126pt too wide) in paragraph at lines 30--37
 $\OML/cmm/m/it/10 i[]$
  []
 
 
-Overfull \hbox (12.77771pt too wide) in paragraph at lines 31--38
+Overfull \hbox (12.77771pt too wide) in paragraph at lines 30--37
 \OT1/cmr/m/it/10 +7
  []
 
 
-Overfull \hbox (12.77771pt too wide) in paragraph at lines 31--38
+Overfull \hbox (12.77771pt too wide) in paragraph at lines 30--37
 \OT1/cmr/m/it/10 +3
  []
 
 
-Overfull \hbox (3.57774pt too wide) in paragraph at lines 31--38
+Overfull \hbox (3.57774pt too wide) in paragraph at lines 30--37
 \OT1/cmr/m/it/10 -
  []
 
 
-Overfull \hbox (5.11108pt too wide) in paragraph at lines 31--38
+Overfull \hbox (5.11108pt too wide) in paragraph at lines 30--37
 \OT1/cmr/m/it/10 3
  []
 
 
-Overfull \hbox (3.57774pt too wide) in paragraph at lines 31--38
+Overfull \hbox (3.57774pt too wide) in paragraph at lines 30--37
 \OT1/cmr/m/it/10 -
  []
 
 
-Overfull \hbox (5.11108pt too wide) in paragraph at lines 31--38
+Overfull \hbox (5.11108pt too wide) in paragraph at lines 30--37
 \OT1/cmr/m/it/10 7
  []
 
 
-Overfull \hbox (3.57774pt too wide) in paragraph at lines 31--38
+Overfull \hbox (3.57774pt too wide) in paragraph at lines 30--37
 \OT1/cmr/m/it/10 -
  []
 
 
-Overfull \hbox (5.11108pt too wide) in paragraph at lines 31--38
+Overfull \hbox (5.11108pt too wide) in paragraph at lines 30--37
 \OT1/cmr/m/it/10 7
  []
 
 
-Overfull \hbox (3.57774pt too wide) in paragraph at lines 31--38
+Overfull \hbox (3.57774pt too wide) in paragraph at lines 30--37
 \OT1/cmr/m/it/10 -
  []
 
 
-Overfull \hbox (5.11108pt too wide) in paragraph at lines 31--38
+Overfull \hbox (5.11108pt too wide) in paragraph at lines 30--37
 \OT1/cmr/m/it/10 3
  []
 
 
-Overfull \hbox (12.77771pt too wide) in paragraph at lines 31--38
+Overfull \hbox (12.77771pt too wide) in paragraph at lines 30--37
 \OT1/cmr/m/it/10 +3
  []
 
 
-Overfull \hbox (12.77771pt too wide) in paragraph at lines 31--38
+Overfull \hbox (12.77771pt too wide) in paragraph at lines 30--37
 \OT1/cmr/m/it/10 +7
  []
 
@@ -3452,7 +3452,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.39  \begin{figure}
+l.38  \begin{figure}
                     [htb!]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3465,7 +3465,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.39  \begin{figure}[
+l.38  \begin{figure}[
                      htb!]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3477,7 +3477,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no ! in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.41    \includegraphics
+l.40    \includegraphics
                         [width=0.75\textwidth]{RCgeneration_SineWave_byHand....
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3499,7 +3499,7 @@ Missing character: There is no 5 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.41    \includegraphics[width=0.75\textwidth]
+l.40    \includegraphics[width=0.75\textwidth]
                                               {RCgeneration_SineWave_byHand....
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -3508,7 +3508,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.41    \includegraphics[width=0.75\textwidth]
+l.40    \includegraphics[width=0.75\textwidth]
                                               {RCgeneration_SineWave_byHand....
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3533,13 +3533,13 @@ Missing character: There is no n in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.41 ...aphics[width=0.75\textwidth]{RCgeneration_
+l.40 ...aphics[width=0.75\textwidth]{RCgeneration_
                                                   SineWave_byHand.pdf} %width=1
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.41 ...xtwidth]{RCgeneration_SineWave_byHand.pdf}
+l.40 ...xtwidth]{RCgeneration_SineWave_byHand.pdf}
                                                    %width=1
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3554,7 +3554,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.42    \caption
+l.41    \caption
                 {Riemanncode generation for a sine wave by hand}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3566,7 +3566,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44 \end{figure}
+l.43 \end{figure}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3575,7 +3575,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.44 \end{figure}
+l.43 \end{figure}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3586,7 +3586,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.44 \end{figure}
+l.43 \end{figure}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3595,12 +3595,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 39--45
+Overfull \hbox (20.0pt too wide) in paragraph at lines 38--44
 []
  []
 
 
-Overfull \hbox (301.4671pt too wide) in paragraph at lines 39--45
+Overfull \hbox (301.4671pt too wide) in paragraph at lines 38--44
 $[]\OML/cmm/m/it/10 ineWave[]yHand:pdf[][]$ 
  []
 
@@ -3611,7 +3611,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 T
+l.45 T
       his generated Riemann code was used to synthesize some sine waves in t...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -3700,7 +3700,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.46 ... waves in the frequency range between \gls
+l.45 ... waves in the frequency range between \gls
                                                   {ab:dc} and \SI{6}{\GHz}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3717,7 +3717,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
 ! Undefined control sequence.
-l.46 ...requency range between \gls{ab:dc} and \SI
+l.45 ...requency range between \gls{ab:dc} and \SI
                                                   {6}{\GHz}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3727,7 +3727,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no 6 in font nullfont!
 ! Undefined control sequence.
-l.46 ... range between \gls{ab:dc} and \SI{6}{\GHz
+l.45 ... range between \gls{ab:dc} and \SI{6}{\GHz
                                                   }.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3737,7 +3737,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 46--47
+Overfull \hbox (20.0pt too wide) in paragraph at lines 45--46
 []
  []
 
@@ -3748,7 +3748,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.48 \begin{figure}
+l.47 \begin{figure}
                    [htb!]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3761,7 +3761,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.48 \begin{figure}[
+l.47 \begin{figure}[
                     htb!]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3773,7 +3773,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no ! in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.50    \includegraphics
+l.49    \includegraphics
                         [width=0.75\textwidth]{Vout_sine_sampling_1GHz_1peri...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3795,7 +3795,7 @@ Missing character: There is no 5 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.50    \includegraphics[width=0.75\textwidth]
+l.49    \includegraphics[width=0.75\textwidth]
                                               {Vout_sine_sampling_1GHz_1peri...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -3804,7 +3804,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.50    \includegraphics[width=0.75\textwidth]
+l.49    \includegraphics[width=0.75\textwidth]
                                               {Vout_sine_sampling_1GHz_1peri...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3821,13 +3821,13 @@ Missing character: There is no t in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.50 ...ncludegraphics[width=0.75\textwidth]{Vout_
+l.49 ...ncludegraphics[width=0.75\textwidth]{Vout_
                                                   sine_sampling_1GHz_1period...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.50 ...idth]{Vout_sine_sampling_1GHz_1period.pdf}
+l.49 ...idth]{Vout_sine_sampling_1GHz_1period.pdf}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3842,7 +3842,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.51    \caption
+l.50    \caption
                 {Synthesized signals}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3854,7 +3854,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.53 \end{figure}
+l.52 \end{figure}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3863,7 +3863,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.53 \end{figure}
+l.52 \end{figure}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3874,7 +3874,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.53 \end{figure}
+l.52 \end{figure}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3883,12 +3883,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 48--54
+Overfull \hbox (20.0pt too wide) in paragraph at lines 47--53
 []
  []
 
 
-Overfull \hbox (222.5539pt too wide) in paragraph at lines 48--54
+Overfull \hbox (222.5539pt too wide) in paragraph at lines 47--53
 $[]\OML/cmm/m/it/10 ine[]ampling[]GHz[]period:pdf[][]$ 
  []
 
@@ -3899,7 +3899,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.56 \begin{figure}
+l.55 \begin{figure}
                    [htb!]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3912,7 +3912,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.56 \begin{figure}[
+l.55 \begin{figure}[
                     htb!]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3924,7 +3924,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no ! in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.58    \includegraphics
+l.57    \includegraphics
                         [width=0.75\textwidth]{Vout_sine_sampling_2GHz_1peri...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3946,7 +3946,7 @@ Missing character: There is no 5 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.58    \includegraphics[width=0.75\textwidth]
+l.57    \includegraphics[width=0.75\textwidth]
                                               {Vout_sine_sampling_2GHz_1peri...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -3955,7 +3955,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.58    \includegraphics[width=0.75\textwidth]
+l.57    \includegraphics[width=0.75\textwidth]
                                               {Vout_sine_sampling_2GHz_1peri...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3972,13 +3972,13 @@ Missing character: There is no t in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.58 ...ncludegraphics[width=0.75\textwidth]{Vout_
+l.57 ...ncludegraphics[width=0.75\textwidth]{Vout_
                                                   sine_sampling_2GHz_1period...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.58 ...idth]{Vout_sine_sampling_2GHz_1period.pdf}
+l.57 ...idth]{Vout_sine_sampling_2GHz_1period.pdf}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3993,7 +3993,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59    \caption
+l.58    \caption
                 {Synthesized signals}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4005,7 +4005,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.61 \end{figure}
+l.60 \end{figure}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4014,7 +4014,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.61 \end{figure}
+l.60 \end{figure}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4025,7 +4025,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.61 \end{figure}
+l.60 \end{figure}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4034,12 +4034,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 56--62
+Overfull \hbox (20.0pt too wide) in paragraph at lines 55--61
 []
  []
 
 
-Overfull \hbox (222.5539pt too wide) in paragraph at lines 56--62
+Overfull \hbox (222.5539pt too wide) in paragraph at lines 55--61
 $[]\OML/cmm/m/it/10 ine[]ampling[]GHz[]period:pdf[][]$ 
  []
 
@@ -4050,7 +4050,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.96 T
+l.95 T
       he time domain simulation of the output voltage in the Riemann Pump ci...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -4165,7 +4165,7 @@ Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
 <write> ...veSynthVsTheoretical' on page \thepage 
                                                   \space undefined\on@line .
-l.97 ...igure \ref{fig:SineWaveSynthVsTheoretical}
+l.96 ...igure \ref{fig:SineWaveSynthVsTheoretical}
                                                    a sine wave signal can be...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4175,7 +4175,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `fig:SineWaveSynthVsTheoretical' on page  undefined on
- input line 97.
+ input line 96.
 
 Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -4243,17 +4243,17 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 96--99
+Overfull \hbox (20.0pt too wide) in paragraph at lines 95--98
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 96--99
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 95--98
 []
  []
 
 
-Overfull \hbox (99.75888pt too wide) detected at line 101
+Overfull \hbox (99.75888pt too wide) detected at line 100
 \OML/cmm/m/it/10 v\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = [] \OM
 S/cmsy/m/n/10  \OML/cmm/m/it/10 sin\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 f \OMS/
 cmsy/m/n/10  \OML/cmm/m/it/10 t \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 \OT1/cmr/m
@@ -4280,7 +4280,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no : in font nullfont!
 ! Undefined control sequence.
-l.102 with this parameters: $\widehat{v} = \SI
+l.101 with this parameters: $\widehat{v} = \SI
                                               {7.5}{\volt}$, $f = \SI{1}{\gi...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4289,7 +4289,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.102 ...parameters: $\widehat{v} = \SI{7.5}{\volt
+l.101 ...parameters: $\widehat{v} = \SI{7.5}{\volt
                                                   }$, $f = \SI{1}{\giga \her...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4299,7 +4299,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no , in font nullfont!
 ! Undefined control sequence.
-l.102 ...$\widehat{v} = \SI{7.5}{\volt}$, $f = \SI
+l.101 ...$\widehat{v} = \SI{7.5}{\volt}$, $f = \SI
                                                   {1}{\giga \hertz}$, $\phi ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4308,7 +4308,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.102 ...{v} = \SI{7.5}{\volt}$, $f = \SI{1}{\giga
+l.101 ...{v} = \SI{7.5}{\volt}$, $f = \SI{1}{\giga
                                                    \hertz}$, $\phi = \pi / 4$.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4317,7 +4317,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.102 ...SI{7.5}{\volt}$, $f = \SI{1}{\giga \hertz
+l.101 ...SI{7.5}{\volt}$, $f = \SI{1}{\giga \hertz
                                                   }$, $\phi = \pi / 4$.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4328,32 +4328,32 @@ and I'll forget about whatever was undefined.
 Missing character: There is no , in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (15.76152pt too wide) in paragraph at lines 101--103
+Overfull \hbox (15.76152pt too wide) in paragraph at lines 100--102
    $[] \OT1/cmr/m/n/10 =$
  []
 
 
-Overfull \hbox (12.77782pt too wide) in paragraph at lines 101--103
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 100--102
 $[][]$
  []
 
 
-Overfull \hbox (16.52777pt too wide) in paragraph at lines 101--103
+Overfull \hbox (16.52777pt too wide) in paragraph at lines 100--102
 $\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 =$
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 101--103
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 100--102
 $\OT1/cmr/m/n/10 1[]$
  []
 
 
-Overfull \hbox (16.51385pt too wide) in paragraph at lines 101--103
+Overfull \hbox (16.51385pt too wide) in paragraph at lines 100--102
 $\OML/cmm/m/it/10  \OT1/cmr/m/n/10 =$
  []
 
 
-Overfull \hbox (16.05908pt too wide) in paragraph at lines 101--103
+Overfull \hbox (16.05908pt too wide) in paragraph at lines 100--102
 $\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 4$ 
  []
 
@@ -4364,7 +4364,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.104 \begin{figure}
+l.103 \begin{figure}
                     [htb!]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4377,7 +4377,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.104 \begin{figure}[
+l.103 \begin{figure}[
                      htb!]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4389,7 +4389,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no ! in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.106    \includegraphics
+l.105    \includegraphics
                          [width=0.75\textwidth]{Vout_SynthVsTheo.pdf}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4411,7 +4411,7 @@ Missing character: There is no 5 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.106    \includegraphics[width=0.75\textwidth]
+l.105    \includegraphics[width=0.75\textwidth]
                                                {Vout_SynthVsTheo.pdf}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -4420,7 +4420,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.106    \includegraphics[width=0.75\textwidth]
+l.105    \includegraphics[width=0.75\textwidth]
                                                {Vout_SynthVsTheo.pdf}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -4437,13 +4437,13 @@ Missing character: There is no t in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.106 ...cludegraphics[width=0.75\textwidth]{Vout_
+l.105 ...cludegraphics[width=0.75\textwidth]{Vout_
                                                   SynthVsTheo.pdf}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.106 ...dth=0.75\textwidth]{Vout_SynthVsTheo.pdf}
+l.105 ...dth=0.75\textwidth]{Vout_SynthVsTheo.pdf}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -4458,7 +4458,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.107    \caption
+l.106    \caption
                  {Synthesized sine wave with the theoretical sine wave}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4470,7 +4470,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.109 \end{figure}
+l.108 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4479,7 +4479,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.109 \end{figure}
+l.108 \end{figure}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4490,7 +4490,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.109 \end{figure}
+l.108 \end{figure}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4499,12 +4499,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 104--110
+Overfull \hbox (20.0pt too wide) in paragraph at lines 103--109
 []
  []
 
 
-Overfull \hbox (299.25772pt too wide) in paragraph at lines 104--110
+Overfull \hbox (299.25772pt too wide) in paragraph at lines 103--109
 $[]\OML/cmm/m/it/10 ynthVsTheo:pdf[][]$ 
  []
 
@@ -4515,7 +4515,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.111 A
+l.110 A
        lthough the fit seems to be very good, two distortions are visible.
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4578,7 +4578,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 111--112
+Overfull \hbox (20.0pt too wide) in paragraph at lines 110--111
 []
  []
 
@@ -4589,7 +4589,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.113 T
+l.112 T
        he deviation of the synthesized signal (black) from the desired one (...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -4682,7 +4682,7 @@ Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
 <write> ...nce `fig:SineCompare' on page \thepage 
                                                   \space undefined\on@line .
-l.113 ...ghlighted in Figure \ref{fig:SineCompare}
+l.112 ...ghlighted in Figure \ref{fig:SineCompare}
                                                   .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4691,7 +4691,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:SineCompare' on page  undefined on input line 113
+LaTeX Warning: Reference `fig:SineCompare' on page  undefined on input line 112
 .
 
 Missing character: There is no . in font nullfont!
@@ -5009,7 +5009,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.117 ...y portion for the direct component at \SI
+l.116 ...y portion for the direct component at \SI
                                                   {0} {\GHz} and a fundament...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5019,7 +5019,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no 0 in font nullfont!
 ! Undefined control sequence.
-l.117 ... for the direct component at \SI{0} {\GHz
+l.116 ... for the direct component at \SI{0} {\GHz
                                                   } and a fundamental freque...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5061,7 +5061,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.117 ...nd a fundamental frequency portion at \SI
+l.116 ...nd a fundamental frequency portion at \SI
                                                   {1}{\GHz}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5071,7 +5071,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no 1 in font nullfont!
 ! Undefined control sequence.
-l.117 ...damental frequency portion at \SI{1}{\GHz
+l.116 ...damental frequency portion at \SI{1}{\GHz
                                                   }.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5501,7 +5501,7 @@ Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
 <write> ...nce `fig:SineCompare' on page \thepage 
                                                   \space undefined\on@line .
-l.122 ...ight plot of Figure \ref{fig:SineCompare}
+l.121 ...ight plot of Figure \ref{fig:SineCompare}
                                                    shows that the distortion...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5510,7 +5510,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:SineCompare' on page  undefined on input line 122
+LaTeX Warning: Reference `fig:SineCompare' on page  undefined on input line 121
 .
 
 Missing character: There is no s in font nullfont!
@@ -5545,7 +5545,7 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
 ! Undefined control sequence.
-l.122 ... shows that the distortion is maximal \SI
+l.121 ... shows that the distortion is maximal \SI
                                                   {1}{\volt} in amplitude at...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5555,7 +5555,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no 1 in font nullfont!
 ! Undefined control sequence.
-l.122 ...at the distortion is maximal \SI{1}{\volt
+l.121 ...at the distortion is maximal \SI{1}{\volt
                                                   } in amplitude at a the th...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5637,157 +5637,157 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 113--124
+Overfull \hbox (20.0pt too wide) in paragraph at lines 112--123
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 113--124
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 112--123
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 113--124
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 112--123
 []
  []
 
 
-Overfull \hbox (16.86655pt too wide) in paragraph at lines 113--124
+Overfull \hbox (16.86655pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 The
  []
 
 
-Overfull \hbox (13.28879pt too wide) in paragraph at lines 113--124
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 ac-
  []
 
 
-Overfull \hbox (13.54434pt too wide) in paragraph at lines 113--124
+Overfull \hbox (13.54434pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 cu-
  []
 
 
-Overfull \hbox (18.27206pt too wide) in paragraph at lines 113--124
+Overfull \hbox (18.27206pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 racy
  []
 
 
-Overfull \hbox (7.15552pt too wide) in paragraph at lines 113--124
+Overfull \hbox (7.15552pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 is
  []
 
 
-Overfull \hbox (18.27206pt too wide) in paragraph at lines 113--124
+Overfull \hbox (18.27206pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 very
  []
 
 
-Overfull \hbox (21.97762pt too wide) in paragraph at lines 113--124
+Overfull \hbox (21.97762pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 good.
  []
 
 
-Overfull \hbox (19.4221pt too wide) in paragraph at lines 113--124
+Overfull \hbox (19.4221pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 This
  []
 
 
-Overfull \hbox (14.82211pt too wide) in paragraph at lines 113--124
+Overfull \hbox (14.82211pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 can
  []
 
 
-Overfull \hbox (8.6888pt too wide) in paragraph at lines 113--124
+Overfull \hbox (8.6888pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 be
  []
 
 
-Overfull \hbox (16.9943pt too wide) in paragraph at lines 113--124
+Overfull \hbox (16.9943pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 ver-
  []
 
 
-Overfull \hbox (6.6444pt too wide) in paragraph at lines 113--124
+Overfull \hbox (6.6444pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 i-
  []
 
 
-Overfull \hbox (14.82211pt too wide) in paragraph at lines 113--124
+Overfull \hbox (14.82211pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 fied
  []
 
 
-Overfull \hbox (9.45547pt too wide) in paragraph at lines 113--124
+Overfull \hbox (9.45547pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 by
  []
 
 
-Overfull \hbox (13.03323pt too wide) in paragraph at lines 113--124
+Overfull \hbox (13.03323pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 the
  []
 
 
-Overfull \hbox (15.33322pt too wide) in paragraph at lines 113--124
+Overfull \hbox (15.33322pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 sig-
  []
 
 
-Overfull \hbox (13.28882pt too wide) in paragraph at lines 113--124
+Overfull \hbox (13.28882pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 nal
  []
 
 
-Overfull \hbox (8.43327pt too wide) in paragraph at lines 113--124
+Overfull \hbox (8.43327pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 to
  []
 
 
-Overfull \hbox (22.48875pt too wide) in paragraph at lines 113--124
+Overfull \hbox (22.48875pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 noise
  []
 
 
-Overfull \hbox (12.39433pt too wide) in paragraph at lines 113--124
+Overfull \hbox (12.39433pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 ra-
  []
 
 
-Overfull \hbox (11.49992pt too wide) in paragraph at lines 113--124
+Overfull \hbox (11.49992pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 tio
  []
 
 
-Overfull \hbox (3.57774pt too wide) in paragraph at lines 113--124
+Overfull \hbox (3.57774pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 -
  []
 
 
-Overfull \hbox (5.11108pt too wide) in paragraph at lines 113--124
+Overfull \hbox (5.11108pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 >
  []
 
 
-Overfull \hbox (12.81657pt too wide) in paragraph at lines 113--124
+Overfull \hbox (12.81657pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 ex-
  []
 
 
-Overfull \hbox (24.5332pt too wide) in paragraph at lines 113--124
+Overfull \hbox (24.5332pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 plain,
  []
 
 
-Overfull \hbox (20.44429pt too wide) in paragraph at lines 113--124
+Overfull \hbox (20.44429pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 state
  []
 
 
-Overfull \hbox (13.03323pt too wide) in paragraph at lines 113--124
+Overfull \hbox (13.03323pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 the
  []
 
 
-Overfull \hbox (20.7367pt too wide) in paragraph at lines 113--124
+Overfull \hbox (20.7367pt too wide) in paragraph at lines 112--123
 \OT1/cmr/m/it/10 SNR 
  []
 
@@ -5798,7 +5798,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125 \begin{figure}
+l.124 \begin{figure}
                     [htb!]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5811,7 +5811,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125 \begin{figure}[
+l.124 \begin{figure}[
                      htb!]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -5823,7 +5823,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no ! in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.127   \includegraphics
+l.126   \includegraphics
                         [width=1\textwidth]{SineCompare.pdf}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5842,7 +5842,7 @@ Missing character: There is no 1 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.127   \includegraphics[width=1\textwidth]
+l.126   \includegraphics[width=1\textwidth]
                                            {SineCompare.pdf}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -5851,7 +5851,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.127   \includegraphics[width=1\textwidth]
+l.126   \includegraphics[width=1\textwidth]
                                            {SineCompare.pdf}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -5883,7 +5883,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.128 	\caption
+l.127 	\caption
                {Comparison between a theoretical and a synthesized sine wave...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -5965,14 +5965,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.130 \end{figure}
+l.129 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 125--131
+Overfull \hbox (20.0pt too wide) in paragraph at lines 124--130
 []
  []
 
@@ -5983,7 +5983,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.132 T
+l.131 T
        o address already some limitations (of this approach) which occurred ...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -6077,7 +6077,7 @@ Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
 <write> ...lsSameSlopeInOnePlot' on page \thepage 
                                                   \space undefined\on@line .
-l.132 ...gure \ref{fig:7SignalsSameSlopeInOnePlot}
+l.131 ...gure \ref{fig:7SignalsSameSlopeInOnePlot}
                                                    shows seven signals synth...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6087,7 +6087,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `fig:7SignalsSameSlopeInOnePlot' on page  undefined on
- input line 132.
+ input line 131.
 
 Missing character: There is no s in font nullfont!
 Missing character: There is no h in font nullfont!
@@ -6393,7 +6393,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.135 ... the signals with frequencies between \SI
+l.134 ... the signals with frequencies between \SI
                                                   {2}{\GHz} and \SI{6}{\GHz}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6403,7 +6403,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no 2 in font nullfont!
 ! Undefined control sequence.
-l.135 ...nals with frequencies between \SI{2}{\GHz
+l.134 ...nals with frequencies between \SI{2}{\GHz
                                                   } and \SI{6}{\GHz} all nic...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6415,7 +6415,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
 ! Undefined control sequence.
-l.135 ... frequencies between \SI{2}{\GHz} and \SI
+l.134 ... frequencies between \SI{2}{\GHz} and \SI
                                                   {6}{\GHz} all nicely fit t...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6425,7 +6425,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no 6 in font nullfont!
 ! Undefined control sequence.
-l.135 ...cies between \SI{2}{\GHz} and \SI{6}{\GHz
+l.134 ...cies between \SI{2}{\GHz} and \SI{6}{\GHz
                                                   } all nicely fit to the ex...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6647,7 +6647,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no y in font nullfont!
 ! Undefined control sequence.
-l.136 ...the blue signal with signal frequency \SI
+l.135 ...the blue signal with signal frequency \SI
                                                   {1}{\GHz} and  \SI{500}{\M...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6657,7 +6657,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no 1 in font nullfont!
 ! Undefined control sequence.
-l.136 ... signal with signal frequency \SI{1}{\GHz
+l.135 ... signal with signal frequency \SI{1}{\GHz
                                                   } and  \SI{500}{\MHz} resp...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6669,7 +6669,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
 ! Undefined control sequence.
-l.136 ...th signal frequency \SI{1}{\GHz} and  \SI
+l.135 ...th signal frequency \SI{1}{\GHz} and  \SI
                                                   {500}{\MHz} respectively d...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6681,7 +6681,7 @@ Missing character: There is no 5 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 ! Undefined control sequence.
-l.136 ...frequency \SI{1}{\GHz} and  \SI{500}{\MHz
+l.135 ...frequency \SI{1}{\GHz} and  \SI{500}{\MHz
                                                   } respectively differ from...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6938,7 +6938,7 @@ Missing character: There is no y in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no f in font nullfont!
 ! Undefined control sequence.
-l.136 ... sine wave with a signal frequency of \SI
+l.135 ... sine wave with a signal frequency of \SI
                                                   {500}{\MHz} is clipped and...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6950,7 +6950,7 @@ Missing character: There is no 5 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 ! Undefined control sequence.
-l.136 ... with a signal frequency of \SI{500}{\MHz
+l.135 ... with a signal frequency of \SI{500}{\MHz
                                                   } is clipped and hence sho...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7134,7 +7134,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no f in font nullfont!
 ! Undefined control sequence.
-l.137 ...he capacitor is the supply voltage of \SI
+l.136 ...he capacitor is the supply voltage of \SI
                                                   {15}{\volt}. If this maxim...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7145,7 +7145,7 @@ and I'll forget about whatever was undefined.
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 5 in font nullfont!
 ! Undefined control sequence.
-l.137 ...or is the supply voltage of \SI{15}{\volt
+l.136 ...or is the supply voltage of \SI{15}{\volt
                                                   }. If this maximum is reac...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7215,12 +7215,12 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 132--138
+Overfull \hbox (20.0pt too wide) in paragraph at lines 131--137
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 132--138
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 131--137
 []
  []
 
@@ -7231,7 +7231,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.144 \begin{figure}
+l.143 \begin{figure}
                     [htb!]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7244,7 +7244,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.144 \begin{figure}[
+l.143 \begin{figure}[
                      htb!]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7256,7 +7256,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no ! in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.146    \includegraphics
+l.145    \includegraphics
                          [width=0.75\textwidth]{Vout_sine_7signals_inOne_3bi...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7278,7 +7278,7 @@ Missing character: There is no 5 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.146    \includegraphics[width=0.75\textwidth]
+l.145    \includegraphics[width=0.75\textwidth]
                                                {Vout_sine_7signals_inOne_3bi...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -7287,7 +7287,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.146    \includegraphics[width=0.75\textwidth]
+l.145    \includegraphics[width=0.75\textwidth]
                                                {Vout_sine_7signals_inOne_3bi...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -7304,13 +7304,13 @@ Missing character: There is no t in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.146 ...cludegraphics[width=0.75\textwidth]{Vout_
+l.145 ...cludegraphics[width=0.75\textwidth]{Vout_
                                                   sine_7signals_inOne_3bit_o...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.146 ...]{Vout_sine_7signals_inOne_3bit_osr4.pdf}
+l.145 ...]{Vout_sine_7signals_inOne_3bit_osr4.pdf}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -7325,7 +7325,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.147    \caption
+l.146    \caption
                  {Signals synthesized with Riemann code introduced with Figu...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -7334,7 +7334,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 <write> ...neWaveCodeGeneration' on page \thepage 
                                                   \space undefined\on@line .
-l.147 ...h Figure \ref{fig:SineWaveCodeGeneration}
+l.146 ...h Figure \ref{fig:SineWaveCodeGeneration}
                                                   }
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7344,7 +7344,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `fig:SineWaveCodeGeneration' on page  undefined on inp
-ut line 147.
+ut line 146.
 
 
 ! LaTeX Error: \begin{document} ended by \end{figure}.
@@ -7353,7 +7353,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \end{figure}
+l.148 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -7362,7 +7362,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.149 \end{figure}
+l.148 \end{figure}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -7373,7 +7373,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.149 \end{figure}
+l.148 \end{figure}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -7382,18 +7382,18 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 144--150
+Overfull \hbox (20.0pt too wide) in paragraph at lines 143--149
 []
  []
 
 
-Overfull \hbox (414.36569pt too wide) in paragraph at lines 144--150
+Overfull \hbox (414.36569pt too wide) in paragraph at lines 143--149
 $[]\OML/cmm/m/it/10 ine[]signals[]nOne[]bit[]sr\OT1/cmr/m/n/10 4\OML/cmm/m/it/1
 0 :pdf[][]$ 
  []
 
 ! Undefined control sequence.
-l.151 \subsection
+l.150 \subsection
                  {rectified sine wave generation in the time domain}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7408,7 +7408,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.151 \subsection{r
+l.150 \subsection{r
                    ectified sine wave generation in the time domain}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -7511,7 +7511,7 @@ Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
 <write> ...neWaveCodeGeneration' on page \thepage 
                                                   \space undefined\on@line .
-l.152 ...n Figure \ref{fig:SineWaveCodeGeneration}
+l.151 ...n Figure \ref{fig:SineWaveCodeGeneration}
                                                    the riemanncode for the h...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7521,7 +7521,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `fig:SineWaveCodeGeneration' on page  undefined on inp
-ut line 152.
+ut line 151.
 
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
@@ -7619,7 +7619,7 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 ! Undefined control sequence.
-l.153 \subsection
+l.152 \subsection
                  {triangular wave generation in the time domain}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7689,17 +7689,17 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 151--155
+Overfull \hbox (20.0pt too wide) in paragraph at lines 150--154
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 151--155
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 150--154
 []
  []
 
 ! Undefined control sequence.
-l.157 \section
+l.156 \section
               {Stability analysis of the realised circuit}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7714,7 +7714,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.157 \section{S
+l.156 \section{S
                 tability analysis of the realised circuit}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -8072,12 +8072,12 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 157--162
+Overfull \hbox (20.0pt too wide) in paragraph at lines 156--161
 []
  []
 
 ! Undefined control sequence.
-l.163 \section
+l.162 \section
               {Energy consumption analysis of the realised circuit}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -8092,7 +8092,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.163 \section{E
+l.162 \section{E
                 nergy consumption analysis of the realised circuit}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -8403,7 +8403,7 @@ Missing character: There is no r in font nullfont!
 ! Undefined control sequence.
 <write> ...Reference `ch:design' on page \thepage 
                                                   \space undefined\on@line .
-l.165 ...signed circuit in chapter \ref{ch:design}
+l.164 ...signed circuit in chapter \ref{ch:design}
                                                    is simulated with \gls{ab...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -8412,7 +8412,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `ch:design' on page  undefined on input line 165.
+LaTeX Warning: Reference `ch:design' on page  undefined on input line 164.
 
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -8430,7 +8430,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 ! Undefined control sequence.
-l.165 ...er \ref{ch:design} is simulated with \gls
+l.164 ...er \ref{ch:design} is simulated with \gls
                                                   {ab:ads}.\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -8688,17 +8688,17 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 163--169
+Overfull \hbox (20.0pt too wide) in paragraph at lines 162--168
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 163--169
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 162--168
 []
  []
 
 ! Undefined control sequence.
-l.170 \section
+l.169 \section
               {Proof of concept simulation with existing components}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -8713,7 +8713,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.170 \section{P
+l.169 \section{P
                 roof of concept simulation with existing components}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -9084,147 +9084,147 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 170--174
+Overfull \hbox (20.0pt too wide) in paragraph at lines 169--173
 []
  []
 
 
-Overfull \hbox (21.7221pt too wide) in paragraph at lines 170--174
+Overfull \hbox (21.7221pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 two-
  []
 
 
-Overfull \hbox (14.05548pt too wide) in paragraph at lines 170--174
+Overfull \hbox (14.05548pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 bit
  []
 
 
-Overfull \hbox (18.3763pt too wide) in paragraph at lines 170--174
+Overfull \hbox (18.3763pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 res-
  []
 
 
-Overfull \hbox (9.58328pt too wide) in paragraph at lines 170--174
+Overfull \hbox (9.58328pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 o-
  []
 
 
-Overfull \hbox (13.4166pt too wide) in paragraph at lines 170--174
+Overfull \hbox (13.4166pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 lu-
  []
 
 
-Overfull \hbox (22.99988pt too wide) in paragraph at lines 170--174
+Overfull \hbox (22.99988pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 tion,
  []
 
 
-Overfull \hbox (15.02214pt too wide) in paragraph at lines 170--174
+Overfull \hbox (15.02214pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 osr
  []
 
 
-Overfull \hbox (8.9444pt too wide) in paragraph at lines 170--174
+Overfull \hbox (8.9444pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 =
  []
 
 
-Overfull \hbox (8.9444pt too wide) in paragraph at lines 170--174
+Overfull \hbox (8.9444pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 4,
  []
 
 
-Overfull \hbox (22.68045pt too wide) in paragraph at lines 170--174
+Overfull \hbox (22.68045pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 keep
  []
 
 
-Overfull \hbox (7.66663pt too wide) in paragraph at lines 170--174
+Overfull \hbox (7.66663pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 it
  []
 
 
-Overfull \hbox (26.09843pt too wide) in paragraph at lines 170--174
+Overfull \hbox (26.09843pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 small
  []
 
 
-Overfull \hbox (18.36794pt too wide) in paragraph at lines 170--174
+Overfull \hbox (18.36794pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 and
  []
 
 
-Overfull \hbox (21.1471pt too wide) in paragraph at lines 170--174
+Overfull \hbox (21.1471pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 sim-
  []
 
 
-Overfull \hbox (18.04852pt too wide) in paragraph at lines 170--174
+Overfull \hbox (18.04852pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 ple,
  []
 
 
-Overfull \hbox (17.3541pt too wide) in paragraph at lines 170--174
+Overfull \hbox (17.3541pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 fre-
  []
 
 
-Overfull \hbox (35.29843pt too wide) in paragraph at lines 170--174
+Overfull \hbox (35.29843pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 quency
  []
 
 
-Overfull \hbox (34.92345pt too wide) in paragraph at lines 170--174
+Overfull \hbox (34.92345pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 higher,
  []
 
 
-Overfull \hbox (37.21509pt too wide) in paragraph at lines 170--174
+Overfull \hbox (37.21509pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 demon-
  []
 
 
-Overfull \hbox (23.16791pt too wide) in paragraph at lines 170--174
+Overfull \hbox (23.16791pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 stra-
  []
 
 
-Overfull \hbox (18.1527pt too wide) in paragraph at lines 170--174
+Overfull \hbox (18.1527pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 tor,
  []
 
 
-Overfull \hbox (13.95961pt too wide) in paragraph at lines 170--174
+Overfull \hbox (13.95961pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 as-
  []
 
 
-Overfull \hbox (23.22348pt too wide) in paragraph at lines 170--174
+Overfull \hbox (23.22348pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 sem-
  []
 
 
-Overfull \hbox (17.8888pt too wide) in paragraph at lines 170--174
+Overfull \hbox (17.8888pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 bly,
  []
 
 
-Overfull \hbox (17.53738pt too wide) in paragraph at lines 170--174
+Overfull \hbox (17.53738pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 less
  []
 
 
-Overfull \hbox (24.27765pt too wide) in paragraph at lines 170--174
+Overfull \hbox (24.27765pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 com-
  []
 
 
-Overfull \hbox (20.92351pt too wide) in paragraph at lines 170--174
+Overfull \hbox (20.92351pt too wide) in paragraph at lines 169--173
 \OT1/cmr/bx/n/10 plex
  []
 
 ! Undefined control sequence.
-l.175 \section
+l.174 \section
               {Evaluation of the simulation results for the Riemann Pump}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -9239,7 +9239,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.175 \section{E
+l.174 \section{E
                 valuation of the simulation results for the Riemann Pump}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.

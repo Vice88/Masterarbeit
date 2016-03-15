@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  15 MAR 2016 12:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  15 MAR 2016 18:50
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -1247,12 +1247,8 @@ Package glossaries Info: Writing glossary file master_thesis_RiemannPump.sbl on
 
 Writing index file master_thesis_RiemannPump.idx
 (master_thesis_RiemannPump.aux (preface.aux) (stateoftheart.aux)
-(fundamentals.aux) (design.aux) (simulation.aux
-
-LaTeX Warning: Label `fig:SynthesizedSignalWithStatedRiemanncode' multiply defi
-ned.
-
-) (layout.aux) (measurement.aux) (conclusion.aux) (appendix.aux))
+(fundamentals.aux) (design.aux) (simulation.aux) (layout.aux) (measurement.aux)
+(conclusion.aux) (appendix.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
 LaTeX Font Info:    ... okay on input line 96.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 96.
@@ -1540,14 +1536,23 @@ ics/concept/RiemannIntegralError.pdf, page is rotated 90 degrees>] (design.tex
 ]
 chapter 4.
 <graphics/Active_PullUp3.png, id=155, 845.0772pt x 597.1911pt>
-File: graphics/Active_PullUp3.png Graphic file (type png)
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 16.
 
-<use graphics/Active_PullUp3.png>
-Package pdftex.def Info: graphics/Active_PullUp3.png used on input line 12.
-(pdftex.def)             Requested size: 426.79141pt x 301.60191pt.
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 24.
+(E:\WinProgram\MikTEX\tex\latex\psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `pcr' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 
-(E:\WinProgram\MikTEX\tex\latex\psnfss\ts1ptm.fd
+Underfull \hbox (badness 10000) in paragraph at lines 25--33
+
+ []
+
+[11]
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 34.
+ (E:\WinProgram\MikTEX\tex\latex\psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 Package microtype Info: Loading generic settings for font family
@@ -1585,32 +1590,31 @@ Package microtype Warning: Unknown slot number of character
 (microtype)                in font encoding `TS1' in protrusion list
 (microtype)                `textcomp'.
 
-[11]
-<graphics/simulation/S_param_LoadImpedance.pdf, id=159, 845.1575pt x 597.23125p
+[12]
+<graphics/simulation/S_param_LoadImpedance.pdf, id=163, 845.1575pt x 597.23125p
 t>
 File: graphics/simulation/S_param_LoadImpedance.pdf Graphic file (type pdf)
  <use graphics/simulation/S_param_LoadImpedance.pdf>
 Package pdftex.def Info: graphics/simulation/S_param_LoadImpedance.pdf used on 
-input line 35.
+input line 45.
 (pdftex.def)             Requested size: 426.79141pt x 301.59483pt.
 
-<graphics/simulation/InputCap_LoadImpedance_6GHz.pdf, id=160, 845.1575pt x 597.
+<graphics/simulation/InputCap_LoadImpedance_6GHz.pdf, id=164, 845.1575pt x 597.
 23125pt>
 File: graphics/simulation/InputCap_LoadImpedance_6GHz.pdf Graphic file (type pd
 f)
  <use graphics/simulation/InputCap_LoadImpedance_6GHz.pdf>
 Package pdftex.def Info: graphics/simulation/InputCap_LoadImpedance_6GHz.pdf us
-ed on input line 47.
+ed on input line 57.
 (pdftex.def)             Requested size: 213.3957pt x 150.79286pt.
- [12 <./graphics/Active_PullUp3.png>]
+ [13 <./graphics/simulation/S_param_LoadImpedance.pdf>]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 69.
-) [13 <./graphics/simulation/S_param_LoadImpedance.pdf>] [14 <./graphics/simula
-tion/InputCap_LoadImpedance_6GHz.pdf, page is rotated 90 degrees>] (simulation.
-tex
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 79.
+) [14 <./graphics/simulation/InputCap_LoadImpedance_6GHz.pdf, page is rotated 9
+0 degrees>] (simulation.tex
 chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--20
+Underfull \hbox (badness 10000) in paragraph at lines 3--14
 
  []
 
@@ -1621,68 +1625,83 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--20
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 31.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 29.
 
-<graphics/concept/RCgeneration_SineWave_byHand.pdf, id=196, 845.1575pt x 597.23
-125pt>
-File: graphics/concept/RCgeneration_SineWave_byHand.pdf Graphic file (type pdf)
 
- <use graphics/concept/RCgeneration_SineWave_byHand.pdf>
-Package pdftex.def Info: graphics/concept/RCgeneration_SineWave_byHand.pdf used
- on input line 41.
+LaTeX Warning: Reference `fig:SineWaveCodeGeneration' on page 16 undefined on i
+nput line 34.
+
+
+<graphics/concept/RiemannCodeGeneration.pdf, id=197, 845.1575pt x 597.23125pt>
+File: graphics/concept/RiemannCodeGeneration.pdf Graphic file (type pdf)
+
+<use graphics/concept/RiemannCodeGeneration.pdf>
+Package pdftex.def Info: graphics/concept/RiemannCodeGeneration.pdf used on inp
+ut line 60.
+(pdftex.def)             Requested size: 213.3957pt x 150.79286pt.
+
+<graphics/simulation/SynthesizedSineWithRiemannCode.pdf, id=198, 845.1575pt x 5
+97.23125pt>
+File: graphics/simulation/SynthesizedSineWithRiemannCode.pdf Graphic file (type
+ pdf)
+ <use graphics/simulation/SynthesizedSineWithRiemannCode.pdf>
+Package pdftex.def Info: graphics/simulation/SynthesizedSineWithRiemannCode.pdf
+ used on input line 66.
+(pdftex.def)             Requested size: 213.3957pt x 150.79286pt.
+
+<graphics/simulation/Vout_7sine_SigBWdifferent_SameSlope_73.pdf, id=199, 845.15
+75pt x 597.23125pt>
+File: graphics/simulation/Vout_7sine_SigBWdifferent_SameSlope_73.pdf Graphic fi
+le (type pdf)
+
+<use graphics/simulation/Vout_7sine_SigBWdifferent_SameSlope_73.pdf>
+Package pdftex.def Info: graphics/simulation/Vout_7sine_SigBWdifferent_SameSlop
+e_73.pdf used on input line 76.
 (pdftex.def)             Requested size: 320.09355pt x 226.19385pt.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 77.
 
-<graphics/simulation/Vout_sine_sampling_1GHz_1period.pdf, id=197, 845.1575pt x 
-597.23125pt>
-File: graphics/simulation/Vout_sine_sampling_1GHz_1period.pdf Graphic file (typ
-e pdf)
- <use graphics/simulation/Vout_sine_sampling_1GHz_1period.pdf>
-Package pdftex.def Info: graphics/simulation/Vout_sine_sampling_1GHz_1period.pd
-f used on input line 50.
-(pdftex.def)             Requested size: 320.09355pt x 226.19385pt.
 
-<graphics/simulation/Vout_sine_sampling_2GHz_1period.pdf, id=198, 845.1575pt x 
-597.23125pt>
-File: graphics/simulation/Vout_sine_sampling_2GHz_1period.pdf Graphic file (typ
-e pdf)
- <use graphics/simulation/Vout_sine_sampling_2GHz_1period.pdf>
-Package pdftex.def Info: graphics/simulation/Vout_sine_sampling_2GHz_1period.pd
-f used on input line 58.
-(pdftex.def)             Requested size: 320.09355pt x 226.19385pt.
+LaTeX Warning: Reference `fig:SineWaveCodeGeneration' on page 16 undefined on i
+nput line 77.
 
-<graphics/simulation/Vout_SynthVsTheo.pdf, id=199, 845.1575pt x 597.23125pt>
+
+LaTeX Warning: Reference `fig:SineWaveCodeGeneration' on page 16 undefined on i
+nput line 77.
+
+
+Package caption Warning: \label without proper \caption on input line 62.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:test1' on page 16 undefined on input line 81.
+
+[16]
+<graphics/simulation/Vout_SynthVsTheo.pdf, id=203, 845.1575pt x 597.23125pt>
 File: graphics/simulation/Vout_SynthVsTheo.pdf Graphic file (type pdf)
 
 <use graphics/simulation/Vout_SynthVsTheo.pdf>
 Package pdftex.def Info: graphics/simulation/Vout_SynthVsTheo.pdf used on input
- line 106.
+ line 93.
 (pdftex.def)             Requested size: 320.09355pt x 226.19385pt.
- [16] [17 <./graphics/concept/RCgeneration_SineWave_byHand.pdf, page is rotated
- 90 degrees> <./graphics/simulation/Vout_sine_sampling_1GHz_1period.pdf, page i
-s rotated 90 degrees>]
-<graphics/simulation/SineCompare.pdf, id=214, 845.1575pt x 597.23125pt>
+ [17 <./graphics/concept/RiemannCodeGeneration.pdf, page is rotated 90 degrees>
+ <./graphics/simulation/SynthesizedSineWithRiemannCode.pdf, page is rotated 90 
+degrees> <./graphics/simulation/Vout_7sine_SigBWdifferent_SameSlope_73.pdf, pag
+e is rotated 90 degrees>]
+<graphics/simulation/SineCompare.pdf, id=227, 845.1575pt x 597.23125pt>
 File: graphics/simulation/SineCompare.pdf Graphic file (type pdf)
 
 <use graphics/simulation/SineCompare.pdf>
 Package pdftex.def Info: graphics/simulation/SineCompare.pdf used on input line
- 127.
+ 114.
 (pdftex.def)             Requested size: 426.79141pt x 301.59483pt.
- [18 <./graphics/simulation/Vout_sine_sampling_2GHz_1period.pdf, page is rotate
-d 90 degrees> <./graphics/simulation/Vout_SynthVsTheo.pdf, page is rotated 90 d
-egrees>]
-<graphics/simulation/Vout_sine_7signals_inOne_3bit_osr4.pdf, id=230, 845.1575pt
- x 597.23125pt>
-File: graphics/simulation/Vout_sine_7signals_inOne_3bit_osr4.pdf Graphic file (
-type pdf)
+ [18 <./graphics/simulation/Vout_SynthVsTheo.pdf, page is rotated 90 degrees>]
 
-<use graphics/simulation/Vout_sine_7signals_inOne_3bit_osr4.pdf>
-Package pdftex.def Info: graphics/simulation/Vout_sine_7signals_inOne_3bit_osr4
-.pdf used on input line 146.
-(pdftex.def)             Requested size: 320.09355pt x 226.19385pt.
- [19 <./graphics/simulation/SineCompare.pdf, page is rotated 90 degrees>] [20 <
-./graphics/simulation/Vout_sine_7signals_inOne_3bit_osr4.pdf, page is rotated 9
-0 degrees>])
-[21] (layout.tex [22
+LaTeX Warning: Reference `fig:SineWaveCodeGeneration' on page 19 undefined on i
+nput line 133.
+
+[19 <./graphics/simulation/SineCompare.pdf, page is rotated 90 degrees>])
+[20] [21] (layout.tex [22
 
 
 
@@ -1724,15 +1743,18 @@ chapter 8.
 s.aux) (design.aux) (simulation.aux) (layout.aux)
 (measurement.aux) (conclusion.aux) (appendix.aux))
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 38684 strings out of 493673
- 742372 string characters out of 3146818
- 848917 words of memory out of 3000000
- 41133 multiletter control sequences out of 15000+200000
- 66787 words of font info for 207 fonts, out of 3000000 for 9000
+ 38731 strings out of 493673
+ 742791 string characters out of 3146818
+ 848932 words of memory out of 3000000
+ 41177 multiletter control sequences out of 15000+200000
+ 71100 words of font info for 214 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  71i,12n,79p,10425b,916s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/WinProgram/MikTEX/fonts/enc/dvips/fontname/8r.enc}<E:/WinProgram/MikTEX/f
@@ -1741,15 +1763,16 @@ ic/amsfonts/cm/cmmi12.pfb><E:/WinProgram/MikTEX/fonts/type1/public/amsfonts/cm/
 cmmi8.pfb><E:/WinProgram/MikTEX/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Wi
 nProgram/MikTEX/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/WinProgram/MikTEX/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb><E:/WinProgram/MikTEX/fonts/type1/publ
-ic/amsfonts/cm/cmsy8.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/helvetic/uhvb8a.
-pfb><E:/WinProgram/MikTEX/fonts/type1/urw/helvetic/uhvr8a.pfb><E:/WinProgram/Mi
-kTEX/fonts/type1/urw/times/utmb8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/tim
-es/utmbi8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinPr
-ogram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1
-/urw/times/utmri8a.pfb>
-Output written on master_thesis_RiemannPump.pdf (46 pages, 934997 bytes).
+ic/amsfonts/cm/cmsy8.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/courier/ucrr8a.p
+fb><E:/WinProgram/MikTEX/fonts/type1/urw/helvetic/uhvb8a.pfb><E:/WinProgram/Mik
+TEX/fonts/type1/urw/helvetic/uhvr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/t
+imes/utmb8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmbi8a.pfb><E:/Win
+Program/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/typ
+e1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmri8a.pfb
+>
+Output written on master_thesis_RiemannPump.pdf (46 pages, 819938 bytes).
 PDF statistics:
- 342 PDF objects out of 1000 (max. 8388607)
+ 344 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 37464 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 40019 words of extra memory for PDF output out of 42996 (max. 10000000)
 
