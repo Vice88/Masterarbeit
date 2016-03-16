@@ -21,14 +21,16 @@
 \contentsline {section}{\numberline {5.3}Energy consumption analysis of the realised circuit}{22}
 \contentsline {section}{\numberline {5.4}Proof of concept simulation with existing components}{22}
 \contentsline {section}{\numberline {5.5}Evaluation of the simulation results for the Riemann Pump}{23}
-\contentsline {chapter}{\numberline {6}Realisation of a Riemann Pump circuit}{25}
-\contentsline {chapter}{\numberline {7}Measurement results}{27}
-\contentsline {section}{\numberline {7.1}Measurement setup}{27}
-\contentsline {section}{\numberline {7.2}Measurement results/ Proof of concept}{27}
-\contentsline {section}{\numberline {7.3}Discussion of measurement results}{28}
-\contentsline {chapter}{\numberline {8}Conclusions and outlook}{29}
-\contentsline {chapter}{Bibliography}{31}
-\contentsline {chapter}{Appendix}{33}
-\contentsline {section}{\numberline {A}Schematic of the Riemann Pump circuit}{33}
-\contentsline {section}{\numberline {B}Layout of the whole Riemann Pump circuit}{34}
-\contentsline {section}{\numberline {C}Photography of the realized Demonstrator}{35}
+\contentsline {chapter}{\numberline {6}Realisation of a demonstrator}{25}
+\contentsline {section}{\numberline {6.1}Demonstrator using DDRi\_X6 and DDRi\_Y6 chips}{25}
+\contentsline {section}{\numberline {6.2}Demonstrator using DDRi\_2C chips}{25}
+\contentsline {chapter}{\numberline {7}Measurement results}{29}
+\contentsline {section}{\numberline {7.1}Measurement setup}{29}
+\contentsline {section}{\numberline {7.2}Measurement results/ Proof of concept / Discussion of measurement results}{30}
+\contentsline {chapter}{\numberline {8}Conclusions and outlook}{31}
+\contentsline {chapter}{Bibliography}{33}
+\contentsline {chapter}{Appendix}{35}
+\contentsline {section}{\numberline {A}Schematic of the Riemann Pump circuit}{35}
+\contentsline {section}{\numberline {B}Layout of the whole Riemann Pump circuit}{36}
+\contentsline {section}{\numberline {C}Photography of the realized Demonstrator version 1}{37}
+\contentsline {section}{\numberline {D}Photography of the realized Demonstrator version 2}{37}
