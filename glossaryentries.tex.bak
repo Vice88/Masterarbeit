@@ -3,6 +3,10 @@
 %%%
 \newglossary[abg]{abbreviations}{ab}{abn}{List of abbreviations}
 %
+
+\newglossaryentry{ab:sqnr}{type=abbreviations,name={SQNR},description={Signal-to-quantization-noise-ratio},first={SQNR (Signal-to-quantization-noise-ratio)}}
+
+
 \newglossaryentry{ab:2deg}{type=abbreviations,name={2DEG},description={Two-dimensional electron gas},first={2DEG (two-dimensional electron gas)},firstplural={2DEGs (two-dimensional electron gases)},plural={2DEGs}}
 
 \newglossaryentry{ab:ads}{type=abbreviations,name={ADS},description={Advanced Design System},first={ADS (Advanced Design System)}}

@@ -18,7 +18,7 @@ The first approach of designing a Riemann Pump was with a concept of a Push-Pull
 
 \begin{figure}[ht]
 	\centering
-  \includegraphics[width=1\textwidth, draft]{Active_PullUp3.png}
+  \includegraphics[width=1\textwidth]{Active_PullUp3.png}
 	\caption{Schematic of a driver circuit with push-pull stage representing one bit of the DAC called Riemann Pump}
 	\label{RiemannPump}
 \end{figure}

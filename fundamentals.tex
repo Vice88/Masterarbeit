@@ -1,4 +1,5 @@
 \chapter{Fundamentals-Theory for this approach to reach 5G}
+\label{ch:fundamentals}
 \textit{Presentation of the theoretical basis required for an understanding of your work. Do not begin with Newton's laws or Maxwell's equations: imagine that the reader is a competent engineering professor, but not necessarily in your field of expertise. Do not bother to discuss any theory that you do not employ in later sections.}
 In the following some fundamentals are described shortly.
 \section{Concept of Software-defined radio}
@@ -56,6 +57,13 @@ The signal to noise ratio is calculated in equation \ref{eq:SNR_RiemannPumpConve
 	\text{SNR } [\si{\dB}] = 6.02N + 9.03r - 7.78 + 10\log_{10}(1 - \frac{1}{2}^{N-1} + \frac{1}{2}^{2N})
 	\label{eq:SNR_RiemannPumpConversion}
 \end{equation}
+
+\textbf{Description of the OSR, Nyquist-Shannon theorem and the SQNR...}
+The \gls{ab:osr} is four and hence due to the Nyquist-Shannon theorem, the sampling \gls{sy:freq} is eight times the signal frequency.
+This in mind, tuning the sampling frequency will result in tuning the signal frequency.
+\textit{introducing noise due to the conversion}
+\gls{ab:sqnr}
+The deviation of the two signals is lying in the nature of converting digital to analog in form of quantization noise.
 
 \section{Characteristics of high speed Digtial-to-Analog converter}
 \label{ch:characteristics}
