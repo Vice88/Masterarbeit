@@ -1,6 +1,6 @@
 %% Creator: Inkscape 0.91_64bit, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'RiemannCodeGenerationSineWave73_new.pdf' (pdf, eps, ps)
+%% Accompanies image file 'RiemannCodeGenerationSineWave73_latest.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -25,7 +25,6 @@
 %%   http://tug.ctan.org/tex-archive/info/svg-inkscape
 %%
 \begingroup%
-	\centering
   \makeatletter%
   \providecommand\color[2][]{%
     \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
@@ -50,21 +49,22 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,0.68181818)%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{RiemannCodeGenerationSineWave73_new.pdf}}%
-    \put(0.14597362,0.07678135){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
-    \put(0.47396109,0.07678135){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{T/2}}}%
-    \put(0.82463468,0.07678135){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{T}}}%
-    \put(0.14597362,0.60101634){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
-    \put(0.23095044,0.60101634){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1}}}%
-    \put(0.31592727,0.60101634){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2}}}%
-    \put(0.40090409,0.60101634){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{3}}}%
-    \put(0.48588091,0.60101634){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{4}}}%
-    \put(0.57047323,0.60101634){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{5}}}%
-    \put(0.65545005,0.60101634){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{6}}}%
-    \put(0.74042687,0.60101634){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{7}}}%
-    \put(0.8254037,0.60101634){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
-    \put(0.37667993,0.63933761){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sampling point}}}%
-    \put(0.13097771,0.31169074){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{Vout}}}}%
-    \put(0.44204671,0.02696369){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Period}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{RiemannCodeGenerationSineWave73_latest.pdf}}%
+    \put(0.09800161,0.05382177){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.42639642,0.05382177){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{T/2}}}%
+    \put(0.77750552,0.05382177){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{T}}}%
+    \put(0.09800161,0.60419604){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.18308397,0.60419604){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.26816633,0.60419604){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(0.35324869,0.60419604){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{3}}}%
+    \put(0.43833105,0.60419604){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{4}}}%
+    \put(0.52302842,0.60419604){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{5}}}%
+    \put(0.60811078,0.60419604){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{6}}}%
+    \put(0.69319314,0.60419604){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{7}}}%
+    \put(0.7782755,0.60419604){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.34881894,0.64442808){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sampling point}}}				% original 0.32899444
+    \put(0.02093614,0.29434376){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{Vout}}}}%
+    \put(0.40500543,0.00152013){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Period}}}%						% original 0.39444241
+%    \put(0,0){\includegraphics[width=\unitlength,page=2]{RiemannCodeGenerationSineWave73_latest.pdf}}%
   \end{picture}%
 \endgroup%

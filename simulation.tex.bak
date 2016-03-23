@@ -52,19 +52,11 @@ Figure \ref{fig:RiemannCodeGenerationSineWave} presents the sequence of slopes u
 
 \begin{figure}[htb!]
    \centering 
-   \input{graphics/RiemannCodeGenerationSineWave73_new.pdf_tex}
+   \input{graphics/simulation/RiemannCodeGenerationSineWave73_latest.pdf_tex}
    \caption{One possible approximation of sine wave generation to get the Riemann Code}
    \label{fig:RiemannCodeGenerationSineWave}
 \end{figure}
 
-
-
-%\begin{figure}[htb!]
-%   \centering
-%   \includegraphics{RiemannCodeGenerationSineWave73_new.pdf}
-%   \caption{One possible approximation of sine wave generation to get the Riemann Code}
-%   \label{fig:RiemannCodeGenerationSineWave}
-%\end{figure}
 
 This sequence of slopes, referred to $i_0$ values, is:
 \begin{equation}
@@ -79,12 +71,10 @@ This sequence of slopes, referred to $i_0$ values, is:
 This particular generated Riemann code was used to synthesize sine waves in the frequency range between \SI{500}{\MHz} and \SI{6}{\GHz}, as seen in Figure \ref{fig:7SignalsSameSlopeInOnePlot}.
 
 
-
 \begin{figure}[htb!]
-   %\centering
-   \hspace{.8cm}
-   \includegraphics[width=0.75\textwidth]{Vout_sine_SigBWdifferent_SameSlope_73_PeriodT.pdf}
-   \caption{Signals synthesized with demonstrated Riemann Code for the frequency range from \SI{500}{\MHz} to \SI{6}{\GHz} over two periods}
+   \centering 
+   \input{graphics/simulation/Vout_sine_SigBWdifferent_SameSlope_73_TwoPeriods.pdf_tex}
+   \caption{Synthesized signals with demonstrated Riemann Code for the frequency range of \SI{0.5}{\GHz} .. \SI{6}{\GHz}}
    \label{fig:7SignalsSameSlopeInOnePlot}
 \end{figure}
 

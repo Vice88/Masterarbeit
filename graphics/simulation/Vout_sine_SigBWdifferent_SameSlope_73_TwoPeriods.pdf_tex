@@ -1,0 +1,104 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Vout_sine_SigBWdifferent_SameSlope_73_PeriodT_ref.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{311.81102362bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.68181818)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Vout_sine_SigBWdifferent_SameSlope_73_TwoPeriods.pdf}}%
+    \put(0.09790393,0.04882979){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.25568791,0.04882979){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{T/2}}}%
+    \put(0.43810158,0.04882979){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{T}}}%
+    \put(0.5874191,0.04882979){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{3T/2}}}%
+    \put(0.77060245,0.04882979){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2T}}}%
+    \put(0.09790393,0.60758572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.14023622,0.60758572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.18333819,0.60758572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(0.22567047,0.60758572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{3}}}%
+    \put(0.26877244,0.60758572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{4}}}%
+    \put(0.31110472,0.60758572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{5}}}%
+    \put(0.35343701,0.60758572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{6}}}%
+    \put(0.39653897,0.60758572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{7}}}%
+    \put(0.43887126,0.60758572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.48120355,0.60758572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.52430551,0.60758572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(0.5666378,0.60758572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{3}}}%
+    \put(0.60897008,0.60758572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{4}}}%
+    \put(0.65207205,0.60758572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{5}}}%
+    \put(0.69440433,0.60758572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{6}}}%
+    \put(0.7375063,0.60758572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{7}}}%
+    \put(0.77983859,0.60758572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.06249875,0.07961524){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{-2}}}%
+    \put(0.07250456,0.1319505){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.07250456,0.18505541){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2}}}%
+    \put(0.07250456,0.23739067){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{4}}}%
+    \put(0.07250456,0.29049558){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{6}}}%
+    \put(0.07250456,0.34283084){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{8}}}%
+    \put(0.05634133,0.39593575){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{10}}}%
+    \put(0.05634133,0.44827101){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{12}}}%
+    \put(0.05634133,0.50060628){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{14}}}%
+    \put(0.05634133,0.55371118){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{16}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=2]{Vout_sine_SigBWdifferent_SameSlope_73_PeriodT_ref.pdf}}%
+    \put(0.34881894,0.64991572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sampling point}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=3]{Vout_sine_SigBWdifferent_SameSlope_73_PeriodT_ref.pdf}}%
+    \put(0.87373929,0.53677919){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{05 GHz}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=4]{Vout_sine_SigBWdifferent_SameSlope_73_PeriodT_ref.pdf}}%
+    \put(0.87373929,0.50060628){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1 GHz}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=5]{Vout_sine_SigBWdifferent_SameSlope_73_PeriodT_ref.pdf}}%
+    \put(0.87373929,0.46443338){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2 GHz}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=6]{Vout_sine_SigBWdifferent_SameSlope_73_PeriodT_ref.pdf}}%
+    \put(0.87373929,0.42826047){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{3 GHz}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=7]{Vout_sine_SigBWdifferent_SameSlope_73_PeriodT_ref.pdf}}%
+    \put(0.87373929,0.39208757){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{4 GHz}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=8]{Vout_sine_SigBWdifferent_SameSlope_73_PeriodT_ref.pdf}}%
+    \put(0.87373929,0.35591466){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{5 GHz}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=9]{Vout_sine_SigBWdifferent_SameSlope_73_PeriodT_ref.pdf}}%
+    \put(0.87373929,0.31974176){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{6 GHz}}}%
+    \put(0.02093614,0.29434376){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{Amplitude [V]}}}}%
+    \put(0.40500543,0.0003427){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Period}}}%
+  \end{picture}%
+\endgroup%
