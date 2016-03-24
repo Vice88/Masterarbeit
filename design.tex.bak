@@ -16,13 +16,32 @@ The concept of the chosen push-pull stage had the advantage of an integrated dri
 This concept is usually used for power electronics [-> which power electronic, refer to].
 The first approach of designing a Riemann Pump was with a concept of a Push-Pull stage. This push-pull stage should charge a capacitive load at the output, which is the same as a normal charge pump. Push-pull stages complementary switch a high- and lowside transistor as in a charge pump. This was one possible approach. Concept of Maksimovic.
 
+%\begin{figure}[ht]
+%	\centering
+%  \includegraphics[width=1\textwidth]{Active_PullUp3.png}
+%	\caption{Schematic of a driver circuit with push-pull stage representing one bit of the DAC called Riemann Pump}
+%	\label{RiemannPump}
+%\end{figure}
+
+
+
 \begin{figure}[ht]
 	\centering
-  \includegraphics[width=1\textwidth]{Active_PullUp3.png}
+  \includegraphics[width=1\textwidth]{Schematic_RP_concept.pdf}
 	\caption{Schematic of a driver circuit with push-pull stage representing one bit of the DAC called Riemann Pump}
 	\label{RiemannPump}
 \end{figure}
 
+%
+%\begin{figure}[htb!]
+%   \centering 
+%   \input{graphics/concept/Schematic_RP_concept.pdf_tex}
+%   \caption{Schematic of the Riemann Pump circuit}
+%   \label{fig:RiemannCodeGenerationSineWave}
+%\end{figure} 
+ 
+ 
+ 
  
 
 

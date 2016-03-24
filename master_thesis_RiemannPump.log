@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  23 MAR 2016 19:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  24 MAR 2016 17:53
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -1554,19 +1554,21 @@ ics/concept/RiemannIntegralError.pdf, page is rotated 90 degrees>] (design.tex
 
 ]
 chapter 4.
-<graphics/Active_PullUp3.png, id=155, 845.0772pt x 597.1911pt>
-File: graphics/Active_PullUp3.png Graphic file (type png)
 
-<use graphics/Active_PullUp3.png>
-Package pdftex.def Info: graphics/Active_PullUp3.png used on input line 21.
-(pdftex.def)             Requested size: 426.79141pt x 301.60191pt.
+<graphics/concept/Schematic_RP_concept.pdf, id=155, 312.98033pt x 213.39566pt>
+File: graphics/concept/Schematic_RP_concept.pdf Graphic file (type pdf)
+
+<use graphics/concept/Schematic_RP_concept.pdf>
+Package pdftex.def Info: graphics/concept/Schematic_RP_concept.pdf used on inpu
+t line 30.
+(pdftex.def)             Requested size: 426.79141pt x 291.00224pt.
  [11]
-Underfull \hbox (badness 10000) in paragraph at lines 33--39
+Underfull \hbox (badness 10000) in paragraph at lines 52--58
 
  []
 
-[12 <./graphics/Active_PullUp3.png>]
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 40.
+[12 <./graphics/concept/Schematic_RP_concept.pdf>]
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 59.
 
 (E:\WinProgram\MikTEX\tex\latex\psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -1607,25 +1609,25 @@ Package microtype Warning: Unknown slot number of character
 (microtype)                `textcomp'.
 
 
-<graphics/simulation/S_param_LoadImpedance.pdf, id=162, 845.1575pt x 597.23125p
+<graphics/simulation/S_param_LoadImpedance.pdf, id=170, 845.1575pt x 597.23125p
 t>
 File: graphics/simulation/S_param_LoadImpedance.pdf Graphic file (type pdf)
  <use graphics/simulation/S_param_LoadImpedance.pdf>
 Package pdftex.def Info: graphics/simulation/S_param_LoadImpedance.pdf used on 
-input line 51.
+input line 70.
 (pdftex.def)             Requested size: 426.79141pt x 301.59483pt.
 
-<graphics/simulation/InputCap_LoadImpedance_6GHz.pdf, id=163, 845.1575pt x 597.
+<graphics/simulation/InputCap_LoadImpedance_6GHz.pdf, id=171, 845.1575pt x 597.
 23125pt>
 File: graphics/simulation/InputCap_LoadImpedance_6GHz.pdf Graphic file (type pd
 f)
  <use graphics/simulation/InputCap_LoadImpedance_6GHz.pdf>
 Package pdftex.def Info: graphics/simulation/InputCap_LoadImpedance_6GHz.pdf us
-ed on input line 63.
+ed on input line 82.
 (pdftex.def)             Requested size: 213.3957pt x 150.79286pt.
  [13 <./graphics/simulation/S_param_LoadImpedance.pdf>]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 86.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 105.
 ) [14 <./graphics/simulation/InputCap_LoadImpedance_6GHz.pdf, page is rotated 9
 0 degrees>] [15] (simulation.tex
 [16
@@ -1644,7 +1646,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--16
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 35.
  (graphics/simulation/RiemannCodeGenerationSineWave73_latest.pdf_tex
-<graphics/simulation/RiemannCodeGenerationSineWave73_latest.pdf, id=202, page=1
+<graphics/simulation/RiemannCodeGenerationSineWave73_latest.pdf, id=210, page=1
 , 312.98033pt x 213.39566pt>
 File: graphics/simulation/RiemannCodeGenerationSineWave73_latest.pdf Graphic fi
 le (type pdf)
@@ -1657,7 +1659,7 @@ test.pdf, page1 used on input line 52.
 [18]
 (graphics/simulation/Vout_sine_SigBWdifferent_SameSlope_73_TwoPeriods.pdf_tex
 <graphics/simulation/Vout_sine_SigBWdifferent_SameSlope_73_TwoPeriods.pdf, id=2
-06, page=1, 312.98033pt x 213.39566pt>
+14, page=1, 312.98033pt x 213.39566pt>
 File: graphics/simulation/Vout_sine_SigBWdifferent_SameSlope_73_TwoPeriods.pdf 
 Graphic file (type pdf)
 
@@ -1678,7 +1680,7 @@ pdfTeX warning: pdflatex (file ./graphics/simulation/Vout_sine_SigBWdifferent_S
 ameSlope_73_TwoPeriods.pdf): PDF inclusion: multiple pdfs with page group inclu
 ded in a single page
 >]
-<graphics/simulation/Vout_sine_SigBW_05GHz_3bit_long.pdf, id=281, 845.1575pt x 
+<graphics/simulation/Vout_sine_SigBW_05GHz_3bit_long.pdf, id=289, 845.1575pt x 
 597.45204pt>
 File: graphics/simulation/Vout_sine_SigBW_05GHz_3bit_long.pdf Graphic file (typ
 e pdf)
@@ -1693,7 +1695,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--105
 
 [20 <./graphics/simulation/Vout_sine_SigBW_05GHz_3bit_long.pdf, page is rotated
  90 degrees>]
-<graphics/simulation/Vout_SynthVsTheo.pdf, id=291, 845.1575pt x 597.23125pt>
+<graphics/simulation/Vout_SynthVsTheo.pdf, id=299, 845.1575pt x 597.23125pt>
 File: graphics/simulation/Vout_SynthVsTheo.pdf Graphic file (type pdf)
 
 <use graphics/simulation/Vout_SynthVsTheo.pdf>
@@ -1705,7 +1707,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--127
 
  []
 
-<graphics/simulation/SineCompare.pdf, id=292, 845.1575pt x 597.23125pt>
+<graphics/simulation/SineCompare.pdf, id=300, 845.1575pt x 597.23125pt>
 File: graphics/simulation/SineCompare.pdf Graphic file (type pdf)
 
 <use graphics/simulation/SineCompare.pdf>
@@ -1714,7 +1716,7 @@ Package pdftex.def Info: graphics/simulation/SineCompare.pdf used on input line
 (pdftex.def)             Requested size: 426.79141pt x 301.59483pt.
  [21 <./graphics/simulation/Vout_SynthVsTheo.pdf, page is rotated 90 degrees>] 
 [22 <./graphics/simulation/SineCompare.pdf, page is rotated 90 degrees>]
-<graphics/simulation/Vout_7sine_SameSigBWdifferent_DifferentSlope.pdf, id=311, 
+<graphics/simulation/Vout_7sine_SameSigBWdifferent_DifferentSlope.pdf, id=319, 
 845.1575pt x 597.23125pt>
 File: graphics/simulation/Vout_7sine_SameSigBWdifferent_DifferentSlope.pdf Grap
 hic file (type pdf)
@@ -1768,22 +1770,30 @@ chapter 8.
 
 
 ] [37]
-[38]) [39] [40
+[38]
+<graphics/photos/Demonstrator_edited.png, id=377, 213.4374pt x 221.8689pt>
+File: graphics/photos/Demonstrator_edited.png Graphic file (type png)
+
+<use graphics/photos/Demonstrator_edited.png>
+Package pdftex.def Info: graphics/photos/Demonstrator_edited.png used on input 
+line 31.
+(pdftex.def)             Requested size: 320.09355pt x 332.78558pt.
+) [39 <./graphics/photos/Demonstrator_edited.png>] [40
 
 
 
-] (master_thesis_RiemannPump.aux (preface.aux) (stateoftheart.aux) (fundamental
-s.aux) (design.aux) (simulation.aux) (layout.aux)
-(measurement.aux) (conclusion.aux) (appendix.aux))
+] (master_thesis_RiemannPump.aux (preface.aux)
+(stateoftheart.aux) (fundamentals.aux) (design.aux) (simulation.aux)
+(layout.aux) (measurement.aux) (conclusion.aux) (appendix.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 38917 strings out of 493673
- 747258 string characters out of 3146818
- 853840 words of memory out of 3000000
- 41329 multiletter control sequences out of 15000+200000
+ 38926 strings out of 493673
+ 747600 string characters out of 3146818
+ 853851 words of memory out of 3000000
+ 41334 multiletter control sequences out of 15000+200000
  70924 words of font info for 229 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  71i,12n,79p,10425b,1266s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1799,9 +1809,9 @@ kTEX/fonts/type1/urw/times/utmb8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/tim
 es/utmbi8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinPr
 ogram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on master_thesis_RiemannPump.pdf (52 pages, 956278 bytes).
+Output written on master_thesis_RiemannPump.pdf (52 pages, 2310347 bytes).
 PDF statistics:
- 422 PDF objects out of 1000 (max. 8388607)
+ 431 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41048 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 41053 words of extra memory for PDF output out of 42996 (max. 10000000)
 

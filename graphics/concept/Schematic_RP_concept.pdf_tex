@@ -1,0 +1,135 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Schematic_RP_concept.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{311.81102362bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.68181818)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Schematic_RP_concept.pdf}}%
+    \put(-3.31258772,0.61230664){\color[rgb]{0.83137255,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{\textbf{sources & con}}}}}%
+    \put(-3.31258772,0.12139754){\color[rgb]{0.2,0.6,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{\textbf{linear}}}}}%
+    \put(-3.31280954,-0.47838019){\color[rgb]{0.99215686,0.2,0.00392157}\rotatebox{90}{\makebox(0,0)[lb]{\smash{\textbf{transformers}}}}}%
+    \put(-2.22167859,0.6123066){\color[rgb]{0.00392157,0.59215686,0.99215686}\rotatebox{90}{\makebox(0,0)[lb]{\smash{\textbf{switches etc.}}}}}%
+    \put(-2.22167859,0.13957934){\color[rgb]{0.99215686,0.79215686,0.00392157}\rotatebox{90}{\makebox(0,0)[lb]{\smash{\textbf{diodes}}}}}%
+    \put(-2.22167851,-0.824057){\color[rgb]{0.4,0,0.8}\rotatebox{90}{\makebox(0,0)[lb]{\smash{\textbf{description}}}}}%
+    \put(-1.13076954,0.30321574){\color[rgb]{1,0,1}\rotatebox{90}{\makebox(0,0)[lb]{\smash{\textbf{transistors etc.}}}}}%
+    \put(-1.13076939,-0.98769339){\color[rgb]{0.2,0.4,0.6}\rotatebox{90}{\makebox(0,0)[lb]{\smash{\textbf{ICs}}}}}%
+    \put(-0.14144696,-1.44224101){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\textbf{electrical components library for SVG schematics drawing}\textbf{\\ }\textbf{Filip Dominec et al. 2007-04-12, Wikimedia Commons, PD}}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=2]{Schematic_RP_concept.pdf}}%
+    \put(-3.31258762,-1.06042061){\color[rgb]{0.50588235,0.4,0.27843137}\rotatebox{90}{\makebox(0,0)[lb]{\smash{\textbf{other stuff}}}}}%
+ %   \put(0,0){\includegraphics[width=\unitlength,page=3]{Schematic_RP_concept.pdf}}%
+    \put(-2.22167851,-1.31282929){\color[rgb]{0.40392157,0.34509804,0.10980392}\rotatebox{90}{\makebox(0,0)[lb]{\smash{\textbf{one-lline diagr.}}}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=4]{Schematic_RP_concept.pdf}}%
+    \put(-3.08199196,0.87968376){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+5 V}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=5]{Schematic_RP_concept.pdf}}%
+    \put(-1.0638742,-0.15316015){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{7805}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=6]{Schematic_RP_concept.pdf}}%
+    \put(-2.17267998,-0.24743382){\color[rgb]{0,0.4,1}\makebox(0,0)[lb]{\smash{V}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=7]{Schematic_RP_concept.pdf}}%
+    \put(-1.95449931,-0.24743495){\color[rgb]{0.21568627,0.78431373,0.21568627}\makebox(0,0)[lb]{\smash{A}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=8]{Schematic_RP_concept.pdf}}%
+    \put(-1.53631575,-0.10235812){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{R}}}}%
+    \put(-1.48278116,-0.12769453){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
+    \put(-1.44540689,-0.10235812){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{C}}}}%
+    \put(-1.39616504,-0.12483275){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
+    \put(-1.35449771,-0.10235812){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{L}}}}%
+    \put(-1.30668683,-0.12769453){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=9]{Schematic_RP_concept.pdf}}%
+    \put(-0.89911372,0.03866921){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{7404}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=10]{Schematic_RP_concept.pdf}}%
+    \put(-0.5892836,0.07483707){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{abcd\\ efgh}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=11]{Schematic_RP_concept.pdf}}%
+    \put(-0.3186726,0.0730118){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{NE\\ 555}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=12]{Schematic_RP_concept.pdf}}%
+    \put(-1.03501245,-0.35666393){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{J}\textbf{\\ }\textbf{C}\textbf{\\ }\textbf{K}}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=13]{Schematic_RP_concept.pdf}}%
+    \put(-1.91778353,-0.40316726){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{A}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=14]{Schematic_RP_concept.pdf}}%
+    \put(-2.13596512,-0.41121907){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{V}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=15]{Schematic_RP_concept.pdf}}%
+    \put(-8.12577285,2.02694068){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(-8.01147842,1.72215617){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=16]{Schematic_RP_concept.pdf}}%
+    \put(-1.54562894,-0.29304486){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textit{M}}}}%
+    \put(-1.49108353,-0.31122666){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{rS}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=17]{Schematic_RP_concept.pdf}}%
+    \put(-1.70826234,-0.29304486){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textit{V}}}}%
+    \put(-1.68199271,-0.3121617){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{A}}}%
+    \put(-1.36520444,-0.29466092){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textit{I}}}}%
+    \put(-1.34562894,-0.31122666){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{S}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=18]{Schematic_RP_concept.pdf}}%
+    \put(-2.03530904,-0.60663797){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{G}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=19]{Schematic_RP_concept.pdf}}%
+    \put(0.18975377,0.25435212){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Vdriver_neg}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=20]{Schematic_RP_concept.pdf}}%
+    \put(0.02750803,0.25623339){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Vdc_offset}}}%
+ %   \put(0,0){\includegraphics[width=\unitlength,page=21]{Schematic_RP_concept.pdf}}%
+    \put(0.41096133,0.04937804){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Vdc_offset}}}%
+ %   \put(0,0){\includegraphics[width=\unitlength,page=22]{Schematic_RP_concept.pdf}}%
+    \put(0.55212246,0.04729092){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Vdriver_neg}}}%
+ %   \put(0,0){\includegraphics[width=\unitlength,page=23]{Schematic_RP_concept.pdf}}%
+    \put(0.49176151,0.11391079){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Vin ¬A(t)}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=24]{Schematic_RP_concept.pdf}}%
+    \put(0.11103878,0.31805617){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Vin A(t)}}}%
+%    \put(0,0){\includegraphics[width=\unitlength,page=25]{Schematic_RP_concept.pdf}}%
+    \put(0.41540414,0.39549452){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Vdriver_pos}}}%
+ %   \put(0,0){\includegraphics[width=\unitlength,page=26]{Schematic_RP_concept.pdf}}%
+    \put(0.74118047,0.6362922){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Vdd}}}%
+ %   \put(0,0){\includegraphics[width=\unitlength,page=27]{Schematic_RP_concept.pdf}}%
+    \put(0.4679897,0.24262005){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{R2}}}%
+    \put(0.24276992,0.4608178){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{R1}}}%
+    \put(0.26083834,0.36634468){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Qbhighside}}}%
+    \put(0.25993434,0.5714246){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Qlhighside}}}%
+    \put(0.47970543,0.32132488){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Qllowside}}}%
+    \put(0.62095281,0.15675191){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Qblowside}}}%
+    \put(0.77904543,0.34594618){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Qlowside}}}%
+    \put(0.77904495,0.51829475){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Qhighside}}}%
+ %   \put(0,0){\includegraphics[width=\unitlength,page=28]{Schematic_RP_concept.pdf}}%
+    \put(0.86812665,0.40457696){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.92936385,0.40296369){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Vout}}}%
+  \end{picture}%
+\endgroup%
