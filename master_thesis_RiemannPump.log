@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  24 MAR 2016 17:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  25 MAR 2016 19:27
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -1504,50 +1504,49 @@ chapter 2.
 chapter 3.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 5.
-<graphics/concept/ChargePump.pdf, id=82, 845.1575pt x 597.23125pt>
+[5] <graphics/concept/ChargePump.pdf, id=85, 845.1575pt x 597.23125pt>
 File: graphics/concept/ChargePump.pdf Graphic file (type pdf)
 
 <use graphics/concept/ChargePump.pdf>
-Package pdftex.def Info: graphics/concept/ChargePump.pdf used on input line 13.
+Package pdftex.def Info: graphics/concept/ChargePump.pdf used on input line 19.
 
 (pdftex.def)             Requested size: 213.3957pt x 150.79286pt.
- [5]
+
 <graphics/concept/RP_concept.pdf, id=86, 845.1575pt x 597.23125pt>
 File: graphics/concept/RP_concept.pdf Graphic file (type pdf)
 
 <use graphics/concept/RP_concept.pdf>
-Package pdftex.def Info: graphics/concept/RP_concept.pdf used on input line 26.
+Package pdftex.def Info: graphics/concept/RP_concept.pdf used on input line 32.
 
 (pdftex.def)             Requested size: 213.3957pt x 150.79286pt.
- [6 <./graphics/concept/ChargePump.pdf, page is rotated 90 degrees> <./graphics
-/concept/RP_concept.pdf, page is rotated 90 degrees>]
-<graphics/concept/SlopesAndTable.pdf, id=112, 845.1575pt x 597.23125pt>
+
+<graphics/concept/SlopesAndTable.pdf, id=87, 845.1575pt x 597.23125pt>
 File: graphics/concept/SlopesAndTable.pdf Graphic file (type pdf)
 
 <use graphics/concept/SlopesAndTable.pdf>
 Package pdftex.def Info: graphics/concept/SlopesAndTable.pdf used on input line
- 35.
+ 41.
 (pdftex.def)             Requested size: 320.09355pt x 226.19385pt.
-
-<graphics/concept/RiemannIntegral.pdf, id=113, 845.1575pt x 597.23125pt>
+ [6 <./graphics/concept/ChargePump.pdf, page is rotated 90 degrees>]
+<graphics/concept/RiemannIntegral.pdf, id=101, 845.1575pt x 597.23125pt>
 File: graphics/concept/RiemannIntegral.pdf Graphic file (type pdf)
 
 <use graphics/concept/RiemannIntegral.pdf>
 Package pdftex.def Info: graphics/concept/RiemannIntegral.pdf used on input lin
-e 44.
+e 50.
 (pdftex.def)             Requested size: 320.09355pt x 226.19385pt.
 
-<graphics/concept/RiemannIntegralError.pdf, id=114, 845.1575pt x 597.23125pt>
+<graphics/concept/RiemannIntegralError.pdf, id=102, 845.1575pt x 597.23125pt>
 File: graphics/concept/RiemannIntegralError.pdf Graphic file (type pdf)
 
 <use graphics/concept/RiemannIntegralError.pdf>
 Package pdftex.def Info: graphics/concept/RiemannIntegralError.pdf used on inpu
-t line 51.
+t line 57.
 (pdftex.def)             Requested size: 320.09355pt x 226.19385pt.
-) [7 <./graphics/concept/SlopesAndTable.pdf, page is rotated 90 degrees>] [8 <.
-/graphics/concept/RiemannIntegral.pdf, page is rotated 90 degrees>] [9 <./graph
-ics/concept/RiemannIntegralError.pdf, page is rotated 90 degrees>] (design.tex 
-[10
+) [7 <./graphics/concept/RP_concept.pdf, page is rotated 90 degrees>] [8 <./gra
+phics/concept/SlopesAndTable.pdf, page is rotated 90 degrees> <./graphics/conce
+pt/RiemannIntegral.pdf, page is rotated 90 degrees>] [9 <./graphics/concept/Rie
+mannIntegralError.pdf, page is rotated 90 degrees>] (design.tex [10
 
 
 
@@ -1809,7 +1808,7 @@ kTEX/fonts/type1/urw/times/utmb8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/tim
 es/utmbi8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinPr
 ogram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on master_thesis_RiemannPump.pdf (52 pages, 2310347 bytes).
+Output written on master_thesis_RiemannPump.pdf (52 pages, 2310800 bytes).
 PDF statistics:
  431 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -5,8 +5,8 @@
 \contentsline {chapter}{\numberline {3}Fundamentals-Theory for this approach to reach 5G}{5}
 \contentsline {section}{\numberline {3.1}Concept of Software-defined radio}{5}
 \contentsline {section}{\numberline {3.2}Idea of the Riemann Pump}{5}
-\contentsline {section}{\numberline {3.3}Characteristics of high speed Digtial-to-Analog converter}{8}
-\contentsline {section}{\numberline {3.4}summary - evaluation}{8}
+\contentsline {section}{\numberline {3.3}Characteristics of high speed Digtial-to-Analog converter}{7}
+\contentsline {section}{\numberline {3.4}summary - evaluation}{7}
 \contentsline {chapter}{\numberline {4}Riemann Pump Circuit design}{11}
 \contentsline {section}{\numberline {4.1}Approach and implementation of the Riemann Pump}{11}
 \contentsline {section}{\numberline {4.2}Identification of the load impedance}{12}

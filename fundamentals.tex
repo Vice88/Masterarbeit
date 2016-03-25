@@ -6,6 +6,12 @@ In the following some fundamentals are described shortly.
 The concept of software-defined radio is adapted to deal with the old problems of mobile communication. The idea is to bring the digital domain as close as possible to the RFFE. The reason is digital filtering, data processing is more efficient, easier, less complex, has less cost, and so on. The main problem of this approach is the energy consumption based on an inefficient ADC/DAC. However the concept is very helpful for future designs of an digital front end. The Software-defined radio has the advantage, that it is adaptiv for future software changes. the hardware is still the same, only the firmware has to be upgraded. broad spectrum of signal can be received with this architecture. from nearly DC to 2 GHz. For future mobile communication standards, the frequency range has to deal with frequencies beyond 2 GHz up to 6 GHz. Nowadays IEEE802.11ac standard is located at 5GHz. Based on this concept a digital-analog converter is designed to deal with a higher bandwith than other devices nowadays. The DAC is used in the transmission path of the design.
 %\section{An approach to reach the desired high speed for the digital-to-analog converter: The Riemann Pump}
 \section{Idea of the Riemann Pump}
+The Riemann Pump is arbitrary waveform generator which is controlled through a digital input control voltage.
+Therefore this can be seen as a \gls{ab:dac} too.
+By applying a digital input voltage of \SI{5}{\volt} a arbitrary wave form can be generated.
+The concept is based on the idea to charge a capacitor at the output.
+The benefit of this concept is that the output capacitor can be realized with a pre power amplifier, because that got a capacitive input characteristic.
+Therefore the signal can be directly amplified and transmitted.
 The Riemann Pump, named after the mathematician Riemann, who founded the Riemann Integral, is a special charge pump. A charge pump as the name suggests pumps electrons into a capacitve load. Across the load capacitance a voltage is created. By adjusting the switches for up or down the voltage can be adjusted, as seen in Fig. \ref{fig:ChargePump}. 
 
 \begin{figure}[ht]
