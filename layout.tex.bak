@@ -6,10 +6,18 @@ Therefore a two layer substrate could be used to keep it small and simple.
 For the realisation two different versions of the demonstrator were designed. 
 Both realisations were based on the former work from Stephan Maroldt who designed the chips. 
 \section{Demonstrator using DDRi\_X6 and DDRi\_Y6 chips}
+\begin{enumerate}
+	\item Highside driver load transistor voltage connected to Vdd
+	\item Highside driver load transistor voltage connected to Vout
+\end{enumerate}
 A pad ,which is surrounded by the conductive layer with its via holes, is used because the chips DDrixy6 are connected to its metallized backside by through hole vias. In order to realize a Vdd supply voltage at the drain of this power mosfet and the output signal at the source, the chip does not be soldered onto the gnd layer of the substrate. 
 Because otherwise the circuit would not work in a proper form.
 The schematic show that the output power transistor stage has to switch in a push-pull format. So the drain of the highside transistor is connected to Vdd which is realized with the chips on the rf pad. The lowside transistor and its driver circuit is the chip soldered on the substrate.
 \section{Demonstrator using DDRi\_2C chips}
+\begin{enumerate}
+	\item Highside driver load transistor voltage connected to Vdd
+	\item Highside driver load transistor voltage connected to Vout
+\end{enumerate}
 In fact of that for this chips no backside connection to the chip backside exists, this chip can be directly soldered onto the substrate without losing the functionality.
 In contrast to the other version, here the gnd pads of the chip have to be bonded onto the substrate gnd. This version could be more convenient due to the better heat dissipation.
 The used chips:

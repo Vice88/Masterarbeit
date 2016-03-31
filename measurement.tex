@@ -1,4 +1,4 @@
-\chapter{Measurement results}
+\chapter{Circuit output measurement results in time domain}
 \textit{The heart of the thesis, comprising a presentation of the functioning system and thus the culmination of the work. Important is an analysis of the results as well as a comparison with the state of the art. The reader should understand in this section why you should be awarded a MSc degree.}
 
 To demonstrate that the designed circuits really can synthesize a signal from a digital input signal, a time domain measurement would be necessary.
@@ -37,8 +37,15 @@ This is a nice way to simulate a capacitive load at the output to show the behav
 By using this active load pull system, we have to reduce the number of bits for the resolution to one bit due to the fact, that the system only provide the option to handle four harmonics. 
 We already use two harmonics for the differential input signal and one harmonic for the output tuning the impedance. 
 Hence there is only one harmonic left for which no other input can controlled since two signals are necessary to get a differential input signal.
-
-\section{Measurement results/ Proof of concept / Discussion of measurement results}
+\section{Time domain measurement}
+\begin{enumerate}
+	\item calibration measurement instruments
+	\item DC supply check - whether oscillates or not
+	\item Output measurement for switching 1-bit
+	\item \textit{passive cap at the load to show the concurrent switching of both bits}
+	\item \textit{anteverta system to realize a capacitive load impedance}
+\end{enumerate}
+\section{Discussion of measurement results}
 In a first step it is to show that the designed circuit converts a digital signal to an analog one. It would be nice to see any effect corresponding to the digital to analogue conversion. \\
 \textit{is it possible to measure the heat spreading on the substrate?}
 Is the measurement result expected due to the simulation? Can the demonstrator be simulated although no model for this chips exists? The real simulation are not done due to the fact that no losses respected.

@@ -26,12 +26,13 @@
 	\item \textit{$\rightarrow$ riemanncode generation not possible}?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 \end{enumerate}
 \vspace{1cm}
-\textbf{questions}
+\textbf{Question}
 \begin{enumerate}
-	\item mmW band much higher BW,Datarate,Spectrum - why use the old fashioned frequency bands from DC to 6GHz instead of using a couple of GHz?
-	\begin{itemize}
-		\item Signal generation is done for the bandwidth of 0..\SI{6}{\GHz}, after that it could be mixed up to higher frequency bands like \SI{47}{\GHz} to \SI{53}{\GHz}
-	\end{itemize}
+%	\item mmW band much higher BW,Datarate,Spectrum - why use the old fashioned frequency bands from DC to 6GHz instead of using a couple of GHz?
+%	\begin{itemize}
+%		\item carrier frequencies of modern telecommunication standards are in the range of DC to 6 GHz
+%		\item Signal generation is done for the bandwidth of 0..\SI{6}{\GHz}, after that it could be mixed up to higher frequency bands like \SI{47}{\GHz} to \SI{53}{\GHz}
+%	\end{itemize}
 	\item trade off between BW and losses
 	\begin{itemize}
 		\item higher bandwidth means higher switching speed means higher losses due to the fact that the losses increase linear with the switching speed
