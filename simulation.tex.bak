@@ -216,9 +216,10 @@ The losses are divided into dynamic losses of the switches and static losses.
 
 \section{Proof of concept simulation with existing components}
 \label{ch:ProofOfConceptWithExistingComponents}
-This simulation is based on the measurements and the design of various chips from Stephan Maroldt.
-This two bit resolution simulation is done to compare the demonstrators measurements with the simulation. \textbf{two-bit resolution, osr = 4, keep it small and simple, frequency higher, demonstrator, assembly, less complex} 
-The three bit resolution DAC was too complex to realize in a first approach on a hybrid substrate. Therefore an easier approach was designed to validate the proof of concept.
+Simulation with ideal components but with the real dimension is done to compare with the measurement results. 
+
+This two bit (resolution) simulation is done to compare the demonstrators measurements with the simulation. \textbf{two-bit resolution, osr = 4, keep it small and simple, frequency higher, demonstrator, assembly, less complex} 
+
 
 \section{Evaluation of the simulation results for the Riemann Pump}
 Nonetheless the number of signals which can be synthesized with this particular concept is increased with the possibility to change to another combination of slopes to approximate the signal.

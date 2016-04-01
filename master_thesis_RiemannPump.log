@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  31 MAR 2016 18:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  1 APR 2016 19:02
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -1508,7 +1508,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
 File: graphics/concept/ChargePump.pdf Graphic file (type pdf)
 
 <use graphics/concept/ChargePump.pdf>
-Package pdftex.def Info: graphics/concept/ChargePump.pdf used on input line 19.
+Package pdftex.def Info: graphics/concept/ChargePump.pdf used on input line 23.
 
 (pdftex.def)             Requested size: 213.3957pt x 150.79286pt.
 
@@ -1516,24 +1516,24 @@ Package pdftex.def Info: graphics/concept/ChargePump.pdf used on input line 19.
 File: graphics/concept/RP_concept.pdf Graphic file (type pdf)
 
 <use graphics/concept/RP_concept.pdf>
-Package pdftex.def Info: graphics/concept/RP_concept.pdf used on input line 32.
+Package pdftex.def Info: graphics/concept/RP_concept.pdf used on input line 36.
 
 (pdftex.def)             Requested size: 213.3957pt x 150.79286pt.
-
-<graphics/concept/SlopesAndTable.pdf, id=87, 845.1575pt x 597.23125pt>
+ [6 <./graphics/concept/ChargePump.pdf, page is rotated 90 degrees>]
+<graphics/concept/SlopesAndTable.pdf, id=100, 845.1575pt x 597.23125pt>
 File: graphics/concept/SlopesAndTable.pdf Graphic file (type pdf)
 
 <use graphics/concept/SlopesAndTable.pdf>
 Package pdftex.def Info: graphics/concept/SlopesAndTable.pdf used on input line
- 41.
+ 45.
 (pdftex.def)             Requested size: 320.09355pt x 226.19385pt.
- [6 <./graphics/concept/ChargePump.pdf, page is rotated 90 degrees>]
+
 <graphics/concept/RiemannIntegral.pdf, id=101, 845.1575pt x 597.23125pt>
 File: graphics/concept/RiemannIntegral.pdf Graphic file (type pdf)
 
 <use graphics/concept/RiemannIntegral.pdf>
 Package pdftex.def Info: graphics/concept/RiemannIntegral.pdf used on input lin
-e 50.
+e 54.
 (pdftex.def)             Requested size: 320.09355pt x 226.19385pt.
 
 <graphics/concept/RiemannIntegralError.pdf, id=102, 845.1575pt x 597.23125pt>
@@ -1541,10 +1541,10 @@ File: graphics/concept/RiemannIntegralError.pdf Graphic file (type pdf)
 
 <use graphics/concept/RiemannIntegralError.pdf>
 Package pdftex.def Info: graphics/concept/RiemannIntegralError.pdf used on inpu
-t line 57.
+t line 61.
 (pdftex.def)             Requested size: 320.09355pt x 226.19385pt.
-) [7 <./graphics/concept/RP_concept.pdf, page is rotated 90 degrees>] [8 <./gra
-phics/concept/SlopesAndTable.pdf, page is rotated 90 degrees> <./graphics/conce
+ [7 <./graphics/concept/RP_concept.pdf, page is rotated 90 degrees> <./graphics
+/concept/SlopesAndTable.pdf, page is rotated 90 degrees>]) [8 <./graphics/conce
 pt/RiemannIntegral.pdf, page is rotated 90 degrees>] [9 <./graphics/concept/Rie
 mannIntegralError.pdf, page is rotated 90 degrees>] (design.tex [10
 
@@ -1554,20 +1554,24 @@ mannIntegralError.pdf, page is rotated 90 degrees>] (design.tex [10
 ]
 chapter 4.
 
-<graphics/concept/Schematic_RP_concept.pdf, id=155, 312.98033pt x 213.39566pt>
-File: graphics/concept/Schematic_RP_concept.pdf Graphic file (type pdf)
-
-<use graphics/concept/Schematic_RP_concept.pdf>
-Package pdftex.def Info: graphics/concept/Schematic_RP_concept.pdf used on inpu
-t line 30.
-(pdftex.def)             Requested size: 426.79141pt x 291.00224pt.
- [11]
-Underfull \hbox (badness 10000) in paragraph at lines 52--58
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[12 <./graphics/concept/Schematic_RP_concept.pdf>]
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 59.
+[11]
+<graphics/concept/Schematic_RP_concept2.pdf, id=158, 312.98033pt x 213.39566pt>
+File: graphics/concept/Schematic_RP_concept2.pdf Graphic file (type pdf)
+<use graphics/concept/Schematic_RP_concept2.pdf>
+Package pdftex.def Info: graphics/concept/Schematic_RP_concept2.pdf used on inp
+ut line 42.
+(pdftex.def)             Requested size: 320.09355pt x 218.25006pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--70
+
+ []
+
+[12 <./graphics/concept/Schematic_RP_concept2.pdf>]
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 71.
 
 (E:\WinProgram\MikTEX\tex\latex\psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -1613,7 +1617,7 @@ t>
 File: graphics/simulation/S_param_LoadImpedance.pdf Graphic file (type pdf)
  <use graphics/simulation/S_param_LoadImpedance.pdf>
 Package pdftex.def Info: graphics/simulation/S_param_LoadImpedance.pdf used on 
-input line 70.
+input line 82.
 (pdftex.def)             Requested size: 426.79141pt x 301.59483pt.
 
 <graphics/simulation/InputCap_LoadImpedance_6GHz.pdf, id=171, 845.1575pt x 597.
@@ -1622,14 +1626,15 @@ File: graphics/simulation/InputCap_LoadImpedance_6GHz.pdf Graphic file (type pd
 f)
  <use graphics/simulation/InputCap_LoadImpedance_6GHz.pdf>
 Package pdftex.def Info: graphics/simulation/InputCap_LoadImpedance_6GHz.pdf us
-ed on input line 82.
-(pdftex.def)             Requested size: 213.3957pt x 150.79286pt.
- [13 <./graphics/simulation/S_param_LoadImpedance.pdf>]
+ed on input line 94.
+(pdftex.def)             Requested size: 320.09355pt x 226.19385pt.
+ [13]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 105.
-) [14 <./graphics/simulation/InputCap_LoadImpedance_6GHz.pdf, page is rotated 9
-0 degrees>] [15] (simulation.tex
-[16
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 117.
+)
+[14 <./graphics/simulation/S_param_LoadImpedance.pdf>] [15 <./graphics/simulati
+on/InputCap_LoadImpedance_6GHz.pdf, page is rotated 90 degrees>]
+(simulation.tex [16
 
 
 
@@ -1737,47 +1742,47 @@ chapter 6.
 
 
 
-] [28]) [29] (measurement.tex [30
-
-
-
-
-]
+] [28]) [29] [30] (measurement.tex
 chapter 7.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--15
 
  []
 
-[31]) [32] (conclusion.tex
+[31
+
+
+
+
+]) [32] [33] (conclusion.tex [34
+
+
+
+
+]
 chapter 8.
-) [33
+) [35] [36
 
 
 
-
-] [34
-
-
-
-] (master_thesis_RiemannPump.bbl) [35
+] (master_thesis_RiemannPump.bbl) [37
 
 
 
-] (appendix.tex [36
+] (appendix.tex [38
 
 
 
-] [37]
-[38]
-<graphics/photos/Demonstrator_edited.png, id=377, 213.4374pt x 221.8689pt>
+] [39]
+[40]
+<graphics/photos/Demonstrator_edited.png, id=383, 213.4374pt x 221.8689pt>
 File: graphics/photos/Demonstrator_edited.png Graphic file (type png)
 
 <use graphics/photos/Demonstrator_edited.png>
 Package pdftex.def Info: graphics/photos/Demonstrator_edited.png used on input 
 line 31.
 (pdftex.def)             Requested size: 320.09355pt x 332.78558pt.
-) [39 <./graphics/photos/Demonstrator_edited.png>] [40
+) [41 <./graphics/photos/Demonstrator_edited.png>] [42
 
 
 
@@ -1789,10 +1794,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 38924 strings out of 493673
- 747585 string characters out of 3146818
- 853851 words of memory out of 3000000
- 41334 multiletter control sequences out of 15000+200000
+ 38921 strings out of 493673
+ 747519 string characters out of 3146818
+ 853836 words of memory out of 3000000
+ 41331 multiletter control sequences out of 15000+200000
  70860 words of font info for 228 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  71i,12n,79p,10425b,1266s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1808,9 +1813,9 @@ kTEX/fonts/type1/urw/times/utmb8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/tim
 es/utmbi8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinPr
 ogram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on master_thesis_RiemannPump.pdf (52 pages, 2310509 bytes).
+Output written on master_thesis_RiemannPump.pdf (54 pages, 2311245 bytes).
 PDF statistics:
- 431 PDF objects out of 1000 (max. 8388607)
+ 437 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41053 words of extra memory for PDF output out of 42996 (max. 10000000)
 

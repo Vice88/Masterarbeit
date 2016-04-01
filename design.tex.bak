@@ -1,15 +1,26 @@
-\chapter{Riemann Pump Circuit design}
+\chapter{Riemann Pump circuit design}
 \label{ch:design}
-\textit{Description of the approach you have taken to solve the scientific or technical problem which you were posed. Outline the design, the methodology and overall structure of your experimental approach}\\ 
-After a literature survey on the topic of the Riemann Pump and the corresponding high speed \gls{ab:dac} an approach is chosen to implement which seems to fulfill the most of the characteristic parameters \ref{ch:characteristics}.
-This concept of push-pull stage seems to fit the best in a simple way with elements already used... -> verified, validated, tested, measured,...
-In addition to this parameters the realised approach is a first, easy to implement way to design such a complex system.
-Since the scope of the thesis is limited to time issues and there was no time for a stand alone design and redesign an already known concept of D. Maksimovic \cite{MaksimovicPaper} is used.
-
-The concept of the Riemann Pump as seen in Fig. \ref{fig:RiemannPumpConcept} is realised with the design tool \gls{ab:ads}.
-The first step was to design a 
-A digitally controlled charge pump with eight different slopes is created, called Riemann Pump. To show that this pump is able to convert a digital signal into an analog one an example code is generated. As a MATLAB algorithm do not exists, which computes the Riemann Code, it is done by hand.
+\textit{Description of the approach you have taken to solve the scientific or technical problem which you were posed. Outline the design, the methodology and overall structure of your experimental approach}\\
+Designing an arbitrary waveform generator for a signal bandwidth of 6 GHz with a moderate energy consumption. 
+The generator need two high speed switches, which can driver power.
+Therefore the problem is to find a suitable, efficient, high speed switch, which can drive power in high frequency applications.
+As the GaN HEMT technology cover the aspect of driving high power in high frequencies this is chosen for the design.
+Taking this technology lead to the problem of switching a highside transistor to the supply rail in fact of the absence of p-type transistor.
+This design is a push-pull stage.
+To drive a n-type transistor to the supply rail, a driver circuit is needed.
+A suitable driver circuit was found in the concepts of D. Maksimovic, who describes the principle of a push-pull stage for power applications.
+This principle is adapted to the need of this work.
+The speed of the switches is crucial as a broadband signal should be synthesized.
+To propagate the generated output signal, it controls the input of a power amplifier, namely a GaN HEMT.
+The properties of the GaN makes it suitable to generate power in high frequency application.
+\\
+Using a well known concept got the advantage of verification, validation and knowing the drawbacks.
+In addition to this it was possible to use the work of a former employee, which makes it easier to realize, since a new MMIC desing was not in the scope of this thesis.
+\\
+To show the feasibility of the concept of realizing a Riemann Pump, the attention was not driven to energy consumption nor efficiency while to proof the concept.
 In fact of the high energy consumption, the realized DAC is designed for the integration in a base station. Because it converts a digital bit sequence into an analog rf signal it is implemented in the transmitting path. Based on the idea of a push-pull stage the load impedance of the charge pump is designed first.
+
+
 \section{Approach and implementation of the Riemann Pump}
 One possible approach to design a charge pump as shown in Fig. \ref{fig:RiemannPumpConcept} was with concept of a Push-Pull stage.
 The concept of the chosen push-pull stage had the advantage of an integrated driver circuit which allows to switch the high side transistor efficient.
@@ -27,7 +38,7 @@ The first approach of designing a Riemann Pump was with a concept of a Push-Pull
 
 \begin{figure}[ht]
 	\centering
-  \includegraphics[width=1\textwidth]{Schematic_RP_concept.pdf}
+  \includegraphics[width=.75\textwidth]{Schematic_RP_concept2.pdf}
 	\caption{Schematic of a push-pull stage with corresponding driver representing one bit of the Riemann Pump}
 	\label{RiemannPump}
 \end{figure}
@@ -79,7 +90,7 @@ C = \frac{1}{2 \pi f X_c}
 
  \begin{figure}[ht]
 	\centering
-  \includegraphics[width=0.5\textwidth]{InputCap_LoadImpedance_6GHz.pdf}
+  \includegraphics[width=0.75\textwidth]{InputCap_LoadImpedance_6GHz.pdf}
 	\caption{frequency dependent input capacitance of the load}
 	\label{fig:smith_load_impedance_inC}
 \end{figure}

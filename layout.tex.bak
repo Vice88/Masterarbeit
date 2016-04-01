@@ -1,7 +1,17 @@
 \chapter{Realisation of a demonstrator}
 %Outline of the technologies used to fabricate and assemble your structures, if applicable. Detailed processes belong in the appendix. If numerous types of structures were fabricated, or assembly technology is extensive, there may be more than one of these chapters. \textbf{Characterization} Description of the means developed and employed to characterize the devices or systems that have been fabricated.
-The realisation of the demonstrated concepts on a hybrid substrate was one goal of this thesis, to show its feasibility.
-To avoid building a too complex structure on a hybrid board the resolution of the \gls{ab:dac} was restricted to two bit.
+%The realisation of the demonstrated concepts on a hybrid substrate was one goal of this thesis, to show its feasibility.
+The demonstrator consists of integrated chips with a filter network built by discrete components.
+Therefore the circuit is a hybrid built circuit.
+To avoid building a too complex structure the resolution of the \gls{ab:dac} was restricted to two bit.
+With two bit resolution there are already four inputs which need to be controlled.
+This four input have to be controlled via a high speed digital signal with a peak to peak value of 5 volt, to ensure that the input mosfet is fully opened or fully closed.
+The input control signal is amplified due to a pre amplifier for the frequency from kHz to several tens of GHz.
+This broadband is needed for the harmonics of the rectangular signal.
+Then the bias voltage is set due to a bias tee.
+This makes the setup more complex. 
+If a third bit was added this control setup would increase, too.
+
 Therefore a two layer substrate could be used to keep it small and simple.
 For the realisation two different versions of the demonstrator were designed. 
 Both realisations were based on the former work from Stephan Maroldt who designed the chips. 
@@ -26,7 +36,8 @@ The used chips:
 	\item DDRi\_2C
 \end{enumerate}
 were designed but unfortunately they do not have a simulation model which would make it easier to simulate the outcome. \\
-The design and processing of a brand new mmic structure which contains the riemann pump circuit was beyond the scope of this thesis, so it was a nice way to proof the concept to use the former designed chips.
+The design and processing of a MMIC structure containing the Riemann Pump circuit was beyond the scope of this thesis.
+% so it was a nice way to proof the concept to use the former designed chips.
 In addition to this MMIC chips some discrete components were used, e.g.bypass capacitors to filter out undesired distortion frequencies which could lead to oscillation which makes the circuit potentially instable/unstable.\\
 In the realisation and layout progress many things must be considered.\\
 The circuit is build on a hybrid assembly which combines the MMIC with the discrete SMD components on a Rogers 4003 substrate.\\
