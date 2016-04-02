@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  1 APR 2016 19:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  2 APR 2016 17:32
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -1260,8 +1260,11 @@ Package glossaries Info: Writing glossary file master_thesis_RiemannPump.sbl on
 
 Writing index file master_thesis_RiemannPump.idx
 (master_thesis_RiemannPump.aux (preface.aux) (stateoftheart.aux)
-(fundamentals.aux) (design.aux) (simulation.aux) (layout.aux) (measurement.aux)
-(conclusion.aux) (appendix.aux))
+(fundamentals.aux) (design.aux) (simulation.aux
+
+LaTeX Warning: Label `eq:RiemannCodeRectSine' multiply defined.
+
+) (layout.aux) (measurement.aux) (conclusion.aux) (appendix.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
 LaTeX Font Info:    ... okay on input line 98.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
@@ -1730,12 +1733,13 @@ Package pdftex.def Info: graphics/simulation/Vout_7sine_SameSigBWdifferent_Diff
 erentSlope.pdf used on input line 162.
 (pdftex.def)             Requested size: 426.79141pt x 301.59483pt.
 
-
-LaTeX Warning: Reference `fig:SineWaveCodeGeneration' on page 23 undefined on i
-nput line 172.
-
 [23 <./graphics/simulation/Vout_7sine_SameSigBWdifferent_DifferentSlope.pdf, pa
-ge is rotated 90 degrees>] [24] [25]) [26] (layout.tex
+ge is rotated 90 degrees>] [24] [25]
+Underfull \hbox (badness 10000) in paragraph at lines 252--257
+
+ []
+
+) [26] (layout.tex
 chapter 6.
 [27
 
@@ -1790,14 +1794,14 @@ line 31.
 (stateoftheart.aux) (fundamentals.aux) (design.aux) (simulation.aux)
 (layout.aux) (measurement.aux) (conclusion.aux) (appendix.aux))
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 38921 strings out of 493673
- 747519 string characters out of 3146818
- 853836 words of memory out of 3000000
- 41331 multiletter control sequences out of 15000+200000
+ 38920 strings out of 493673
+ 747491 string characters out of 3146818
+ 853875 words of memory out of 3000000
+ 41330 multiletter control sequences out of 15000+200000
  70860 words of font info for 228 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  71i,12n,79p,10425b,1266s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1813,7 +1817,7 @@ kTEX/fonts/type1/urw/times/utmb8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/tim
 es/utmbi8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinPr
 ogram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on master_thesis_RiemannPump.pdf (54 pages, 2311245 bytes).
+Output written on master_thesis_RiemannPump.pdf (54 pages, 2311237 bytes).
 PDF statistics:
  437 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

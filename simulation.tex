@@ -169,25 +169,29 @@ This is utilized to calculate the Riemann Code which fits best to the theoretica
 
 
 \subsection{rectified sine wave generation in the time domain}
-Based on the same approximation principle of the signal in Figure \ref{fig:SineWaveCodeGeneration}, the Riemann Code for the rectified sine is generated. 
-The chosen Riemann Code for the rectified sine is:
+Beside the generation of the full sine wave a rectified sine wave is simulated as well.\\
+Based on the same approximation principle as in figure \ref{fig:RiemannCodeGenerationSineWave} the corresponding Riemann Code for the rectified sine is generated, namely:
+
 \begin{equation}
  000\hspace{.3cm} 010\hspace{.3cm} 101\hspace{.3cm} 111\hspace{.3cm} 000\hspace{.3cm} 010\hspace{.3cm} 101\hspace{.3cm} 111.
 \end{equation}
 \label{eq:RiemannCodeRectSine}
 
-Using this code a rectified sine wave is synthesized by the designed circuit.
-The generation of the rectified sine wave is the same as for the normal sine wave. 
-This only shows a different signal which could be synthesized.
-
-
+A few different signals are simulated with this Code to check its feasibility.
+%As it is the same procedure for the rectified as for the full wave sine, here are plotted s
 
 
 
 
 \subsection{triangular wave generation in the time domain}
-This is a triangular wave.
-
+Beside the most common signals of sine wave, a different signal is chosen to validate the feasibility of generating arbitrary waveforms.
+A triangular signal is chosen here.
+The Code for the generation of the triangular signal at the output is:
+\textbf{this is not the correct code!!}
+\begin{equation}
+ 000\hspace{.3cm} 010\hspace{.3cm} 101\hspace{.3cm} 111\hspace{.3cm} 000\hspace{.3cm} 010\hspace{.3cm} 101\hspace{.3cm} 111.
+\end{equation}
+\label{eq:RiemannCodeRectSine}
 
 \section{Stability analysis of the realised circuit}
 The stability and energy consumption analysis helps to get an impression/ understanding of figures and numbers of the designed circuit. Although this two aspect are of an important role for the development of a high speed \gls{ab:dac} this analysis are not complete. The whole detailed analysis could not be investigated in this thesis due to complexity and time issues, what its meaning is not to belittle. For these aspects it is important to state that the designed circuit is in no way optimized with respect to those \\
@@ -216,25 +220,49 @@ The losses are divided into dynamic losses of the switches and static losses.
 
 \section{Proof of concept simulation with existing components}
 \label{ch:ProofOfConceptWithExistingComponents}
-Simulation with ideal components but with the real dimension is done to compare with the measurement results. 
+To combine the measurement results with its theory some simulation are done  with the dimensions of the real demonstrator.
+But also here it is important to note, that losses are not considered in the simulation.
+It provides a basis of what can be expected.
+Therefore the simulation is done with a two bit (resolution) simulation.
+Other important parameters to keep in mind with this simulation are the oversampling ratio and hence the switching frequency of the transistors.
 
-This two bit (resolution) simulation is done to compare the demonstrators measurements with the simulation. \textbf{two-bit resolution, osr = 4, keep it small and simple, frequency higher, demonstrator, assembly, less complex} 
+ 
 
 
 \section{Evaluation of the simulation results for the Riemann Pump}
-Nonetheless the number of signals which can be synthesized with this particular concept is increased with the possibility to change to another combination of slopes to approximate the signal.
-All this calculation should be done with a signal processor and an algorithm.
-With the variation of the slopes and the variation of the sampling time in theory it is possible to create every single signal with more or less good \gls{ab:sqnr}.
-\\
-When the component dimensions, like the switching transistors and load impedance, are fixed it is impossible to reach a bandwidth which goes from\gls{ab:dc} to \SI{6}{\GHz}.
-The issue is that a small transistor dimension could synthesize signals to a very low signal frequency but will be unable to synthesize a signal at 6GHz due to the fact that the amplitude would be too small.
-Hence the signal frequency bandwidth would be shifted to the smaller frequencies. 
-If the \gls{ab:osr} is increased, the sampling time is decreased and therefore the signal quality is better because we have a more accurate synthesized signal. \\
-If the transistor dimension is chosen to be bigger, the higher signal frequency could be synthesized with a decent voltage swing but the low signal frequencies would turn into a rectangular shape. 
-This is the trade off between the shift of the bandwidth (shifting to even higher frequencies is possible but the bandwidth is nearly constant as long the output capacitance is constant too.) The trade off for the bandwidth shift to higher frequencies is, that with the signal frequency the switching frequency is increasing linearly (for an osr; eight times) and therefore the dynamic losses are increasing with this switching frequency.
-By the way the transistor switching speed is determined by the dimension of the driver circuit, so if the switching speed is increased the gate driving current has to be increased to switch the transistors.
 
- The presented results show the theoretical feasibility of the approach.
- In a more enhanced project a MATLAB algorithm would compute this code by minimizing the deviation between a theoretical signal and the synthesized signal.
-evaluate the simulation results, what is to expect in realisation. 
-What is the expectation to the measurement?
+\begin{enumerate}
+	\item different wave forms can be synthesized
+	\item the signal bandwidth is restricted to a smaller one
+	\item parasitic effects and losses would downgrade the signals waveform
+	\item the system should be stable
+	\item the energy consumption (depending on the switching) is designed for basestation
+	\item not optimal w.r.t. efficiency
+\end{enumerate}
+
+
+The dimension of the switching transistors, which represent a voltage controlled current source, determines the maximum current flowing.
+This current source is controlled by a digital signal which determines it to be fully open or to be closed, as a switch.
+Therefore the current is not controlled by the transistor itself, it flows at its maximum or it does not flow anyway.
+This dimension determines the slope of the resulting voltage steps.
+A small transistor dimension could synthesize signals to a very low signal frequency while a bigger one would fully charge the output capacitor which will clip the output signal.
+
+If the transistor dimension is chosen to be bigger, the higher signal frequency could be synthesized with a decent voltage swing but the low signal frequencies would turn into a rectangular shape. 
+
+In contrast to the small one a bigger one will be able to synthesize a signal at 6GHz due to the fact that the amplitude would be moderate.
+This is one problem which restrict the signal bandwidth to a smaller one than the \gls{ab:dc} to \SI{6}{\GHz}.
+\\
+%If the \gls{ab:osr} is increased, the sampling time is decreased and therefore the signal quality is better because we have a more accurate synthesized signal. 
+%This is shown in the snr in chapter fundamentals.
+
+
+
+% This is the trade off between the shift of the bandwidth (shifting to even higher frequencies is possible but the bandwidth is nearly constant as long the output capacitance is constant too.)  %% higher frequency means much lower sampling time which means the slopes are not detectable ... %%
+
+%The drawback for the bandwidth shift to higher frequencies is, that with the signal frequency the switching frequency is increasing linearly (for an osr; eight times) and therefore the dynamic losses are increasing with this switching frequency.
+
+The simulation results confirm the feasibility of the chosen approach.
+Some trade-offs in mind, the ability to change some system parameter some really good signal waveforms can be synthesized.
+\\
+What is the expectation to the measurement? 
+The simulated signals with the realized dimensions of the components.

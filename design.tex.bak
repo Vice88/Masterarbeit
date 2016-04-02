@@ -1,7 +1,8 @@
 \chapter{Riemann Pump circuit design}
 \label{ch:design}
 \textit{Description of the approach you have taken to solve the scientific or technical problem which you were posed. Outline the design, the methodology and overall structure of your experimental approach}\\
-Designing an arbitrary waveform generator for a signal bandwidth of 6 GHz with a moderate energy consumption. 
+
+The goal is to design an arbitrary waveform generator for a signal bandwidth of 6 GHz with a moderate energy consumption. 
 The generator need two high speed switches, which can driver power.
 Therefore the problem is to find a suitable, efficient, high speed switch, which can drive power in high frequency applications.
 As the GaN HEMT technology cover the aspect of driving high power in high frequencies this is chosen for the design.
@@ -17,9 +18,9 @@ The properties of the GaN makes it suitable to generate power in high frequency 
 Using a well known concept got the advantage of verification, validation and knowing the drawbacks.
 In addition to this it was possible to use the work of a former employee, which makes it easier to realize, since a new MMIC desing was not in the scope of this thesis.
 \\
-To show the feasibility of the concept of realizing a Riemann Pump, the attention was not driven to energy consumption nor efficiency while to proof the concept.
-In fact of the high energy consumption, the realized DAC is designed for the integration in a base station. Because it converts a digital bit sequence into an analog rf signal it is implemented in the transmitting path. Based on the idea of a push-pull stage the load impedance of the charge pump is designed first.
-
+To show the feasibility of realizing a Riemann Pump, the attention was not drawn to energy consumption or efficiency rather to proof the concept.
+In fact of the high energy consumption, the realized DAC is designed for the integration in a base station.
+In fact of the conversion from digital to analog signals it should be implemented in the transmitting path.
 
 \section{Approach and implementation of the Riemann Pump}
 One possible approach to design a charge pump as shown in Fig. \ref{fig:RiemannPumpConcept} was with concept of a Push-Pull stage.
@@ -51,7 +52,7 @@ The first approach of designing a Riemann Pump was with a concept of a Push-Pull
 %   \label{fig:RiemannCodeGenerationSineWave}
 %\end{figure} 
  
- 
+ The transistor switching speed is determined by the dimension of the driver circuit, so if the switching speed is increased the gate driving current has to be increased to switch the transistors.
  
  
 
