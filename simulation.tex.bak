@@ -150,12 +150,13 @@ The maximum absolute distortion of this synthesized signal is about \SI{1}{\volt
 
 As the sampling frequency can be changed to tune the signal frequency of the output signal it is also possible to change the input control sequence to manipulate the shape of the signal.
 Due to the three bit resolution there is a limited number of different slope combinations to synthesize a sine wave.
-In fact there is the limit of six different combinations to synthesize the sine wave.
-%For the rising edge of the upper half of sine wave, the number of slopes to synthesize is limited to two, by the fixed \gls{ab:osr} of four.
-The six combination to synthesize a sine wave are: 75, 73, 71, 53, 51 ,31 with respect to the $i_0$ values.
-The first digit indicates the slope of the first sampling point and the second digit respectively the second sampling point for synthesizing the rising edge of a sine wave.
+In fact the limit is six different combinations to synthesize the sine wave, namely: 75, 73, 71, 53, 51 ,31 with respect to the $i_0$ values.
+The first digit indicates the slope of the first sampling point and the second digit of the second sampling point of the rising edge from a sine wave, respectively. 
+The falling edge of the sine wave consists of the negative values of the mentioned slopes.\\
+
+%This two slopes represent the rising edge of the sine wave and their opposite negative values the falling edge of the sine wave.
 %With eight different slopes representing the full spectrum between the most negative and the most positive one, exactly four slopes can represent a rising edge of a sine wave, $+7i_0, +5i_0, +3i_0, +1i_0$.
-These six combinations are plotted in Figure \ref{fig:SameSigBWDifSlope} over two periods for the signal frequency of \SI{3}{\GHz}. 
+These different combinations are plotted in Figure \ref{fig:SameSigBWDifSlope} over two periods for the signal frequency of \SI{3}{\GHz}. 
 
 \begin{figure}[htb!]
 	\centering
@@ -164,11 +165,11 @@ These six combinations are plotted in Figure \ref{fig:SameSigBWDifSlope} over tw
 	\label{fig:SameSigBWDifSlope}
 \end{figure}
 
-Figure \ref{fig:SameSigBWDifSlope} shows the different shapes of a sine wave for a frequency of \SI{3}{\GHz}.
+Figure \ref{fig:SameSigBWDifSlope} shows the different shapes of a synthesized sine wave for a frequency of \SI{3}{\GHz}.
 This is utilized to calculate the Riemann Code which fits best to the theoretical signal.
 
 
-\subsection{rectified sine wave generation in the time domain}
+\subsection{Rectified sine wave generation in the time domain}
 Beside the generation of the full sine wave a rectified sine wave is simulated as well.\\
 Based on the same approximation principle as in figure \ref{fig:RiemannCodeGenerationSineWave} the corresponding Riemann Code for the rectified sine is generated, namely:
 
@@ -183,7 +184,7 @@ A few different signals are simulated with this Code to check its feasibility.
 
 
 
-\subsection{triangular wave generation in the time domain}
+\subsection{Triangular wave generation in the time domain}
 Beside the most common signals of sine wave, a different signal is chosen to validate the feasibility of generating arbitrary waveforms.
 A triangular signal is chosen here.
 The Code for the generation of the triangular signal at the output is:
@@ -194,13 +195,17 @@ The Code for the generation of the triangular signal at the output is:
 \label{eq:RiemannCodeRectSine}
 
 \section{Stability analysis of the realised circuit}
-The stability and energy consumption analysis helps to get an impression/ understanding of figures and numbers of the designed circuit. Although this two aspect are of an important role for the development of a high speed \gls{ab:dac} this analysis are not complete. The whole detailed analysis could not be investigated in this thesis due to complexity and time issues, what its meaning is not to belittle. For these aspects it is important to state that the designed circuit is in no way optimized with respect to those \\
-The stability analysis is important to ensure that the circuit under test do not oscillate. 
- To check this, the complex impedance at specific points in the circuit is measured.
- If the real part of the impedance is positive for the whole frequency range of the simulation, it indicates in an easy way that the circuit does not oscillate.
+The stability analysis helps to get an impression/ understanding of figures and numbers of the designed circuit. 
+Although this aspect is of an important role for the development of a high speed \gls{ab:dac}, this analysis are not complete.
+The whole detailed analysis could not be investigated in this thesis due to complexity and time issues, what its meaning is not to belittle. 
+For these aspects it is important to state that the designed circuit is in no way optimized with respect to those.\\
+The stability analysis is important to ensure that the circuit under test do not oscillate.  
+To check this, the complex impedance at specific points in the circuit is measured. 
+If the real part of the impedance is positive for the whole frequency range of the simulation, it indicates in an easy way that the circuit does not oscillate. 
 This simulation is done within the ADS tool. 
 
 \section{Energy consumption analysis of the realised circuit}
+As well as the stabilitiy analysis the energy consumption analysis is important in terms of mobile devices.
 If the \gls{ab:osr} is increased to get a better accuracy, the switching frequency is also increased and therefore the energy consumption.
 In addition to the power consumption issue, the components have a unity current gain frequency limit.
 If the resolution is increased to get a better accuracy, the whole circuit would become more complex and the energy consumption would increase.\\

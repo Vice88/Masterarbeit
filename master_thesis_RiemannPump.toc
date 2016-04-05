@@ -15,8 +15,8 @@
 \contentsline {chapter}{\numberline {5}Circuit simulations for generating various waveform signals}{17}
 \contentsline {section}{\numberline {5.1}Generating various analog signals with digital input control}{18}
 \contentsline {subsection}{\numberline {5.1.1}Sine wave generation in the time domain}{18}
-\contentsline {subsection}{\numberline {5.1.2}rectified sine wave generation in the time domain}{23}
-\contentsline {subsection}{\numberline {5.1.3}triangular wave generation in the time domain}{24}
+\contentsline {subsection}{\numberline {5.1.2}Rectified sine wave generation in the time domain}{23}
+\contentsline {subsection}{\numberline {5.1.3}Triangular wave generation in the time domain}{24}
 \contentsline {section}{\numberline {5.2}Stability analysis of the realised circuit}{24}
 \contentsline {section}{\numberline {5.3}Energy consumption analysis of the realised circuit}{24}
 \contentsline {section}{\numberline {5.4}Proof of concept simulation with existing components}{25}
@@ -26,8 +26,8 @@
 \contentsline {section}{\numberline {6.2}Demonstrator using DDRi\_2C chips}{28}
 \contentsline {chapter}{\numberline {7}Circuit output measurement results in time domain}{31}
 \contentsline {section}{\numberline {7.1}Measurement setup}{31}
-\contentsline {section}{\numberline {7.2}Time domain measurement}{32}
-\contentsline {section}{\numberline {7.3}Discussion of measurement results}{32}
+\contentsline {section}{\numberline {7.2}Time domain measurement}{33}
+\contentsline {section}{\numberline {7.3}Discussion of measurement results}{33}
 \contentsline {chapter}{\numberline {8}Conclusions and outlook}{35}
 \contentsline {chapter}{Bibliography}{37}
 \contentsline {chapter}{Appendix}{39}
