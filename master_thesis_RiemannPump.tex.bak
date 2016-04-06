@@ -88,7 +88,7 @@
 \makeatother
 
 %########
-\graphicspath{{graphics/},{graphics/snr/},{graphics/simulation/},{graphics/concept/}, {graphics/photos/}}
+\graphicspath{{graphics/},{graphics/snr/},{graphics/simulation/},{graphics/concept/}, {graphics/photos/}, {graphics/measdata/}}
 %############################
 
 %#################################################################

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  5 APR 2016 19:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  6 APR 2016 20:41
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -1750,14 +1750,23 @@ chapter 6.
 
 
 
-] [28] [29]) [30] (measurement.tex
+] [28]
+<graphics/photos/Demonstrator_edited_newScale.pdf, id=345, 312.98033pt x 227.62
+204pt>
+File: graphics/photos/Demonstrator_edited_newScale.pdf Graphic file (type pdf)
+ <use graphics/photos/Demonstrator_edited_newScale.pdf>
+Package pdftex.def Info: graphics/photos/Demonstrator_edited_newScale.pdf used 
+on input line 86.
+(pdftex.def)             Requested size: 312.97955pt x 227.62148pt.
+ [29]) [30 <./graphics/photos/Demonstrator_edited_newScale.pdf>] (measurement.t
+ex
 chapter 7.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--15
 
  []
 
-<graphics/concept/MeasurementSetup.pdf, id=351, 312.98033pt x 213.39566pt>
+<graphics/concept/MeasurementSetup.pdf, id=370, 312.98033pt x 213.39566pt>
 File: graphics/concept/MeasurementSetup.pdf Graphic file (type pdf)
 
 <use graphics/concept/MeasurementSetup.pdf>
@@ -1769,14 +1778,50 @@ ne 22.
 
 
 
-] [32 <./graphics/concept/MeasurementSetup.pdf>]) [33] (conclusion.tex [34
+] [32 <./graphics/concept/MeasurementSetup.pdf>]
+<graphics/measdata/inputVoltage.pdf, id=386, 313.17pt x 213.79875pt>
+File: graphics/measdata/inputVoltage.pdf Graphic file (type pdf)
 
+<use graphics/measdata/inputVoltage.pdf>
+Package pdftex.def Info: graphics/measdata/inputVoltage.pdf used on input line 
+64.
+(pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
 
+<graphics/measdata/100M_Rload_regression.pdf, id=387, 313.17pt x 213.79875pt>
+File: graphics/measdata/100M_Rload_regression.pdf Graphic file (type pdf)
 
+<use graphics/measdata/100M_Rload_regression.pdf>
+Package pdftex.def Info: graphics/measdata/100M_Rload_regression.pdf used on in
+put line 71.
+(pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
 
-]
+<graphics/measdata/100M_Cload_regression.pdf, id=388, 313.17pt x 213.79875pt>
+File: graphics/measdata/100M_Cload_regression.pdf Graphic file (type pdf)
+
+<use graphics/measdata/100M_Cload_regression.pdf>
+Package pdftex.def Info: graphics/measdata/100M_Cload_regression.pdf used on in
+put line 80.
+(pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
+
+<graphics/measdata/150M_Cload_regression.pdf, id=389, 313.17pt x 213.79875pt>
+File: graphics/measdata/150M_Cload_regression.pdf Graphic file (type pdf)
+
+<use graphics/measdata/150M_Cload_regression.pdf>
+Package pdftex.def Info: graphics/measdata/150M_Cload_regression.pdf used on in
+put line 87.
+(pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
+ [33 <./graphics/measdata/inputVoltage.pdf, page is rotated 90 degrees> <./grap
+hics/measdata/100M_Rload_regression.pdf, page is rotated 90 degrees>]) [34 <./g
+raphics/measdata/100M_Cload_regression.pdf, page is rotated 90 degrees> <./grap
+hics/measdata/150M_Cload_regression.pdf, page is rotated 90 degrees>] (conclusi
+on.tex
 chapter 8.
-) [35] [36
+) [35
+
+
+
+
+] [36
 
 
 
@@ -1789,30 +1834,29 @@ chapter 8.
 
 
 ] [39]
-[40]
-<graphics/photos/Demonstrator_edited.png, id=392, 213.4374pt x 221.8689pt>
-File: graphics/photos/Demonstrator_edited.png Graphic file (type png)
+[40] <graphics/photos/Demonstrator.pdf, id=447, 209.2131pt x 227.62204pt>
+File: graphics/photos/Demonstrator.pdf Graphic file (type pdf)
 
-<use graphics/photos/Demonstrator_edited.png>
-Package pdftex.def Info: graphics/photos/Demonstrator_edited.png used on input 
-line 31.
-(pdftex.def)             Requested size: 320.09355pt x 332.78558pt.
-) [41 <./graphics/photos/Demonstrator_edited.png>] [42
-
+<use graphics/photos/Demonstrator.pdf>
+Package pdftex.def Info: graphics/photos/Demonstrator.pdf used on input line 31
+.
+(pdftex.def)             Requested size: 209.21257pt x 227.62148pt.
+) [41 <./graphics/photos/Demonstrator.pdf>] [42
 
 
-] (master_thesis_RiemannPump.aux (preface.aux)
-(stateoftheart.aux) (fundamentals.aux) (design.aux) (simulation.aux)
-(layout.aux) (measurement.aux) (conclusion.aux) (appendix.aux))
+
+] (master_thesis_RiemannPump.aux (preface.aux) (stateoftheart.aux)
+(fundamentals.aux) (design.aux) (simulation.aux) (layout.aux) (measurement.aux)
+(conclusion.aux) (appendix.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 38927 strings out of 493673
- 747719 string characters out of 3146818
- 853887 words of memory out of 3000000
- 41335 multiletter control sequences out of 15000+200000
+ 38962 strings out of 493673
+ 748960 string characters out of 3146818
+ 853969 words of memory out of 3000000
+ 41360 multiletter control sequences out of 15000+200000
  70860 words of font info for 228 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  71i,12n,79p,10425b,1266s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1828,9 +1872,9 @@ kTEX/fonts/type1/urw/times/utmb8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/tim
 es/utmbi8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinPr
 ogram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on master_thesis_RiemannPump.pdf (54 pages, 2324557 bytes).
+Output written on master_thesis_RiemannPump.pdf (54 pages, 17367313 bytes).
 PDF statistics:
- 446 PDF objects out of 1000 (max. 8388607)
+ 508 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41058 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 41083 words of extra memory for PDF output out of 42996 (max. 10000000)
 

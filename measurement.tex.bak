@@ -56,6 +56,41 @@ Hence there is only one harmonic left for which no other input can controlled si
 	\item \textit{passive cap at the load to show the concurrent switching of both bits}
 	\item \textit{anteverta system to realize a capacitive load impedance}
 \end{enumerate}
+
+
+
+\begin{figure}[htb!]
+	\centering
+  \includegraphics{inputVoltage.pdf}
+	\caption{time domain measurement input control voltage}
+	\label{fig:inputMeas}
+\end{figure}
+
+\begin{figure}[htb!]
+	\centering
+  \includegraphics{100M_Rload_regression.pdf}
+	\caption{time domain measurement of output voltage with 50 Ohm termination}
+	\label{fig:measRload100M}
+\end{figure}
+
+
+
+\begin{figure}[htb!]
+	\centering
+  \includegraphics{100M_Cload_regression.pdf}
+	\caption{time domain measurement with capacitive load}
+	\label{fig:measCload100M}
+\end{figure}
+
+\begin{figure}[htb!]
+	\centering
+  \includegraphics{150M_Cload_regression.pdf}
+	\caption{time domain measurement with capacitive load}
+	\label{fig:measCload150M}
+\end{figure}
+
+Load capacitance is 3n3F.
+
 \section{Discussion of measurement results}
 In a first step it is to show that the designed circuit converts a digital signal to an analog one. It would be nice to see any effect corresponding to the digital to analogue conversion. \\
 \textit{is it possible to measure the heat spreading on the substrate?}

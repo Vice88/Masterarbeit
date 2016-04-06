@@ -27,7 +27,7 @@
 \contentsline {chapter}{\numberline {7}Circuit output measurement results in time domain}{31}
 \contentsline {section}{\numberline {7.1}Measurement setup}{31}
 \contentsline {section}{\numberline {7.2}Time domain measurement}{33}
-\contentsline {section}{\numberline {7.3}Discussion of measurement results}{33}
+\contentsline {section}{\numberline {7.3}Discussion of measurement results}{34}
 \contentsline {chapter}{\numberline {8}Conclusions and outlook}{35}
 \contentsline {chapter}{Bibliography}{37}
 \contentsline {chapter}{Appendix}{39}
