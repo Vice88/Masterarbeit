@@ -1,63 +1,84 @@
-\chapter{Circuit output measurement results in time domain}
-\textit{The heart of the thesis, comprising a presentation of the functioning system and thus the culmination of the work. Important is an analysis of the results as well as a comparison with the state of the art. The reader should understand in this section why you should be awarded a MSc degree.}
+\chapter{Measurement of the realized circuit in the time domain}
+% The heart of the thesis, comprising a presentation of the functioning system and thus the culmination of the work. Important is an analysis of the results as well as a comparison with the state of the art. The reader should understand in this section why you should be awarded a MSc degree.
 
-To demonstrate that the designed circuits really can synthesize a signal from a digital input signal, a time domain measurement would be necessary.
-To measure in time domain, an oscilloscope comes to mind.
-An important aspect is that the output impedance in chapter \ref{ch:design} is calculated but not assembled. 
-The concept is based on the fact, that this circuit is pumping charges onto a output capacitance.
-This output capacitance should be the input of a power amplifier as a GAN transistor.
-Due to the fact that no power amplifier is connected to the output, the question comes to mind how to measure the output if no capacitance is connected to it with the oscilloscope.
-A first try is to show the push-pull of the supply voltage. 
-This only would demonstrate the one bit switching but it would show that if a one bit switch is functioning properly, two or three bit are not as far as assumed.
-The second try would be to connect it to an active load pull measurement, but here the drawback is the limited harmonic control and that the input signal is limited in frequency and steepnes. 
-As we want to digital control the circuit, a rectangular signal is needed.
-As we want a signal frequency of 100 MHz, an input frequency of at least 800 MHz is required.\\
+The aim of the measurement was to show the generation of different signals using the two bit resolution of the circuit.
+The assembled hybrid test circuit was measured with respect to produce a decent signal waveform at its output, in the time domain.
+The output voltage waveform was measured with a \SI{50}{\ohm} termination and a \SI{3.3}{\nano\farad} capacitance, respectively.
+A discrete passive capacitor replaced the calculated impedance in chapter \ref{ch:design} used for the simulation.
+In order to avoid damage (thermal breakdown) of the used chips the measurement was performed with low \gls{ab:dc} supply voltages.
+Also the output capacitance was overdimensioned to ensure that the signal would not be clipped.
+\\
+After the calibration of the measurement instruments a stability check was performed to ensure that the test circuit do not oscillate.
+%Otherwise the circuit (would oscillate and) could damage the chips.
+In a next step the output of the circuit was measured with a resistive load to show the function of the push-pull stage.
+For the input control voltage a \gls{ab:awg} from Keysight Technologies was used.
+The correct functioning of the push-pull stage enabled the measurement with a capacitive load to synthesize a triangular waveform.
+
 
 \section{Measurement setup}
-Here an overview of the measurement setup is given. 
+An overview of the measurement setup is given in figure \ref{fig:SchematicMeasSetup}.
+To ensure the instruments to work properly without taking damage their specifications have to be complied.
+%In order to get good measurement results some requirements have to be fulfilled.
+%an overview of the measurement setup is given.
+%In order to comply specification of the measurement instruments and avoid them to be damaged, it was necessary to fulfil some conditions.
+
+
 
 
 \begin{figure}[htb!]
 	\centering
-  \includegraphics{MeasurementSetup.pdf}
-	\caption{Schematic of broadband time domain measurement setup}
+  \includegraphics[draft]{MeasurementSetup.pdf}
+	\caption{Schematic of time domain measurement setup}
 	\label{fig:SchematicMeasSetup}
 \end{figure}
 
 
-
-The \gls{ab:dc} supply is the same for both measurement setups.
-The input control is depending on the system which is used for the measurement.\\
-First option would be to scope a real time output (on-wafer) with an oscilloscope.
-For the output signal measurement in time domain with the oscilloscope the digital input signal is delivered from a high speed AWG.
-The digital input is generated from the AWG, amplified by an preamplifier to get a voltage swing of 5Vpp and at last a dc bias tee is connected to ensure the correct dc offset to the input.
- The input is controlled by an AWG from Keysight, programmed with a determined data set of bits. The key components are listed here:
+The \gls{ab:awg} is needed to provide a digital signal which control the input of the circuit.
+This signal is amplified by a pre power amplifier to get a decent voltage swing of \SI{5}{\volt}.
+This swing is needed to be sure to turn the \gls{ab:gan} \gls{ab:hemt} at the input of the circuit on and off.
+In addition to the swing another requirement is a \gls{ab:dc} offset of \SI{-10}{\volt}, because the transistor is a normally on device.
+The \gls{ab:dc} bias is fed through a bias tee to ensure that the output of the \gls{ab:awg} is not loaded.\\
+A power supply provides the \gls{ab:dc} supply bias for the \gls{ab:dut}.
+In fact that maximum input signal of the oscilloscope is at \SI{2}{\volt}, the signal provided by the circuit has to be attenuated.
+For the first measurement of the push-pull stage an attenuator with \SI{20}{\decibel} attenuation was connected between the output of the \gls{ab:dut} and the input of the oscilloscope.
+The measurement of the voltage across the load capacitance was made with another oscilloscope which provides a handy probe.
+This probe allows to measure the voltage directly on the hybrid substrate (conduction) transmission line.
+The key elements of the measurement setup in time domain are:
 \begin{itemize}
-	\item Keysight AWG - (1V := 0dB; 0.7V := -3dB)
-	\item Broadband (35kHz-40GHz) amplifier (17dB gain) (digital signal with clk 1GHz, 10 harmonics -> 10GHz)
-	\item Bias Tees (DC bias)
-	\item DC supply (driver network, power transistor)
+	\item Signal generator (Keysight AWG)
+	\item Pre power amplifier (SHF803P, SHF804TL)
+	\item Bias tee (SHF121A, SHF121D)
+	\item Power supplies
 	\item DUT
-	\item LOAD - OUTPUT ???
+	\item Attenuator (18B50W)
+	\item Capacitive load (3n3F)
+	\item Oscilloscope (DSA-86118A)
+	
+%	\item Keysight AWG - (1V := 0dB; 0.7V := -3dB)
+%	\item Broadband (35kHz-40GHz) amplifier (17dB gain) (digital signal with clk 1GHz, 10 harmonics -> 10GHz)
+%	\item Bias Tees (DC bias)
+%	\item DC supply (driver network, power transistor)
+%	\item DUT
+%	\item LOAD - OUTPUT ???
 \end{itemize}
 
-Secondly the output measurement with (anteverta) active load pull system is done.
-For this measurement no AWG is needed to provide the digital input signal, since the measurement is done with a Anteverta active load pull system, this device is providing the input signal.
-In fact of knowing its input and output signal this device is capable to tune the impedance at arbitrary points in the circuit.
-This is a nice way to simulate a capacitive load at the output to show the behaviour of the circuit with this load impedance calculated in \ref{ch:design}.
-By using this active load pull system, we have to reduce the number of bits for the resolution to one bit due to the fact, that the system only provide the option to handle four harmonics. 
-We already use two harmonics for the differential input signal and one harmonic for the output tuning the impedance. 
-Hence there is only one harmonic left for which no other input can controlled since two signals are necessary to get a differential input signal.
-\section{Time domain measurement}
-\begin{enumerate}
-	\item calibration measurement instruments
-	\item DC supply check - whether oscillates or not
-	\item Output measurement for switching 1-bit
-	\item \textit{passive cap at the load to show the concurrent switching of both bits}
-	\item \textit{anteverta system to realize a capacitive load impedance}
-\end{enumerate}
+\section{Calibration and stability check}
+Before the first measurement the instruments have to be calibrated.
+To control the broadband amplifier and bias tees in a proper way, it was necessary to calibrate them.
+The first measurement after setting things up, was to check stability of the circuit.
+Therefore the \gls{ab:dut} was supplied by its bias voltages and the current was checked if it stays constant.
+In fact that the current was stabilized after the transient time, it suggests that the circuit is stable.
+For this measurement the in- and output connectors were terminated with \SI{50}{\ohm} terminations.
 
 
+\section{Time domain measurement of push-pull stage}
+Having demonstrated the stability of the circuit, the next step was to show the function of the push-pull stage.
+The demonstration of the proper functioning push-pull output stage was done with a synchronous input control signal.
+The \gls{ab:dut} needs a differential input signal to work properly.\\
+Figure \ref{fig:inputMeas} shows the output of the \gls{ab:awg} used for the input control of the device under test.
+The light grey signal form represent one input stream while the darker grey signal the inverse one.
+This signal represents a digital bit stream which is needed to control the circuit.
+The data rate of the presented signal is 200 Mbps while the analog fundamental frequency is \SI{100}{\mega\hertz}.
 
 \begin{figure}[htb!]
 	\centering
@@ -66,14 +87,29 @@ Hence there is only one harmonic left for which no other input can controlled si
 	\label{fig:inputMeas}
 \end{figure}
 
+Using this input signal the circuit under test, with a \SI{50}{\ohm} termination, provides the output shown in figure \ref{fig:measRload100M}.
+
 \begin{figure}[htb!]
 	\centering
   \includegraphics{100M_Rload_regression.pdf}
-	\caption{time domain measurement of output voltage with 50 Ohm termination}
+	\caption{Time domain measurement of output voltage with 50 Ohm termination}
 	\label{fig:measRload100M}
 \end{figure}
 
+The light green signal is the measured data while the dashed line describes the ideal behaviour.
+In an ideal world there would be neither rising nor falling time and the signal would switch between logical one and zero.\\
+This figure demonstrate the proper functioning of the presented output push-pull stage, as the signal switches between Vdd and GND.
+In addition to this it is demonstrated that the switches are very fast since the rising and falling edges are very steep.
+The frequency accords with the input signal shown in figure \ref{fig:inputMeas}.
 
+
+\section{Time domain measurement of synthesized signal}
+The proper functioning of the designed circuit led to verifying that both bits work together.
+If both bits work concurrently, it is possible to synthesize a signal.
+This proofs the concept and the chosen approach.
+The two bit resolution restricts the output voltage waveform.\\
+In Figure \ref{fig:measCload100M} two different signals are shown which could be synthesized. 
+The frequency of the synthesized triangular signal is \SI{100}{\mega \hertz} while the voltage swing is \SI{1.8}{\volt} and \SI{0.8}{\volt} respectively.
 
 \begin{figure}[htb!]
 	\centering
@@ -82,6 +118,12 @@ Hence there is only one harmonic left for which no other input can controlled si
 	\label{fig:measCload100M}
 \end{figure}
 
+The red signal represents a synthesized triangular waveform with a slope corresponding to $3 i_0$, while the brown dashed signal provides the theoretical signal.\\
+The blue signal represents a synthesized triangular waveform with a slope corresponding to $1 i_0$, while the dashed darker blue signal provides the theoretical one.\\
+The same notation is valid for the synthesized signal in figure \ref{fig:measCload150M}.
+Here the signal frequency is \SI{150}{\mega \hertz} which is the upper bound for this measurement setup.
+The signal integrity is much worse going beyond this frequency.
+
 \begin{figure}[htb!]
 	\centering
   \includegraphics{150M_Cload_regression.pdf}
@@ -89,10 +131,16 @@ Hence there is only one harmonic left for which no other input can controlled si
 	\label{fig:measCload150M}
 \end{figure}
 
-Load capacitance is 3n3F.
+%Although the difference between the relative slope of $3 i_0$ and $1 i_0$ is much less the signal can 
+The difference between the slopes is getting smaller while the signal quality is decreasing.
+
 
 \section{Discussion of measurement results}
-In a first step it is to show that the designed circuit converts a digital signal to an analog one. It would be nice to see any effect corresponding to the digital to analogue conversion. \\
-\textit{is it possible to measure the heat spreading on the substrate?}
-Is the measurement result expected due to the simulation? Can the demonstrator be simulated although no model for this chips exists? The real simulation are not done due to the fact that no losses respected.
+In a first step it was shown that the designed circuit converts a digital signal to an analog one.
+The frequency limit for this measurement setup consisting of this designed circuit is at roughly \SI{150}{\mega \hertz}.
+Heat is critical. 
+Aside from some parasitic effects the proof of the concept was successful.
+
+%\textit{is it possible to measure the heat spreading on the substrate?}
+%Is the measurement result expected due to the simulation? Can the demonstrator be simulated although no model for this chips exists? The real simulation are not done due to the fact that no losses respected.
 

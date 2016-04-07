@@ -8,10 +8,10 @@
 \contentsline {section}{\numberline {3.3}Characteristics of Digtial-to-Analog converter}{8}
 \contentsline {section}{\numberline {3.4}summary - evaluation}{8}
 \contentsline {chapter}{\numberline {4}Riemann Pump circuit design}{11}
-\contentsline {section}{\numberline {4.1}Approach and implementation of the Riemann Pump}{12}
+\contentsline {section}{\numberline {4.1}Approach and implementation of the Riemann Pump}{11}
 \contentsline {section}{\numberline {4.2}Identification of the load impedance}{12}
-\contentsline {section}{\numberline {4.3}Dimension of the used components}{13}
-\contentsline {section}{\numberline {4.4}Circuit design summary and discussion}{14}
+\contentsline {section}{\numberline {4.3}Dimension of the used components}{14}
+\contentsline {section}{\numberline {4.4}Circuit design summary and discussion}{15}
 \contentsline {chapter}{\numberline {5}Circuit simulations for generating various waveform signals}{17}
 \contentsline {section}{\numberline {5.1}Generating various analog signals with digital input control}{18}
 \contentsline {subsection}{\numberline {5.1.1}Sine wave generation in the time domain}{18}
@@ -24,14 +24,16 @@
 \contentsline {chapter}{\numberline {6}Realisation of a demonstrator}{27}
 \contentsline {section}{\numberline {6.1}Demonstrator using DDRi\_X6 and DDRi\_Y6 chips}{27}
 \contentsline {section}{\numberline {6.2}Demonstrator using DDRi\_2C chips}{28}
-\contentsline {chapter}{\numberline {7}Circuit output measurement results in time domain}{31}
+\contentsline {chapter}{\numberline {7}Measurement of the realized circuit in the time domain}{31}
 \contentsline {section}{\numberline {7.1}Measurement setup}{31}
-\contentsline {section}{\numberline {7.2}Time domain measurement}{33}
-\contentsline {section}{\numberline {7.3}Discussion of measurement results}{34}
-\contentsline {chapter}{\numberline {8}Conclusions and outlook}{35}
-\contentsline {chapter}{Bibliography}{37}
-\contentsline {chapter}{Appendix}{39}
-\contentsline {section}{\numberline {A}Schematic of the Riemann Pump circuit}{39}
-\contentsline {section}{\numberline {B}Layout of the whole Riemann Pump circuit}{40}
-\contentsline {section}{\numberline {C}Photography of the realized Demonstrator version 1}{41}
-\contentsline {section}{\numberline {D}Photography of the realized Demonstrator version 2}{41}
+\contentsline {section}{\numberline {7.2}Calibration and stability check}{32}
+\contentsline {section}{\numberline {7.3}Time domain measurement of push-pull stage}{33}
+\contentsline {section}{\numberline {7.4}Time domain measurement of synthesized signal}{34}
+\contentsline {section}{\numberline {7.5}Discussion of measurement results}{35}
+\contentsline {chapter}{\numberline {8}Conclusions and outlook}{37}
+\contentsline {chapter}{Bibliography}{39}
+\contentsline {chapter}{Appendix}{41}
+\contentsline {section}{\numberline {A}Schematic of the Riemann Pump circuit}{41}
+\contentsline {section}{\numberline {B}Layout of the whole Riemann Pump circuit}{42}
+\contentsline {section}{\numberline {C}Photography of the realized Demonstrator version 1}{43}
+\contentsline {section}{\numberline {D}Photography of the realized Demonstrator version 2}{43}

@@ -1,6 +1,6 @@
 \chapter{Riemann Pump circuit design}
 \label{ch:design}
-\textit{Description of the approach you have taken to solve the scientific or technical problem which you were posed. Outline the design, the methodology and overall structure of your experimental approach}\\
+% \textit{Description of the approach you have taken to solve the scientific or technical problem which you were posed. Outline the design, the methodology and overall structure of your experimental approach}\\
 
 The goal is to design an arbitrary waveform generator for a signal bandwidth of 6 GHz with a moderate energy consumption. 
 The generator need two high speed switches, which can driver power.

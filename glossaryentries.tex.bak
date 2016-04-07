@@ -11,6 +11,8 @@
 
 \newglossaryentry{ab:ads}{type=abbreviations,name={ADS},description={Advanced Design System},first={ADS (Advanced Design System)}}
 
+\newglossaryentry{ab:awg}{type=abbreviations,name={AWG},description={arbitrary waveform generator},first={AWG (arbitrary waveform generator)}}
+
 \newglossaryentry{ab:dac}{type=abbreviations,name={DAC},description={digital-to-analog converter},first={DAC (digital-to-analog converter)}}
 
 \newglossaryentry{ab:osr}{type=abbreviations,name={OSR},description={oversampling ratio},first={OSR (oversampling ratio)}}
