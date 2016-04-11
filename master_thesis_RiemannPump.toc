@@ -18,22 +18,23 @@
 \contentsline {subsection}{\numberline {5.1.2}Rectified sine wave generation in the time domain}{23}
 \contentsline {subsection}{\numberline {5.1.3}Triangular wave generation in the time domain}{24}
 \contentsline {section}{\numberline {5.2}Stability analysis of the realised circuit}{24}
-\contentsline {section}{\numberline {5.3}Energy consumption analysis of the realised circuit}{24}
+\contentsline {section}{\numberline {5.3}Energy consumption analysis of the realised circuit}{25}
 \contentsline {section}{\numberline {5.4}Proof of concept simulation with existing components}{25}
-\contentsline {section}{\numberline {5.5}Evaluation of the simulation results for the Riemann Pump}{25}
+\contentsline {section}{\numberline {5.5}Evaluation of the simulation results for the Riemann Pump}{26}
 \contentsline {chapter}{\numberline {6}Realisation of a demonstrator}{27}
-\contentsline {section}{\numberline {6.1}Demonstrator using DDRi\_X6 and DDRi\_Y6 chips}{27}
-\contentsline {section}{\numberline {6.2}Demonstrator using DDRi\_2C chips}{28}
-\contentsline {chapter}{\numberline {7}Measurement of the realized circuit in the time domain}{31}
-\contentsline {section}{\numberline {7.1}Measurement setup}{31}
-\contentsline {section}{\numberline {7.2}Calibration and stability check}{32}
-\contentsline {section}{\numberline {7.3}Time domain measurement of push-pull stage}{33}
-\contentsline {section}{\numberline {7.4}Time domain measurement of synthesized signal}{34}
-\contentsline {section}{\numberline {7.5}Discussion of measurement results}{35}
-\contentsline {chapter}{\numberline {8}Conclusions and outlook}{37}
-\contentsline {chapter}{Bibliography}{39}
-\contentsline {chapter}{Appendix}{41}
-\contentsline {section}{\numberline {A}Schematic of the Riemann Pump circuit}{41}
-\contentsline {section}{\numberline {B}Layout of the whole Riemann Pump circuit}{42}
-\contentsline {section}{\numberline {C}Photography of the realized Demonstrator version 1}{43}
-\contentsline {section}{\numberline {D}Photography of the realized Demonstrator version 2}{43}
+\contentsline {section}{\numberline {6.1}Substrate layout using DDRi\_X6 and DDRi\_Y6 chips}{28}
+\contentsline {section}{\numberline {6.2}Substrate layout using DDRi\_2C chips}{30}
+\contentsline {section}{\numberline {6.3}Evaluation of the design and realisation process}{31}
+\contentsline {chapter}{\numberline {7}Measurement of the realized circuit in the time domain}{33}
+\contentsline {section}{\numberline {7.1}Measurement setup}{33}
+\contentsline {section}{\numberline {7.2}Calibration and stability check}{34}
+\contentsline {section}{\numberline {7.3}Time domain measurement of push-pull stage}{35}
+\contentsline {section}{\numberline {7.4}Time domain measurement of synthesized signal}{36}
+\contentsline {section}{\numberline {7.5}Discussion of measurement results}{37}
+\contentsline {chapter}{\numberline {8}Conclusions and outlook}{39}
+\contentsline {chapter}{Bibliography}{41}
+\contentsline {chapter}{Appendix}{43}
+\contentsline {section}{\numberline {A}Schematic of the Riemann Pump circuit}{43}
+\contentsline {section}{\numberline {B}Layout of the whole Riemann Pump circuit}{44}
+\contentsline {section}{\numberline {C}Photography of the realized Demonstrator version 1}{45}
+\contentsline {section}{\numberline {D}Photography of the realized Demonstrator version 2}{45}

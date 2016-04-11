@@ -21,8 +21,10 @@ To ensure the instruments to work properly without taking damage their specifica
 %In order to get good measurement results some requirements have to be fulfilled.
 %an overview of the measurement setup is given.
 %In order to comply specification of the measurement instruments and avoid them to be damaged, it was necessary to fulfil some conditions.
-
-
+The input control signal is amplified due to a pre amplifier for the frequency from kHz to several tens of GHz.
+This broadband is needed for the harmonics of the rectangular signal.
+Then the bias voltage is set due to a bias tee.
+This makes the setup more complex.
 
 
 \begin{figure}[htb!]
@@ -99,6 +101,8 @@ The data rate of the presented signal is 200 Mbps while the analog fundamental f
 
 
 Using this input signal the circuit under test, with a \SI{50}{\ohm} termination, provides the output shown in figure \ref{fig:measRload100M}.
+
+% signal to noise, signal  to quantisation noise ratio!
 
 \begin{figure}[htb!]
 	\centering
