@@ -63,20 +63,30 @@ The key elements of the measurement setup in time domain are:
 \end{itemize}
 
 \section{Calibration and stability check}
-Before the first measurement the instruments have to be calibrated.
+Before performing the first measurement the instruments had to be calibrated.
 To control the broadband amplifier and bias tees in a proper way, it was necessary to calibrate them.
 The first measurement after setting things up, was to check stability of the circuit.
-Therefore the \gls{ab:dut} was supplied by its bias voltages and the current was checked if it stays constant.
-In fact that the current was stabilized after the transient time, it suggests that the circuit is stable.
+Therefore the \gls{ab:dut} was supplied with its bias voltages and the current was checked if it stays constant.
+Due to the fact that the current was stabilized after the transient time, it suggests that the circuit is stable.
 For this measurement the in- and output connectors were terminated with \SI{50}{\ohm} terminations.
 
 
 \section{Time domain measurement of push-pull stage}
-Having demonstrated the stability of the circuit, the next step was to show the function of the push-pull stage.
-The demonstration of the proper functioning push-pull output stage was done with a synchronous input control signal.
-The \gls{ab:dut} needs a differential input signal to work properly.\\
-Figure \ref{fig:inputMeas} shows the output of the \gls{ab:awg} used for the input control of the device under test.
-The light grey signal form represent one input stream while the darker grey signal the inverse one.
+After checking stability of the \gls{ab:dut} a small signal is fed to its input.
+Feeding a square wave signal (digital signal) to the input of the device its output switches between \gls{sy:Vdd} and GND potential.
+This is done with the push-pull stage realized with multi chip assembling on a hybrid board.
+%Having demonstrated the stability of the circuit, the next step was to show the function of the push-pull stage.
+\textit{The hybrid board consists of four inputs which two are working in differential mode.}\\
+Switching the output to \gls{sy:Vdd} needed an in phase control signal.
+Two high side transistors should switch and fed the upper power rail which is \gls{sy:Vdd} to the output.
+Meaning both power transistors have to switch at the same time to provide \gls{sy:Vdd} to the output.
+While highside and lowside transistor both switched on the output is floating between \gls{sy:Vdd} and GND.\\
+Figure \ref{fig:inputMeas} shows the square wave input control signal.
+%This signal is generated using a \gls{ab:awg}.
+%This \gls{ab:awg} is linear in amplification over a frequency range of \textit{???}.
+The square wave signal form represents a digital signal with a data rate of 200Mbps while the fundamental analog frequency is at \SI{100}{\mega \hertz}.
+The required peak to peak voltage is configured to be \SI{0.7}{\volt}.
+The light grey signal represents one input stream while the darker grey signal represents the inverse one.
 This signal represents a digital bit stream which is needed to control the circuit.
 The data rate of the presented signal is 200 Mbps while the analog fundamental frequency is \SI{100}{\mega\hertz}.
 
@@ -86,6 +96,7 @@ The data rate of the presented signal is 200 Mbps while the analog fundamental f
 	\caption{time domain measurement input control voltage}
 	\label{fig:inputMeas}
 \end{figure}
+
 
 Using this input signal the circuit under test, with a \SI{50}{\ohm} termination, provides the output shown in figure \ref{fig:measRload100M}.
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  8 APR 2016 13:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  11 APR 2016 00:09
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -1752,7 +1752,7 @@ File: graphics/photos/Demonstrator_edited_newScale.pdf Graphic file (type pdf)
 Package pdftex.def Info: graphics/photos/Demonstrator_edited_newScale.pdf used 
 on input line 86.
 (pdftex.def)             Requested size: 312.97955pt x 227.62148pt.
- [29]) [30 <./graphics/photos/Demonstrator_edited_newScale.pdf>] (measurement.t
+) [29] [30 <./graphics/photos/Demonstrator_edited_newScale.pdf>] (measurement.t
 ex
 chapter 7.
 <graphics/concept/MeasurementSetup.pdf, id=370, 312.98033pt x 213.39566pt>
@@ -1776,7 +1776,7 @@ File: graphics/measdata/inputVoltage.pdf Graphic file (type pdf)
 
 <use graphics/measdata/inputVoltage.pdf>
 Package pdftex.def Info: graphics/measdata/inputVoltage.pdf used on input line 
-85.
+95.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
 
 <graphics/measdata/100M_Rload_regression.pdf, id=380, 313.17pt x 213.79875pt>
@@ -1784,7 +1784,7 @@ File: graphics/measdata/100M_Rload_regression.pdf Graphic file (type pdf)
 
 <use graphics/measdata/100M_Rload_regression.pdf>
 Package pdftex.def Info: graphics/measdata/100M_Rload_regression.pdf used on in
-put line 94.
+put line 105.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
  [33 <./graphics/measdata/inputVoltage.pdf, page is rotated 90 degrees>]
 <graphics/measdata/100M_Cload_regression.pdf, id=390, 313.17pt x 213.79875pt>
@@ -1792,19 +1792,20 @@ File: graphics/measdata/100M_Cload_regression.pdf Graphic file (type pdf)
 
 <use graphics/measdata/100M_Cload_regression.pdf>
 Package pdftex.def Info: graphics/measdata/100M_Cload_regression.pdf used on in
-put line 116.
+put line 127.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
- [34 <./graphics/measdata/100M_Rload_regression.pdf, page is rotated 90 degrees
-> <./graphics/measdata/100M_Cload_regression.pdf, page is rotated 90 degrees>]
-<graphics/measdata/150M_Cload_regression.pdf, id=410, 313.17pt x 213.79875pt>
+
+<graphics/measdata/150M_Cload_regression.pdf, id=391, 313.17pt x 213.79875pt>
 File: graphics/measdata/150M_Cload_regression.pdf Graphic file (type pdf)
 
 <use graphics/measdata/150M_Cload_regression.pdf>
 Package pdftex.def Info: graphics/measdata/150M_Cload_regression.pdf used on in
-put line 129.
+put line 140.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
-) [35 <./graphics/measdata/150M_Cload_regression.pdf, page is rotated 90 degree
-s>] (conclusion.tex [36
+ [34 <./graphics/measdata/100M_Rload_regression.pdf, page is rotated 90 degrees
+>]) [35 <./graphics/measdata/100M_Cload_regression.pdf, page is rotated 90 degr
+ees> <./graphics/measdata/150M_Cload_regression.pdf, page is rotated 90 degrees
+>] (conclusion.tex [36
 
 
 
@@ -1843,10 +1844,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 39013 strings out of 493673
- 749808 string characters out of 3146818
- 852237 words of memory out of 3000000
- 41422 multiletter control sequences out of 15000+200000
+ 39073 strings out of 493673
+ 750844 string characters out of 3146818
+ 852750 words of memory out of 3000000
+ 41482 multiletter control sequences out of 15000+200000
  70131 words of font info for 218 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  71i,12n,79p,10425b,1266s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1863,7 +1864,7 @@ imes/utmb8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmbi8a.pfb><E:/Win
 Program/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/typ
 e1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on master_thesis_RiemannPump.pdf (56 pages, 17364578 bytes).
+Output written on master_thesis_RiemannPump.pdf (56 pages, 17365433 bytes).
 PDF statistics:
  511 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

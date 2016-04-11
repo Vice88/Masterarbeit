@@ -1,12 +1,12 @@
 \chapter{Realisation of a demonstrator}
-\textbf{keep it small and simple, demonstrator, assembly, less complex} 
+\textbf{keep it small and simple} 
 %Outline of the technologies used to fabricate and assemble your structures, if applicable. Detailed processes belong in the appendix. If numerous types of structures were fabricated, or assembly technology is extensive, there may be more than one of these chapters. \textbf{Characterization} Description of the means developed and employed to characterize the devices or systems that have been fabricated.
 %The realisation of the demonstrated concepts on a hybrid substrate was one goal of this thesis, to show its feasibility.
-The demonstrator consists of integrated chips with a filter network built by discrete components.
-Therefore the circuit is a hybrid built circuit.
+The demonstrator consists of several multi assembled \gls{ab:mmic} with a filter network built by discrete \gls{ab:smd} decoupling capacitors.
+Therefore the realised demonstrator is a hybrid test circuit.
 To avoid building a too complex structure the resolution of the \gls{ab:dac} was restricted to two bit.
 With two bit resolution there are already four inputs which need to be controlled.
-This four input have to be controlled via a high speed digital signal with a peak to peak value of 5 volt, to ensure that the input mosfet is fully opened or fully closed.
+This four input have to be controlled via a high speed digital signal with a peak to peak value of 5 volt, to ensure that the input \gls{ab:hemt} is fully opened or fully closed.
 The input control signal is amplified due to a pre amplifier for the frequency from kHz to several tens of GHz.
 This broadband is needed for the harmonics of the rectangular signal.
 Then the bias voltage is set due to a bias tee.
