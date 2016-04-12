@@ -1,75 +1,93 @@
 \chapter{Measurement of the realized circuit in the time domain}
 % The heart of the thesis, comprising a presentation of the functioning system and thus the culmination of the work. Important is an analysis of the results as well as a comparison with the state of the art. The reader should understand in this section why you should be awarded a MSc degree.
 
-The aim of the measurement was to show the generation of different signals using the two bit resolution of the circuit.
-The assembled hybrid test circuit was measured with respect to produce a decent signal waveform at its output, in the time domain.
-The output voltage waveform was measured with a \SI{50}{\ohm} termination and a \SI{3.3}{\nano\farad} capacitance, respectively.
-A discrete passive capacitor replaced the calculated impedance in chapter \ref{ch:design} used for the simulation.
-In order to avoid damage (thermal breakdown) of the used chips the measurement was performed with low \gls{ab:dc} supply voltages.
-Also the output capacitance was overdimensioned to ensure that the signal would not be clipped.
-\\
+%The aim of the measurement was to show the feasibility to generate (different) signals, using the two bit resolution of the circuit.
+
+The aim of the measurement was to show the generation of different signals using (the two bit resolution of) the realized circuit.\\
+With respect to produce a decent signal waveform at the output, the assembled hybrid test circuit was terminated with a \SI{50}{\ohm} termination and a \SI{3.3}{\nano\farad} capacitance, respectively.
+In contrast to the calculated capacitance of \SI{20}{\pico \farad} in chapter \ref{ch:design}, a over dimensioned capacitor of \SI{3.3}{\nano\farad} terminated the output to ensure that the signal would not be clipped.
+%The assembled hybrid test circuit was measured with respect to produce a decent signal waveform at its output in the time domain.
+%For the measurement (in the time domain) the output of the realized circuit was terminated with a \SI{50}{\ohm} termination and a \SI{3.3}{\nano\farad} capacitance, respectively.
+%The output voltage waveform was measured with a \SI{50}{\ohm} termination and a \SI{3.3}{\nano\farad} capacitance, respectively.
+%A discrete passive capacitor replaced the calculated impedance in chapter \ref{ch:design} used for the simulation.
+
 After the calibration of the measurement instruments a stability check was performed to ensure that the test circuit do not oscillate.
 %Otherwise the circuit (would oscillate and) could damage the chips.
 In a next step the output of the circuit was measured with a resistive load to show the function of the push-pull stage.
-For the input control voltage a \gls{ab:awg} from Keysight Technologies was used.
+%For the input control voltage a \gls{ab:awg} from Keysight Technologies was used.
 The correct functioning of the push-pull stage enabled the measurement with a capacitive load to synthesize a triangular waveform.
+In order to avoid any kind of damage the measurement was performed with low \gls{ab:dc} supply voltages.
 
 
 \section{Measurement setup}
-An overview of the measurement setup is given in figure \ref{fig:SchematicMeasSetup}.
-To ensure the instruments to work properly without taking damage their specifications have to be complied.
+An overview of the measurement setup is given in Figure \ref{fig:SchematicMeasSetup}.\\
+%To ensure the instruments to work properly without taking damage their specifications have to be complied.
 %In order to get good measurement results some requirements have to be fulfilled.
 %an overview of the measurement setup is given.
 %In order to comply specification of the measurement instruments and avoid them to be damaged, it was necessary to fulfil some conditions.
-The input control signal is amplified due to a pre amplifier for the frequency from kHz to several tens of GHz.
-This broadband is needed for the harmonics of the rectangular signal.
-Then the bias voltage is set due to a bias tee.
-This makes the setup more complex.
+A signal generator generated a square wave signal with an amplitude of \SI{0.7}{\volt} and \SI{0.45}{\volt}, respectively.
+As a square wave signal consists of several harmonics, the pre amplifier had to support a wide bandwidth.\\
+The square wave of $Ch1$ \& $\overline{Ch1}$ and $Ch2$ \& $\overline{Ch2}$ of the \gls{ab:awg} is amplified by broadband amplifier G1 and G2, respectively.\\
+A \gls{ab:dc} bias voltage is applied to the inputs of the \gls{ab:dut} to generate a square wave signal from $V_{low}$ = \SI{-10}{\volt} to $V_{high}$ = \SI{-5}{\volt}.
+The voltage swing of \SI{5}{\volt} as well as the \gls{ab:dc} bias voltage were needed to ensure that the input transistors switch completely on and off.\\
+Several power supplies provided the necessary \gls{ab:dc} supply voltages for the broadband amplifiers, bias tees and \gls{ab:dut}.\\
+For the measurement of the push-pull stage an attenuator with \SI{20}{\decibel} attenuation was connected between the output of the \gls{ab:dut} and the input of the oscilloscope.
+This attenuator ensured that the specifications of the oscilloscope (scope 1) were complied.\\
+The measurement of the voltage across the load capacitance was done by another oscilloscope (scope 2) which provides a handy probe.
+This probe allowed to measure the voltage directly on the output line of the hybrid test circuit.
 
 
 \begin{figure}[htb!]
 	\centering
-  \includegraphics[draft]{MeasurementSetup.pdf}
+  \includegraphics{meassetupschem.pdf}
 	\caption{Schematic of time domain measurement setup}
 	\label{fig:SchematicMeasSetup}
 \end{figure}
 
+%This signal is amplified by a pre power amplifier to get a decent voltage swing of \SI{5}{\volt}.
+%This swing is needed to be sure to turn the \gls{ab:gan} \gls{ab:hemt} at the input of the circuit on and off.
+%In addition to the swing another requirement is a \gls{ab:dc} offset of \SI{-10}{\volt}, because the transistor is a normally on device.
+%The \gls{ab:dc} bias is fed through a bias tee to ensure that the output of the \gls{ab:awg} is not loaded.\\
+%In fact that maximum input signal of the oscilloscope is at \SI{2}{\volt}, the signal provided by the circuit has to be attenuated.
 
-The \gls{ab:awg} is needed to provide a digital signal which control the input of the circuit.
-This signal is amplified by a pre power amplifier to get a decent voltage swing of \SI{5}{\volt}.
-This swing is needed to be sure to turn the \gls{ab:gan} \gls{ab:hemt} at the input of the circuit on and off.
-In addition to the swing another requirement is a \gls{ab:dc} offset of \SI{-10}{\volt}, because the transistor is a normally on device.
-The \gls{ab:dc} bias is fed through a bias tee to ensure that the output of the \gls{ab:awg} is not loaded.\\
-A power supply provides the \gls{ab:dc} supply bias for the \gls{ab:dut}.
-In fact that maximum input signal of the oscilloscope is at \SI{2}{\volt}, the signal provided by the circuit has to be attenuated.
-For the first measurement of the push-pull stage an attenuator with \SI{20}{\decibel} attenuation was connected between the output of the \gls{ab:dut} and the input of the oscilloscope.
-The measurement of the voltage across the load capacitance was made with another oscilloscope which provides a handy probe.
-This probe allows to measure the voltage directly on the hybrid substrate (conduction) transmission line.
-The key elements of the measurement setup in time domain are:
+
+The elements of the measurement setup were:
 \begin{itemize}
-	\item Signal generator (Keysight AWG)
-	\item Pre power amplifier (SHF803P, SHF804TL)
-	\item Bias tee (SHF121A, SHF121D)
+	\item Signal generator: Keysight M8195A AWG
+	\begin{itemize}
+		\item $Ch1$ \& $\overline{Ch1}$: $V_{p-p}$ = \SI{0.7}{\volt} (square wave)
+		\item $Ch2$ \& $\overline{Ch2}$: $V_{p-p}$ = \SI{0.45}{\volt} (square wave)
+	\end{itemize}
+	\item Broadband Amplifier
+	\begin{itemize}
+		\item G1: SHF803\\ gain = 17 dB (typ.), B = \SI{35}{\kilo \hertz} -  \SI{40}{\giga \hertz}
+		\item G2: SHF804TL\\ gain = 21 dB (typ.), B = \SI{200}{\kilo \hertz} -  \SI{55}{\giga \hertz}
+	\end{itemize}
+	\item Bias Tee 
+	\begin{itemize}
+		\item BT1: SHF121A\\ B = \SI{50}{\kilo \hertz} -  \SI{65}{\giga \hertz}
+		\item BT2: SHF121D\\ B = \SI{50}{\kilo \hertz} -  \SI{65}{\giga \hertz}
+	\end{itemize}
+	\item \gls{ab:dut}
 	\item Power supplies
-	\item DUT
-	\item Attenuator (18B50W)
-	\item Capacitive load (3n3F)
-	\item Oscilloscope (DSA-86118A)
-	
-%	\item Keysight AWG - (1V := 0dB; 0.7V := -3dB)
-%	\item Broadband (35kHz-40GHz) amplifier (17dB gain) (digital signal with clk 1GHz, 10 harmonics -> 10GHz)
-%	\item Bias Tees (DC bias)
-%	\item DC supply (driver network, power transistor)
-%	\item DUT
-%	\item LOAD - OUTPUT ???
+	\item Attenuator: 18B50W\\ B = \gls{ab:dc} -  \SI{18}{\giga \hertz}, Attenuation = 20 dB
+	\item Capacitive load\\
+	ceramic \gls{ab:smd} capacitor (\SI{3.3}{\nano \farad})
+	\item Oscilloscope
+	\begin{itemize}
+		\item scope 1: DCA-X 86100D + 86118A (module)
+		\item scope 2: DSO-X 3034A + HP 10432A (probe)
+	\end{itemize}		
 \end{itemize}
 
 \section{Calibration and stability check}
-Before performing the first measurement the instruments had to be calibrated.
-To control the broadband amplifier and bias tees in a proper way, it was necessary to calibrate them.
-The first measurement after setting things up, was to check stability of the circuit.
-Therefore the \gls{ab:dut} was supplied with its bias voltages and the current was checked if it stays constant.
-Due to the fact that the current was stabilized after the transient time, it suggests that the circuit is stable.
+Before performing the first measurement the instruments and used devices had to be calibrated.
+The \gls{ab:awg} output amplitude had to be adjusted to the proper value depending on which pre amplifier is used, as the broadband amplifier differ in their gain.
+The actual broadband amplifiers gain has to be checked as well as the proper configuration of the bias voltages.
+These prerequisites are necessary to ensure a proper measurement.
+After the calibration the first measurement checked the stability of the circuit.
+Therefore the \gls{ab:dut} was supplied by its bias voltages and the current was checked if it stays constant.
+Due to the fact that the current was stabilized after the transient time, it showed that the circuit is stable.
 For this measurement the in- and output connectors were terminated with \SI{50}{\ohm} terminations.
 
 

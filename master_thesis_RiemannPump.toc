@@ -27,10 +27,10 @@
 \contentsline {section}{\numberline {6.3}Evaluation of the design and realisation process}{31}
 \contentsline {chapter}{\numberline {7}Measurement of the realized circuit in the time domain}{33}
 \contentsline {section}{\numberline {7.1}Measurement setup}{33}
-\contentsline {section}{\numberline {7.2}Calibration and stability check}{34}
+\contentsline {section}{\numberline {7.2}Calibration and stability check}{35}
 \contentsline {section}{\numberline {7.3}Time domain measurement of push-pull stage}{35}
-\contentsline {section}{\numberline {7.4}Time domain measurement of synthesized signal}{36}
-\contentsline {section}{\numberline {7.5}Discussion of measurement results}{37}
+\contentsline {section}{\numberline {7.4}Time domain measurement of synthesized signal}{37}
+\contentsline {section}{\numberline {7.5}Discussion of measurement results}{38}
 \contentsline {chapter}{\numberline {8}Conclusions and outlook}{39}
 \contentsline {chapter}{Bibliography}{41}
 \contentsline {chapter}{Appendix}{43}

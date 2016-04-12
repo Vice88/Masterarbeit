@@ -54,15 +54,7 @@ A few bypass capacitors are used based on the experience and experimental advice
 Suitable capacitors were those with a high \gls{ab:esr} which means a bad q-factor, and of course the temperature range, the voltage range should be suitable to the purpose(flatten mag of imp vs. freq broadband good).
 (Bypassing and operating frequency not necessarily linked to each other. Bypassing a greater range than the potential operating frequency) (Culture Cargo principle). 
 The first bypass capacitance the chip supply voltage sees is a MMIC cap directly assembled near to the supply pin of the chip.
-The values of the used capacitors in the order of placement starting at the chip supply in the middle of the substrate.
-\begin{enumerate}
-	\item 82p
-	\item 1n
-	\item 10n
-	\item 100n
-	\item 1u
-	\item 10u (only Vdd)
-\end{enumerate}
+The values of the used capacitors in the order of placement starting at the chip supply in the middle of the substrate (82p, 1n, 10n, 100n, 1u, 10u (only Vdd)).
 This undesired distortion frequencies could make the circuit unstable.\\
 The size of the used pads for the GND potential is designed larger than necessary to make it easier to change the capacitors.
 The GND potential pads also have some via holes in fact that more via holes could make the thermal dissipation only better than worse.\\
@@ -73,7 +65,7 @@ The assembly of the multi chip connection marked with the red rectangular is des
 
 \begin{figure}[htb!]
 	\centering
-  \includegraphics{Layout_DDRiXY6_bonds_new_grey_edited.pdf}
+  \includegraphics{Layout_DDRiXY6_bonds_new.pdf}
 	\caption{Layout DDRi\_X6 and DDRi\_Y6 chips}
 	\label{fig:layoutDDRiXY6bond}
 \end{figure}
@@ -154,4 +146,11 @@ The finished demonstrator is shown in Figure \ref{fig:assembledDemonstrator}with
   \includegraphics{Demonstrator_edited_newScale.pdf}
 	\caption{Assembled demonstrator}
 	\label{fig:assembledDemonstrator}
+\end{figure}
+
+\begin{figure}[htb!]
+	\centering
+  \includegraphics{ComparePhotoXY6_2C.pdf}
+	\caption{Comparison of assembled chips DDRi\_X6 \& DDRi\_Y6 (left) and DDRi\_2C (right)}
+	\label{fig:CompareChips}
 \end{figure}

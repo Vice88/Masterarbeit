@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  11 APR 2016 19:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  12 APR 2016 18:01
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -1758,94 +1758,102 @@ put line 42.
 
 
 ] [28 <./graphics/layout/Layout_DDRiXY6_new_grey.pdf>]
-<graphics/layout/Layout_DDRiXY6_bonds_new_grey_edited.pdf, id=366, 298.75392pt 
-x 241.84845pt>
-File: graphics/layout/Layout_DDRiXY6_bonds_new_grey_edited.pdf Graphic file (ty
-pe pdf)
- <use graphics/layout/Layout_DDRiXY6_bonds_new_grey_edited.pdf>
-Package pdftex.def Info: graphics/layout/Layout_DDRiXY6_bonds_new_grey_edited.p
-df used on input line 76.
+<graphics/layout/Layout_DDRiXY6_bonds_new.pdf, id=366, 298.75392pt x 241.84845p
+t>
+File: graphics/layout/Layout_DDRiXY6_bonds_new.pdf Graphic file (type pdf)
+ <use graphics/layout/Layout_DDRiXY6_bonds_new.pdf>
+Package pdftex.def Info: graphics/layout/Layout_DDRiXY6_bonds_new.pdf used on i
+nput line 68.
 (pdftex.def)             Requested size: 298.75319pt x 241.84785pt.
-
-[29 <./graphics/layout/Layout_DDRiXY6_bonds_new_grey_edited.pdf>]
+ [29 <./graphics/layout/Layout_DDRiXY6_bonds_new.pdf>]
 <graphics/layout/Layout_DDRi2C_bonds.pdf, id=383, 298.75392pt x 241.84843pt>
 File: graphics/layout/Layout_DDRi2C_bonds.pdf Graphic file (type pdf)
 
 <use graphics/layout/Layout_DDRi2C_bonds.pdf>
 Package pdftex.def Info: graphics/layout/Layout_DDRi2C_bonds.pdf used on input 
-line 112.
+line 104.
 (pdftex.def)             Requested size: 298.75319pt x 241.84784pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--123
+Underfull \hbox (badness 10000) in paragraph at lines 109--115
 
  []
 
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 125--143
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--135
 
  []
 
-[31 <./graphics/layout/Layout_DDRi2C_bonds.pdf>]
+[30] [31 <./graphics/layout/Layout_DDRi2C_bonds.pdf>]
 <graphics/photos/Demonstrator_edited_newScale.pdf, id=401, 312.98033pt x 227.62
 204pt>
 File: graphics/photos/Demonstrator_edited_newScale.pdf Graphic file (type pdf)
  <use graphics/photos/Demonstrator_edited_newScale.pdf>
 Package pdftex.def Info: graphics/photos/Demonstrator_edited_newScale.pdf used 
-on input line 154.
+on input line 146.
 (pdftex.def)             Requested size: 312.97955pt x 227.62148pt.
-) [32 <./graphics/photos/Demonstrator_edited_newScale.pdf>] (measurement.tex
+
+<graphics/photos/ComparePhotoXY6_2C.pdf, id=402, 392.64803pt x 227.62204pt>
+File: graphics/photos/ComparePhotoXY6_2C.pdf Graphic file (type pdf)
+
+<use graphics/photos/ComparePhotoXY6_2C.pdf>
+Package pdftex.def Info: graphics/photos/ComparePhotoXY6_2C.pdf used on input l
+ine 153.
+(pdftex.def)             Requested size: 392.64706pt x 227.62148pt.
+) [32 <./graphics/photos/Demonstrator_edited_newScale.pdf> <./graphics/photos/C
+omparePhotoXY6_2C.pdf
+
+pdfTeX warning: pdflatex (file ./graphics/photos/ComparePhotoXY6_2C.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+>] (measurement.tex
 chapter 7.
-<graphics/concept/MeasurementSetup.pdf, id=423, 312.98033pt x 213.39566pt>
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 32.
-
-(E:\WinProgram\MikTEX\tex\latex\psnfss\t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `pcr' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [33
+[33
 
 
 
 
-] [34]
-<graphics/measdata/inputVoltage.pdf, id=431, 313.17pt x 213.79875pt>
+] <graphics/concept/meassetupschem.pdf, id=432, 412.56496pt x 227.62204pt>
+File: graphics/concept/meassetupschem.pdf Graphic file (type pdf)
+
+<use graphics/concept/meassetupschem.pdf>
+Package pdftex.def Info: graphics/concept/meassetupschem.pdf used on input line
+ 42.
+(pdftex.def)             Requested size: 412.56393pt x 227.62148pt.
+ [34 <./graphics/concept/meassetupschem.pdf>] [35]
+<graphics/measdata/inputVoltage.pdf, id=447, 313.17pt x 213.79875pt>
 File: graphics/measdata/inputVoltage.pdf Graphic file (type pdf)
 
 <use graphics/measdata/inputVoltage.pdf>
 Package pdftex.def Info: graphics/measdata/inputVoltage.pdf used on input line 
-97.
+115.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
 
-<graphics/measdata/100M_Rload_regression.pdf, id=432, 313.17pt x 213.79875pt>
+<graphics/measdata/100M_Rload_regression.pdf, id=448, 313.17pt x 213.79875pt>
 File: graphics/measdata/100M_Rload_regression.pdf Graphic file (type pdf)
 
 <use graphics/measdata/100M_Rload_regression.pdf>
 Package pdftex.def Info: graphics/measdata/100M_Rload_regression.pdf used on in
-put line 109.
+put line 127.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
- [35 <./graphics/measdata/inputVoltage.pdf, page is rotated 90 degrees>]
-<graphics/measdata/100M_Cload_regression.pdf, id=442, 313.17pt x 213.79875pt>
+ [36 <./graphics/measdata/inputVoltage.pdf, page is rotated 90 degrees> <./grap
+hics/measdata/100M_Rload_regression.pdf, page is rotated 90 degrees>]
+<graphics/measdata/100M_Cload_regression.pdf, id=464, 313.17pt x 213.79875pt>
 File: graphics/measdata/100M_Cload_regression.pdf Graphic file (type pdf)
 
 <use graphics/measdata/100M_Cload_regression.pdf>
 Package pdftex.def Info: graphics/measdata/100M_Cload_regression.pdf used on in
-put line 131.
+put line 149.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
- [36 <./graphics/measdata/100M_Rload_regression.pdf, page is rotated 90 degrees
->]
-<graphics/measdata/150M_Cload_regression.pdf, id=452, 313.17pt x 213.79875pt>
+
+<graphics/measdata/150M_Cload_regression.pdf, id=465, 313.17pt x 213.79875pt>
 File: graphics/measdata/150M_Cload_regression.pdf Graphic file (type pdf)
 
 <use graphics/measdata/150M_Cload_regression.pdf>
 Package pdftex.def Info: graphics/measdata/150M_Cload_regression.pdf used on in
-put line 144.
+put line 162.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
  [37 <./graphics/measdata/100M_Cload_regression.pdf, page is rotated 90 degrees
-> <./graphics/measdata/150M_Cload_regression.pdf, page is rotated 90 degrees>])
- [38] (conclusion.tex
+>]) [38 <./graphics/measdata/150M_Cload_regression.pdf, page is rotated 90 degr
+ees>] (conclusion.tex
 chapter 8.
 ) [39
 
@@ -1865,7 +1873,7 @@ chapter 8.
 
 
 ] [43]
-[44] <graphics/photos/Demonstrator.pdf, id=499, 209.2131pt x 227.62204pt>
+[44] <graphics/photos/Demonstrator.pdf, id=512, 209.2131pt x 227.62204pt>
 File: graphics/photos/Demonstrator.pdf Graphic file (type pdf)
 
 <use graphics/photos/Demonstrator.pdf>
@@ -1880,11 +1888,11 @@ Package pdftex.def Info: graphics/photos/Demonstrator.pdf used on input line 31
 (fundamentals.aux) (design.aux) (simulation.aux) (layout.aux) (measurement.aux)
 (conclusion.aux) (appendix.aux)) ) 
 Here is how much of TeX's memory you used:
- 39165 strings out of 493673
- 753055 string characters out of 3146818
- 853200 words of memory out of 3000000
- 41562 multiletter control sequences out of 15000+200000
- 70356 words of font info for 220 fonts, out of 3000000 for 9000
+ 39131 strings out of 493673
+ 752695 string characters out of 3146818
+ 853212 words of memory out of 3000000
+ 41536 multiletter control sequences out of 15000+200000
+ 69605 words of font info for 216 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  71i,12n,79p,10425b,1266s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/WinProgram/MikTEX/fonts/enc/dvips/fontnam
@@ -1894,15 +1902,14 @@ nProgram/MikTEX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/WinProgram/MikTEX
 lic/amsfonts/cm/cmr12.pfb><E:/WinProgram/MikTEX/fonts/type1/public/amsfonts/cm/
 cmr8.pfb><E:/WinProgram/MikTEX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/Wi
 nProgram/MikTEX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/WinProgram/MikTEX/
-fonts/type1/urw/courier/ucrr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/helvet
-ic/uhvb8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/helvetic/uhvr8a.pfb><E:/Win
-Program/MikTEX/fonts/type1/urw/times/utmb8a.pfb><E:/WinProgram/MikTEX/fonts/typ
-e1/urw/times/utmbi8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb
-><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/f
-onts/type1/urw/times/utmri8a.pfb>
-Output written on master_thesis_RiemannPump.pdf (58 pages, 17888039 bytes).
+fonts/type1/urw/helvetic/uhvb8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/helve
+tic/uhvr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmb8a.pfb><E:/WinPr
+ogram/MikTEX/fonts/type1/urw/times/utmbi8a.pfb><E:/WinProgram/MikTEX/fonts/type
+1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><
+E:/WinProgram/MikTEX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on master_thesis_RiemannPump.pdf (58 pages, 42516465 bytes).
 PDF statistics:
- 563 PDF objects out of 1000 (max. 8388607)
+ 573 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41615 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 41108 words of extra memory for PDF output out of 42996 (max. 10000000)
 
