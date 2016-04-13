@@ -6,6 +6,7 @@
 The concept of software-defined radio is adapted to deal with the old problems of mobile communication. The idea is to bring the digital domain as close as possible to the RFFE. The reason is digital filtering, data processing is more efficient, easier, less complex, has less cost, and so on. The main problem of this approach is the energy consumption based on an inefficient ADC/DAC. However the concept is very helpful for future designs of an digital front end. The Software-defined radio has the advantage, that it is adaptiv for future software changes. the hardware is still the same, only the firmware has to be upgraded. broad spectrum of signal can be received with this architecture. from nearly DC to 2 GHz. For future mobile communication standards, the frequency range has to deal with frequencies beyond 2 GHz up to 6 GHz. Nowadays IEEE802.11ac standard is located at 5GHz. Based on this concept a digital-analog converter is designed to deal with a higher bandwith than other devices nowadays. The DAC is used in the transmission path of the design.
 %\section{An approach to reach the desired high speed for the digital-to-analog converter: The Riemann Pump}
 \section{Idea of the Riemann Pump}
+\label{IdeaRiemannPump}
 The Riemann Pump is a arbitrary waveform generator which is controlled through a digital input control voltage.
 In fact of the conversion from digital to analog signals this can be seen as a \gls{ab:dac}.
 % By applying a digital input voltage of \SI{5}{\volt} a arbitrary wave form can be generated.
@@ -67,6 +68,15 @@ The signal to noise ratio is calculated in equation \ref{eq:SNR_RiemannPumpConve
 	\text{SNR } [\si{\dB}] = 6.02N + 9.03r - 7.78 + 10\log_{10}(1 - \frac{1}{2}^{N-1} + \frac{1}{2}^{2N})
 	\label{eq:SNR_RiemannPumpConversion}
 \end{equation}
+
+
+Process of the digital to analog conversion:
+\begin{enumerate}
+	\item theoretical signal generation via multiplication of time domain signals
+	\item linear approximation via error estimation to get a sequence of relative slopes
+	\item get binary code of the sequence of slopes
+	\item control switches with this digital code to synthesize the wanted analog signal
+\end{enumerate}
 
 \textbf{Description of the OSR, Nyquist-Shannon theorem and the SQNR...}
 The \gls{ab:osr} is four and hence due to the Nyquist-Shannon theorem, the sampling \gls{sy:freq} is eight times the signal frequency.

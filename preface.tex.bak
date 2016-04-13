@@ -3,6 +3,7 @@
 %\textit{Explanation of why you had to do what you did. At the end of this section, you should summarize your most important results in one to two pages, including your best measurement result.}
 \textbf{Description of the task.}\\
 Mobile communication became a major part of our daily life. With the release of the fourth mobile communication standard  \gls{ab:lte}, over seventy 70 power stations are in operation.
+% todays data rate handles videos in two dimensional resolution but this is not the end of line. The next generation have to handle three dimensional high resolution video streams via virtual reality 360° cameras. Livestream broadcast - extreme high data rate, low latency (realtime), high bandwidth. The fifth mobile communication standard should connect the world. Satellite broadcasting of the internet to regions in the outback. In a conclusion the internet should keeping cheaper, efficiency way it must be affordable to all people. Internet of things, is the voice controlled wireless devices. Through voice data a lot more data.
 % (-> EPCOS Ordner gucken !! WICHTIG) 
 In our every day life applications such as Instagramm, Whatsapp, facebook  and Snapchat  are dealing with very high data transfer rates. The industry also handles a very big amount of data. 
 Real time trading at a stock exchange market is crucial, so the industry tries to reach this with the help of RF mobile communication. 

@@ -25,16 +25,16 @@
 \contentsline {section}{\numberline {6.1}Substrate layout using DDRi\_X6 and DDRi\_Y6 chips}{28}
 \contentsline {section}{\numberline {6.2}Substrate layout using DDRi\_2C chips}{30}
 \contentsline {section}{\numberline {6.3}Evaluation of the design and realisation process}{31}
-\contentsline {chapter}{\numberline {7}Measurement of the realized circuit in the time domain}{33}
-\contentsline {section}{\numberline {7.1}Measurement setup}{33}
-\contentsline {section}{\numberline {7.2}Calibration and stability check}{35}
-\contentsline {section}{\numberline {7.3}Time domain measurement of push-pull stage}{35}
-\contentsline {section}{\numberline {7.4}Time domain measurement of synthesized signal}{37}
-\contentsline {section}{\numberline {7.5}Discussion of measurement results}{38}
-\contentsline {chapter}{\numberline {8}Conclusions and outlook}{39}
-\contentsline {chapter}{Bibliography}{41}
-\contentsline {chapter}{Appendix}{43}
-\contentsline {section}{\numberline {A}Schematic of the Riemann Pump circuit}{43}
-\contentsline {section}{\numberline {B}Layout of the whole Riemann Pump circuit}{44}
-\contentsline {section}{\numberline {C}Photography of the realized Demonstrator version 1}{45}
-\contentsline {section}{\numberline {D}Photography of the realized Demonstrator version 2}{45}
+\contentsline {chapter}{\numberline {7}Measurement of the realized circuit in the time domain}{35}
+\contentsline {section}{\numberline {7.1}Measurement setup}{35}
+\contentsline {section}{\numberline {7.2}Calibration and stability check}{37}
+\contentsline {section}{\numberline {7.3}Time domain measurement of push-pull stage}{38}
+\contentsline {section}{\numberline {7.4}Time domain measurement of synthesized signal}{39}
+\contentsline {section}{\numberline {7.5}Discussion of measurement results}{40}
+\contentsline {chapter}{\numberline {8}Conclusions and outlook}{41}
+\contentsline {chapter}{Bibliography}{43}
+\contentsline {chapter}{Appendix}{45}
+\contentsline {section}{\numberline {A}Schematic of the Riemann Pump circuit}{45}
+\contentsline {section}{\numberline {B}Layout of the whole Riemann Pump circuit}{46}
+\contentsline {section}{\numberline {C}Photography of the realized Demonstrator version 1}{47}
+\contentsline {section}{\numberline {D}Photography of the realized Demonstrator version 2}{47}

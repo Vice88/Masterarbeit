@@ -29,7 +29,9 @@ A signal generator generated a square wave signal with an amplitude of \SI{0.7}{
 As a square wave signal consists of several harmonics, the pre amplifier had to support a wide bandwidth.\\
 The square wave of $Ch1$ \& $\overline{Ch1}$ and $Ch2$ \& $\overline{Ch2}$ of the \gls{ab:awg} is amplified by broadband amplifier G1 and G2, respectively.\\
 A \gls{ab:dc} bias voltage is applied to the inputs of the \gls{ab:dut} to generate a square wave signal from $V_{low}$ = \SI{-10}{\volt} to $V_{high}$ = \SI{-5}{\volt}.
-The voltage swing of \SI{5}{\volt} as well as the \gls{ab:dc} bias voltage were needed to ensure that the input transistors switch completely on and off.\\
+The voltage swing of \SI{5}{\volt} as well as the \gls{ab:dc} bias voltage were needed to ensure that the input transistors switch completely on and off.
+%In order to ensure that the \gls{ab:hemt} base transistor at the input of the circuit is fully switched on and off a peak to peak value of \SI{5}{\volt} is needed.
+%\SI{5}{\volt} peak to peak input signal is needed to ensure that the \gls{ab:hemt} is fully opened or fully closed.\\
 Several power supplies provided the necessary \gls{ab:dc} supply voltages for the broadband amplifiers, bias tees and \gls{ab:dut}.\\
 For the measurement of the push-pull stage an attenuator with \SI{20}{\decibel} attenuation was connected between the output of the \gls{ab:dut} and the input of the oscilloscope.
 This attenuator ensured that the specifications of the oscilloscope (scope 1) were complied.\\
@@ -79,6 +81,13 @@ The elements of the measurement setup were:
 		\item scope 2: DSO-X 3034A + HP 10432A (probe)
 	\end{itemize}		
 \end{itemize}
+
+\begin{figure}[htb!]
+	\centering
+  \includegraphics{MeasSetup.pdf}
+	\caption{Photograph of measurement setup}
+	\label{fig:PhotoMeasSetup}
+\end{figure}
 
 \section{Calibration and stability check}
 Before performing the first measurement the instruments and used devices had to be calibrated.

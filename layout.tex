@@ -2,30 +2,44 @@
 %\textbf{keep it small and simple} 
 %Outline of the technologies used to fabricate and assemble your structures, if applicable. Detailed processes belong in the appendix. If numerous types of structures were fabricated, or assembly technology is extensive, there may be more than one of these chapters. \textbf{Characterization} Description of the means developed and employed to characterize the devices or systems that have been fabricated.
 %The realisation of the demonstrated concepts on a hybrid substrate was one goal of this thesis, to show its feasibility.
-The demonstrator consists of several (multi assembled) \gls{ab:mmic} chips with a filter network built by discrete \gls{ab:smd} decoupling capacitors.
-Therefore the realised demonstrator is a hybrid test circuit.
-To avoid building a too complex structure the resolution of the \gls{ab:dac} was restricted to two bit.
-With two bit resolution there are already four inputs which need to be controlled via a high speed digital signal.
-In order to ensure that the \gls{ab:hemt} base transistor at the input of the circuit is fully switched on and off a peak to peak value of \SI{5}{\volt} is needed.
-%\SI{5}{\volt} peak to peak input signal is needed to ensure that the \gls{ab:hemt} is fully opened or fully closed. 
-If a third bit of resolution was added this would increase the number of inputs to six, which makes the circuit and the test setup more complex.
+The demonstrators realized in this work consisted of several \gls{ab:mmic} chips with a filter network built by discrete elements.
+Due to the fact that \gls{ab:smd} decoupling capacitors as well as \gls{ab:mmic} were used, this were called hybrid test circuits.
+%In fact of the combination of \gls{ab:mmic} and the discrete components the demonstrator described a hybrid test circuit.
+% Therefore the realised demonstrator is a hybrid test circuit.
+For assembling and measurement purposes the test circuit was restricted to a resolution of two bit.
+Otherwise the bonding, assembling and controlling of the inputs would became too complex.
+% To avoid building a too complex structure the resolution of the \gls{ab:dac} was restricted to two bit.
+Two bit resolution implied to create an input control strategy for the four inputs.
+A third bit of resolution would enhance the performance but also increase the complexity of the realisation as six inputs needed to e controlled.
+% As well the bonding of the chips, the heat transfer, power consumption
+%If a third bit of resolution was added this would increase the number of inputs to six, which makes the circuit and the test setup more complex.
 \\
-A two layer high frequency roger substrate, namely Rogers 4003, is used.
-Rogers 4003 substrates have nice properties with respect to high frequency applications.
-The dissipation factor is 0.0027, while dielectric constant is 3.55 and thermal coefficient is +40. % which parameters are really helpfull in contrast to other materials?
-Two different designs were ordered both with a \SI{35}{\micro \metre} Cu conduction layer, ChemNiPdAu metallisation and a thickness of \SI{0.508}{\milli \metre}.
-An impedance control of the \SI{50}{\ohm} input lines as well for the \SI{50}{\ohm} output line is performed by the manufacturer, Contag AG, to ensure the best matching.
-\\
-The different version are designed with the background of using different chips with different properties.
-One layout is designed for chips which backside metallization is grounded with vias.
-To realize a high side switch with those chips, they have to be put on a pad without gnd contact.
-The source contact of the chip is the output for the high side, while the source contact of the lowside switch is grounded.
-Therefore for the lowside the chips is mounted on the ground layer.
-Chips with this properties are designed by Stephan Maroldt, namely DDRi\_X6 and DDRi\_Y6.\\
-The other version of the designed substrate is for chips, which backside metallization is not connected to the chips "GND" potential with vias.
-Therefore this version could be mounted (soldered) to the conduction layer without the need of an isolated pad.
-These chips DDRi\_2C, also designed by Stephan Maroldt, have to be bonded to the substrate GND separately.
+A two layer high frequency substrate, namely Rogers RO4003, were used.
+The benefit of the low dissipation factor, a low tolerance of dielectric coefficient and the stable electrical properties made this the most suitable material for the broadband application. %ref-> datasheet???
 
+%Low dielectric tolerance, low loss, stable electrical properties and low thermal coefficient made this substrate the most suitable for the desired application.
+%The benefit of this substrate were excellent electrical performance which made it ideal for broadband applications.
+%The dissipation factor is 0.0027, while dielectric constant is 3.55 and thermal coefficient is +40. % which parameters are really helpfull in contrast to other materials?
+With the help of former designed chips, two different versions of the substrate were designed.
+To made use of these chips it was necessary to design two different versions due to the different properties of the chips.
+% created at the IAF by Stephan Maroldt. % name it here? reference to a paper or a design process?
+The two layer substrates were ordered with a thickness of \SI{0.508}{\milli \metre}, a \SI{35}{\micro \metre} \gls{ab:cu} conduction layer and a \gls{ab:ChemNiPdAu} metallisation.
+An impedance control ensured the correct impedance of \SI{50}{\ohm} for the \SI{1.1}{\milli \meter} wide \gls{ab:msl} at the in- and output of the circuit.
+
+% of the \SI{50}{\ohm} input lines as well for the \SI{50}{\ohm} output line is performed by the manufacturer, Contag AG, to ensure the best matching.
+
+Each version of the designed substrates got the size of \SI{60}{\milli \meter} x \SI{54}{\milli \meter} while the area for the multi assembled chips covered approximately \SI{6}{\milli \meter} x \SI{5.5}{\milli \meter} for both.
+% The different version are designed with the background of using different chips with different properties.
+One layout was designed for chips which ground contact were plated through the backside metallization of the chip.
+Yielding a power transistors source contact connected to these ground plates.
+This property yielded a great drawback compared to the other layout of the substrate using different chips.\\
+The second layout of the substrate were planned to improve the heat transfer by using another type of chip.
+This chips ground contact were not plated through the backside metallization, making them suitable for soldering on a conducting heat spreader.\\
+%The designed schematic needed a power transistor which switched the power supply voltage to the output of the circuit.
+%For this functionality the transistors source contact acted like the output and therefore it should not be connected to ground potential.
+%Therefore this version could be mounted (soldered) to the conduction layer without the need of an isolated pad.
+%These chips DDRi\_2C, also designed by Stephan Maroldt, have to be bonded to the substrate GND separately.
+To made use of the former designed chips, these two layouts were designed to enable the proof of concept.
 
 
 \section{Substrate layout using DDRi\_X6 and DDRi\_Y6 chips}
@@ -34,8 +48,8 @@ These chips DDRi\_2C, also designed by Stephan Maroldt, have to be bonded to the
 %	\item Highside driver load transistor voltage connected to Vout
 %\end{enumerate}
 
-The presented layout of the substrate is designed for the use of the chips DDRi\_X6 and DDRi\_Y6.
-Figure \ref{fig:layoutDDRiXY6sub} shows an overview of the designed layout.
+The presented layout of the substrate was designed for the use of the chips DDRi\_X6 and DDRi\_Y6 since the chip DDRi\_2C required a different multi chip connection.
+Figure \ref{fig:layoutDDRiXY6sub} shows the overview of the designed substrate, consisting of a decoupling capacitor network, several dc voltage and \gls{ab:rf} connectors and the core of the circuit.
 
 \begin{figure}[htb!]
 	\centering
@@ -44,23 +58,46 @@ Figure \ref{fig:layoutDDRiXY6sub} shows an overview of the designed layout.
 	\label{fig:layoutDDRiXY6sub}
 \end{figure}
 
-It is to mention that the part outside the red marked rectangular box of this layout is nearly identical for the other design version.
-Only one additional \gls{ab:dc} voltage supply line and a different arrangement of the chips is considered.
-The described part outside the red box consists of the \gls{ab:smd} decoupling capacitor filter network and the multi pin connector for the \gls{ab:dc} voltage supply.\\
-The filter network consisting of several decoupling capacitors is designed by the right choice of capacitors.
-The very first decoupling capacitor is integrated in the chip, while the second is a special \gls{ab:mmic} capacitor mounted on the backside connected layer.
-The purpose of the bypass capacitors were to filter out undesired distortion frequencies which could lead to oscillation of the circuit.
-A few bypass capacitors are used based on the experience and experimental advice of some colleagues, rule of thumb. 
-Suitable capacitors were those with a high \gls{ab:esr} which means a bad q-factor, and of course the temperature range, the voltage range should be suitable to the purpose(flatten mag of imp vs. freq broadband good).
-(Bypassing and operating frequency not necessarily linked to each other. Bypassing a greater range than the potential operating frequency) (Culture Cargo principle). 
-The first bypass capacitance the chip supply voltage sees is a MMIC cap directly assembled near to the supply pin of the chip.
-The values of the used capacitors in the order of placement starting at the chip supply in the middle of the substrate (82p, 1n, 10n, 100n, 1u, 10u (only Vdd)).
-This undesired distortion frequencies could make the circuit unstable.\\
-The size of the used pads for the GND potential is designed larger than necessary to make it easier to change the capacitors.
-The GND potential pads also have some via holes in fact that more via holes could make the thermal dissipation only better than worse.\\
-The four input lines as well as the output line were designed to have an impedance of \SI{50}{\ohm} to ensure matching to the cables for the measurement.\\
-Distance between conduction layer is limited by the processing steps of the manufacturer.
-In the layout process it was kept in mind to reduce the capacitive coupling between supply and signal lines.\\
+%To realize a high side switch with those chips, they have to be put on a pad without gnd contact.
+%The source contact of the chip is the output for the high side, while the source contact of the lowside switch is grounded.
+%Therefore for the lowside the chips is mounted on the ground layer.
+%Chips with this properties are designed by Stephan Maroldt, namely DDRi\_X6 and DDRi\_Y6.
+
+It is to mention that the layout outside the red marked box was very similar for the others version.
+So one explanation of the layout outside the box were sufficient.
+Only one additional \gls{ab:dc} voltage supply line was added and the arrangement of the chips were different.
+Due to the different arrangement of the chips attention was paid to the connection of bias voltages.\\
+The described part outside the red box consists of the \gls{ab:smd} decoupling capacitor filter network and the multi pin connector for the \gls{ab:dc} voltage supply.
+In addition to this the in- and output transmission lines were designed to fit to an \SI{50}{\ohm} impedance. \\
+The decoupling capacitors, also known as bypass capacitors, filtered out undesired frequency portions by the power supply.
+If the filter network did not work properly, this could lead to undesired oscillations of the circuit.
+Following a very common design rule lead to the right choice of capacitors.
+A very first decoupling capacitor was integrated on the \gls{ab:mmic} chip.
+The requirement to place the decoupling capacitors as close as possible to the \gls{ab:dc} voltage supply pad lead to the choice of a special \gls{ab:mmic} capacitor.
+It was possible to place that capacitor as near as possible to the chip to keep the length of the bonds small.
+To avoid resonance peaking the most suitable capacitors were those with a high \gls{ab:esr} since the quality factor of these were small.
+A great bypassing range were enabled by choosing a \SI{82}{\pico \farad} capacitor, namely D20BT820K5PX from Dielectric Laboratories Inc., to filter out frequencies in the GHz range.
+The gold metallization (for wire bonding), the thin film technology and the custom sizes (to keep it small), made this the most suitable capacitor for the purpose filtering high frequencies.
+Each capacity, of subsequent capacitors, were increased by one order in magnitude yielding the biggest capacity of \SI{10}{\micro \farad}.
+The big capacity filtered out frequency portions in the lower kHZ range.
+% Reference !! -> decoup. bypass cap paper
+% literature on this topic !! -> explain the choice of capacitor size !!!
+In addition to the capacity also the temperature and voltage range had to fit.
+%(Bypassing and operating frequency not necessarily linked to each other. Bypassing a greater range than the potential operating frequency)
+% (Culture Cargo principle). 
+The following choice for the capacities was taken: \SI{82}{\pico \farad}, \SI{1}{\nano \farad}, \SI{10}{\nano \farad}, \SI{100}{\nano \farad}, \SI{1}{\micro \farad}, \SI{10}{\micro \farad}, started at the chips supply pin. \\
+In fact that oscillation still could appear, the size of the used pads was designed larger, making it possible to change (adapt) the capacities for the filter network.
+These pads also had some via holes to transfer the ambient temperature to the backside.
+This was the attempt to keep as much as possible heat away from the chips.\\
+The four input lines, as well as the output line, were designed to fit to an impedance of \SI{50}{\ohm}.
+With a line calculator, namely line calc in the program ads, the corresponding line width was calculated.
+The calculated width of the line was \SI{1.1}{\milli \meter} which was checked by the manufacturer with an impedance control as well.\\
+The arrangement of the chips was realised to keep the length of the bond wires as short as possible.
+However the distances between conduction lines were limited by the process of the manufacturer.
+The transmission lines of the signal path were designed to fit each other.
+All transmission lines were matched to \SI{50}{\ohm} and got the same length to avoid undesired delays of the signal.
+An important fact to consider was that all switches had to switch synchronous at the same time. 
+Therefore no signal delays were permitted induced by different transmission lines.\\
 The assembly of the multi chip connection marked with the red rectangular is described in Figure \ref{fig:layoutDDRiXY6bond}.
 
 \begin{figure}[htb!]
@@ -70,28 +107,26 @@ The assembly of the multi chip connection marked with the red rectangular is des
 	\label{fig:layoutDDRiXY6bond}
 \end{figure}
 
-One very important design rule for this layout was to create as much as possible heat transfer.
-The drawback of the chosen chips were that in fact of the backside metallization and their via hole to the backside, this chips had to be placed on an isolated pad.
-In Figure \ref{fig:layoutDDRiXY6bond} the chips at the bottom marked (black)  were placed on an isolated pad.
-This pad did not have any connection to the GND potential of the substrate.
-The pad were placed in the near of a conducting layer with via holes to spread the heat over the air bridge (ambient temperature) through the via hole to the backside. 
-This isolation pad had to be established since these chips were switched at the high-side to provide Vdd to the output. 
-Due to the assembling on an isolated pad, the heat transfer is much worse than for the other chips.
-This is not the optimal way to dissipate the heat, but the only to handle some heat dissipation.
-This is a very critical design issue since the chips create much heat.
-A pad which is surrounded by the back sided conductive layer was used to enable at least some heat transfer to the backside of the demonstrator.
-Since there was no other option to dissipate the heat in this configuration this was the chosen approach.\\
-The length of the bond wires, were set to be equal for the critical signal paths of the in- and output connection.
+%One very important design rule for this layout was to create as much as possible heat transfer.
+The drawback of these chosen chips were its plated through ground contact. In fact of this, a proper function of this chips as a high side switch made it necessary to place it on an electrical isolated pad.
+At the bottom of Figure \ref{fig:layoutDDRiXY6bond} these chips were placed on an isolated pad.
+This pad did not have any connection to the backside potential of the substrate.
+The pads were surrounded by a large conducting layer with via holes to spread the heat.
+The idea was to dissipate the heat over the air bridge, through the via holes of the conducting layer, to the backside of the substrate.
+%This was not the optimal but a cost effective way to dissipate the heat.
+%A more expensive way would be to take a ceramic for the isolation.
+The substrate was mounted on a beam(?), which improved the cooling a little bit.
+The beam was necessary to install the RF-SMA connectors and therefore the connection between the circuit and the measurement equipment.
+This was a very critical design issue since the chips created much power, hence much heat.
+\\
+As mentioned earlier the length of the bond wires were set to be equal for the signal paths.
 Since an in-phase control of the input was important to ensure the switches to turn on/off synchronous.
 The length of the bond wires providing the \gls{ab:dc} voltage supply were not critical.
-The diameter of the wedged \gls{ab:au} bond wire was set to \SI{25}{\micro \metre} which ensured a maximum current of approximated \SI{1}{\ampere} for a bond length of \SI{1}{\milli \metre}.
-The small diameter and the short length made it most suitable for the high frequency application.\\
-A first mounted decoupling capacitor were a \SI{82}{\pico \farad} \gls{ab:smd} ceramic capacitor, namely D20BT820K5PX from Dielectric Laboratories Inc.\textbf{attach Datasheet?}.
-The gold metallization (for wire bonding), the thin film technology and the custom sizes (to keep it small), made this the most suitable capacitor for the purpose of \gls{ab:dc} blocking.
+The diameter of the wedged \gls{ab:au} bond wires was set to \SI{25}{\micro \metre} which ensured a maximum current of approximated \SI{1}{\ampere} for a bond length of \SI{1}{\milli \metre}.
+The small diameter and the short length made it most suitable for the high frequency application.
 
 
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%13.04.2016; 20:06 Uhr %%%%%%%%%%%%%%
 
 \section{Substrate layout using DDRi\_2C chips}
 As mentioned before the layout of the filter network and the dc supply voltage did not differ as much from the other layout version.
@@ -153,4 +188,19 @@ The finished demonstrator is shown in Figure \ref{fig:assembledDemonstrator}with
   \includegraphics{ComparePhotoXY6_2C.pdf}
 	\caption{Comparison of assembled chips DDRi\_X6 \& DDRi\_Y6 (left) and DDRi\_2C (right)}
 	\label{fig:CompareChips}
+\end{figure}
+
+\newpage
+Another approach would be to solder the DDRi\_XY6 chips on a electrical isolator while thermal (good) conductor as AluminiumNitrid (AlN: 180-200 W/mK -> datasheet). To ensure the isolation from output port to GND but still have a good thermal transfer.
+This approach would have required only a small amount of the material AlN, which had to be cut very precisely into very tiny pieces.
+This pads glued (adhesion, soldered) on the conduction layer for heat transfer. 
+All in all this would be the better choice, but for the first proof of concept this would be more expensive.
+In fact of the very small and precise size of the special material this would extend it.
+
+
+\begin{figure}[htb!]
+	\centering
+  \includegraphics{Layout_DDRiXY6_AlN_pads.pdf}
+	\caption{Improved layout for Chips DDRi\_X6 and DDRi\_Y6}
+	\label{fig:DDRiXY6AlNpads}
 \end{figure}
