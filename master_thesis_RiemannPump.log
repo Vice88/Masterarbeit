@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  13 APR 2016 20:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  14 APR 2016 15:12
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -1766,75 +1766,82 @@ Package pdftex.def Info: graphics/layout/Layout_DDRiXY6_bonds_new.pdf used on i
 nput line 105.
 (pdftex.def)             Requested size: 298.75319pt x 241.84785pt.
  [29]
-<graphics/layout/Layout_DDRi2C_bonds.pdf, id=370, 298.75392pt x 241.84843pt>
+<graphics/photos/Photo_DDRi_XY6.pdf, id=370, 179.25235pt x 227.62204pt>
+File: graphics/photos/Photo_DDRi_XY6.pdf Graphic file (type pdf)
+
+<use graphics/photos/Photo_DDRi_XY6.pdf>
+Package pdftex.def Info: graphics/photos/Photo_DDRi_XY6.pdf used on input line 
+133.
+(pdftex.def)             Requested size: 179.2519pt x 227.62148pt.
+ [30 <./graphics/layout/Layout_DDRiXY6_bonds_new.pdf>]
+<graphics/layout/Layout_DDRi2C_bonds.pdf, id=387, 298.75392pt x 241.84843pt>
 File: graphics/layout/Layout_DDRi2C_bonds.pdf Graphic file (type pdf)
 
 <use graphics/layout/Layout_DDRi2C_bonds.pdf>
 Package pdftex.def Info: graphics/layout/Layout_DDRi2C_bonds.pdf used on input 
-line 139.
+line 149.
 (pdftex.def)             Requested size: 298.75319pt x 241.84784pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--150
+Underfull \hbox (badness 10000) in paragraph at lines 154--159
 
  []
 
-[30 <./graphics/layout/Layout_DDRiXY6_bonds_new.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 152--170
+[31 <./graphics/photos/Photo_DDRi_XY6.pdf> <./graphics/layout/Layout_DDRi2C_bon
+ds.pdf
+
+pdfTeX warning: pdflatex (file ./graphics/layout/Layout_DDRi2C_bonds.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+>] <graphics/photos/Photo_DDRi_2C.pdf, id=405, 179.25235pt x 227.62204pt>
+File: graphics/photos/Photo_DDRi_2C.pdf Graphic file (type pdf)
+
+<use graphics/photos/Photo_DDRi_2C.pdf>
+Package pdftex.def Info: graphics/photos/Photo_DDRi_2C.pdf used on input line 1
+71.
+(pdftex.def)             Requested size: 179.2519pt x 227.62148pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--195
 
  []
 
-[31 <./graphics/layout/Layout_DDRi2C_bonds.pdf>]
-<graphics/photos/Demonstrator_edited_newScale.pdf, id=401, 312.98033pt x 227.62
+[32 <./graphics/photos/Photo_DDRi_2C.pdf>]
+<graphics/photos/Demonstrator_edited_newScale.pdf, id=413, 312.98033pt x 227.62
 204pt>
 File: graphics/photos/Demonstrator_edited_newScale.pdf Graphic file (type pdf)
  <use graphics/photos/Demonstrator_edited_newScale.pdf>
 Package pdftex.def Info: graphics/photos/Demonstrator_edited_newScale.pdf used 
-on input line 181.
+on input line 206.
 (pdftex.def)             Requested size: 312.97955pt x 227.62148pt.
-
-<graphics/photos/ComparePhotoXY6_2C.pdf, id=402, 392.64803pt x 227.62204pt>
-File: graphics/photos/ComparePhotoXY6_2C.pdf Graphic file (type pdf)
-
-<use graphics/photos/ComparePhotoXY6_2C.pdf>
-Package pdftex.def Info: graphics/photos/ComparePhotoXY6_2C.pdf used on input l
-ine 188.
-(pdftex.def)             Requested size: 392.64706pt x 227.62148pt.
- [32 <./graphics/photos/Demonstrator_edited_newScale.pdf>]
-<graphics/layout/Layout_DDRiXY6_AlN_pads.pdf, id=424, 312.98033pt x 213.39566pt
+ [33 <./graphics/photos/Demonstrator_edited_newScale.pdf>]
+<graphics/layout/Layout_DDRiXY6_AlN_pads.pdf, id=435, 312.98033pt x 213.39566pt
 >
 File: graphics/layout/Layout_DDRiXY6_AlN_pads.pdf Graphic file (type pdf)
  <use graphics/layout/Layout_DDRiXY6_AlN_pads.pdf>
 Package pdftex.def Info: graphics/layout/Layout_DDRiXY6_AlN_pads.pdf used on in
-put line 203.
+put line 228.
 (pdftex.def)             Requested size: 312.97955pt x 213.39514pt.
-) [33 <./graphics/photos/ComparePhotoXY6_2C.pdf> <./graphics/layout/Layout_DDRi
-XY6_AlN_pads.pdf
-
-pdfTeX warning: pdflatex (file ./graphics/layout/Layout_DDRiXY6_AlN_pads.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
->] (measurement.tex [34
-
-
-
-
-]
+) [34 <./graphics/layout/Layout_DDRiXY6_AlN_pads.pdf>] (measurement.tex
 chapter 7.
-[35] <graphics/concept/meassetupschem.pdf, id=449, 412.56496pt x 227.62204pt>
+<graphics/concept/meassetupschem.pdf, id=449, 412.56496pt x 227.62204pt>
 File: graphics/concept/meassetupschem.pdf Graphic file (type pdf)
 
 <use graphics/concept/meassetupschem.pdf>
 Package pdftex.def Info: graphics/concept/meassetupschem.pdf used on input line
  44.
 (pdftex.def)             Requested size: 412.56393pt x 227.62148pt.
- [36 <./graphics/concept/meassetupschem.pdf>] <graphics/photos/MeasSetup.pdf, i
-d=461, 398.3386pt x 267.4559pt>
+ [35
+
+
+
+
+] [36 <./graphics/concept/meassetupschem.pdf>] <graphics/photos/MeasSetup.pdf, 
+id=464, 398.3386pt x 267.4559pt>
 File: graphics/photos/MeasSetup.pdf Graphic file (type pdf)
 
 <use graphics/photos/MeasSetup.pdf>
 Package pdftex.def Info: graphics/photos/MeasSetup.pdf used on input line 87.
 (pdftex.def)             Requested size: 398.33762pt x 267.45525pt.
  [37 <./graphics/photos/MeasSetup.pdf>]
-<graphics/measdata/inputVoltage.pdf, id=470, 313.17pt x 213.79875pt>
+<graphics/measdata/inputVoltage.pdf, id=473, 313.17pt x 213.79875pt>
 File: graphics/measdata/inputVoltage.pdf Graphic file (type pdf)
 
 <use graphics/measdata/inputVoltage.pdf>
@@ -1842,7 +1849,7 @@ Package pdftex.def Info: graphics/measdata/inputVoltage.pdf used on input line
 124.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
 
-<graphics/measdata/100M_Rload_regression.pdf, id=471, 313.17pt x 213.79875pt>
+<graphics/measdata/100M_Rload_regression.pdf, id=474, 313.17pt x 213.79875pt>
 File: graphics/measdata/100M_Rload_regression.pdf Graphic file (type pdf)
 
 <use graphics/measdata/100M_Rload_regression.pdf>
@@ -1850,7 +1857,7 @@ Package pdftex.def Info: graphics/measdata/100M_Rload_regression.pdf used on in
 put line 136.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
  [38 <./graphics/measdata/inputVoltage.pdf, page is rotated 90 degrees>]
-<graphics/measdata/100M_Cload_regression.pdf, id=481, 313.17pt x 213.79875pt>
+<graphics/measdata/100M_Cload_regression.pdf, id=484, 313.17pt x 213.79875pt>
 File: graphics/measdata/100M_Cload_regression.pdf Graphic file (type pdf)
 
 <use graphics/measdata/100M_Cload_regression.pdf>
@@ -1858,7 +1865,7 @@ Package pdftex.def Info: graphics/measdata/100M_Cload_regression.pdf used on in
 put line 158.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
 
-<graphics/measdata/150M_Cload_regression.pdf, id=482, 313.17pt x 213.79875pt>
+<graphics/measdata/150M_Cload_regression.pdf, id=485, 313.17pt x 213.79875pt>
 File: graphics/measdata/150M_Cload_regression.pdf Graphic file (type pdf)
 
 <use graphics/measdata/150M_Cload_regression.pdf>
@@ -1888,7 +1895,7 @@ chapter 8.
 
 
 ] [45]
-[46] <graphics/photos/Demonstrator.pdf, id=534, 209.2131pt x 227.62204pt>
+[46] <graphics/photos/Demonstrator.pdf, id=537, 209.2131pt x 227.62204pt>
 File: graphics/photos/Demonstrator.pdf Graphic file (type pdf)
 
 <use graphics/photos/Demonstrator.pdf>
@@ -1903,10 +1910,10 @@ Package pdftex.def Info: graphics/photos/Demonstrator.pdf used on input line 31
 (fundamentals.aux) (design.aux) (simulation.aux) (layout.aux) (measurement.aux)
 (conclusion.aux) (appendix.aux)) ) 
 Here is how much of TeX's memory you used:
- 39209 strings out of 493673
- 754392 string characters out of 3146818
- 854662 words of memory out of 3000000
- 41607 multiletter control sequences out of 15000+200000
+ 39216 strings out of 493673
+ 754575 string characters out of 3146818
+ 854674 words of memory out of 3000000
+ 41612 multiletter control sequences out of 15000+200000
  69735 words of font info for 218 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  71i,12n,79p,10425b,1266s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1922,9 +1929,9 @@ tic/uhvr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmb8a.pfb><E:/WinPr
 ogram/MikTEX/fonts/type1/urw/times/utmbi8a.pfb><E:/WinProgram/MikTEX/fonts/type
 1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><
 E:/WinProgram/MikTEX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on master_thesis_RiemannPump.pdf (60 pages, 45517428 bytes).
+Output written on master_thesis_RiemannPump.pdf (60 pages, 45331012 bytes).
 PDF statistics:
- 595 PDF objects out of 1000 (max. 8388607)
+ 598 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41118 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 41123 words of extra memory for PDF output out of 42996 (max. 10000000)
 

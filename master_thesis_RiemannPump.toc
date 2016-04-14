@@ -23,8 +23,8 @@
 \contentsline {section}{\numberline {5.5}Evaluation of the simulation results for the Riemann Pump}{26}
 \contentsline {chapter}{\numberline {6}Realisation of a demonstrator}{27}
 \contentsline {section}{\numberline {6.1}Substrate layout using DDRi\_X6 and DDRi\_Y6 chips}{28}
-\contentsline {section}{\numberline {6.2}Substrate layout using DDRi\_2C chips}{30}
-\contentsline {section}{\numberline {6.3}Evaluation of the design and realisation process}{31}
+\contentsline {section}{\numberline {6.2}Substrate layout using DDRi\_2C chips}{31}
+\contentsline {section}{\numberline {6.3}Evaluation of the design and realisation process}{32}
 \contentsline {chapter}{\numberline {7}Measurement of the realized circuit in the time domain}{35}
 \contentsline {section}{\numberline {7.1}Measurement setup}{35}
 \contentsline {section}{\numberline {7.2}Calibration and stability check}{37}

@@ -41,10 +41,13 @@
 \glossaryentry{ESR?\glossentry{ab:esr}|setentrycounter[]{page}\glsnumberformat}{29}
 \glossaryentry{DC?\glossentry{ab:dc}|setentrycounter[]{page}\glsnumberformat}{30}
 \glossaryentry{Au?\glossentry{ab:au}|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{MSL?\glossentry{ab:msl}|setentrycounter[]{page}\glsnumberformat}{31}
-\glossaryentry{MMIC?\glossentry{ab:mmic}|setentrycounter[]{page}\glsnumberformat}{31}
-\glossaryentry{QFN?\glossentry{ab:qfn}|setentrycounter[]{page}\glsnumberformat}{32}
-\glossaryentry{Au?\glossentry{ab:au}|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{DC?\glossentry{ab:dc}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{DC?\glossentry{ab:dc}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{MMIC?\glossentry{ab:mmic}|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{SMD?\glossentry{ab:smd}|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{MSL?\glossentry{ab:msl}|setentrycounter[]{page}\glsnumberformat}{33}
+\glossaryentry{MMIC?\glossentry{ab:mmic}|setentrycounter[]{page}\glsnumberformat}{33}
+\glossaryentry{Au?\glossentry{ab:au}|setentrycounter[]{page}\glsnumberformat}{33}
 \glossaryentry{DC?\glossentry{ab:dc}|setentrycounter[]{page}\glsnumberformat}{35}
 \glossaryentry{AWG?\glossentry{ab:awg}|setentrycounter[]{page}\glsnumberformat}{35}
 \glossaryentry{DC?\glossentry{ab:dc}|setentrycounter[]{page}\glsnumberformat}{35}

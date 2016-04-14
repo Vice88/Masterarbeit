@@ -3,7 +3,7 @@
 
 %The aim of the measurement was to show the feasibility to generate (different) signals, using the two bit resolution of the circuit.
 
-The aim of the measurement was to show the generation of different signals using (the two bit resolution of) the realized circuit.\\
+The aim of the measurement was to show the generation of different signals.\\
 With respect to produce a decent signal waveform at the output, the assembled hybrid test circuit was terminated with a \SI{50}{\ohm} termination and a \SI{3.3}{\nano\farad} capacitance, respectively.
 In contrast to the calculated capacitance of \SI{20}{\pico \farad} in chapter \ref{ch:design}, a over dimensioned capacitor of \SI{3.3}{\nano\farad} terminated the output to ensure that the signal would not be clipped.
 %The assembled hybrid test circuit was measured with respect to produce a decent signal waveform at its output in the time domain.

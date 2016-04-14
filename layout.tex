@@ -3,7 +3,7 @@
 %Outline of the technologies used to fabricate and assemble your structures, if applicable. Detailed processes belong in the appendix. If numerous types of structures were fabricated, or assembly technology is extensive, there may be more than one of these chapters. \textbf{Characterization} Description of the means developed and employed to characterize the devices or systems that have been fabricated.
 %The realisation of the demonstrated concepts on a hybrid substrate was one goal of this thesis, to show its feasibility.
 The demonstrators realized in this work consisted of several \gls{ab:mmic} chips with a filter network built by discrete elements.
-Due to the fact that \gls{ab:smd} decoupling capacitors as well as \gls{ab:mmic} were used, this were called hybrid test circuits.
+Due to the fact that \gls{ab:smd} decoupling capacitors as well as \gls{ab:mmic} were used, this were called hybrid test circuit.
 %In fact of the combination of \gls{ab:mmic} and the discrete components the demonstrator described a hybrid test circuit.
 % Therefore the realised demonstrator is a hybrid test circuit.
 For assembling and measurement purposes the test circuit was restricted to a resolution of two bit.
@@ -28,11 +28,11 @@ An impedance control ensured the correct impedance of \SI{50}{\ohm} for the \SI{
 
 % of the \SI{50}{\ohm} input lines as well for the \SI{50}{\ohm} output line is performed by the manufacturer, Contag AG, to ensure the best matching.
 
-Each version of the designed substrates got the size of \SI{60}{\milli \meter} x \SI{54}{\milli \meter} while the area for the multi assembled chips covered approximately \SI{6}{\milli \meter} x \SI{5.5}{\milli \meter} for both.
+Each version of the designed substrates had the size of \SI{60}{\milli \meter} x \SI{54}{\milli \meter} while the area for the multi assembled chips covered approximately \SI{6}{\milli \meter} x \SI{5.5}{\milli \meter} for both.
 % The different version are designed with the background of using different chips with different properties.
 One layout was designed for chips which ground contact were plated through the backside metallization of the chip.
 Yielding a power transistors source contact connected to these ground plates.
-This property yielded a great drawback compared to the other layout of the substrate using different chips.\\
+This property yielded a great drawback compared to the other layout.\\
 The second layout of the substrate were planned to improve the heat transfer by using another type of chip.
 This chips ground contact were not plated through the backside metallization, making them suitable for soldering on a conducting heat spreader.\\
 %The designed schematic needed a power transistor which switched the power supply voltage to the output of the circuit.
@@ -123,16 +123,26 @@ As mentioned earlier the length of the bond wires were set to be equal for the s
 Since an in-phase control of the input was important to ensure the switches to turn on/off synchronous.
 The length of the bond wires providing the \gls{ab:dc} voltage supply were not critical.
 The diameter of the wedged \gls{ab:au} bond wires was set to \SI{25}{\micro \metre} which ensured a maximum current of approximated \SI{1}{\ampere} for a bond length of \SI{1}{\milli \metre}.
-The small diameter and the short length made it most suitable for the high frequency application.
+The small diameter and the short length made it most suitable for the high frequency application.\\
+Figure \ref{fig:photoDDRiXY6bond} shows the assembling of the used chips with their corresponding bond wires.
+As mentioned the bond wires got the same length for the signal path.
+
+
+\begin{figure}[htb!]
+	\centering
+  \includegraphics{Photo_DDRi_XY6.pdf}
+	\caption{Photograph of assembled DDRi\_X6 \& DDRi\_Y6 chips}
+	\label{fig:photoDDRiXY6bond}
+\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%13.04.2016; 20:06 Uhr %%%%%%%%%%%%%%
-
+\newpage
 \section{Substrate layout using DDRi\_2C chips}
-As mentioned before the layout of the filter network and the dc supply voltage did not differ as much from the other layout version.
-In this version an additional connector is applied to provide one additional dc supply voltage.
-Furthermore the arrangement of the chips is different.
-Figure \ref{fig:layoutDDRi2Cbond} shows the arrangement of the used chips, namely DDRi\_2C designed by Stephan Maroldt.
+The layout of the filter network and the \gls{ab:dc} supply voltage did not differ as much from the previous presented layout version.
+In this second layout one additional \gls{ab:dc} connector was added and the arrangement of the chips differed.
+Figure \ref{fig:layoutDDRi2Cbond} shows the arrangement of the used chips, namely DDRi\_2C.
+
 
 \begin{figure}[htb!]
 	\centering
@@ -141,31 +151,46 @@ Figure \ref{fig:layoutDDRi2Cbond} shows the arrangement of the used chips, namel
 	\label{fig:layoutDDRi2Cbond}
 \end{figure}
 
-The important difference between the DDRi\_2C chips and DDRi\_X6/DDRi\_Y6 is, that the DDRi\_2C chips do not have a connection to their backside.
-Hence this chips could be directly soldered to the grounded backside connection of the layer.
-The heat could spread directly from the backside of the chip which is metallized through the via holes of the substrate to the substrates backside.
-In fact of this, the heat transfer is much better than of the other design.
-In contrast to the other version, it is important that the gnd pads of the chip are bonded onto the substrate GND potential. 
-This version could be more convenient due to the better heat dissipation.\\
+Due to the fact that six chips were used in this layout, the wiring of bonds was more complex.
+Also the placement of the high and low side switches differed in contrast to the previous layout.
+The switches, representing one bit of resolution, were placed horizontally while the previous layout showed the switches placed vertically.
+Horizontal alignment was chosen due to easier bond wiring.
+This led to a different bias voltage connections.\\
+
+The most important difference in the two layouts were the difference of used chips.
+The chips used in this layout version, DDRi\_2C chips did not have a plated through hole to its backside.
+Thus, these chips could be soldered directly to the heat spreading backside connected layer.
+The heat could transfer directly from the backside of the chip through the via holes to the substrates backside.
+This improved the heat transfer a lot in contrast to the first design.
+It must be pointed out to connect the ground potential of the chips separately to the boards ground potential.
+This version might work better due to the better heat dissipation, although the fabrication of the chips was older (2011).\\
+The assembled chips for the second version is shown in Figure \ref{fig:photoDDRi2Cbond}.
+
+\begin{figure}[htb!]
+	\centering
+  \includegraphics{Photo_DDRi_2C.pdf}
+	\caption{Photograph of assembled DDRi\_2C chips}
+	\label{fig:photoDDRi2Cbond}
+\end{figure}
+
 
 \section{Evaluation of the design and realisation process}
-In the realisation and layout process many things must be considered.\\
-The circuit is build on a hybrid assembly which combines the MMIC with the discrete SMD components on a Rogers 4003 substrate.\\
+In the realisation and layout process many things had to be considered.\\
+The circuit was built on a hybrid assembly which combines the \gls{ab:mmic} with the discrete \gls{ab:smd} components on a Rogers 4003 substrate.\\
 The input and output lines on the substrate were \gls{ab:msl} which were matched to \SI{50}{\ohm}.
 %Tuned in this sense means, the lines were created with the right width, length and depth on the correct substrate with a special thickness.
 Important for the design of the input lines were that they are of the same length, due to timing issues.
 The input timing is crucial due to the fact that the switches have to switch synchronous.
 The output line was matched to \SI{50}{\ohm} to ensure proper measuring.\\
 %Also it would tried to get a proper distance between the lines to avoid any coupling. \\
-In addition to the same length of the input lines, also the bond wires of the in- and output to the \gls{ab:mmic} chips should be of the same length.
+In addition to the same length of the input lines, also the bond wires of the in- and output to the \gls{ab:mmic} chips had to be of the same length.
  %The idea is that the high frequency digital signal are not allowed to have phase angles, because the switches have to switch all at the same time. Timing problems are expected to occur within the measurement. \\
-One of the most important and crucial things is the generation of heat which had to be dissipated.
+One of the most important and crucial things was the dissipation of heat.
 Based on the designed chips, two different concepts were chosen to dissipate the heat in the most proper way.\\
-The wafer run of the chips DDRi\_2C is from the year 2011 and therefore five years old and hence the taping of the wafer could be not as good as the newer ones.
-\\
-Due to this heat dissipation problem it was then that it renounces to package the chips into a \gls{ab:qfn} package.\\
+The wafer run of the chips DDRi\_2C was from the year 2011 and therefore five years old and hence the taping of the wafer could be not as good as the newer ones.\\
+%Due to this heat dissipation problem it was then that it renounces to package the chips into a \gls{ab:qfn} package.\\
 For bonding \SI{25}{\micro \metre} (diameter) \gls{ab:au} bonds were used.
-The length of the bonds were given by assembly limits for spacing of conducting layers  due to manufacturer process limits.\\
+The length of the bonds were given by assembly limits for spacing of conducting layers due to manufacturer process limits.\\
 In- and output connectors were commercially available SMA jack connectors with a matched impedance of \SI{50}{\ohm} to connect standard RF cables.\\
 
 %Capacitive coupling could be a problem, through the dc supply lines to the input lines.
@@ -183,19 +208,19 @@ The finished demonstrator is shown in Figure \ref{fig:assembledDemonstrator}with
 	\label{fig:assembledDemonstrator}
 \end{figure}
 
-\begin{figure}[htb!]
-	\centering
-  \includegraphics{ComparePhotoXY6_2C.pdf}
-	\caption{Comparison of assembled chips DDRi\_X6 \& DDRi\_Y6 (left) and DDRi\_2C (right)}
-	\label{fig:CompareChips}
-\end{figure}
+%\begin{figure}[htb!]
+%	\centering
+%  \includegraphics{ComparePhotoXY6_2C.pdf}
+%	\caption{Comparison of assembled chips DDRi\_X6 \& DDRi\_Y6 (left) and DDRi\_2C (right)}
+%	\label{fig:CompareChips}
+%\end{figure}
 
 \newpage
-Another approach would be to solder the DDRi\_XY6 chips on a electrical isolator while thermal (good) conductor as AluminiumNitrid (AlN: 180-200 W/mK -> datasheet). To ensure the isolation from output port to GND but still have a good thermal transfer.
-This approach would have required only a small amount of the material AlN, which had to be cut very precisely into very tiny pieces.
-This pads glued (adhesion, soldered) on the conduction layer for heat transfer. 
-All in all this would be the better choice, but for the first proof of concept this would be more expensive.
-In fact of the very small and precise size of the special material this would extend it.
+An improvement for the layout, could be to solder the DDRi\_XY6 chips on an electrical insulator while thermal good conductor, as AluminiumNitrid (AlN: 180-200 W/mK -> datasheet). 
+This is needed to ensure the isolation from the output port to ground potential, but still have a good thermal transfer.
+This approach would have required only a small amount of the material AlN, which had to be cut very precisely into very tiny pieces, since the size of the chips DDRi\_X6 and DDRi\_Y6 were \SI{1.25}{\milli \meter} x \SI{1}{\milli \meter} and \SI{1.25}{\milli \meter} x \SI{1.25}{\milli \meter}, respectively.
+This pads adhered or soldered to the conduction layer ensure a good heat transfer. \\
+In fact of the very small and precise size of the special material this was too costly for a first prototype to proof the concept.
 
 
 \begin{figure}[htb!]
