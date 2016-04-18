@@ -115,3 +115,13 @@ Same realisation problems and difficulties: Problem of BANDWIDTH, Vpp of control
 \\
 The smallest current is determined by the dimension of the transistor, which drives into saturation. 
 The smallest saturated current is determined by the push-pull transistor geometry, here: 532 mA.}
+The dimension of the switching transistors, which represent a voltage controlled current source, determines the maximum current flowing.
+This current source is controlled by a digital signal which determines it to be fully open or to be closed, as a switch.
+Therefore the current is not controlled by the transistor itself, it flows at its maximum or it does not flow anyway.
+This dimension determines the slope of the resulting voltage steps.
+A small transistor dimension could synthesize signals to a very low signal frequency while a bigger one would fully charge the output capacitor which will clip the output signal.
+
+If the transistor dimension is chosen to be bigger, the higher signal frequency could be synthesized with a decent voltage swing but the low signal frequencies would turn into a rectangular shape. 
+
+In contrast to the small one a bigger one will be able to synthesize a signal at 6GHz due to the fact that the amplitude would be moderate.
+This is one problem which restrict the signal bandwidth to a smaller one than the \gls{ab:dc} to \SI{6}{\GHz}.

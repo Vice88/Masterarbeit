@@ -6,6 +6,7 @@
 
 \newglossaryentry{ab:sqnr}{type=abbreviations,name={SQNR},description={Signal-to-quantization-noise-ratio},first={SQNR (Signal-to-quantization-noise-ratio)}}
 
+\newglossaryentry{ab:snr}{type=abbreviations,name={SNR},description={Signal-to-noise-ratio},first={SNR (Signal-to-noise-ratio)}}
 
 \newglossaryentry{ab:ChemNiPdAu}{type=abbreviations,name={ChemNiPdAu},description={chemical Nickel Palladium Aurum}}
 

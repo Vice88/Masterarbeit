@@ -1,36 +1,42 @@
 \chapter{Circuit simulations for generating various waveform signals}
 % Outline the simulation results based on the chosen approach in the previous chapter
-The circuit simulations are run to validate the behaviour of the conceptual design of the Riemann Pump. The simulated output signal already identifies some fundamental ideas to understand the drawbacks and trade-offs of the designed circuit.\\
-To investigate the theoretical concepts of chapter \ref{ch:design} the harmonic balance simulator is used.
-The harmonic balance simulation is done with the design tool \gls{ab:ads}.
-The benefit of the harmonic balance simulation is that the whole system is modelled in a steady state mode, so that no transients influences the results. \textit{"Harmonic balance is a frequency-domain analysis technique for simulating non linear circuits and systems[...]"}  ADS\_Harmonic\_Balance.pdf\\
-In a first step the analog signal across the output impedance in the time domain is plotted to check whether a signal could be synthesized or not. 
-After various signals could be synthesized, a short stability and energy consumption analysis is done.
-The stability check is needed to validate that the circuit do not oscillate.
-As well the circuits energy consumption has to be checked if it is in a moderate range (\textit{which is the moderate range? mention it here?}) since it could be implemented in mobile devices.\\
-    In the last step a simulation is run which makes the concept comparable to the realized circuit. 
-   In this simulation the transistor dimensions are adapted to the dimension of the built demonstrator. 
-   This should give an insight to the behaviour of the constructed demonstrator.\\
-   It is important to note that all simulations are done under ideal conditions and hence no losses are taken into account. 
-    The modelling and simulation of the designed circuit under real conditions considering all loss effects would go beyond the scope of this thesis. Therefore a keep it small and simple approach is chosen.\\   
+The circuit simulations were run to validate the behaviour of the conceptual design. Some fundamental ideas to understand the trade-offs of the designed circuit were identified with these simulations.\\
+A harmonic balance simulation was used to investigate the concepts of chapter \ref{ch:design}.
+The benefit of the harmonic balance simulation, done with the tool \gls{ab:ads}, was that the whole system was modelled in a steady state mode, so that no transients influenced the results.
+This aspect was important due to the non linearity of the circuit.
+% \textit{"Harmonic balance is a frequency-domain analysis technique for simulating non linear circuits and systems[...]"}  ADS\_Harmonic\_Balance.pdf\\
+In a first step the generation of an analog output signal was checked.
+The analog signal in the time domain was plotted to check the feasibility to synthesize a signal.
+After various signals were synthesized, a short stability and energy consumption analysis was performed.\\
+The stability check was needed to validate that the circuit did not oscillate.
+As well the circuits energy consumption had to be checked, since it could be implemented in mobile devices.
+% if it is in a moderate range (\textit{which is the moderate range? mention it here?}) since it could be implemented in mobile devices.\\
+In the last step a simulation was run which made the concept comparable to the realized circuit. 
+In this simulation the transistor dimensions were adapted to the dimension of the built demonstrator. 
+This should give an insight to the behaviour of the constructed demonstrator.\\
+% It is important to note that all simulations are done under ideal conditions and hence no losses are taken into account. 
+The detailed modelling and simulation of the designed circuit under real conditions, considering all loss effects would go beyond the scope of this thesis. Therefore a keep it small and simple approach was chosen.\\   
 
 \section{Generating various analog signals with digital input control}
-The generation of analog signals at the output of the designed circuit is the purpose of this concept.
- The designed Riemann Pump should be able to create various (arbitrary) waveform signals by converting a digital bit sequence into the analog output signal.
+% The aim of this work was the digital to analog conversion
+The generation of analog signals at the output of the designed circuit was the purpose of this concept.
+ The designed Riemann Pump should be able to create various waveform signals by converting a digital bit sequence into the analog output signal.
  % Therefore the Riemann Pump is a arbitrary waveform generator and also a high speed digital-to-analog converter
 %To validate the feasibility of the presented concept, a digital input control code is required.
 %To get this code an approximation by hand is done since no algorithm exists which can compute this.
-Simulations in time domain are required to validate the signal integrity of the synthesized signals since the output signals consist of the integration of current over time to charge a capacitor at the output.
+Simulations in time domain were required to validate the signal integrity of the synthesized signals.
+Plots in time domain represented the output signal of the circuit.
+The signal was generated by integrating a current over time which charged a capacitor.
  %Based on the idea, to integrate the current over time to charge a capacitor at the outputlinear approximation of current charging a capacitor, this would be the best way to verify its correctness.
-  If the output signal is verified to be as good as wanted, a simulation in the frequency domain can show the spurious free dynamic range of the \gls{ab:dac}.\\
-To synthesize a certain analog signal at the output the corresponding Riemann Code is needed.
-Due to the fact that no algorithm exists which computes this Riemann Code, it is done manually.\\ 
+%  When the output signal was verified to be as good as wanted, a simulation in the frequency domain can show the spurious free dynamic range of the \gls{ab:dac}.\\
+To synthesize a certain analog signal at the output, the corresponding Riemann Code was needed.
+Due to the fact that no algorithm existed which could compute the Riemann Code, it was done manually.\\ 
  %The generation of the various analog output signals is based on the concept of chapter \ref{ch:design}. 
- The presented \gls{ab:dac} have a resolution of three bit and synthesizes signals with an \gls{ab:osr} of four. 
-  The components used, are optimized with respect to the signal integrity. 
-  The dimension of the used components are tuned while simulation to ensure the desired output signal.
+ The presented \gls{ab:dac} had a resolution of three bit and synthesized signals with an \gls{ab:osr} of four. 
+  The components used, were optimized with respect to the signal integrity. 
+  The dimension of the used components were tuned while simulation to get the desired output signal.
   In contrast to this optimized components, chapter \ref{ch:ProofOfConceptWithExistingComponents} deals with the simulation done with real dimensions of the demonstrator components. 
-  This simulation should give an insight to what is expected for the measurements.
+%  This simulation should give an insight to what is expected for the measurements.
  
 \subsection{Sine wave generation in the time domain}
 As known from basic signal processing 
@@ -38,10 +44,10 @@ As known from basic signal processing
 %[Oppenheim, MIT, Signals and Systems Lecture \textit{http://ocw.mit.edu/resources/res-6-007-signals-and-systems-spring-2011/lecture-notes/MITRES\_6\_007S11\_lec02.pdf}]
 %[REF.?]
  the sine wave for continuous time is the elementary signal and therefore synthesized first. 
-For the generation of this sine wave a corresponding Riemann Code is required which will be converted to the analog output signal.\\
-This Riemann Code is generated by hand via an approximation of a sine wave with a sequence of eight different slopes.
-This eight different slopes represent a three bit resolution of the \gls{ab:dac}.
-In order to achieve a \gls{ab:osr} of four the sequence consists of eight sampling points.\\
+For the generation of this sine wave a corresponding Riemann Code was required which will be converted to the analog output signal.\\
+This Riemann Code was generated by hand via an approximation of a sine wave with a sequence of eight different slopes.
+Eight different slopes represented a three bit resolution of the \gls{ab:dac}.
+In order to achieve a \gls{ab:osr} of four the sequence consisted of eight sampling points.\\
 Figure \ref{fig:RiemannCodeGenerationSineWave} presents the sequence of slopes used to approximate a sine wave. 
 
 %\begin{figure}[htb!]
@@ -70,10 +76,9 @@ This sequence of slopes, referred to $i_0$ values, is:
 \end{equation}
 \label{eq:RiemannCodeSineWave} 
    
- The Riemann Code consists of eight triplets where each triplet represent the three different switches.
-The number of triplets represent the number of sampling points corresponding to the \gls{ab:osr}.
-This particular generated Riemann code was used to synthesize sine waves in the frequency range between \SI{500}{\MHz} and \SI{6}{\GHz}, as seen in Figure \ref{fig:7SignalsSameSlopeInOnePlot}.
-
+ The Riemann Code consisted of eight triplets where each triplet represents the three different switches.
+The number of triplets represented the number of sampling points corresponding to the \gls{ab:osr}.
+This particular generated Riemann Code was used to synthesize sine waves in the frequency range between \SI{500}{\MHz} and \SI{6}{\GHz}, as shown in Figure \ref{fig:7SignalsSameSlopeInOnePlot}.
 
 \begin{figure}[htb!]
    \centering 
@@ -82,12 +87,14 @@ This particular generated Riemann code was used to synthesize sine waves in the 
    \label{fig:7SignalsSameSlopeInOnePlot}
 \end{figure}
 
-The Figure \ref{fig:7SignalsSameSlopeInOnePlot} shows seven synthesized signals generated with the same input but with different sampling frequencies. 
-Here the signals amplitude is plotted over two periods in time domain.\\
-Due to the different absolute sampling times, the amplitudes of the signals differ.
-The maximum reachable amplitude is the supply voltage, here set to \SI{15}{\volt}. % to avoid unnecessary much heat and power losses. 
-If this voltage is reached, the signal wave form is clipped and transforms the sine wave into an rectangular form.
-The shape from most of the plotted functions fit fairly to the one of a theoretical sine wave.
+Seven synthesized signals generated with the same input but with different sampling frequencies are demonstrated in Figure \ref{fig:7SignalsSameSlopeInOnePlot}.
+% The Figure \ref{fig:7SignalsSameSlopeInOnePlot} shows seven synthesized signals generated with the same input but with different sampling frequencies. 
+Here the signals amplitude was plotted over two periods in time domain.\\
+Due to the different absolute sampling times, the amplitudes of the signals differed.
+The maximum reachable amplitude was the supply voltage, here set to \SI{15}{\volt}. % to avoid unnecessary much heat and power losses. 
+
+Once the amplitude reached the supply voltage, the signal wave form is clipped and transforms the sine wave into an rectangular form.
+The shape from most of the plotted functions fit fairly to a theoretical sine wave.
 But Figure \ref{fig:7SignalsSameSlopeInOnePlot} also highlights already some limitations of the designed circuit, as the blue curve turns into a rectangular signal form.\\
 
 \begin{figure}[htb!]
@@ -97,27 +104,33 @@ But Figure \ref{fig:7SignalsSameSlopeInOnePlot} also highlights already some lim
    \label{fig:SineWave05GHz}
 \end{figure}
 
-The circuit designed in chapter \ref{ch:design} is optimized to cover the frequency range from \SI{1}{\GHz} to \SI{6}{\GHz} fairly well, if a voltage swing of nearly  two volts is still acceptable.
-If we go beneath a frequency of \SI{1}{\GHz} the desired shape of a sine wave is going to be rectangular due to the long sampling time, refer to Figure \ref{fig:SineWave05GHz}.\\
-The blue signal which should represent a sine wave with a signal frequency of \SI{500}{\MHz} is clipped and hence shows the behaviour of a rectangular signal.
- This undesired behaviour is induced from a fully charged output capacitance.\\
- In this particular designed configuration a signal frequency of \SI{1}{\giga \hertz} is the lower bound for the frequency range, since beneath this frequency no sine wave is synthesized.
+The circuit designed in chapter \ref{ch:design} was tuned to cover the frequency range from \SI{1}{\GHz} to \SI{6}{\GHz} fairly well, if a voltage swing of two volts would be still acceptable.
+Below the frequency of \SI{1}{\GHz} the desired shape of a sine wave was going to be rectangular due to the long sampling time as demonstrated in Figure \ref{fig:SineWave05GHz}.\\
+The blue signal which should represent a sine wave with a signal frequency of \SI{500}{\MHz} was clipped and showed the behaviour of a rectangular signal.
+ A fully charged capacitor induced this undesired behaviour.
+In addition to the rectangular signal wave form another distortion is visible.
+At the sampling time when the fully charged capacitor is discharged and when the fully discharged capacitor is charged, a distortion is shown which is induced by a leak current.
+This leak current is induced by the commutation time, which induced a leak current over the driver network. \textbf{($\rightarrow$ insert figure?)}\\
+ The signal frequency of \SI{1}{\giga \hertz} represented a lower bound on the frequency range in the configuration referred to chapter \ref{ch:design} of the circuit.
+No sine wave could be synthesized below this limit.
+% In this designed configuration a signal frequency of \SI{1}{\giga \hertz} represents the lower bound for the frequency range, since beneath this frequency no sine wave is synthesized.
 % A signal frequency of \SI{}{} is the lower bound on the frequency range for the signals for the used configuration.
 %This lower bound could be shifted to even lower frequencies if the dimensions are tuned to be smaller
-The upper bound on the frequency range is the signal with the at least detectable voltage swing, which could be amplified.
-If at least a voltage swing of \SI{2}{\volt} is accepted, in this configuration the upper bound would be a signal frequency of \SI{6}{\GHz}.\\
+The upper bound of the frequency range is limited to the detectable voltage swing.
+%The upper bound on the frequency range, in this configuration, is the signal with the at least detectable voltage swing, which could be amplified.
+If a voltage swing of \SI{2}{\volt} would be still accepted, the upper bound would be a signal frequency of \SI{6}{\GHz}.\\
 % to increase this upper bound the transistor dimension have to be bigger
-
 %%% put in the limitation here or later in a seperate paragraph???
-To show how accurate the generation of the signals is, figure \ref{fig:SineWaveSynthVsTheoretical} compares a theoretical sine wave signal (red) with a synthesized one (black) for a frequency of \SI{1}{\GHz}.
-The synthesized signal is same as the black curve in Figure \ref{fig:7SignalsSameSlopeInOnePlot}.
+Figure \ref{fig:SineWaveSynthVsTheoretical} compared a theoretical sine wave signal (red) with a synthesized one (black) for a frequency of \SI{1}{\GHz}.
+The synthesized signal was the same black curve as in Figure \ref{fig:7SignalsSameSlopeInOnePlot}.
 %, which within this scale already seems to turn into a rectangular signal form.
-Setting up the right parameters, a good fit to a sine wave can be performed.\\
+% reverse engineering... generate a sine wave and then check which theoretical sine wave fit best
+% Setting up the right parameters, a good fit to a sine wave can be performed.\\
 In general the sine wave is of the form: 
 \begin{equation}
 	v(t)= V_{DC} + \widehat{v} \cdot sin( 2  \pi  f \cdot  t + \phi).
 \end{equation}
-The synthesized signal (black) in Figure \ref{fig:SineWaveSynthVsTheoretical} fits pretty good to the theoretical sine wave, which has an amplitude of $\widehat{v} = \SI{7.5}{\volt}$, a signal frequency of $f = \SI{1}{\giga \hertz}$, a phase shift of approximately $\phi = \pi / 4$ and an DC offset of $V_{DC} = \SI{7.5}{\volt}$.
+The synthesized signal (black) in Figure \ref{fig:SineWaveSynthVsTheoretical} fit pretty good to the theoretical sine wave, which had an amplitude of $\widehat{v} = \SI{7.5}{\volt}$, a signal frequency of $f = \SI{1}{\giga \hertz}$, a phase shift of approximately $\phi = \pi / 4$ and an DC offset of $V_{DC} = \SI{7.5}{\volt}$.
 
 \begin{figure}[htb!]
    \centering
@@ -126,43 +139,46 @@ The synthesized signal (black) in Figure \ref{fig:SineWaveSynthVsTheoretical} fi
    \label{fig:SineWaveSynthVsTheoretical}
 \end{figure}
 
-Although it seems to be a very good fit, two distortions are visible in the peak and the valley of the synthesized signal.
-($\rightarrow$\textit{Explaining these two distortions exactly for this signal frequency? $\rightarrow$ Is it enough to explain some distortion at the example of 500MHz?})
-The fit is not perfect since the digital to analog conversion always introduce noise to the signal. 
-(\textit{refer to chapter \ref{ch:fundamentals} and the \gls{ab:sqnr}. compare to the characteristic of DAC. Which SQNR is expected, which is achieved? $\rightarrow$ plot?}) \\
+Although it seemed to be a good fit, two distortions were visible in the peak and the valley of the synthesized signal.
+\textbf{As mentioned earlier for figure \ref{fig:SineWave05GHz} this is a leakage current induced by the commutation.}
+% ($\rightarrow$\textit{Explaining these two distortions exactly for this signal frequency? $\rightarrow$ Is it enough to explain some distortion at the example of 500MHz?})
+Since the digital to analog conversion always introduces noise to the signal, refer to chapter \ref{ch:fundamentals}, the fit was not perfect. 
+% SQNR, compare to the characteristic of DAC. Which SQNR is expected, which is achieved? $\rightarrow$ plot?}) \\
 
-Figure \ref{fig:SineCompare} highlights the difference between the synthesized and the theoretical sine wave form in a more detailed way.
+Figure \ref{fig:SineCompare} highlighted the difference between the synthesized and the theoretical sine wave form in a more detailed way.
 
 \begin{figure}[htb!]
 	\centering
-  \includegraphics[width=1\textwidth]{SineCompare.pdf}
+  \includegraphics[width=1\textwidth]{SineCompare3.pdf}
 	\caption{Comparison between a theoretical and a synthesized sine wave with their spectrum}
 	\label{fig:SineCompare}
 \end{figure}
 
 A theoretical sine wave is compared to the synthesized one with their corresponding spectra.
-The spectra of signals were a lot easier to compare in contrast to the time domain signal with respect to the accuracy.
+The spectra of signals were a lot easier to compare, in contrast to the time domain signal, with respect to the accuracy.
 %The spectrum of the signal demonstrates how accurate the signal is synthesized compared to a perfectly shaped sine wave. 
-Since the spectrum of a perfect sine wave only consists of a DC part and the harmonic frequency it is easy to check whether the generated signal fits to it or not.\\
-On the top left side of Figure \ref{fig:SineCompare} the theoretical sine wave is plotted in red. Underneath of (the time domain signal) it the spectrum presents the frequency portion for the direct component at \SI{0} {\Hz} and a fundamental frequency portion at \SI{1}{\GHz}.
-This Fourier transformation represents the frequency portions of a clear sine wave. 
-The synthesized sine wave on the top right side fits fairly well to the theoretical one.
-The spectrum of the synthesized signal shows nearly the same behaviour since only some harmonics distorts the signal.
-Beside the direct component and the fundamental frequency component there are some additional unwanted frequency portions.
-The maximum absolute distortion of this synthesized signal is about \SI{1}{\volt} in amplitude at the third harmonic at the frequency of \SI{3}{\GHz}.
- The 2nd to 10th harmonic are at most a half of a volt in absolute value of the amplitude (\textit{relative reference?}). \\
-\textit{The accuracy is very good. This can be verified by the signal to noise ratio -> explain, state the SNR}
-
-
-As the sampling frequency can be changed to tune the signal frequency of the output signal it is also possible to change the input control sequence to manipulate the shape of the signal.
-Due to the three bit resolution there is a limited number of different slope combinations to synthesize a sine wave.
-In fact the limit is six different combinations to synthesize the sine wave, namely: 75, 73, 71, 53, 51 ,31 with respect to the $i_0$ values.
-The first digit indicates the slope of the first sampling point and the second digit of the second sampling point of the rising edge from a sine wave, respectively. 
-The falling edge of the sine wave consists of the negative values of the mentioned slopes.\\
+Since the spectrum of a perfect sine wave only consists of a DC part and the harmonic frequency it was easy to check whether the generated signal fit.\\
+On the top left side of Figure \ref{fig:SineCompare} the theoretical sine wave is plotted in time domain. Underneath of it the spectrum presented a frequency portion for the direct component at \SI{0} {\Hz} and a fundamental frequency portion at \SI{1}{\GHz}.
+This Fourier transformation represented the frequency portions of a clear sine wave.\\
+The synthesized sine wave on the top right side fit fairly well to the theoretical one.
+The spectrum of the synthesized signal showed nearly the same behaviour as for the theoretical one.
+Beside the direct component and the fundamental frequency component there were some additional unwanted frequency portions which distorted the signal.
+The maximum distortion was about \SI{1}{\volt} in amplitude at the third harmonic.
+ The 2nd to 10th harmonic were at most half of a volt in absolute value of the amplitude.
+ \textbf{The calculated \gls{ab:snr} was \SI{15.2}{\decibel}.
+ The ideal \gls{ab:sqnr} of the Riemann conversion in this configuration is\SI{27}{\decibel}.}\\
+% The accuracy is very good. This can be verified by the signal to noise ratio -> explain, state the SNR}
+As the sampling frequency could be changed to tune the signal frequency of the output signal it was also possible to change the input control sequence to manipulate the shape of the signal.
+% A limited number of different slope combinations were provided due to the restriction of the resolution.
+Due to the three bit resolution there was a limited number of different slope combinations to synthesize a sine wave.
+In fact the limit was bound to six different combinations for synthesizing  the sine wave, namely: 75, 73, 71, 53, 51 ,31 with respect to the $i_0$ values.
+The first digit indicated the slope of the first sampling point and the second digit of the second sampling point of a rising edge from a sine wave, respectively. 
+The falling edge of the sine wave consisted of the negative values of the mentioned slopes.
+% A oversampling ratio of four restricted the number of combinations to six.\\
 
 %This two slopes represent the rising edge of the sine wave and their opposite negative values the falling edge of the sine wave.
 %With eight different slopes representing the full spectrum between the most negative and the most positive one, exactly four slopes can represent a rising edge of a sine wave, $+7i_0, +5i_0, +3i_0, +1i_0$.
-These different combinations are plotted in Figure \ref{fig:SameSigBWDifSlope} over two periods for the signal frequency of \SI{3}{\GHz}. 
+The six different combinations were plotted in Figure \ref{fig:SameSigBWDifSlope} over two periods for the signal frequency of \SI{3}{\GHz}. 
 
 \begin{figure}[htb!]
 	\centering
@@ -171,12 +187,12 @@ These different combinations are plotted in Figure \ref{fig:SameSigBWDifSlope} o
 	\label{fig:SameSigBWDifSlope}
 \end{figure}
 
-Figure \ref{fig:SameSigBWDifSlope} shows the different shapes of a synthesized sine wave for a frequency of \SI{3}{\GHz}.
-This is utilized to calculate the Riemann Code which fits best to the theoretical signal.
+Figure \ref{fig:SameSigBWDifSlope} presented the different shapes of a synthesized sine wave for a frequency of \SI{3}{\GHz}.
+This was utilized to calculate the Riemann Code which fit best to the theoretical signal.
 
 
 \subsection{Rectified sine wave generation in the time domain}
-Beside the generation of the full sine wave, a rectified sine wave is simulated as well.\\
+Beside the generation of the full sine wave, a rectified sine wave was simulated as well.\\
 Based on the same approximation principle as in figure \ref{fig:RiemannCodeGenerationSineWave} the corresponding Riemann Code for the rectified sine is generated, namely:
 
 %%%%%%%%%%%% this corresponds to 73 -3 -7 -7 -3 3 7
@@ -193,7 +209,10 @@ Based on the same approximation principle as in figure \ref{fig:RiemannCodeGener
 \end{equation}
 \label{eq:RiemannCodeRectSine}
 
-A few different signals are simulated with this Code to check its feasibility.
+As the rectified sine wave consisted only of the positive wave form, the oversampling ratio is performed on half of a sine wave.
+This resulted in a more precise wave form, since the rising and falling edges could be synthesized in more detail.
+For the sine wave the rising edge resulted in two different slopes, which is the double for the rectified sine wave.\\
+A few signals with different frequencies were simulated and plotted in figure \ref{fig:DiffSigBWSameSlope}, using this Riemann Code.
 
 
 \begin{figure}[htb!]
@@ -203,15 +222,36 @@ A few different signals are simulated with this Code to check its feasibility.
 	\label{fig:DiffSigBWSameSlope}
 \end{figure}
 
+As expected from the full sine wave, also the rectified sine wave fit to the theoretical.
+The same issues, drawbacks and limits were presented here as for the full sine wave.
+This confirmed the concept to work for the generation of various signals.
 %size scalable
 
 
-
-
 \subsection{Triangular wave generation in the time domain}
-Beside the most common signals of sine wave, a different signal is chosen to validate the feasibility of generating arbitrary waveforms.
-A triangular signal is chosen here.
-The Code for the generation of the triangular signal at the output is:
+Beside the most common signals a triangular signal was chosen to validate the feasibility of generating arbitrary waveforms.
+The wave form of a triangular signal represented the push-pull stage which only charge and discharge the output capacitance.
+Hence the slopes had to be the same for the rising as for the falling edge.
+In fact of this, with three bit resolution representing eight different slopes, four different Codes for the triangular signal could be generated.
+
+The sequences of slopes were: 11, 33, 55 and 77, with respect to $i_0$ values.
+The two digit represented the slope of the rising as well as the falling edge with the negative counterpart, respectively.
+
+\begin{figure}[htb!]
+	\centering
+  \includegraphics[draft]{Vout_halfsine_7531_diff_freq.pdf}
+	\caption{Triangular signal with same signal bandwidth but different slopes}
+	\label{fig:DiffSigBWSameSlopeTriangular}
+\end{figure}
+
+\begin{figure}[htb!]
+	\centering
+  \includegraphics[draft]{Vout_halfsine_7531_diff_freq.pdf}
+	\caption{Triangular signal with same slope but different signal bandwidth 3GHz}
+	\label{fig:DiffSlopeSameBW}
+\end{figure}
+
+%The Code for the generation of the triangular signal at the output is:
 %\textbf{this is not the correct code!!}
 %\begin{equation}
 % 000\hspace{.3cm} 010\hspace{.3cm} 101\hspace{.3cm} 111\hspace{.3cm} 000\hspace{.3cm} 010\hspace{.3cm} 101\hspace{.3cm} 111.
@@ -219,41 +259,44 @@ The Code for the generation of the triangular signal at the output is:
 %\label{eq:RiemannCodeRectSine}
 
 \section{Stability analysis of the realised circuit}
-The stability analysis helps to get an impression/ understanding of figures and numbers of the designed circuit. 
-Although this aspect is of an important role for the development of a high speed \gls{ab:dac}, this analysis are not complete.
-The whole detailed analysis could not be investigated in this thesis due to complexity and time issues, what its meaning is not to belittle. 
-For these aspects it is important to state that the designed circuit is in no way optimized with respect to those.\\
-The stability analysis is important to ensure that the circuit under test do not oscillate.  
-To check this, the complex impedance at specific points in the circuit is measured. 
-If the real part of the impedance is positive for the whole frequency range of the simulation, it indicates in an easy way that the circuit does not oscillate. 
-This simulation is done within the ADS tool. 
+The stability analysis were necessary to check if the circuit oscillates.
+%Although this aspect is of an important role for the development of a high speed \gls{ab:dac}, this analysis are not complete.
+A detailed analysis could not be investigated since there were no exact models of the used components.\\
+This analysis was important to ensure that the \gls{ab:dut} was stable for the whole frequency range.
+The complex impedance at specific points in the circuit was measured to check this stability. 
+Because the real part of the impedance was positive for the whole frequency range of the simulation, it indicated that the circuit was stable. 
+The stability check was performed within the \gls{ab:ads} tool. 
+
+%%%%%%%%%%%% 18:20 Uhr, 18.04.2016
 
 \section{Energy consumption analysis of the realised circuit}
-As well as the stabilitiy analysis the energy consumption analysis is important in terms of mobile devices.
-If the \gls{ab:osr} is increased to get a better accuracy, the switching frequency is also increased and therefore the energy consumption.
-In addition to the power consumption issue, the components have a unity current gain frequency limit.
-If the resolution is increased to get a better accuracy, the whole circuit would become more complex and the energy consumption would increase.\\
-Using the \gls{ab:osr} of four, we already get a sampling frequency of \SI{2}{GHz} at the lower bound.
-For this reason the switches have to switch within \SI{0.5}{\nano \second} which increase the gate drive current which increase the power loss.\\
-Due to the idea to use the presented topic for mobile communication it could be implemented in mobile devices, although this thesis only handles the device for the base station. If it could be used in a mobile device the energy consumption is critical.\\
-The energy consumption of the designed circuit in chapter \ref{ch:design} is simulated with \gls{ab:ads}.\\
+In addition to the stability analysis the energy consumption analysis was important with respect to the use in mobile devices.
+The losses in the circuit were those static losses while the switches plus driver is in one state.
+The dynamic losses were those which occur during the switching...
+Definition, expectations, simulations...
+
+%Due to the idea to use the presented topic for mobile communication it could be implemented in mobile devices, although this thesis only handles the device for the base station. 
+% If it could be used in a mobile device the energy consumption is critical.
+%\\
+%The energy consumption of the designed circuit in chapter \ref{ch:design} is simulated with \gls{ab:ads}.\\s
 There were the trade off between the power consumption of the high side switching transistor and the switching behaviour.
 Since the switching process needs to be very fast a high current is needed.
 This are losses.
 The driver circuit has to be optimized to reduce the energy consumption while maintaining the the switching process correctly.
 If the correct hard 
 \\
- For the chips used for the demonstrator refer to the work of Stephan Maroldt who states, that the power consumption is:  divided into static and dynamic ones. The switching losses are greater than the static ones.
-The losses are divided into dynamic losses of the switches and static losses.
+ For the chips used for the demonstrator refer to the work of Stephan Maroldt who states, that the power consumption is divided into static and dynamic ones. The switching losses are greater than the static ones.
 % switch voltage for on/off state, switch time, static losses and dynamic losses.
 
 \section{Proof of concept simulation with existing components}
 \label{ch:ProofOfConceptWithExistingComponents}
-To combine the measurement results with its theory some simulation are done  with the dimensions of the real demonstrator.
-But also here it is important to note, that losses are not considered in the simulation.
-It provides a basis of what can be expected.
-Therefore the simulation is done with a two bit (resolution) simulation.
-Other important parameters to keep in mind with this simulation are the oversampling ratio and hence the switching frequency of the transistors.
+To combine the measurement results with the presented theory, some simulations were done with the dimensions of the real demonstrator.
+%But also here it is important to note, that losses are not considered in the simulation.
+It provided a basis of what can be expected.
+Therefore a simulation was performed with a circuit which had two bit resolution.
+To compare the results simulated here and measured in chapter \ref{ch:measurement} the switching frequencies were kept in mind.
+
+%Other important parameters to keep in mind with this simulation are the oversampling ratio and hence the switching frequency of the transistors.
 
  
 
@@ -262,37 +305,29 @@ Other important parameters to keep in mind with this simulation are the oversamp
 
 \begin{enumerate}
 	\item different wave forms can be synthesized
-	\item the signal bandwidth is restricted to a smaller one
-	\item parasitic effects and losses would downgrade the signals waveform
-	\item the system should be stable
-	\item the energy consumption (depending on the switching) is designed for basestation
-	\item not optimal w.r.t. efficiency
+	\item the signal bandwidth is restricted to a smaller one than desired
+	\item parasitic effects and losses degrade the signals waveform
+	\item the system is stable
+	\item the energy consumption is in the range for base stations
+	\item dut is not optimal w.r.t. efficiency
 \end{enumerate}
 
-
-The dimension of the switching transistors, which represent a voltage controlled current source, determines the maximum current flowing.
-This current source is controlled by a digital signal which determines it to be fully open or to be closed, as a switch.
-Therefore the current is not controlled by the transistor itself, it flows at its maximum or it does not flow anyway.
-This dimension determines the slope of the resulting voltage steps.
-A small transistor dimension could synthesize signals to a very low signal frequency while a bigger one would fully charge the output capacitor which will clip the output signal.
-
-If the transistor dimension is chosen to be bigger, the higher signal frequency could be synthesized with a decent voltage swing but the low signal frequencies would turn into a rectangular shape. 
-
-In contrast to the small one a bigger one will be able to synthesize a signal at 6GHz due to the fact that the amplitude would be moderate.
-This is one problem which restrict the signal bandwidth to a smaller one than the \gls{ab:dc} to \SI{6}{\GHz}.
-\\
 %If the \gls{ab:osr} is increased, the sampling time is decreased and therefore the signal quality is better because we have a more accurate synthesized signal. 
 %This is shown in the snr in chapter fundamentals.
 
+%% If the \gls{ab:osr} is increased to get a better accuracy, the switching frequency is also increased and therefore the energy consumption.
+%In addition to the power consumption issue, the components have a unity current gain frequency limit.
+%If the resolution is increased to get a better accuracy, the whole circuit would become more complex and the energy consumption would increase.\\
+%Using the \gls{ab:osr} of four, we already get a sampling frequency of \SI{2}{GHz} at the lower bound.
+%For this reason the switches have to switch within \SI{0.5}{\nano \second} which increase the gate drive current which increase the power loss.\\
 
 
 % This is the trade off between the shift of the bandwidth (shifting to even higher frequencies is possible but the bandwidth is nearly constant as long the output capacitance is constant too.)  %% higher frequency means much lower sampling time which means the slopes are not detectable ... %%
 
 %The drawback for the bandwidth shift to higher frequencies is, that with the signal frequency the switching frequency is increasing linearly (for an osr; eight times) and therefore the dynamic losses are increasing with this switching frequency.
 
-The simulation results confirm the feasibility of the chosen approach.
-Some trade-offs in mind, the ability to change some system parameter some really good signal waveforms can be synthesized.
-\\
-were designed but unfortunately they do not have a simulation model which would make it easier to simulate the outcome. \\
-What is the expectation to the measurement? 
-The simulated signals with the realized dimensions of the components.
+The simulation results confirmed the feasibility of the chosen approach.
+Some trade-offs in mind and the ability to change some system parameter made it possible to generate some good fitted signal waveforms.
+
+%What is the expectation to the measurement? 
+%The simulated signals with the realized dimensions of the components.

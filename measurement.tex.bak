@@ -1,4 +1,5 @@
 \chapter{Measurement of the realized circuit in the time domain}
+\label{ch:measurement}
 % The heart of the thesis, comprising a presentation of the functioning system and thus the culmination of the work. Important is an analysis of the results as well as a comparison with the state of the art. The reader should understand in this section why you should be awarded a MSc degree.
 
 %The aim of the measurement was to show the feasibility to generate (different) signals, using the two bit resolution of the circuit.
@@ -186,3 +187,4 @@ Aside from some parasitic effects the proof of the concept was successful.
 %\textit{is it possible to measure the heat spreading on the substrate?}
 %Is the measurement result expected due to the simulation? Can the demonstrator be simulated although no model for this chips exists? The real simulation are not done due to the fact that no losses respected.
 
+% Compare and evaulate the simulation to the measurement
