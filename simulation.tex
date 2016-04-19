@@ -193,7 +193,7 @@ This was utilized to calculate the Riemann Code which fit best to the theoretica
 
 \subsection{Rectified sine wave generation in the time domain}
 Beside the generation of the full sine wave, a rectified sine wave was simulated as well.\\
-Based on the same approximation principle as in figure \ref{fig:RiemannCodeGenerationSineWave} the corresponding Riemann Code for the rectified sine is generated, namely:
+Based on the same approximation principle as demonstrated in figure \ref{fig:RiemannCodeGenerationSineWave}, the corresponding Riemann Code for the rectified sine was generated, namely:
 
 %%%%%%%%%%%% this corresponds to 73 -3 -7 -7 -3 3 7
 %\begin{equation}
@@ -209,11 +209,12 @@ Based on the same approximation principle as in figure \ref{fig:RiemannCodeGener
 \end{equation}
 \label{eq:RiemannCodeRectSine}
 
-As the rectified sine wave consisted only of the positive wave form, the oversampling ratio is performed on half of a sine wave.
+As the rectified sine wave consisted only of the positive wave form over the full period, the oversampling ratio is performed on half of a sine wave.
 This resulted in a more precise wave form, since the rising and falling edges could be synthesized in more detail.
-For the sine wave the rising edge resulted in two different slopes, which is the double for the rectified sine wave.\\
-A few signals with different frequencies were simulated and plotted in figure \ref{fig:DiffSigBWSameSlope}, using this Riemann Code.
-
+For the sine wave the rising edge resulted in two different slopes, which was doubled for the rectified sine wave.
+Hence the rectified sine wave consisted of eight sampling points, while the corresponding positive half of a sine wave only consisted of four sampling points.
+The rectified sine wave exhibited the sequence of all eight different slopes, from the biggest positive to the biggest negative slope.\\
+A few signals with different frequencies were simulated and plotted in figure \ref{fig:DiffSigBWSameSlope}, which used this Riemann Code.
 
 \begin{figure}[htb!]
 	\centering
@@ -222,34 +223,56 @@ A few signals with different frequencies were simulated and plotted in figure \r
 	\label{fig:DiffSigBWSameSlope}
 \end{figure}
 
-As expected from the full sine wave, also the rectified sine wave fit to the theoretical.
+As expected the rectified sine wave fit very good to the theoretical.
+The rectified sine wave was synthesized in more detail, since the oversampling ratio were doubled effectively.
+The oversampling ratio of four for the full sine wave correlated to eight sampling points for the whole period.
+Since the sine wave consisted of a positive and a negative part, only four sampling points were used for the positive wave.
+As the rectified sine only consisted of one positive part, eight sampling points could be used to synthesize this positive wave.
+Therefore this result reflected the behaviour for a sine wave if the oversampling ratio would be doubled.
+Too big absolute sampling times drove the signal into clipping for the generation of a rectified sine wave.
+This effect was seen in Figure \ref{fig:DiffSigBWSameSlope} for the blue curve which had a fundamental frequency of \SI{500}{\mega \hertz}.
+Since the absolute maximum voltage which could be reached was the supply voltage.
+The shapes of the signals with fundamental frequencies \SI{2}{\giga \hertz} to \SI{6}{\giga \hertz} fit very good to a rectified sine, as seen in Figure \ref{fig:DiffSigBWSameSlope}.
 The same issues, drawbacks and limits were presented here as for the full sine wave.
-This confirmed the concept to work for the generation of various signals.
-%size scalable
+All simulations done to synthesize various signals confirmed the proof of concept.
+
 
 
 \subsection{Triangular wave generation in the time domain}
-Beside the most common signals a triangular signal was chosen to validate the feasibility of generating arbitrary waveforms.
-The wave form of a triangular signal represented the push-pull stage which only charge and discharge the output capacitance.
-Hence the slopes had to be the same for the rising as for the falling edge.
-In fact of this, with three bit resolution representing eight different slopes, four different Codes for the triangular signal could be generated.
-
-The sequences of slopes were: 11, 33, 55 and 77, with respect to $i_0$ values.
-The two digit represented the slope of the rising as well as the falling edge with the negative counterpart, respectively.
+Beside the most common signals another signal was synthesized.
+A triangular signal was chosen to validate the feasibility of generating arbitrary waveforms.
+The wave form of a triangular signal represented the push-pull stage charging and discharging a capacitor similarly.
+As the time for charging and discharging was the same, a good fit was achieved.\\
+All simulations so far were run with a three bit resolution of the realised circuit.
+These three bit resolution represented eight different slopes, and therefore for a similarly charge and discharge process four different slopes could be used.
+These four slopes were +7, +5, +3, +1 for the charging process and their counterparts -7, -5, -3, -1 for the discharging.
+Hence the sequences of slopes were named: 11, 33, 55 and 77, with respect to $i_0$ values.
+Figure \ref{fig:DiffSlopeSameBWTriangular} demonstrated the four different combinations for synthesizing the triangular wave form.
 
 \begin{figure}[htb!]
 	\centering
   \includegraphics[draft]{Vout_halfsine_7531_diff_freq.pdf}
 	\caption{Triangular signal with same signal bandwidth but different slopes}
-	\label{fig:DiffSigBWSameSlopeTriangular}
+	\label{fig:DiffSlopeSameBWTriangular}
 \end{figure}
+
+The signals were distinguished by the set of slopes used for synthesizing this shape.
+The fundamental frequency was set to \SI{2}{\giga \hertz}, representative for the frequency range of \SI{500}{\mega \hertz} to \SI{6}{\giga \hertz}.
+Only the wave form for the biggest slope 77 seemed to shape like a rectified sine while the other three signals seemed to fit to a triangular wave very nicely.
+This effect was caused, as mentioned earlier, by the sampling time and the high current values.
+This led to a clipping effect at the maximum voltage.\\
+Representative for the four combinations to synthesize this triangular signal wave form, 
+figure \ref{fig:DiffSigBWSameSlopeTriangular} demonstrated for the slope of 33, the frequency varying signals from \SI{500}{\mega \hertz} to \SI{6}{\giga \hertz}.
+
 
 \begin{figure}[htb!]
 	\centering
   \includegraphics[draft]{Vout_halfsine_7531_diff_freq.pdf}
 	\caption{Triangular signal with same slope but different signal bandwidth 3GHz}
-	\label{fig:DiffSlopeSameBW}
+	\label{fig:DiffSigBWSameSlopeTriangular}
 \end{figure}
+
+
 
 %The Code for the generation of the triangular signal at the output is:
 %\textbf{this is not the correct code!!}
@@ -258,18 +281,32 @@ The two digit represented the slope of the rising as well as the falling edge wi
 %\end{equation}
 %\label{eq:RiemannCodeRectSine}
 
+% short definition of stability, what cause oscillation, how to measure stability -> plot stability circles for the schematic%
 \section{Stability analysis of the realised circuit}
-The stability analysis were necessary to check if the circuit oscillates.
-%Although this aspect is of an important role for the development of a high speed \gls{ab:dac}, this analysis are not complete.
-A detailed analysis could not be investigated since there were no exact models of the used components.\\
-This analysis was important to ensure that the \gls{ab:dut} was stable for the whole frequency range.
-The complex impedance at specific points in the circuit was measured to check this stability. 
-Because the real part of the impedance was positive for the whole frequency range of the simulation, it indicated that the circuit was stable. 
+To guarantee the proper function of the circuit a short stability analysis was performed.
+This analysis was necessary to check if the circuit oscillates.
+To prevent the circuit to take damage this oscillation had to be avoided.
+This analysis was important to ensure that the \gls{ab:dut} was stable for the whole frequency range used.
+% The analysis consisted of the measurement of S-parameters at critical points in the circuit.
+ Then the complex impedance was calculated and checked if it could start an oscillation.
+%The complex impedance at specific points in the circuit was measured.
+
+To check the stability the real part of the impedance had to be positive.
+A basic definition of passive elements were that they have a reflection coefficient magnitude less than unity.
+Checking the input reflection coefficient, the values had to be inside the unity circle.
+Therefore no negative resistance would be allowed to occur since that can lead to unwanted amplification and oscillation which can damage the circuit.
+Because the real part of the impedance at all measurement points were positive for the whole frequency range, the circuit seemed to be stable.
 The stability check was performed within the \gls{ab:ads} tool. 
 
-%%%%%%%%%%%% 18:20 Uhr, 18.04.2016
 
+% As switch mode power amplifier were used this was viable for the proper function of the circuit. 
 \section{Energy consumption analysis of the realised circuit}
+As the concept was designed for the use in mobile communication, it could be implemented in mobile devices.
+Since the energy storage of mobile devices is limited, it is important to get a decent power dissipation for the whole circuit.
+
+$ P_{cond} = R_{DS,on}dI_0^2 \propto R_{DS,on} $ \\
+$ P_{sw} = \frac{1}{2} V_{in}I_0(t_{on}+t_{off})f_{sw} \propto f_{sw} $ 
+
 In addition to the stability analysis the energy consumption analysis was important with respect to the use in mobile devices.
 The losses in the circuit were those static losses while the switches plus driver is in one state.
 The dynamic losses were those which occur during the switching...
@@ -293,8 +330,8 @@ If the correct hard
 To combine the measurement results with the presented theory, some simulations were done with the dimensions of the real demonstrator.
 %But also here it is important to note, that losses are not considered in the simulation.
 It provided a basis of what can be expected.
-Therefore a simulation was performed with a circuit which had two bit resolution.
-To compare the results simulated here and measured in chapter \ref{ch:measurement} the switching frequencies were kept in mind.
+Therefore the simulation was adapted to a two bit resolution with much greater power transistors.
+To compare the results simulated here and measured in chapter \ref{ch:measurement} the switching frequencies was kept at lower frequencies (\SI{100}{\mega \hertz}).
 
 %Other important parameters to keep in mind with this simulation are the oversampling ratio and hence the switching frequency of the transistors.
 

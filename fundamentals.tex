@@ -1,10 +1,29 @@
-\chapter{Fundamentals-Theory for this approach to reach 5G}
+\chapter{Fundamentals of the Riemann Pump}
 \label{ch:fundamentals}
 %\textit{Presentation of the theoretical basis required for an understanding of your work. Do not begin with Newton's laws or Maxwell's equations: imagine that the reader is a competent engineering professor, but not necessarily in your field of expertise. Do not bother to discuss any theory that you do not employ in later sections.}
 %In the following some fundamentals are described shortly.
-\section{Concept of Software-defined radio}
-The concept of software-defined radio is adapted to deal with the old problems of mobile communication. The idea is to bring the digital domain as close as possible to the RFFE. The reason is digital filtering, data processing is more efficient, easier, less complex, has less cost, and so on. The main problem of this approach is the energy consumption based on an inefficient ADC/DAC. However the concept is very helpful for future designs of an digital front end. The Software-defined radio has the advantage, that it is adaptiv for future software changes. the hardware is still the same, only the firmware has to be upgraded. broad spectrum of signal can be received with this architecture. from nearly DC to 2 GHz. For future mobile communication standards, the frequency range has to deal with frequencies beyond 2 GHz up to 6 GHz. Nowadays IEEE802.11ac standard is located at 5GHz. Based on this concept a digital-analog converter is designed to deal with a higher bandwith than other devices nowadays. The DAC is used in the transmission path of the design.
-%\section{An approach to reach the desired high speed for the digital-to-analog converter: The Riemann Pump}
+\section{System design using the Riemann Pump}
+The concept of software-defined radio is adapted to deal with the old problems of mobile communication. 
+The idea is to bring the digital domain as close as possible to the antenna. 
+The reason for this is digital filtering is more precisely, data processing is more efficient and faster, less complex, has less cost, and so on. 
+The main problem of this approach is the energy consumption based on an inefficient ADC/DAC.
+ However the concept is very helpful for future designs of an digital front end.
+ The Software-defined radio has the advantage, that it is adaptive for future software changes.
+ The hardware is still the same, only the firmware has to be upgraded.
+ Broad spectrum of signal can be received with this architecture.
+ From nearly DC to 2 GHz. 
+ For future mobile communication standards, the frequency range has to deal with frequencies beyond 2 GHz up to 6 GHz. 
+ Nowadays IEEE802.11ac standard is located at 5GHz.
+  Based on this concept a digital-analog converter is designed to deal with a higher bandwidth than other devices nowadays. 
+  The DAC is used in the transmission path of the design.
+
+\begin{figure}[ht]
+	\centering
+  \includegraphics{System.pdf}
+	\caption{Concept of the Software-defined radio}
+	\label{fig:System}
+\end{figure}
+
 \section{Idea of the Riemann Pump}
 \label{IdeaRiemannPump}
 The Riemann Pump is a arbitrary waveform generator which is controlled through a digital input control voltage.
@@ -78,19 +97,19 @@ Process of the digital to analog conversion:
 	\item control switches with this digital code to synthesize the wanted analog signal
 \end{enumerate}
 
-\textbf{Description of the OSR, Nyquist-Shannon theorem and the SQNR...}
+% \textbf{Description of the OSR, Nyquist-Shannon theorem and the SQNR...}
 The \gls{ab:osr} is four and hence due to the Nyquist-Shannon theorem, the sampling \gls{sy:freq} is eight times the signal frequency.
 This in mind, tuning the sampling frequency will result in tuning the signal frequency.
-\textit{introducing noise due to the conversion}
-\gls{ab:sqnr}
-The deviation of the two signals is lying in the nature of converting digital to analog in form of quantization noise.
+%\textit{introducing noise due to the conversion}
+%\gls{ab:sqnr}
+%The deviation of the two signals is lying in the nature of converting digital to analog in form of quantization noise.
 
 \section{Characteristics of Digtial-to-Analog converter}
 \label{ch:characteristics}
-The characteristics of different digital to analog converter are the generation of noise in terms of signal to (quantization) noise ratio.
-This snr give a good insight to the performance of the corresponding dac without a focus on energy consumption nor efficiency.
-\textit{Explain the different SNR (short), display the table to compare them.}
+The characteristics of different \gls{ab:dac} were the generation of noise in terms of signal to (quantization) noise ratio.
+This \gls{ab:sqnr} gave a good insight to the performance of the corresponding \gls{ab:dac} without to focus on energy consumption nor efficiency.
+%\textit{Explain the different SNR (short), display the table to compare them.}
 
 
-\section{summary - evaluation}
-Evaluation of the idea. In the next chapters a proof of concept is done. What are the drawbacks, advantages and disadvantages.
+%\section{summary - evaluation}
+%Evaluation of the idea. In the next chapters a proof of concept is done. What are the drawbacks, advantages and disadvantages.

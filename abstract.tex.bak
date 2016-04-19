@@ -1,41 +1,64 @@
-\textbf{Agenda}
-\begin{enumerate}
-	\item literature survey
-	\item adaption of push-pull concept from Maksimovic (Talk at Fraunhofer IAF 06/2015)
-	\item GaN25 \gls{ab:gan} parameter simulation [S-parameter,ON/OFF switching voltage]
-	\item determine load impedance [input of PPA - GaN25 \gls{ab:hemt}
-	\item determine dimension of transistors
-	\item tuning schematic parameter for optimal simulation (special freq?)
-	\item enhancement/extension of 1-bit push-pull to 3-bit push-pull stage
-	\item digital input control voltage
-	\item determine eight slopes of the current sources in schematic 3-bit resolution
-	\item Riemanncode generation with MatLab; minimizing error
-	\item control schematic with theoretical input [Riemanncode]
-\end{enumerate}
-\vspace{1cm}
-\textbf{Problems}
-\begin{enumerate}
-	\item frequency dependent load impedance
-	\item absence of p-type transistor makes it hard to efficiently switch the high side transistor in the Gbps range
-	\item the heat spreading on the chip and substrate is critical
-	\item energy consumption may be very high (mainly switching losses)
-	\item the absence of accurate current sources makes it very hard to get a defined slope for the switching transistors.
-	\item theoretical slope generation very inaccurate
-	\item theoretical slope generation via shorted load  (R = \SI{1}{\ohm})
-	\item \textit {$\rightarrow$ slopes ambiguous}?	
-	\item \textit{$\rightarrow$ riemanncode generation not possible}?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
-\end{enumerate}
-\vspace{1cm}
-\textbf{Question}
-\begin{enumerate}
-%	\item mmW band much higher BW,Datarate,Spectrum - why use the old fashioned frequency bands from DC to 6GHz instead of using a couple of GHz?
+In this work a new concept of digital to analog conversion is investigated, yielding an arbitrary waveform generator which could be used in the next generation of mobile communication. 
+This waveform generator should be able to cover the frequency range from \gls{ab:dc} to \SI{6}{\giga \hertz}, which simulations confirmed.
+With the help of this multi bit resolution of a charge pump, the actual conversion methods of digital to analog conversion could be enhanced.\\
+The realised hybrid test circuit was designed, implemented and measured to proof the concept of a push-pull stage, functioning as a differential switch, providing a multi bit charge pump.
+The multi chip solution is chosen to proof the feasibility of the approach and to depict already trade offs which occur during the work.\\
+Although the simulations confirmed the feasibility to cover the broadband frequency range some practical drawbacks were mentioned, which limit the frequency range.
+As the generation of the signal wave form at the output of the circuit, generates much heat, two different concepts were demonstrated to deal with the heat spreading.
+As the energy consumption of modern digital to analog conversions with multi bit resolution is critical an approach is chosen which yields a good efficiency.
+
+
+
+%\textbf{Agenda}
+%\begin{enumerate}
+%	\item literature survey
+%	\item adaption of push-pull concept from Maksimovic (Talk at Fraunhofer IAF 06/2015)
+%	\item GaN25 \gls{ab:gan} parameter simulation [S-parameter,ON/OFF switching voltage]
+%	\item determine load impedance [input of PPA - GaN25 \gls{ab:hemt}
+%	\item determine dimension of transistors
+%	\item tuning schematic parameter for optimal simulation (special freq?)
+%	\item enhancement/extension of 1-bit push-pull to 3-bit push-pull stage
+%	\item digital input control voltage
+%	\item determine eight slopes of the current sources in schematic 3-bit resolution
+%	\item Riemanncode generation with MatLab; minimizing error
+%	\item control schematic with theoretical input [Riemanncode]
+%\end{enumerate}
+%\vspace{1cm}
+%\textbf{Problems}
+%\begin{enumerate}
+%	\item frequency dependent load impedance
+%	\item absence of p-type transistor makes it hard to efficiently switch the high side transistor in the Gbps range
+%	\item the heat spreading on the chip and substrate is critical
+%	\item energy consumption may be very high (mainly switching losses)
+%	\item the absence of accurate current sources makes it very hard to get a defined slope for the switching transistors.
+%	\item theoretical slope generation very inaccurate
+%	\item theoretical slope generation via shorted load  (R = \SI{1}{\ohm})
+%	\item \textit {$\rightarrow$ slopes ambiguous}?	
+%	\item \textit{$\rightarrow$ riemanncode generation not possible}?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+%\end{enumerate}
+%\vspace{1cm}
+%\textbf{Question}
+%\begin{enumerate}
+%%	\item mmW band much higher BW,Datarate,Spectrum - why use the old fashioned frequency bands from DC to 6GHz instead of using a couple of GHz?
+%%	\begin{itemize}
+%%		\item carrier frequencies of modern telecommunication standards are in the range of DC to 6 GHz
+%%		\item Signal generation is done for the bandwidth of 0..\SI{6}{\GHz}, after that it could be mixed up to higher frequency bands like \SI{47}{\GHz} to \SI{53}{\GHz}
+%%	\end{itemize}
+%	\item trade off between BW and losses
 %	\begin{itemize}
-%		\item carrier frequencies of modern telecommunication standards are in the range of DC to 6 GHz
-%		\item Signal generation is done for the bandwidth of 0..\SI{6}{\GHz}, after that it could be mixed up to higher frequency bands like \SI{47}{\GHz} to \SI{53}{\GHz}
+%		\item higher bandwidth means higher switching speed means higher losses due to the fact that the losses increase linear with the switching speed
+%	\item higher frequencies means higher attenuation (e.g. weather condition, like rain)
 %	\end{itemize}
-	\item trade off between BW and losses
-	\begin{itemize}
-		\item higher bandwidth means higher switching speed means higher losses due to the fact that the losses increase linear with the switching speed
-	\item higher frequencies means higher attenuation (e.g. weather condition, like rain)
-	\end{itemize}
-\end{enumerate}
+%\end{enumerate}
+
+\newpage
+\chapter*{Zusammenfassung}
+
+In dieser Arbeit wird ein neues Konzept der Digital-Analog-Umwandlung untersucht, ein Arbitrary Waveform Generator ergibt, die in der n\"achsten Generation der Mobilkommunikation verwendet werden k\"onnten.
+auf \ SI {6} {\ giga \ Hertz}, die best\"atigt Simulationen: Diese Wellenform-Generator sollte den Frequenzbereich von \ gls {dc ab} abdecken k\"onnen.
+Mit Hilfe dieser Multi-Bit-Aufl\"osung einer Ladungspumpe, die tats\"achlichen Umrechnungsmethoden Digital-Analog-Umwandlung kann verbessert werden. \\
+Der realisierte Hybrid-Testschaltung wurde entwickelt, umgesetzt und bis zum Beweis das Konzept einer Push-Pull-Stufe gemessen, als Differenzschalter funktioniert, ein Multi-Bit-Ladungspumpe bereitstellt.
+Die Multi-Chip-L\"osung wird die Machbarkeit des Ansatzes zu Beweis gew\"ahlt und bereits Kompromisse darstellen, die w\"ahrend der Arbeit auftreten. \\
+Obwohl die Simulationen best\"atigt die Machbarkeit der Breitband-Frequenzbereich einige praktische Nachteile zu decken erw\"ahnt wurden, die den Frequenzbereich zu begrenzen.
+Da die Erzeugung des Formsignals Welle am Ausgang der Schaltung, viel W\"arme erzeugt, zwei unterschiedliche Konzepte wurden nachgewiesen mit der W\"armeverteilung zu behandeln.
+Da der Energieverbrauch der modernen Digital-Analog-Umwandlungen mit einer Aufl\"osung Mehrbit ist entscheidend ein Ansatz gew\"ahlt, der einen guten Wirkungsgrad liefert.

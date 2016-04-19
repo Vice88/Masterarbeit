@@ -97,7 +97,7 @@ However the distances between conduction lines were limited by the process of th
 The transmission lines of the signal path were designed to fit each other.
 All transmission lines were matched to \SI{50}{\ohm} and got the same length to avoid undesired delays of the signal.
 An important fact to consider was that all switches had to switch synchronous at the same time. 
-Therefore no signal delays were permitted induced by different transmission lines.\\
+Therefore no signal delays were permitted, induced by different transmission lines.\\
 The assembly of the multi chip connection marked with the red rectangular is described in Figure \ref{fig:layoutDDRiXY6bond}.
 
 \begin{figure}[htb!]
@@ -108,7 +108,8 @@ The assembly of the multi chip connection marked with the red rectangular is des
 \end{figure}
 
 %One very important design rule for this layout was to create as much as possible heat transfer.
-The drawback of these chosen chips were its plated through ground contact. In fact of this, a proper function of this chips as a high side switch made it necessary to place it on an electrical isolated pad.
+The drawback of these chosen chips were its plated through ground contact. 
+In fact of this, a proper function of these chips as a high side switch, made it necessary to place it on an electrical isolated pad.
 At the bottom of Figure \ref{fig:layoutDDRiXY6bond} these chips were placed on an isolated pad.
 This pad did not have any connection to the backside potential of the substrate.
 The pads were surrounded by a large conducting layer with via holes to spread the heat.
@@ -135,6 +136,9 @@ As mentioned the bond wires got the same length for the signal path.
 	\label{fig:photoDDRiXY6bond}
 \end{figure}
 
+%########################## important stability factor !!! ########################
+%A positive feedback of the used amplifiers had to be avoided.
+%To eliminate undesirable feedback the driver circuit had to be assembled without feedback path.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%13.04.2016; 20:06 Uhr %%%%%%%%%%%%%%
 \newpage

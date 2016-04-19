@@ -105,7 +105,7 @@ Schematic design in Advanced Design System 2014. concept, ideas...
 Control voltage of 5 V realization with OPAMPS? Possible to overdrive opamps instead of using broadband ppa. 
 
 
-\section{Circuit design summary and discussion}
+\section{Circuit design summary}
 \textit{Drawbacks, problems, challenges.}
 Same realisation problems and difficulties: Problem of BANDWIDTH, Vpp of control signal (5V pp for GaN transistors), high side driver, no complementary transistors available in III-V technology, low loss driver, high speed driver, digital control driver, too high energy consumption (stability???)
 \textbf{bandwidth limitation}
