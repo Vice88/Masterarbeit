@@ -1,8 +1,13 @@
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
 \begin{theglossary}\glossaryheader
 \glsgroupheading{glssymbols}\relax \glsresetentrylist %
+\glossentry{sy:Cout}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{4}}}%
 \glossentry{sy:Vdd}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{40}}}%
+		\setentrycounter[]{page}\glsnumberformat{4}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{38}}}%
+\glossentry{sy:Vss}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{4}}}%
 \glossentry{sy:freq}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{8}}}%
 \end{theglossary}\glossarypostamble

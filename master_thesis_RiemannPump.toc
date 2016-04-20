@@ -4,7 +4,7 @@
 \contentsline {chapter}{\numberline {2}Fundamentals of the Riemann Pump}{3}
 \contentsline {section}{\numberline {2.1}System design using the Riemann Pump}{3}
 \contentsline {section}{\numberline {2.2}Idea of the Riemann Pump}{4}
-\contentsline {section}{\numberline {2.3}Characteristics of Digtial-to-Analog converter}{6}
+\contentsline {section}{\numberline {2.3}Characteristics of Digtial-to-Analog converter}{8}
 \contentsline {chapter}{\numberline {3}Riemann Pump circuit design}{9}
 \contentsline {section}{\numberline {3.1}Approach and implementation of the Riemann Pump}{9}
 \contentsline {section}{\numberline {3.2}Identification of the load impedance}{10}
@@ -31,8 +31,8 @@
 \contentsline {section}{\numberline {6.5}Discussion of measurement results}{40}
 \contentsline {chapter}{\numberline {7}Conclusions and outlook}{41}
 \contentsline {chapter}{Bibliography}{43}
-\contentsline {chapter}{Appendix}{45}
-\contentsline {section}{\numberline {A}Schematic of the Riemann Pump circuit}{45}
-\contentsline {section}{\numberline {B}Layout of the whole Riemann Pump circuit}{46}
-\contentsline {section}{\numberline {C}Photography of the realized Demonstrator version 1}{47}
-\contentsline {section}{\numberline {D}Photography of the realized Demonstrator version 2}{47}
+\contentsline {chapter}{Appendix}{47}
+\contentsline {section}{\numberline {A}Schematic of the Riemann Pump circuit}{47}
+\contentsline {section}{\numberline {B}Layout of the whole Riemann Pump circuit}{48}
+\contentsline {section}{\numberline {C}Photography of the realized Demonstrator version 1}{49}
+\contentsline {section}{\numberline {D}Photography of the realized Demonstrator version 2}{49}

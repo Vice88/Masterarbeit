@@ -138,9 +138,7 @@
 \include{measurement}
 \include{conclusion}
 
-\nocite{Devrac2014}
-\nocite{Devrac2015}
-
+\nocite{*}
 
 \cleardoublepage
 \clearpage

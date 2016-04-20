@@ -6,6 +6,10 @@
 
 \newglossaryentry{ab:sqnr}{type=abbreviations,name={SQNR},description={Signal-to-quantization-noise-ratio},first={SQNR (Signal-to-quantization-noise-ratio)}}
 
+\newglossaryentry{ab:dsp}{type=abbreviations,name={DSP},description={digital signal processor},first={DSP (digital signal processor)}}
+
+\newglossaryentry{ab:wlan}{type=abbreviations,name={WLAN},description={wireless local area network},first={WLAN}}
+
 \newglossaryentry{ab:snr}{type=abbreviations,name={SNR},description={Signal-to-noise-ratio},first={SNR (Signal-to-noise-ratio)}}
 
 \newglossaryentry{ab:ChemNiPdAu}{type=abbreviations,name={ChemNiPdAu},description={chemical Nickel Palladium Aurum}}
@@ -90,7 +94,13 @@
 
 \newglossaryentry{sy:freq}{type=symbols,name={$f$},description={frequency},first={$f$ (frequency)}}
 
-\newglossaryentry{sy:Vdd}{type=symbols,name={$V_{dd}$},description={positive supply voltage FET},first={$V_{dd}$}}
+\newglossaryentry{sy:Vdd}{type=symbols,name={$V_{dd}$},description={positive supply voltage},first={$V_{dd}$}}
+
+\newglossaryentry{sy:Vss}{type=symbols,name={$V_{ss}$},description={negative supply voltage},first={$V_{ss}$}}
+
+\newglossaryentry{sy:Vout}{type=symbols,name={$V_{out}$},description={output voltage},first={$V_{out}$}}
+
+\newglossaryentry{sy:Cout}{type=symbols,name={$C_{out}$},description={output capacitance},first={$C_{out}$}}
 
 
 \newglossaryentry{sy:V}{type=symbols,name={$V$},description={Voltage},first={$V$ (Voltage)}}

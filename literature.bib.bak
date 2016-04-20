@@ -1,16 +1,283 @@
 % Encoding: UTF-8
 
 
-@Article{Devrac2014,
-  Title                    = {GaN Riemann Pump},
-  Author                   = {Devrac},
-  Journal                  = {IEE Journal on Computers and Digital Techniques},
-  Year                     = {2014}
-}
-
-@Article{Devrac2015,
-  Title                    = {GaN Riemann Pump},
-  Author                   = {Devrac, Rivet},
-  Journal                  = {EuMW},
+@Manual{AWGman2015,
+  Title                    = {{Keysight Fundamentals of Arbitrary Waveform Generation, A high performance AWG primer, Reference Guide}},
+  Address                  = {Herrenberger Str. 130 71034 B\"oblingen, Germany},
+  Edition                  = {4.0},
+  Month                    = {June},
+  Organization             = {Keysight Technologies Deutschland GmbH},
   Year                     = {2015}
 }
+
+@Conference{CakaZabelliLimaniEtAl2007,
+  Title                    = {{Impact of MOSFET parameters on its parasitic capacitances}},
+  Author                   = {Caka, N. and Zabelli, M. and Limani, M. and Kabashi, Q.},
+  Booktitle                = {Proceedings of the 6th WSEAS Int. Conf. on Electronics, Hardware, Wireless and Optical Communications},
+  Year                     = {2007},
+  Month                    = {February}
+}
+
+@Conference{CarrubbaMaroldtMusserEtAl2015,
+  Title                    = {{High-Efficiency, High-Temperature Continuous Class-E Sub-Waveform Solution AlGaN/GaN Power Amplifier}},
+  Author                   = {Carrubba, V. and Maroldt, S. and Musser, M. and Ture, E. and Dammann, M. and F. van Raay and Quay, R. and Brückner, P. and Ambacher, O.},
+  Booktitle                = {IEEE Microwave and Wireless Components Letters},
+  Year                     = {2015},
+  Number                   = {8},
+  Pages                    = {526 - 528},
+  Volume                   = {25}
+}
+
+@Conference{DeltimpleLeyssenneKerherveEtAl2010,
+  Title                    = {{Dynamic Biasing Techniques for RF Power Amplifier Linearity and Efficiency Improvement}},
+  Author                   = {Deltimple, N. and Leyssenne, L. and Kerherve, E. and Deval, Y. and Belot, D.},
+  Booktitle                = {IEEE International Conference on Integrated Circuit Design and Technology},
+  Year                     = {2010},
+  Pages                    = {232 - 235},
+  Journal                  = {{2010 IEEE International Conference on Integrated Circuit Design and Technology}}
+}
+
+@Conference{DevalY.2013,
+  Title                    = {{F}ull {S}oftware {R}adio {T}ransceivers},
+  Author                   = {Deval, Y. and Rivet, F. and Veyrac, Y. and Regimbal, N. and Garrec, P. and Montigny, R. and Belot, D. and Taris, T.},
+  Booktitle                = {ASIC (ASICON), 2013 IEEE 10th International Conference},
+  Year                     = {2013},
+  Pages                    = {1 - 4},
+  Journal                  = {ASIC (ASICON), 2013 IEEE 10th International Conference}
+}
+
+@Conference{Devrac2014,
+  Title                    = {The {R}iemann {P}ump: a {C}oncurrent {T}ransmitter in {G}an {T}echnology},
+  Author                   = {Veyrac, Y. and Rivet, F. and Deval, Y. and Dallet, D. and Garrec, P. and Montigny, R.},
+  Booktitle                = {21st IEEE International Conference on Electronics and Circuits and Systems (ICECS)},
+  Year                     = {2014},
+  Pages                    = {594 - 597},
+  Journal                  = {2014 21st IEEE International Conference on Electronics and Circuits and Systems (ICECS)}
+}
+
+@Conference{Devrac2015,
+  Title                    = {{Design by Mathematics of Full Software Radio circuits and systems: methodology and application to 5G standard}},
+  Author                   = {Deval, Y. and Rivet, F. and Veyrac, Y.},
+  Booktitle                = {EUROPEAN MICROWAVE WEEK},
+  Year                     = {2015},
+  Journal                  = {EuMW}
+}
+
+@Conference{EvertsDasKeybusJ.EtAl2010,
+  Title                    = {{GaN-Based Power Transistors for Future Power Electronic Converters}},
+  Author                   = {Everts, J. and Das, J. and Van den Keybus J. and Germain, M. and Driesen, J.},
+  Booktitle                = {IEEE Benelux Young Researchers Symposium (YRS2010) ,Leuven (Belgium)},
+  Year                     = {2010},
+  Volume                   = {5},
+  Journal                  = {IEEE Benelux Young Researchers Symposium (YRS2010) edition:5 location:Leuven (Belgium) date:29-30 March 2010}
+}
+
+@Conference{GhoshAltmannKerstenEtAl2014,
+  Title                    = {{A 250 nm CMOS / LDMOS Pulse-Width Modulator and Driver for space-borne GaN switch mode power amplifiers in P-band}},
+  Author                   = {Ghosh, I. S. and Altmann, U. and Kersten, O. and Quibeldey, M. and Follmann, R. and Hildenhagen, P. and Rittweger, M. and Cabria, L. and Cipriani, E. and Colantonio, P. and Ayllon, N. and Chowdhary, A.},
+  Booktitle                = {11th European Radar Conference (EuRAD)},
+  Year                     = {2014},
+  Pages                    = {356 - 359}
+}
+
+@Book{GilmoreR.2003,
+  Title                    = {{Practical RF Circuit Design for Modern Wireless Systems}},
+  Author                   = {Gilmore R., Besser L.},
+  Publisher                = {ARTECH HOUSE, Inc.},
+  Year                     = {2003},
+  Volume                   = {{2 Active Circuits and Systems}}
+}
+
+@Conference{HeijdenAcar2014,
+  Title                    = {{A radio-frequency reconfigurable CMOS-GaN class-E Chireix power amplifier}},
+  Author                   = {Mark P. van der Heijden and Acar, Mustafa},
+  Booktitle                = {IEEE MTT-S International Microwave Symposium (IMS2014)},
+  Year                     = {2014},
+  Pages                    = {1 - 4}
+}
+
+@Conference{HeijdenAcarMaroldt2013,
+  Title                    = {{A package-integrated 50W high-efficiency RF CMOS-GaN class-E power amplifier}},
+  Author                   = {Mark P. van der Heijden and Acar, Mustafa and Maroldt, Stephan},
+  Booktitle                = {IEEE MTT-S International Microwave Symposium Digest (IMS)},
+  Year                     = {2013},
+  Pages                    = {1 - 3}
+}
+
+@Conference{HeijdenAcarVromansEtAl2011,
+  Title                    = {{A 19W high-efficiency wide-band CMOS-GaN class-E Chireix RF outphasing power amplifier}},
+  Author                   = {M. P. van der Heijden and Acar, M. and Vromans, J. S. and D. A. Calvillo-Cortes},
+  Booktitle                = {IEEE MTT-S International Microwave Symposium Digest (MTT)},
+  Year                     = {2011},
+  Pages                    = {1 - 1}
+}
+
+@Conference{HongMukaiGheidiEtAl2013,
+  Title                    = {{High efficiency GaN switching converter IC with bootstrap driver for envelope tracking applications}},
+  Author                   = {Young-Pyo Hong and Mukai, Kenji and Gheidi, Hamed and Shinjo, Shintaro and Peter M. Asbeck},
+  Booktitle                = {IEEE Radio Frequency Integrated Circuits Symposium (RFIC)},
+  Year                     = {2013}
+}
+
+@Conference{JarrayBouabidChibani2015,
+  Title                    = {{Enabling and challenges for 5G Technologies}},
+  Author                   = {Jarray, Chedia and Bouabid, Asma and Chibani, Belgacem},
+  Booktitle                = {World Congress onInformation Technology and Computer Applications Congress (WCITCA)},
+  Year                     = {2015},
+  Pages                    = {1 - 9}
+}
+
+@Book{M.2012,
+  Title                    = {Microwave Engineering},
+  Author                   = {Pozar, D. M.},
+  Publisher                = {John Wiley \& Sons, Inc.},
+  Year                     = {2012},
+  Edition                  = {4}
+}
+
+@Article{MaksimovicPaper,
+  Title                    = {{High-Frequency Integrated Gate Drivers for Half-Bridge GaN Power Stage}},
+  Author                   = {Y. Zhang, M. Rodriguez, D. Maksimovic},
+  Journal                  = {Workshop on Control and Modeling for Power Electronics (COMPEL)},
+  Year                     = {2015}
+}
+
+@PhdThesis{Maroldt2010,
+  Title                    = {{Gallium Nitride Based Transistors for High-Efficiency Microwave Switch-Mode Amplifiers}},
+  Author                   = {Maroldt, Stephan},
+  School                   = {Albert-Ludwigs Universit\"at Freiburg im Breisgau},
+  Year                     = {2010},
+  Month                    = {June}
+}
+
+@Conference{MaroldtHauptKieferEtAl2009,
+  Title                    = {{High Efficiency Digital GaN MMIC Power Amplifiers for Future Switch-Mode Based Mobile Communication Systems}},
+  Author                   = {Maroldt, S. and Haupt, C. and Kiefer, R. and Bronner, W. and Mueller, S. and Benz, W. and Quay, R. and Ambacher, O.},
+  Booktitle                = {Annual IEEE Compound Semiconductor Integrated Circuit Symposium},
+  Year                     = {2009},
+  Pages                    = {1 - 4}
+}
+
+@Conference{MaroldtQuayHauptEtAl2011,
+  Title                    = {{Broadband GaN-Based Switch-Mode Core MMICs with 20 W Output Power Operating at UHF}},
+  Author                   = {Maroldt, Stephan and Quay, Rudiger and Haupt, Christian and Ambacher, Oliver},
+  Booktitle                = {IEEE Compound Semiconductor Integrated Circuit Symposium (CSICS)},
+  Year                     = {2011},
+  Pages                    = {1 - 4}
+}
+
+@Conference{MaroldtS.QuayEtAl2010,
+  Title                    = {{Integrated-Schottky-Diode GaN HFETs for High-Efficiency Digital PA MMICs at 2 GHz}},
+  Author                   = {Maroldt and S. and Quay, R. and Haupt, C. and Kiefer, R. and Wiegner, D. and Ambacher, O.},
+  Booktitle                = {40th Microwave Conference (EuMC)},
+  Year                     = {2010},
+  Pages                    = {636 - 639}
+}
+
+@Conference{PengellyWoodMilliganEtAl2012,
+  Title                    = {{A Review of GaN on SiC High Electron-Mobility Power Transistors and MMICs}},
+  Author                   = {Raymond S. Pengelly and Simon M. Wood and James W. Milligan and Scott T. Sheppard and William L. Pribble},
+  Booktitle                = {IEEE Transactions on Microwave Theory and Techniques},
+  Year                     = {2012},
+  Number                   = {6},
+  Pages                    = {1764 - 1783},
+  Volume                   = {60}
+}
+
+@Conference{QuayMaroldt2011,
+  Title                    = {{Design and modelling challenges for advanced class-S digital transmitters}},
+  Author                   = {Quay, Rüdiger and Maroldt, Stephan},
+  Booktitle                = {Workshop on Integrated Nonlinear Microwave and Millimetre-Wave Circuits (INMMIC)},
+  Year                     = {2011},
+  Pages                    = {1 - 4}
+}
+
+@Conference{RivetDevalBegueretJ.-B.2007,
+  Title                    = {{A Software-Defined Radio based on Sampled Analog Signal Processing Dedicated to Digital Modulations}},
+  Author                   = {Rivet, F. and Deval, Y. and Begueret J.-B., Dallet D., Belot D.},
+  Booktitle                = {Research in Microelectronics and Electronics Conference},
+  Year                     = {2007},
+  Pages                    = {121 - 124}
+}
+
+@Conference{RivetDevalD.2008,
+  Title                    = {{A Disruptive Receiver Architecture Dedicated to Software-defined Radio}},
+  Author                   = {Rivet, F. and Deval, Y. and Begueret J.-B. Dallet D. Cathelin P. Belot D.},
+  Booktitle                = {IEEE Transactions on Circuits and Systems II: Express Briefs},
+  Year                     = {2008},
+  Number                   = {4},
+  Series                   = {344 - 348},
+  Volume                   = {55}
+}
+
+@Conference{RivetF.2010,
+  Title                    = {{The Experimental Demonstration of a SASP-Based Full Software Radio Receiver}},
+  Author                   = {Rivet, F. and Deval, Y. and Begueret J.-B. and Dallet, D. and Cathelin, P. and Belot, D.},
+  Booktitle                = {IEEE Journal of Solid-State Circuits},
+  Year                     = {2010},
+  Number                   = {5},
+  Pages                    = {979 - 988},
+  Volume                   = {45},
+  DOI                      = {10.1109/JSSC.2010.2041402}
+}
+
+@Conference{RivetF.2014,
+  Title                    = {{A 97mW 0-4GHz 65nm CCMOS Concurrent Receiver}},
+  Author                   = {Rivet F., Deval Y.},
+  Booktitle                = {12th IEEE International Conference on Solid-State and Integrated Circuit Technology (ICSICT)},
+  Year                     = {2014},
+  Pages                    = {1-3}
+}
+
+@Conference{RivetFadhuileDevalEtAl2013,
+  Title                    = {{Wide-Band Rejection of Interfering Signals}},
+  Author                   = {Rivet, F. and Fadhuile, F. and Deval, Y. and Taris, T.},
+  Booktitle                = {IEEE 20th International Conference on Electronics, Circuits, and Systems (ICECS)},
+  Year                     = {2013},
+  Pages                    = {767 - 770}
+}
+
+@Conference{SchmidReberChartierEtAl2011,
+  Title                    = {{Advances on GaN based switch mode amplifiers for communication applications}},
+  Author                   = {Schmid, Ulf and Reber, Rolf and Chartier, Sébastien and Grabherr, Wilfried and Leberer, Ralf and Oppermann, Martin},
+  Booktitle                = {41st European Microwave Conference (EuMC)},
+  Year                     = {2011},
+  Pages                    = {163 - 166}
+}
+
+@Conference{VeyracY.2016,
+  Title                    = {{A 65 nm CMOS DAC Based on a Differentiating Arbitrary Waveform Generator Architecture for 5G Handset Transmitter}},
+  Author                   = {Veyrac, Y. and Rivet, F. and Deval, Y. and Dallet, D. and Garrec, P. and Montigny, R.},
+  Booktitle                = {IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS - II: EXPRESS BRIEFS},
+  Year                     = {2016},
+  Number                   = {1},
+  Pages                    = {104 - 108},
+  Volume                   = {63},
+  Journal                  = {IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS - II: EXPRESS BRIEFS and VOL. 63 and NO. 1 and JANUARY 2016}
+}
+
+@Conference{WentzelMelianiHeinrich2010,
+  Title                    = {{A voltage-mode class-s power amplifier for the 450MHz band}},
+  Author                   = {Wentzel, Andreas and Meliani, Chafik and Heinrich, Wolfgang},
+  Booktitle                = {European Microwave Conference (EuMC)},
+  Year                     = {2010}
+}
+
+@Conference{ZhangZhangTangEtAl2014,
+  Title                    = {{Analytical Modeling of Capacitances for GaN HEMTs, Including Parasitic Components}},
+  Author                   = {Zhang, Aixi and Zhang, Lining and Tang, Zhikai and Cheng, Xiaoxu and Wang, Yan and Kevin J. Chen and Chan, Mansun},
+  Booktitle                = {IEEE Transactions on Electron Devices},
+  Year                     = {2014},
+  Number                   = {3},
+  Pages                    = {755 - 761},
+  Volume                   = {61}
+}
+
+@Conference{,
+  Title                    = {{ A microwave high-power GaN transistor with highly-integrated active digital switch-mode driver circuit}},
+  Author                   = {Maroldt, S. and Br\"uckner, P. and Quay, R. and Ambacher, O.},
+  Booktitle                = {IEEE MTT-S International Microwave Symposium (IMS2014)},
+  Year                     = {2014},
+  Pages                    = {1 - 4}
+}
+
