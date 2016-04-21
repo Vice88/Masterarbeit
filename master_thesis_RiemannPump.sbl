@@ -1,7 +1,10 @@
-\glossaryentry{$C_{out}$?\glossentry{sy:Cout}|setentrycounter[]{page}\glsnumberformat}{4}
-\glossaryentry{$V_{dd}$?\glossentry{sy:Vdd}|setentrycounter[]{page}\glsnumberformat}{4}
-\glossaryentry{$V_{ss}$?\glossentry{sy:Vss}|setentrycounter[]{page}\glsnumberformat}{4}
-\glossaryentry{$f$?\glossentry{sy:freq}|setentrycounter[]{page}\glsnumberformat}{7}
+\glossaryentry{$C_{out}$?\glossentry{sy:Cout}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{$V_{dd}$?\glossentry{sy:Vdd}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{$V_{ss}$?\glossentry{sy:Vss}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{$i_{out}$?\glossentry{sy:iout}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{$C_{out}$?\glossentry{sy:Cout}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{$V_{out}$?\glossentry{sy:Vout}|setentrycounter[]{page}\glsnumberformat}{5}
+\glossaryentry{$f$?\glossentry{sy:freq}|setentrycounter[]{page}\glsnumberformat}{8}
 \glossaryentry{$V_{dd}$?\glossentry{sy:Vdd}|setentrycounter[]{page}\glsnumberformat}{38}
 \glossaryentry{$V_{dd}$?\glossentry{sy:Vdd}|setentrycounter[]{page}\glsnumberformat}{38}
 \glossaryentry{$V_{dd}$?\glossentry{sy:Vdd}|setentrycounter[]{page}\glsnumberformat}{38}

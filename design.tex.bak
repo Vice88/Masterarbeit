@@ -66,7 +66,7 @@ As a \SI{20}{\watt} power amplifier would be taken for the transmitting path of 
 This is a keep it small and simple approach to get a first idea of the concept. Otherwise a more accurate way would be to take a broadband power amplifier as load.
 The transistor model with this gate periphery was tuned due to the \gls{ab:mag} to get the complex impedance of the power amplifier.
 After the tuning process a S-parameter simulation determined the input impedance of the power amplifier which corresponds to the load impedance of the designed Riemann pump circuit.
-This transistor model \gls{ab:hemt} (IAF\_GE\_MSL\_ A204/IAF\_GaN25\_HEMT\_CS\_LS\_SHfull) used in \gls{ab:ads} were modelled at the \gls{ab:iaf}.\\
+This transistor model \gls{ab:hemt} (IAF\_GE\_MSL\_ A204/IAF\_GaN25\_HEMT\_CS\_LS\_SHfull) used in \gls{ab:ads} were modelled at the \gls{ab:iaf}\cite{model} and is based on a state-space approach.\\ 
 
  The first assumption is that the load is a pre-power amplifier which generate a power of \SI{20}{\watt}. To generate this power, the gate periphery of a GaN25 HEMT has to be \SI{4}{\milli \metre} based on the approximation(- official reference???) \SI[per-mode=fraction]{5}{\watt\per\milli\metre}. To get this gate periphery four transistor in parallel each with 8 finger and \SI{125}{\micro \metre} are designed for the power amplifier. The bias point is determined with the \gls{ab:mag}. Therefore the following load impedance could be determined.
 \begin{equation}

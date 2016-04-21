@@ -1,7 +1,7 @@
 % Encoding: UTF-8
 
 
-@Manual{AWGman2015,
+@Manual{2015,
   Title                    = {{Keysight Fundamentals of Arbitrary Waveform Generation, A high performance AWG primer, Reference Guide}},
   Address                  = {Herrenberger Str. 130 71034 B\"oblingen, Germany},
   Edition                  = {4.0},
@@ -28,6 +28,15 @@
   Volume                   = {25}
 }
 
+@Conference{Chamberlain2015,
+  Title                    = {{A software defined HF radio}},
+  Author                   = {Chamberlain, M. W.},
+  Booktitle                = {MILCOM 2005 - 2005 IEEE Military Communications Conference},
+  Year                     = {2015},
+  Pages                    = {2448 - 2453},
+  Volume                   = {4}
+}
+
 @Conference{DeltimpleLeyssenneKerherveEtAl2010,
   Title                    = {{Dynamic Biasing Techniques for RF Power Amplifier Linearity and Efficiency Improvement}},
   Author                   = {Deltimple, N. and Leyssenne, L. and Kerherve, E. and Deval, Y. and Belot, D.},
@@ -37,30 +46,21 @@
   Journal                  = {{2010 IEEE International Conference on Integrated Circuit Design and Technology}}
 }
 
-@Conference{DevalY.2013,
+@Conference{DevalRivetVeyrac2015,
+  Title                    = {{Design by Mathematics of Full Software Radio circuits and systems: methodology and application to 5G standard}},
+  Author                   = {Deval, Y. and Rivet, F. and Veyrac, Y.},
+  Booktitle                = {EUROPEAN MICROWAVE WEEK},
+  Year                     = {2015},
+  Journal                  = {EuMW}
+}
+
+@Conference{DevalRivetVeyracEtAl2013,
   Title                    = {{F}ull {S}oftware {R}adio {T}ransceivers},
   Author                   = {Deval, Y. and Rivet, F. and Veyrac, Y. and Regimbal, N. and Garrec, P. and Montigny, R. and Belot, D. and Taris, T.},
   Booktitle                = {ASIC (ASICON), 2013 IEEE 10th International Conference},
   Year                     = {2013},
   Pages                    = {1 - 4},
   Journal                  = {ASIC (ASICON), 2013 IEEE 10th International Conference}
-}
-
-@Conference{Devrac2014,
-  Title                    = {The {R}iemann {P}ump: a {C}oncurrent {T}ransmitter in {G}an {T}echnology},
-  Author                   = {Veyrac, Y. and Rivet, F. and Deval, Y. and Dallet, D. and Garrec, P. and Montigny, R.},
-  Booktitle                = {21st IEEE International Conference on Electronics and Circuits and Systems (ICECS)},
-  Year                     = {2014},
-  Pages                    = {594 - 597},
-  Journal                  = {2014 21st IEEE International Conference on Electronics and Circuits and Systems (ICECS)}
-}
-
-@Conference{Devrac2015,
-  Title                    = {{Design by Mathematics of Full Software Radio circuits and systems: methodology and application to 5G standard}},
-  Author                   = {Deval, Y. and Rivet, F. and Veyrac, Y.},
-  Booktitle                = {EUROPEAN MICROWAVE WEEK},
-  Year                     = {2015},
-  Journal                  = {EuMW}
 }
 
 @Conference{EvertsDasKeybusJ.EtAl2010,
@@ -86,6 +86,13 @@
   Publisher                = {ARTECH HOUSE, Inc.},
   Year                     = {2003},
   Volume                   = {{2 Active Circuits and Systems}}
+}
+
+@Article{Grossman2005,
+  Title                    = {{Software-defined radio poses major challenges for hardware and software developers}},
+  Author                   = {Steve Grossman},
+  Journal                  = {Defense Electronics},
+  Year                     = {2005}
 }
 
 @Conference{HeijdenAcar2014,
@@ -127,19 +134,12 @@
   Pages                    = {1 - 9}
 }
 
-@Book{M.2012,
-  Title                    = {Microwave Engineering},
-  Author                   = {Pozar, D. M.},
-  Publisher                = {John Wiley \& Sons, Inc.},
-  Year                     = {2012},
-  Edition                  = {4}
-}
-
-@Article{MaksimovicPaper,
-  Title                    = {{High-Frequency Integrated Gate Drivers for Half-Bridge GaN Power Stage}},
-  Author                   = {Y. Zhang, M. Rodriguez, D. Maksimovic},
-  Journal                  = {Workshop on Control and Modeling for Power Electronics (COMPEL)},
-  Year                     = {2015}
+@Conference{LiRaghunathanJha2009,
+  Title                    = {{An architecture for secure software defined radio}},
+  Author                   = {Li, Chunxiao and Raghunathan, Anand and Niraj K. Jha},
+  Booktitle                = {Design, Automation \& Test in Europe Conference \& Exhibition},
+  Year                     = {2009},
+  Pages                    = {448 - 453}
 }
 
 @PhdThesis{Maroldt2010,
@@ -148,6 +148,14 @@
   School                   = {Albert-Ludwigs Universit\"at Freiburg im Breisgau},
   Year                     = {2010},
   Month                    = {June}
+}
+
+@Conference{MaroldtBruecknerQuayEtAl2014,
+  Title                    = {{ A microwave high-power GaN transistor with highly-integrated active digital switch-mode driver circuit}},
+  Author                   = {Maroldt, S. and Br\"uckner, P. and Quay, R. and Ambacher, O.},
+  Booktitle                = {IEEE MTT-S International Microwave Symposium (IMS2014)},
+  Year                     = {2014},
+  Pages                    = {1 - 4}
 }
 
 @Conference{MaroldtHauptKieferEtAl2009,
@@ -184,6 +192,14 @@
   Volume                   = {60}
 }
 
+@Book{Pozar2012,
+  Title                    = {Microwave Engineering},
+  Author                   = {Pozar, D. M.},
+  Publisher                = {John Wiley \& Sons, Inc.},
+  Year                     = {2012},
+  Edition                  = {4}
+}
+
 @Conference{QuayMaroldt2011,
   Title                    = {{Design and modelling challenges for advanced class-S digital transmitters}},
   Author                   = {Quay, Rüdiger and Maroldt, Stephan},
@@ -210,7 +226,7 @@
   Volume                   = {55}
 }
 
-@Conference{RivetF.2010,
+@Conference{RivetDevalJ.-B.EtAl2010,
   Title                    = {{The Experimental Demonstration of a SASP-Based Full Software Radio Receiver}},
   Author                   = {Rivet, F. and Deval, Y. and Begueret J.-B. and Dallet, D. and Cathelin, P. and Belot, D.},
   Booktitle                = {IEEE Journal of Solid-State Circuits},
@@ -245,7 +261,16 @@
   Pages                    = {163 - 166}
 }
 
-@Conference{VeyracY.2016,
+@Conference{VeyracRivetDevalEtAl2014,
+  Title                    = {The {R}iemann {P}ump: a {C}oncurrent {T}ransmitter in {G}an {T}echnology},
+  Author                   = {Veyrac, Y. and Rivet, F. and Deval, Y. and Dallet, D. and Garrec, P. and Montigny, R.},
+  Booktitle                = {21st IEEE International Conference on Electronics and Circuits and Systems (ICECS)},
+  Year                     = {2014},
+  Pages                    = {594 - 597},
+  Journal                  = {2014 21st IEEE International Conference on Electronics and Circuits and Systems (ICECS)}
+}
+
+@Conference{VeyracRivetDevalEtAl2016,
   Title                    = {{A 65 nm CMOS DAC Based on a Differentiating Arbitrary Waveform Generator Architecture for 5G Handset Transmitter}},
   Author                   = {Veyrac, Y. and Rivet, F. and Deval, Y. and Dallet, D. and Garrec, P. and Montigny, R.},
   Booktitle                = {IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS - II: EXPRESS BRIEFS},
@@ -263,6 +288,13 @@
   Year                     = {2010}
 }
 
+@Article{Y.Zhang2015,
+  Title                    = {{High-Frequency Integrated Gate Drivers for Half-Bridge GaN Power Stage}},
+  Author                   = {Y. Zhang, M. Rodriguez, D. Maksimovic},
+  Journal                  = {Workshop on Control and Modeling for Power Electronics (COMPEL)},
+  Year                     = {2015}
+}
+
 @Conference{ZhangZhangTangEtAl2014,
   Title                    = {{Analytical Modeling of Capacitances for GaN HEMTs, Including Parasitic Components}},
   Author                   = {Zhang, Aixi and Zhang, Lining and Tang, Zhikai and Cheng, Xiaoxu and Wang, Yan and Kevin J. Chen and Chan, Mansun},
@@ -273,11 +305,16 @@
   Volume                   = {61}
 }
 
-@Conference{,
-  Title                    = {{ A microwave high-power GaN transistor with highly-integrated active digital switch-mode driver circuit}},
-  Author                   = {Maroldt, S. and Br\"uckner, P. and Quay, R. and Ambacher, O.},
-  Booktitle                = {IEEE MTT-S International Microwave Symposium (IMS2014)},
-  Year                     = {2014},
-  Pages                    = {1 - 4}
-}
+@ARTICLE{Model,
+author={M. Seelmann-Eggebert and T. Merkle and F. van Raay and R. Quay and M. Schlechtweg},
+journal={{IEEE Transactions on Microwave Theory and Techniques}},
+title={A Systematic State ndash;Space Approach to Large-Signal Transistor Modeling},
+year={2007},
+volume={55},
+number={2},
+pages={195-206},
+keywords={III-V semiconductors;gallium compounds;high electron mobility transistors;semiconductor device models;state-space methods;wide band gap semiconductors;GaN;HEMT;high electron mobility transistors;high-speed transistors;large-signal transistor modeling;linear LS model;multibias SS S-parameter measurements;state-space approach;Circuit simulation;Dispersion;Frequency dependence;Frequency domain analysis;Gallium nitride;HEMTs;MODFETs;Predictive models;Transfer functions;Voltage;GaN HEMT;large-signal (LS) transistor modeling;low-frequency (LF) dispersion;state–space approach},
+doi={10.1109/TMTT.2006.889154},
+ISSN={0018-9480},
+month={Feb},}
 

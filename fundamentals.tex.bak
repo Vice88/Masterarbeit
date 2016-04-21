@@ -2,35 +2,40 @@
 \label{ch:fundamentals}
 %\textit{Presentation of the theoretical basis required for an understanding of your work. Do not begin with Newton's laws or Maxwell's equations: imagine that the reader is a competent engineering professor, but not necessarily in your field of expertise. Do not bother to discuss any theory that you do not employ in later sections.}
 %In the following some fundamentals are described shortly.
-The system design and components were described to understand the concept of software defined radio and the components used.
-To bring the digital world as near as possible to the antenna a novel concept was needed.\\
-The focus was on the transmitting path of a system, since the receiving part was a different topic.
-Focussing on the transmitting path, the need for a \gls{ab:dac} became visible, since the digital data must be converted to the analog signal which is transmitted via the antenna.
-For this \gls{ab:dac} the following requirements came to mind.
-The need for a low power consumption, since it should be implemented in mobile devices.
-The number of bits, hence the resolution of the \gls{ab:dac} is less stringent as the digital to analog conversion do not distinguish so much within the digital code.
-An crucial point to increase the performance is the oversampling ratio. 
-As the analog signal could consist with some concurrent signals, linearity is crucial to avoid unwanted distortions.
-Because the analog output signal should be transmitted via an antenna, it has to be enough output power.
-
+To understand the function, the benefit and the application of a Riemann Pump some fundamentals are described.\\
+A classification of the Riemann Pump is demonstrated based on a system design.
+The system shows a \gls{ab:sdr} concept, which is based on the idea to bring the digital domain as close as possible to the antenna.\\
+The focus in this thesis was on the transmitting path of the mentioned system, since the receiving architecture and concepts need another long-term investigation.
+Further details on the receiving concepts and investigations can be found in \citep{RivetFadhuileDevalEtAl2013}, \cite{RivetDevalD.2008}, \cite{RivetF.2014}, \cite{RivetDevalBegueretJ.-B.2007}.
+Focussing on the transmitting path, the need for a \gls{ab:dac} became visible as the digital data must be converted to the analog signal which is then transmitted via the antenna.
+For a \gls{ab:dac} implemented in the concept of \gls{ab:sdr} some requirements have to be fulfilled.\\
+As it is presented as a concept for the mobile communication, the consumed power has to be low in order to implement it in mobile devices.
+In order to meet \gls{ab:rf} standards the \gls{ab:snr} has to fulfil the limits.
+To achieve a moderate \gls{ab:snr} the resolution and the \gls{ab:osr} of the \gls{ab:dac} have to be tuned.
+Another crucial aspect is the linearity of the system to avoid unwanted distortions in the propagated signals.
+The generated analog output signal, which can consist of a few concurrent signals, has to be amplified for the propagation.
+% Because the analog output signal should be transmitted via an antenna, it has to be enough output power.
+%The number of bits, hence the resolution of the \gls{ab:dac} is less stringent as the digital to analog conversion do not distinguish so much within the digital code.
+% A crucial point to increase the performance is the oversampling ratio. 
+% As the analog signal could consist with some concurrent signals, linearity is crucial to avoid unwanted distortions.
 %All these requirements built in one \gls{ab:dac} is not realistic.
 %Therefore, intermediate systems have been developed in which the transmitter signal is built by a DAC at lower frequencies, and then up converted with RFFE mostly composed by a linear mixer with a linear PA.
 
 
 \section{System design using the Riemann Pump}
-The concept of software-defined radio is treated to overcome old problems of mobile communication and hence deal with a fast adapting system which can handle several mobile communication standard signals at once. 
-It is adaptive to new signals, since it can be changed with an software update (firmware update).
-Therefore every signal could be transmitted and received with this concept without changing the hardware, which made it software defined.
-The ability to deal with a spectrum of \gls{ab:dc} to \SI{6}{\giga \hertz} enabled it to deal with future mobile communication standards, e.g. IEEE802.11ac (\SI{5}{\giga \hertz} \gls{ab:wlan}) already work at \SI{5}{\giga \hertz}.\\
-To achieve this goal it is essential to bring the digital domain as close as possible to the antenna.
-The digital domain had a lot of advantages regarding complexity, cost, filtering and processing speed.
+The concept of software-defined radio is treated to overcome old problems of mobile communication and hence deal with a fast adapting system which can handle several mobile communication standards at once.
+New standards can handled since the system can be changed with an firmware update. 
+Therefore every signal within the proposed bandwidth could be processed without changing the hardware, which made it software defined.
+The ability to process a spectrum of \gls{ab:dc} to \SI{6}{\giga \hertz} enables it to deal with future mobile communication standards, e.g. IEEE802.11ac (\gls{ab:wlan}) and \gls{ab:lte} already work at \SI{5}{\giga \hertz} and \SI{0.7} ... \SI{2.6}{\giga \hertz}, respectively.\\
+To achieve this goal it is essential to bring the digital domain as close as possible to the antenna \cite{RivetDevalBegueretJ.-B.2007}, \cite{DevalRivetVeyracEtAl2013},\cite{RivetDevalJ.-B.EtAl2010}.
+The digital domain has a lot of advantages regarding complexity, cost, filtering and processing speed \cite{Grossman2005}.
 The structure of digital components is less complex and therefore has less cost.
-Digital filtering is more precisely and data processing is more efficient and faster.
+Digital filtering is more precisely and data processing is more efficient and faster \cite{Chamberlain2015}, \cite{LiRaghunathanJha2009}.\\
 % Therefore there is no intermediate step of signal processing which decrease the latency.
 %The benefit of this concept is to realize this \gls{ab:dac} as close as possible to the RF front end without an intermediate step of analog signal processing.
 % The main drawback of this approach is the energy consumption based on an inefficient ADC/DAC.
 %Based on this concept a digital-analog converter is designed to deal with a higher bandwidth than other devices nowadays.
-Figure \ref{fig:System} demonstrated the system design with the implementation and the purpose of the Riemann Pump.
+Figure \ref{fig:System} demonstrates the transmitting path of the system design for the concept of \gls{ab:sdr} with the implementation of the Riemann Pump.
 
 \begin{figure}[ht]
 	\centering
@@ -39,21 +44,25 @@ Figure \ref{fig:System} demonstrated the system design with the implementation a
 	\label{fig:System}
 \end{figure}
 
-A theoretical wanted signal in the time domain, consisted of multiple modulated signals, is fed to a \gls{ab:dsp} which computes a digital bit-stream.
-The so called Riemann Code controls the input of a custom \gls{ab:dac}, called Riemann Pump.
-A linear power amplifier implemented within the Riemann Pump amplified the signal and fed it to the antenna which propagated it.
-Beside the advantages of the concept there were some constraints on the energy consumption as well as on the real time emission.
-Energy consumption increased linear with the switching frequency and therefore the signal bandwidth and the \gls{ab:osr} of the \gls{ab:dac}.
-Secondly the real time emission is constrained due to the calculation of the Riemann Code.
+The demonstrated path in Figure \ref{fig:System} is subdivided into a digital and analog part.
+The green digital part is responsible for the calculation of the desired signals and the generation of the corresponding digital code.
+A theoretical wanted signal in the time domain, consisting of multiple modulated signals, is fed to a \gls{ab:dsp} which computes a digital bit-stream.
+The so called Riemann Code controls the input of a custom \gls{ab:dac}, called Riemann Pump, which is the interface between the digital and the analog part.\\
+In the red analog domain the desired signal is amplified by the implemented power transistor in the Riemann Pump and then propagated via the antenna.
+Optionally a mixer can be connected to mix the desired signal to even higher frequencies of several tenth of \si{\giga \hertz}.\\
+Beside the advantages of the concept there are some constraints on the energy consumption as well as on the real time emission.
+Energy consumption is increasing linear with the switching frequency and therefore with the signal bandwidth.
+Secondly the real time emission is constrained due to the calculation and conversion of the Riemann Code.
 
 \section{Idea of the Riemann Pump}
 \label{IdeaRiemannPump}
-The Riemann Pump is an arbitrary waveform generator which is controlled by a digital input signal, making it also a \gls{ab:dac}.\\
-Basically the inputs are switches while the output is a capacitance (\gls{sy:Cout}).
-The output capacitance can take any voltage between the positive (\gls{sy:Vdd}) and negative (\gls{sy:Vss}) power supply voltage by controlling the input switches.\\
-This concept is known as a charge pump which is the basic principle of the Riemann Pump.
-The integration of electrical current at the capacitor to form the output voltage, recalls the founder of the integration principle, Bernhard Riemann.
-This integration and the concept of the charge pump led to the name Riemann Pump.\\
+Demonstrated the implementation of the Riemann Pump in a system design, the concept of the Riemann Pump itself is presented.\\
+The Riemann Pump is an arbitrary waveform generator which is controlled by a digital input signal, making it also a custom \gls{ab:dac}.\\
+Basically the inputs are switches and the output is a capacitance.
+The output capacitance (\gls{sy:Cout}) can take any value between the positive (\gls{sy:Vdd}) and negative (\gls{sy:Vss}) power supply voltage by controlling the input switches.\\
+This concept is known as a charge pump, which is the basic principle of the Riemann Pump \cite{DevalRivetVeyracEtAl2013}, \cite{VeyracRivetDevalEtAl2014}, \cite{DevalRivetVeyrac2015}.
+ The integration of electrical current (\gls{sy:iout}) at the capacitance (\gls{sy:Cout}) to form the output voltage  (\gls{sy:Vout}), recalls the founder of the integration principle, Bernhard Riemann.
+This integration and the concept of the charge pump lead to the name Riemann Pump, first mentioned 2013 in \cite{DevalRivetVeyracEtAl2013.}. \\
 Figure \ref{fig:ChargePump} shows the basic principle of a charge pump, used for the digital to analog conversion in this thesis.
 
 \begin{figure}[ht]
@@ -63,7 +72,8 @@ Figure \ref{fig:ChargePump} shows the basic principle of a charge pump, used for
 	\label{fig:ChargePump}
 \end{figure}
 
-Increasing the output voltage lead to close the upper switch, also called high side switch, since it switches to the high power potential, while open the low side switch.
+Increasing the output voltage lead to close the upper switch, also called high side switch, since it switches to the high power potential.
+Synchronously the low side switch opens.
 Connecting the high side power supply to the capacitor pumps charges onto it forming a voltage over time.
 This effect only takes place if the low side switch synchronously opens.
 Otherwise the potential at the capacitor is floating and the charge or discharge process is undefined.
@@ -77,7 +87,9 @@ Corresponding to the described principle the output voltage is calculated with
 Since the output voltage, consisting of the desired signals, should be propagated via an antenna, the output capacitance can be interpreted as a power transistor.
 The capacitive input characteristic of the connected power transistor enables the system to work without a separate power amplifier.
 Implemented in one component this concept saves area and costs and the amplified signal at the drain can be transmitted via the antenna.
-%% 20.04. 16:04 Uhr
+
+%% 20.04 19:00 Uhr
+
 The Riemann Pump is a digital-to-analog converter based on the concept of a charge pump. A few charge pumps with different sized sources in parallel shows the concept of this fast digital to analog converter. With the ability to control the switches really fast, because of the use of GaN25 technology, which have a high transition frequency, a high bandwidth is reached.
 
 \begin{figure}[ht]
@@ -118,13 +130,13 @@ The signal to noise ratio is calculated in equation \ref{eq:SNR_RiemannPumpConve
 \end{equation}
 
 
-Process of the digital to analog conversion:
-\begin{enumerate}
-	\item theoretical signal generation via multiplication of time domain signals
-	\item linear approximation via error estimation to get a sequence of relative slopes
-	\item get binary code of the sequence of slopes
-	\item control switches with this digital code to synthesize the wanted analog signal
-\end{enumerate}
+%Process of the digital to analog conversion:
+%\begin{enumerate}
+%	\item theoretical signal generation via multiplication of time domain signals
+%	\item linear approximation via error estimation to get a sequence of relative slopes
+%	\item get binary code of the sequence of slopes
+%	\item control switches with this digital code to synthesize the wanted analog signal
+%\end{enumerate}
 
 % \textbf{Description of the OSR, Nyquist-Shannon theorem and the SQNR...}
 The \gls{ab:osr} is four and hence due to the Nyquist-Shannon theorem, the sampling \gls{sy:freq} is eight times the signal frequency.

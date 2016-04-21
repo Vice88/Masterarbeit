@@ -3,12 +3,15 @@
 %%%
 \newglossary[abg]{abbreviations}{ab}{abn}{List of abbreviations}
 %
+% \newglossaryentry{ab:rf}{type=abbreviations,name={RF},description={radio frequency},first={RF (radio frequency)}}
 
 \newglossaryentry{ab:sqnr}{type=abbreviations,name={SQNR},description={Signal-to-quantization-noise-ratio},first={SQNR (Signal-to-quantization-noise-ratio)}}
 
 \newglossaryentry{ab:dsp}{type=abbreviations,name={DSP},description={digital signal processor},first={DSP (digital signal processor)}}
 
 \newglossaryentry{ab:wlan}{type=abbreviations,name={WLAN},description={wireless local area network},first={WLAN}}
+
+\newglossaryentry{ab:sdr}{type=abbreviations,name={SDR},description={software-defined radio},first={SDR (software-defined radio)}}
 
 \newglossaryentry{ab:snr}{type=abbreviations,name={SNR},description={Signal-to-noise-ratio},first={SNR (Signal-to-noise-ratio)}}
 
@@ -102,6 +105,7 @@
 
 \newglossaryentry{sy:Cout}{type=symbols,name={$C_{out}$},description={output capacitance},first={$C_{out}$}}
 
+\newglossaryentry{sy:iout}{type=symbols,name={$i_{out}$},description={output current},first={$i_{out}$}}
 
 \newglossaryentry{sy:V}{type=symbols,name={$V$},description={Voltage},first={$V$ (Voltage)}}
 \newglossaryentry{sy:VDS}{type=symbols,name={$V_{DS}$},description={DC-component of the drain source voltage},first={$V_{DS}$ (DC-component of the drain source voltage)}}
