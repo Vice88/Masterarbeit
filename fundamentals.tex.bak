@@ -1,28 +1,58 @@
 \chapter{Fundamentals of the Riemann Pump}
 \label{ch:fundamentals}
 %\textit{Presentation of the theoretical basis required for an understanding of your work. Do not begin with Newton's laws or Maxwell's equations: imagine that the reader is a competent engineering professor, but not necessarily in your field of expertise. Do not bother to discuss any theory that you do not employ in later sections.}
-%In the following some fundamentals are described shortly.
-To understand the function, the benefit and the application of a Riemann Pump some fundamentals are described.\\
-A classification of the Riemann Pump is demonstrated based on a system design.
-The system shows a \gls{ab:sdr} concept, which is based on the idea to bring the digital domain as close as possible to the antenna.\\
-The focus in this thesis was on the transmitting path of the mentioned system, since the receiving architecture and concepts need another long-term investigation.
-Further details on the receiving concepts and investigations can be found in \citep{RivetFadhuileDevalEtAl2013}, \cite{RivetDevalD.2008}, \cite{RivetF.2014}, \cite{RivetDevalBegueretJ.-B.2007}.
-Focussing on the transmitting path, the need for a \gls{ab:dac} became visible as the digital data must be converted to the analog signal which is then transmitted via the antenna.
-For a \gls{ab:dac} implemented in the concept of \gls{ab:sdr} some requirements have to be fulfilled.\\
-As it is presented as a concept for the mobile communication, the consumed power has to be low in order to implement it in mobile devices.
-In order to meet \gls{ab:rf} standards the \gls{ab:snr} has to fulfil the limits.
-To achieve a moderate \gls{ab:snr} the resolution and the \gls{ab:osr} of the \gls{ab:dac} have to be tuned.
-Another crucial aspect is the linearity of the system to avoid unwanted distortions in the propagated signals.
-The generated analog output signal, which can consist of a few concurrent signals, has to be amplified for the propagation.
+For the purpose to place this work into the context of the next generation of mobile communication, the concept of software-defined radio is described.
+Implemented in this concept, the function, the benefit and some fundamentals of the Riemann Pump are described. 
+A demonstrated system shows the \gls{ab:sdr} concept, which is based on the idea to bring the digital domain as close as possible to the antenna.
+The Riemann Pump is an arbitrary waveform generator which is controlled by a digital input signal, making it also a custom \gls{ab:dac}.
+The concept of the custom designed \gls{ab:dac} as well as some characteristics are presented.
+A concise discussion conclude the presented fundamentals.
+
 % Because the analog output signal should be transmitted via an antenna, it has to be enough output power.
 %The number of bits, hence the resolution of the \gls{ab:dac} is less stringent as the digital to analog conversion do not distinguish so much within the digital code.
 % A crucial point to increase the performance is the oversampling ratio. 
 % As the analog signal could consist with some concurrent signals, linearity is crucial to avoid unwanted distortions.
 %All these requirements built in one \gls{ab:dac} is not realistic.
 %Therefore, intermediate systems have been developed in which the transmitter signal is built by a DAC at lower frequencies, and then up converted with RFFE mostly composed by a linear mixer with a linear PA.
+\section{Basic concept of software-defined radio for 5G mobile communication}
+ADC - noise cancellation - energy consumption
 
+\begin{figure}[htbp]
+	% minipage mit (Blind-)Text
+	\begin{minipage}{0.48\textwidth} 
+	\includegraphics[width=\textwidth]{energy_consumption_sdr.pdf}
+	%\caption{Energy consumption}
+	\label{energy1} 
+	\end{minipage}
+	% Auffüllen des Zwischenraums
+	\hfill
+	% minipage mit Grafik
+	\begin{minipage}{0.48\textwidth}
+	% \textwidth bezieht sich nun auf die Minipage
+	\includegraphics[width=\textwidth]{energy_consumption_sdr2.pdf}
+	%\caption{Energy consumption 2}
+	\label{energy2} 
+	\end{minipage}
+ \caption{Feasibility relating to energy consumption}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+  \includegraphics{SystemDesign.pdf}
+	\caption{Concept of the Software-defined radio}
+	\label{fig:System}
+\end{figure}
 
 \section{System design using the Riemann Pump} % PLL and Energy consumption
+The focus in this thesis was on the transmitting path of the mentioned system, since the receiving architecture and concepts need a separate investigation.
+Further details on the receiving concepts and investigations can be found in \citep{RivetFadhuileDevalEtAl2013}, \cite{RivetDevalD.2008}, \cite{RivetF.2014}, \cite{RivetDevalBegueretJ.-B.2007}.
+Focussing on the transmitting path the demand of a \gls{ab:dac} became visible as the digital data must be converted to the analog signal before transmission via the antenna.
+For a \gls{ab:dac} implemented in the concept of \gls{ab:sdr} some requirements have to be fulfilled.\\
+As it is presented as a concept for the mobile communication, the consumed power has to be low in order to implement it in mobile devices.
+In order to meet \gls{ab:rf} standards the \gls{ab:snr} has to fulfil the limits.
+To achieve a moderate \gls{ab:snr} the resolution and the \gls{ab:osr} of the \gls{ab:dac} have to be tuned.
+Another crucial aspect is the linearity of the system to avoid unwanted distortions in the propagated signals.
+The generated analog output signal, which can consist of a few concurrent signals, has to be amplified for the propagation.\\
 The concept of software-defined radio is treated to overcome old problems of mobile communication and hence deal with a fast adapting system which can handle several mobile communication standards at once.
 New standards can handled since the system can be changed with an firmware update. 
 Therefore every signal within the proposed bandwidth could be processed without changing the hardware, which made it software defined.
@@ -57,10 +87,9 @@ Secondly the real time emission is constrained due to the calculation and conver
 \section{Idea of the Riemann Pump}
 \label{IdeaRiemannPump}
 Demonstrated the implementation of the Riemann Pump in a system design, the concept of the Riemann Pump itself is presented.\\
-The Riemann Pump is an arbitrary waveform generator which is controlled by a digital input signal, making it also a custom \gls{ab:dac}.\\
 Basically the inputs are switches and the output is a capacitance.
 The output capacitance (\gls{sy:Cout}) can take any value between the positive (\gls{sy:Vdd}) and negative (\gls{sy:Vss}) power supply voltage by controlling the input switches.\\
-This concept is known as a charge pump, which is the basic principle of the Riemann Pump \cite{DevalRivetVeyracEtAl2013}, \cite{VeyracRivetDevalEtAl2014}, \cite{DevalRivetVeyrac2015}.
+This concept is implemented in conventional \gls{ab:pll} and is known as a charge pump, which is the basic principle of the Riemann Pump \cite{DevalRivetVeyracEtAl2013}, \cite{VeyracRivetDevalEtAl2014}, \cite{DevalRivetVeyrac2015}.
  The integration of electrical current (\gls{sy:iout}) at the capacitance (\gls{sy:Cout}) to form the output voltage  (\gls{sy:Vout}), recalls the founder of the integration principle, Bernhard Riemann.
 This integration and the concept of the charge pump lead to the name Riemann Pump, first mentioned 2013 in \cite{DevalRivetVeyracEtAl2013}. \\
 Figure \ref{fig:ChargePump} shows the basic principle of a charge pump, used for the digital to analog conversion in this thesis.
@@ -147,10 +176,29 @@ This in mind, tuning the sampling frequency will result in tuning the signal fre
 
 \section{Characteristics of Digtial-to-Analog converter}
 \label{ch:characteristics}
-The characteristics of different \gls{ab:dac} were the generation of noise in terms of signal to (quantization) noise ratio.
+The characteristics, the performance and figure of merits are compared to classify the Riemann Pump within the conventional digital-to-analog conversion principles.
+
+\begin{itemize}
+\item ... [Performance]
+	\item Resolution
+	\item Maximum sampling rate
+	\item Total harmonic distortion and noise (THD+N)
+	\item Dynamic Range
+	\item ... [FOM]
+	\item Gain
+	\item SFDR spurious free dynamic range = SNR
+	\item SNR signal to noise ratio
+	\item settling time (time from input to output)
+\end{itemize}
+The characteristics of different \gls{ab:dac} is the performance and some figure of merits.
+Performance leads to the generation of noise in terms of signal to (quantization) noise ratio.
 This \gls{ab:sqnr} gave a good insight to the performance of the corresponding \gls{ab:dac} without to focus on energy consumption nor efficiency.
 %\textit{Explain the different SNR (short), display the table to compare them.}
 
 
-%\section{summary - evaluation}
-%Evaluation of the idea. In the next chapters a proof of concept is done. What are the drawbacks, advantages and disadvantages.
+\section{Conclusion of the fundamentals}
+In this chapter the implementation of the Riemann Pump in a system design has been presented.
+After the description of the classification and application, the concept of the custom \gls{ab:dac} has been described.
+After explaining a simple charge pump, a multi bit resolution \gls{ab:dac} have been presented.
+The designed custom \gls{ab:dac} has been compared to conventional \gls{ab:dac} concepts.
+A concise evaluation states that the Riemann Pump is a great improvement for conventional digital-to-analog conversion concepts.

@@ -1,17 +1,15 @@
-In this work a new concept of digital to analog conversion is investigated, yielding an arbitrary waveform generator which can be used in the next generation of mobile communication.
-This waveform generator is able to cover the frequency range from DC to \SI{6}{\giga \hertz}, which simulations confirmed.
-With the help of this multi bit resolution of a charge pump, the actual conversion methods of digital to analog conversion are enhanced impressively.
-\\
-To the best knowledge of the author, the world wide first realised Riemann Pump in GaN technology is shown in Figure \ref{fig:Demonstrator}.
-
 \begin{figure}[h]
 	\centering
-  \includegraphics[width=\textwidth]{Demonstrator_publish.pdf}
+  \includegraphics{Demonstrator_publish.pdf}
 	\caption{Built demonstrator}
 	\label{fig:Demonstrator}
 \end{figure}
+To the best knowledge of the author, the world wide first realised Riemann Pump in GaN technology is shown in Figure \ref{fig:Demonstrator}.\\
 
-\newpage
+In this work a new concept of digital to analog conversion is investigated, yielding an arbitrary waveform generator which can be used in the next generation of mobile communication.
+This waveform generator is able to cover the frequency range from DC to \SI{6}{\giga \hertz}, which simulations confirmed.
+With the help of this multi bit resolution of a charge pump, the actual conversion methods of digital to analog conversion are enhanced impressively.
+
 
 The realised hybrid test circuit was designed, implemented and measured to proof the concept of a push-pull stage, functioning as a differential switch, providing a multi bit charge pump.
 The multi chip solution is chosen to proof the feasibility of the approach and to depict already trade offs which occur during the work.\\

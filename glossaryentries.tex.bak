@@ -11,6 +11,8 @@
 
 \newglossaryentry{ab:wlan}{type=abbreviations,name={WLAN},description={wireless local area network},first={WLAN}}
 
+\newglossaryentry{ab:pll}{type=abbreviations,name={PLL},description={phase locked loop},first={PLL (phase locked loop)}}
+
 \newglossaryentry{ab:sdr}{type=abbreviations,name={SDR},description={software-defined radio},first={SDR (software-defined radio)}}
 
 \newglossaryentry{ab:snr}{type=abbreviations,name={SNR},description={Signal-to-noise-ratio},first={SNR (Signal-to-noise-ratio)}}
