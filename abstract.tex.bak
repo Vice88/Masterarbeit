@@ -10,7 +10,9 @@ To the best knowledge of the author, the world wide first realised Riemann Pump 
 	\caption{Built demonstrator}
 	\label{fig:Demonstrator}
 \end{figure}
- 
+
+\newpage
+
 The realised hybrid test circuit was designed, implemented and measured to proof the concept of a push-pull stage, functioning as a differential switch, providing a multi bit charge pump.
 The multi chip solution is chosen to proof the feasibility of the approach and to depict already trade offs which occur during the work.\\
 Although the simulations confirmed the feasibility to cover the broadband frequency range some practical drawbacks were mentioned, which limit the frequency range.
