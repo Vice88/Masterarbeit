@@ -15,14 +15,27 @@ A concise discussion conclude the presented fundamentals.
 %All these requirements built in one \gls{ab:dac} is not realistic.
 %Therefore, intermediate systems have been developed in which the transmitter signal is built by a DAC at lower frequencies, and then up converted with RFFE mostly composed by a linear mixer with a linear PA.
 \section{Basic concept of software-defined radio for 5G mobile communication}
-ADC - noise cancellation - energy consumption
+The ultimate software defined radio architecture is shown in Figure \ref{fig:ultimateSDR}.
+In this vision the analog received signal is directly converted into the digital domain and afterwards filtered, mixed, demodulated and processed.
+The absence of the \gls{ab:rffe} is a dream still to come true \cite{RivetDevalJ.-B.EtAl2010}.
+
+\begin{figure}[ht]
+	\centering
+  \includegraphics[width=.5\textwidth]{ultimateSDR.pdf}
+	\caption{Ultimate Software-defined radio architecture \cite{DevalRivetVeyracEtAl2013}}
+	\label{fig:ultimateSDR}
+\end{figure}
+
+As Figure \ref{fig:feas_energy} already suggests this is not a realistic option.
+The analog components like LNA,filter, mixer have to be implemented separate in the analog domain for the receiving path.
+As the transmitter concept is little bit easier
 
 \begin{figure}[htbp]
 	% minipage mit (Blind-)Text
 	\begin{minipage}{0.49\linewidth} 
 	\includegraphics[width=1.1\textwidth]{energy_consumption_sdr.pdf}
-	%\caption{Energy consumption}
-	\label{energy1} 
+	%\caption{Feasibility of Software Radio}
+	%\label{energy1} 
 	\end{minipage}
 	% Auffüllen des Zwischenraums
 	\hfill
@@ -30,25 +43,22 @@ ADC - noise cancellation - energy consumption
 	\begin{minipage}{0.49\linewidth}
 	% \textwidth bezieht sich nun auf die Minipage
 	\includegraphics[width=1.1\textwidth]{energy_consumption_sdr2.pdf}
-	%\caption{Energy consumption 2}
-	\label{energy2} 
+	%\caption{Estimated energy consumption}
+	%\label{energy2} 
 	\end{minipage}
- \caption{Feasibility relating to energy consumption}
+ \caption{Feasibility (left) and estimation of energy consumption (right) regarding Effective number of Bits and Sample Rate \cite{RivetDevalJ.-B.EtAl2010}}
+ \label{fig:feas_energy}
 \end{figure}
 
-\begin{figure}[ht]
-	\centering
-  \includegraphics{SystemDesign.pdf}
-	\caption{Concept of the Software-defined radio}
-	\label{fig:System}
-\end{figure}
+
 
 \section{System design using the Riemann Pump} % PLL and Energy consumption
 The focus in this thesis was on the transmitting path of the mentioned system, since the receiving architecture and concepts need a separate investigation.
 Further details on the receiving concepts and investigations can be found in \citep{RivetFadhuileDevalEtAl2013}, \cite{RivetDevalD.2008}, \cite{RivetF.2014}, \cite{RivetDevalBegueretJ.-B.2007}.
 Focussing on the transmitting path the demand of a \gls{ab:dac} became visible as the digital data must be converted to the analog signal before transmission via the antenna.
-For a \gls{ab:dac} implemented in the concept of \gls{ab:sdr} some requirements have to be fulfilled.\\
-As it is presented as a concept for the mobile communication, the consumed power has to be low in order to implement it in mobile devices.
+As mentioned before high demands are made to the \gls{ab:dac} implemented in a \gls{ab:sdr} concept.\\
+One very important requirement is to keep the energy consumption in a moderate range.
+If the consumed energy is in the range of several \si{\kilo \watt} it is clear that this is unworkable.
 In order to meet \gls{ab:rf} standards the \gls{ab:snr} has to fulfil the limits.
 To achieve a moderate \gls{ab:snr} the resolution and the \gls{ab:osr} of the \gls{ab:dac} have to be tuned.
 Another crucial aspect is the linearity of the system to avoid unwanted distortions in the propagated signals.
@@ -89,7 +99,7 @@ Secondly the real time emission is constrained due to the calculation and conver
 Demonstrated the implementation of the Riemann Pump in a system design, the concept of the Riemann Pump itself is presented.\\
 Basically the inputs are switches and the output is a capacitance.
 The output capacitance (\gls{sy:Cout}) can take any value between the positive (\gls{sy:Vdd}) and negative (\gls{sy:Vss}) power supply voltage by controlling the input switches.\\
-This concept is implemented in conventional \gls{ab:pll} and is known as a charge pump, which is the basic principle of the Riemann Pump \cite{DevalRivetVeyracEtAl2013}, \cite{VeyracRivetDevalEtAl2014}, \cite{DevalRivetVeyrac2015}.
+This concept is implemented in conventional \glspl{ab:pll} and is known as a charge pump, which is the basic principle of the Riemann Pump \cite{DevalRivetVeyracEtAl2013}, \cite{VeyracRivetDevalEtAl2014}, \cite{DevalRivetVeyrac2015}.
  The integration of electrical current (\gls{sy:iout}) at the capacitance (\gls{sy:Cout}) to form the output voltage  (\gls{sy:Vout}), recalls the founder of the integration principle, Bernhard Riemann.
 This integration and the concept of the charge pump lead to the name Riemann Pump, first mentioned 2013 in \cite{DevalRivetVeyracEtAl2013}. \\
 Figure \ref{fig:ChargePump} shows the basic principle of a charge pump, used for the digital to analog conversion in this thesis.
@@ -177,19 +187,8 @@ This in mind, tuning the sampling frequency will result in tuning the signal fre
 \section{Characteristics of Digtial-to-Analog converter}
 \label{ch:characteristics}
 The characteristics, the performance and figure of merits are compared to classify the Riemann Pump within the conventional digital-to-analog conversion principles.
-
-\begin{itemize}
-\item ... [Performance]
-	\item Resolution
-	\item Maximum sampling rate
-	\item Total harmonic distortion and noise (THD+N)
-	\item Dynamic Range
-	\item ... [FOM]
-	\item Gain
-	\item SFDR spurious free dynamic range = SNR
-	\item SNR signal to noise ratio
-	\item settling time (time from input to output)
-\end{itemize}
+Performance: Resolution, Maximum sampling rate, dynamic range.
+FOM: Gain, SFDR, SNR, settling time.\\
 The characteristics of different \gls{ab:dac} is the performance and some figure of merits.
 Performance leads to the generation of noise in terms of signal to (quantization) noise ratio.
 This \gls{ab:sqnr} gave a good insight to the performance of the corresponding \gls{ab:dac} without to focus on energy consumption nor efficiency.

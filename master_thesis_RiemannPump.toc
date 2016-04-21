@@ -3,9 +3,9 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {chapter}{\numberline {2}Fundamentals of the Riemann Pump}{3}
 \contentsline {section}{\numberline {2.1}Basic concept of software-defined radio for 5G mobile communication}{3}
-\contentsline {section}{\numberline {2.2}System design using the Riemann Pump}{3}
-\contentsline {section}{\numberline {2.3}Idea of the Riemann Pump}{5}
-\contentsline {section}{\numberline {2.4}Characteristics of Digtial-to-Analog converter}{8}
+\contentsline {section}{\numberline {2.2}System design using the Riemann Pump}{4}
+\contentsline {section}{\numberline {2.3}Idea of the Riemann Pump}{6}
+\contentsline {section}{\numberline {2.4}Characteristics of Digtial-to-Analog converter}{9}
 \contentsline {section}{\numberline {2.5}Conclusion of the fundamentals}{9}
 \contentsline {chapter}{\numberline {3}Riemann Pump circuit design}{11}
 \contentsline {section}{\numberline {3.1}Approach and implementation of the Riemann Pump}{11}
