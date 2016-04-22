@@ -123,7 +123,8 @@ Corresponding to the described principle the output voltage is calculated with
 	V_{out} = \frac{1}{C_{out}}{ \int_0^T \! i_{out}(t) \, \mathrm{d}t}.
 \end{equation} %%, \hspace{1cm} T = \frac{2*OSR}{f_{sample}
 
-Since the output voltage, consisting of the desired signals, should be propagated via an antenna, the output capacitance can be interpreted as a power transistor.
+Since the output voltage, consisting of the desired signals, should be propagated via an antenna, the output capacitance can be interpreted as the input stage of a linear power amplifier. 
+This input stage consists of a power transistor, which do have the capacitive input impedance characteristic.
 The capacitive input characteristic of the connected power transistor enables the system to work without a separate power amplifier.
 Implemented in one component this concept saves area and costs and the amplified signal at the drain can be transmitted via the antenna.
 
