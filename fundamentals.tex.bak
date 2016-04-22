@@ -15,9 +15,16 @@ A concise discussion conclude the presented fundamentals.
 %All these requirements built in one \gls{ab:dac} is not realistic.
 %Therefore, intermediate systems have been developed in which the transmitter signal is built by a DAC at lower frequencies, and then up converted with RFFE mostly composed by a linear mixer with a linear PA.
 \section{Basic concept of software-defined radio for 5G mobile communication}
+The concept of software-defined radio is treated to overcome old problems of mobile communication and hence deal with a fast adapting system which can handle several mobile communication standards at once.
+New standards can handled since the system can be changed with an firmware update. 
+Therefore every signal within the proposed bandwidth could be processed without changing the hardware, which made it software defined.
+The ability to process a spectrum of \gls{ab:dc} to \SI{6}{\giga \hertz} enables it to deal with future mobile communication standards.\\
+%, e.g. IEEE802.11ac (\gls{ab:wlan}) and \gls{ab:lte} already work at \SI{5}{\giga \hertz} and \SI{0.7} ... \SI{2.6}{\giga \hertz}, respectively.\\
+To achieve this goal it is essential to bring the digital domain as close as possible to the antenna \cite{RivetDevalBegueretJ.-B.2007}, \cite{DevalRivetVeyracEtAl2013},\cite{RivetDevalJ.-B.EtAl2010}.
+The digital domain has a lot of advantages regarding complexity, cost, filtering and processing speed \cite{Grossman2005}, \cite{Maroldt2010}.
+The structure of digital components is less complex and therefore has less cost.
+Digital filtering is more precisely and data processing is more efficient and faster \cite{Chamberlain2015}, \cite{LiRaghunathanJha2009}.\\
 The ultimate software defined radio architecture is shown in Figure \ref{fig:ultimateSDR}.
-In this vision the analog received signal is directly converted into the digital domain and afterwards filtered, mixed, demodulated and processed.
-The absence of the \gls{ab:rffe} is a dream still to come true \cite{RivetDevalJ.-B.EtAl2010}.
 
 \begin{figure}[ht]
 	\centering
@@ -26,9 +33,9 @@ The absence of the \gls{ab:rffe} is a dream still to come true \cite{RivetDevalJ
 	\label{fig:ultimateSDR}
 \end{figure}
 
-As Figure \ref{fig:feas_energy} already suggests this is not a realistic option.
-The analog components like LNA,filter, mixer have to be implemented separate in the analog domain for the receiving path.
-As the transmitter concept is little bit easier
+In this vision the analog received signal is directly converted into the digital domain and afterwards filtered, mixed, demodulated and processed.
+The absence of the \gls{ab:rffe} is a dream still to come true \cite{RivetDevalJ.-B.EtAl2010}.\\
+Figure \ref{fig:feas_energy} shows the feasibility (left) and the estimated power consumption (right), which demonstrates that this vision is not a realistic option.
 
 \begin{figure}[htbp]
 	% minipage mit (Blind-)Text
@@ -50,27 +57,20 @@ As the transmitter concept is little bit easier
  \label{fig:feas_energy}
 \end{figure}
 
-
+In order to reduce the power consumption some analog components like \gls{ab:lna}, filter, mixer have to be implemented separate in the analog domain for the receiving path.
+While for the transmitting path, the concept of the Riemann Pump comes into play.
 
 \section{System design using the Riemann Pump} % PLL and Energy consumption
 The focus in this thesis was on the transmitting path of the mentioned system, since the receiving architecture and concepts need a separate investigation.
 Further details on the receiving concepts and investigations can be found in \citep{RivetFadhuileDevalEtAl2013}, \cite{RivetDevalD.2008}, \cite{RivetF.2014}, \cite{RivetDevalBegueretJ.-B.2007}.
-Focussing on the transmitting path the demand of a \gls{ab:dac} became visible as the digital data must be converted to the analog signal before transmission via the antenna.
+Focussing on the transmitting path, the need for a \gls{ab:dac} becomes visible, as the digital data must be converted to an analog signal before transmission.
 As mentioned before high demands are made to the \gls{ab:dac} implemented in a \gls{ab:sdr} concept.\\
-One very important requirement is to keep the energy consumption in a moderate range.
+An important requirement is to keep the energy consumption in a moderate range.
 If the consumed energy is in the range of several \si{\kilo \watt} it is clear that this is unworkable.
-In order to meet \gls{ab:rf} standards the \gls{ab:snr} has to fulfil the limits.
-To achieve a moderate \gls{ab:snr} the resolution and the \gls{ab:osr} of the \gls{ab:dac} have to be tuned.
-Another crucial aspect is the linearity of the system to avoid unwanted distortions in the propagated signals.
-The generated analog output signal, which can consist of a few concurrent signals, has to be amplified for the propagation.\\
-The concept of software-defined radio is treated to overcome old problems of mobile communication and hence deal with a fast adapting system which can handle several mobile communication standards at once.
-New standards can handled since the system can be changed with an firmware update. 
-Therefore every signal within the proposed bandwidth could be processed without changing the hardware, which made it software defined.
-The ability to process a spectrum of \gls{ab:dc} to \SI{6}{\giga \hertz} enables it to deal with future mobile communication standards, e.g. IEEE802.11ac (\gls{ab:wlan}) and \gls{ab:lte} already work at \SI{5}{\giga \hertz} and \SI{0.7} ... \SI{2.6}{\giga \hertz}, respectively.\\
-To achieve this goal it is essential to bring the digital domain as close as possible to the antenna \cite{RivetDevalBegueretJ.-B.2007}, \cite{DevalRivetVeyracEtAl2013},\cite{RivetDevalJ.-B.EtAl2010}.
-The digital domain has a lot of advantages regarding complexity, cost, filtering and processing speed \cite{Grossman2005}.
-The structure of digital components is less complex and therefore has less cost.
-Digital filtering is more precisely and data processing is more efficient and faster \cite{Chamberlain2015}, \cite{LiRaghunathanJha2009}.\\
+In order to meet \gls{ab:rf} standards the \gls{ab:snr} has to fulfil the given limits.
+To achieve a moderate \gls{ab:snr}, the resolution and the \gls{ab:osr} of the \gls{ab:dac} have to meet the requirements.
+The generated analog output signal, which can consist of a few concurrent signals, has to be amplified for the propagation.
+To avoid unwanted distortions in the propagated signals linearity of the system is crucial.\\
 % Therefore there is no intermediate step of signal processing which decrease the latency.
 %The benefit of this concept is to realize this \gls{ab:dac} as close as possible to the RF front end without an intermediate step of analog signal processing.
 % The main drawback of this approach is the energy consumption based on an inefficient ADC/DAC.
@@ -96,41 +96,47 @@ Secondly the real time emission is constrained due to the calculation and conver
 
 \section{Idea of the Riemann Pump}
 \label{IdeaRiemannPump}
-Demonstrated the implementation of the Riemann Pump in a system design, the concept of the Riemann Pump itself is presented.\\
+After the implementation in a system design has been demonstrated now the concept of Riemann Pump itself is explained.\\
+The concept shown in Figure \ref{fig:ChargePump}, is implemented in conventional \glspl{ab:pll} and is known as a charge pump, which is the basic principle of the Riemann Pump \cite{DevalRivetVeyracEtAl2013}, \cite{VeyracRivetDevalEtAl2014}, \cite{DevalRivetVeyrac2015}.
 Basically the inputs are switches and the output is a capacitance.
 The output capacitance (\gls{sy:Cout}) can take any value between the positive (\gls{sy:Vdd}) and negative (\gls{sy:Vss}) power supply voltage by controlling the input switches.\\
-This concept is implemented in conventional \glspl{ab:pll} and is known as a charge pump, which is the basic principle of the Riemann Pump \cite{DevalRivetVeyracEtAl2013}, \cite{VeyracRivetDevalEtAl2014}, \cite{DevalRivetVeyrac2015}.
- The integration of electrical current (\gls{sy:iout}) at the capacitance (\gls{sy:Cout}) to form the output voltage  (\gls{sy:Vout}), recalls the founder of the integration principle, Bernhard Riemann.
-This integration and the concept of the charge pump lead to the name Riemann Pump, first mentioned 2013 in \cite{DevalRivetVeyracEtAl2013}. \\
+ %  A PLL charge pump is merely a bipolar switched current source. This means that it can output positive and negative current pulses into the loop filter of the PLL. It cannot produce higher or lower voltages than its power and ground supply levels.
+ The integration of the electrical current (\gls{sy:iout}) at the capacitance (\gls{sy:Cout}), to form the output voltage  (\gls{sy:Vout}), recalls the founder of the integration principle, Bernhard Riemann.
+This integration and the concept of the charge pump lead to the name Riemann Pump, first mentioned in 2013 \cite{DevalRivetVeyracEtAl2013}. \\
 Figure \ref{fig:ChargePump} shows the basic principle of a charge pump, used for the digital to analog conversion in this thesis.
 
+% microsoft visio created charge pump
+%\begin{figure}[ht]
+%	\centering
+%  \includegraphics[width=0.5\textwidth, angle = 270]{ChargePump.pdf}
+%	\caption{scheme of a charge pump}
+%	\label{fig:ChargePump}
+%\end{figure}
+
+% inkscape created charge pump
 \begin{figure}[ht]
 	\centering
-  \includegraphics[width=0.5\textwidth, angle = 270]{ChargePump.pdf}
+  \includegraphics{ChargePump_ink.pdf}
 	\caption{scheme of a charge pump}
 	\label{fig:ChargePump}
 \end{figure}
 
-Increasing the output voltage lead to close the upper switch, also called high side switch, since it switches to the high power potential.
-Synchronously the low side switch opens.
-Connecting the high side power supply to the capacitor pumps charges onto it forming a voltage over time.
-This effect only takes place if the low side switch synchronously opens.
-Otherwise the potential at the capacitor is floating and the charge or discharge process is undefined.
-Hence these two switches must be controlled with a differential input signal.
+Two switches are shown, which are capable to switch current to and from the output capacitance, respectively.
+The high side switch, which pushes charges onto the output capacitance, is connected to a current source at \gls{sy:Vdd}.
+In contrast to that, the low side switch is connected to a current source at \gls{sy:Vss}.
+While controlling the switches with a differential input signal, the output voltage can be varied between \gls{sy:Vdd} and \gls{sy:Vss}.
+As the control signal only consists of closing and opening a switch, a digital signal is sufficient.
+If the high side switch is closed while the low side switch is opened, charges are pumped to the capacitance which leads to an increase in output voltage.
+This effect only takes place if the control signal is differential, which leads to synchronous switching behaviour of both switches.
+Otherwise the controlling of the output voltage is not defined.
+If both switches are closed at the same time, the potential at the capacitor is floating and hence no defined voltage can be stated.
 For decreasing the output voltage the low side switch has to be closed, while the high side switch is open, to allow the capacitor to discharge.\\
-Corresponding to the described principle the output voltage is calculated with 
+Corresponding to the described principle the output voltage
 \begin{equation}
-	V_{out} = \frac{1}{C_{out}}{ \int_0^T \! i_{out}(t) \, \mathrm{d}t}.
+	V_{out} = \frac{1}{C_{out}}{ \int_0^T \! i_{out}(t) \, \mathrm{d}t}
 \end{equation} %%, \hspace{1cm} T = \frac{2*OSR}{f_{sample}
-
-Since the output voltage, consisting of the desired signals, should be propagated via an antenna, the output capacitance can be interpreted as the input stage of a linear power amplifier. 
-This input stage consists of a power transistor, which do have the capacitive input impedance characteristic.
-The capacitive input characteristic of the connected power transistor enables the system to work without a separate power amplifier.
-Implemented in one component this concept saves area and costs and the amplified signal at the drain can be transmitted via the antenna.
-
-%% 20.04 19:00 Uhr
-
-The Riemann Pump is a digital-to-analog converter based on the concept of a charge pump. A few charge pumps with different sized sources in parallel shows the concept of this fast digital to analog converter. With the ability to control the switches really fast, because of the use of GaN25 technology, which have a high transition frequency, a high bandwidth is reached.
+ is calculated basically by integrating the current over time.\\
+A custom \gls{ab:dac} is created by extending the basic charge pump with several other charge pumps in parallel, as seen in Figure \ref{fig:RiemannPumpConcept}.
 
 \begin{figure}[ht]
 	\centering
@@ -139,14 +145,49 @@ The Riemann Pump is a digital-to-analog converter based on the concept of a char
 	\label{fig:RiemannPumpConcept}
 \end{figure}
 
- The working principle is to integrate a current into a capacitive load, this integration is based on Riemann Integral, where the name come from. This integration converts the current into a voltage. This output voltage can be applied to the input of a power amp and then to the antenna to propagate it. The current, which charges the capacitive input impedance of the power amp, is controlled by a digital code. A fixed set of slopes, represents the different current sources. A desired signal in the time-domain is generated with MatLab. This signal can consist of many different signals (different carriers and modulation types). This signal is sampled with the given set of slopes. The minimization of the error leads to the Riemann Code. With this Riemann Code (digital) the driver circuit is controlled. This leads to an analog signal formed by the digital input signal. 
- 
+The dimensions of the current sources, connected in parallel, have to increase by the power of two to get a defined set of currents.
+Demonstrated is a \gls{ab:dac} with three bit resolution, which leads to eight different currents.
+Instead of using absolute current values, relative currents with respect to $i_0$ are used.
+This three bit resolution leads to eight different slopes which are used for the digital to analog conversion process.
+These eight different slopes are presented in Figure \ref{fig:SlopesAndTable}.
+
 \begin{figure}[ht]
 	\centering
   \includegraphics[width=.75\textwidth]{SlopesAndTable.pdf}
 	\caption{slopes and corresponding code of the synthesized signal}
 	\label{fig:SlopesAndTable}
 \end{figure}
+
+Corresponding to the demonstrated eight different slopes on the left side, a table is presented which states the corresponding Riemann Code for each slope on the right side.
+By the use of this digital code to control the switches, an output voltage can be generated.
+Due to a short sampling time, so that the output capacitance is neither fully charged nor discharged, arbitrary signals can be generated.
+To reach modern \gls{ab:rf} standards, a minimum amount of resolution bits and of a oversampling ratio has to be fulfilled.
+Oversampling is crucial for the recovery of a signal, due to the Nyquist-Shannon sampling theorem (reference???).
+The Nyquist-Shannon theorem
+\begin{equation}
+f_{sampling} \geq 2 f_{signal,max}
+\end{equation}
+\label{eq:SamplingTheorem}
+states, that the sampling rate \gls{sy:fsampling} has to be at least two times the maximum signal frequency.\\
+Every increase of \gls{sy:fsampling} in \ref is called oversampling ratio \gls{ab:osr}.
+The \gls{ab:OSR} is defined as:
+\begin{equation}
+OSR = 
+\end{equation}
+%%%
+ The working principle is to integrate a current into a capacitive load, this integration is based on Riemann Integral, where the name come from. This integration converts the current into a voltage. 
+Since the output voltage, consisting of the desired signals, should be propagated via an antenna, the output capacitance can be interpreted as the input stage of a linear power amplifier. 
+This input stage consists of a power transistor, which do have the capacitive input impedance characteristic.
+Implemented in one component this concept saves area and costs and the amplified signal at the drain can be transmitted via the antenna. 
+ This output voltage can be applied to the input of a power amp and then to the antenna to propagate it. The current, which charges the capacitive input impedance of the power amp, is controlled by a digital code. A fixed set of slopes, represents the different current sources. A desired signal in the time-domain is generated with MatLab. This signal can consist of many different signals (different carriers and modulation types). This signal is sampled with the given set of slopes. The minimization of the error leads to the Riemann Code. With this Riemann Code (digital) the driver circuit is controlled. This leads to an analog signal formed by the digital input signal. 
+ 
+% 
+%\begin{figure}[ht]
+%	\centering
+%  \includegraphics[width=.75\textwidth]{SlopesAndTable.pdf}
+%	\caption{slopes and corresponding code of the synthesized signal}
+%	\label{fig:SlopesAndTable}
+%\end{figure}
 
 With this information a high speed digital to analog converter is created. In the following the Riemann Integral is shown.
 
