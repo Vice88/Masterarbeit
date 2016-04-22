@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  22 APR 2016 16:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  22 APR 2016 19:31
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -1913,7 +1913,7 @@ File: graphics/measdata/100M_Cload_regression.pdf Graphic file (type pdf)
 
 <use graphics/measdata/100M_Cload_regression.pdf>
 Package pdftex.def Info: graphics/measdata/100M_Cload_regression.pdf used on in
-put line 159.
+put line 160.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
 
 <graphics/measdata/150M_Cload_regression.pdf, id=568, 313.17pt x 213.79875pt>
@@ -1921,7 +1921,7 @@ File: graphics/measdata/150M_Cload_regression.pdf Graphic file (type pdf)
 
 <use graphics/measdata/150M_Cload_regression.pdf>
 Package pdftex.def Info: graphics/measdata/150M_Cload_regression.pdf used on in
-put line 172.
+put line 173.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
  [41 <./graphics/measdata/100M_Rload_regression.pdf, page is rotated 90 degrees
 >]) [42 <./graphics/measdata/100M_Cload_regression.pdf, page is rotated 90 degr
@@ -1973,7 +1973,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  39816 strings out of 493673
  766889 string characters out of 3146818
- 858053 words of memory out of 3000000
+ 859053 words of memory out of 3000000
  42178 multiletter control sequences out of 15000+200000
  73270 words of font info for 241 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -1991,7 +1991,7 @@ imes/utmb8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmbi8a.pfb><E:/Win
 Program/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/typ
 e1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on master_thesis_RiemannPump.pdf (66 pages, 47528548 bytes).
+Output written on master_thesis_RiemannPump.pdf (66 pages, 47528701 bytes).
 PDF statistics:
  691 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

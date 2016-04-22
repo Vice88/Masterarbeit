@@ -145,6 +145,7 @@ This figure demonstrate the proper functioning of the presented output push-pull
 In addition to this it is demonstrated that the switches are very fast since the rising and falling edges are very steep.
 The frequency accords with the input signal shown in figure \ref{fig:inputMeas}.
 
+% RC-element with 50 Ohm transmission line. Charge time reduce due to the occurence of the 50 Ohm environment. tau = R*C = 63% Vmax
 
 \section{Time domain measurement of synthesized signal}
 The proper functioning of the designed circuit led to verifying that both bits work together.
@@ -157,7 +158,7 @@ The frequency of the synthesized triangular signal is \SI{100}{\mega \hertz} whi
 \begin{figure}[htb!]
 	\centering
   \includegraphics{100M_Cload_regression.pdf}
-	\caption{time domain measurement with capacitive load}
+	\caption{time domain measurement with capacitive load at fs = 100MHz}
 	\label{fig:measCload100M}
 \end{figure}
 
@@ -170,7 +171,7 @@ The signal integrity is much worse going beyond this frequency.
 \begin{figure}[htb!]
 	\centering
   \includegraphics{150M_Cload_regression.pdf}
-	\caption{time domain measurement with capacitive load}
+	\caption{time domain measurement with capacitive load at fs = 150MHz}
 	\label{fig:measCload150M}
 \end{figure}
 

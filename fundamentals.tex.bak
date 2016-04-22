@@ -163,16 +163,17 @@ By the use of this digital code to control the switches, an output voltage can b
 Due to a short sampling time, so that the output capacitance is neither fully charged nor discharged, arbitrary signals can be generated.
 To reach modern \gls{ab:rf} standards, a minimum amount of resolution bits and of a oversampling ratio has to be fulfilled.
 Oversampling is crucial for the recovery of a signal, due to the Nyquist-Shannon sampling theorem (reference???).
-The Nyquist-Shannon theorem
+% ################################# 16:14 22.04.2016
+The Nyquist-Shannon theorem %% Nyquist rate, Nyquist theorem... !!
 \begin{equation}
-f_{sampling} \geq 2 f_{signal,max}
+f_{nyquist} \geq 2 f_{signal,max}
 \end{equation}
 \label{eq:SamplingTheorem}
 states, that the sampling rate \gls{sy:fsampling} has to be at least two times the maximum signal frequency.\\
-Every increase of \gls{sy:fsampling} in \ref is called oversampling ratio \gls{ab:osr}.
-The \gls{ab:OSR} is defined as:
+Every increase of \gls{sy:fsampling} above the  \ref is called oversampling ratio \gls{ab:osr}.
+The \gls{ab:osr} is defined as:
 \begin{equation}
-OSR = 
+OSR = 2^{r}
 \end{equation}
 %%%
  The working principle is to integrate a current into a capacitive load, this integration is based on Riemann Integral, where the name come from. This integration converts the current into a voltage. 
