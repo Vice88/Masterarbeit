@@ -1,85 +1,63 @@
 \chapter{Riemann Pump circuit design}
 \label{ch:design}
 % \textit{Description of the approach you have taken to solve the scientific or technical problem which you were posed. Outline the design, the methodology and overall structure of your experimental approach}\\
-
-The goal was to design an arbitrary waveform generator for a signal bandwidth of 6 GHz with a moderate energy consumption.
-As mentioned in chapter \ref{IdeaRiemannPump} the circuit needed high speed switches, which can driver power.
-Therefore the problem is to find a suitable, efficient, high speed switch, which can drive power in high frequency applications.
-As the GaN HEMT technology cover the aspect of driving high power in high frequencies this is chosen for the design.
-Taking this technology lead to the problem of switching a highside transistor to the supply rail in fact of the absence of p-type transistor.
-This design is a push-pull stage.
-To drive a n-type transistor to the supply rail, a driver circuit is needed.
-A suitable driver circuit was found in the concepts of D. Maksimovic, who describes the principle of a push-pull stage for power applications.
-This principle is adapted to the need of this work.
-The speed of the switches is crucial as a broadband signal should be synthesized.
-To propagate the generated output signal, it controls the input of a power amplifier, namely a GaN HEMT.
-The properties of the GaN makes it suitable to generate power in high frequency application.
-\\
-Using a well known concept got the advantage of verification, validation and knowing the drawbacks.
-In addition to this it was possible to use the work of a former employee, which makes it easier to realize, since a new MMIC desing was not in the scope of this thesis.
-\\
-To show the feasibility of realizing a Riemann Pump, the attention was not drawn to energy consumption or efficiency rather to proof the concept.
-In fact of the high energy consumption, the realized DAC is designed for the integration in a base station.
-In fact of the conversion from digital to analog signals it should be implemented in the transmitting path.
+The goal was to design an arbitrary waveform generator for a signal bandwidth of \SI{6}{\giga \hertz}.
+For the implementation in a base station, the most promising technology was \gls{ab:gan}.
+\gls{ab:gan} \glspl{ab:hemt} were used for the high speed switches, which served as a voltage controlled current source.
+Based on the chosen technology a suitable push-pull concept were found \cite{MaksimovicPaper} to show the feasibility of the concept.
+The attention was rather drawn to proof the concept than to optimize for energy consumption or efficiency.
+In the design process a suitable load impedance and the right dimension of the used components were found.
 
 \section{Approach and implementation of the Riemann Pump}
-One possible approach to design a charge pump as shown in Fig. \ref{fig:RiemannPumpConcept} was with concept of a Push-Pull stage.
-The concept of the chosen push-pull stage had the advantage of an integrated driver circuit which allows to switch the high side transistor efficient.
-This concept is usually used for power electronics [-> which power electronic, refer to].
-The first approach of designing a Riemann Pump was with a concept of a Push-Pull stage. This push-pull stage should charge a capacitive load at the output, which is the same as a normal charge pump. Push-pull stages complementary switch a high- and lowside transistor as in a charge pump. This was one possible approach. Concept of Maksimovic.
-
-%\begin{figure}[ht]
-%	\centering
-%  \includegraphics[width=1\textwidth]{Active_PullUp3.png}
-%	\caption{Schematic of a driver circuit with push-pull stage representing one bit of the DAC called Riemann Pump}
-%	\label{RiemannPump}
-%\end{figure}
-
-
+As stated in chapter \ref{IdeaRiemannPump} the circuit needed high speed switches, which were capable to drive power.
+The absence of a p-type transistor in \gls{ab:gan} technology made it challenging to find a suitable concept to realize the push-pull stage.
+Since the n-type \glspl{ab:hemt} needed a negative gate source voltage \gls{sy:vgs}, the high side switch could not be implemented without a driver circuit.
+The source contact of the high side switch, realized by a n-type \gls{ab:gan} \gls{ab:hemt}, was connected to the output of the test circuit.
+Since the potential at the output was not constant, this high side switch needed a driver circuit.
+A suitable driver circuit was found in \cite{MaksimovicPaper}, where the principle of a push-pull stage for power applications is described.\\
+One possible approach to design a Riemann Pump is shown in Fig. \ref{fig:SchematicRiemannPump}.
 
 \begin{figure}[ht]
 	\centering
-  \includegraphics[width=.75\textwidth]{Schematic_RP_concept2.pdf}
-	\caption{Schematic of a push-pull stage with corresponding driver representing one bit of the Riemann Pump}
-	\label{RiemannPump}
+  \includegraphics{Schematic_RP_concept2.pdf}
+	\caption{Schematic of a push-pull stage with corresponding driver circuit}
+	\label{fig:SchematicRiemannPump}
 \end{figure}
 
-%
-%\begin{figure}[htb!]
-%   \centering 
-%   \input{graphics/concept/Schematic_RP_concept.pdf_tex}
-%   \caption{Schematic of the Riemann Pump circuit}
-%   \label{fig:RiemannCodeGenerationSineWave}
-%\end{figure} 
+The benefit of the integrated driver circuit was the improved efficiency of switching.
+The transistor switching speed was determined by the dimension of the driver circuit.
+If the switching speed was increased, the gate driving current \gls{sy:IG} has to be increased to switch the transistors.
  
- The transistor switching speed is determined by the dimension of the driver circuit, so if the switching speed is increased the gate driving current has to be increased to switch the transistors.
+ % 26.04.2016 00:01 Uhr
  
- 
-
-
 \section{Identification of the load impedance}
-To proof the concept of the chosen approach an appropriate output impedance was needed to synthesize the desired signal.
-The suitable output impedance was identified using the assumption to drive a power amplifier with the synthesized signal.
+The signal is generated at the input stage of a linear power amplifier, as described in \ref{ch:fundamentals}.
+This input stage is modelled with a \gls{ab:gan} \gls{ab:hemt} with a gate length of \SI{0.25}{\micro \meter}.
+Considering a \SI{20}{\watt} power amplifier for transmission purposes, led to a \gls{ab:gan} \gls{ab:hemt} with a total gate periphery of \SI{4}{\milli \metre}, based on the approximation \SI[per-mode=fraction]{5}{\watt\per\milli\metre} [\textbf{R. Quay - Gallium Nitride Electronics REFERENCE}].
 
-\textbf{The advantage to drive a power amplifier with the synthesized signal would be... to synthesize a signal near to the RF- front end e.g. in a base station for mobile communication. - paper why this is needed}
-As a \SI{20}{\watt} power amplifier would be taken for the transmitting path of a base station the corresponding gate periphery of a \gls{ab:gan}25 transistor would be \SI{4}{\milli \metre}.
-This is a keep it small and simple approach to get a first idea of the concept. Otherwise a more accurate way would be to take a broadband power amplifier as load.
-The transistor model with this gate periphery was tuned due to the \gls{ab:mag} to get the complex impedance of the power amplifier.
-After the tuning process a S-parameter simulation determined the input impedance of the power amplifier which corresponds to the load impedance of the designed Riemann pump circuit.
+Due to the non-linearity of the transistor model \cite{vitanovnon}, the input impedance of the power stage is simulated.
+The bias voltages of the modelled power transistor were tuned with respect to \gls{ab:mag} to get its input impedance.
+The frequency dependent input impedance [\textbf{REFERENCE}], which corresponds to the load impedance of the designed Riemann pump circuit, is determined by S-parameter simulations.
+An increase of the input impedance was expected, but an increase of the input capacitive was not [\textbf{REFERENCE}](parasitic effects).
 This transistor model \gls{ab:hemt} (IAF\_GE\_MSL\_ A204/IAF\_GaN25\_HEMT\_CS\_LS\_SHfull) used in \gls{ab:ads} were modelled at the \gls{ab:iaf}\cite{model} and is based on a state-space approach.\\ 
+For simulation purposes four transistors were modelled in parallel, each with 8 finger and \SI{125}{\micro \metre} gate width to reach the required gate periphery.
+The bias point was determined with the \gls{ab:mag}, to be $V_{GS} = -1.5 V$, $V_{DS} = 15 V$.
+This led to an impedance shown in Figure [\textbf{INSERT COMPLEX IMPEDANCE}].
 
- The first assumption is that the load is a pre-power amplifier which generate a power of \SI{20}{\watt}. To generate this power, the gate periphery of a GaN25 HEMT has to be \SI{4}{\milli \metre} based on the approximation(- official reference???) \SI[per-mode=fraction]{5}{\watt\per\milli\metre}. To get this gate periphery four transistor in parallel each with 8 finger and \SI{125}{\micro \metre} are designed for the power amplifier. The bias point is determined with the \gls{ab:mag}. Therefore the following load impedance could be determined.
-\begin{equation}
-Z = R - jX_c
-\end{equation}
+%\begin{equation}
+%Z = R - jX_c
+%\end{equation}
 
-With the help of the $S_{11}$ parameter plotted in the smith chart Fig. \ref{fig:smith_load_impedance} the load impedance can be determined.
-The load impedance got a capacitive reactance.
- The real part of the impedance is roughly $R = \SI{1.89}{\ohm}$, while the imaginary part is capacitive. An important point is the input capacitance is increasing with frequency. While it is normal that the imaginary part of the impedance is increasing with frequency, the input capacitance is not.
+% small signal is not considered, since only the curent integration is important
+%With the help of the $S_{11}$ parameter plotted in the smith chart Fig. \ref{fig:smith_load_impedance} the load impedance can be determined.
+%The load impedance got a capacitive reactance.
+% The real part of the impedance is roughly $R = \SI{1.89}{\ohm}$, while the imaginary part is capacitive.
+An important point is the input capacitance is increasing with frequency. 
+While it is normal that the imaginary part of the impedance is increasing with frequency, the input capacitance is not.
 
  \begin{figure}[ht]
 	\centering
-  \includegraphics[width=1\textwidth]{S_param_LoadImpedance.pdf}
+  \includegraphics[draft,width=1\textwidth]{S_param_LoadImpedance.pdf}
 	\caption{smith chart representing the load impedance}
 	\label{fig:smith_load_impedance}
 \end{figure}
@@ -91,27 +69,28 @@ C = \frac{1}{2 \pi f X_c}
 
  \begin{figure}[ht]
 	\centering
-  \includegraphics[width=0.75\textwidth]{InputCap_LoadImpedance_6GHz.pdf}
-	\caption{frequency dependent input capacitance of the load}
+  \includegraphics[draft,width=0.75\textwidth]{InputCap_LoadImpedance_6GHz.pdf}
+	\caption{frequency dependent input capacitance of the load - log scale}
 	\label{fig:smith_load_impedance_inC}
 \end{figure}
 
 \section{Dimension of the used components}
-The transistor dimension were... Different for driver circuit and power circuit... resistor to reduce the energy  consumption, for higher efficiency. \\ The
-approach of the push-pull stage Maksimovic, Maroldt.\\
+The transistor dimension were... Different for driver circuit and power circuit... resistor to reduce the energy  consumption, for higher efficiency.
+The approach of the push-pull stage Maksimovic, Maroldt.
 Approach of theoretical and synthesized signal -> MatLab generation of Riemanncode, SNR.\\ Stability, driver concept, energy consumption, frequency bandwidth, gain
 Schematic design in Advanced Design System 2014. concept, ideas... 
-\textbf{length of the bonds, number of bonds, thickness of bonds ask Dirk Meder. A lot of vias - more inductance - voltage drop between layers. short as possible lines, no rechtecke - para caps in the edge. first filter cap to supply pin near the chip. number and cap size determined on experience. }\\
 Control voltage of 5 V realization with OPAMPS? Possible to overdrive opamps instead of using broadband ppa. 
 
-
 \section{Circuit design summary}
+The speed of the switches is crucial as a broadband signal should be synthesized.
+Using a well known concept got the advantage of verification, validation and knowing the drawbacks.
+In addition to this it was possible to use the work of a former employee, which makes it easier to realize, since a new MMIC desing was not in the scope of this thesis.\\
 \textit{Drawbacks, problems, challenges.}
 Same realisation problems and difficulties: Problem of BANDWIDTH, Vpp of control signal (5V pp for GaN transistors), high side driver, no complementary transistors available in III-V technology, low loss driver, high speed driver, digital control driver, too high energy consumption (stability???)
 \textbf{bandwidth limitation}
 \textit{The lower bound is determined by the sampling time (inverse of the sampling frequency) and the smallest current achieved with the dimensioned transistors.
  The smallest achievable current times the smallest sampling time (highest sampling frequency) determine the smallest absolute slope achievable. \\
- \textbf{Is every signal possible to create?$\rightarrow$ a rect signal has too steep flanks to create. The signal bandwidth ranges from DC to 6 GHz but what is the amplitude range? Is there a limitation regarding the amplitude?}
+% \textbf{Is every signal possible to create? a rect signal has too steep flanks to create. The signal bandwidth ranges from DC to 6 GHz but what is the amplitude range? Is there a limitation regarding the amplitude?}
 \\
 The smallest current is determined by the dimension of the transistor, which drives into saturation. 
 The smallest saturated current is determined by the push-pull transistor geometry, here: 532 mA.}

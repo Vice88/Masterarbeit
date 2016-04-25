@@ -62,12 +62,12 @@ While for the transmitting path, the concept of the Riemann Pump comes into play
 
 \section{System design using the Riemann Pump} % PLL and Energy consumption
 The focus in this thesis was on the transmitting path of the mentioned system, since the receiving architecture and concepts need a separate investigation.
-Further details on the receiving concepts and investigations can be found in \citep{RivetFadhuileDevalEtAl2013}, \cite{RivetDevalD.2008}, \cite{RivetF.2014}, \cite{RivetDevalBegueretJ.-B.2007}.
-Focussing on the transmitting path, the need for a \gls{ab:dac} becomes visible, as the digital data must be converted to an analog signal before transmission.
+Further details on the receiving concepts and investigations can be found in  \cite{RivetDevalBegueretJ.-B.2007}, \cite{RivetFadhuileDevalEtAl2013}, \cite{RivetDevalD.2008}, \cite{RivetF.2014}.
+Since the transmitting path is considered, the need for a \gls{ab:dac} becomes visible, as the digital data must be converted to an analog signal before transmission.
 As mentioned before high demands are made to the \gls{ab:dac} implemented in a \gls{ab:sdr} concept.\\
 An important requirement is to keep the energy consumption in a moderate range.
-If the consumed energy is in the range of several \si{\kilo \watt} it is clear that this is unworkable.
-In order to meet \gls{ab:rf} standards the \gls{ab:snr} has to fulfil the given limits.
+If the consumed energy is in the range of several \si{\kilo \watt} (Figure \ref{fig:feas_energy}) it is clear that this is unworkable.
+In order to meet \gls{ab:rf} standards the \gls{ab:snr} has to fulfil the given limits. %which limits?
 To achieve a moderate \gls{ab:snr}, the resolution and the \gls{ab:osr} of the \gls{ab:dac} have to meet the requirements.
 The generated analog output signal, which can consist of a few concurrent signals, has to be amplified for the propagation.
 To avoid unwanted distortions in the propagated signals linearity of the system is crucial.\\
@@ -88,7 +88,7 @@ The demonstrated path in Figure \ref{fig:System} is subdivided into a digital an
 The green digital part is responsible for the calculation of the desired signals and the generation of the corresponding digital code.
 A theoretical wanted signal in the time domain, consisting of multiple modulated signals, is fed to a \gls{ab:dsp} which computes a digital bit-stream.
 The so called Riemann Code controls the input of a custom \gls{ab:dac}, called Riemann Pump, which is the interface between the digital and the analog part.\\
-In the red analog domain the desired signal is amplified by the implemented power transistor in the Riemann Pump and then propagated via the antenna.
+In the red analog domain the desired signal is amplified by an implemented power transistor in the Riemann Pump and then propagated via the antenna.
 Optionally a mixer can be connected to mix the desired signal to even higher frequencies of several tenth of \si{\giga \hertz}.\\
 Beside the advantages of the concept there are some constraints on the energy consumption as well as on the real time emission.
 Energy consumption is increasing linear with the switching frequency and therefore with the signal bandwidth.
@@ -137,6 +137,9 @@ Corresponding to the described principle, the output voltage
 \end{equation} %%, \hspace{1cm} T = \frac{2*OSR}{f_{sample}
  is calculated by integrating the current over time.\\
 A custom \gls{ab:dac} is created by extending the basic charge pump with several other charge pumps in parallel, as seen in Figure \ref{fig:RiemannPumpConcept}.
+Since the output voltage, consisting of the desired signals, should be propagated via an antenna, the output capacitance \gls{sy:Cout} can be interpreted as the input stage of a linear power amplifier. 
+This input stage consists of a power transistor, which do have the capacitive input impedance characteristic.
+Implemented in one component this concept saves area and costs and the amplified signal at the drain can be transmitted via the antenna.
 
 \begin{figure}[ht]
 	\centering
@@ -159,10 +162,47 @@ These eight different slopes are presented in Figure \ref{fig:SlopesAndTable}.
 	\label{fig:SlopesAndTable}
 \end{figure}
 
-Corresponding to the demonstrated eight different slopes on the left side, a table is presented which states the corresponding Riemann Code for each slope on the right side.
-By the use of this digital code to control the switches, an output voltage can be generated.
-Due to a short sampling time, so that the output capacitance is neither fully charged nor discharged, arbitrary signals can be generated.
-To reach modern \gls{ab:rf} standards, a minimum amount of resolution and of a oversampling ratio has to be fulfilled.
+Corresponding to the demonstrated eight different slopes on the left side, a table is presented which states the corresponding encryption for each slope on the right side.
+The representation of the relative slope of $-1 i_0$ is: $1 0 0 \equiv s(4)$.
+Each digit of the code states the position of the corresponding switches, that is 0 for closed and 1 for an opened switch.
+Every single charge pump is represented by one bit, making it a three bit resolution in this example.
+With the help of the encryption table in Figure \ref{fig:SlopesAndTable} a Riemann Code is generated to synthesize a time domain signal.
+Figure \ref{fig:RiemannIntegral} illustrates the generation process of the Riemann Code.
+
+\begin{figure}[ht]
+	\centering
+  \includegraphics[width=.75\textwidth]{RiemannIntegral.pdf}
+	\caption{Integral of the current which pumps charges on to the cap.}
+	\label{fig:RiemannIntegral}
+\end{figure}
+
+The desired signal, consisting of multiple different signals where each can have a different modulation and symbol rate, is pre processed and then sampled with the Riemann Conversion.
+This theoretically signal is depicted blue.
+With the aid of the defined set of slopes a signal can be synthesized (red dotted), which yields the Riemann Code.
+The Code generation is based on minimizing the error between the theoretical signal and the piecewise linear approximation of the signal, created with the different slopes.
+This minimization is depicted in Figure \ref{fig:RiemannIntegralError}. 
+
+ \begin{figure}[ht]
+	\centering
+  \includegraphics[width=.75\textwidth]{RiemannIntegralError.pdf}
+	\caption{Code generation - error minimizing}
+	\label{fig:RiemannIntegralError}
+\end{figure}
+% detailed description !
+For each sampling point the slope with the smallest deviation in amplitude to the theoretical signal is chosen \cite{VeyracRivetDevalEtAl2014}.
+This yields a set of slopes representing a Riemann Code for the desired signal.
+Arbitrary waveforms can be generated using this technique.
+To avoid unwanted signal clipping it is important that the output capacitance is neither fully charged nor discharged.
+
+\section{Characteristics of Digtial-to-Analog converter}
+\label{ch:characteristics}
+%The characteristics, the performance and figure of merits are compared to classify the Riemann Pump with the conventional digital-to-analog conversion principles.
+%Performance: Resolution, Maximum sampling rate, dynamic range.
+%FOM: Gain, SFDR, SNR, settling time.\\
+%The characteristics of different \gls{ab:dac} is the performance and some figure of merits.
+%Performance leads to the generation of noise in terms of signal to (quantization) noise ratio.
+%This \gls{ab:sqnr} gave a good insight to the performance of the corresponding \gls{ab:dac} without to focus on energy consumption nor efficiency.\\ %%% 16:03 25.04.2016
+To reach modern \gls{ab:rf} standards, a minimum amount of resolution and oversampling is needed.
 Oversampling is crucial for the recovery of a signal, due to the Nyquist-Shannon sampling theorem
 \begin{equation}
 f_{Nyquist} = 2 f_{signal,max}.
@@ -174,64 +214,41 @@ That means the actual sampling rate \gls{sy:fsampling} has to be at least two ti
 Every increase of \gls{sy:fsampling} above the \gls{sy:fnyquist} is called oversampling.
 To increase the performance of the \gls{ab:dac} an \gls{ab:osr} is introduced \cite{DevalRivetVeyrac2015}:
 \begin{equation}
-OSR = \frac{f_{sampling}}{2 f_{signal,max}}
+OSR = \frac{f_{sampling}}{2 f_{signal,max}}.
 \end{equation}
 
-%%%
- The working principle is to integrate a current into a capacitive load, this integration is based on Riemann Integral, where the name come from. This integration converts the current into a voltage. 
-Since the output voltage, consisting of the desired signals, should be propagated via an antenna, the output capacitance can be interpreted as the input stage of a linear power amplifier. 
-This input stage consists of a power transistor, which do have the capacitive input impedance characteristic.
-Implemented in one component this concept saves area and costs and the amplified signal at the drain can be transmitted via the antenna. 
- This output voltage can be applied to the input of a power amp and then to the antenna to propagate it. The current, which charges the capacitive input impedance of the power amp, is controlled by a digital code. A fixed set of slopes, represents the different current sources. A desired signal in the time-domain is generated with MatLab. This signal can consist of many different signals (different carriers and modulation types). This signal is sampled with the given set of slopes. The minimization of the error leads to the Riemann Code. With this Riemann Code (digital) the driver circuit is controlled. This leads to an analog signal formed by the digital input signal. 
- 
-
-With this information a high speed digital to analog converter is created. In the following the Riemann Integral is shown.
+Tuning these two parameters, the resolution and the \gls{ab:osr}, results in an increase of the \gls{ab:snr},
+as mentioned in \ref{fig:TableSQNR} \cite{DevalRivetVeyrac2015}.
 
 \begin{figure}[ht]
 	\centering
-  \includegraphics[width=.75\textwidth]{RiemannIntegral.pdf}
-	\caption{Integral of the current which pumps charges on to the cap.}
-	\label{fig:RiemannIntegral}
+  \includegraphics[width=\textwidth]{SQNR.pdf}
+	\caption{Table of theoretically \gls{ab:sqnr} over resolution and \gls{ab:osr} \cite{DevalRivetVeyrac2015}}
+	\label{fig:TableSQNR}
 \end{figure}
-This integral with its slopes as cited in \ref{fig:SlopesAndTable} generates the riemann code which controls the switches of the circuit. This is done by minimizing the error between the theoretical, desired signal and its synthesized one as shown in Fig. \ref{fig:RiemannIntegralError}
- \begin{figure}[ht]
-	\centering
-  \includegraphics[width=.75\textwidth]{RiemannIntegralError.pdf}
-	\caption{Code generation - error minimizing}
-	\label{fig:RiemannIntegralError}
-\end{figure}
-The signal to noise ratio is calculated in equation \ref{eq:SNR_RiemannPumpConversion}. Quantization noise model {reference: analog device}
+
+The table states the theoretically achieved \gls{ab:snr} with respect to these two parameters.
+The parameter N describes the number of bits used for the resolution and r the \gls{ab:osr}, respectively.
+Here the \gls{ab:osr} is defined as
+\begin{equation}
+OSR =  \frac{f_{sampling}}{2 f_{signal,max}} = 2^r,
+\end{equation}
+which leads to
+\begin{equation}
+f_{sampling} =  2^{r+1}*f_{signal,max}
+\end{equation}
+with respect to r.
+As you can see in Figure \ref{fig:TableSQNR} the Riemann Conversion (green) performance is the best for a minimum number of bits and a \gls{ab:osr}, with respect to the parameter r, of two, respectively.
+Performing a digital-to-analog conversion with one bit resolution, the $\Sigma - \Delta$ conversion fits the best.
+If no oversampling is considered, hence $ r = 1$, a \gls{ab:pcm} conversion is the best.\\
+Every increase in the number of bits results will increase the \gls{ab:snr} by \SI{7}{\decibel}, while increasing the \gls{ab:osr}, here the parameter r, will increase the \gls{ab:snr} by \SI{9}{\decibel}, for the Riemann Conversion.
+Equation \ref{eq:SNR_RiemannPumpConversion}
 \begin{equation}
 	\text{SNR } [\si{\dB}] = 6.02N + 9.03r - 7.78 + 10\log_{10}(1 - \frac{1}{2}^{N-1} + \frac{1}{2}^{2N})
 	\label{eq:SNR_RiemannPumpConversion}
 \end{equation}
-
-
-%Process of the digital to analog conversion:
-%\begin{enumerate}
-%	\item theoretical signal generation via multiplication of time domain signals
-%	\item linear approximation via error estimation to get a sequence of relative slopes
-%	\item get binary code of the sequence of slopes
-%	\item control switches with this digital code to synthesize the wanted analog signal
-%\end{enumerate}
-
-% \textbf{Description of the OSR, Nyquist-Shannon theorem and the SQNR...}
-The \gls{ab:osr} is four and hence due to the Nyquist-Shannon theorem, the sampling \gls{sy:freq} is eight times the signal frequency.
-This in mind, tuning the sampling frequency will result in tuning the signal frequency.
-%\textit{introducing noise due to the conversion}
-%\gls{ab:sqnr}
-%The deviation of the two signals is lying in the nature of converting digital to analog in form of quantization noise.
-
-\section{Characteristics of Digtial-to-Analog converter}
-\label{ch:characteristics}
-The characteristics, the performance and figure of merits are compared to classify the Riemann Pump within the conventional digital-to-analog conversion principles.
-Performance: Resolution, Maximum sampling rate, dynamic range.
-FOM: Gain, SFDR, SNR, settling time.\\
-The characteristics of different \gls{ab:dac} is the performance and some figure of merits.
-Performance leads to the generation of noise in terms of signal to (quantization) noise ratio.
-This \gls{ab:sqnr} gave a good insight to the performance of the corresponding \gls{ab:dac} without to focus on energy consumption nor efficiency.
-%\textit{Explain the different SNR (short), display the table to compare them.}
-
+describes the theoretically achievable \gls{ab:snr} with the Riemann Conversion \citep{DevalRivetVeyrac2015}.
+% Quantization noise model {reference: analog device}
 
 \section{Conclusion of the fundamentals}
 In this chapter the implementation of the Riemann Pump in a system design has been presented.
@@ -239,3 +256,8 @@ After the description of the classification and application, the concept of the 
 After explaining a simple charge pump, a multi bit resolution \gls{ab:dac} have been presented.
 The designed custom \gls{ab:dac} has been compared to conventional \gls{ab:dac} concepts.
 A concise evaluation states that the Riemann Pump is a great improvement for conventional digital-to-analog conversion concepts.
+% a theoretical signal is processed with matlab
+%This signal can consist of many different signals (different carriers and modulation types). 
+%This signal is sampled with the given set of slopes. 
+%The minimization of the error leads to the Riemann Code. 
+%With this Riemann Code the driver circuit is controlled. This leads to an analog signal formed by the digital input signal. 

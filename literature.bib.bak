@@ -20,7 +20,7 @@
 
 @Conference{CarrubbaMaroldtMusserEtAl2015,
   Title                    = {{High-Efficiency, High-Temperature Continuous Class-E Sub-Waveform Solution AlGaN/GaN Power Amplifier}},
-  Author                   = {Carrubba, V. and Maroldt, S. and Musser, M. and Ture, E. and Dammann, M. and F. van Raay and Quay, R. and Brückner, P. and Ambacher, O.},
+  Author                   = {Carrubba, V. and Maroldt, S. and Musser, M. and Ture, E. and Dammann, M. and F. van Raay and Quay, R. and Br\"uckner, P. and Ambacher, O.},
   Booktitle                = {IEEE Microwave and Wireless Components Letters},
   Year                     = {2015},
   Number                   = {8},
@@ -202,7 +202,7 @@
 
 @Conference{QuayMaroldt2011,
   Title                    = {{Design and modelling challenges for advanced class-S digital transmitters}},
-  Author                   = {Quay, Rüdiger and Maroldt, Stephan},
+  Author                   = {Quay, RÃ¼diger and Maroldt, Stephan},
   Booktitle                = {Workshop on Integrated Nonlinear Microwave and Millimetre-Wave Circuits (INMMIC)},
   Year                     = {2011},
   Pages                    = {1 - 4}
@@ -255,7 +255,7 @@
 
 @Conference{SchmidReberChartierEtAl2011,
   Title                    = {{Advances on GaN based switch mode amplifiers for communication applications}},
-  Author                   = {Schmid, Ulf and Reber, Rolf and Chartier, Sébastien and Grabherr, Wilfried and Leberer, Ralf and Oppermann, Martin},
+  Author                   = {Schmid, Ulf and Reber, Rolf and Chartier, SÃ©bastien and Grabherr, Wilfried and Leberer, Ralf and Oppermann, Martin},
   Booktitle                = {41st European Microwave Conference (EuMC)},
   Year                     = {2011},
   Pages                    = {163 - 166}
@@ -308,13 +308,29 @@
 @ARTICLE{Model,
 author={M. Seelmann-Eggebert and T. Merkle and F. van Raay and R. Quay and M. Schlechtweg},
 journal={{IEEE Transactions on Microwave Theory and Techniques}},
-title={A Systematic State ndash;Space Approach to Large-Signal Transistor Modeling},
+title={A Systematic State ;Space Approach to Large-Signal Transistor Modeling},
 year={2007},
 volume={55},
 number={2},
 pages={195-206},
-keywords={III-V semiconductors;gallium compounds;high electron mobility transistors;semiconductor device models;state-space methods;wide band gap semiconductors;GaN;HEMT;high electron mobility transistors;high-speed transistors;large-signal transistor modeling;linear LS model;multibias SS S-parameter measurements;state-space approach;Circuit simulation;Dispersion;Frequency dependence;Frequency domain analysis;Gallium nitride;HEMTs;MODFETs;Predictive models;Transfer functions;Voltage;GaN HEMT;large-signal (LS) transistor modeling;low-frequency (LF) dispersion;state–space approach},
+keywords={III-V semiconductors;gallium compounds;high electron mobility transistors;semiconductor device models;state-space methods;wide band gap semiconductors;GaN;HEMT;high electron mobility transistors;high-speed transistors;large-signal transistor modeling;linear LS model;multibias SS S-parameter measurements;state-space approach;Circuit simulation;Dispersion;Frequency dependence;Frequency domain analysis;Gallium nitride;HEMTs;MODFETs;Predictive models;Transfer functions;Voltage;GaN HEMT;large-signal (LS) transistor modeling;low-frequency (LF) dispersion;stateâspace approach},
 doi={10.1109/TMTT.2006.889154},
 ISSN={0018-9480},
 month={Feb},}
 
+@INPROCEEDINGS{MaksimovicPaper,
+author={Y. Zhang and M. Rodr\'{i}guez and D. Maksimovi\'{c}},
+booktitle={2014 IEEE Energy Conversion Congress and Exposition (ECCE)},
+title={{100 MHz, 20 V, 90\% efficient synchronous buck converter with integrated gate driver}},
+year={2014},
+pages={3664-3671},
+keywords={III-V semiconductors;driver circuits;gallium compounds;integrated circuits;low-power electronics;power consumption;silicon compounds;switching convertors;wide band gap semiconductors;GaN-SiC;GaN-on-SiC integrated circuit;LTE envelope signal;bandwidth 20 MHz;depletion-mode device characteristics;efficiency 83.7 percent;efficiency 90 percent;frequency 100 MHz;halfbridge power stage;integrated gate driver;integrated modified active pull-up driver;low power consumption;modified active pull-up gate driver stage;switching frequency;synchronous buck converter;voltage 20 V;Gallium nitride;HEMTs;Integrated circuits;Logic gates;Switches;Switching frequency},
+doi={10.1109/ECCE.2014.6953899},
+ISSN={2329-3721},
+month={Sept},}
+
+@inproceedings{vitanovnon,
+  title={{Non-linearity of transconductance and source--gate resistance of HEMTs}},
+  author={Vitanov, S and Palankovski, V and Maroldt, S and Quay, R},
+  booktitle={Proc. European Solid-State Device Research Conf. Fringe Poster Session}
+}

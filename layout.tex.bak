@@ -197,6 +197,8 @@ For bonding \SI{25}{\micro \metre} (diameter) \gls{ab:au} bonds were used.
 The length of the bonds were given by assembly limits for spacing of conducting layers due to manufacturer process limits.\\
 In- and output connectors were commercially available SMA jack connectors with a matched impedance of \SI{50}{\ohm} to connect standard RF cables.\\
 
+%\textbf{length of the bonds, number of bonds, thickness of bonds ask Dirk Meder. A lot of vias - more inductance - voltage drop between layers. short as possible lines, no rects - para caps in the edge. first filter cap to supply pin near the chip. number and cap size determined on experience. }
+
 %Capacitive coupling could be a problem, through the dc supply lines to the input lines.
 %What about the coupling from the substrate backside to the conducting layer of the substrate? 
 %What about inductive coupling via the via holes or so??
