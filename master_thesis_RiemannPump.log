@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  22 APR 2016 19:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  25 APR 2016 14:09
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -1408,9 +1408,9 @@ Package microtype Info: Loading generic settings for font family
 <logos/logo_iaf.pdf, id=4, 241.85356pt x 65.9263pt>
 File: logos/logo_iaf.pdf Graphic file (type pdf)
  <use logos/logo_iaf.pdf>
-Package pdftex.def Info: logos/logo_iaf.pdf used on input line 112.
+Package pdftex.def Info: logos/logo_iaf.pdf used on input line 110.
 (pdftex.def)             Requested size: 187.88478pt x 51.21504pt.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 112.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 110.
 
 (E:\WinProgram\MikTEX\tex\latex\psnfss\t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
@@ -1420,7 +1420,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 112.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 110.
  [1
 
 
@@ -1431,7 +1431,7 @@ go_iaf.pdf>] [2
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 112.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 110.
  [3
 
 
@@ -1462,8 +1462,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
 
 ]
-Package tocbasic Info: character protrusion at toc deactivated on input line 12
-0.
+Package tocbasic Info: character protrusion at toc deactivated on input line 11
+8.
 
 (master_thesis_RiemannPump.toc [1
 
@@ -1576,30 +1576,27 @@ File: graphics/concept/SlopesAndTable.pdf Graphic file (type pdf)
 
 <use graphics/concept/SlopesAndTable.pdf>
 Package pdftex.def Info: graphics/concept/SlopesAndTable.pdf used on input line
- 156.
+ 157.
 (pdftex.def)             Requested size: 320.09355pt x 226.19385pt.
- [7 <./graphics/concept/RP_concept.pdf, page is rotated 90 degrees>]
-
-LaTeX Warning: Reference `i' on page 8 undefined on input line 173.
-
-[8 <./graphics/concept/SlopesAndTable.pdf, page is rotated 90 degrees>]
-<graphics/concept/RiemannIntegral.pdf, id=206, 845.1575pt x 597.23125pt>
+ [7 <./graphics/concept/RP_concept.pdf, page is rotated 90 degrees>] [8 <./grap
+hics/concept/SlopesAndTable.pdf, page is rotated 90 degrees>]
+<graphics/concept/RiemannIntegral.pdf, id=205, 845.1575pt x 597.23125pt>
 File: graphics/concept/RiemannIntegral.pdf Graphic file (type pdf)
 
 <use graphics/concept/RiemannIntegral.pdf>
 Package pdftex.def Info: graphics/concept/RiemannIntegral.pdf used on input lin
-e 197.
+e 192.
 (pdftex.def)             Requested size: 320.09355pt x 226.19385pt.
 
-<graphics/concept/RiemannIntegralError.pdf, id=207, 845.1575pt x 597.23125pt>
+<graphics/concept/RiemannIntegralError.pdf, id=206, 845.1575pt x 597.23125pt>
 File: graphics/concept/RiemannIntegralError.pdf Graphic file (type pdf)
 
 <use graphics/concept/RiemannIntegralError.pdf>
 Package pdftex.def Info: graphics/concept/RiemannIntegralError.pdf used on inpu
-t line 204.
+t line 199.
 (pdftex.def)             Requested size: 320.09355pt x 226.19385pt.
- [9 <./graphics/concept/RiemannIntegral.pdf, page is rotated 90 degrees> <./gra
-phics/concept/RiemannIntegralError.pdf, page is rotated 90 degrees>]) [10] (des
+ [9 <./graphics/concept/RiemannIntegral.pdf, page is rotated 90 degrees>]) [10 
+<./graphics/concept/RiemannIntegralError.pdf, page is rotated 90 degrees>] (des
 ign.tex
 chapter 3.
 [11
@@ -1965,33 +1962,29 @@ Package pdftex.def Info: graphics/photos/Demonstrator.pdf used on input line 31
 
 ] (master_thesis_RiemannPump.aux (preface.aux) (fundamentals.aux)
 (design.aux) (simulation.aux) (layout.aux) (measurement.aux) (conclusion.aux)
-(appendix.aux))
-
-LaTeX Warning: There were undefined references.
-
- ) 
+(appendix.aux)) ) 
 Here is how much of TeX's memory you used:
- 39816 strings out of 493673
- 766889 string characters out of 3146818
- 859053 words of memory out of 3000000
- 42178 multiletter control sequences out of 15000+200000
+ 39875 strings out of 493673
+ 768282 string characters out of 3146818
+ 858768 words of memory out of 3000000
+ 42237 multiletter control sequences out of 15000+200000
  73270 words of font info for 241 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  71i,12n,79p,10425b,1266s stack positions out of 5000i,500n,10000p,200000b,50000s
-{E:/WinProgram/MikTEX/fonts/enc/dvips/fontname/8r.enc}<E:/WinProgram/MikTEX/f
-onts/type1/public/amsfonts/cm/cmex10.pfb><E:/WinProgram/MikTEX/fonts/type1/publ
-ic/amsfonts/cm/cmmi12.pfb><E:/WinProgram/MikTEX/fonts/type1/public/amsfonts/cm/
-cmmi8.pfb><E:/WinProgram/MikTEX/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Wi
-nProgram/MikTEX/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/WinProgram/MikTEX/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb><E:/WinProgram/MikTEX/fonts/type1/publ
-ic/amsfonts/cm/cmsy8.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/courier/ucrr8a.p
-fb><E:/WinProgram/MikTEX/fonts/type1/urw/helvetic/uhvb8a.pfb><E:/WinProgram/Mik
-TEX/fonts/type1/urw/helvetic/uhvr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/t
-imes/utmb8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmbi8a.pfb><E:/Win
-Program/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/typ
-e1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmri8a.pfb
->
-Output written on master_thesis_RiemannPump.pdf (66 pages, 47528701 bytes).
+{E:/WinProgram/MikTEX/fonts/enc/dvips/fontname/8r.enc}<E:/WinP
+rogram/MikTEX/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/WinProgram/MikTEX/f
+onts/type1/public/amsfonts/cm/cmmi12.pfb><E:/WinProgram/MikTEX/fonts/type1/publ
+ic/amsfonts/cm/cmmi8.pfb><E:/WinProgram/MikTEX/fonts/type1/public/amsfonts/cm/c
+mr12.pfb><E:/WinProgram/MikTEX/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/WinP
+rogram/MikTEX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/WinProgram/MikTEX/f
+onts/type1/public/amsfonts/cm/cmsy8.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/c
+ourier/ucrr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/helvetic/uhvb8a.pfb><E:
+/WinProgram/MikTEX/fonts/type1/urw/helvetic/uhvr8a.pfb><E:/WinProgram/MikTEX/fo
+nts/type1/urw/times/utmb8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmb
+i8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/M
+ikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/ti
+mes/utmri8a.pfb>
+Output written on master_thesis_RiemannPump.pdf (66 pages, 47528626 bytes).
 PDF statistics:
  691 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

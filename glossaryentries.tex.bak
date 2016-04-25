@@ -102,6 +102,10 @@
 %
 \newglossaryentry{sy:fsampling}{type=symbols,name={$f_{sampling}$},description={sampling frequency/rate},first={$f_{sampling}$ (sampling frequency)}}
 
+\newglossaryentry{sy:fsignalmax}{type=symbols,name={$f_{signal,max}$},description={maximum signal frequency},first={$f_{signmal,max}$ (maximum signal frequency)}}
+
+\newglossaryentry{sy:fnyquist}{type=symbols,name={$f_{Nyquist}$},description={Nyquist Frequency},first={$f_{Nyquist}$ (Nyquist Frequency)}}
+
 \newglossaryentry{sy:Bsignal}{type=symbols,name={$B_{signal}$},description={signal bandwidth},first={$B_{signal}$ (signal bandwidth)}}
 
 \newglossaryentry{sy:freq}{type=symbols,name={$f$},description={frequency},first={$f$ (frequency)}}

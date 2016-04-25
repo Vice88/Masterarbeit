@@ -1,7 +1,7 @@
 \chapter{Fundamentals of the Riemann Pump}
 \label{ch:fundamentals}
 %\textit{Presentation of the theoretical basis required for an understanding of your work. Do not begin with Newton's laws or Maxwell's equations: imagine that the reader is a competent engineering professor, but not necessarily in your field of expertise. Do not bother to discuss any theory that you do not employ in later sections.}
-For the purpose to place this work into the context of the next generation of mobile communication, the concept of software-defined radio is described.
+To place this work into the context of the next generation of mobile communication, a concept is described called software-defined radio.
 Implemented in this concept, the function, the benefit and some fundamentals of the Riemann Pump are described. 
 A demonstrated system shows the \gls{ab:sdr} concept, which is based on the idea to bring the digital domain as close as possible to the antenna.
 The Riemann Pump is an arbitrary waveform generator which is controlled by a digital input signal, making it also a custom \gls{ab:dac}.
@@ -15,7 +15,7 @@ A concise discussion conclude the presented fundamentals.
 %All these requirements built in one \gls{ab:dac} is not realistic.
 %Therefore, intermediate systems have been developed in which the transmitter signal is built by a DAC at lower frequencies, and then up converted with RFFE mostly composed by a linear mixer with a linear PA.
 \section{Basic concept of software-defined radio for 5G mobile communication}
-The concept of software-defined radio is treated to overcome old problems of mobile communication and hence deal with a fast adapting system which can handle several mobile communication standards at once.
+The concept of software-defined radio is treated to overcome old problems of mobile communication and hence deal with a fast adapting system which can handle several mobile communication standards at once. % which problems? either state it or leave it
 New standards can handled since the system can be changed with an firmware update. 
 Therefore every signal within the proposed bandwidth could be processed without changing the hardware, which made it software defined.
 The ability to process a spectrum of \gls{ab:dc} to \SI{6}{\giga \hertz} enables it to deal with future mobile communication standards.\\
@@ -96,7 +96,7 @@ Secondly the real time emission is constrained due to the calculation and conver
 
 \section{Idea of the Riemann Pump}
 \label{IdeaRiemannPump}
-After the implementation in a system design has been demonstrated now the concept of Riemann Pump itself is explained.\\
+After the implementation in a system design has been demonstrated, the concept of Riemann Pump itself is explained.\\
 The concept shown in Figure \ref{fig:ChargePump}, is implemented in conventional \glspl{ab:pll} and is known as a charge pump, which is the basic principle of the Riemann Pump \cite{DevalRivetVeyracEtAl2013}, \cite{VeyracRivetDevalEtAl2014}, \cite{DevalRivetVeyrac2015}.
 Basically the inputs are switches and the output is a capacitance.
 The output capacitance (\gls{sy:Cout}) can take any value between the positive (\gls{sy:Vdd}) and negative (\gls{sy:Vss}) power supply voltage by controlling the input switches.\\
@@ -131,11 +131,11 @@ This effect only takes place if the control signal is differential, which leads 
 Otherwise the controlling of the output voltage is not defined.
 If both switches are closed at the same time, the potential at the capacitor is floating and hence no defined voltage can be stated.
 For decreasing the output voltage the low side switch has to be closed, while the high side switch is open, to allow the capacitor to discharge.\\
-Corresponding to the described principle the output voltage
+Corresponding to the described principle, the output voltage
 \begin{equation}
 	V_{out} = \frac{1}{C_{out}}{ \int_0^T \! i_{out}(t) \, \mathrm{d}t}
 \end{equation} %%, \hspace{1cm} T = \frac{2*OSR}{f_{sample}
- is calculated basically by integrating the current over time.\\
+ is calculated by integrating the current over time.\\
 A custom \gls{ab:dac} is created by extending the basic charge pump with several other charge pumps in parallel, as seen in Figure \ref{fig:RiemannPumpConcept}.
 
 \begin{figure}[ht]
@@ -148,7 +148,8 @@ A custom \gls{ab:dac} is created by extending the basic charge pump with several
 The dimensions of the current sources, connected in parallel, have to increase by the power of two to get a defined set of currents.
 Demonstrated is a \gls{ab:dac} with three bit resolution, which leads to eight different currents.
 Instead of using absolute current values, relative currents with respect to $i_0$ are used.
-This three bit resolution leads to eight different slopes which are used for the digital to analog conversion process.
+% The integration of one current step over one period of sampling time
+This leads to eight different slopes which are used for the digital to analog conversion process.
 These eight different slopes are presented in Figure \ref{fig:SlopesAndTable}.
 
 \begin{figure}[ht]
@@ -161,20 +162,21 @@ These eight different slopes are presented in Figure \ref{fig:SlopesAndTable}.
 Corresponding to the demonstrated eight different slopes on the left side, a table is presented which states the corresponding Riemann Code for each slope on the right side.
 By the use of this digital code to control the switches, an output voltage can be generated.
 Due to a short sampling time, so that the output capacitance is neither fully charged nor discharged, arbitrary signals can be generated.
-To reach modern \gls{ab:rf} standards, a minimum amount of resolution bits and of a oversampling ratio has to be fulfilled.
-Oversampling is crucial for the recovery of a signal, due to the Nyquist-Shannon sampling theorem (reference???).
-% ################################# 16:14 22.04.2016
-The Nyquist-Shannon theorem %% Nyquist rate, Nyquist theorem... !!
+To reach modern \gls{ab:rf} standards, a minimum amount of resolution and of a oversampling ratio has to be fulfilled.
+Oversampling is crucial for the recovery of a signal, due to the Nyquist-Shannon sampling theorem
 \begin{equation}
-f_{nyquist} \geq 2 f_{signal,max}
+f_{Nyquist} = 2 f_{signal,max}.
 \end{equation}
 \label{eq:SamplingTheorem}
-states, that the sampling rate \gls{sy:fsampling} has to be at least two times the maximum signal frequency.\\
-Every increase of \gls{sy:fsampling} above the  \ref is called oversampling ratio \gls{ab:osr}.
-The \gls{ab:osr} is defined as:
+
+This Nyquist Frequency is the minimum sampling frequency for the correct recovery of a signal.
+That means the actual sampling rate \gls{sy:fsampling} has to be at least two times \gls{sy:fsignalmax}.\\
+Every increase of \gls{sy:fsampling} above the \gls{sy:fnyquist} is called oversampling.
+To increase the performance of the \gls{ab:dac} an \gls{ab:osr} is introduced \cite{DevalRivetVeyrac2015}:
 \begin{equation}
-OSR = 2^{r}
+OSR = \frac{f_{sampling}}{2 f_{signal,max}}
 \end{equation}
+
 %%%
  The working principle is to integrate a current into a capacitive load, this integration is based on Riemann Integral, where the name come from. This integration converts the current into a voltage. 
 Since the output voltage, consisting of the desired signals, should be propagated via an antenna, the output capacitance can be interpreted as the input stage of a linear power amplifier. 
@@ -182,13 +184,6 @@ This input stage consists of a power transistor, which do have the capacitive in
 Implemented in one component this concept saves area and costs and the amplified signal at the drain can be transmitted via the antenna. 
  This output voltage can be applied to the input of a power amp and then to the antenna to propagate it. The current, which charges the capacitive input impedance of the power amp, is controlled by a digital code. A fixed set of slopes, represents the different current sources. A desired signal in the time-domain is generated with MatLab. This signal can consist of many different signals (different carriers and modulation types). This signal is sampled with the given set of slopes. The minimization of the error leads to the Riemann Code. With this Riemann Code (digital) the driver circuit is controlled. This leads to an analog signal formed by the digital input signal. 
  
-% 
-%\begin{figure}[ht]
-%	\centering
-%  \includegraphics[width=.75\textwidth]{SlopesAndTable.pdf}
-%	\caption{slopes and corresponding code of the synthesized signal}
-%	\label{fig:SlopesAndTable}
-%\end{figure}
 
 With this information a high speed digital to analog converter is created. In the following the Riemann Integral is shown.
 
