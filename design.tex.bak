@@ -6,7 +6,7 @@ For the implementation in a base station, the most promising technology was \gls
 \gls{ab:gan} \glspl{ab:hemt} were used for the high speed switches, which served as a voltage controlled current source.
 Based on the chosen technology a suitable push-pull concept were found \cite{MaksimovicPaper} to show the feasibility of the concept.
 The attention was rather drawn to proof the concept than to optimize for energy consumption or efficiency.
-In the design process a suitable load impedance and the right dimension of the used components were found.
+In the design process a suitable load impedance and the right dimension of the used components had to be found.
 
 \section{Approach and implementation of the Riemann Pump}
 As stated in chapter \ref{IdeaRiemannPump} the circuit needed high speed switches, which were capable to drive power.
@@ -14,7 +14,10 @@ The absence of a p-type transistor in \gls{ab:gan} technology made it challengin
 Since the n-type \glspl{ab:hemt} needed a negative gate source voltage \gls{sy:vgs}, the high side switch could not be implemented without a driver circuit.
 The source contact of the high side switch, realized by a n-type \gls{ab:gan} \gls{ab:hemt}, was connected to the output of the test circuit.
 Since the potential at the output was not constant, this high side switch needed a driver circuit.
-A suitable driver circuit was found in \cite{MaksimovicPaper}, where the principle of a push-pull stage for power applications is described.\\
+A suitable driver circuit was found in \cite{MaksimovicPaper}, where the principle of a push-pull stage for power applications is described.
+The benefit of the integrated driver circuit was the improved efficiency of switching.
+The transistor switching speed was determined by the dimension of the driver circuit.
+If the switching speed was increased, the gate driving current \gls{sy:IG} has to be increased to switch the transistors.\\
 One possible approach to design a Riemann Pump is shown in Fig. \ref{fig:SchematicRiemannPump}.
 
 \begin{figure}[ht]
@@ -24,92 +27,69 @@ One possible approach to design a Riemann Pump is shown in Fig. \ref{fig:Schemat
 	\label{fig:SchematicRiemannPump}
 \end{figure}
 
-The benefit of the integrated driver circuit was the improved efficiency of switching.
-The transistor switching speed was determined by the dimension of the driver circuit.
-If the switching speed was increased, the gate driving current \gls{sy:IG} has to be increased to switch the transistors.
+On the left side, as marked, is the driver circuit which was needed to switch the high side transistor without dissipating a huge amount of power.
+As the timing is crucial for the switching process, the driver concept was implemented for the low side switch too.
+The schematic shows the first approach for realizing a Riemann Pump in \gls{ab:gan} technology.
+The next step was the identification and calculation of a proper output capacitance, since it represent the input of a linear power amplifier where the desired signal is synthesized.
  
 \section{Identification of the load impedance}
 The signal is generated at the input stage of a linear power amplifier, as described in \ref{ch:fundamentals}.
 This input stage is modelled with a \gls{ab:gan} \gls{ab:hemt} with a gate length of \SI{0.25}{\micro \meter}.
 Considering a \SI{20}{\watt} power amplifier for transmission purposes, led to a \gls{ab:gan} \gls{ab:hemt} with a total gate periphery of \SI{4}{\milli \metre}, based on an approximation for the power density of \SI[per-mode=fraction]{5}{\watt\per\milli\metre} gate periphery  \cite{Maroldt2010}, \cite{GaNBook}.
 Simulations confirmed this approximation as an output power density of \SI[per-mode=fraction]{5.6}{\watt\per\milli\metre} at $V_{DS} = 25 V$ was measured.
+This transistor model \gls{ab:hemt} (IAF\_GE\_MSL\_ A204/IAF\_GaN25\_HEMT\_CS\_LS\_SHfull) used in \gls{ab:ads} were modelled at the \gls{ab:iaf}\cite{model} and is based on a state-space approach. 
+For simulation purposes four transistors were modelled in parallel, each with 8 finger and \SI{125}{\micro \metre} gate width to reach the required gate periphery.
 The simulated power amplifier is biased with respect to the maximum \gls{ab:mag}, which led to a bias of $V_{GS} = -1.5 V$ at $V_{DS} = 25 V$.
-After the determination of the bias point, a S-parameter simulation yielded the input reactance of the power amplifier as seen in Figure \ref{fig:inputReactance}.
+After the determination of the bias point, a S-parameter simulation yielded the input reactance of the power amplifier.
+Since the capacitive behaviour of the load impedance is of interest, the real part is for now neglected.
+The input reactance $X_c$ is defined as:
+\begin{equation}
+	X_c = -\frac{1}{\omega C},
+\end{equation}
+\label{eq:reactance}
+and is plotted in Figure \ref{fig:inputReactance} over the frequency range from \gls{ab:dc} to \SI{6}{\giga \hertz} in a logarithmic scale.
 
 \begin{figure}[ht]
 	\centering
-  \includegraphics[width=1\textwidth]{inputReactance.pdf}
+  \includegraphics[width=.75\textwidth]{inputReactance.pdf}
 	\caption{load reactance}
 	\label{fig:inputReactance}
 \end{figure}
 
-Since only the capacitive behaviour of the load impedance is of interest, the real part is neglected.
-Figure \ref{fig:inputReactance} shows the input reactance over the frequency range from \SI{10}{\mega \hertz} to \SI{6}{\giga \hertz} in a logarithmic scale.
-As the reactance of the simulated power amplifier is nearly constant for the frequency of \SI{1}{\giga \hertz} and beyond, this led to the assumption that (dispersion)parasitic effects came into play.
-The input reactance $X_c$ is defined
+As the reactance of the simulated power amplifier is nearly constant for the frequency of \SI{1}{\giga \hertz} and beyond, this led to the assumption that frequency dispersion effects came into play.
+Interpreting the minus sign only for the phase delay, since it is capacitive, the absolute value of the reactance decreases exponentially with the frequency up to approximately \SI{1}{\giga \hertz}.
+Solving the equations \ref{eq:reactance} absolute value for the capacitance yielded:
 
 \begin{equation}
-	X_c = \frac{-1}{\omega C},
+	C = \frac{1}{\omega X_c},
 \end{equation}
-
-and solving for the capacitance yielded:
-\begin{equation}
-	C = \frac{-1}{\omega X_c},
-\end{equation}
-
-Figure \ref{fig:inputCap_log} shows the effect of decreasing capacitance with frequency.
+which is illustrated in Figure \ref{fig:inputCap_log}.
+The frequency dispersion effect on the input capacitance of the \gls{ab:gan} \gls{ab:hemt} is seen in \ref{fig:inputCap_log} for frequencies beyond \SI{1}{\giga \hertz}.
 
 \begin{figure}[ht]
 	\centering
-  \includegraphics[width=1\textwidth]{inputCap_log.pdf}
+  \includegraphics[width=.75\textwidth]{inputCap_log.pdf}
 	\caption{load capacitance log}
 	\label{fig:inputCap_log}
 \end{figure}
 
-The value of the input capacitance stays constant for frequencies below \SI{1}{\giga \hertz} which was assumed. 
-For the \gls{ab:rf} range the capacitance drops.
-
-An increase of the input impedance was expected, but an increase of the input capacitive was not [\textbf{REFERENCE}](parasitic effects).
-
-Due to the non-linearity of the transistor model \cite{vitanovnon}, the input impedance of the power stage is simulated.
-
-The frequency dependent input impedance [\textbf{REFERENCE}], which corresponds to the load impedance of the designed Riemann pump circuit, is determined by S-parameter simulations.
-
-This transistor model \gls{ab:hemt} (IAF\_GE\_MSL\_ A204/IAF\_GaN25\_HEMT\_CS\_LS\_SHfull) used in \gls{ab:ads} were modelled at the \gls{ab:iaf}\cite{model} and is based on a state-space approach.\\ 
-For simulation purposes four transistors were modelled in parallel, each with 8 finger and \SI{125}{\micro \metre} gate width to reach the required gate periphery.
-The bias point was determined with the \gls{ab:mag}, to be $V_{GS} = -1.5 V$, $V_{DS} = 15 V$.
-This led to an impedance shown in Figure [\textbf{INSERT COMPLEX IMPEDANCE}].
-
-%\begin{equation}
-%Z = R - jX_c
-%\end{equation}
-
-% small signal is not considered, since only the curent integration is important
-%With the help of the $S_{11}$ parameter plotted in the smith chart Fig. \ref{fig:smith_load_impedance} the load impedance can be determined.
-%The load impedance got a capacitive reactance.
-% The real part of the impedance is roughly $R = \SI{1.89}{\ohm}$, while the imaginary part is capacitive.
-An important point is the input capacitance is increasing with frequency. 
-While it is normal that the imaginary part of the impedance is increasing with frequency, the input capacitance is not.
-
- \begin{figure}[ht]
-	\centering
-  \includegraphics[draft,width=1\textwidth]{S_param_LoadImpedance.pdf}
-	\caption{smith chart representing the load impedance}
-	\label{fig:smith_load_impedance}
-\end{figure}
-
-The load capacitance is calculated through the complex impedance:
+Since the input capacitance can be assumed as 
 \begin{equation}
-C = \frac{1}{2 \pi f X_c}
+	C = \epsilon_r \frac{A}{d},
 \end{equation}
 
- \begin{figure}[ht]
-	\centering
-  \includegraphics[draft,width=0.75\textwidth]{InputCap_LoadImpedance_6GHz.pdf}
-	\caption{frequency dependent input capacitance of the load - log scale}
-	\label{fig:smith_load_impedance_inC}
-\end{figure}
+it follows that
+\begin{equation}
+	C \propto \epsilon_r 
+\end{equation}
 
+and therefore for high frequencies, the capacitance is decreasing due to decreasing dielectric constant for \gls{ab:gan} \cite{GaNBook},p.7. % pdf page 33
+
+%Due to the non-linearity of the transistor model \cite{vitanovnon}
+%The frequency dependent input impedance [\textbf{REFERENCE}], which corresponds to the load impedance of the designed Riemann pump circuit, is determined by S-parameter simulations.
+% small signal is not considered, since only the curent integration is important
+
+%%% 27.04.201
 \section{Dimension of the used components}
 The transistor dimension were... Different for driver circuit and power circuit... resistor to reduce the energy  consumption, for higher efficiency.
 The approach of the push-pull stage Maksimovic, Maroldt.
