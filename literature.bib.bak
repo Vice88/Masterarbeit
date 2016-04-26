@@ -334,3 +334,13 @@ month={Sept},}
   author={Vitanov, S and Palankovski, V and Maroldt, S and Quay, R},
   booktitle={Proc. European Solid-State Device Research Conf. Fringe Poster Session}
 }
+
+@book{GaNBook,
+author       = {Quay, R.},
+title        = {Gallium Nitride Electronics},
+publisher    = {Springer, Berlin, Heidelberg, New York},
+year         = {2008},
+series       = {Springer Series in Materials Science; 96},
+note         = {469 S.},
+isbn         = {978-3-540-71892-5},
+}
