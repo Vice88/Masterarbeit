@@ -183,7 +183,7 @@ The six different combinations were plotted in Figure \ref{fig:SameSigBWDifSlope
 \begin{figure}[htb!]
 	\centering
   \includegraphics[width=1\textwidth]{Vout_7sine_SameSigBWdifferent_DifferentSlope.pdf}
-	\caption{Signals with the same signal bandwidth but different input control}
+	\caption{Signals with the same signal bandwidth \SI{3}{\giga \hertz} but different input control}
 	\label{fig:SameSigBWDifSlope}
 \end{figure}
 
@@ -328,6 +328,11 @@ In fact of the high energy consumption, the realized DAC is designed for the int
 
 \section{Proof of concept simulation with existing components}
 \label{ch:ProofOfConceptWithExistingComponents}
+Schematic of the measurement setup, esb.
+Simulation regarding the measurement, +3 and +1 triangular waveform.
+frequency 100mhz and 150mhz, vdd = 5, vdp=0V, vdn=-5V.
+As DDRi2C is used, bottom vdp(in na; lowside) = vdd. 
+Sim RP\_DDRi\_XY6\_v1\_sim
 To combine the measurement results with the presented theory, some simulations were done with the dimensions of the real demonstrator.
 %But also here it is important to note, that losses are not considered in the simulation.
 It provided a basis of what can be expected.
@@ -349,6 +354,11 @@ To compare the results simulated here and measured in chapter \ref{ch:measuremen
 	\item the energy consumption is in the range for base stations
 	\item dut is not optimal w.r.t. efficiency
 \end{enumerate}
+
+%\textbf{bandwidth limitation}
+%\textit{The lower bound is determined by the sampling time (inverse of the sampling frequency) and the smallest current achieved with the dimensioned transistors.
+% The smallest achievable current times the smallest sampling time (highest sampling frequency) determine the smallest absolute slope achievable. \\
+
 
 %If the \gls{ab:osr} is increased, the sampling time is decreased and therefore the signal quality is better because we have a more accurate synthesized signal. 
 %This is shown in the snr in chapter fundamentals.

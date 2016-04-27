@@ -11,7 +11,7 @@
 \contentsline {section}{\numberline {3.1}Approach and implementation of the Riemann Pump}{13}
 \contentsline {section}{\numberline {3.2}Identification of the load impedance}{14}
 \contentsline {section}{\numberline {3.3}Dimension of the used components}{16}
-\contentsline {section}{\numberline {3.4}Circuit design summary}{16}
+\contentsline {section}{\numberline {3.4}Circuit design summary}{17}
 \contentsline {chapter}{\numberline {4}Circuit simulations for generating various waveform signals}{19}
 \contentsline {section}{\numberline {4.1}Generating various analog signals with digital input control}{19}
 \contentsline {subsection}{\numberline {4.1.1}Sine wave generation in the time domain}{20}

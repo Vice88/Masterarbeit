@@ -84,39 +84,78 @@ it follows that
 \end{equation}
 
 and therefore for high frequencies, the capacitance is decreasing due to decreasing dielectric constant for \gls{ab:gan} \cite{GaNBook},p.7. % pdf page 33
+Degrading capacitance due to non-linearities.
 
 %Due to the non-linearity of the transistor model \cite{vitanovnon}
 %The frequency dependent input impedance [\textbf{REFERENCE}], which corresponds to the load impedance of the designed Riemann pump circuit, is determined by S-parameter simulations.
 % small signal is not considered, since only the curent integration is important
 
-%%% 27.04.2016 01:34 Uh
+%%% 27.04.2016 01:34 Uhr
 \section{Dimension of the used components}
-The transistor dimension were... Different for driver circuit and power circuit... resistor to reduce the energy  consumption, for higher efficiency.
-The approach of the push-pull stage Maksimovic, Maroldt.
-Approach of theoretical and synthesized signal -> MatLab generation of Riemanncode, SNR.\\ Stability, driver concept, energy consumption, frequency bandwidth, gain
-Schematic design in Advanced Design System 2014. concept, ideas... 
-Control voltage of 5 V realization with OPAMPS? Possible to overdrive opamps instead of using broadband ppa. 
+An output capacitance of nearly \SI{22}{\pico \farad} was found for the output linear power amplifier stage.
+Based on this calculation a proper test circuit was investigated.
+To avoid immediate clipping of the signal at the output, the transistor dimension had to fit.
+Since an oversized transistor would charge the capacitance and the signal would be clipped.
+Hence a transistor dimension was chosen which allowed to synthesize a decent signal.
+To synthesize a sine wave for the frequency of \SI{6}{\giga \hertz} with a voltage swing of $V_{swing} = 4V$, the two greatest slopes were chosen.
+In the presented concept the resolution is three bit, hence eight different current slopes could be generated.
+The sequence of the relative slopes $7 i_0$ and $5 i_0$ synthesize the rising edge of the sine wave.
+With this relative slopes and an oversampling ratio of four at the frequency of \SI{6}{\giga \hertz}, led to a sampling time $\Delta t$ of \SI{20.83}{\pico \second}, since the sampling frequency is eight times the signal bandwidth.
+
+The current-voltage relation for the capacitor
+\begin{equation}
+	I = C \frac{d U}{d t},
+\end{equation}
+is used to determine the reference current $i_0$.
+
+A voltage swing of $V_{swing} = 4V$ is equal to an amplitude of $\hat{v} = 2V$.
+The oversampling of four yielded, that the sine signal is sampled by eight points.
+Hence the rising edge consisted of two sampling points.
+The first sampling point with the relative slope of 7 and the second of 5, respectively.
+Integrating the current for two different samples yield:
+
+\begin{equation}
+\int_{\Delta t} 7 i_0 d\tau + \int_{\Delta t} 5 i_0 d \tau = C*U,
+\end{equation}
+
+and solving for $i_0$ resulted in:
+
+\begin{equation}
+i_0 = \frac{U*C}{12*\Delta t}.
+\end{equation}
+
+For the assumption to reach nearly a voltage of $\hat{v} = 2V$ for two sampling intervals ($2 \Delta t$) and the capacitance of \SI{20}{\pico \farad} it resulted a reference current of $i_0 = \SI{160}{\milli \ampere}$.
+%The dimension of the switching transistors, which represent a voltage controlled current source, determines the maximum current flowing.
+%This current source is controlled by a digital signal which determines it to be fully open or to be closed, as a switch.
+As simulations showed, a reference current of $\SI{151}{\milli \ampere}$ could be established with a dimension of the voltage controlled current source, high side switch, of UGW = 100 \si{\micro \meter} and gate finger number of eight.
+Hence the gate periphery for the reference current source is \SI{800}{\micro \meter}.
+To ensure proper switching the driver circuit dimension had to be optimized.
+Since the driver circuit worked as a current source, the dimension of the transistors and resistors were tuned to achieve a proper current to switch the power transistors fast and efficient.
+The dimension of the driver transistors were approximately a quarter of the power transistors, the switching high and low side transistor.
+The resistor values were achieved by tuning with respect to power consumption.
+Further details on the driver circuit and its properties, see \cite{MaksimovicPaper}.
+The schematic is designed with \gls{ab:ads}, see Appendix \ref{app:schematic}.
+As the dimension of the power stage scales with the factor of two so the driver circuit dimension do.
 
 \section{Circuit design summary}
-The speed of the switches is crucial as a broadband signal should be synthesized.
-Using a well known concept got the advantage of verification, validation and knowing the drawbacks.
-In addition to this it was possible to use the work of a former employee, which makes it easier to realize, since a new MMIC desing was not in the scope of this thesis.\\
-\textit{Drawbacks, problems, challenges.}
-Same realisation problems and difficulties: Problem of BANDWIDTH, Vpp of control signal (5V pp for GaN transistors), high side driver, no complementary transistors available in III-V technology, low loss driver, high speed driver, digital control driver, too high energy consumption (stability???)
-\textbf{bandwidth limitation}
-\textit{The lower bound is determined by the sampling time (inverse of the sampling frequency) and the smallest current achieved with the dimensioned transistors.
- The smallest achievable current times the smallest sampling time (highest sampling frequency) determine the smallest absolute slope achievable. \\
-% \textbf{Is every signal possible to create? a rect signal has too steep flanks to create. The signal bandwidth ranges from DC to 6 GHz but what is the amplitude range? Is there a limitation regarding the amplitude?}
-\\
-The smallest current is determined by the dimension of the transistor, which drives into saturation. 
-The smallest saturated current is determined by the push-pull transistor geometry, here: 532 mA.}
-The dimension of the switching transistors, which represent a voltage controlled current source, determines the maximum current flowing.
-This current source is controlled by a digital signal which determines it to be fully open or to be closed, as a switch.
-Therefore the current is not controlled by the transistor itself, it flows at its maximum or it does not flow anyway.
-This dimension determines the slope of the resulting voltage steps.
-A small transistor dimension could synthesize signals to a very low signal frequency while a bigger one would fully charge the output capacitor which will clip the output signal.
-
+As no complementary transistors were available in III-V technology a proper driver circuit had to be investigated.
+Further the speed of the switches was crucial as a broadband signal should be synthesized, which led to the implementation of a known concept \cite{MaksimovicPaper} for the driver circuit.
+A low loss, high speed, digital controlled driver circuit was implemented.
+Using this concept had the advantage of verification and validation.
+It was difficult to determine the reference current since the switching is not ideal, a leakage current through the driver circuit occurs and the current had to be probed in the transient state.
+The problem of not perfect switching is, that the channel is opened and closed slowly in comparison to an ideal switch.
+This increase the current with the increase of charges flowing to the transistors gate.
+Therefore the reference current is time-averaged.
+The circuit design and simulation combines the dc state with the rf state.
+For a dc simulation the current through a capacitor is zero.
+Further the loaded voltage controlled current source was not defined for the given output load.
+The dimension of the used components determined the resulting voltage step.
+A typical (draw-back) contradiction was a small transistor dimension could synthesize signals to a very low signal frequency while a bigger one would fully charge the output capacitor which will clip the output signal, for a given oversampling ratio.
+Because then the sampling time is fixed.
 If the transistor dimension is chosen to be bigger, the higher signal frequency could be synthesized with a decent voltage swing but the low signal frequencies would turn into a rectangular shape. 
+This problem restricted the signal bandwidth to be smaller than from \gls{ab:dc} to \SI{6}{\GHz}.
 
-In contrast to the small one a bigger one will be able to synthesize a signal at 6GHz due to the fact that the amplitude would be moderate.
-This is one problem which restrict the signal bandwidth to a smaller one than the \gls{ab:dc} to \SI{6}{\GHz}.
+%In contrast to the small one a bigger one will be able to synthesize a signal at 6GHz due to the fact that the amplitude would be moderate.
+
+%The smallest current is determined by the dimension of the transistor, which drives into saturation. 
+%The smallest saturated current is determined by the push-pull transistor geometry, here: 532 mA.}

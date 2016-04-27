@@ -59,6 +59,7 @@
 \glossaryentry{GaN?\glossentry{ab:gan}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{HEMT?\glossentry{ab:hemt}|setentrycounter[]{page}\glsnumberformat}{15}
 \glossaryentry{GaN?\glossentry{ab:gan}|setentrycounter[]{page}\glsnumberformat}{16}
+\glossaryentry{ADS?\glossentry{ab:ads}|setentrycounter[]{page}\glsnumberformat}{17}
 \glossaryentry{DC?\glossentry{ab:dc}|setentrycounter[]{page}\glsnumberformat}{17}
 \glossaryentry{ADS?\glossentry{ab:ads}|setentrycounter[]{page}\glsnumberformat}{19}
 \glossaryentry{DAC?\glossentry{ab:dac}|setentrycounter[]{page}\glsnumberformat}{20}
@@ -108,3 +109,4 @@
 \glossaryentry{DUT?\glossentry{ab:dut}|setentrycounter[]{page}\glsnumberformat}{41}
 \glossaryentry{DUT?\glossentry{ab:dut}|setentrycounter[]{page}\glsnumberformat}{42}
 \glossaryentry{MMIC?\glossentry{ab:mmic}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{ADS?\glossentry{ab:ads}|setentrycounter[]{page}\glsnumberformat}{54}
