@@ -74,7 +74,9 @@ The frequency dispersion effect on the input capacitance of the \gls{ab:gan} \gl
 \end{figure}
 
 It yielded an input capacitance of nearly \SI{22}{\pico \farad}.
-The simulated transistor model was specified as a large signal model, this is seen in figure 3.3 as frequency dispersion effects appeared for frequencies beyond \SI{1}{\giga \hertz}.
+The simulated transistor model was specified as a large signal model, as seen in Figure \ref{fig:inputCap_log} for frequencies beyond \SI{1}{\giga \hertz}.
+Frequency dispersion and other parasitic effects appeared, which could not be investigated due to the limited scope of this thesis.
+
 %
 %Since the input capacitance can be assumed as 
 %\begin{equation}
@@ -87,7 +89,7 @@ The simulated transistor model was specified as a large signal model, this is se
 %\end{equation}
 %
 %and therefore for high frequencies, the capacitance is decreasing due to decreasing dielectric constant for \gls{ab:gan} \cite{GaNBook},p.7. % pdf page 33
-Degrading capacitance due to non-linearities.
+%Degrading capacitance due to non-linearities.
 
 %Due to the non-linearity of the transistor model \cite{vitanovnon}
 %The frequency dependent input impedance [\textbf{REFERENCE}], which corresponds to the load impedance of the designed Riemann pump circuit, is determined by S-parameter simulations.
@@ -95,7 +97,7 @@ Degrading capacitance due to non-linearities.
 
 %%% 27.04.2016 01:34 Uhr
 \section{Dimension of the used components}
-An output capacitance of nearly \SI{22}{\pico \farad} was found for the output linear power amplifier stage.
+An input capacitance of nearly \SI{22}{\pico \farad} was found for the output linear power amplifier stage.
 Based on this calculation a proper test circuit was investigated.
 To avoid immediate clipping of the signal at the output, the transistor dimension had to fit.
 Since an oversized transistor would charge the capacitance and the signal would be clipped.
