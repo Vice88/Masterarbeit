@@ -2,6 +2,8 @@
 \label{ch:measurement}
 % The heart of the thesis, comprising a presentation of the functioning system and thus the culmination of the work. Important is an analysis of the results as well as a comparison with the state of the art. The reader should understand in this section why you should be awarded a MSc degree.
 
+% to avoid unnecessary much heat and power losses. 
+
 %The aim of the measurement was to show the feasibility to generate (different) signals, using the two bit resolution of the circuit.
 
 The aim of the measurement was to show the generation of different signals.\\

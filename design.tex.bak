@@ -41,6 +41,7 @@ This transistor model \gls{ab:hemt} (IAF\_GE\_MSL\_ A204/IAF\_GaN25\_HEMT\_CS\_L
 For simulation purposes four transistors were modelled in parallel, each with 8 finger and \SI{125}{\micro \metre} gate width to reach the required gate periphery.
 The simulated power amplifier is biased with respect to the maximum \gls{ab:mag}, which led to a bias of $V_{GS} = -1.5 V$ at $V_{DS} = 25 V$.
 After the determination of the bias point, a S-parameter simulation yielded the input reactance of the power amplifier.
+It is to note that four power transistors were simulated for the purpose of a power amplifier, hence this did not respect the broadband application since it was no broadband amplifier.
 Since the capacitive behaviour of the load impedance is of interest, the real part is for now neglected.
 The input reactance $X_c$ is defined as:
 \begin{equation}
@@ -74,7 +75,7 @@ This effect is seen in \ref{fig:inputCap_log} for frequencies beyond \SI{1}{\gig
 	\label{fig:inputCap_log}
 \end{figure}
 
-Nevertheless the complex input impedance yielded a capacitance of nearly \SI{22}{\pico \farad}, which was used for further investigations.
+Nevertheless the complex input impedance yielded a capacitive behaviour with a value of nearly \SI{22}{\pico \farad}, which was used for further investigations.
 The simulated transistor model was specified as a large signal model, as seen in Figure \ref{fig:inputCap_log} for frequencies beyond \SI{1}{\giga \hertz}.
 Frequency dispersion and other parasitic effects appeared, which could not be investigated due to the limited scope of this thesis.
 
@@ -161,6 +162,8 @@ Because then the sampling time is fixed.
 If the transistor dimension is chosen to be bigger, the higher signal frequency could be synthesized with a decent voltage swing but the low signal frequencies would turn into a rectangular shape. 
 This problem restricted the signal bandwidth to be smaller than from \gls{ab:dc} to \SI{6}{\GHz}.
 
+%  The components used, were optimized with respect to the signal integrity. 
+%  The dimension of the used components were tuned while simulation to get the desired output signal.
 %In contrast to the small one a bigger one will be able to synthesize a signal at 6GHz due to the fact that the amplitude would be moderate.
 
 %The smallest current is determined by the dimension of the transistor, which drives into saturation. 
