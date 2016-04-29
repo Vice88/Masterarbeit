@@ -15,6 +15,10 @@
 \glossaryentry{$f_{Nyquist}$?\glossentry{sy:fnyquist}|setentrycounter[]{page}\glsnumberformat}{10}
 \glossaryentry{$V_{gs}$?\glossentry{sy:vgs}|setentrycounter[]{page}\glsnumberformat}{13}
 \glossaryentry{$I_{G}$?\glossentry{sy:IG}|setentrycounter[]{page}\glsnumberformat}{13}
+\glossaryentry{$f_{sampling}$?\glossentry{sy:fsampling}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{$V_{dn}$?\glossentry{sy:vdn}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{$V_{dp}$?\glossentry{sy:vdp}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{$V_{dd}$?\glossentry{sy:Vdd}|setentrycounter[]{page}\glsnumberformat}{29}
 \glossaryentry{$V_{dd}$?\glossentry{sy:Vdd}|setentrycounter[]{page}\glsnumberformat}{42}
 \glossaryentry{$V_{dd}$?\glossentry{sy:Vdd}|setentrycounter[]{page}\glsnumberformat}{42}
 \glossaryentry{$V_{dd}$?\glossentry{sy:Vdd}|setentrycounter[]{page}\glsnumberformat}{42}

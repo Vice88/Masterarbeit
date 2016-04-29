@@ -50,8 +50,9 @@ The sequence of chosen slopes, referred to $i_0$ values, is:
 which represents the following encryption:
 \begin{equation}
 000\hspace{.3cm} 010\hspace{.3cm} 101\hspace{.3cm} 111\hspace{.3cm} 111\hspace{.3cm} 101\hspace{.3cm} 010\hspace{.3cm} 000,
-\end{equation}
 \label{eq:RiemannCodeSineWave} 
+\end{equation}
+
 based on the encryption table in Figure \ref{fig:SlopesAndTable}, chapter \ref{ch:fundamentals}.
 The generated Riemann Code consists of eight triplets, where each triplet represents the three bit resolution.
 The quantity of digits in each set, here triplet, increases with the number of bits used for the resolution.
@@ -94,15 +95,15 @@ The signal frequency of \SI{1}{\giga \hertz} represented a lower bound on the fr
 The upper bound of the frequency range is limited to the detectable voltage swing of the amplitude.
 If a voltage swing of \SI{2}{\volt} is still accepted, the upper bound would be a signal frequency of \SI{6}{\GHz} with the presented Riemann Code.
 For lower voltage swings even higher frequencies could be reached.
-In the following the signal integrity is compared in more detail.
+In the following the signal quality is compared in more detail.
 Assuming a sine wave of the form
 
 \begin{equation}
 	v(t)= V_{DC} + \widehat{v} \cdot sin( 2  \pi  f \cdot  t + \phi),
 \end{equation}
-Figure \ref{fig:SineWaveSynthVsTheoretical} illustrates the comparison of this theoretical sine wave (red) with the synthesized signal (black) at frequency of \SI{1}{\GHz}.
+Figure \ref{fig:SineWaveSynthVsTheoretical} illustrates the comparison of this theoretical sine wave (red) with the synthesized signal (black), taken from Figure \ref{fig:7SignalsSameSlopeInOnePlot}, at the frequency of \SI{1}{\GHz}.
 The theoretical sine wave had an amplitude of $\widehat{v} = \SI{7.5}{\volt}$, a signal frequency of $f = \SI{1}{\giga \hertz}$, a phase shift of approximately $\phi = \pi / 4$ and an DC offset of $V_{DC} = \SI{7.5}{\volt}$.
-The synthesized signal (black) is taken from Figure \ref{fig:7SignalsSameSlopeInOnePlot} and fit pretty good to the theoretical one.
+
 
 \begin{figure}[htb!]
    \centering
@@ -113,10 +114,10 @@ The synthesized signal (black) is taken from Figure \ref{fig:7SignalsSameSlopeIn
 % 03:12 Uhr 29.04.2016
 Although the synthesized signal is clipped and the mentioned distortion came into play, the shape looked like a sine wave.
 The \gls{ab:snr} of the synthesized signal was calculated with MatLab and was $SNR = 15$\si{\decibel}.
-The highest \gls{ab:snr} (\SI{32.5}{\decibel}) found was for a sine wave at \SI{6}{\giga \hertz} with an amplitude of $\hat{v} = 1.75 V$, an DC-offset of $V_{DC} = 13 V$ and a phase shift of $\phi = -\pi/8$, see appendix \ref{app:snr}.
-There are the \gls{ab:snr} values presented for the seven different signals of Figure \ref{fig:7SignalsSameSlopeInOnePlot} with their corresponding theoretical wave form parameters.
-
-Figure \ref{fig:SineCompare} highlighted the difference between the synthesized and the theoretical sine wave form in more detail.
+For a first evaluation of the signal quality after digital-to-analog conversion, the spectra were compared.
+The spectrum of a time signal demonstrates the frequency portions which are present in the signal.
+As the spectrum of a clear sine wave only consist of a \gls{ab:dc} component and its first harmonic, it was easy to obtain a comparable quantity compared to the synthesized signal.
+Figure \ref{fig:SineCompare} highlights the difference between the synthesized and the theoretical sine wave form in more detail.
 
 \begin{figure}[htb!]
 	\centering
@@ -125,28 +126,16 @@ Figure \ref{fig:SineCompare} highlighted the difference between the synthesized 
 	\label{fig:SineCompare}
 \end{figure}
 
-A theoretical sine wave is compared to the synthesized one with their corresponding spectra.
-The spectra of signals were a lot easier to compare, in contrast to the time domain signal, with respect to the accuracy.
-%The spectrum of the signal demonstrates how accurate the signal is synthesized compared to a perfectly shaped sine wave. 
-Since the spectrum of a perfect sine wave only consists of a DC part and the harmonic frequency it was easy to check whether the generated signal fit.\\
-On the top left side of Figure \ref{fig:SineCompare} the theoretical sine wave is plotted in time domain. Underneath of it the spectrum presented a frequency portion for the direct component at \SI{0} {\Hz} and a fundamental frequency portion at \SI{1}{\GHz}.
-This Fourier transformation represented the frequency portions of a clear sine wave.\\
-The synthesized sine wave on the top right side fit fairly well to the theoretical one.
-The spectrum of the synthesized signal showed nearly the same behaviour as for the theoretical one.
-Beside the direct component and the fundamental frequency component there were some additional unwanted frequency portions which distorted the signal.
-The maximum distortion was about \SI{1}{\volt} in amplitude at the third harmonic.
- The 2nd to 10th harmonic were at most half of a volt in absolute value of the amplitude.
- \textbf{The calculated \gls{ab:snr} was \SI{15.2}{\decibel}.
- The ideal \gls{ab:sqnr} of the Riemann conversion in this configuration is\SI{27}{\decibel}.}\\
-
-Both compared to a full scale sine wave, yielded a SNR of 22 dB for 1.5 GHz which theoretical limit is 27 dB. % only tuned by frequency not by the set of slopes
-\begin{figure}[htb]
-	\centering
-  \includegraphics[width=0.9\textwidth]{FullSine1GHz.pdf}
-	\caption{calculated SNR for frequency of 1 GHz}
-	\label{fig:SNRSine1GHz}
-\end{figure}
-
+On the top left side the theoretical sine wave is plotted in time domain. 
+Underneath of it the spectrum presented a frequency portion for the direct component at \SI{0} {\Hz} and a fundamental frequency portion at \SI{1}{\GHz}. 
+The spectrum of the synthesized sine wave on the top right side demonstrates a few distortions at higher frequencies.
+Beside the direct and fundamental frequency component there were some additional unwanted frequency portions which distorted the signal.
+The comparison of the spectra was a good indicator for a first error estimation.
+This optical measure made it easy to evaluate the signal quality since the unwanted distortions were clear visible.
+At the third harmonic the signal deviates by 14\% from the clear sine, as for the 2nd to 10th harmonic the deviation is up to 7\%.
+As already mentioned the calculated \gls{ab:snr} was \SI{15.2}{\decibel} of a theoretical achievable \SI{27}{\decibel}, since this signal was scaled for the full scale.
+Compared to a full scale sine wave, a \gls{ab:snr} of \SI{22}{\decibel} could be achieved for a frequency of \SI{1.5}{\giga \hertz} with the presented Riemann Code in equation \ref{eq:RiemannCodeSineWave}.
+Figure \ref{fig:SNRSine1.5GHz} demonstrates this synthesized signal with its \gls{ab:snr}.
 
 \begin{figure}[htb]
 	\centering
@@ -155,18 +144,13 @@ Both compared to a full scale sine wave, yielded a SNR of 22 dB for 1.5 GHz whic
 	\label{fig:SNRSine1.5GHz}
 \end{figure}
 
-
-As the sampling frequency could be changed to tune the signal frequency of the output signal it was also possible to change the input control sequence to manipulate the shape of the signal.
-% A limited number of different slope combinations were provided due to the restriction of the resolution.
-Due to the three bit resolution there was a limited number of different slope combinations to synthesize a sine wave.
-In fact the limit was bound to six different combinations for synthesizing  the sine wave, namely: 75, 73, 71, 53, 51 ,31 with respect to the $i_0$ values.
-The first digit indicated the slope of the first sampling point and the second digit of the second sampling point of a rising edge from a sine wave, respectively. 
-The falling edge of the sine wave consisted of the negative values of the mentioned slopes.
-% A oversampling ratio of four restricted the number of combinations to six.\\
-
-%This two slopes represent the rising edge of the sine wave and their opposite negative values the falling edge of the sine wave.
-%With eight different slopes representing the full spectrum between the most negative and the most positive one, exactly four slopes can represent a rising edge of a sine wave, $+7i_0, +5i_0, +3i_0, +1i_0$.
-The six different combinations were plotted in Figure \ref{fig:SameSigBWDifSlope} over two periods for the signal frequency of \SI{3}{\GHz}. 
+Further details on the \gls{ab:snr} calculation for various signals, can be found in appendix \ref{app:snr}.
+In addition to tune the amplitude via the absolute sampling intervals, it was also possible to adapt the input control sequence, hence the sequence of chosen slopes to shape the output signal.
+The three bit resolution restricted the quantity of different slope combinations to six for synthesizing a sine wave.
+Considering only two sampling intervals to construct the rising edge of the positive half sine, the six combinations were: 75, 73, 71, 53, 51 ,31 with respect to the $i_0$ values.
+As these relative slopes were used for the rising edge, the counterparts (negative values) represent the falling edge.
+The first digit indicated the slope of the first sampling interval and the second digit of the second, respectively. 
+These six combinations were plotted in Figure \ref{fig:SameSigBWDifSlope} over two periods for the signal frequency of \SI{3}{\GHz}. 
 
 \begin{figure}[htb!]
 	\centering
@@ -175,34 +159,27 @@ The six different combinations were plotted in Figure \ref{fig:SameSigBWDifSlope
 	\label{fig:SameSigBWDifSlope}
 \end{figure}
 
-Figure \ref{fig:SameSigBWDifSlope} presented the different shapes of a synthesized sine wave for a frequency of \SI{3}{\GHz}.
-This was utilized to calculate the Riemann Code which fit best to the theoretical signal.
-
+Here the effect of the Riemann Code became clear, since the change of the input control will also change the shape of the output signal.
+This was utilized to calculate the Riemann Code with an algorithm to fit the output to the desired signal.
+The algorithm had to be processed within the settling time of the \gls{ab:dac} to ensure real time conversion.
 
 \subsection{Full wave rectified sine wave generation in the time domain}
-Beside the generation of the full sine wave, the full wave rectified sine wave was simulated as well.\\
-Based on the same approximation principle as demonstrated in figure \ref{fig:RiemannCodeGenerationSineWave}, the corresponding Riemann Code for the rectified sine was generated, namely:
-
-%%%%%%%%%%%% this corresponds to 73 -3 -7 -7 -3 3 7 no difference to sine wave
-%\begin{equation}
-% 000\hspace{.3cm} 010\hspace{.3cm} 101\hspace{.3cm} 111\hspace{.3cm} 000\hspace{.3cm} 010\hspace{.3cm} 101\hspace{.3cm} 111.
-%\end{equation}
-%\label{eq:RiemannCodeRectSine}
-
+In addition to the sine wave, here a full wave rectified sine wave was simulated.
+Based on the same approximation principle as demonstrated in figure \ref{fig:RiemannCodeGenerationSineWave}, the corresponding Riemann Code for the rectified sine was generated and is stated in equation \ref{eq:RiemannCodeRectSine}.
 
 %% THIS CORRESPONDS TO 7 5 3 1 -1 -3 -5 -7 
 %% SINCE THIS IS ENOUGH TO SYNTHESIZE A PERIOD
 \begin{equation}
  000\hspace{.3cm} 001\hspace{.3cm} 010\hspace{.3cm} 011\hspace{.3cm} 100\hspace{.3cm} 101\hspace{.3cm} 110\hspace{.3cm} 111.
-\end{equation}
 \label{eq:RiemannCodeRectSine}
+\end{equation}
 
-As the rectified sine wave consisted only of the positive wave form over the full period, the oversampling ratio is performed on half of a sine wave.
-This resulted in a more precise wave form, since the rising and falling edges could be synthesized in more detail.
-For the sine wave the rising edge resulted in two different slopes, which was doubled for the rectified sine wave.
-Hence the rectified sine wave consisted of eight sampling points, while the corresponding positive half of a sine wave only consisted of four sampling points.
+As the rectified sine wave consisted only of the positive wave for a full period, the oversampling ratio is performed on half of a sine wave.
+This resulted in a more precise wave form which resulted in an \gls{ab:osr} of eight (r=3) compared to the full sine wave.
+Here the number of slopes used for synthesizing the rising edge was doubled and hence four different slopes could be used.
+Therefore the rectified sine wave consisted of eight sampling points, while the corresponding positive half of a sine wave only consisted of four sampling points.
 The rectified sine wave exhibited the sequence of all eight different slopes, from the biggest positive to the biggest negative slope.\\
-A few signals with different frequencies were simulated and plotted in figure \ref{fig:DiffSigBWSameSlope}, which used this Riemann Code.
+Signals in the frequency range of \SI{500}{\mega \hertz} to \SI{6}{\giga \hertz} were generated and  are demonstrated in Figure \ref{fig:DiffSigBWSameSlope}.
 
 \begin{figure}[htb!]
 	\centering
@@ -211,31 +188,20 @@ A few signals with different frequencies were simulated and plotted in figure \r
 	\label{fig:DiffSigBWSameSlope}
 \end{figure}
 
-As expected the rectified sine wave fit very good to the theoretical.
-The rectified sine wave was synthesized in more detail, since the oversampling ratio were doubled effectively.
-The oversampling ratio of four for the full sine wave correlated to eight sampling points for the whole period.
-Since the sine wave consisted of a positive and a negative part, only four sampling points were used for the positive wave.
-As the rectified sine only consisted of one positive part, eight sampling points could be used to synthesize this positive wave.
-Therefore this result reflected the behaviour for a sine wave if the oversampling ratio would be doubled.
-Too big absolute sampling times drove the signal into clipping for the generation of a rectified sine wave.
+The shapes of the signals with fundamental frequencies \SI{2}{\giga \hertz} to \SI{6}{\giga \hertz} fit very good to a rectified sine..
+The issue of signal clipping was the same as mentioned earlier.
 This effect was seen in Figure \ref{fig:DiffSigBWSameSlope} for the blue curve which had a fundamental frequency of \SI{500}{\mega \hertz}.
-Since the absolute maximum voltage which could be reached was the supply voltage.
-The shapes of the signals with fundamental frequencies \SI{2}{\giga \hertz} to \SI{6}{\giga \hertz} fit very good to a rectified sine, as seen in Figure \ref{fig:DiffSigBWSameSlope}.
-The same issues, drawbacks and limits were presented here as for the full sine wave.
-All simulations done to synthesize various signals confirmed the proof of concept.
-
-
+Further investigations on the \gls{ab:snr} were omitted due to the limited scope of this thesis.
 
 \subsection{Triangular wave generation in the time domain}
-Beside the most common signals another signal was synthesized.
+To show the feasibility to generate different signals another different signal was investigated.
 A triangular signal was chosen to validate the feasibility of generating arbitrary waveforms.
-The wave form of a triangular signal represented the push-pull stage charging and discharging a capacitor similarly.
-As the time for charging and discharging was the same, a good fit was achieved.\\
+The wave form of a triangular signal is generated by charging and discharging a capacitor for the same period of time.
 All simulations so far were run with a three bit resolution of the realised circuit.
-These three bit resolution represented eight different slopes, and therefore for a similarly charge and discharge process four different slopes could be used.
-These four slopes were +7, +5, +3, +1 for the charging process and their counterparts -7, -5, -3, -1 for the discharging.
-Hence the sequences of slopes were named: 11, 33, 55 and 77, with respect to $i_0$ values.
-Figure \ref{fig:DiffSlopeSameBWTriangular} demonstrated the four different combinations for synthesizing the triangular wave form.
+These three bit resolution represented eight different slopes and therefore for a equally charge and discharge process four different slopes could be used.
+These four slopes were +7, +5, +3, +1 for the charging process and their counterparts -7, -5, -3, -1 for discharging.
+Hence the sequences of slopes were named: 77,55,33 and 11 with respect to $i_0$ values.
+Figure \ref{fig:DiffSlopeSameBWTriangular} demonstrates the four different combinations for synthesizing a triangular wave form.
 
 \begin{figure}[htb!]
 	\centering
@@ -244,13 +210,11 @@ Figure \ref{fig:DiffSlopeSameBWTriangular} demonstrated the four different combi
 	\label{fig:DiffSlopeSameBWTriangular}
 \end{figure}
 
-The signals were distinguished by the set of slopes used for synthesizing this shape.
-The fundamental frequency was set to \SI{2}{\giga \hertz}, representative for the frequency range of \SI{500}{\mega \hertz} to \SI{6}{\giga \hertz}.
+The fundamental frequency was set to \SI{2}{\giga \hertz} representative for the frequency range of \SI{500}{\mega \hertz} to \SI{6}{\giga \hertz}.
 Only the wave form for the biggest slope 77 seemed to shape like a rectified sine while the other three signals seemed to fit to a triangular wave very nicely.
-This effect was caused, as mentioned earlier, by the sampling time and the high current values.
-This led to a clipping effect at the maximum voltage.\\
+This effect was caused, as mentioned earlier, by the sampling interval and the high current values, which led to signal clipping.
 Representative for the four combinations to synthesize this triangular signal wave form, 
-figure \ref{fig:DiffSigBWSameSlopeTriangular} demonstrated for the slope of 33, the frequency varying signals from \SI{500}{\mega \hertz} to \SI{6}{\giga \hertz}.
+figure \ref{fig:DiffSigBWSameSlopeTriangular} demonstrates the frequency varying signals from \SI{500}{\mega \hertz} to \SI{6}{\giga \hertz} for a slope of 33.
 
 
 \begin{figure}[htb!]
@@ -259,8 +223,6 @@ figure \ref{fig:DiffSigBWSameSlopeTriangular} demonstrated for the slope of 33, 
 	\caption{Triangular signal with same slope but different signal bandwidth 3GHz}
 	\label{fig:DiffSigBWSameSlopeTriangular}
 \end{figure}
-
-
 
 %The Code for the generation of the triangular signal at the output is:
 %\textbf{this is not the correct code!!}
@@ -271,49 +233,61 @@ figure \ref{fig:DiffSigBWSameSlopeTriangular} demonstrated for the slope of 33, 
 
 % short definition of stability, what cause oscillation, how to measure stability -> plot stability circles for the schematic%
 \section{Stability analysis of the realised circuit}
-To guarantee the proper function of the circuit a short stability analysis was performed.
+To guarantee a proper function of the circuit a short stability analysis was performed.
 This analysis was necessary to check if the circuit oscillates.
 To prevent the circuit to take damage this oscillation had to be avoided.
-This analysis was important to ensure that the \gls{ab:dut} was stable for the whole frequency range used.
-% The analysis consisted of the measurement of S-parameters at critical points in the circuit.
- Then the complex impedance was calculated and checked if it could start an oscillation.
-%The complex impedance at specific points in the circuit was measured.
-
-To check the stability the real part of the impedance had to be positive.
+It was checked if the \gls{ab:dut} was stable for the whole frequency range used.
+Using a S-parameter simulation the complex impedance at various critical points was calculated.
+One condition to start an oscillation is a feedback path which existed for the designed circuit.
+The driver circuit for the high side switch is connected to the output and hence the feedback is established.
+To avoid unwanted oscillation the real part of the complex impedance had to be positive for the whole frequency range.
 A basic definition of passive elements were that they have a reflection coefficient magnitude less than unity.
 Checking the input reflection coefficient, the values had to be inside the unity circle.
-Therefore no negative resistance would be allowed to occur since that can lead to unwanted amplification and oscillation which can damage the circuit.
+Therefore no negative resistance would be allowed to occur since that can lead to unwanted amplification and oscillation which can damage the circuit \cite{GilmoreR.2003}.
 Because the real part of the impedance at all measurement points were positive for the whole frequency range, the circuit seemed to be stable.
 The stability check was performed within the \gls{ab:ads} tool. 
 
+\section{Power consumption analysis of the realised circuit}
+As the concept is designed for the purpose to implement in mobile communication systems the power consumption is crucial.
+Since the energy storage of mobile devices is limited, it is important to get a decent power dissipation for the test circuit.
+A short analysis should give an insight to the expected power consumption of the designed test circuit.
+Due to the expected switching losses:
+%$ P_{cond} = R_{DS,on}dI_0^2 \propto R_{DS,on} $ \\
+\begin{equation}
+ P_{sw} = \frac{1}{2} V_{in}I_0(t_{on}+t_{off})f_{sw} \propto f_{sw}
+ \label{eq:swtichloss}
+\end{equation}
 
-% As switch mode power amplifier were used this was viable for the proper function of the circuit. 
-\section{Energy consumption analysis of the realised circuit}
-As the concept was designed for the use in mobile communication, it could be implemented in mobile devices.
-Since the energy storage of mobile devices is limited, it is important to get a decent power dissipation for the whole circuit.
+the power consumption scales linear with the switching frequency, here \gls{sy:fsampling}.
+Simulations confirmed this assumption for switching the smallest bit of the Riemann Pump.
+The used input code was a sequence of alternating bits, since its a different power consumption for switching $+1 i_0$ than for $-1 i_0$.
+Switching the high side transistor to the off state results in a leakage current over the high sides driver circuit.
+A trade off between switching speed and power consumption resulted.
+For an increase in the switching speed, hence an increase of the signal bandwidth, the power consumption also linearly increase.
+In addition to this, the power consumption of the driver circuit also increases with the switching speed, as the dimensions of the used components have to be adapted.
+The used driver circuit was optimized to reduce the power consumption for a maximum frequency of \SI{100}{\mega \hertz}, as it was implemented in a power application system.
+In Table \ref{tab:switchloss} the losses are illustrated with the corresponding sampling (switching) frequency of the used configuration.
 
-$ P_{cond} = R_{DS,on}dI_0^2 \propto R_{DS,on} $ \\
-$ P_{sw} = \frac{1}{2} V_{in}I_0(t_{on}+t_{off})f_{sw} \propto f_{sw} $ 
+\begin{table}[ht]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+$f_{sampling}$ {[}GHz{]} & $P_{diss}$ {[}W{]} \\ \hline
+4                    & 3.982              \\ \hline
+8                    & 4.259              \\ \hline
+16                   & 4.778              \\ \hline
+24                   & 5.011              \\ \hline
+32                   & 5.144              \\ \hline
+40                   & 5.264              \\ \hline
+48                   & 5.354              \\ \hline
+\end{tabular}
+\caption{Overall power losses for sampling rate}
+\label{tab:switchloss}
+\end{table}
 
-In addition to the stability analysis the energy consumption analysis was important with respect to the use in mobile devices.
-The losses in the circuit were those static losses while the switches plus driver is in one state.
-The dynamic losses were those which occur during the switching...
-Definition, expectations, simulations...
-
-%Due to the idea to use the presented topic for mobile communication it could be implemented in mobile devices, although this thesis only handles the device for the base station. 
-% If it could be used in a mobile device the energy consumption is critical.
-%\\
-%The energy consumption of the designed circuit in chapter \ref{ch:design} is simulated with \gls{ab:ads}.\\s
-There were the trade off between the power consumption of the high side switching transistor and the switching behaviour.
-Since the switching process needs to be very fast a high current is needed.
-This are losses.
-The driver circuit has to be optimized to reduce the energy consumption while maintaining the the switching process correctly.
-If the correct hard 
-\\
- For the chips used for the demonstrator refer to the work of Stephan Maroldt who states, that the power consumption is divided into static and dynamic ones. The switching losses are greater than the static ones.
-% switch voltage for on/off state, switch time, static losses and dynamic losses.
-In fact of the high energy consumption, the realized DAC is designed for the integration in a base station.
-
+The used configuration referred to the one bit Riemann Pump consisted of two power transistors, for the high and low side switch, with a gate periphery of \SI{800}{\micro \meter}, four driver transistors each with \SI{200}{\micro \meter} gate periphery and the bias voltages of \gls{sy:vdn} = \SI{-5}{\volt}, \gls{sy:vdp} = \SI{0}{\volt} and \gls{sy:Vdd} = \SI{15}{\volt}.
+This configuration can be seen in appendix \ref{app:schematic} on the right hand side.
+%As stated in the fundamentals the energy consumption for a dac with 17 ENOB and a sampling rate of 10G will result in several kilo watts, this dac also consumed so much. As the following bits, here power transistors scale with a factor of two it yielded a consumption for 17 bit at 10 G of: sum(2^i), i =0:16 = 131071 i0 = 131071*4W = 400kW --> reference to DAC used in the paper for fig 2.2
 \section{Proof of concept simulation with existing components}
 \label{ch:ProofOfConceptWithExistingComponents}
 The detailed modelling and simulation of the designed circuit under real conditions, considering all loss effects would go beyond the scope of this thesis. Therefore a keep it small and simple approach was chosen.\\   
@@ -348,6 +322,12 @@ To compare the results simulated here and measured in chapter \ref{ch:measuremen
 	\item the energy consumption is in the range for base stations
 	\item dut is not optimal w.r.t. efficiency
 \end{enumerate}
+
+The highest \gls{ab:snr} (\SI{32.5}{\decibel}) found was for a sine wave at \SI{6}{\giga \hertz} with an amplitude of $\hat{v} = 1.75 V$, an DC-offset of $V_{DC} = 13 V$ and a phase shift of $\phi = -\pi/8$, see appendix \ref{app:snr}.
+There are the \gls{ab:snr} values presented for the seven different signals of Figure \ref{fig:7SignalsSameSlopeInOnePlot} with their corresponding theoretical wave form parameters.
+
+The demonstrated simulations already proofed the feasibility to generate various signals.
+Some limitations taken into account 
 
 %Since the digital to analog conversion always introduces noise to the signal, refer to chapter \ref{ch:fundamentals}, the fit was not perfect. 
 
