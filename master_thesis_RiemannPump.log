@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  29 APR 2016 03:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  29 APR 2016 13:15
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -1674,7 +1674,7 @@ File: graphics/simulation/inputCap_log.pdf Graphic file (type pdf)
 
 <use graphics/simulation/inputCap_log.pdf>
 Package pdftex.def Info: graphics/simulation/inputCap_log.pdf used on input lin
-e 73.
+e 74.
 (pdftex.def)             Requested size: 320.09355pt x 226.19385pt.
  [15 <./graphics/simulation/inputReactance.pdf>] [16 <./graphics/simulation/inp
 utCap_log.pdf>]) [17] (simulation.tex [18
@@ -2072,7 +2072,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  40013 strings out of 493673
  771220 string characters out of 3146818
- 860592 words of memory out of 3000000
+ 860593 words of memory out of 3000000
  42364 multiletter control sequences out of 15000+200000
  68342 words of font info for 233 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -2089,7 +2089,7 @@ TEX/fonts/type1/urw/helvetic/uhvr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/t
 imes/utmb8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinP
 rogram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type
 1/urw/times/utmri8a.pfb>
-Output written on master_thesis_RiemannPump.pdf (74 pages, 51079033 bytes).
+Output written on master_thesis_RiemannPump.pdf (74 pages, 51079186 bytes).
 PDF statistics:
  1748 PDF objects out of 2073 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

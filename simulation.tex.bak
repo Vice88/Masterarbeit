@@ -110,7 +110,7 @@ The synthesized signal (black) is taken from Figure \ref{fig:7SignalsSameSlopeIn
    \caption{Synthesized sine wave with the theoretical sine wave}
    \label{fig:SineWaveSynthVsTheoretical}
 \end{figure}
-% 28.04.2016 19:46
+% 03:12 Uhr 29.04.2016
 Although the synthesized signal is clipped and the mentioned distortion came into play, the shape looked like a sine wave.
 The \gls{ab:snr} of the synthesized signal was calculated with MatLab and was $SNR = 15$\si{\decibel}.
 The highest \gls{ab:snr} (\SI{32.5}{\decibel}) found was for a sine wave at \SI{6}{\giga \hertz} with an amplitude of $\hat{v} = 1.75 V$, an DC-offset of $V_{DC} = 13 V$ and a phase shift of $\phi = -\pi/8$, see appendix \ref{app:snr}.
@@ -138,7 +138,24 @@ The maximum distortion was about \SI{1}{\volt} in amplitude at the third harmoni
  The 2nd to 10th harmonic were at most half of a volt in absolute value of the amplitude.
  \textbf{The calculated \gls{ab:snr} was \SI{15.2}{\decibel}.
  The ideal \gls{ab:sqnr} of the Riemann conversion in this configuration is\SI{27}{\decibel}.}\\
-% The accuracy is very good. This can be verified by the signal to noise ratio -> explain, state the SNR}
+
+Both compared to a full scale sine wave, yielded a SNR of 22 dB for 1.5 GHz which theoretical limit is 27 dB. % only tuned by frequency not by the set of slopes
+\begin{figure}[htb]
+	\centering
+  \includegraphics[width=0.9\textwidth]{FullSine1GHz.pdf}
+	\caption{calculated SNR for frequency of 1 GHz}
+	\label{fig:SNRSine1GHz}
+\end{figure}
+
+
+\begin{figure}[htb]
+	\centering
+  \includegraphics[width=0.9\textwidth]{FullSine15GHz.pdf}
+	\caption{calculated SNR for frequency of 1.5 GHz}
+	\label{fig:SNRSine1.5GHz}
+\end{figure}
+
+
 As the sampling frequency could be changed to tune the signal frequency of the output signal it was also possible to change the input control sequence to manipulate the shape of the signal.
 % A limited number of different slope combinations were provided due to the restriction of the resolution.
 Due to the three bit resolution there was a limited number of different slope combinations to synthesize a sine wave.

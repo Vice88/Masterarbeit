@@ -3,7 +3,7 @@
 % \textit{Description of the approach you have taken to solve the scientific or technical problem which you were posed. Outline the design, the methodology and overall structure of your experimental approach}\\
 The goal was to design an arbitrary waveform generator for a signal bandwidth of \SI{6}{\giga \hertz}.
 For the implementation in a base station, the most promising technology was \gls{ab:gan}.
-\gls{ab:gan} \glspl{ab:hemt} were used for the high speed switches, which served as a voltage controlled current source.
+\gls{ab:gan} \glspl{ab:hemt} were used for the high speed switches, which served as voltage controlled current sources.
 Based on the chosen technology a suitable push-pull concept were found \cite{MaksimovicPaper} to show the feasibility of the concept.
 The attention was rather drawn to proof the concept than to optimize for energy consumption or efficiency.
 In the design process a suitable load impedance and the right dimension of the used components had to be found.
@@ -30,11 +30,11 @@ One possible approach to design a Riemann Pump is shown in Fig. \ref{fig:Schemat
 On the left side, as marked, is the driver circuit which was needed to switch the high side transistor without dissipating a huge amount of power.
 As the timing is crucial for the switching process, the driver concept was implemented for the low side switch too.
 The schematic shows the first approach for realizing a Riemann Pump in \gls{ab:gan} technology.
-The next step was the identification and calculation of a proper output capacitance, since it represent the input of a linear power amplifier where the desired signal is synthesized.
+The next step was the identification and calculation of a proper output capacitance, since it represented the input of a linear power amplifier where the desired signal is synthesized.
  
-\section{Identification of the load impedance}
-The signal is generated at the input stage of a linear power amplifier, as described in \ref{ch:fundamentals}.
-This input stage is modelled with a \gls{ab:gan} \gls{ab:hemt} with a gate length of \SI{0.25}{\micro \meter}.
+\section{Identification of the load impedance} % VERBESSERN!
+The signal is generated at the input stage of a linear power amplifier, as described in chapter \ref{ch:fundamentals}.
+This output stage is modelled with a \gls{ab:gan} \gls{ab:hemt} with a gate length of \SI{0.25}{\micro \meter}.
 Considering a \SI{20}{\watt} power amplifier for transmission purposes, led to a \gls{ab:gan} \gls{ab:hemt} with a total gate periphery of \SI{4}{\milli \metre}, based on an approximation for the power density of \SI[per-mode=fraction]{5}{\watt\per\milli\metre} gate periphery  \cite{Maroldt2010}, \cite{GaNBook}.
 Simulations confirmed this approximation as an output power density of \SI[per-mode=fraction]{5.6}{\watt\per\milli\metre} at $V_{DS} = 25 V$ was measured.
 This transistor model \gls{ab:hemt} (IAF\_GE\_MSL\_ A204/IAF\_GaN25\_HEMT\_CS\_LS\_SHfull) used in \gls{ab:ads} were modelled at the \gls{ab:iaf}\cite{model} and is based on a state-space approach. 
@@ -48,7 +48,7 @@ The input reactance $X_c$ is defined as:
 	X_c = -\frac{1}{\omega C},
 \end{equation}
 \label{eq:reactance}
-and is plotted in Figure \ref{fig:inputReactance} over the frequency range from \gls{ab:dc} to \SI{6}{\giga \hertz} in a logarithmic scale.
+and is plotted in Figure \ref{fig:inputReactance} over the frequency range from nearly \gls{ab:dc} to \SI{6}{\giga \hertz} in a logarithmic scale.
 
 \begin{figure}[ht]
 	\centering
@@ -57,7 +57,8 @@ and is plotted in Figure \ref{fig:inputReactance} over the frequency range from 
 	\label{fig:inputReactance}
 \end{figure}
 
-As the reactance of the simulated power amplifier is nearly constant for the frequency of \SI{1}{\giga \hertz} and beyond, this led to the assumption that frequency dispersion effects came into play.
+As the reactance of the simulated power amplifier is nearly constant for the frequency of \SI{1}{\giga \hertz} and beyond, this showed the impact of parasitic effects.
+For frequencies in the \si{\giga \hertz} range the parasitic inductances reduced the reactance.
 Interpreting the minus sign only for the phase delay, since it is capacitive, the absolute value of the reactance decreases exponentially with the frequency up to approximately \SI{1}{\giga \hertz}.
 Solving the equations \ref{eq:reactance} absolute value for the capacitance yielded:
 
@@ -101,8 +102,7 @@ Frequency dispersion and other parasitic effects appeared, which could not be in
 \section{Dimension of the used components}
 An input capacitance of nearly \SI{22}{\pico \farad} was found for the output linear power amplifier stage.
 Based on this calculation a proper test circuit was investigated.
-To avoid immediate clipping of the signal at the output, the transistor dimension had to fit.
-Since an oversized transistor would charge the capacitance and the signal would be clipped.
+To avoid immediate clipping of the signal at the output, the transistor dimension had to fit, since an oversized transistor would fully charge the capacitance and the signal would be clipped.
 Hence a transistor dimension was chosen which allowed to synthesize a decent signal.
 To synthesize a sine wave for the frequency of \SI{6}{\giga \hertz} with a voltage swing of $V_{swing} = 4V$, the two greatest slopes were chosen.
 In the presented concept the resolution is three bit, hence eight different current slopes could be generated.
@@ -140,7 +140,7 @@ To ensure proper switching the driver circuit dimension had to be optimized.
 Since the driver circuit worked as a current source, the dimension of the transistors and resistors were tuned to achieve a proper current to switch the power transistors fast and efficient.
 The dimension of the driver transistors were approximately a quarter of the power transistors, the switching high and low side transistor.
 The resistor values were achieved by tuning with respect to power consumption.
-Further details on the driver circuit and its properties, see \cite{MaksimovicPaper}.
+Further details on the driver circuit and its properties are stated in \cite{MaksimovicPaper}.
 The schematic is designed with \gls{ab:ads}, see Appendix \ref{app:schematic}.
 As the dimension of the power stage scales with the factor of two so the driver circuit dimension do.
 
