@@ -217,7 +217,8 @@ To increase the performance of the \gls{ab:dac} an \gls{ab:osr} is introduced \c
 OSR = \frac{f_{sampling}}{2 f_{signal,max}}.
 \end{equation}
 
-Tuning these two parameters, the resolution and the \gls{ab:osr}, results in an increase of the \gls{ab:snr},
+As the \gls{ab:snr} is presented in the context of the digital-to-analog conversion, it is equivalent to the \gls{ab:sqnr} as both is based on the quantization error.
+Tuning the two parameters, resolution and \gls{ab:osr}, results in an increase of the \gls{ab:snr},
 as mentioned in \ref{fig:TableSQNR} \cite{DevalRivetVeyrac2015}.
 
 \begin{figure}[ht]
@@ -241,14 +242,16 @@ with respect to r.
 As you can see in Figure \ref{fig:TableSQNR} the Riemann Conversion (green) performance is the best for a minimum number of bits and a \gls{ab:osr}, with respect to the parameter r, of two, respectively.
 Performing a digital-to-analog conversion with one bit resolution, the $\Sigma - \Delta$ conversion fits the best.
 If no oversampling is considered, hence $ r = 1$, a \gls{ab:pcm} conversion is the best.\\
-Every increase in the number of bits results will increase the \gls{ab:snr} by \SI{7}{\decibel}, while increasing the \gls{ab:osr}, here the parameter r, will increase the \gls{ab:snr} by \SI{9}{\decibel}, for the Riemann Conversion.
+Every increase in the number of bits results will increase the \gls{ab:snr} by \SI{7}{\decibel}, while increasing the \gls{ab:osr}, here the parameter r, will increase the \gls{ab:snr} by \SI{9}{\decibel}, for the Riemann Conversion \cite{VeyracRivetDevalEtAl2016}.
 Equation \ref{eq:SNR_RiemannPumpConversion}
 \begin{equation}
-	\text{SNR } [\si{\dB}] = 6.02N + 9.03r - 7.78 + 10\log_{10}(1 - \frac{1}{2}^{N-1} + \frac{1}{2}^{2N})
+	\text{SNR } [\si{\dB}] \approx 6.02N + 9.03r - 7.78 + 10\log_{10}(1 - \frac{1}{2}^{N-1} + \frac{1}{2}^{2N})
 	\label{eq:SNR_RiemannPumpConversion}
 \end{equation}
-describes the theoretically achievable \gls{ab:snr} with the Riemann Conversion \citep{DevalRivetVeyrac2015}.
-% Quantization noise model {reference: analog device}
+stated an approximation to calculate the theoretical achievable \gls{ab:snr} for a full scale sine wave with the Riemann Conversion \citep{DevalRivetVeyrac2015}.
+For the sake of simplicity the formula \ref{eq:SNR_RiemannPumpConversion} was not derived in this context.
+For further details see \cite{VeyracRivetDevalEtAl2014},\cite{VeyracRivetDevalEtAl2016} and \cite{Kester2009}.
+%As stated in \cite{VeyracRivetDevalEtAl2014}, simulation results showed a \gls{ab:snr} of \SI{30}{\decibel} for $N = 3$ and $r = 2$, which exceeds the approximation of \SI{27}{\decibel}.
 
 \section{Conclusion of the fundamentals}
 In this chapter the implementation of the Riemann Pump in a system design has been presented.

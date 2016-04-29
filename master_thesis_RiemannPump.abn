@@ -22,6 +22,8 @@
 \glossaryentry{RF?\glossentry{ab:rf}|setentrycounter[]{page}\glsnumberformat}{9}
 \glossaryentry{DAC?\glossentry{ab:dac}|setentrycounter[]{page}\glsnumberformat}{10}
 \glossaryentry{OSR?\glossentry{ab:osr}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{SNR?\glossentry{ab:snr}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{SQNR?\glossentry{ab:sqnr}|setentrycounter[]{page}\glsnumberformat}{10}
 \glossaryentry{OSR?\glossentry{ab:osr}|setentrycounter[]{page}\glsnumberformat}{10}
 \glossaryentry{SNR?\glossentry{ab:snr}|setentrycounter[]{page}\glsnumberformat}{10}
 \glossaryentry{SQNR?\glossentry{ab:sqnr}|setentrycounter[]{page}\glsnumberformat}{10}
@@ -65,9 +67,12 @@
 \glossaryentry{OSR?\glossentry{ab:osr}|setentrycounter[]{page}\glsnumberformat}{20}
 \glossaryentry{OSR?\glossentry{ab:osr}|setentrycounter[]{page}\glsnumberformat}{20}
 \glossaryentry{SNR?\glossentry{ab:snr}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{SNR?\glossentry{ab:snr}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{SNR?\glossentry{ab:snr}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{SNR?\glossentry{ab:snr}|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{SQNR?\glossentry{ab:sqnr}|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{DUT?\glossentry{ab:dut}|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{ADS?\glossentry{ab:ads}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{DUT?\glossentry{ab:dut}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{ADS?\glossentry{ab:ads}|setentrycounter[]{page}\glsnumberformat}{29}
 \glossaryentry{MMIC?\glossentry{ab:mmic}|setentrycounter[]{page}\glsnumberformat}{31}
 \glossaryentry{SMD?\glossentry{ab:smd}|setentrycounter[]{page}\glsnumberformat}{31}
 \glossaryentry{MMIC?\glossentry{ab:mmic}|setentrycounter[]{page}\glsnumberformat}{31}
@@ -106,4 +111,4 @@
 \glossaryentry{DUT?\glossentry{ab:dut}|setentrycounter[]{page}\glsnumberformat}{41}
 \glossaryentry{DUT?\glossentry{ab:dut}|setentrycounter[]{page}\glsnumberformat}{42}
 \glossaryentry{MMIC?\glossentry{ab:mmic}|setentrycounter[]{page}\glsnumberformat}{45}
-\glossaryentry{ADS?\glossentry{ab:ads}|setentrycounter[]{page}\glsnumberformat}{54}
+\glossaryentry{ADS?\glossentry{ab:ads}|setentrycounter[]{page}\glsnumberformat}{52}
