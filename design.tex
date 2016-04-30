@@ -27,8 +27,14 @@ One possible approach to design a Riemann Pump is shown in Fig. \ref{fig:Schemat
 	\label{fig:SchematicRiemannPump}
 \end{figure}
 
+%%%%%%%%%%%%%%% 00:40 Uhr 01.05.2016
 On the left side, as marked, is the driver circuit which was needed to switch the high side transistor without dissipating a huge amount of power.
 As the timing is crucial for the switching process, the driver concept was implemented for the low side switch too.
+Each driver consisted of a base transistor, marked as Qb1 and Qb2, which served to operate as a inverter.
+If the this base transistor is switched on, the potential \gls{sy:vdn} is fed to the resistor and hence to the power transistor. 
+Two power transistors were designed and were marked as Qhighside and Qlowside, since they switch the output either to the high side power rail or to the low side power rail.
+Once the potential of \gls{sy:vdn} is fed to the power transistor, this transistor is switched off, hence it became a inverter structure.
+
 The schematic shows the first approach for realizing a Riemann Pump in \gls{ab:gan} technology.
 The next step was the identification and calculation of a proper output capacitance, since it represented the input of a linear power amplifier where the desired signal is synthesized.
  

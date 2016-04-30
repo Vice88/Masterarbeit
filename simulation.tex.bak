@@ -293,6 +293,16 @@ This configuration can be seen in appendix \ref{app:schematic} on the right hand
 \label{ch:ProofOfConceptWithExistingComponents}
 The detailed modelling and simulation of the designed circuit under real conditions, considering all loss effects would go beyond the scope of this thesis. Therefore a keep it small and simple approach was chosen.\\   
 
+As the realized demonstrator differs slightly from the presented concept, Figure \ref{fig:democircuit} demonstrates the circuit schematic for one bit.
+\begin{figure}[htb!]
+	\centering
+  \includegraphics[width=\textwidth]{RealizedDemo_circuit.pdf}
+	\caption{demo circuit}
+	\label{fig:democircuit}
+\end{figure}
+
+It is to mention, that for the other bit the transistors scales with the factor 2.
+
 \begin{figure}[htb!]
 	\centering
   \includegraphics{simulation_data.pdf}

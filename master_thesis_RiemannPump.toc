@@ -5,12 +5,12 @@
 \contentsline {section}{\numberline {2.1}Basic concept of software-defined radio for 5G mobile communication}{3}
 \contentsline {section}{\numberline {2.2}System design using the Riemann Pump}{4}
 \contentsline {section}{\numberline {2.3}Idea of the Riemann Pump}{6}
-\contentsline {section}{\numberline {2.4}Characteristics of Digtial-to-Analog converter}{9}
+\contentsline {section}{\numberline {2.4}Characteristics of Digtial-to-Analog converter}{8}
 \contentsline {section}{\numberline {2.5}Conclusion of the fundamentals}{11}
 \contentsline {chapter}{\numberline {3}Riemann Pump circuit design}{13}
 \contentsline {section}{\numberline {3.1}Approach and implementation of the Riemann Pump}{13}
 \contentsline {section}{\numberline {3.2}Identification of the load impedance}{14}
-\contentsline {section}{\numberline {3.3}Dimension of the used components}{15}
+\contentsline {section}{\numberline {3.3}Dimension of the used components}{16}
 \contentsline {section}{\numberline {3.4}Circuit design summary}{17}
 \contentsline {chapter}{\numberline {4}Circuit simulations for generating various waveform signals}{19}
 \contentsline {section}{\numberline {4.1}Generating various analog signals with digital input control}{19}
