@@ -150,6 +150,18 @@ The frequency accords with the input signal shown in figure \ref{fig:inputMeas}.
 % RC-element with 50 Ohm transmission line. Charge time reduce due to the occurence of the 50 Ohm environment. tau = R*C = 63% Vmax
 
 \section{Time domain measurement of synthesized signal}
+% to avoid any damage to the circuit, the power supply voltage was set to a very low value.
+% in fact of the low value it was not ensurred that the transistors switch properly. this was a measurement erro....
+The purpose was to show if the designed circuit could generate different signals.
+Therefore it was to show if both bits of the circuit could switch synchronously.
+The equivalent circuit for the measurement with the oscilloscope and a probe head is demonstrated in Figure \ref{fig:equivalentprobecircuit}.
+\begin{figure}[htb!]
+	\centering
+  \includegraphics{ProbeMeasurementOsci2.pdf}
+	\caption{equivalent circuit of the time domain measurement}
+	\label{fig:equivalentprobecircuit}
+\end{figure}
+
 The proper functioning of the designed circuit led to verifying that both bits work together.
 If both bits work concurrently, it is possible to synthesize a signal.
 This proofs the concept and the chosen approach.

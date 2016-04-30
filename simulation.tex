@@ -265,7 +265,7 @@ Switching the high side transistor to the off state results in a leakage current
 A trade off between switching speed and power consumption resulted.
 For an increase in the switching speed, hence an increase of the signal bandwidth, the power consumption also linearly increase.
 In addition to this, the power consumption of the driver circuit also increases with the switching speed, as the dimensions of the used components have to be adapted.
-The used driver circuit was optimized to reduce the power consumption for a maximum frequency of \SI{100}{\mega \hertz}, as it was implemented in a power application system.
+The used driver circuit was optimized to reduce the power consumption for a maximum frequency of \SI{100}{\mega \hertz}, as it was implemented in a power application system \cite{MaksimovicPaper}.
 In Table \ref{tab:switchloss} the losses are illustrated with the corresponding sampling (switching) frequency of the used configuration.
 
 \begin{table}[ht]
@@ -288,9 +288,28 @@ $f_{sampling}$ {[}GHz{]} & $P_{diss}$ {[}W{]} \\ \hline
 The used configuration referred to the one bit Riemann Pump consisted of two power transistors, for the high and low side switch, with a gate periphery of \SI{800}{\micro \meter}, four driver transistors each with \SI{200}{\micro \meter} gate periphery and the bias voltages of \gls{sy:vdn} = \SI{-5}{\volt}, \gls{sy:vdp} = \SI{0}{\volt} and \gls{sy:Vdd} = \SI{15}{\volt}.
 This configuration can be seen in appendix \ref{app:schematic} on the right hand side.
 %As stated in the fundamentals the energy consumption for a dac with 17 ENOB and a sampling rate of 10G will result in several kilo watts, this dac also consumed so much. As the following bits, here power transistors scale with a factor of two it yielded a consumption for 17 bit at 10 G of: sum(2^i), i =0:16 = 131071 i0 = 131071*4W = 400kW --> reference to DAC used in the paper for fig 2.2
+
 \section{Proof of concept simulation with existing components}
 \label{ch:ProofOfConceptWithExistingComponents}
 The detailed modelling and simulation of the designed circuit under real conditions, considering all loss effects would go beyond the scope of this thesis. Therefore a keep it small and simple approach was chosen.\\   
+
+As the realized demonstrator differs slightly from the presented concept, Figure \ref{fig:democircuit} demonstrates the circuit schematic for one bit.
+\begin{figure}[htb!]
+	\centering
+  \includegraphics[width=\textwidth]{RealizedDemo_circuit.pdf}
+	\caption{demo circuit}
+	\label{fig:democircuit}
+\end{figure}
+
+It is to mention, that for the other bit the transistors scales with the factor 2.
+
+\begin{figure}[htb!]
+	\centering
+  \includegraphics{simulation_data.pdf}
+	\caption{simulated output}
+	\label{fig:sim}
+\end{figure}
+
 Although the used chips for the demonstrator were designed in a former work, no simulation files were available which made a detailed simulation difficult.
 In the last step a simulation was run which made the concept comparable to the realized circuit. 
 In this simulation the transistor dimensions were adapted to the dimension of the built demonstrator. 
