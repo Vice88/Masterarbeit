@@ -6,23 +6,27 @@
 \ifoot{Appendix}
 \addcontentsline{toc}{chapter}{Appendix}
 
-\section{Schematic of the Riemann Pump circuit}
+\section{Schematic of the Riemann Pump circuit for simulation}
 \label{app:schematic}
 \begin{figure}[H]
 	\centering
   \includegraphics{CircuitSchematic_portrait.pdf}
-	\caption{Realized circuit with \gls{ab:ads}}
+	\caption{Circuit for simulation}
 	\label{fig:Circuitschematic}
 \end{figure}
 
-\newpage
-\section{Layout of the whole Riemann Pump circuit}
+\section{Schematic of the realized Riemann Pump circuit}
+\label{app:schematicRealizedPump}
+\begin{figure}[H]
+	\centering
+  \includegraphics[scale=0.8]{realizedCircuit_full_DDRi_XY6.pdf}
+	\caption{Realized test circuit with \gls{ab:ads}}
+	\label{fig:RealCircuitschematic}
+\end{figure}
 
-bla bla bla bal bla lbal blalsl
+% (IAF\_GE\_MSL\_ A204/IAF\_GaN25\_HEMT\_CS\_LS\_SHfull)
 
-bla bla bla bal bla lbal blalsl
 
-\newpage
 \section{Photography of the realized Demonstrator version 1}
 
 \begin{figure}[H]

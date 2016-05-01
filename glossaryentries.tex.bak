@@ -7,6 +7,9 @@
 
 \newglossaryentry{ab:sqnr}{type=abbreviations,name={SQNR},description={signal-to-quantization-noise-ratio},first={SQNR (Signal-to-quantization-noise-ratio)}}
 
+\newglossaryentry{ab:fet}{type=abbreviations,name={FET},description={field-effect transistor},first={FET}}
+
+
 \newglossaryentry{ab:pcm}{type=abbreviations,name={PCM},description={Pulse-code modulation},first={PCM (Pulse-code modulation)}}
 
 \newglossaryentry{ab:dsp}{type=abbreviations,name={DSP},description={digital signal processor},first={DSP (digital signal processor)}}
@@ -103,6 +106,8 @@
 \newglossary[slg]{symbols}{sy}{sbl}{List of symbols}
 %
 \newglossaryentry{sy:fsampling}{type=symbols,name={$f_{sampling}$},description={sampling frequency/rate},first={$f_{sampling}$ (sampling frequency)}}
+
+\newglossaryentry{sy:fsignal}{type=symbols,name={$f_{signal}$},description={signal frequency},first={$f_{signmal}$ (signal frequency)}}
 
 \newglossaryentry{sy:fsignalmax}{type=symbols,name={$f_{signal,max}$},description={maximum signal frequency},first={$f_{signmal,max}$ (maximum signal frequency)}}
 

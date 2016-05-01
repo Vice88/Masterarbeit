@@ -289,99 +289,70 @@ The used configuration referred to the one bit Riemann Pump consisted of two pow
 This configuration can be seen in appendix \ref{app:schematic} on the right hand side.
 %As stated in the fundamentals the energy consumption for a dac with 17 ENOB and a sampling rate of 10G will result in several kilo watts, this dac also consumed so much. As the following bits, here power transistors scale with a factor of two it yielded a consumption for 17 bit at 10 G of: sum(2^i), i =0:16 = 131071 i0 = 131071*4W = 400kW --> reference to DAC used in the paper for fig 2.2
 
+\newpage
 \section{Proof of concept simulation with existing components}
 \label{ch:ProofOfConceptWithExistingComponents}
-The detailed modelling and simulation of the designed circuit under real conditions, considering all loss effects would go beyond the scope of this thesis. Therefore a keep it small and simple approach was chosen.\\   
-
+In the last step a simulation was run which made the concept comparable to the realized circuit. 
+The realized circuit was designed with the help of former designed chips.
+In this simulation the transistor dimensions were adapted to the dimension of the built demonstrator. 
+This should give an insight to the behaviour of the constructed demonstrator.
+The detailed modelling and simulation of the designed circuit under real conditions, considering all loss effects would go beyond the scope of this thesis, since no models for the used chips were available.
 As the realized demonstrator differs slightly from the presented concept, Figure \ref{fig:democircuit} demonstrates the circuit schematic for one bit.
 \begin{figure}[htb!]
 	\centering
-  \includegraphics[width=\textwidth]{RealizedDemo_circuit.pdf}
+  \includegraphics[width=\textwidth]{realizedCircuit_oneBit_DDRi_XY6.pdf}
 	\caption{demo circuit}
 	\label{fig:democircuit}
 \end{figure}
 
-It is to mention, that for the other bit the transistors scales with the factor 2.
+The difference to the presented concept was that no feedback path from the output to the drain of the high side driver circuit existed.
+The result of this was that the efficiency was not as good as for the presented concept in chapter \ref{ch:design}.
+It is to mention that the transistors for the other bit scales with the factor 2.
+The full schematic of the built demonstrator circuit can be seen in Appendix \ref{app:schematicRealizedPump}.
+Although the used chips for the demonstrator were designed in a former work, no simulation files were available which made a detailed simulation difficult.
+Nevertheless this built circuit acted as expected and a signal could be synthesized, as seen in Figure \ref{fig:sim}.
 
 \begin{figure}[htb!]
 	\centering
   \includegraphics{simulation_data.pdf}
-	\caption{simulated output}
+	\caption{Simulation result for the output voltage using the realized components}
 	\label{fig:sim}
 \end{figure}
 
-Although the used chips for the demonstrator were designed in a former work, no simulation files were available which made a detailed simulation difficult.
-In the last step a simulation was run which made the concept comparable to the realized circuit. 
-In this simulation the transistor dimensions were adapted to the dimension of the built demonstrator. 
-This should give an insight to the behaviour of the constructed demonstrator.\\
-Schematic of the measurement setup, esb.
-Simulation regarding the measurement, +3 and +1 triangular waveform.
-frequency 100mhz and 150mhz, vdd = 5, vdp=0V, vdn=-5V.
-As DDRi2C is used, bottom vdp(in na; lowside) = vdd. 
-Sim RP\_DDRi\_XY6\_v1\_sim
-To combine the measurement results with the presented theory, some simulations were done with the dimensions of the real demonstrator.
-%But also here it is important to note, that losses are not considered in the simulation.
-It provided a basis of what can be expected.
-Therefore the simulation was adapted to a two bit resolution with much greater power transistors.
-To compare the results simulated here and measured in chapter \ref{ch:measurement} the switching frequencies was kept at lower frequencies (\SI{100}{\mega \hertz}).
+As the measurement of the time signal was performed with an oscilloscope and a probe, the load impedance differs from the concept.
+Figure \ref{fig:equivalentprobecircuit} in Chapter \ref{ch:timedomainmeas} presents the equivalent circuit for the measurement.
+Considering this, gave the simulation results presented in Figure \ref{fig:sim} which demonstrates the signal generation.
+The black signal represents a triangular waveform with a relative slope of $1 i_0$ and the red of $3 i_0$, respectively.
+The voltage swing is $0.04 V$ and $0.07 V$ since the probe divides the real voltage with a ratio of 10:1 to avoid any damage of the oscilloscope.
+Therefore the real voltage swing is $0.4 V$ and $0.7V$ which fit pretty good to the measured data in chapter \ref{ch:timedomainmeas}.
+The simulation is run with the circuit in Figure \ref{fig:democircuit}, a load impedance corresponding to the measurement in Figure \ref{fig:equivalentprobecircuit} in Chapter \ref{ch:timedomainmeas}, \gls{sy:fsampling} of \SI{200}{\mega \hertz} and $V_{dn} = -5V, V_{dp} = 0V, V_{dd} = 5V$.
 
-%  This simulation should give an insight to what is expected for the measurements.
-%Other important parameters to keep in mind with this simulation are the oversampling ratio and hence the switching frequency of the transistors.
-
- 
-
-
+% As DDRi2C is used, bottom vdp(in na; lowside) = vdd. 
+\newpage
 \section{Evaluation of the simulation results for the Riemann Pump}
-
-\begin{enumerate}
-	\item different wave forms can be synthesized
-	\item the signal bandwidth is restricted to a smaller one than desired
-	\item parasitic effects and losses degrade the signals waveform
-	\item the system is stable
-	\item the energy consumption is in the range for base stations
-	\item dut is not optimal w.r.t. efficiency
-\end{enumerate}
-
+Different wave forms could be synthesized (sine wave, rectified sine, triangular).
+The dimension of the used components already limits the bandwidth.
+To shift the bandwidth to higher values the transistor dimension have to be bigger and smaller to shift to lower values, respectively.
+The signal frequency of \SI{1}{\giga \hertz} represented a lower bound on the frequency range in the used configuration.
+With an \gls{ab:osr} of four \gls{sy:fsampling} is eight times \gls{sy:fsignal}.
+The smallest achievable current times the smallest sampling time (highest sampling frequency) determine the smallest voltage step achievable.
+If the \gls{ab:osr} is increased, the sampling time is decreased and therefore the signal quality is better because we have a more accurate synthesized signal. 
+The upper bound of the frequency range is limited to the detectable voltage swing of the amplitude.
+In addition to this the components have a unity current gain frequency limit.
+Higher frequency means much lower sampling time which can lead to non detectable voltage steps (slopes are not detectable).
+Parasitic and loss effects distorted the waveforms.
+Since the digital to analog conversion always introduces noise to the signal the fit was not perfect.
 The highest \gls{ab:snr} (\SI{32.5}{\decibel}) found was for a sine wave at \SI{6}{\giga \hertz} with an amplitude of $\hat{v} = 1.75 V$, an DC-offset of $V_{DC} = 13 V$ and a phase shift of $\phi = -\pi/8$, see appendix \ref{app:snr}.
 There are the \gls{ab:snr} values presented for the seven different signals of Figure \ref{fig:7SignalsSameSlopeInOnePlot} with their corresponding theoretical wave form parameters.
-
-The demonstrated simulations already proofed the feasibility to generate various signals.
-Some limitations taken into account 
-
-%Since the digital to analog conversion always introduces noise to the signal, refer to chapter \ref{ch:fundamentals}, the fit was not perfect. 
-
-% to increase this upper bound the transistor dimension have to be bigger
-%This lower bound could be shifted to even lower frequencies if the dimensions are tuned to be smaller
-
-% The signal frequency of \SI{1}{\giga \hertz} represented a lower bound on the frequency range in the used configuration. % referred to chapter \ref{ch:design} of the circuit.
-% The upper bound of the frequency range is limited to the detectable voltage swing of the amplitude.
-
-% implemented driver circuit which absorbed unexpected leakage currents.
-
-%\textbf{bandwidth limitation}
-%\textit{The lower bound is determined by the sampling time (inverse of the sampling frequency) and the smallest current achieved with the dimensioned transistors.
-% The smallest achievable current times the smallest sampling time (highest sampling frequency) determine the smallest absolute slope achievable. \\
-
-%The stability check was needed to validate that the circuit did not oscillate.
-%As well the circuits energy consumption had to be checked, since it could be implemented in mobile devices.
-% if it is in a moderate range (\textit{which is the moderate range? mention it here?}) since it could be implemented in mobile devices.\\
-
-%If the \gls{ab:osr} is increased, the sampling time is decreased and therefore the signal quality is better because we have a more accurate synthesized signal. 
-%This is shown in the snr in chapter fundamentals.
-
-%% If the \gls{ab:osr} is increased to get a better accuracy, the switching frequency is also increased and therefore the energy consumption.
-%In addition to the power consumption issue, the components have a unity current gain frequency limit.
-%If the resolution is increased to get a better accuracy, the whole circuit would become more complex and the energy consumption would increase.\\
-%Using the \gls{ab:osr} of four, we already get a sampling frequency of \SI{2}{GHz} at the lower bound.
-%For this reason the switches have to switch within \SI{0.5}{\nano \second} which increase the gate drive current which increase the power loss.\\
-
-
-% This is the trade off between the shift of the bandwidth (shifting to even higher frequencies is possible but the bandwidth is nearly constant as long the output capacitance is constant too.)  %% higher frequency means much lower sampling time which means the slopes are not detectable ... %%
-
-%The drawback for the bandwidth shift to higher frequencies is, that with the signal frequency the switching frequency is increasing linearly (for an osr; eight times) and therefore the dynamic losses are increasing with this switching frequency.
-
-The simulation results confirmed the feasibility of the chosen approach.
+The system is stable.
+The stability check was needed to validate that the circuit did not oscillate.
+The energy consumption is in the range for base stations and have not reached it yet for mobile devices.
+Since the resolution should be in the range of 17 bits.
+If the resolution is increased to get a better accuracy, the whole circuit would become more complex and the energy consumption would increase.
+If the \gls{ab:osr} is increased to get a better accuracy, the switching frequency is also increased and therefore the energy consumption.
+For high switching frequencies the switches have to switch within a few \si{\nano \second} which increase the gate drive current which increase the power loss.
+This is the trade off between the shift of the bandwidth (shifting to even higher frequencies is possible but the bandwidth is nearly constant) and power consumption.
+The designed test circuit is not optimal with respect to efficiency.
+The implemented driver circuit absorbed unexpected leakage currents.\\
+Nevertheless the simulation results confirmed the feasibility of the chosen approach.
 Some trade-offs in mind and the ability to change some system parameter made it possible to generate some good fitted signal waveforms.
-
-%What is the expectation to the measurement? 
-%The simulated signals with the realized dimensions of the components.

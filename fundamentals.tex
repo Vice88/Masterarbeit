@@ -141,7 +141,7 @@ Since the output voltage, consisting of the desired signals, should be propagate
 This input stage consists of a power transistor, which do have the capacitive input impedance characteristic.
 Implemented in one component this concept saves area and costs and the amplified signal at the drain can be transmitted via the antenna.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
   \includegraphics[scale=.4, angle = 270]{RP_concept.pdf}
 	\caption{Concept of the Riemann Pump with three-bit resolution}
@@ -155,7 +155,7 @@ Instead of using absolute current values, relative currents with respect to $i_0
 This leads to eight different slopes which are used for the digital to analog conversion process.
 These eight different slopes are presented in Figure \ref{fig:SlopesAndTable}.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
   \includegraphics[width=\textwidth]{SlopesAndTable.pdf}
 	\caption{slopes and corresponding code of the synthesized signal}
@@ -169,7 +169,7 @@ Every single charge pump is represented by one bit, making it a three bit resolu
 With the help of the encryption table in Figure \ref{fig:SlopesAndTable} a Riemann Code is generated to synthesize a time domain signal.
 Figure \ref{fig:RiemannIntegral} illustrates the generation process of the Riemann Code.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
   \includegraphics[width=\textwidth]{RiemannIntegral.pdf}
 	\caption{Integral of the current which pumps charges on to the cap.}
@@ -193,7 +193,7 @@ For each sampling point the slope with the smallest deviation in amplitude to th
 This yields a set of slopes representing a Riemann Code for the desired signal.
 Arbitrary waveforms can be generated using this technique.
 To avoid unwanted signal clipping it is important that the output capacitance is neither fully charged nor discharged.
-
+\newpage
 \section{Characteristics of Digtial-to-Analog converter}
 \label{ch:characteristics}
 %The characteristics, the performance and figure of merits are compared to classify the Riemann Pump with the conventional digital-to-analog conversion principles.

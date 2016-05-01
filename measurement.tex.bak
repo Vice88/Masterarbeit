@@ -98,7 +98,7 @@ The \gls{ab:awg} output amplitude had to be adjusted to the proper value dependi
 The actual broadband amplifiers gain has to be checked as well as the proper configuration of the bias voltages.
 These prerequisites are necessary to ensure a proper measurement.
 After the calibration the first measurement checked the stability of the circuit.
-Therefore the \gls{ab:dut} was supplied by its bias voltages and the current was checked if it stays constant.
+Therefore the \gls{ab:dut} was supplied with its bias voltages and than the current was checked if it stays constant.
 Due to the fact that the current was stabilized after the transient time, it showed that the circuit is stable.
 For this measurement the in- and output connectors were terminated with \SI{50}{\ohm} terminations.
 
@@ -150,6 +150,7 @@ The frequency accords with the input signal shown in figure \ref{fig:inputMeas}.
 % RC-element with 50 Ohm transmission line. Charge time reduce due to the occurence of the 50 Ohm environment. tau = R*C = 63% Vmax
 
 \section{Time domain measurement of synthesized signal}
+\label{ch:timedomainmeas}
 % to avoid any damage to the circuit, the power supply voltage was set to a very low value.
 % in fact of the low value it was not ensurred that the transistors switch properly. this was a measurement erro....
 The purpose was to show if the designed circuit could generate different signals.

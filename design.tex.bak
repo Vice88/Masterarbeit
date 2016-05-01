@@ -10,92 +10,107 @@ In the design process a suitable load impedance and the right dimension of the u
 
 \section{Approach and implementation of the Riemann Pump}
 As stated in chapter \ref{IdeaRiemannPump} the circuit needed high speed switches, which were capable to drive power.
+In order to switch a \gls{ab:hemt} transistor to the high side power rail a driver circuit was needed, since in \gls{ab:gan} no complementary transistors were available.
 The absence of a p-type transistor in \gls{ab:gan} technology made it challenging to find a suitable concept to realize the push-pull stage.
-Since the n-type \glspl{ab:hemt} needed a negative gate source voltage \gls{sy:vgs}, the high side switch could not be implemented without a driver circuit.
-The source contact of the high side switch, realized by a n-type \gls{ab:gan} \gls{ab:hemt}, was connected to the output of the test circuit.
-Since the potential at the output was not constant, this high side switch needed a driver circuit.
-A suitable driver circuit was found in \cite{MaksimovicPaper}, where the principle of a push-pull stage for power applications is described.
-The benefit of the integrated driver circuit was the improved efficiency of switching.
-The transistor switching speed was determined by the dimension of the driver circuit.
-If the switching speed was increased, the gate driving current \gls{sy:IG} has to be increased to switch the transistors.\\
+The n-type \glspl{ab:hemt} operating in depletion mode needed a negative gate source voltage \gls{sy:vgs} to switch the transistor off.
+For the on switching \gls{sy:vgs} had to be \SI{0}{\volt} and therefore a driver circuit was needed, since the source potential of the high side switch varies between \gls{sy:Vdd} and \gls{sy:Vss}.
+The source contact of the high side switch, realized by a n-type \gls{ab:gan} \gls{ab:hemt}, was connected to the output of the test circuit and therefore the potential at the output was not constant.
+A suitable driver circuit was found in \cite{MaksimovicPaper}, where the principle of a push-pull stage for power applications is described.\\
 One possible approach to design a Riemann Pump is shown in Fig. \ref{fig:SchematicRiemannPump}.
 
 \begin{figure}[ht]
 	\centering
-  \includegraphics{Schematic_RP_concept2.pdf}
+  \includegraphics[width=\textwidth]{Schematic_RP_concept2.pdf}
 	\caption{Schematic of a push-pull stage with corresponding driver circuit}
 	\label{fig:SchematicRiemannPump}
 \end{figure}
 
+%%%%%%%%%%%%%%% 00:40 Uhr 01.05.2016
 On the left side, as marked, is the driver circuit which was needed to switch the high side transistor without dissipating a huge amount of power.
 As the timing is crucial for the switching process, the driver concept was implemented for the low side switch too.
+Each driver consisted of a base transistor, marked as $Qb1$ and $Qb2$, which served to operate as a inverter.
+Also two load transistors, $Ql1$ and $Ql2$, were implemented with a source degeneration resistor which served as a current source.
+The resistors $R1$ and $R2$ were tuned to provide a proper current while maintaining a decent power consumption.
+If the resistors were set to a low value, the current source provides more current and hence the switching process is faster since the charging of the gate capacitance of the high and low side transistors is faster.
+But a draw back was that for the higher current a higher power consumption occurred.
+In addition to the driver circuit two power transistors were implemented which demonstrated the one bit \gls{ab:dac}.
+These two transistors, $Q_{highside}$ and $Q_{lowside}$, represented two switches which switch the output to the high side power rail and low side power rail, respectively.
+Switching the high side transistor ($Q_{highside}$) to the on state required a gate-source voltage $V_{gs\_HS}$ of \SI{0}{\volt}.
+This is achieved by the feedback path from the output to the drain of the load transistor ($Q_{l1}$) which also turns on and in fact of the low on resistance the voltage drop of $Vds\_b1 \approx 0 V$ ($\equiv V_{gs\_HS}$).
+The transistor $Ql1$ is turned on because $Vgs\_b1 = 0 V$ since the base transistor $Qb1$ is turned off and hence no current is flowing.
+Switching from the on to the off state occurred when the base transistor $Qb1$ is switched on with a control voltage.
+When the base transistor is turned on, the gate potential of the high side transistor is set to approximately \gls{sy:vdn}, by discharging the gate capacitance with $Ql1$ and $R1$ which served as a current source.
+The dimension of $Ql1$ and $R1$ determined the discharge current for $Q_{highside}$ and hence the switching speed and the power losses.
+Because $Q_{highside}$ is turned on if $Qb1$ is turned off and inversely, this act as a inverter structure.
+In addition to the presented principle of the high side switch the low side circuit operated in the same way but inversely.
+When the high side switch is turned on, the low side is turned off and vice versa.
+The benefit of the integrated driver circuit was the improved efficiency of switching.
+The transistor switching speed was determined by the dimension of the driver circuit.
 The schematic shows the first approach for realizing a Riemann Pump in \gls{ab:gan} technology.
 The next step was the identification and calculation of a proper output capacitance, since it represented the input of a linear power amplifier where the desired signal is synthesized.
  
 \section{Identification of the load impedance} % VERBESSERN!
-The signal is generated at the input stage of a linear power amplifier, as described in chapter \ref{ch:fundamentals}.
-This output stage is modelled with a \gls{ab:gan} \gls{ab:hemt} with a gate length of \SI{0.25}{\micro \meter}.
+Due to the fact that the signal is generated at the input stage of a linear power amplifier, as described in chapter \ref{ch:fundamentals}, it was crucial to obtain its input impedance.
+The input impedance of the power amplifier was at the same moment the output impedance for the test circuit. 
+This output stage of the test circuit is modelled with a \gls{ab:gan} \gls{ab:hemt} with a gate length of \SI{0.25}{\micro \meter}.
 Considering a \SI{20}{\watt} power amplifier for transmission purposes, led to a \gls{ab:gan} \gls{ab:hemt} with a total gate periphery of \SI{4}{\milli \metre}, based on an approximation for the power density of \SI[per-mode=fraction]{5}{\watt\per\milli\metre} gate periphery  \cite{Maroldt2010}, \cite{GaNBook}.
-Simulations confirmed this approximation as an output power density of \SI[per-mode=fraction]{5.6}{\watt\per\milli\metre} at $V_{DS} = 25 V$ was measured.
-This transistor model \gls{ab:hemt} (IAF\_GE\_MSL\_ A204/IAF\_GaN25\_HEMT\_CS\_LS\_SHfull) used in \gls{ab:ads} were modelled at the \gls{ab:iaf}\cite{model} and is based on a state-space approach. 
+Simulations confirmed this approximation as an output power density of \SI[per-mode=fraction]{5.6}{\watt\per\milli\metre} at $V_{GS} = -1.5 V$, $V_{DS} = 25 V$ was measured.
+The transistor model used in \gls{ab:ads} were modelled at the \gls{ab:iaf}\cite{model} and is based on a state-space approach. 
 For simulation purposes four transistors were modelled in parallel, each with 8 finger and \SI{125}{\micro \metre} gate width to reach the required gate periphery.
 The simulated power amplifier is biased with respect to the maximum \gls{ab:mag}, which led to a bias of $V_{GS} = -1.5 V$ at $V_{DS} = 25 V$.
 After the determination of the bias point, a S-parameter simulation yielded the input reactance of the power amplifier.
-It is to note that four power transistors were simulated for the purpose of a power amplifier, hence this did not respect the broadband application since it was no broadband amplifier.
-Since the capacitive behaviour of the load impedance is of interest, the real part is for now neglected.
-The input reactance $X_c$ is defined as:
+It is to note that the short analysis of the impedance was done with four power transistors in parallel representative for a power amplifier than a discrete model of a broadband amplifier.
+But since it was not the main goal to obtain a proper input impedance of a broadband amplifier this identification was sufficient.
+Hence this was a short and effective way to obtain an output impedance according to the equivalent circuit of a \gls{ab:hemt} device as shown in Figure \ref{fig:eqcircuit}.
+
+\begin{figure}[H] % small signal equivalent circuit
+	\centering
+  \includegraphics{equivalentcircuit_hemt.pdf}
+	\caption{\gls{ab:rf} equivalent circuit \gls{ab:fet} \cite{Quay2014}}
+	\label{fig:eqcircuit}
+\end{figure}
+
+The input of the \gls{ab:hemt} shows a capacitive behaviour as seen in Figure \ref{fig:eqcircuit} for the gate node, which served as the input.
+As only the capacitive behaviour of the load impedance was of interest, the real part was neglected.
+The capacitive reactance $X_c$ is defined as:
 \begin{equation}
 	X_c = -\frac{1}{\omega C},
-\end{equation}
 \label{eq:reactance}
-and is plotted in Figure \ref{fig:inputReactance} over the frequency range from nearly \gls{ab:dc} to \SI{6}{\giga \hertz} in a logarithmic scale.
+\end{equation}
 
-\begin{figure}[ht]
+and is plotted for the input of the test power amplifier in Figure \ref{fig:inputReactance} over the frequency range from nearly \gls{ab:dc} to \SI{6}{\giga \hertz} in a logarithmic scale.
+
+\begin{figure}[H]
 	\centering
   \includegraphics[width=.75\textwidth]{inputReactance.pdf}
-	\caption{load reactance}
+	\caption{Load reactance over frequency in logarithmic scale}
 	\label{fig:inputReactance}
 \end{figure}
 
-As the reactance of the simulated power amplifier is nearly constant for the frequency of \SI{1}{\giga \hertz} and beyond, this showed the impact of parasitic effects.
-For frequencies in the \si{\giga \hertz} range the parasitic inductances reduced the reactance.
-Interpreting the minus sign only for the phase delay, since it is capacitive, the absolute value of the reactance decreases exponentially with the frequency up to approximately \SI{1}{\giga \hertz}.
-Solving the equations \ref{eq:reactance} absolute value for the capacitance yielded:
+The constant increase of the reactance to nearly \SI{0}{\ohm} confirmed Equation \ref{eq:reactance}, since it scales with the reciprocal value of $\omega$.
+%Considering the absolute value of the reactance its value is decreasing.
+%For frequencies beyond \SI{1}{\giga \hertz} the impact of parasitic inductances induced a constant value for the reactance.
+%Interpreting the minus sign only for the phase delay, since it is capacitive, the absolute value of the reactance decreases exponentially with the frequency up to approximately \SI{1}{\giga \hertz}.
+Solving the equation \ref{eq:reactance} for the capacitance yielded:
 
 \begin{equation}
 	C = \frac{1}{\omega X_c},
 \end{equation}
-which is illustrated in Figure \ref{fig:inputCap_log}.
-As a large signal model was used for the simulation, the inductive part of the input impedance got bigger.
-This effect is seen in \ref{fig:inputCap_log} for frequencies beyond \SI{1}{\giga \hertz}.
+with respect to the absolute value of $X_c$.
+Figure \ref{fig:inputCap_log} illustrates the absolute value of $C_{in}$ and states the effect of the parasitic inductances.
+For low frequencies the parasitic inductances could be neglected, but for high frequencies these parasitic inductances effects the absolute value of the electrical reactance.
+Therefore it seemed that the capacitance is decreasing for frequencies in the \si{\giga \hertz} range.
+
 %The frequency dispersion effect on the input capacitance of the \gls{ab:gan} \gls{ab:hemt}
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
   \includegraphics[width=.75\textwidth]{inputCap_log.pdf}
-	\caption{load capacitance log}
+	\caption{Load capacitance over frequency in logarithmic scale}
 	\label{fig:inputCap_log}
 \end{figure}
 
 Nevertheless the complex input impedance yielded a capacitive behaviour with a value of nearly \SI{22}{\pico \farad}, which was used for further investigations.
-The simulated transistor model was specified as a large signal model, as seen in Figure \ref{fig:inputCap_log} for frequencies beyond \SI{1}{\giga \hertz}.
-Frequency dispersion and other parasitic effects appeared, which could not be investigated due to the limited scope of this thesis.
-
-%
-%Since the input capacitance can be assumed as 
-%\begin{equation}
-%	C = \epsilon_r \frac{A}{d},
-%\end{equation}
-%
-%it follows that
-%\begin{equation}
-%	C \propto \epsilon_r 
-%\end{equation}
-%
-%and therefore for high frequencies, the capacitance is decreasing due to decreasing dielectric constant for \gls{ab:gan} \cite{GaNBook},p.7. % pdf page 33
-%Degrading capacitance due to non-linearities.
-
-%Due to the non-linearity of the transistor model \cite{vitanovnon}
-%The frequency dependent input impedance [\textbf{REFERENCE}], which corresponds to the load impedance of the designed Riemann pump circuit, is determined by S-parameter simulations.
+%The simulated transistor model was specified as a large signal model
 % small signal is not considered, since only the curent integration is important
 
 %%% 27.04.2016 01:34 Uhr
@@ -141,8 +156,17 @@ Since the driver circuit worked as a current source, the dimension of the transi
 The dimension of the driver transistors were approximately a quarter of the power transistors, the switching high and low side transistor.
 The resistor values were achieved by tuning with respect to power consumption.
 Further details on the driver circuit and its properties are stated in \cite{MaksimovicPaper}.
-The schematic is designed with \gls{ab:ads}, see Appendix \ref{app:schematic}.
-As the dimension of the power stage scales with the factor of two so the driver circuit dimension do.
+Figure \ref{fig:RealCircOne} demonstrates one bit of the realized circuit.
+
+\begin{figure}[H]
+	\centering
+  \includegraphics{realizedCircuit_oneBit.pdf}
+	\caption{One bit of the realized circuit}
+	\label{fig:RealCircOne}
+\end{figure}
+
+The schematic is designed with \gls{ab:ads} and the full circuit design can be seen in Appendix \ref{app:schematic}.
+For the full schematic it is to note that the dimension of the power transistors scales with the factor of two and so the driver circuit dimension do.
 
 \section{Circuit design summary}
 As no complementary transistors were available in III-V technology a proper driver circuit had to be investigated.
@@ -150,17 +174,16 @@ Further the speed of the switches was crucial as a broadband signal should be sy
 A low loss, high speed, digital controlled driver circuit was implemented.
 Using this concept had the advantage of verification and validation.
 It was difficult to determine the reference current since the switching is not ideal, a leakage current through the driver circuit occurs and the current had to be probed in the transient state.
-The problem of not perfect switching is, that the channel is opened and closed slowly in comparison to an ideal switch.
-This increase the current with the increase of charges flowing to the transistors gate.
 Therefore the reference current is time-averaged.
-The circuit design and simulation combines the dc state with the rf state.
-For a dc simulation the current through a capacitor is zero.
+The problem of not perfect switching is, that the channel is opened and closed slowly in comparison to an ideal switch.
+% This increase the current with the increase of charges flowing to the transistors gate.
+The circuit design and simulation combines the \gls{ab:dc} state with the \gls{ab:rf} state, since for a \gls{ab:dc} simulation the current through a capacitor is zero.
 Further the loaded voltage controlled current source was not defined for the given output load.
 The dimension of the used components determined the resulting voltage step.
-A typical (draw-back) contradiction was a small transistor dimension could synthesize signals to a very low signal frequency while a bigger one would fully charge the output capacitor which will clip the output signal, for a given oversampling ratio.
-Because then the sampling time is fixed.
+A draw-back was that a small transistor dimension could synthesize signals to a very low signal frequency while a bigger one would fully charge the output capacitor which will clip the output signal.
 If the transistor dimension is chosen to be bigger, the higher signal frequency could be synthesized with a decent voltage swing but the low signal frequencies would turn into a rectangular shape. 
-This problem restricted the signal bandwidth to be smaller than from \gls{ab:dc} to \SI{6}{\GHz}.
+Therefore the dimension of the used components already limit the bandwidth.
+The signal bandwidth was investigated to be smaller than \gls{ab:dc} to \SI{6}{\GHz}.
 
 %  The components used, were optimized with respect to the signal integrity. 
 %  The dimension of the used components were tuned while simulation to get the desired output signal.

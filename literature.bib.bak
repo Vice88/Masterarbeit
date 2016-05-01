@@ -244,6 +244,14 @@
   Edition                  = {4}
 }
 
+@Unpublished{Quay2014,
+  Title                    = {{Script of the Lecture RF- and Microwave Devices and CCircuit, IMTEK Freiburg University}},
+  Author                   = {R. Quay},
+  Note                     = {Version 7.0},
+  Month                    = aug,
+  Year                     = {2014}
+}
+
 @Conference{QuayMaroldt2011,
   Title                    = {{Design and modelling challenges for advanced class-S digital transmitters}},
   Author                   = {Quay, RÃ¼diger and Maroldt, Stephan},
