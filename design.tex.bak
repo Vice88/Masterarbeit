@@ -72,9 +72,16 @@ Hence this was a short and effective way to obtain an output impedance according
 
 The input of the \gls{ab:hemt} shows a capacitive behaviour as seen in Figure \ref{fig:eqcircuit} for the gate node, which served as the input.
 As only the capacitive behaviour of the load impedance was of interest, the real part was neglected.
-The capacitive reactance $X_c$ is defined as:
+The complex impedance is defined
 \begin{equation}
-	X_c = -\frac{1}{\omega C},
+	Z = R + jX,
+\label{eq:reactance}
+\end{equation}
+where R is the real part and X is the electrical reactance.
+%The capacitive reactance $X_c$ is defined as:
+The electrical reactance $X$ is defined as:
+\begin{equation}
+	X = X_{L} + X_{C} = \omega L -\frac{1}{\omega C},
 \label{eq:reactance}
 \end{equation}
 

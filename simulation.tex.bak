@@ -59,12 +59,20 @@ The quantity of digits in each set, here triplet, increases with the number of b
 The number of triplets represents the number of sampling points, corresponding to the \gls{ab:osr}.
 This particular generated Riemann Code in equation \ref{eq:RiemannCodeSineWave} was used to synthesize sine waves in the frequency range between \SI{500}{\MHz} and \SI{6}{\GHz}, as shown in Figure \ref{fig:7SignalsSameSlopeInOnePlot}.
 
-\begin{figure}[htb!]
-   \centering 
-   \input{graphics/simulation/Vout_sine_SigBWdifferent_SameSlope_73_TwoPeriods.pdf_tex}
+%\begin{figure}[htb!]
+%   \centering 
+%   \input{graphics/simulation/Vout_sine_SigBWdifferent_SameSlope_73_TwoPeriods.pdf}
+%   \caption{Synthesized signals with demonstrated Riemann Code for the frequency range of \SI{0.5}{\GHz} to \SI{6}{\GHz}}
+%   \label{fig:7SignalsSameSlopeInOnePlot}
+%\end{figure}
+
+\begin{figure}[htb!] %% Add sampling points at the top !!
+   \centering
+   \includegraphics[width=0.75\textwidth]{Vout_sine_SigBWdifferent_SameSlope_73_TwoPeriods.pdf}
    \caption{Synthesized signals with demonstrated Riemann Code for the frequency range of \SI{0.5}{\GHz} to \SI{6}{\GHz}}
    \label{fig:7SignalsSameSlopeInOnePlot}
 \end{figure}
+
 
 The amplitude of seven signals with different frequencies are shown over their period while at the top the number of sampling points is shown.
 This representation is chosen to compare the signal integrity of different frequencies.
@@ -205,7 +213,7 @@ Figure \ref{fig:DiffSlopeSameBWTriangular} demonstrates the four different combi
 
 \begin{figure}[htb!]
 	\centering
-  \includegraphics[draft]{Vout_halfsine_7531_diff_freq.pdf}
+  \includegraphics{Vout_triangular_2GHz_diffSlopes.pdf}
 	\caption{Triangular signal with same signal bandwidth but different slopes}
 	\label{fig:DiffSlopeSameBWTriangular}
 \end{figure}
@@ -219,7 +227,7 @@ figure \ref{fig:DiffSigBWSameSlopeTriangular} demonstrates the frequency varying
 
 \begin{figure}[htb!]
 	\centering
-  \includegraphics[draft]{Vout_halfsine_7531_diff_freq.pdf}
+  \includegraphics{Vout_triangular_Slope33_diffFreq.pdf}
 	\caption{Triangular signal with same slope but different signal bandwidth 3GHz}
 	\label{fig:DiffSigBWSameSlopeTriangular}
 \end{figure}
@@ -314,7 +322,7 @@ Nevertheless this built circuit acted as expected and a signal could be synthesi
 
 \begin{figure}[htb!]
 	\centering
-  \includegraphics{simulation_data.pdf}
+  \includegraphics{SimulationForMeasData.pdf}
 	\caption{Simulation result for the output voltage using the realized components}
 	\label{fig:sim}
 \end{figure}
