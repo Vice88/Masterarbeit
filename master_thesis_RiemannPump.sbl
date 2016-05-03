@@ -32,3 +32,5 @@
 \glossaryentry{$V_{dd}$?\glossentry{sy:Vdd}|setentrycounter[]{page}\glsnumberformat}{50}
 \glossaryentry{$V_{dd}$?\glossentry{sy:Vdd}|setentrycounter[]{page}\glsnumberformat}{50}
 \glossaryentry{$V_{dd}$?\glossentry{sy:Vdd}|setentrycounter[]{page}\glsnumberformat}{50}
+\glossaryentry{$f_{sampling}$?\glossentry{sy:fsampling}|setentrycounter[]{page}\glsnumberformat}{55}
+\glossaryentry{$f_{signal}$?\glossentry{sy:fsignal}|setentrycounter[]{page}\glsnumberformat}{55}

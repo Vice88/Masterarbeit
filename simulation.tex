@@ -269,7 +269,7 @@ The stability check was performed within the \gls{ab:ads} tool.
 As the concept is designed for the purpose to implement in mobile communication systems the power consumption is crucial.
 Since the energy storage of mobile devices is limited, it is important to get a decent power dissipation for the test circuit.
 A short analysis should give an insight to the expected power consumption of the designed test circuit.
-Due to the expected switching losses:
+Due to the expected switching losses \cite{Quay2014}:
 %$ P_{cond} = R_{DS,on}dI_0^2 \propto R_{DS,on} $ \\
 \begin{equation}
  P_{sw} = \frac{1}{2} V_{in}I_0(t_{on}+t_{off})f_{sw} \propto f_{sw}
@@ -344,6 +344,8 @@ The black signal represents a triangular waveform with a relative slope of $1 i_
 The voltage swing is $0.04 V$ and $0.07 V$ since the probe divides the real voltage with a ratio of 10:1 to avoid any damage of the oscilloscope.
 Therefore the real voltage swing is $0.4 V$ and $0.7V$ which fit pretty good to the measured data in chapter \ref{ch:timedomainmeas}.
 The simulation is run with the circuit in Figure \ref{fig:democircuit}, a load impedance corresponding to the measurement in Figure \ref{fig:equivalentprobecircuit} in Chapter \ref{ch:timedomainmeas}, \gls{sy:fsampling} of \SI{200}{\mega \hertz} and $V_{dn} = -5V, V_{dp} = 0V, V_{dd} = 5V$.
+
+
 
 % As DDRi2C is used, bottom vdp(in na; lowside) = vdd. 
 \newpage

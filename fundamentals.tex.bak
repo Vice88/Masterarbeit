@@ -185,7 +185,7 @@ Figure \ref{fig:CodeGenerationPrinciple} shows the principle of the generation p
 \end{figure}
 
 This principle states that a sampled version of the desired signal exists ($y_s$) which is subtracted by a linear approximated signal $y_r$ to obtain the error which then is minimized.
-For every sampling point k, the relative slope $s(m)$ (m belonging to $[0,2^N-1]$; N number of bits) is chosen which minimizes the error 
+For every sampling point k, the relative slope $s(m)$ (m belonging to $[0,2^N-1]$; N number of bits) is chosen which minimizes the quantization error 
 \begin{equation}
 e(k) = | y_s(k) - y_r(k) |.
 \label{eq:error}
@@ -197,6 +197,8 @@ The estimated value of $y_r(k)$ is represented by the sum of its previous value 
 	\label{eq:linearapproxsignal}
 \end{equation}
 
+An advantage of this concept is that the quantization is done with the range of the maximum deviation of the slopes, since always to successive samples are taken.
+Therefore the quantization do not need the whole dynamic of the signal.
 The estimated signal $y_r$ (Equation \ref{eq:linearapproxsignal}) thus presents the sampled signal and generates the corresponding Riemann Code.
 The benefit of the closed loop principle is that the recovered signal after integration, do not drift.
 In comparison to this, in an open loop principle the difference between the current $y_s(k)$ and the previous input sample $y_s(k-1)$ is quantified and thus lead to a cumulative error in the recovered signal \cite{VeyracRivetDevalEtAl2016}.

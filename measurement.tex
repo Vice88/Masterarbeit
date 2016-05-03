@@ -100,8 +100,10 @@ These prerequisites are necessary to ensure a proper measurement.
 After the calibration the first measurement checked the stability of the circuit.
 Therefore the \gls{ab:dut} was supplied with its bias voltages and than the current was checked if it stays constant.
 Due to the fact that the current was stabilized after the transient time, it showed that the circuit is stable.
-For this measurement the in- and output connectors were terminated with \SI{50}{\ohm} terminations.
-
+For this measurement the in- and output connectors were terminated with \SI{50}{\ohm} terminations.\\
+Simulation yielded a power consumption of \SI{1.29}{\watt} for the one-bit configuration using the smaller push pull stage.
+This push pull stage is marked in the schematic in appendix \ref{app:schematicRealizedPump} with C and can be seen on the right side for landscape orientation of the schematic.
+This smaller push pull stage refers to the stage B for the designed layout.
 
 \section{Time domain measurement of push-pull stage}
 After checking stability of the \gls{ab:dut} a small signal is fed to its input.
@@ -153,6 +155,7 @@ The frequency accords with the input signal shown in figure \ref{fig:inputMeas}.
 \label{ch:timedomainmeas}
 % to avoid any damage to the circuit, the power supply voltage was set to a very low value.
 % in fact of the low value it was not ensurred that the transistors switch properly. this was a measurement erro....
+% in adddition process variations come into play
 The purpose was to show if the designed circuit could generate different signals.
 Therefore it was to show if both bits of the circuit could switch synchronously.
 The equivalent circuit for the measurement with the oscilloscope and a probe head is demonstrated in Figure \ref{fig:equivalentprobecircuit}.
