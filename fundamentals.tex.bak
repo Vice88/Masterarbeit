@@ -191,9 +191,9 @@ e(k) = | y_s(k) - y_r(k) |.
 \label{eq:error}
 \end{equation}
 
-The estimated value of $y_r(k)$ is represented by the sum of its previous value and the chosen slope times the sampling interval ($\frac{1}{f_sampling}$) yielding:
+The estimated value of $y_r(k)$ is represented by the sum of its previous value and the chosen slope times the sampling interval ($\frac{1}{f_{sampling}}$) yielding:
 \begin{equation}
-	y_r(k) = y_r(k-1) + \frac{1}{f_sampling}.
+	y_r(k) = y_r(k-1) + \frac{s(m)}{f_{sampling}}.
 	\label{eq:linearapproxsignal}
 \end{equation}
 
@@ -224,11 +224,11 @@ Figure \ref{fig:RiemannIntegral} illustrates an example for generating a Riemann
 	\label{fig:RiemannIntegral}
 \end{figure}
 
-The sequence of slopes:
+In this example the sequence of slopes is
 \begin{equation}
- +5i_0\hspace{.3cm} +5i_0\hspace{.3cm} -7i_0\hspace{.3cm} -1 i_0,
+s(1)\hspace{.3cm} s(1)\hspace{.3cm} s(7)\hspace{.3cm} s(4)\hspace{.3cm} \equiv \hspace{.3cm} +5i_0\hspace{.3cm} +5i_0\hspace{.3cm} -7i_0\hspace{.3cm} -1 i_0,
  \end{equation} 
-generates the Riemann Code:
+ for the time interval $[t0,t4]$ which generates the Riemann Code:
 \begin{equation}
 001\hspace{.3cm} 001\hspace{.3cm} 111\hspace{.3cm} 100\hspace{.3cm}.
 \label{eq:RiemannCodeSineWave} 
