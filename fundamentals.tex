@@ -23,7 +23,7 @@ The ability to process a spectrum of \gls{ab:dc} to \SI{6}{\giga \hertz} enables
 To achieve this goal it is essential to bring the digital domain as close as possible to the antenna \cite{RivetDevalBegueretJ.-B.2007}, \cite{DevalRivetVeyracEtAl2013},\cite{RivetDevalJ.-B.EtAl2010}.
 The digital domain has a lot of advantages regarding complexity, cost, filtering and processing speed \cite{Grossman2005}, \cite{Maroldt2010}.
 The structure of digital components is less complex and therefore has less cost.
-Digital filtering is more precisely and data processing is more efficient and faster \cite{Chamberlain2015}, \cite{LiRaghunathanJha2009}.\\
+Digital filtering is more precise and data processing is more efficient and faster \cite{Chamberlain2015}, \cite{LiRaghunathanJha2009}.\\
 The ultimate software defined radio architecture is shown in Figure \ref{fig:ultimateSDR}.
 
 \begin{figure}[ht]
@@ -34,8 +34,10 @@ The ultimate software defined radio architecture is shown in Figure \ref{fig:ult
 \end{figure}
 
 In this vision the analog received signal is directly converted into the digital domain and afterwards filtered, mixed, demodulated and processed.
+For the transmission path the process is vice versa.
 The absence of the \gls{ab:rffe} is a dream still to come true \cite{RivetDevalJ.-B.EtAl2010}.\\
-Figure \ref{fig:feas_energy} shows the feasibility (left) and the estimated power consumption (right), which demonstrates that this vision is not a realistic option.
+Figure \ref{fig:feas_energy} shows the feasibility (left) and the estimated power consumption (right) evaluated in \cite{RivetDevalJ.-B.EtAl2010}.
+The illustration shows that this vision is not a realistic option yet.
 
 \begin{figure}[htbp]
 	% minipage mit (Blind-)Text
@@ -57,7 +59,12 @@ Figure \ref{fig:feas_energy} shows the feasibility (left) and the estimated powe
  \label{fig:feas_energy}
 \end{figure}
 
-In order to reduce the power consumption some analog components like \gls{ab:lna}, filter, mixer have to be implemented separate in the analog domain for the receiving path.
+To reach modern \gls{ab:rf} standards a \gls{ab:enob} of 17 is required while ensuring a sample rate of \SI{10}{\giga \hertz} to process baseband signals in the \si{\giga \hertz} range.
+As shown in in Figure \ref{fig:feas_energy} on the left side, the development of an \gls{ab:adc} or \gls{ab:dac} with modern technologies is difficult to impossible with respect of the mentioned requirements.
+Another critical bottleneck in this concept is the power consumption, shown on the right side.
+A power consumption in the range of \si{\kilo \watt} occurs if the requirements for modern \gls{ab:rf} standards are fulfilled.
+This identification of drawbacks makes the analog \gls{ab:rffe} indispensable.
+The pre-processing of the analog signal in the receiving path is required to reduce the energy consumption to a moderate range.
 While for the transmitting path, the concept of the Riemann Pump comes into play.
 
 \section{System design using the Riemann Pump} % PLL and Energy consumption
@@ -149,11 +156,13 @@ Implemented in one component this concept saves area and costs and the amplified
 \end{figure}
 
 The dimensions of the current sources, connected in parallel, have to increase by the power of two to get a defined set of currents.
-Demonstrated is a \gls{ab:dac} with three bit resolution, which leads to eight different currents.
+Otherwise two states would share the same code which will lead to a loss of information.
+Demonstrated is a \gls{ab:dac} with three bit resolution, which leads to eight different output currents.
 Instead of using absolute current values, relative currents with respect to $i_0$ are used.
-% The integration of one current step over one period of sampling time
-This leads to eight different slopes which are used for the digital to analog conversion process.
-These eight different slopes are presented in Figure \ref{fig:SlopesAndTable}.
+
+\newpage
+\section{Riemann Code generation}
+The three bit resolution leads to eight different slopes which are presented in Figure \ref{fig:SlopesAndTable}.
 
 \begin{figure}[H]
 	\centering
@@ -163,11 +172,50 @@ These eight different slopes are presented in Figure \ref{fig:SlopesAndTable}.
 \end{figure}
 
 Corresponding to the demonstrated eight different slopes on the left side, a table is presented which states the corresponding encryption for each slope on the right side.
-The representation of the relative slope of $-1 i_0$ is: $1 0 0 \equiv s(4)$.
-Each digit of the code states the position of the corresponding switches, that is 0 for closed and 1 for an opened switch.
-Every single charge pump is represented by one bit, making it a three bit resolution in this example.
-With the help of the encryption table in Figure \ref{fig:SlopesAndTable} a Riemann Code is generated to synthesize a time domain signal.
-Figure \ref{fig:RiemannIntegral} illustrates the generation process of the Riemann Code.
+For example the representation of the relative slope of $-1 i_0$ is: $1 0 0 \equiv s(4)$.
+Each digit of the code states the position of the corresponding switches (A, B and C), that is 0 for opened and 1 for an closed switch.
+Figure \ref{fig:CodeGenerationPrinciple} shows the principle of the generation process.
+% Code generation
+
+ \begin{figure}[H]
+	\centering
+  \includegraphics{CodeGenerationPrinciple.pdf}
+	\caption{Code generation principle}
+	\label{fig:CodeGenerationPrinciple}
+\end{figure}
+
+This principle states that a sampled version of the desired signal exists ($y_s$) which is subtracted by a linear approximated signal $y_r$ to obtain the error which then is minimized.
+For every sampling point k, the relative slope $s(m)$ (m belonging to $[0,2^N-1]$; N number of bits) is chosen which minimizes the error 
+\begin{equation}
+e(k) = | y_s(k) - y_r(k) |.
+\label{eq:error}
+\end{equation}
+
+The estimated value of $y_r(k)$ is represented by the sum of its previous value and the chosen slope times the sampling interval ($\frac{1}{f_{sampling}}$) yielding:
+\begin{equation}
+	y_r(k) = y_r(k-1) + \frac{s(m)}{f_{sampling}}.
+	\label{eq:linearapproxsignal}
+\end{equation}
+
+The estimated signal $y_r$ (Equation \ref{eq:linearapproxsignal}) thus presents the sampled signal and generates the corresponding Riemann Code.
+The benefit of the closed loop principle is that the recovered signal after integration, do not drift.
+In comparison to this, in an open loop principle the difference between the current $y_s(k)$ and the previous input sample $y_s(k-1)$ is quantified and thus lead to a cumulative error in the recovered signal \cite{VeyracRivetDevalEtAl2016}.
+An illustration of the closed loop generation of the Riemann Code is shown in Figure \ref{fig:RiemannIntegralError}.
+
+ \begin{figure}[H]
+	\centering
+  \includegraphics[width=\textwidth]{RiemannIntegralError.pdf}
+	\caption{Code generation - error minimizing}
+	\label{fig:RiemannIntegralError}
+\end{figure}
+
+The blue signal is the desired sampled input signal, the red is the linear approximation of the signal which generates the Riemann Code.
+For the sampling point at time $t1$ no error exists since the linear approximation fit perfectly to the sampled input signal.
+At the discrete time point $t2$ the slope $s(m)$ was chosen which minimized the error stated in Equation \ref{eq:error}.
+The chosen slope is encrypted with the digital representation as shown in Figure \ref{fig:SlopesAndTable}.
+This principle is used in an iterative way to generate a full sequence of slopes for the desired signal.
+This sequence of slopes represents the Riemann Code for the desired signal.
+Figure \ref{fig:RiemannIntegral} illustrates an example for generating a Riemann Code.
 
 \begin{figure}[H]
 	\centering
@@ -176,25 +224,20 @@ Figure \ref{fig:RiemannIntegral} illustrates the generation process of the Riema
 	\label{fig:RiemannIntegral}
 \end{figure}
 
-The desired signal, consisting of multiple different signals where each can have a different modulation and symbol rate, is pre processed and then sampled with the Riemann Conversion.
-This theoretically signal is depicted blue.
-With the aid of the defined set of slopes a signal can be synthesized (red dotted), which yields the Riemann Code.
-The Code generation is based on minimizing the error between the theoretical signal and the piecewise linear approximation of the signal, created with the different slopes.
-This minimization is depicted in Figure \ref{fig:RiemannIntegralError}. 
+In this example the sequence of slopes is
+\begin{equation}
+s(1)\hspace{.3cm} s(1)\hspace{.3cm} s(7)\hspace{.3cm} s(4)\hspace{.3cm} \equiv \hspace{.3cm} +5i_0\hspace{.3cm} +5i_0\hspace{.3cm} -7i_0\hspace{.3cm} -1 i_0,
+ \end{equation} 
+ for the time interval $[t0,t4]$ which generates the Riemann Code:
+\begin{equation}
+001\hspace{.3cm} 001\hspace{.3cm} 111\hspace{.3cm} 100\hspace{.3cm}.
+\label{eq:RiemannCodeSineWave} 
+\end{equation}
 
- \begin{figure}[ht]
-	\centering
-  \includegraphics[width=\textwidth]{RiemannIntegralError.pdf}
-	\caption{Code generation - error minimizing}
-	\label{fig:RiemannIntegralError}
-\end{figure}
-% detailed description !
-For each sampling point the slope with the smallest deviation in amplitude to the theoretical signal is chosen \cite{VeyracRivetDevalEtAl2014}.
-This yields a set of slopes representing a Riemann Code for the desired signal.
-Arbitrary waveforms can be generated using this technique.
-To avoid unwanted signal clipping it is important that the output capacitance is neither fully charged nor discharged.
-\newpage
-\section{Characteristics of Digtial-to-Analog converter}
+The desired signal, consisting of multiple different signals where each can have a different modulation and symbol rate, is pre processed and then sampled with the Riemann Conversion.
+Using this technique arbitrary waveforms can be generated avoiding that the signal drift.
+
+\section{Characteristics of Digital-to-Analog converter}
 \label{ch:characteristics}
 %The characteristics, the performance and figure of merits are compared to classify the Riemann Pump with the conventional digital-to-analog conversion principles.
 %Performance: Resolution, Maximum sampling rate, dynamic range.
@@ -254,6 +297,9 @@ For further details see \cite{VeyracRivetDevalEtAl2014},\cite{VeyracRivetDevalEt
 %As stated in \cite{VeyracRivetDevalEtAl2014}, simulation results showed a \gls{ab:snr} of \SI{30}{\decibel} for $N = 3$ and $r = 2$, which exceeds the approximation of \SI{27}{\decibel}.
 
 \section{Conclusion of the fundamentals}
+In contrast to classical current steering topologies the Riemann Pump concept rather makes use of the derivative at sampling points than to sample the absolute value.
+In order to reconstruct the analog signal, the digital code thus has to be integrated.
+
 In this chapter the implementation of the Riemann Pump in a system design has been presented.
 After the description of the classification and application, the concept of the custom \gls{ab:dac} has been described.
 After explaining a simple charge pump, a multi bit resolution \gls{ab:dac} have been presented.

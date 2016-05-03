@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  2 MAY 2016 22:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  3 MAY 2016 15:37
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -1260,7 +1260,11 @@ Package glossaries Info: Writing glossary file master_thesis_RiemannPump.sbl on
 
 Writing index file master_thesis_RiemannPump.idx
 (master_thesis_RiemannPump.aux (preface.aux) (fundamentals.aux) (design.aux)
-(simulation.aux) (layout.aux) (measurement.aux) (conclusion.aux) (appendix.aux
+(simulation.aux
+
+LaTeX Warning: Label `eq:RiemannCodeSineWave' multiply defined.
+
+) (layout.aux) (measurement.aux) (conclusion.aux) (appendix.aux
 
 LaTeX Warning: Label `pic:DemonstratorDDRiXY6' multiply defined.
 
@@ -1520,10 +1524,10 @@ Package pdftex.def Info: graphics/concept/ultimateSDR.pdf used on input line 31
 File: graphics/concept/energy_consumption_sdr.pdf Graphic file (type pdf)
 <use graphics/concept/energy_consumption_sdr.pdf>
 Package pdftex.def Info: graphics/concept/energy_consumption_sdr.pdf used on in
-put line 43.
+put line 45.
 (pdftex.def)             Requested size: 230.0444pt x 158.94342pt.
 
-Overfull \hbox (20.91428pt too wide) in paragraph at lines 43--46
+Overfull \hbox (20.91428pt too wide) in paragraph at lines 45--48
 [][] 
  []
 
@@ -1533,10 +1537,10 @@ Overfull \hbox (20.91428pt too wide) in paragraph at lines 43--46
 File: graphics/concept/energy_consumption_sdr2.pdf Graphic file (type pdf)
  <use graphics/concept/energy_consumption_sdr2.pdf>
 Package pdftex.def Info: graphics/concept/energy_consumption_sdr2.pdf used on i
-nput line 52.
+nput line 54.
 (pdftex.def)             Requested size: 230.0444pt x 167.30887pt.
 
-Overfull \hbox (20.91428pt too wide) in paragraph at lines 52--55
+Overfull \hbox (20.91428pt too wide) in paragraph at lines 54--57
 [][] 
  []
 
@@ -1554,7 +1558,7 @@ File: graphics/concept/SystemDesign.pdf Graphic file (type pdf)
 
 <use graphics/concept/SystemDesign.pdf>
 Package pdftex.def Info: graphics/concept/SystemDesign.pdf used on input line 8
-2.
+9.
 (pdftex.def)             Requested size: 426.79141pt x 291.00224pt.
  [5 <./graphics/concept/SystemDesign.pdf>] <graphics/concept/ChargePump_ink.pdf
 , id=164, 199.1693pt x 236.15787pt>
@@ -1562,65 +1566,74 @@ File: graphics/concept/ChargePump_ink.pdf Graphic file (type pdf)
 
 <use graphics/concept/ChargePump_ink.pdf>
 Package pdftex.def Info: graphics/concept/ChargePump_ink.pdf used on input line
- 119.
+ 126.
 (pdftex.def)             Requested size: 199.1688pt x 236.15729pt.
- [6 <./graphics/concept/ChargePump_ink.pdf>] <graphics/concept/RP_concept.pdf, 
-id=176, 845.1575pt x 597.23125pt>
+ [6]
+<graphics/concept/RP_concept.pdf, id=168, 845.1575pt x 597.23125pt>
 File: graphics/concept/RP_concept.pdf Graphic file (type pdf)
 
 <use graphics/concept/RP_concept.pdf>
-Package pdftex.def Info: graphics/concept/RP_concept.pdf used on input line 146
+Package pdftex.def Info: graphics/concept/RP_concept.pdf used on input line 153
 .
 (pdftex.def)             Requested size: 338.057pt x 238.88826pt.
- [7]
-<graphics/concept/SlopesAndTable.pdf, id=183, 845.1575pt x 597.23125pt>
+ [7 <./graphics/concept/ChargePump_ink.pdf>] [8 <./graphics/concept/RP_concept.
+pdf, page is rotated 90 degrees>]
+<graphics/concept/SlopesAndTable.pdf, id=198, 845.1575pt x 597.23125pt>
 File: graphics/concept/SlopesAndTable.pdf Graphic file (type pdf)
 
 <use graphics/concept/SlopesAndTable.pdf>
 Package pdftex.def Info: graphics/concept/SlopesAndTable.pdf used on input line
- 160.
+ 169.
 (pdftex.def)             Requested size: 426.79141pt x 301.59483pt.
- [8 <./graphics/concept/RP_concept.pdf, page is rotated 90 degrees>]
-<graphics/concept/RiemannIntegral.pdf, id=199, 845.1575pt x 597.23125pt>
-File: graphics/concept/RiemannIntegral.pdf Graphic file (type pdf)
 
-<use graphics/concept/RiemannIntegral.pdf>
-Package pdftex.def Info: graphics/concept/RiemannIntegral.pdf used on input lin
-e 174.
-(pdftex.def)             Requested size: 426.79141pt x 301.59483pt.
+<graphics/concept/CodeGenerationPrinciple.pdf, id=199, 312.98033pt x 227.62204p
+t>
+File: graphics/concept/CodeGenerationPrinciple.pdf Graphic file (type pdf)
+ <use graphics/concept/CodeGenerationPrinciple.pdf>
+Package pdftex.def Info: graphics/concept/CodeGenerationPrinciple.pdf used on i
+nput line 182.
+(pdftex.def)             Requested size: 312.97955pt x 227.62148pt.
  [9 <./graphics/concept/SlopesAndTable.pdf, page is rotated 90 degrees>]
 <graphics/concept/RiemannIntegralError.pdf, id=216, 845.1575pt x 597.23125pt>
 File: graphics/concept/RiemannIntegralError.pdf Graphic file (type pdf)
 
 <use graphics/concept/RiemannIntegralError.pdf>
 Package pdftex.def Info: graphics/concept/RiemannIntegralError.pdf used on inpu
-t line 187.
+t line 207.
 (pdftex.def)             Requested size: 426.79141pt x 301.59483pt.
- [10 <./graphics/concept/RiemannIntegral.pdf, page is rotated 90 degrees>]
-<graphics/concept/SQNR.pdf, id=227, 845.1575pt x 597.23125pt>
+ [10 <./graphics/concept/CodeGenerationPrinciple.pdf>]
+<graphics/concept/RiemannIntegral.pdf, id=229, 845.1575pt x 597.23125pt>
+File: graphics/concept/RiemannIntegral.pdf Graphic file (type pdf)
+
+<use graphics/concept/RiemannIntegral.pdf>
+Package pdftex.def Info: graphics/concept/RiemannIntegral.pdf used on input lin
+e 222.
+(pdftex.def)             Requested size: 426.79141pt x 301.59483pt.
+ [11 <./graphics/concept/RiemannIntegralError.pdf, page is rotated 90 degrees>]
+ [12 <./graphics/concept/RiemannIntegral.pdf, page is rotated 90 degrees>]
+<graphics/concept/SQNR.pdf, id=251, 845.1575pt x 597.23125pt>
 File: graphics/concept/SQNR.pdf Graphic file (type pdf)
 
 <use graphics/concept/SQNR.pdf>
-Package pdftex.def Info: graphics/concept/SQNR.pdf used on input line 226.
+Package pdftex.def Info: graphics/concept/SQNR.pdf used on input line 269.
 (pdftex.def)             Requested size: 426.79141pt x 301.59483pt.
- [11 <./graphics/concept/RiemannIntegralError.pdf, page is rotated 90 degrees>]
-) [12 <./graphics/concept/SQNR.pdf, page is rotated 90 degrees>] [13] (design.t
-ex [14
-
-
-
-
-]
+ [13 <./graphics/concept/SQNR.pdf, page is rotated 90 degrees>]) [14] (design.t
+ex
 chapter 3.
 
-<graphics/concept/Schematic_RP_concept2.pdf, id=1104, 369.88583pt x 213.39565pt
+<graphics/concept/Schematic_RP_concept2.pdf, id=1114, 369.88583pt x 213.39565pt
 >
 File: graphics/concept/Schematic_RP_concept2.pdf Graphic file (type pdf)
  <use graphics/concept/Schematic_RP_concept2.pdf>
 Package pdftex.def Info: graphics/concept/Schematic_RP_concept2.pdf used on inp
 ut line 23.
 (pdftex.def)             Requested size: 426.79141pt x 246.23015pt.
- [15] [16 <./graphics/concept/Schematic_RP_concept2.pdf>]
+ [15
+
+
+
+
+] [16 <./graphics/concept/Schematic_RP_concept2.pdf>]
 LaTeX Font Info:    Try loading font information for TS1+ptm on input line 55.
  (E:\WinProgram\MikTEX\tex\latex\psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -1661,7 +1674,7 @@ Package microtype Warning: Unknown slot number of character
 (microtype)                `textcomp'.
 
 
-<graphics/concept/equivalentcircuit_hemt.pdf, id=1143, 312.98033pt x 213.39566p
+<graphics/concept/equivalentcircuit_hemt.pdf, id=1153, 312.98033pt x 213.39566p
 t>
 File: graphics/concept/equivalentcircuit_hemt.pdf Graphic file (type pdf)
  <use graphics/concept/equivalentcircuit_hemt.pdf>
@@ -1669,7 +1682,7 @@ Package pdftex.def Info: graphics/concept/equivalentcircuit_hemt.pdf used on in
 put line 68.
 (pdftex.def)             Requested size: 312.97955pt x 213.39514pt.
  [17]
-<graphics/simulation/inputReactance.pdf, id=1148, 845.1575pt x 597.23125pt>
+<graphics/simulation/inputReactance.pdf, id=1158, 845.1575pt x 597.23125pt>
 File: graphics/simulation/inputReactance.pdf Graphic file (type pdf)
 
 <use graphics/simulation/inputReactance.pdf>
@@ -1678,7 +1691,7 @@ ine 93.
 (pdftex.def)             Requested size: 320.09355pt x 226.19385pt.
  [18 <./graphics/concept/equivalentcircuit_hemt.pdf>] [19 <./graphics/simulatio
 n/inputReactance.pdf>]
-<graphics/simulation/realizedCircuit_oneBit.pdf, id=1168, 312.98033pt x 270.301
+<graphics/simulation/realizedCircuit_oneBit.pdf, id=1178, 312.98033pt x 270.301
 2pt>
 File: graphics/simulation/realizedCircuit_oneBit.pdf Graphic file (type pdf)
  <use graphics/simulation/realizedCircuit_oneBit.pdf>
@@ -1686,7 +1699,7 @@ Package pdftex.def Info: graphics/simulation/realizedCircuit_oneBit.pdf used on
  input line 179.
 (pdftex.def)             Requested size: 312.97955pt x 270.30052pt.
  [20]
-<graphics/concept/outputCharacteristic.pdf, id=1172, 312.98033pt x 199.1693pt>
+<graphics/concept/outputCharacteristic.pdf, id=1182, 312.98033pt x 199.1693pt>
 File: graphics/concept/outputCharacteristic.pdf Graphic file (type pdf)
 
 <use graphics/concept/outputCharacteristic.pdf>
@@ -1705,7 +1718,7 @@ chapter 4.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 21.
 [25] (graphics/simulation/RiemannCodeGenerationSineWave73_latest.pdf_tex
-<graphics/simulation/RiemannCodeGenerationSineWave73_latest.pdf, id=1212, page=
+<graphics/simulation/RiemannCodeGenerationSineWave73_latest.pdf, id=1222, page=
 1, 312.98033pt x 213.39566pt>
 File: graphics/simulation/RiemannCodeGenerationSineWave73_latest.pdf Graphic fi
 le (type pdf)
@@ -1716,7 +1729,7 @@ test.pdf, page1 used on input line 52.
 (pdftex.def)             Requested size: 312.9803pt x 213.40164pt.
 )
 <graphics/simulation/Vout_sine_SigBWdifferent_SameSlope_73_TwoPeriods.pdf, id=1
-213, 313.17pt x 241.90375pt>
+223, 313.17pt x 241.90375pt>
 File: graphics/simulation/Vout_sine_SigBWdifferent_SameSlope_73_TwoPeriods.pdf 
 Graphic file (type pdf)
 
@@ -1730,7 +1743,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--86
  []
 
 [26 <./graphics/simulation/RiemannCodeGenerationSineWave73_latest.pdf>]
-<graphics/simulation/Vout_sine_SigBW_05GHz_3bit_long.pdf, id=1238, 313.17pt x 2
+<graphics/simulation/Vout_sine_SigBW_05GHz_3bit_long.pdf, id=1248, 313.17pt x 2
 41.90375pt>
 File: graphics/simulation/Vout_sine_SigBW_05GHz_3bit_long.pdf Graphic file (typ
 e pdf)
@@ -1741,7 +1754,7 @@ f used on input line 89.
 
 [27 <./graphics/simulation/Vout_sine_SigBWdifferent_SameSlope_73_TwoPeriods.pdf
 , page is rotated 90 degrees>]
-<graphics/simulation/Vout_SynthVsTheo.pdf, id=1248, 313.17pt x 213.79875pt>
+<graphics/simulation/Vout_SynthVsTheo.pdf, id=1258, 313.17pt x 213.79875pt>
 File: graphics/simulation/Vout_SynthVsTheo.pdf Graphic file (type pdf)
 
 <use graphics/simulation/Vout_SynthVsTheo.pdf>
@@ -1749,7 +1762,7 @@ Package pdftex.def Info: graphics/simulation/Vout_SynthVsTheo.pdf used on input
  line 118.
 (pdftex.def)             Requested size: 320.09355pt x 218.53181pt.
 
-<graphics/simulation/SineCompare3.pdf, id=1249, 313.17pt x 213.79875pt>
+<graphics/simulation/SineCompare3.pdf, id=1259, 313.17pt x 213.79875pt>
 File: graphics/simulation/SineCompare3.pdf Graphic file (type pdf)
 
 <use graphics/simulation/SineCompare3.pdf>
@@ -1760,7 +1773,7 @@ e 132.
 d 90 degrees>] [29 <./graphics/simulation/Vout_SynthVsTheo.pdf, page is rotated
  90 degrees> <./graphics/simulation/SineCompare3.pdf, page is rotated 90 degree
 s>]
-<graphics/snr/FullSine15GHz.pdf, id=1275, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine15GHz.pdf, id=1285, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine15GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine15GHz.pdf>
@@ -1768,7 +1781,7 @@ Package pdftex.def Info: graphics/snr/FullSine15GHz.pdf used on input line 150.
 
 (pdftex.def)             Requested size: 384.10966pt x 288.08862pt.
 
-<graphics/simulation/Vout_7sine_SameSigBWdifferent_DifferentSlope.pdf, id=1276,
+<graphics/simulation/Vout_7sine_SameSigBWdifferent_DifferentSlope.pdf, id=1286,
  313.17pt x 213.79875pt>
 File: graphics/simulation/Vout_7sine_SameSigBWdifferent_DifferentSlope.pdf Grap
 hic file (type pdf)
@@ -1779,7 +1792,7 @@ erentSlope.pdf used on input line 165.
 (pdftex.def)             Requested size: 320.09355pt x 218.53181pt.
 
 [30 <./graphics/snr/FullSine15GHz.pdf>]
-<graphics/simulation/Vout_halfsine_7531_diff_freq.pdf, id=1300, 313.17pt x 213.
+<graphics/simulation/Vout_halfsine_7531_diff_freq.pdf, id=1310, 313.17pt x 213.
 79875pt>
 File: graphics/simulation/Vout_halfsine_7531_diff_freq.pdf Graphic file (type p
 df)
@@ -1789,7 +1802,7 @@ sed on input line 194.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
  [31 <./graphics/simulation/Vout_7sine_SameSigBWdifferent_DifferentSlope.pdf, p
 age is rotated 90 degrees>]
-<graphics/simulation/Vout_triangular_2GHz_diffSlopes.pdf, id=1310, 313.17pt x 2
+<graphics/simulation/Vout_triangular_2GHz_diffSlopes.pdf, id=1320, 313.17pt x 2
 27.85126pt>
 File: graphics/simulation/Vout_triangular_2GHz_diffSlopes.pdf Graphic file (typ
 e pdf)
@@ -1800,7 +1813,7 @@ f used on input line 216.
 
 [32 <./graphics/simulation/Vout_halfsine_7531_diff_freq.pdf, page is rotated 90
  degrees>]
-<graphics/simulation/Vout_triangular_Slope33_diffFreq.pdf, id=1320, 313.17pt x 
+<graphics/simulation/Vout_triangular_Slope33_diffFreq.pdf, id=1330, 313.17pt x 
 227.85126pt>
 File: graphics/simulation/Vout_triangular_Slope33_diffFreq.pdf Graphic file (ty
 pe pdf)
@@ -1812,7 +1825,7 @@ df used on input line 240.
 [33 <./graphics/simulation/Vout_triangular_2GHz_diffSlopes.pdf, page is rotated
  90 degrees> <./graphics/simulation/Vout_triangular_Slope33_diffFreq.pdf, page 
 is rotated 90 degrees>] [34] [35]
-<graphics/simulation/realizedCircuit_oneBit_DDRi_XY6.pdf, id=1343, 314.40294pt 
+<graphics/simulation/realizedCircuit_oneBit_DDRi_XY6.pdf, id=1353, 314.40294pt 
 x 258.92007pt>
 File: graphics/simulation/realizedCircuit_oneBit_DDRi_XY6.pdf Graphic file (typ
 e pdf)
@@ -1822,7 +1835,7 @@ f used on input line 321.
 (pdftex.def)             Requested size: 426.79141pt x 351.50241pt.
 
 [36 <./graphics/simulation/realizedCircuit_oneBit_DDRi_XY6.pdf>]
-<graphics/simulation/SimulationForMeasData.pdf, id=1362, 313.17pt x 227.85126pt
+<graphics/simulation/SimulationForMeasData.pdf, id=1372, 313.17pt x 227.85126pt
 >
 File: graphics/simulation/SimulationForMeasData.pdf Graphic file (type pdf)
  <use graphics/simulation/SimulationForMeasData.pdf>
@@ -1838,7 +1851,7 @@ chapter 5.
 
 
 ]
-<graphics/layout/Layout_DDRiXY6_new_grey.pdf, id=1378, 312.98033pt x 256.0748pt
+<graphics/layout/Layout_DDRiXY6_new_grey.pdf, id=1388, 312.98033pt x 256.0748pt
 >
 File: graphics/layout/Layout_DDRiXY6_new_grey.pdf Graphic file (type pdf)
  <use graphics/layout/Layout_DDRiXY6_new_grey.pdf>
@@ -1846,7 +1859,7 @@ Package pdftex.def Info: graphics/layout/Layout_DDRiXY6_new_grey.pdf used on in
 put line 56.
 (pdftex.def)             Requested size: 312.97955pt x 256.07416pt.
  [40 <./graphics/layout/Layout_DDRiXY6_new_grey.pdf>]
-<graphics/layout/Layout_DDRiXY6_bonds_new.pdf, id=1395, 298.75392pt x 241.84845
+<graphics/layout/Layout_DDRiXY6_bonds_new.pdf, id=1405, 298.75392pt x 241.84845
 pt>
 File: graphics/layout/Layout_DDRiXY6_bonds_new.pdf Graphic file (type pdf)
  <use graphics/layout/Layout_DDRiXY6_bonds_new.pdf>
@@ -1854,7 +1867,7 @@ Package pdftex.def Info: graphics/layout/Layout_DDRiXY6_bonds_new.pdf used on i
 nput line 105.
 (pdftex.def)             Requested size: 298.75319pt x 241.84785pt.
  [41]
-<graphics/photos/Photo_DDRi_XY6.pdf, id=1400, 179.25235pt x 227.62204pt>
+<graphics/photos/Photo_DDRi_XY6.pdf, id=1410, 179.25235pt x 227.62204pt>
 File: graphics/photos/Photo_DDRi_XY6.pdf Graphic file (type pdf)
 
 <use graphics/photos/Photo_DDRi_XY6.pdf>
@@ -1862,7 +1875,7 @@ Package pdftex.def Info: graphics/photos/Photo_DDRi_XY6.pdf used on input line
 134.
 (pdftex.def)             Requested size: 179.2519pt x 227.62148pt.
  [42 <./graphics/layout/Layout_DDRiXY6_bonds_new.pdf>]
-<graphics/layout/Layout_DDRi2C_bonds.pdf, id=1417, 298.75392pt x 241.84843pt>
+<graphics/layout/Layout_DDRi2C_bonds.pdf, id=1427, 298.75392pt x 241.84843pt>
 File: graphics/layout/Layout_DDRi2C_bonds.pdf Graphic file (type pdf)
 
 <use graphics/layout/Layout_DDRi2C_bonds.pdf>
@@ -1879,7 +1892,7 @@ ds.pdf
 
 pdfTeX warning: pdflatex (file ./graphics/layout/Layout_DDRi2C_bonds.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
->] <graphics/photos/Photo_DDRi_2C.pdf, id=1434, 179.25235pt x 227.62204pt>
+>] <graphics/photos/Photo_DDRi_2C.pdf, id=1444, 179.25235pt x 227.62204pt>
 File: graphics/photos/Photo_DDRi_2C.pdf Graphic file (type pdf)
 
 <use graphics/photos/Photo_DDRi_2C.pdf>
@@ -1892,7 +1905,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--202
  []
 
 [44 <./graphics/photos/Photo_DDRi_2C.pdf>]
-<graphics/photos/Demonstrator_edited_newScale.pdf, id=1442, 312.98033pt x 227.6
+<graphics/photos/Demonstrator_edited_newScale.pdf, id=1452, 312.98033pt x 227.6
 2204pt>
 File: graphics/photos/Demonstrator_edited_newScale.pdf Graphic file (type pdf)
  <use graphics/photos/Demonstrator_edited_newScale.pdf>
@@ -1900,7 +1913,7 @@ Package pdftex.def Info: graphics/photos/Demonstrator_edited_newScale.pdf used
 on input line 215.
 (pdftex.def)             Requested size: 312.97955pt x 227.62148pt.
  [45 <./graphics/photos/Demonstrator_edited_newScale.pdf>]
-<graphics/layout/Layout_DDRiXY6_AlN_pads.pdf, id=1464, 312.98033pt x 213.39566p
+<graphics/layout/Layout_DDRiXY6_AlN_pads.pdf, id=1474, 312.98033pt x 213.39566p
 t>
 File: graphics/layout/Layout_DDRiXY6_AlN_pads.pdf Graphic file (type pdf)
  <use graphics/layout/Layout_DDRiXY6_AlN_pads.pdf>
@@ -1909,7 +1922,7 @@ put line 237.
 (pdftex.def)             Requested size: 312.97955pt x 213.39514pt.
 ) [46 <./graphics/layout/Layout_DDRiXY6_AlN_pads.pdf>] (measurement.tex
 chapter 6.
-<graphics/concept/meassetupschem.pdf, id=1478, 412.56496pt x 227.62204pt>
+<graphics/concept/meassetupschem.pdf, id=1488, 412.56496pt x 227.62204pt>
 File: graphics/concept/meassetupschem.pdf Graphic file (type pdf)
 
 <use graphics/concept/meassetupschem.pdf>
@@ -1930,14 +1943,14 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
  [48 <./graphics/concept/meassetupschem.pdf>]
-<graphics/photos/MeasSetup.pdf, id=1501, 398.3386pt x 267.4559pt>
+<graphics/photos/MeasSetup.pdf, id=1511, 398.3386pt x 267.4559pt>
 File: graphics/photos/MeasSetup.pdf Graphic file (type pdf)
 
 <use graphics/photos/MeasSetup.pdf>
 Package pdftex.def Info: graphics/photos/MeasSetup.pdf used on input line 90.
 (pdftex.def)             Requested size: 398.33762pt x 267.45525pt.
  [49 <./graphics/photos/MeasSetup.pdf>]
-<graphics/measdata/inputVoltage.pdf, id=1509, 313.17pt x 213.79875pt>
+<graphics/measdata/inputVoltage.pdf, id=1519, 313.17pt x 213.79875pt>
 File: graphics/measdata/inputVoltage.pdf Graphic file (type pdf)
 
 <use graphics/measdata/inputVoltage.pdf>
@@ -1945,7 +1958,7 @@ Package pdftex.def Info: graphics/measdata/inputVoltage.pdf used on input line
 127.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
 
-<graphics/measdata/100M_Rload_regression.pdf, id=1510, 313.17pt x 213.79875pt>
+<graphics/measdata/100M_Rload_regression.pdf, id=1520, 313.17pt x 213.79875pt>
 File: graphics/measdata/100M_Rload_regression.pdf Graphic file (type pdf)
 
 <use graphics/measdata/100M_Rload_regression.pdf>
@@ -1953,7 +1966,7 @@ Package pdftex.def Info: graphics/measdata/100M_Rload_regression.pdf used on in
 put line 139.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
  [50 <./graphics/measdata/inputVoltage.pdf, page is rotated 90 degrees>]
-<graphics/measdata/ProbeMeasurementOsci2.pdf, id=1521, 312.98033pt x 227.62204p
+<graphics/measdata/ProbeMeasurementOsci2.pdf, id=1531, 312.98033pt x 227.62204p
 t>
 File: graphics/measdata/ProbeMeasurementOsci2.pdf Graphic file (type pdf)
  <use graphics/measdata/ProbeMeasurementOsci2.pdf>
@@ -1961,7 +1974,7 @@ Package pdftex.def Info: graphics/measdata/ProbeMeasurementOsci2.pdf used on in
 put line 161.
 (pdftex.def)             Requested size: 312.97955pt x 227.62148pt.
 
-<graphics/measdata/100M_Cload_regression.pdf, id=1522, 313.17pt x 213.79875pt>
+<graphics/measdata/100M_Cload_regression.pdf, id=1532, 313.17pt x 213.79875pt>
 File: graphics/measdata/100M_Cload_regression.pdf Graphic file (type pdf)
 
 <use graphics/measdata/100M_Cload_regression.pdf>
@@ -1970,7 +1983,7 @@ put line 175.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
  [51 <./graphics/measdata/100M_Rload_regression.pdf, page is rotated 90 degrees
 >]
-<graphics/measdata/150M_Cload_regression.pdf, id=1532, 313.17pt x 213.79875pt>
+<graphics/measdata/150M_Cload_regression.pdf, id=1542, 313.17pt x 213.79875pt>
 File: graphics/measdata/150M_Cload_regression.pdf Graphic file (type pdf)
 
 <use graphics/measdata/150M_Cload_regression.pdf>
@@ -2005,7 +2018,7 @@ allenges for 5G Technologies,''
 
 
 ]
-<graphics/layout/CircuitSchematic_portrait.pdf, id=1603, 142.26378pt x 512.1496
+<graphics/layout/CircuitSchematic_portrait.pdf, id=1613, 142.26378pt x 512.1496
 pt>
 File: graphics/layout/CircuitSchematic_portrait.pdf Graphic file (type pdf)
  <use graphics/layout/CircuitSchematic_portrait.pdf>
@@ -2013,7 +2026,7 @@ Package pdftex.def Info: graphics/layout/CircuitSchematic_portrait.pdf used on
 input line 13.
 (pdftex.def)             Requested size: 142.26343pt x 512.14835pt.
  [63]
-<graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf, id=1607, 341.43306pt x 
+<graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf, id=1617, 341.43306pt x 
 805.21298pt>
 File: graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf Graphic file (type 
 pdf)
@@ -2027,7 +2040,7 @@ Overfull \vbox (8.6707pt too high) has occurred while \output is active []
 
 
 [66 <./graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf>]
-<graphics/photos/Demonstrator.pdf, id=1641, 209.2131pt x 227.62204pt>
+<graphics/photos/Demonstrator.pdf, id=1651, 209.2131pt x 227.62204pt>
 File: graphics/photos/Demonstrator.pdf Graphic file (type pdf)
 
 <use graphics/photos/Demonstrator.pdf>
@@ -2035,14 +2048,14 @@ Package pdftex.def Info: graphics/photos/Demonstrator.pdf used on input line 34
 .
 (pdftex.def)             Requested size: 209.21257pt x 227.62148pt.
  [67 <./graphics/photos/Demonstrator.pdf>] [68] <graphics/snr/FullSine05GHz.pdf
-, id=1655, 312.98033pt x 234.73523pt>
+, id=1665, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine05GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine05GHz.pdf>
 Package pdftex.def Info: graphics/snr/FullSine05GHz.pdf used on input line 70.
 (pdftex.def)             Requested size: 384.10966pt x 288.08862pt.
 
-<graphics/snr/FullSine1GHz.pdf, id=1656, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine1GHz.pdf, id=1666, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine1GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine1GHz.pdf>
@@ -2052,7 +2065,7 @@ Package pdftex.def Info: graphics/snr/FullSine1GHz.pdf used on input line 77.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine2GHz.pdf, id=1657, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine2GHz.pdf, id=1667, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine2GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine2GHz.pdf>
@@ -2062,7 +2075,7 @@ Package pdftex.def Info: graphics/snr/FullSine2GHz.pdf used on input line 84.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine3GHz.pdf, id=1658, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine3GHz.pdf, id=1668, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine3GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine3GHz.pdf>
@@ -2072,7 +2085,7 @@ Package pdftex.def Info: graphics/snr/FullSine3GHz.pdf used on input line 91.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine4GHz.pdf, id=1659, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine4GHz.pdf, id=1669, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine4GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine4GHz.pdf>
@@ -2082,7 +2095,7 @@ Package pdftex.def Info: graphics/snr/FullSine4GHz.pdf used on input line 98.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine5GHz.pdf, id=1660, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine5GHz.pdf, id=1670, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine5GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine5GHz.pdf>
@@ -2092,7 +2105,7 @@ Package pdftex.def Info: graphics/snr/FullSine5GHz.pdf used on input line 105.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine6GHz.pdf, id=1661, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine6GHz.pdf, id=1671, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine6GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine6GHz.pdf>
@@ -2123,27 +2136,28 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 40149 strings out of 493673
- 774940 string characters out of 3146818
- 860734 words of memory out of 3000000
- 42493 multiletter control sequences out of 15000+200000
+ 40218 strings out of 493673
+ 776314 string characters out of 3146818
+ 861301 words of memory out of 3000000
+ 42560 multiletter control sequences out of 15000+200000
  67721 words of font info for 231 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  71i,11n,79p,10425b,1268s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/WinProgram/MikTEX/fonts/enc/dvips/fontname/8r.enc}<E:/WinProgram/MikTEX/f
 onts/type1/public/amsfonts/cm/cmex10.pfb><E:/WinProgram/MikTEX/fonts/type1/publ
 ic/amsfonts/cm/cmmi12.pfb><E:/WinProgram/MikTEX/fonts/type1/public/amsfonts/cm/
-cmmi8.pfb><E:/WinProgram/MikTEX/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Wi
-nProgram/MikTEX/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/WinProgram/MikTEX/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb><E:/WinProgram/MikTEX/fonts/type1/publ
-ic/amsfonts/cm/cmsy8.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/helvetic/uhvb8a.
-pfb><E:/WinProgram/MikTEX/fonts/type1/urw/helvetic/uhvr8a.pfb><E:/WinProgram/Mi
-kTEX/fonts/type1/urw/times/utmb8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/tim
-es/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinPro
-gram/MikTEX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on master_thesis_RiemannPump.pdf (86 pages, 51430041 bytes).
+cmmi6.pfb><E:/WinProgram/MikTEX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/Wi
+nProgram/MikTEX/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/WinProgram/MikTEX/
+fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/WinProgram/MikTEX/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb><E:/WinProgram/MikTEX/fonts/type1/public/amsfonts/cm/c
+msy8.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/helvetic/uhvb8a.pfb><E:/WinProgr
+am/MikTEX/fonts/type1/urw/helvetic/uhvr8a.pfb><E:/WinProgram/MikTEX/fonts/type1
+/urw/times/utmb8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E
+:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/font
+s/type1/urw/times/utmri8a.pfb>
+Output written on master_thesis_RiemannPump.pdf (86 pages, 51451133 bytes).
 PDF statistics:
- 1857 PDF objects out of 2073 (max. 8388607)
+ 1870 PDF objects out of 2073 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41750 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 41755 words of extra memory for PDF output out of 42996 (max. 10000000)
 

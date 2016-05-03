@@ -220,18 +220,19 @@ Figure \ref{fig:DiffSlopeSameBWTriangular} demonstrates the four different combi
 
 The fundamental frequency was set to \SI{2}{\giga \hertz} representative for the signals with \gls{sy:fsignal} in the frequency range of \SI{500}{\mega \hertz} to \SI{6}{\giga \hertz}.
 In this configuration only the wave form for the biggest slope (77; cyan) deviates from the desired signal.
+At the sampling point 2 the output capacitance is fully charged which led to an undesirable signal form.
+In fact of the high current and long sampling interval, the output capacitor is fully charged.
+The problem of not defined reference currents can be observed in the following calculation.
 For a reference current $i_0$ of approximately \SI{160}{\milli \ampere}, a capacitance $C$ of \SI{20}{\pico \farad} and a sampling interval $dt$ of \SI{125}{\pico \second} the voltage swing can be calculated as:
 \begin{equation}
 	dU = \frac{7 i_0*2 dt }{C} = 14 V,
 \end{equation}
 
 which fit pretty good to the cyan signal in Figure \ref{fig:DiffSlopeSameBWTriangular}.
-At the sampling point 2 the output capacitance is fully charged which led to an undesirable signal form.
-In fact of the high current and long sampling interval, the output capacitor is fully charged.
- seemed to shape like a rectified sine while the other three signals seemed to fit to a triangular wave very nicely.
-This effect was caused, as mentioned earlier, by the sampling interval and the high current values, which led to signal clipping.
+Taken the same parameters for the slope of $5 i_0$ it follows a voltage swing of $dU = 10 V$, $dU = 6 V$ and $dU = 2 V$ respectively for $3 i_0$ and $1 i_0$.
+As mentioned earlier the problem of not perfectly defined current sources came into play, since this voltage swings could not be observed in Figure \ref{fig:DiffSlopeSameBWTriangular}. 
 Representative for the four combinations to synthesize this triangular signal wave form, 
-figure \ref{fig:DiffSigBWSameSlopeTriangular} demonstrates the frequency varying signals from \SI{500}{\mega \hertz} to \SI{6}{\giga \hertz} for a slope of 33.
+Figure \ref{fig:DiffSigBWSameSlopeTriangular} demonstrates the frequency varying signals from \SI{500}{\mega \hertz} to \SI{6}{\giga \hertz} for a slope of 33.
 
 
 \begin{figure}[htb!]
