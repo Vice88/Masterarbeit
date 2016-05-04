@@ -32,7 +32,7 @@
 \contentsline {section}{\numberline {6.2}Calibration and stability check}{49}
 \contentsline {section}{\numberline {6.3}Time domain measurement of push-pull stage}{50}
 \contentsline {section}{\numberline {6.4}Time domain measurement of synthesized signal}{51}
-\contentsline {section}{\numberline {6.5}Discussion of measurement results}{53}
+\contentsline {section}{\numberline {6.5}Discussion of measurement results}{54}
 \contentsline {chapter}{\numberline {7}Conclusions and outlook}{55}
 \contentsline {chapter}{Bibliography}{57}
 \contentsline {chapter}{Appendix}{64}

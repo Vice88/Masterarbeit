@@ -228,6 +228,6 @@ If the transistor dimension is chosen to be bigger, the higher signal frequency 
 Therefore the dimension of the used components already limit the bandwidth.
 The signal bandwidth was investigated to be smaller than \gls{ab:dc} to \SI{6}{\GHz}.
 The used components were tuned with respect to the signal integrity over the frequency range of nearly \SI{1.5}{\giga \hertz} to \SI{6}{\giga \hertz}. 
-
+%realized with multi chip assembling on a hybrid board.
 %The smallest current is determined by the dimension of the transistor, which drives into saturation. 
 %The smallest saturated current is determined by the push-pull transistor geometry, here: 532 mA.}

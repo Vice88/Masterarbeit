@@ -46,5 +46,14 @@ The measurement follows the expectations of the simulation.
 Aside from some parasitic effects the proof of the concept was successful.\\
 The design and processing of a \gls{ab:mmic} structure containing the Riemann Pump was beyond the scope of this thesis.
 The calculation of the Riemann Code have to be done with an external signal processor, which has to compute this code in real time. 
-With the ability to change the reference current and the oversampling ratio it is possible to create arbitrary waveforms. 
-In a more enhanced project a MATLAB algorithm would compute this code by minimizing the deviation between a theoretical signal and the synthesized signal.
+With the ability to change the reference current and the oversampling ratio it is possible to create arbitrary waveforms.\\
+The next steps would be to implement an algorithm which computes the Riemann Code.
+A MATLAB algorithm would compute this code by minimizing the deviation 
+between a theoretical signal and the synthesized signal.
+Then the used chips could be optimized regarding an efficient driver circuit.
+This would be to process a \gls{ab:mmic} which would reduce the leakage effects.
+Further the switching transistors had to operate in their saturation region, which could be implemented using some kind of diodes.
+After optimizing the circuits aspects, some assembly aspect have to be considered.
+The implementation of a thermal conductor but electrical insulator for the high side switches would be a huge improvement regarding the heat dissipation.
+
+
