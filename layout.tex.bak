@@ -179,35 +179,26 @@ The assembled chips for the second version is shown in Figure \ref{fig:photoDDRi
 
 % Problem of BANDWIDTH, Vpp of control signal (5V pp for GaN transistors), high side driver, 
 %Control voltage of 5 V realization with OPAMPS? Possible to overdrive opamps instead of using broadband ppa.
-%In addition to this it was possible to use the work of a former employee, which makes it easier to realize, since a new MMIC desing was not in the scope of this thesis.\\
 \section{Evaluation of the design and realisation process}
-%For the chips used for the demonstrator refer to the work of Stephan Maroldt who states, that the power consumption is divided into static and dynamic ones. The switching losses are greater than the static ones.
-In the realisation and layout process many things had to be considered.\\
-The circuit was built on a hybrid assembly which combines the \gls{ab:mmic} with the discrete \gls{ab:smd} components on a Rogers 4003 substrate.\\
+After simulating the theoretical concept, in the realisation process a great number of aspects had to be considered.
+Since it was the first time ever to built this concrete test circuit with \gls{ab:gan} technology, no validated concepts could be used.
+In the following the most crucial aspects are described.
+The circuit was built on a hybrid assembly which combines the \gls{ab:mmic} with the discrete \gls{ab:smd} components on a Rogers 4003 substrate.
 The input and output lines on the substrate were \gls{ab:msl} which were matched to \SI{50}{\ohm}.
-%Tuned in this sense means, the lines were created with the right width, length and depth on the correct substrate with a special thickness.
 Important for the design of the input lines were that they are of the same length, due to timing issues.
+In addition to this, rectangular edges were avoided to reduce parasitic effects.
 The input timing is crucial due to the fact that the switches have to switch synchronous.
-The output line was matched to \SI{50}{\ohm} to ensure proper measuring.\\
-%Also it would tried to get a proper distance between the lines to avoid any coupling. \\
+The output line was matched to \SI{50}{\ohm} to ensure proper measuring.
 In addition to the same length of the input lines, also the bond wires of the in- and output to the \gls{ab:mmic} chips had to be of the same length.
- %The idea is that the high frequency digital signal are not allowed to have phase angles, because the switches have to switch all at the same time. Timing problems are expected to occur within the measurement. \\
 One of the most important and crucial things was the dissipation of heat.
-Based on the designed chips, two different concepts were chosen to dissipate the heat in the most proper way.\\
-The wafer run of the chips DDRi\_2C was from the year 2011 and therefore five years old and hence the taping of the wafer could be not as good as the newer ones.\\
-%Due to this heat dissipation problem it was then that it renounces to package the chips into a \gls{ab:qfn} package.\\
-For bonding \SI{25}{\micro \metre} (diameter) \gls{ab:au} bonds were used.
-The length of the bonds were given by assembly limits for spacing of conducting layers due to manufacturer process limits.\\
-In- and output connectors were commercially available SMA jack connectors with a matched impedance of \SI{50}{\ohm} to connect standard RF cables.\\
-
-%\textbf{length of the bonds, number of bonds, thickness of bonds ask Dirk Meder. A lot of vias - more inductance - voltage drop between layers. short as possible lines, no rects - para caps in the edge. first filter cap to supply pin near the chip. number and cap size determined on experience. }
-
-%Capacitive coupling could be a problem, through the dc supply lines to the input lines.
-%What about the coupling from the substrate backside to the conducting layer of the substrate? 
-%What about inductive coupling via the via holes or so??
-%Other coupling?\\
-
-The two layouts were fabricated by CONTAG AG while the needed components were ordered at Digi-Key Electronics.\\
+Based on the designed chips, two different concepts were realized to handle the dissipation of heat in the most proper way.
+The wafer run of the chips DDRi\_2C was from the year 2011 and therefore five years old and hence the taping of the wafer could not be as good as the newer ones DDRi\_X6 and DDRi\_Y6.
+Due to this heat dissipation problem it was renounced to package the chips into a \gls{ab:qfn} package.
+\SI{25}{\micro \metre} (diameter) \gls{ab:au} bonds were used where the length of the bonds were given by assembly limits for spacing of conducting layers due to manufacturer process limits.
+The minimum required number of bonds were used to avoid unnecessary parasitic inductances. 
+But it is to mention that the huge amount of via holes, which were necessary to dissipate the heat, induces parasitic inductances.
+In- and output connectors were commercially available \gls{ab:sma} jack connectors with a matched impedance of \SI{50}{\ohm} to connect standard RF cables.\\
+The two layouts were fabricated by CONTAG AG while the used discrete components were ordered at Digi-Key Electronics.
 The finished demonstrator is shown in Figure \ref{fig:assembledDemonstrator}with a short description of the placed elements.
 
 \begin{figure}[htb!] %% zum drucken pdf verwenden
@@ -217,19 +208,14 @@ The finished demonstrator is shown in Figure \ref{fig:assembledDemonstrator}with
 	\label{fig:assembledDemonstrator}
 \end{figure}
 
-%\begin{figure}[htb!]
-%	\centering
-%  \includegraphics{ComparePhotoXY6_2C.pdf}
-%	\caption{Comparison of assembled chips DDRi\_X6 \& DDRi\_Y6 (left) and DDRi\_2C (right)}
-%	\label{fig:CompareChips}
-%\end{figure}
-
 \newpage
-An improvement for the layout, could be to solder the DDRi\_XY6 chips on an electrical insulator while thermal good conductor, as AluminiumNitrid (AlN: 180-200 W/mK -> datasheet). 
+An improvement for the layout, could be to solder the DDRi\_XY6 chips on an electrical insulator while thermal good conductor, as AluminiumNitrid (AlN: 180-200 W/mK). 
 This is needed to ensure the isolation from the output port to ground potential, but still have a good thermal transfer.
-This approach would have required only a small amount of the material AlN, which had to be cut very precisely into very tiny pieces, since the size of the chips DDRi\_X6 and DDRi\_Y6 were \SI{1.25}{\milli \meter} x \SI{1}{\milli \meter} and \SI{1.25}{\milli \meter} x \SI{1.25}{\milli \meter}, respectively.
-This pads adhered or soldered to the conduction layer ensure a good heat transfer. \\
-In fact of the very small and precise size of the special material this was too costly for a first prototype to proof the concept.
+This pads would have needed a proper adhesive or solder which exhibit the same properties.
+The desired pads would have been cut in very precise shapes and sizes, since the size of the chips DDRi\_X6 and DDRi\_Y6 were \SI{1.25}{\milli \meter} x \SI{1}{\milli \meter} and \SI{1.25}{\milli \meter} x \SI{1.25}{\milli \meter}, respectively.
+This special material would have to be ordered and custom processed, while the performance when implemented in this concept, were not verified.
+In fact of the special requirement, to order very small amount of the material which had to be cut in very precise pieces it was omitted to implement.
+To test a first prototype the demonstrated concepts were sufficient.
 
 
 \begin{figure}[htb!]

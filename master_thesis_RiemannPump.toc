@@ -33,11 +33,11 @@
 \contentsline {section}{\numberline {6.3}Time domain measurement of push-pull stage}{50}
 \contentsline {section}{\numberline {6.4}Time domain measurement of synthesized signal}{51}
 \contentsline {section}{\numberline {6.5}Discussion of measurement results}{54}
-\contentsline {chapter}{\numberline {7}Conclusions and outlook}{55}
-\contentsline {chapter}{Bibliography}{57}
-\contentsline {chapter}{Appendix}{62}
-\contentsline {section}{\numberline {A}Schematic of the Riemann Pump circuit for simulation}{62}
-\contentsline {section}{\numberline {B}Schematic of the realized Riemann Pump circuit}{64}
-\contentsline {section}{\numberline {C}Photography of the realized Demonstrator version 1}{65}
-\contentsline {section}{\numberline {D}Photography of the realized Demonstrator version 2}{66}
-\contentsline {section}{\numberline {E}SNR Calculation for simulated signals}{67}
+\contentsline {chapter}{\numberline {7}Conclusions and outlook}{57}
+\contentsline {chapter}{Bibliography}{61}
+\contentsline {chapter}{Appendix}{66}
+\contentsline {section}{\numberline {A}Schematic of the Riemann Pump circuit for simulation}{66}
+\contentsline {section}{\numberline {B}Schematic of the realized Riemann Pump circuit}{68}
+\contentsline {section}{\numberline {C}Photography of the realized Demonstrator version 1}{69}
+\contentsline {section}{\numberline {D}Photography of the realized Demonstrator version 2}{70}
+\contentsline {section}{\numberline {E}SNR Calculation for simulated signals}{71}

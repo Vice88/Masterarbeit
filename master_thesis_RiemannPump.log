@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  5 MAY 2016 14:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  5 MAY 2016 16:57
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -1896,18 +1896,13 @@ File: graphics/photos/Photo_DDRi_2C.png Graphic file (type png)
 Package pdftex.def Info: graphics/photos/Photo_DDRi_2C.png used on input line 1
 75.
 (pdftex.def)             Requested size: 178.86781pt x 227.64993pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--202
-
- []
-
-[44 <./graphics/photos/Photo_DDRi_2C.png>]
+ [44 <./graphics/photos/Photo_DDRi_2C.png>]
 <graphics/photos/Demonstrator_edited_newScale.png, id=1435, 312.56775pt x 227.6
 505pt>
 File: graphics/photos/Demonstrator_edited_newScale.png Graphic file (type png)
  <use graphics/photos/Demonstrator_edited_newScale.png>
 Package pdftex.def Info: graphics/photos/Demonstrator_edited_newScale.png used 
-on input line 215.
+on input line 206.
 (pdftex.def)             Requested size: 312.56697pt x 227.64993pt.
  [45 <./graphics/photos/Demonstrator_edited_newScale.png>]
 <graphics/layout/Layout_DDRiXY6_AlN_pads.pdf, id=1440, 312.98033pt x 213.39566p
@@ -1915,7 +1910,7 @@ t>
 File: graphics/layout/Layout_DDRiXY6_AlN_pads.pdf Graphic file (type pdf)
  <use graphics/layout/Layout_DDRiXY6_AlN_pads.pdf>
 Package pdftex.def Info: graphics/layout/Layout_DDRiXY6_AlN_pads.pdf used on in
-put line 237.
+put line 223.
 (pdftex.def)             Requested size: 312.97955pt x 213.39514pt.
 ) [46 <./graphics/layout/Layout_DDRiXY6_AlN_pads.pdf>] (measurement.tex
 chapter 6.
@@ -1994,34 +1989,37 @@ put line 216.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
  [53 <./graphics/measdata/100M_Cload_regression.pdf, page is rotated 90 degrees
 >]) [54 <./graphics/measdata/150M_Cload_regression.pdf, page is rotated 90 degr
-ees>] (conclusion.tex
+ees>] [55] (conclusion.tex
+[56
+
+
+
+
+]
 chapter 7.
-[55
+[57] [58]) [59] [60
 
 
 
-
-]) [56] (master_thesis_RiemannPump.bbl [57
-
+] (master_thesis_RiemannPump.bbl [61
 
 
 
-
-
-] [58] [59]) [60] (appendix.tex
-<graphics/layout/CircuitSchematic_portrait.pdf, id=1574, 142.26378pt x 512.1496
+] [62] [63]) [64]
+(appendix.tex
+<graphics/layout/CircuitSchematic_portrait.pdf, id=1586, 142.26378pt x 512.1496
 pt>
 File: graphics/layout/CircuitSchematic_portrait.pdf Graphic file (type pdf)
  <use graphics/layout/CircuitSchematic_portrait.pdf>
 Package pdftex.def Info: graphics/layout/CircuitSchematic_portrait.pdf used on 
 input line 13.
 (pdftex.def)             Requested size: 142.26343pt x 512.14835pt.
- [61
+ [65
 
 
 
 ]
-<graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf, id=1578, 341.43306pt x 
+<graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf, id=1591, 341.43306pt x 
 805.21298pt>
 File: graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf Graphic file (type 
 pdf)
@@ -2030,27 +2028,27 @@ Package pdftex.def Info: graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf
 used on input line 22.
 (pdftex.def)             Requested size: 273.1468pt x 644.17126pt.
 
-[62 <./graphics/layout/CircuitSchematic_portrait.pdf>] [63]
+[66 <./graphics/layout/CircuitSchematic_portrait.pdf>] [67]
 Overfull \vbox (8.6707pt too high) has occurred while \output is active []
 
 
-[64 <./graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf>]
-<graphics/photos/Demonstrator.pdf, id=1611, 209.2131pt x 227.62204pt>
+[68 <./graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf>]
+<graphics/photos/Demonstrator.pdf, id=1624, 209.2131pt x 227.62204pt>
 File: graphics/photos/Demonstrator.pdf Graphic file (type pdf)
 
 <use graphics/photos/Demonstrator.pdf>
 Package pdftex.def Info: graphics/photos/Demonstrator.pdf used on input line 34
 .
 (pdftex.def)             Requested size: 209.21257pt x 227.62148pt.
- [65 <./graphics/photos/Demonstrator.pdf>] [66] <graphics/snr/FullSine05GHz.pdf
-, id=1626, 312.98033pt x 234.73523pt>
+ [69 <./graphics/photos/Demonstrator.pdf>] [70] <graphics/snr/FullSine05GHz.pdf
+, id=1638, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine05GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine05GHz.pdf>
 Package pdftex.def Info: graphics/snr/FullSine05GHz.pdf used on input line 70.
 (pdftex.def)             Requested size: 384.10966pt x 288.08862pt.
 
-<graphics/snr/FullSine1GHz.pdf, id=1627, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine1GHz.pdf, id=1639, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine1GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine1GHz.pdf>
@@ -2060,7 +2058,7 @@ Package pdftex.def Info: graphics/snr/FullSine1GHz.pdf used on input line 77.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine2GHz.pdf, id=1628, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine2GHz.pdf, id=1640, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine2GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine2GHz.pdf>
@@ -2070,7 +2068,7 @@ Package pdftex.def Info: graphics/snr/FullSine2GHz.pdf used on input line 84.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine3GHz.pdf, id=1629, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine3GHz.pdf, id=1641, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine3GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine3GHz.pdf>
@@ -2080,7 +2078,7 @@ Package pdftex.def Info: graphics/snr/FullSine3GHz.pdf used on input line 91.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine4GHz.pdf, id=1630, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine4GHz.pdf, id=1642, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine4GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine4GHz.pdf>
@@ -2090,7 +2088,7 @@ Package pdftex.def Info: graphics/snr/FullSine4GHz.pdf used on input line 98.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine5GHz.pdf, id=1631, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine5GHz.pdf, id=1643, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine5GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine5GHz.pdf>
@@ -2100,7 +2098,7 @@ Package pdftex.def Info: graphics/snr/FullSine5GHz.pdf used on input line 105.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine6GHz.pdf, id=1632, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine6GHz.pdf, id=1644, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine6GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine6GHz.pdf>
@@ -2110,16 +2108,16 @@ Package pdftex.def Info: graphics/snr/FullSine6GHz.pdf used on input line 112.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [67 <./graphics/snr/FullSine05GHz.pdf>] [68 <./graphics/snr/FullSine1GHz.pdf>
+) [71 <./graphics/snr/FullSine05GHz.pdf>] [72 <./graphics/snr/FullSine1GHz.pdf>
  <./graphics/snr/FullSine2GHz.pdf
 
 pdfTeX warning: pdflatex (file ./graphics/snr/FullSine2GHz.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->] [69 <./graphics/snr/FullSine3GHz.pdf> <./graphics/snr/FullSine4GHz.pdf
+>] [73 <./graphics/snr/FullSine3GHz.pdf> <./graphics/snr/FullSine4GHz.pdf
 
 pdfTeX warning: pdflatex (file ./graphics/snr/FullSine4GHz.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->] [70 <./graphics/snr/FullSine5GHz.pdf> <./graphics/snr/FullSine6GHz.pdf
+>] [74 <./graphics/snr/FullSine5GHz.pdf> <./graphics/snr/FullSine6GHz.pdf
 
 pdfTeX warning: pdflatex (file ./graphics/snr/FullSine6GHz.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
@@ -2131,10 +2129,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 40217 strings out of 493673
- 776083 string characters out of 3146818
- 864367 words of memory out of 3000000
- 42567 multiletter control sequences out of 15000+200000
+ 40247 strings out of 493673
+ 776601 string characters out of 3146818
+ 866561 words of memory out of 3000000
+ 42597 multiletter control sequences out of 15000+200000
  67046 words of font info for 225 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  71i,11n,79p,10425b,1268s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2151,9 +2149,9 @@ nProgram/MikTEX/fonts/type1/urw/helvetic/uhvb8a.pfb><E:/WinProgram/MikTEX/fonts
 8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/Mi
 kTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on master_thesis_RiemannPump.pdf (84 pages, 11621197 bytes).
+Output written on master_thesis_RiemannPump.pdf (88 pages, 11594636 bytes).
 PDF statistics:
- 1833 PDF objects out of 2073 (max. 8388607)
+ 1846 PDF objects out of 2073 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41755 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -230,15 +230,26 @@ But this could have lead to measurement errors and deviations which should be re
 The presented measurement results show the ability of generating different signals with the demonstrated concept.
 
 \section{Discussion of measurement results}
-In a first step it was shown that the designed circuit converts a digital signal to an analog one.
-The frequency limit for this measurement setup consisting of this designed circuit is at roughly \SI{150}{\mega \hertz}.
-Measurement results demonstrate the first measurement ever with the given concept.
-The presented concept is in fact feasible with some remarks to consider.
-It was the first time ever, building a concrete test circuit which implements the presented concept.
-Heat is critical. 
-Aside from some parasitic effects the proof of the concept was successful.
-
-%\textit{is it possible to measure the heat spreading on the substrate?}
-%Is the measurement result expected due to the simulation? Can the demonstrator be simulated although no model for this chips exists? The real simulation are not done due to the fact that no losses respected.
-
-% Compare and evaulate the simulation to the measurement
+In order to get meaningful measurement results a decent concept for the measurement set up had to be planned.
+First of all it was important to ensure the proper functioning of the inputs.
+Therefore the right choice of broadband pre amplifier was indispensable.
+A requirement for the pre amplifier was the broadband amplification, since square wave signals had to be amplified.
+Secondly the right bias tees had to be chosen regarding the same broadband problematic.
+After finding the right amplifiers and bias tees, the input control signal had to be calibrated to ensure the proper voltage swing to switch the \gls{ab:hemt} transistors on and off.
+Depending on the desired measurement the oscilloscope was chosen to get the time domain results.
+In the first measurement an attenuator was needed to avoid any damage to the input of the oscilloscope.
+Finding the right measurement instruments led to the expected results.
+As presented, the switching of the push pull stage with both bits were successful.
+After the verification that both power transistor were able to switch synchronous it was shown that both transistor could switch independently of each other and hence different output signals could be synthesized.
+For the measurement for synthesizing a triangular waveform a different set up was needed.
+Since the former measurement concept only showed the feasibility of switching the output either to \gls{sy:Vdd} or \gls{ab:gnd}, the second should demonstrate the ability to create different output signals.
+In fact it was shown that four different currents could established, which corresponds to the theoretical achievable slopes.
+This was shown by a capacitive load which was charged with these currents to obtain different output voltage waveforms.
+It was possible to prove the demonstrated concept and show the feasibility of the designed demonstrator to synthesize signals with different amplitudes and frequencies.
+The signal integrity suffered from measurement errors, non ideal switching and leakage currents.
+Therefore the upper bound on the frequency range for the presented measurement setup with the realized circuit was at roughly \SI{150}{\mega \hertz}.
+In addition to the undesired effects of the circuit topology the problematic of the heat dissipation came into play.
+Hence the signal integrity was reduced by the degradation induced by the heat.
+Nevertheless the results demonstrate for the first time the feasibility to convert digital signals into analog ones with the given concept and technology.
+It was the first time ever, building a concrete test circuit in \gls{ab:gan} technology which provides decent measurement results.
+Therefore it is to state, that the proof of concept was successfully demonstrated with a built test circuit.

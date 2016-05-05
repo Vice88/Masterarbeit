@@ -3,7 +3,7 @@
 % \textit{Description of the approach you have taken to solve the scientific or technical problem which you were posed. Outline the design, the methodology and overall structure of your experimental approach}\\
 The goal was to design an arbitrary waveform generator for a signal bandwidth of \SI{6}{\giga \hertz}.
 For the implementation in a base station, the most promising technology was \gls{ab:gan} \cite{EvertsDasKeybusJ.EtAl2010}, \cite{PengellyWoodMilliganEtAl2012}, \cite{SchmidReberChartierEtAl2011}.
-\gls{ab:gan} \glspl{ab:hemt} were used for the high speed switches, which served as voltage controlled current sources \cite{MaroldtHauptKieferEtAl2009}, \cite{HongMukaiGheidiEtAl2013}, \cite{MaroldtBruecknerQuayEtAl2014}, \cite{WentzelMelianiHeinrich2010}, \cite{MaroldtQuayHauptEtAl2011}, \cite{QuayMaroldt2011}.
+\gls{ab:gan} \glspl{ab:hemt} were used for the high speed switches  \cite{MaroldtHauptKieferEtAl2009}, \cite{HongMukaiGheidiEtAl2013}, \cite{MaroldtBruecknerQuayEtAl2014}, \cite{WentzelMelianiHeinrich2010}, \cite{MaroldtQuayHauptEtAl2011}, \cite{QuayMaroldt2011}, which served as voltage controlled current sources in this concept.
 Based on the chosen technology a suitable push-pull concept were found \cite{MaksimovicPaper} to show the feasibility of the concept.
 The attention was rather drawn to proof the concept than to optimize for energy consumption or efficiency.
 In the design process a suitable load impedance and the right dimension of the used components had to be found.
