@@ -2,8 +2,8 @@
 \label{ch:design}
 % \textit{Description of the approach you have taken to solve the scientific or technical problem which you were posed. Outline the design, the methodology and overall structure of your experimental approach}\\
 The goal was to design an arbitrary waveform generator for a signal bandwidth of \SI{6}{\giga \hertz}.
-For the implementation in a base station, the most promising technology was \gls{ab:gan}.
-\gls{ab:gan} \glspl{ab:hemt} were used for the high speed switches, which served as voltage controlled current sources.
+For the implementation in a base station, the most promising technology was \gls{ab:gan} \cite{EvertsDasKeybusJ.EtAl2010}, \cite{PengellyWoodMilliganEtAl2012}, \cite{SchmidReberChartierEtAl2011}.
+\gls{ab:gan} \glspl{ab:hemt} were used for the high speed switches  \cite{MaroldtHauptKieferEtAl2009}, \cite{HongMukaiGheidiEtAl2013}, \cite{MaroldtBruecknerQuayEtAl2014}, \cite{WentzelMelianiHeinrich2010}, \cite{MaroldtQuayHauptEtAl2011}, \cite{QuayMaroldt2011}, which served as voltage controlled current sources in this concept.
 Based on the chosen technology a suitable push-pull concept were found \cite{MaksimovicPaper} to show the feasibility of the concept.
 The attention was rather drawn to proof the concept than to optimize for energy consumption or efficiency.
 In the design process a suitable load impedance and the right dimension of the used components had to be found.
@@ -13,7 +13,7 @@ As stated in chapter \ref{IdeaRiemannPump} the circuit needed high speed switche
 In order to switch a \gls{ab:hemt} transistor to the high side power rail a driver circuit was needed, since in \gls{ab:gan} no complementary transistors were available.
 The absence of a p-type transistor in \gls{ab:gan} technology made it challenging to find a suitable concept to realize the push-pull stage.
 The n-type \glspl{ab:hemt} operating in depletion mode needed a negative gate source voltage \gls{sy:vgs} to switch the transistor off.
-For the on switching \gls{sy:vgs} had to be \SI{0}{\volt} and therefore a driver circuit was needed, since the source potential of the high side switch varies between \gls{sy:Vdd} and \gls{sy:Vss}.
+For the on switching \gls{sy:vgs} had to be \SI{0}{\volt} and therefore a driver circuit was needed \cite{Y.Zhang2015}, \cite{MaksimovicPaper}, \cite{GhoshAltmannKerstenEtAl2014}, \cite{HongMukaiGheidiEtAl2013}, since the source potential of the high side switch varies between \gls{sy:Vdd} and \gls{sy:Vss}.
 The source contact of the high side switch, realized by a n-type \gls{ab:gan} \gls{ab:hemt}, was connected to the output of the test circuit and therefore the potential at the output was not constant.
 A suitable driver circuit was found in \cite{MaksimovicPaper}, where the principle of a push-pull stage for power applications is described.\\
 One possible approach to design a Riemann Pump is shown in Fig. \ref{fig:SchematicRiemannPump}.
@@ -57,7 +57,7 @@ Considering a \SI{20}{\watt} power amplifier for transmission purposes, led to a
 Simulations confirmed this approximation as an output power density of \SI[per-mode=fraction]{5.6}{\watt\per\milli\metre} at $V_{GS} = -1.5 V$, $V_{DS} = 25 V$ was measured.
 The transistor model used in \gls{ab:ads} were modelled at the \gls{ab:iaf}\cite{model} and is based on a state-space approach. 
 For simulation purposes four transistors were modelled in parallel, each with 8 finger and \SI{125}{\micro \metre} gate width to reach the required gate periphery.
-The simulated power amplifier is biased with respect to the maximum \gls{ab:mag}, which led to a bias of $V_{GS} = -1.5 V$ at $V_{DS} = 25 V$.
+The simulated power amplifier is biased with respect to the maximum \gls{ab:mag} \cite{DeltimpleLeyssenneKerherveEtAl2010}, which led to a bias of $V_{GS} = -1.5 V$ at $V_{DS} = 25 V$.
 After the determination of the bias point, a S-parameter simulation yielded the input reactance of the power amplifier.
 It is to note that the short analysis of the impedance was done with four power transistors in parallel representative for a power amplifier than a discrete model of a broadband amplifier.
 But since it was not the main goal to obtain a proper input impedance of a broadband amplifier this identification was sufficient.
@@ -70,7 +70,7 @@ Hence this was a short and effective way to obtain an output impedance according
 	\label{fig:eqcircuit}
 \end{figure}
 
-The input of the \gls{ab:hemt} is determined by the capacitances $C_{gs}$ and $C_{gd}$, since the inductance is effective only for high frequencies.
+The input of the \gls{ab:hemt} is determined by the capacitances $C_{gs}$ and $C_{gd}$, since the inductance is effective only for high frequencies \cite{LSModel}.
 This capacitive behaviour is seen in Figure \ref{fig:eqcircuit} for the gate node, which served as the input.
 As only the capacitive behaviour of the load impedance was of interest, the real part was neglected.
 The complex impedance is defined as
@@ -105,6 +105,7 @@ The capacitive reactance $X_{C}$ is defined as:
 
 and thus the reactance scales with the reciprocal value of $\omega$.
 The input capacitance $C_{in}$ determined by the sum $C_{gs} + C_{gd}$, was calculated and yielded $C_{in}\approx 20 pF$.
+This estimation of the input reactance was sufficient and parasitic effects were neglected \cite{CakaZabelliLimaniEtAl2007}, cite{ZhangZhangTangEtAl2014}.
 Consequently this capacitance is used for further investigation as a load impedance.
 %Considering the absolute value of the reactance its value is decreasing.
 %For frequencies beyond \SI{1}{\giga \hertz} the impact of parasitic inductances induced a constant value for the reactance.

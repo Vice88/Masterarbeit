@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  4 MAY 2016 20:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  5 MAY 2016 14:33
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -1482,7 +1482,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 11
  (master_thesis_RiemannPump.gls)
 (master_thesis_RiemannPump.acr) (master_thesis_RiemannPump.ab [2]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 9.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 5.
  [3
 
 
@@ -1696,7 +1696,7 @@ n/inputReactance.pdf>]
 File: graphics/simulation/realizedCircuit_oneBit.pdf Graphic file (type pdf)
  <use graphics/simulation/realizedCircuit_oneBit.pdf>
 Package pdftex.def Info: graphics/simulation/realizedCircuit_oneBit.pdf used on
- input line 179.
+ input line 180.
 (pdftex.def)             Requested size: 312.97955pt x 270.30052pt.
  [20]
 <graphics/concept/outputCharacteristic.pdf, id=1171, 312.98033pt x 199.1693pt>
@@ -1704,7 +1704,7 @@ File: graphics/concept/outputCharacteristic.pdf Graphic file (type pdf)
 
 <use graphics/concept/outputCharacteristic.pdf>
 Package pdftex.def Info: graphics/concept/outputCharacteristic.pdf used on inpu
-t line 195.
+t line 196.
 (pdftex.def)             Requested size: 312.97955pt x 199.1688pt.
  [21 <./graphics/simulation/realizedCircuit_oneBit.pdf>]) [22 <./graphics/conce
 pt/outputCharacteristic.pdf>]
@@ -2008,26 +2008,20 @@ chapter 7.
 
 
 
-] [58]
-Overfull \hbox (0.81094pt too wide) in paragraph at lines 185--188
-[]\T1/ptm/m/n/12 (-20) C. Jarray, A. Bouabid, and B. Chibani, ``Enabling and ch
-allenges for 5G Technologies,''
- []
-
-[59] [60]) [61] (appendix.tex [62
-
-
-
-]
-<graphics/layout/CircuitSchematic_portrait.pdf, id=1580, 142.26378pt x 512.1496
+] [58] [59]) [60] (appendix.tex
+<graphics/layout/CircuitSchematic_portrait.pdf, id=1574, 142.26378pt x 512.1496
 pt>
 File: graphics/layout/CircuitSchematic_portrait.pdf Graphic file (type pdf)
  <use graphics/layout/CircuitSchematic_portrait.pdf>
 Package pdftex.def Info: graphics/layout/CircuitSchematic_portrait.pdf used on 
 input line 13.
 (pdftex.def)             Requested size: 142.26343pt x 512.14835pt.
- [63]
-<graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf, id=1584, 341.43306pt x 
+ [61
+
+
+
+]
+<graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf, id=1578, 341.43306pt x 
 805.21298pt>
 File: graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf Graphic file (type 
 pdf)
@@ -2036,27 +2030,27 @@ Package pdftex.def Info: graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf
 used on input line 22.
 (pdftex.def)             Requested size: 273.1468pt x 644.17126pt.
 
-[64 <./graphics/layout/CircuitSchematic_portrait.pdf>] [65]
+[62 <./graphics/layout/CircuitSchematic_portrait.pdf>] [63]
 Overfull \vbox (8.6707pt too high) has occurred while \output is active []
 
 
-[66 <./graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf>]
-<graphics/photos/Demonstrator.pdf, id=1618, 209.2131pt x 227.62204pt>
+[64 <./graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf>]
+<graphics/photos/Demonstrator.pdf, id=1611, 209.2131pt x 227.62204pt>
 File: graphics/photos/Demonstrator.pdf Graphic file (type pdf)
 
 <use graphics/photos/Demonstrator.pdf>
 Package pdftex.def Info: graphics/photos/Demonstrator.pdf used on input line 34
 .
 (pdftex.def)             Requested size: 209.21257pt x 227.62148pt.
- [67 <./graphics/photos/Demonstrator.pdf>] [68] <graphics/snr/FullSine05GHz.pdf
-, id=1632, 312.98033pt x 234.73523pt>
+ [65 <./graphics/photos/Demonstrator.pdf>] [66] <graphics/snr/FullSine05GHz.pdf
+, id=1626, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine05GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine05GHz.pdf>
 Package pdftex.def Info: graphics/snr/FullSine05GHz.pdf used on input line 70.
 (pdftex.def)             Requested size: 384.10966pt x 288.08862pt.
 
-<graphics/snr/FullSine1GHz.pdf, id=1633, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine1GHz.pdf, id=1627, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine1GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine1GHz.pdf>
@@ -2066,7 +2060,7 @@ Package pdftex.def Info: graphics/snr/FullSine1GHz.pdf used on input line 77.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine2GHz.pdf, id=1634, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine2GHz.pdf, id=1628, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine2GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine2GHz.pdf>
@@ -2076,7 +2070,7 @@ Package pdftex.def Info: graphics/snr/FullSine2GHz.pdf used on input line 84.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine3GHz.pdf, id=1635, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine3GHz.pdf, id=1629, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine3GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine3GHz.pdf>
@@ -2086,7 +2080,7 @@ Package pdftex.def Info: graphics/snr/FullSine3GHz.pdf used on input line 91.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine4GHz.pdf, id=1636, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine4GHz.pdf, id=1630, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine4GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine4GHz.pdf>
@@ -2096,7 +2090,7 @@ Package pdftex.def Info: graphics/snr/FullSine4GHz.pdf used on input line 98.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine5GHz.pdf, id=1637, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine5GHz.pdf, id=1631, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine5GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine5GHz.pdf>
@@ -2106,7 +2100,7 @@ Package pdftex.def Info: graphics/snr/FullSine5GHz.pdf used on input line 105.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine6GHz.pdf, id=1638, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine6GHz.pdf, id=1632, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine6GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine6GHz.pdf>
@@ -2116,16 +2110,16 @@ Package pdftex.def Info: graphics/snr/FullSine6GHz.pdf used on input line 112.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [69 <./graphics/snr/FullSine05GHz.pdf>] [70 <./graphics/snr/FullSine1GHz.pdf>
+) [67 <./graphics/snr/FullSine05GHz.pdf>] [68 <./graphics/snr/FullSine1GHz.pdf>
  <./graphics/snr/FullSine2GHz.pdf
 
 pdfTeX warning: pdflatex (file ./graphics/snr/FullSine2GHz.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->] [71 <./graphics/snr/FullSine3GHz.pdf> <./graphics/snr/FullSine4GHz.pdf
+>] [69 <./graphics/snr/FullSine3GHz.pdf> <./graphics/snr/FullSine4GHz.pdf
 
 pdfTeX warning: pdflatex (file ./graphics/snr/FullSine4GHz.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->] [72 <./graphics/snr/FullSine5GHz.pdf> <./graphics/snr/FullSine6GHz.pdf
+>] [70 <./graphics/snr/FullSine5GHz.pdf> <./graphics/snr/FullSine6GHz.pdf
 
 pdfTeX warning: pdflatex (file ./graphics/snr/FullSine6GHz.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
@@ -2137,11 +2131,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 40250 strings out of 493673
- 776875 string characters out of 3146818
- 864495 words of memory out of 3000000
- 42591 multiletter control sequences out of 15000+200000
- 67721 words of font info for 231 fonts, out of 3000000 for 9000
+ 40217 strings out of 493673
+ 776083 string characters out of 3146818
+ 864367 words of memory out of 3000000
+ 42567 multiletter control sequences out of 15000+200000
+ 67046 words of font info for 225 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  71i,11n,79p,10425b,1268s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/WinProgram/MikTEX/fonts/enc/dvips/fontname/8r.enc}<E:/WinProgram/MikTEX/f
@@ -2157,9 +2151,9 @@ nProgram/MikTEX/fonts/type1/urw/helvetic/uhvb8a.pfb><E:/WinProgram/MikTEX/fonts
 8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/Mi
 kTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on master_thesis_RiemannPump.pdf (86 pages, 11591312 bytes).
+Output written on master_thesis_RiemannPump.pdf (84 pages, 11621197 bytes).
 PDF statistics:
- 1840 PDF objects out of 2073 (max. 8388607)
+ 1833 PDF objects out of 2073 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41755 words of extra memory for PDF output out of 42996 (max. 10000000)
 
