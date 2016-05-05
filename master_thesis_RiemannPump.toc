@@ -27,6 +27,7 @@
 \contentsline {section}{\numberline {5.1}Substrate layout using DDRi\_X6 and DDRi\_Y6 chips}{40}
 \contentsline {section}{\numberline {5.2}Substrate layout using DDRi\_2C chips}{43}
 \contentsline {section}{\numberline {5.3}Evaluation of the design and realisation process}{44}
+\contentsline {section}{\numberline {5.4}Outlook on further realisation concepts}{46}
 \contentsline {chapter}{\numberline {6}Measurement of the realized circuit in the time domain}{47}
 \contentsline {section}{\numberline {6.1}Measurement setup}{47}
 \contentsline {section}{\numberline {6.2}Calibration and stability check}{49}

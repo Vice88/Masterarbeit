@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  5 MAY 2016 16:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  5 MAY 2016 19:51
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -1499,20 +1499,15 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 
 ] (preface.tex
 chapter 1.
-) [1
+[1
 
 
 
-] (fundamentals.tex [2
-
-
-
-
-]
+]) [2] (fundamentals.tex
 chapter 2.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 17.
-<graphics/concept/ultimateSDR.pdf, id=83, 312.98033pt x 213.39566pt>
+<graphics/concept/ultimateSDR.pdf, id=84, 312.98033pt x 213.39566pt>
 File: graphics/concept/ultimateSDR.pdf Graphic file (type pdf)
 
 <use graphics/concept/ultimateSDR.pdf>
@@ -1520,7 +1515,7 @@ Package pdftex.def Info: graphics/concept/ultimateSDR.pdf used on input line 31
 .
 (pdftex.def)             Requested size: 213.3957pt x 145.50111pt.
 
-<graphics/concept/energy_consumption_sdr.pdf, id=84, 312.98033pt x 216.24095pt>
+<graphics/concept/energy_consumption_sdr.pdf, id=85, 312.98033pt x 216.24095pt>
 File: graphics/concept/energy_consumption_sdr.pdf Graphic file (type pdf)
 <use graphics/concept/energy_consumption_sdr.pdf>
 Package pdftex.def Info: graphics/concept/energy_consumption_sdr.pdf used on in
@@ -1532,7 +1527,7 @@ Overfull \hbox (20.91428pt too wide) in paragraph at lines 45--48
  []
 
 
-<graphics/concept/energy_consumption_sdr2.pdf, id=85, 312.98033pt x 227.62204pt
+<graphics/concept/energy_consumption_sdr2.pdf, id=86, 312.98033pt x 227.62204pt
 >
 File: graphics/concept/energy_consumption_sdr2.pdf Graphic file (type pdf)
  <use graphics/concept/energy_consumption_sdr2.pdf>
@@ -1544,8 +1539,13 @@ Overfull \hbox (20.91428pt too wide) in paragraph at lines 54--57
 [][] 
  []
 
-[3] [4 <./graphics/concept/ultimateSDR.pdf> <./graphics/concept/energy_consumpt
-ion_sdr.pdf
+[3
+
+
+
+
+] [4 <./graphics/concept/ultimateSDR.pdf> <./graphics/concept/energy_consumptio
+n_sdr.pdf
 
 pdfTeX warning: pdflatex (file ./graphics/concept/energy_consumption_sdr.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
@@ -1553,7 +1553,7 @@ PDF inclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./graphics/concept/energy_consumption_sdr2.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
->] <graphics/concept/SystemDesign.pdf, id=126, 312.98033pt x 213.39566pt>
+>] <graphics/concept/SystemDesign.pdf, id=127, 312.98033pt x 213.39566pt>
 File: graphics/concept/SystemDesign.pdf Graphic file (type pdf)
 
 <use graphics/concept/SystemDesign.pdf>
@@ -1561,7 +1561,7 @@ Package pdftex.def Info: graphics/concept/SystemDesign.pdf used on input line 8
 9.
 (pdftex.def)             Requested size: 426.79141pt x 291.00224pt.
  [5 <./graphics/concept/SystemDesign.pdf>] <graphics/concept/ChargePump_ink.pdf
-, id=153, 199.1693pt x 236.15787pt>
+, id=154, 199.1693pt x 236.15787pt>
 File: graphics/concept/ChargePump_ink.pdf Graphic file (type pdf)
 
 <use graphics/concept/ChargePump_ink.pdf>
@@ -1569,7 +1569,7 @@ Package pdftex.def Info: graphics/concept/ChargePump_ink.pdf used on input line
  126.
 (pdftex.def)             Requested size: 199.1688pt x 236.15729pt.
  [6]
-<graphics/concept/RP_concept.pdf, id=157, 845.1575pt x 597.23125pt>
+<graphics/concept/RP_concept.pdf, id=158, 845.1575pt x 597.23125pt>
 File: graphics/concept/RP_concept.pdf Graphic file (type pdf)
 
 <use graphics/concept/RP_concept.pdf>
@@ -1578,7 +1578,7 @@ Package pdftex.def Info: graphics/concept/RP_concept.pdf used on input line 153
 (pdftex.def)             Requested size: 338.057pt x 238.88826pt.
  [7 <./graphics/concept/ChargePump_ink.pdf>] [8 <./graphics/concept/RP_concept.
 pdf, page is rotated 90 degrees>]
-<graphics/concept/SlopesAndTable.pdf, id=187, 845.1575pt x 597.23125pt>
+<graphics/concept/SlopesAndTable.pdf, id=188, 845.1575pt x 597.23125pt>
 File: graphics/concept/SlopesAndTable.pdf Graphic file (type pdf)
 
 <use graphics/concept/SlopesAndTable.pdf>
@@ -1586,7 +1586,7 @@ Package pdftex.def Info: graphics/concept/SlopesAndTable.pdf used on input line
  169.
 (pdftex.def)             Requested size: 426.79141pt x 301.59483pt.
 
-<graphics/concept/CodeGenerationPrinciple.pdf, id=188, 312.98033pt x 227.62204p
+<graphics/concept/CodeGenerationPrinciple.pdf, id=189, 312.98033pt x 227.62204p
 t>
 File: graphics/concept/CodeGenerationPrinciple.pdf Graphic file (type pdf)
  <use graphics/concept/CodeGenerationPrinciple.pdf>
@@ -1594,7 +1594,7 @@ Package pdftex.def Info: graphics/concept/CodeGenerationPrinciple.pdf used on i
 nput line 182.
 (pdftex.def)             Requested size: 312.97955pt x 227.62148pt.
  [9 <./graphics/concept/SlopesAndTable.pdf, page is rotated 90 degrees>]
-<graphics/concept/RiemannIntegralError.pdf, id=205, 845.1575pt x 597.23125pt>
+<graphics/concept/RiemannIntegralError.pdf, id=206, 845.1575pt x 597.23125pt>
 File: graphics/concept/RiemannIntegralError.pdf Graphic file (type pdf)
 
 <use graphics/concept/RiemannIntegralError.pdf>
@@ -1602,7 +1602,7 @@ Package pdftex.def Info: graphics/concept/RiemannIntegralError.pdf used on inpu
 t line 209.
 (pdftex.def)             Requested size: 426.79141pt x 301.59483pt.
  [10 <./graphics/concept/CodeGenerationPrinciple.pdf>]
-<graphics/concept/RiemannIntegral.pdf, id=218, 845.1575pt x 597.23125pt>
+<graphics/concept/RiemannIntegral.pdf, id=219, 845.1575pt x 597.23125pt>
 File: graphics/concept/RiemannIntegral.pdf Graphic file (type pdf)
 
 <use graphics/concept/RiemannIntegral.pdf>
@@ -1611,7 +1611,7 @@ e 224.
 (pdftex.def)             Requested size: 426.79141pt x 301.59483pt.
  [11 <./graphics/concept/RiemannIntegralError.pdf, page is rotated 90 degrees>]
  [12 <./graphics/concept/RiemannIntegral.pdf, page is rotated 90 degrees>]
-<graphics/concept/SQNR.pdf, id=240, 845.1575pt x 597.23125pt>
+<graphics/concept/SQNR.pdf, id=241, 845.1575pt x 597.23125pt>
 File: graphics/concept/SQNR.pdf Graphic file (type pdf)
 
 <use graphics/concept/SQNR.pdf>
@@ -1672,6 +1672,10 @@ Package microtype Warning: Unknown slot number of character
 (microtype)                `\textdegree '
 (microtype)                in font encoding `TS1' in protrusion list
 (microtype)                `textcomp'.
+
+
+Package natbib Warning: Citation `model' on page 17 undefined on input line 58.
+
 
 
 <graphics/concept/equivalentcircuit_hemt.pdf, id=1142, 312.98033pt x 213.39566p
@@ -2121,7 +2125,11 @@ pdfTeX warning: pdflatex (file ./graphics/snr/FullSine4GHz.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex (file ./graphics/snr/FullSine6GHz.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->] (master_thesis_RiemannPump.aux (preface.aux) (fundamentals.aux) (design.aux)
+>]
+
+Package natbib Warning: There were undefined citations.
+
+(master_thesis_RiemannPump.aux (preface.aux) (fundamentals.aux) (design.aux)
 (simulation.aux) (layout.aux) (measurement.aux) (conclusion.aux) (appendix.aux)
 )
 
@@ -2129,10 +2137,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 40247 strings out of 493673
- 776601 string characters out of 3146818
+ 40249 strings out of 493673
+ 776621 string characters out of 3146818
  866561 words of memory out of 3000000
- 42597 multiletter control sequences out of 15000+200000
+ 42599 multiletter control sequences out of 15000+200000
  67046 words of font info for 225 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  71i,11n,79p,10425b,1268s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2149,7 +2157,7 @@ nProgram/MikTEX/fonts/type1/urw/helvetic/uhvb8a.pfb><E:/WinProgram/MikTEX/fonts
 8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/Mi
 kTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on master_thesis_RiemannPump.pdf (88 pages, 11594636 bytes).
+Output written on master_thesis_RiemannPump.pdf (88 pages, 11596331 bytes).
 PDF statistics:
  1846 PDF objects out of 2073 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
