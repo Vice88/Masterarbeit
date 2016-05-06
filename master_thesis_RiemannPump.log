@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  5 MAY 2016 20:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  6 MAY 2016 15:28
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -680,6 +680,10 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 (E:\WinProgram\MikTEX\tex\latex\import\import.sty
 Package: import 2009/03/23  v 5.1
 )
+(E:\WinProgram\MikTEX\tex\latex\url\url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
 (E:\WinProgram\MikTEX\tex\latex\siunitx\siunitx.sty
 (E:\WinProgram\MikTEX\tex\latex\l3kernel\expl3.sty
 Package: expl3 2015/11/04 v6224 L3 programming layer (loader) 
@@ -725,12 +729,12 @@ L3 Module: l3skip 2015/09/25 v6089 L3 Dimensions and skips
 \l_tmpb_skip=\skip79
 \g_tmpa_skip=\skip80
 \g_tmpb_skip=\skip81
-\c_zero_muskip=\muskip11
-\c_max_muskip=\muskip12
-\l_tmpa_muskip=\muskip13
-\l_tmpb_muskip=\muskip14
-\g_tmpa_muskip=\muskip15
-\g_tmpb_muskip=\muskip16
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
 L3 Module: l3keys 2015/09/23 v6037 L3 Key-value interfaces
 \g__keyval_level_int=\count154
 \l_keys_choice_int=\count155
@@ -1246,16 +1250,16 @@ Package: glossary-tree 2015/11/30 v4.20 (NLCT)
 \glswrite=\write4
 \glo@main@file=\write5
 Package glossaries Info: Writing glossary file master_thesis_RiemannPump.glo on
- input line 72.
+ input line 73.
 \glo@acronym@file=\write6
 Package glossaries Info: Writing glossary file master_thesis_RiemannPump.acn on
- input line 72.
+ input line 73.
 \glo@abbreviations@file=\write7
 Package glossaries Info: Writing glossary file master_thesis_RiemannPump.abn on
- input line 72.
+ input line 73.
 \glo@symbols@file=\write8
 Package glossaries Info: Writing glossary file master_thesis_RiemannPump.sbl on
- input line 72.
+ input line 73.
 \@indexfile=\write9
 
 Writing index file master_thesis_RiemannPump.idx
@@ -1269,19 +1273,19 @@ LaTeX Warning: Label `eq:RiemannCodeSineWave' multiply defined.
 LaTeX Warning: Label `pic:DemonstratorDDRiXY6' multiply defined.
 
 ))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 98.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 99.
  (E:\WinProgram\MikTEX\tex\latex\psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -1356,7 +1360,7 @@ Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
 \makeMPintoPDFobject=\count268
 \everyMPtoPDFconversion=\toks54
 ) ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \microtypecontext on input line 98.
+LaTeX Info: Redefining \microtypecontext on input line 99.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1386,7 +1390,7 @@ File: siunitx-abbreviations.cfg 2015/10/15 v2.6m siunitx: Abbreviated units
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 98.
+LaTeX Font Info:    Try loading font information for U+msa on input line 99.
 
 (E:\WinProgram\MikTEX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1394,7 +1398,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (E:\WinProgram\MikTEX\tex\latex\microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 98.
+LaTeX Font Info:    Try loading font information for U+msb on input line 99.
 
 (E:\WinProgram\MikTEX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1415,9 +1419,9 @@ Package microtype Info: Loading generic settings for font family
 <logos/logo_iaf.pdf, id=4, 241.85356pt x 65.9263pt>
 File: logos/logo_iaf.pdf Graphic file (type pdf)
  <use logos/logo_iaf.pdf>
-Package pdftex.def Info: logos/logo_iaf.pdf used on input line 110.
+Package pdftex.def Info: logos/logo_iaf.pdf used on input line 111.
 (pdftex.def)             Requested size: 187.88478pt x 51.21504pt.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 110.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 111.
 
 (E:\WinProgram\MikTEX\tex\latex\psnfss\t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
@@ -1427,7 +1431,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 110.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 111.
  [1
 
 
@@ -1438,7 +1442,7 @@ go_iaf.pdf>] [2
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 110.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 111.
  [3
 
 
@@ -1470,7 +1474,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
 ]
 Package tocbasic Info: character protrusion at toc deactivated on input line 11
-8.
+9.
 
 (master_thesis_RiemannPump.toc [1
 
@@ -1507,7 +1511,7 @@ chapter 1.
 chapter 2.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 17.
-<graphics/concept/ultimateSDR.pdf, id=84, 312.98033pt x 213.39566pt>
+<graphics/concept/ultimateSDR.pdf, id=83, 312.98033pt x 213.39566pt>
 File: graphics/concept/ultimateSDR.pdf Graphic file (type pdf)
 
 <use graphics/concept/ultimateSDR.pdf>
@@ -1515,7 +1519,7 @@ Package pdftex.def Info: graphics/concept/ultimateSDR.pdf used on input line 31
 .
 (pdftex.def)             Requested size: 213.3957pt x 145.50111pt.
 
-<graphics/concept/energy_consumption_sdr.pdf, id=85, 312.98033pt x 216.24095pt>
+<graphics/concept/energy_consumption_sdr.pdf, id=84, 312.98033pt x 216.24095pt>
 File: graphics/concept/energy_consumption_sdr.pdf Graphic file (type pdf)
 <use graphics/concept/energy_consumption_sdr.pdf>
 Package pdftex.def Info: graphics/concept/energy_consumption_sdr.pdf used on in
@@ -1527,7 +1531,7 @@ Overfull \hbox (20.91428pt too wide) in paragraph at lines 45--48
  []
 
 
-<graphics/concept/energy_consumption_sdr2.pdf, id=86, 312.98033pt x 227.62204pt
+<graphics/concept/energy_consumption_sdr2.pdf, id=85, 312.98033pt x 227.62204pt
 >
 File: graphics/concept/energy_consumption_sdr2.pdf Graphic file (type pdf)
  <use graphics/concept/energy_consumption_sdr2.pdf>
@@ -1553,7 +1557,7 @@ PDF inclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./graphics/concept/energy_consumption_sdr2.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
->] <graphics/concept/SystemDesign.pdf, id=127, 312.98033pt x 213.39566pt>
+>] <graphics/concept/SystemDesign.pdf, id=126, 312.98033pt x 213.39566pt>
 File: graphics/concept/SystemDesign.pdf Graphic file (type pdf)
 
 <use graphics/concept/SystemDesign.pdf>
@@ -1561,7 +1565,7 @@ Package pdftex.def Info: graphics/concept/SystemDesign.pdf used on input line 8
 9.
 (pdftex.def)             Requested size: 426.79141pt x 291.00224pt.
  [5 <./graphics/concept/SystemDesign.pdf>] <graphics/concept/ChargePump_ink.pdf
-, id=154, 199.1693pt x 236.15787pt>
+, id=153, 199.1693pt x 236.15787pt>
 File: graphics/concept/ChargePump_ink.pdf Graphic file (type pdf)
 
 <use graphics/concept/ChargePump_ink.pdf>
@@ -1569,7 +1573,7 @@ Package pdftex.def Info: graphics/concept/ChargePump_ink.pdf used on input line
  126.
 (pdftex.def)             Requested size: 199.1688pt x 236.15729pt.
  [6]
-<graphics/concept/RP_concept.pdf, id=158, 845.1575pt x 597.23125pt>
+<graphics/concept/RP_concept.pdf, id=157, 845.1575pt x 597.23125pt>
 File: graphics/concept/RP_concept.pdf Graphic file (type pdf)
 
 <use graphics/concept/RP_concept.pdf>
@@ -1578,7 +1582,7 @@ Package pdftex.def Info: graphics/concept/RP_concept.pdf used on input line 153
 (pdftex.def)             Requested size: 338.057pt x 238.88826pt.
  [7 <./graphics/concept/ChargePump_ink.pdf>] [8 <./graphics/concept/RP_concept.
 pdf, page is rotated 90 degrees>]
-<graphics/concept/SlopesAndTable.pdf, id=188, 845.1575pt x 597.23125pt>
+<graphics/concept/SlopesAndTable.pdf, id=187, 845.1575pt x 597.23125pt>
 File: graphics/concept/SlopesAndTable.pdf Graphic file (type pdf)
 
 <use graphics/concept/SlopesAndTable.pdf>
@@ -1586,7 +1590,7 @@ Package pdftex.def Info: graphics/concept/SlopesAndTable.pdf used on input line
  169.
 (pdftex.def)             Requested size: 426.79141pt x 301.59483pt.
 
-<graphics/concept/CodeGenerationPrinciple.pdf, id=189, 312.98033pt x 227.62204p
+<graphics/concept/CodeGenerationPrinciple.pdf, id=188, 312.98033pt x 227.62204p
 t>
 File: graphics/concept/CodeGenerationPrinciple.pdf Graphic file (type pdf)
  <use graphics/concept/CodeGenerationPrinciple.pdf>
@@ -1594,7 +1598,7 @@ Package pdftex.def Info: graphics/concept/CodeGenerationPrinciple.pdf used on i
 nput line 182.
 (pdftex.def)             Requested size: 312.97955pt x 227.62148pt.
  [9 <./graphics/concept/SlopesAndTable.pdf, page is rotated 90 degrees>]
-<graphics/concept/RiemannIntegralError.pdf, id=206, 845.1575pt x 597.23125pt>
+<graphics/concept/RiemannIntegralError.pdf, id=205, 845.1575pt x 597.23125pt>
 File: graphics/concept/RiemannIntegralError.pdf Graphic file (type pdf)
 
 <use graphics/concept/RiemannIntegralError.pdf>
@@ -1602,7 +1606,7 @@ Package pdftex.def Info: graphics/concept/RiemannIntegralError.pdf used on inpu
 t line 209.
 (pdftex.def)             Requested size: 426.79141pt x 301.59483pt.
  [10 <./graphics/concept/CodeGenerationPrinciple.pdf>]
-<graphics/concept/RiemannIntegral.pdf, id=219, 845.1575pt x 597.23125pt>
+<graphics/concept/RiemannIntegral.pdf, id=218, 845.1575pt x 597.23125pt>
 File: graphics/concept/RiemannIntegral.pdf Graphic file (type pdf)
 
 <use graphics/concept/RiemannIntegral.pdf>
@@ -1611,7 +1615,7 @@ e 224.
 (pdftex.def)             Requested size: 426.79141pt x 301.59483pt.
  [11 <./graphics/concept/RiemannIntegralError.pdf, page is rotated 90 degrees>]
  [12 <./graphics/concept/RiemannIntegral.pdf, page is rotated 90 degrees>]
-<graphics/concept/SQNR.pdf, id=241, 845.1575pt x 597.23125pt>
+<graphics/concept/SQNR.pdf, id=240, 845.1575pt x 597.23125pt>
 File: graphics/concept/SQNR.pdf Graphic file (type pdf)
 
 <use graphics/concept/SQNR.pdf>
@@ -1621,7 +1625,7 @@ Package pdftex.def Info: graphics/concept/SQNR.pdf used on input line 271.
 ex
 chapter 3.
 
-<graphics/concept/Schematic_RP_concept2.pdf, id=1103, 369.88583pt x 213.39565pt
+<graphics/concept/Schematic_RP_concept2.pdf, id=1102, 369.88583pt x 213.39565pt
 >
 File: graphics/concept/Schematic_RP_concept2.pdf Graphic file (type pdf)
  <use graphics/concept/Schematic_RP_concept2.pdf>
@@ -1678,7 +1682,7 @@ Package natbib Warning: Citation `model' on page 17 undefined on input line 58.
 
 
 
-<graphics/concept/equivalentcircuit_hemt.pdf, id=1142, 312.98033pt x 213.39566p
+<graphics/concept/equivalentcircuit_hemt.pdf, id=1141, 312.98033pt x 213.39566p
 t>
 File: graphics/concept/equivalentcircuit_hemt.pdf Graphic file (type pdf)
  <use graphics/concept/equivalentcircuit_hemt.pdf>
@@ -1951,7 +1955,7 @@ File: graphics/measdata/inputVoltage.pdf Graphic file (type pdf)
 
 <use graphics/measdata/inputVoltage.pdf>
 Package pdftex.def Info: graphics/measdata/inputVoltage.pdf used on input line 
-118.
+119.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
 
 <graphics/measdata/100M_Rload_regression.pdf, id=1486, 313.17pt x 213.79875pt>
@@ -1959,12 +1963,12 @@ File: graphics/measdata/100M_Rload_regression.pdf Graphic file (type pdf)
 
 <use graphics/measdata/100M_Rload_regression.pdf>
 Package pdftex.def Info: graphics/measdata/100M_Rload_regression.pdf used on in
-put line 132.
+put line 133.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
  [50 <./graphics/measdata/inputVoltage.pdf, page is rotated 90 degrees>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 156.
+               Default added (so using `tbp') on input line 157.
 
 
 <graphics/measdata/ProbeMeasurementOsci2.pdf, id=1496, 312.98033pt x 227.62204p
@@ -1972,7 +1976,7 @@ t>
 File: graphics/measdata/ProbeMeasurementOsci2.pdf Graphic file (type pdf)
  <use graphics/measdata/ProbeMeasurementOsci2.pdf>
 Package pdftex.def Info: graphics/measdata/ProbeMeasurementOsci2.pdf used on in
-put line 178.
+put line 179.
 (pdftex.def)             Requested size: 312.97955pt x 227.62148pt.
  [51 <./graphics/measdata/100M_Rload_regression.pdf, page is rotated 90 degrees
 >] [52 <./graphics/measdata/ProbeMeasurementOsci2.pdf>]
@@ -1981,7 +1985,7 @@ File: graphics/measdata/100M_Cload_regression.pdf Graphic file (type pdf)
 
 <use graphics/measdata/100M_Cload_regression.pdf>
 Package pdftex.def Info: graphics/measdata/100M_Cload_regression.pdf used on in
-put line 203.
+put line 204.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
 
 <graphics/measdata/150M_Cload_regression.pdf, id=1525, 313.17pt x 213.79875pt>
@@ -1989,7 +1993,7 @@ File: graphics/measdata/150M_Cload_regression.pdf Graphic file (type pdf)
 
 <use graphics/measdata/150M_Cload_regression.pdf>
 Package pdftex.def Info: graphics/measdata/150M_Cload_regression.pdf used on in
-put line 216.
+put line 217.
 (pdftex.def)             Requested size: 313.16922pt x 213.79822pt.
  [53 <./graphics/measdata/100M_Cload_regression.pdf, page is rotated 90 degrees
 >]) [54 <./graphics/measdata/150M_Cload_regression.pdf, page is rotated 90 degr
@@ -2005,12 +2009,17 @@ chapter 7.
 
 
 
-] (master_thesis_RiemannPump.bbl [61
+] (master_thesis_RiemannPump.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 40--45
+$\T1/ptm/m/n/12 (+20) Downloads / DE / Allgemeines / Bundesnetzagentur / Publik
+ationen / Berichte / 2015 /$
+ []
+
+[61
 
 
 
-] [62] [63]) [64]
-(appendix.tex
+] [62] [63]) [64] (appendix.tex
 <graphics/layout/CircuitSchematic_portrait.pdf, id=1586, 142.26378pt x 512.1496
 pt>
 File: graphics/layout/CircuitSchematic_portrait.pdf Graphic file (type pdf)
@@ -2137,11 +2146,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 40249 strings out of 493673
- 776621 string characters out of 3146818
- 866561 words of memory out of 3000000
- 42599 multiletter control sequences out of 15000+200000
- 67046 words of font info for 225 fonts, out of 3000000 for 9000
+ 40337 strings out of 493673
+ 777937 string characters out of 3146818
+ 867722 words of memory out of 3000000
+ 42680 multiletter control sequences out of 15000+200000
+ 67271 words of font info for 227 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  71i,11n,79p,10425b,1268s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/WinProgram/MikTEX/fonts/enc/dvips/fontname/8r.enc}<E:/WinProgram/MikTEX/f
@@ -2157,7 +2166,7 @@ nProgram/MikTEX/fonts/type1/urw/helvetic/uhvb8a.pfb><E:/WinProgram/MikTEX/fonts
 8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/Mi
 kTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on master_thesis_RiemannPump.pdf (88 pages, 11639034 bytes).
+Output written on master_thesis_RiemannPump.pdf (88 pages, 11598719 bytes).
 PDF statistics:
  1846 PDF objects out of 2073 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

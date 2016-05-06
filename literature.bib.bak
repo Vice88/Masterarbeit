@@ -1,6 +1,32 @@
 % Encoding: UTF-8
 
 
+@InProceedings{BaseStationEnergy,
+  Title                    = {A Research on the Telecommunication Base Station Power Consumption Investment Analysis and Optimized Configuration Method for Hybrid Energy Power},
+  Author                   = {M. Liu and L. Liu and X. Wu and L. Teng and J. Cao and S. Qin},
+  Booktitle                = {{Telecommunications Energy Conference 'Smart Power and Efficiency' (INTELEC), Proceedings of 2013 35th International}},
+  Year                     = {2013},
+  Month                    = {Oct},
+  Pages                    = {1-6}
+}
+
+@Misc{Bundesnetzagentur2016,
+  Title                    = {{Statistik-Funkanlagenstandorte}},
+  Author                   = {Bundesnetzagentur},
+  HowPublished             = {Online resource},
+  Month                    = apr,
+  Year                     = {2016},
+  URL                      = {http://emf2.bundesnetzagentur.de/pdf/statistiken/12_Bundesland_{\"u}bersicht_Internet_20160401.pdf}
+}
+
+@Misc{BundesnetzagenturfuerElektrizitaet2015,
+  Title                    = {{Jahresbericht 2014 Netze ausbauen. Zukunft sichern. Infrastrukturausbau in Deutschland.}},
+  Author                   = {Bundesnetzagentur f\"ur Elektrizit\"at, Gas, Telekommunikation, Post und Eisenbahnen},
+  Month                    = apr,
+  Year                     = {2015},
+  URL                      = {http://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Allgemeines/Bundesnetzagentur/Publikationen/Berichte/2015/Jahresbericht14barrierefrei.pdf?__blob=publicationFile&v=6}
+}
+
 @Conference{CakaZabelliLimaniEtAl2007,
   Title                    = {{Impact of MOSFET parameters on its parasitic capacitances}},
   Author                   = {Caka, N. and Zabelli, M. and Limani, M. and Kabashi, Q.},
@@ -52,6 +78,14 @@
   Year                     = {2013},
   Pages                    = {1 - 4},
   Journal                  = {ASIC (ASICON), 2013 IEEE 10th International Conference}
+}
+
+@Misc{EuropeanCommission2015,
+  Title                    = {{5G Vision The 5G Infrastructue Public Private Partnership: the next generation of communication networks and services.}},
+  Author                   = {5G Infrastructure Association supported by the European Commission},
+  Month                    = feb,
+  Year                     = {2015},
+  URL                      = {https://5g-ppp.eu/wp-content/uploads/2015/02/5G-Vision-Brochure-v1.pdf}
 }
 
 @Conference{EvertsDasKeybusJ.EtAl2010,
@@ -160,6 +194,17 @@
   Pages                    = {448 - 453}
 }
 
+@InProceedings{LSModel,
+  Title                    = {{A Large-Signal Model of GaN HEMTs for Linear High Power Amplifier Design}},
+  Author                   = {E. S. Mengistu and G. Kompa},
+  Booktitle                = {2006 European Microwave Integrated Circuits Conference},
+  Year                     = {2006},
+  Month                    = {Sept},
+  Pages                    = {292-295},
+  DOI                      = {10.1109/EMICC.2006.282810},
+  Keywords                 = {HEMT integrated circuits;III-V semiconductors;S-parameters;aluminium compounds;equivalent circuits;gallium compounds;intermodulation distortion;power amplifiers;AlGaN-GaN;HEMT;S-parameter;data interpolation;dispersive model;equivalent circuit model elements;intermodulation distortions;large-signal model;linear high power amplifier design;multitone excitations;Aluminum gallium nitride;Circuit simulation;Gallium nitride;HEMTs;High power amplifiers;Interpolation;MODFETs;Predictive models;Pulse measurements;Voltage;Modeling;intermodulation distortion;power amplifiers;power transistors}
+}
+
 @InProceedings{MaksimovicPaper,
   Title                    = {{100 MHz, 20 V, 90\% efficient synchronous buck converter with integrated gate driver}},
   Author                   = {Y. Zhang and M. Rodr\'{i}guez and D. Maksimovi\'{c}},
@@ -212,17 +257,6 @@
   Pages                    = {636 - 639}
 }
 
-@INPROCEEDINGS{LSModel,
-author={E. S. Mengistu and G. Kompa},
-booktitle={2006 European Microwave Integrated Circuits Conference},
-title={{A Large-Signal Model of GaN HEMTs for Linear High Power Amplifier Design}},
-year={2006},
-pages={292-295},
-keywords={HEMT integrated circuits;III-V semiconductors;S-parameters;aluminium compounds;equivalent circuits;gallium compounds;intermodulation distortion;power amplifiers;AlGaN-GaN;HEMT;S-parameter;data interpolation;dispersive model;equivalent circuit model elements;intermodulation distortions;large-signal model;linear high power amplifier design;multitone excitations;Aluminum gallium nitride;Circuit simulation;Gallium nitride;HEMTs;High power amplifiers;Interpolation;MODFETs;Predictive models;Pulse measurements;Voltage;Modeling;intermodulation distortion;power amplifiers;power transistors},
-doi={10.1109/EMICC.2006.282810},
-month={Sept},}
-
-
 @Article{Model,
   Title                    = {A Systematic State ;Space Approach to Large-Signal Transistor Modeling},
   Author                   = {M. Seelmann-Eggebert and T. Merkle and F. van Raay and R. Quay and M. Schlechtweg},
@@ -234,7 +268,7 @@ month={Sept},}
   Volume                   = {55},
   DOI                      = {10.1109/TMTT.2006.889154},
   ISSN                     = {0018-9480},
-  Keywords                 = {III-V semiconductors;gallium compounds;high electron mobility transistors;semiconductor device models;state-space methods;wide band gap semiconductors;GaN;HEMT;high electron mobility transistors;high-speed transistors;large-signal transistor modeling;linear LS model;multibias SS S-parameter measurements;state-space approach;Circuit simulation;Dispersion;Frequency dependence;Frequency domain analysis;Gallium nitride;HEMTs;MODFETs;Predictive models;Transfer functions;Voltage;GaN HEMT;large-signal (LS) transistor modeling;low-frequency (LF) dispersion;stateâspace approach}
+  Keywords                 = {III-V semiconductors;gallium compounds;high electron mobility transistors;semiconductor device models;state-space methods;wide band gap semiconductors;GaN;HEMT;high electron mobility transistors;high-speed transistors;large-signal transistor modeling;linear LS model;multibias SS S-parameter measurements;state-space approach;Circuit simulation;Dispersion;Frequency dependence;Frequency domain analysis;Gallium nitride;HEMTs;MODFETs;Predictive models;Transfer functions;Voltage;GaN HEMT;large-signal (LS) transistor modeling;low-frequency (LF) dispersion;stateÃ¢ÂÂspace approach}
 }
 
 @Conference{PengellyWoodMilliganEtAl2012,
@@ -265,7 +299,7 @@ month={Sept},}
 
 @Conference{QuayMaroldt2011,
   Title                    = {{Design and modelling challenges for advanced class-S digital transmitters}},
-  Author                   = {Quay, RÃ¼diger and Maroldt, Stephan},
+  Author                   = {Quay, RÃÂ¼diger and Maroldt, Stephan},
   Booktitle                = {Workshop on Integrated Nonlinear Microwave and Millimetre-Wave Circuits (INMMIC)},
   Year                     = {2011},
   Pages                    = {1 - 4}
@@ -318,7 +352,7 @@ month={Sept},}
 
 @Conference{SchmidReberChartierEtAl2011,
   Title                    = {{Advances on GaN based switch mode amplifiers for communication applications}},
-  Author                   = {Schmid, Ulf and Reber, Rolf and Chartier, SÃ©bastien and Grabherr, Wilfried and Leberer, Ralf and Oppermann, Martin},
+  Author                   = {Schmid, Ulf and Reber, Rolf and Chartier, SÃÂ©bastien and Grabherr, Wilfried and Leberer, Ralf and Oppermann, Martin},
   Booktitle                = {41st European Microwave Conference (EuMC)},
   Year                     = {2011},
   Pages                    = {163 - 166}

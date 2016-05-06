@@ -1,3 +1,4 @@
+\glossaryentry{DC?\glossentry{ab:dc}|setentrycounter[]{page}\glsnumberformat}{vii}
 \glossaryentry{LTE?\glossentry{ab:lte}|setentrycounter[]{page}\glsnumberformat}{1}
 \glossaryentry{IAF?\glossentry{ab:iaf}|setentrycounter[]{page}\glsnumberformat}{2}
 \glossaryentry{SDR?\glossentry{ab:sdr}|setentrycounter[]{page}\glsnumberformat}{3}
@@ -152,10 +153,10 @@
 \glossaryentry{GND?\glossentry{ab:gnd}|setentrycounter[]{page}\glsnumberformat}{51}
 \glossaryentry{DUT?\glossentry{ab:dut}|setentrycounter[]{page}\glsnumberformat}{51}
 \glossaryentry{DUT?\glossentry{ab:dut}|setentrycounter[]{page}\glsnumberformat}{51}
-\glossaryentry{SMD?\glossentry{ab:smd}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{SMD?\glossentry{ab:smd}|setentrycounter[]{page}\glsnumberformat}{52}
 \glossaryentry{GND?\glossentry{ab:gnd}|setentrycounter[]{page}\glsnumberformat}{53}
 \glossaryentry{HEMT?\glossentry{ab:hemt}|setentrycounter[]{page}\glsnumberformat}{54}
-\glossaryentry{GND?\glossentry{ab:gnd}|setentrycounter[]{page}\glsnumberformat}{54}
+\glossaryentry{GND?\glossentry{ab:gnd}|setentrycounter[]{page}\glsnumberformat}{55}
 \glossaryentry{GaN?\glossentry{ab:gan}|setentrycounter[]{page}\glsnumberformat}{55}
 \glossaryentry{DAC?\glossentry{ab:dac}|setentrycounter[]{page}\glsnumberformat}{57}
 \glossaryentry{OSR?\glossentry{ab:osr}|setentrycounter[]{page}\glsnumberformat}{57}

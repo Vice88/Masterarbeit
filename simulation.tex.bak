@@ -284,7 +284,7 @@ A trade off between switching speed and power consumption resulted.
 For an increase in the switching speed, hence an increase of the signal bandwidth, the power consumption also linearly increase.
 In addition to this, the power consumption of the driver circuit also increases with the switching speed, as the dimensions of the used components have to be adapted.
 The used driver circuit was optimized to reduce the power consumption for a maximum frequency of \SI{100}{\mega \hertz}, as it was implemented in a power application system \cite{MaksimovicPaper}.
-In Table \ref{tab:switchloss} the losses are illustrated with the corresponding sampling (switching) frequency of the used configuration.
+The estimated losses are illustrated in Table \ref{tab:switchloss} with the corresponding sampling (switching) frequency of the used configuration.
 
 \begin{table}[ht]
 \centering
