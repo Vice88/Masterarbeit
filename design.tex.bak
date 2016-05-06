@@ -105,7 +105,7 @@ The capacitive reactance $X_{C}$ is defined as:
 
 and thus the reactance scales with the reciprocal value of $\omega$.
 The input capacitance $C_{in}$ determined by the sum $C_{gs} + C_{gd}$, was calculated and yielded $C_{in}\approx 20 pF$.
-This estimation of the input reactance was sufficient and parasitic effects were neglected \cite{CakaZabelliLimaniEtAl2007}, cite{ZhangZhangTangEtAl2014}.
+This estimation of the input reactance was sufficient and parasitic effects were neglected \cite{CakaZabelliLimaniEtAl2007}, \cite{ZhangZhangTangEtAl2014}.
 Consequently this capacitance is used for further investigation as a load impedance.
 %Considering the absolute value of the reactance its value is decreasing.
 %For frequencies beyond \SI{1}{\giga \hertz} the impact of parasitic inductances induced a constant value for the reactance.

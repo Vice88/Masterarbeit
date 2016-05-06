@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  6 MAY 2016 15:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  6 MAY 2016 15:48
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -2146,10 +2146,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 40337 strings out of 493673
- 777937 string characters out of 3146818
- 867722 words of memory out of 3000000
- 42680 multiletter control sequences out of 15000+200000
+ 40340 strings out of 493673
+ 778027 string characters out of 3146818
+ 867738 words of memory out of 3000000
+ 42683 multiletter control sequences out of 15000+200000
  67271 words of font info for 227 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  71i,11n,79p,10425b,1268s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2166,7 +2166,7 @@ nProgram/MikTEX/fonts/type1/urw/helvetic/uhvb8a.pfb><E:/WinProgram/MikTEX/fonts
 8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/Mi
 kTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on master_thesis_RiemannPump.pdf (88 pages, 11598719 bytes).
+Output written on master_thesis_RiemannPump.pdf (88 pages, 11598566 bytes).
 PDF statistics:
  1846 PDF objects out of 2073 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
