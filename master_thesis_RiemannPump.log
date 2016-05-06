@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  6 MAY 2016 15:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  6 MAY 2016 16:26
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -2019,118 +2019,118 @@ ationen / Berichte / 2015 /$
 
 
 
-] [62] [63]) [64] (appendix.tex
-<graphics/layout/CircuitSchematic_portrait.pdf, id=1586, 142.26378pt x 512.1496
-pt>
-File: graphics/layout/CircuitSchematic_portrait.pdf Graphic file (type pdf)
- <use graphics/layout/CircuitSchematic_portrait.pdf>
-Package pdftex.def Info: graphics/layout/CircuitSchematic_portrait.pdf used on 
-input line 13.
-(pdftex.def)             Requested size: 142.26343pt x 512.14835pt.
- [65
+] [62] [63]) [64] (appendix.tex [65
 
 
 
 ]
-<graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf, id=1591, 341.43306pt x 
+<graphics/layout/CircuitSchematic_portrait.pdf, id=1590, 142.26378pt x 512.1496
+pt>
+File: graphics/layout/CircuitSchematic_portrait.pdf Graphic file (type pdf)
+ <use graphics/layout/CircuitSchematic_portrait.pdf>
+Package pdftex.def Info: graphics/layout/CircuitSchematic_portrait.pdf used on 
+input line 14.
+(pdftex.def)             Requested size: 192.05649pt x 691.40338pt.
+
+Overfull \vbox (16.30023pt too high) has occurred while \output is active []
+
+
+[66 <./graphics/layout/CircuitSchematic_portrait.pdf>]
+<graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf, id=1602, 341.43306pt x 
 805.21298pt>
 File: graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf Graphic file (type 
 pdf)
  <use graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf>
 Package pdftex.def Info: graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf 
-used on input line 22.
-(pdftex.def)             Requested size: 273.1468pt x 644.17126pt.
+used on input line 23.
+(pdftex.def)             Requested size: 256.07414pt x 603.90825pt.
 
-[66 <./graphics/layout/CircuitSchematic_portrait.pdf>] [67]
-Overfull \vbox (8.6707pt too high) has occurred while \output is active []
-
-
-[68 <./graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf>]
-<graphics/photos/Demonstrator.pdf, id=1624, 209.2131pt x 227.62204pt>
+[67 <./graphics/simulation/realizedCircuit_full_DDRi_XY6.pdf>]
+<graphics/photos/Demonstrator.pdf, id=1621, 209.2131pt x 227.62204pt>
 File: graphics/photos/Demonstrator.pdf Graphic file (type pdf)
 
 <use graphics/photos/Demonstrator.pdf>
 Package pdftex.def Info: graphics/photos/Demonstrator.pdf used on input line 34
 .
-(pdftex.def)             Requested size: 209.21257pt x 227.62148pt.
- [69 <./graphics/photos/Demonstrator.pdf>] [70] <graphics/snr/FullSine05GHz.pdf
-, id=1638, 312.98033pt x 234.73523pt>
+(pdftex.def)             Requested size: 426.79141pt x 464.39838pt.
+ [68 <./graphics/photos/Demonstrator.pdf>] <graphics/snr/FullSine05GHz.pdf, id=
+1632, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine05GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine05GHz.pdf>
-Package pdftex.def Info: graphics/snr/FullSine05GHz.pdf used on input line 70.
+Package pdftex.def Info: graphics/snr/FullSine05GHz.pdf used on input line 66.
 (pdftex.def)             Requested size: 384.10966pt x 288.08862pt.
 
-<graphics/snr/FullSine1GHz.pdf, id=1639, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine1GHz.pdf, id=1633, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine1GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine1GHz.pdf>
-Package pdftex.def Info: graphics/snr/FullSine1GHz.pdf used on input line 77.
+Package pdftex.def Info: graphics/snr/FullSine1GHz.pdf used on input line 73.
 (pdftex.def)             Requested size: 384.10966pt x 288.08862pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine2GHz.pdf, id=1640, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine2GHz.pdf, id=1634, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine2GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine2GHz.pdf>
-Package pdftex.def Info: graphics/snr/FullSine2GHz.pdf used on input line 84.
+Package pdftex.def Info: graphics/snr/FullSine2GHz.pdf used on input line 80.
 (pdftex.def)             Requested size: 384.10966pt x 288.08862pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine3GHz.pdf, id=1641, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine3GHz.pdf, id=1635, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine3GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine3GHz.pdf>
-Package pdftex.def Info: graphics/snr/FullSine3GHz.pdf used on input line 91.
+Package pdftex.def Info: graphics/snr/FullSine3GHz.pdf used on input line 87.
 (pdftex.def)             Requested size: 384.10966pt x 288.08862pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine4GHz.pdf, id=1642, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine4GHz.pdf, id=1636, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine4GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine4GHz.pdf>
-Package pdftex.def Info: graphics/snr/FullSine4GHz.pdf used on input line 98.
+Package pdftex.def Info: graphics/snr/FullSine4GHz.pdf used on input line 94.
 (pdftex.def)             Requested size: 384.10966pt x 288.08862pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine5GHz.pdf, id=1643, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine5GHz.pdf, id=1637, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine5GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine5GHz.pdf>
-Package pdftex.def Info: graphics/snr/FullSine5GHz.pdf used on input line 105.
+Package pdftex.def Info: graphics/snr/FullSine5GHz.pdf used on input line 101.
 (pdftex.def)             Requested size: 384.10966pt x 288.08862pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/snr/FullSine6GHz.pdf, id=1644, 312.98033pt x 234.73523pt>
+<graphics/snr/FullSine6GHz.pdf, id=1638, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine6GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine6GHz.pdf>
-Package pdftex.def Info: graphics/snr/FullSine6GHz.pdf used on input line 112.
+Package pdftex.def Info: graphics/snr/FullSine6GHz.pdf used on input line 108.
 (pdftex.def)             Requested size: 384.10966pt x 288.08862pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [71 <./graphics/snr/FullSine05GHz.pdf>] [72 <./graphics/snr/FullSine1GHz.pdf>
+) [69 <./graphics/snr/FullSine05GHz.pdf>] [70 <./graphics/snr/FullSine1GHz.pdf>
  <./graphics/snr/FullSine2GHz.pdf
 
 pdfTeX warning: pdflatex (file ./graphics/snr/FullSine2GHz.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->] [73 <./graphics/snr/FullSine3GHz.pdf> <./graphics/snr/FullSine4GHz.pdf
+>] [71 <./graphics/snr/FullSine3GHz.pdf> <./graphics/snr/FullSine4GHz.pdf
 
 pdfTeX warning: pdflatex (file ./graphics/snr/FullSine4GHz.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->] [74 <./graphics/snr/FullSine5GHz.pdf> <./graphics/snr/FullSine6GHz.pdf
+>] [72 <./graphics/snr/FullSine5GHz.pdf> <./graphics/snr/FullSine6GHz.pdf
 
 pdfTeX warning: pdflatex (file ./graphics/snr/FullSine6GHz.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
@@ -2166,9 +2166,9 @@ nProgram/MikTEX/fonts/type1/urw/helvetic/uhvb8a.pfb><E:/WinProgram/MikTEX/fonts
 8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/Mi
 kTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on master_thesis_RiemannPump.pdf (88 pages, 11598566 bytes).
+Output written on master_thesis_RiemannPump.pdf (86 pages, 11597403 bytes).
 PDF statistics:
- 1846 PDF objects out of 2073 (max. 8388607)
+ 1840 PDF objects out of 2073 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41755 words of extra memory for PDF output out of 42996 (max. 10000000)
 

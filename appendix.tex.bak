@@ -8,13 +8,15 @@
 
 \section{Schematic of the Riemann Pump circuit for simulation}
 \label{app:schematic}
+\newpage
 \begin{figure}[H]
 	\centering
-  \includegraphics{CircuitSchematic_portrait.pdf}
+  \includegraphics[scale = 1.25]{CircuitSchematic_portrait.pdf}
 	\caption{Circuit for simulation}
 	\label{fig:Circuitschematic}
 \end{figure}
 
+\newpage
 \section{Schematic of the realized Riemann Pump circuit}
 \label{app:schematicRealizedPump}
 \begin{figure}[H]
@@ -26,20 +28,16 @@
 
 % (IAF\_GE\_MSL\_ A204/IAF\_GaN25\_HEMT\_CS\_LS\_SHfull)
 
-
-\section{Photography of the realized Demonstrator version 1}
+\newpage
+\section{Photography of the realized Demonstrator}
 
 \begin{figure}[H]
    \centering
-   \includegraphics{Demonstrator.pdf}
+   \includegraphics[width=\textwidth]{Demonstrator.pdf}
    \caption{Photo demonstrator}
    \label{pic:DemonstratorDDRiXY6}
 \end{figure}
 
-\newpage
-\section{Photography of the realized Demonstrator version 2}
-
-bla bla bla bal bla lbal blalsl
 \newpage
 \section{SNR Calculation for simulated signals}
 \label{app:snr}
@@ -53,7 +51,7 @@ Table \ref{tab:snr} states the parameter used for the desired theoretical sine w
 \begin{table}[h]
 \centering
 \caption{Calculated SNR and corresponding parameters for the theoretical sine wave}
-\label{my-label}
+\label{tab:snr}
 \begin{tabular}{|l|l|l|l|l|l|l|l|}
 \hline
 freqeuncy {[}GHz{]}   & 0.5           & 1           & 2             & 3             & 4             & 5             & 6             \\ \hline
@@ -62,7 +60,6 @@ amplitude {[}V{]}     & 7.5           & 7.5         & 6.5           & 4.5       
 offset {[}V{]}        & 7.5           & 7.5         & 7.5           & 10            & 11.5          & 12.5          & 13            \\ \hline
 phase {[}rad{]}       & pi/4          & pi/4        & 0             & -pi/16        & -pi/16        & -pi/8         & -pi/8         \\ \hline
 \end{tabular}
-\label{tab:snr}
 \end{table}
 
 
