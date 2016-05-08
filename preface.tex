@@ -2,36 +2,37 @@
 %\textit{A brief summary of the contents of the thesis, including what was done and, in general terms, what was achieved. Two pages maximum}\\
 %\textit{Explanation of why you had to do what you did. At the end of this section, you should summarize your most important results in one to two pages, including your best measurement result.}
 Mobile communication became a major part of our daily life. 
-With the release of the fourth mobile communication standard  \gls{ab:lte} over 70 atomic power plans are required to handle the estimated energy consumption of the world wide mobile communication.
-Approximately 70.000 base stations \cite{Bundesnetzagentur2016} are in operation within Germany, which consume an estimated energy of approximately 4 - 5 billion \si{\kilo \watt \hour}, based on an estimated power consumption per base station between \SI{2}{\kilo \watt} and \SI{5}{\kilo \watt} \cite{BaseStationEnergy}.
-The reason for the huge amount of energy consumption is the immense demand of high data rates.
+With the release of the fourth mobile communication standard  \gls{ab:lte} over 70 atomic power plans were required to handle the estimated energy consumption of the world wide mobile communication.
+Approximately 70.000 base stations \cite{Bundesnetzagentur2016} are in operation in Germany, which consume an estimated energy of approximately 3 billion \si{\kilo \watt \hour}, based on an estimated power consumption per base station between \SI{2}{\kilo \watt} and \SI{5}{\kilo \watt} \cite{BaseStationEnergy}.
+The reason for the huge amount of energy consumption is the immense demand on high data rates.
 In our every day life customer applications are dealing with very high data transfer rates.
-Today's data rates handle videos in two dimensional resolution but the next generation have to handle three dimensional high resolution video streams in real time via virtual reality 360$^{\circ}$ cameras.
+Today's data rates handle videos in two dimensional resolution, but the next generation have to handle three dimensional high resolution video streams in real time via virtual reality 360$^{\circ}$ cameras.
 It will be possible to broadcast a live video stream from a sports event or concert.
-In addition to the customer application field the industry also steadily increase the data volume sent via mobile communication.
-It is expected that the data rate is increasing exponentially up to the year 2020 \cite{BundesnetzagenturfuerElektrizitaet2015}. 
+In addition to the customer application field, the industry also steadily increase their data volume sent via mobile communication.
+It is expected, that the data rate is increasing exponentially up to the year 2020 \cite{BundesnetzagenturfuerElektrizitaet2015}. 
 Induced by M2M (machine to machine) communication, real time data transfer is becoming more and more important.
-All of this increases the demand of a new mobile communication standard.
-The fifth generation of mobile communication (5G) is expected to be released in the year 2020.
-The vision of the 5G standard is to increase the data rate to \SI{10}{Gbps}, decrease the latency to \SI{1}{\milli \second} which is equivalent to real time connections and handle more connections ever before \cite{EuropeanCommission2015}.
-But with a new communication standard also new hardware is needed.
+All of the mentioned aspects increase the demand of a new mobile communication standard.
+The fifth generation of mobile communication (5G) is expected to be released in the year 2020 \cite{EuropeanCommission2015}.
+The vision of the 5G standard is to increase the data rate to \SI{10}{Gbps}, decrease the latency to \SI{1}{\milli \second}, which is equivalent to real time connections and handle more connections than ever before \cite{EuropeanCommission2015}.
+But with the new communication standard also new hardware is needed.
 The hardware needed, must be able to handle the huge amount of data in real time.
 Therefore new concepts were investigated regarding new hardware topologies.
 One of the new concepts is presented in this thesis.
 It makes use of the principle of full software radio and utilized gallium nitride technology.
-This makes it possible to cover the emerging needs of a wideband operation, while ensuring a low power consumption.
-To reach this wideband operation implemented in a software radio, it is necessary to bring the digital world as close as possible to the analog domain.
+This makes it possible to cover the emerging need of a wideband operation, while ensuring a low power consumption.
+To reach this wideband operation in a software radio, it is necessary to bring the digital world as close as possible to the analog domain.
 Therefore a decent digital-to-analog converter is needed which is investigated in this thesis, named Riemann Pump.
 The progress of the development of such a digital-to-analog converter, contains several steps.
 First of all a literature survey is performed.
-This survey yields some basic concepts for the Riemann Pump, which were adapted to design a test circuit in GaN technology. 
-For the GaN technology different concepts are investigated and evaluated, also with view on the energy consumption.
-After choosing the most suitable concept, detailed simulations are performed to get an insight in the properties of the Riemann Pump.
+This survey yields some basic concepts for the Riemann Pump, which were adapted to design a test circuit in \gls{ab:gan} technology. 
+For the \gls{ab:gan} technology different concepts are investigated and evaluated.
+After the development of a concept, detailed simulations are performed to get an insight in the properties of the Riemann Pump.
 The simulations are run with transistors modelled at the \gls{ab:iaf} \cite{Model}.
 Afterwards strategies are presented which exhibit some important aspect for the assembly of the test circuit.
-The measurement results are presented in chapter 6.
-The successful measurement required a proper input control and output measurement strategy which are demonstrated.
-The first measurement results of a built prototype are presented and confirm the proof of concept.
+The measurement results are presented in chapter \ref{ch:measurement}.
+The successful measurement required a proper input control and output measurement strategy, which are demonstrated.
+The assembled multi bit demonstrator is measured for the first time, since no results were published regarding a Riemann Pump in \gls{ab:gan} technology.
+The measurement results of the built prototype are presented and confirm the proof of concept.
 
 
 %Sendeleistung der Basisstation betraegt 20W. Elektronische Komponenten brauchen aber mehrere tausend Watt (kW) um die Informationen an den Empfaenger zu senden. PA am wichtigsten, hohe leistung, geringe Leistungsaufnahme, hohe frequenz. mehr als 70.000 Basisstationen deutschlandweit, Energieverbrauch/Jahr: 2 Mrd kWh entspricht der jaehrlich eingespeisten Energie eines kleinen Kohlekraftwerks. Energiebedarf weltweit werden etwa 70 Kernkraftwerke noetig. Mobilfunknutzer steigt: 2020 4.6 Mrd Nutzer, 2020 1800 Billarden Bytes, technisch energieeffiziente loesungen noetig ohne umwelt zu belasten. 5G bis 2020. 1 Mrd bit/s 10mal soviel wie LTE. Extrem schnelle und energieeffiziente power amplifier. Avlanche breakdown! UMTS Basisstation: 20km, LTE mehr Daten weniger Reichweite, hoehere Frequenz: 5km,Reichweite muss in der naechsten Generation auch erhalten bleiben, also viel Leistung auf noch hoeheren Frequenzen. Silizium schafft die Leistung nicht, das Silizium wuerde viel zu heiss, deswegen III-V Verbindungshalbleiter. 3000 Watt Energieaufnahme um mit fuenf antennen jeweils 20 Watt im Umkreis von 20km fuer 600 Telefonate gleichzeitig zu verteilen. Filme, Musik, Stream -> Datenrate und zwar 10 bis 100-fach hoehere Datenrate als LTE. 100 Milliarden Geraete sollen gleichzeitig ansprechbar sein WELTWEIT (Computer,PDA, Auto, Smartphone etc.). Latenzzeiten von unter 1 ms!! Fast Echtzeit, Maschinenkommunikation !! Maschinen sind sehr empfindlich und muessen zu jedem Zeitpunkt wissen wo sie stehen. Energieverbrauch soll um ein tausendstel pro bit gesenkt werden. (insgesamt soll der stromverbrauch um 90 prozent verringert werden) GaAs wird vollstaendig verschwinden, sowohl mobil als auch basisstationen werden auf \gls{ab:gan} umruesten muessen. Neue Geraete werden notwendig, 5G wird nicht kompatibel sein mit den alten Standards. 

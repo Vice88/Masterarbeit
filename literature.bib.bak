@@ -1,4 +1,4 @@
-% Encoding: UTF-8
+% Encoding: ISO8859-1
 
 
 @InProceedings{BaseStationEnergy,
@@ -16,7 +16,7 @@
   HowPublished             = {Online resource},
   Month                    = apr,
   Year                     = {2016},
-  URL                      = {http://emf2.bundesnetzagentur.de/pdf/statistiken/12_Bundesland_{\"u}bersicht_Internet_20160401.pdf}
+  URL                      = {http://emf2.bundesnetzagentur.de/pdf/statistiken/12_Bundesland_�bersicht_Internet_20160401.pdf}
 }
 
 @Misc{BundesnetzagenturfuerElektrizitaet2015,
@@ -268,7 +268,7 @@
   Volume                   = {55},
   DOI                      = {10.1109/TMTT.2006.889154},
   ISSN                     = {0018-9480},
-  Keywords                 = {III-V semiconductors;gallium compounds;high electron mobility transistors;semiconductor device models;state-space methods;wide band gap semiconductors;GaN;HEMT;high electron mobility transistors;high-speed transistors;large-signal transistor modeling;linear LS model;multibias SS S-parameter measurements;state-space approach;Circuit simulation;Dispersion;Frequency dependence;Frequency domain analysis;Gallium nitride;HEMTs;MODFETs;Predictive models;Transfer functions;Voltage;GaN HEMT;large-signal (LS) transistor modeling;low-frequency (LF) dispersion;stateÃ¢ÂÂspace approach}
+  Keywords                 = {III-V semiconductors;gallium compounds;high electron mobility transistors;semiconductor device models;state-space methods;wide band gap semiconductors;GaN;HEMT;high electron mobility transistors;high-speed transistors;large-signal transistor modeling;linear LS model;multibias SS S-parameter measurements;state-space approach;Circuit simulation;Dispersion;Frequency dependence;Frequency domain analysis;Gallium nitride;HEMTs;MODFETs;Predictive models;Transfer functions;Voltage;GaN HEMT;large-signal (LS) transistor modeling;low-frequency (LF) dispersion;stateâspace approach}
 }
 
 @Conference{PengellyWoodMilliganEtAl2012,
@@ -299,7 +299,7 @@
 
 @Conference{QuayMaroldt2011,
   Title                    = {{Design and modelling challenges for advanced class-S digital transmitters}},
-  Author                   = {Quay, RÃÂ¼diger and Maroldt, Stephan},
+  Author                   = {Quay, RÃ¼diger and Maroldt, Stephan},
   Booktitle                = {Workshop on Integrated Nonlinear Microwave and Millimetre-Wave Circuits (INMMIC)},
   Year                     = {2011},
   Pages                    = {1 - 4}
@@ -352,7 +352,7 @@
 
 @Conference{SchmidReberChartierEtAl2011,
   Title                    = {{Advances on GaN based switch mode amplifiers for communication applications}},
-  Author                   = {Schmid, Ulf and Reber, Rolf and Chartier, SÃÂ©bastien and Grabherr, Wilfried and Leberer, Ralf and Oppermann, Martin},
+  Author                   = {Schmid, Ulf and Reber, Rolf and Chartier, SÃ©bastien and Grabherr, Wilfried and Leberer, Ralf and Oppermann, Martin},
   Booktitle                = {41st European Microwave Conference (EuMC)},
   Year                     = {2011},
   Pages                    = {163 - 166}

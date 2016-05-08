@@ -17,7 +17,7 @@
 
 \newglossaryentry{ab:enob}{type=abbreviations,name={ENOB},description={effective number of bits},first={ENOB (effective number of bits)}}
 
-\newglossaryentry{ab:pcm}{type=abbreviations,name={PCM},description={Pulse-code modulation},first={PCM (Pulse-code modulation)}}
+\newglossaryentry{ab:pcm}{type=abbreviations,name={PCM},description={pulse-code modulation},first={PCM (Pulse-code modulation)}}
 
 \newglossaryentry{ab:dsp}{type=abbreviations,name={DSP},description={digital signal processor},first={DSP (digital signal processor)}}
 
@@ -33,11 +33,11 @@
 
 \newglossaryentry{ab:snr}{type=abbreviations,name={SNR},description={signal-to-noise-ratio},first={SNR (Signal-to-noise-ratio)}}
 
-\newglossaryentry{ab:ChemNiPdAu}{type=abbreviations,name={ChemNiPdAu},description={chemical Nickel Palladium Aurum}}
+\newglossaryentry{ab:ChemNiPdAu}{type=abbreviations,name={ChemNiPdAu},description={chemical nickel palladium aurum}}
 
-\newglossaryentry{ab:cu}{type=abbreviations,name={Cu},description={Copper}}
+\newglossaryentry{ab:cu}{type=abbreviations,name={Cu},description={copper}}
 
-\newglossaryentry{ab:qfn}{type=abbreviations,name={QFN},description={Quad Flat No Leads},first={QFN (Quad Flat No Leads)}}
+\newglossaryentry{ab:qfn}{type=abbreviations,name={QFN},description={quad flat no leads},first={QFN (Quad Flat No Leads)}}
 
 \newglossaryentry{ab:2deg}{type=abbreviations,name={2DEG},description={Two-dimensional electron gas},first={2DEG (two-dimensional electron gas)},firstplural={2DEGs (two-dimensional electron gases)},plural={2DEGs}}
 
@@ -128,7 +128,7 @@
 
 \newglossaryentry{sy:Vss}{type=symbols,name={$V_{ss}$},description={negative supply voltage},first={$V_{ss}$}}
 
-\newglossaryentry{sy:Vout}{type=symbols,name={$V_{out}$},description={output voltage},first={$V_{out}$}}
+\newglossaryentry{sy:Vout}{type=symbols,name={$v_{out}$},description={output voltage},first={$v_{out}$}}
 
 \newglossaryentry{sy:vdn}{type=symbols,name={$V_{dn}$},description={negative driver supply voltage},first={$V_{dn}$}}
 

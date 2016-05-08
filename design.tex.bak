@@ -1,19 +1,19 @@
 \chapter{Riemann Pump circuit design}
 \label{ch:design}
 % \textit{Description of the approach you have taken to solve the scientific or technical problem which you were posed. Outline the design, the methodology and overall structure of your experimental approach}\\
-The goal was to design an arbitrary waveform generator for a signal bandwidth of \SI{6}{\giga \hertz}.
+The aim of this thesis was to design an arbitrary waveform generator for a baseband signal bandwidth of \SI{6}{\giga \hertz}.
 For the implementation in a base station, the most promising technology was \gls{ab:gan} \cite{EvertsDasKeybusJ.EtAl2010}, \cite{PengellyWoodMilliganEtAl2012}, \cite{SchmidReberChartierEtAl2011}.
-\gls{ab:gan} \glspl{ab:hemt} were used for the high speed switches  \cite{MaroldtHauptKieferEtAl2009}, \cite{HongMukaiGheidiEtAl2013}, \cite{MaroldtBruecknerQuayEtAl2014}, \cite{WentzelMelianiHeinrich2010}, \cite{MaroldtQuayHauptEtAl2011}, \cite{QuayMaroldt2011}, which served as voltage controlled current sources in this concept.
-Based on the chosen technology a suitable push-pull concept were found \cite{MaksimovicPaper} to show the feasibility of the concept.
-The attention was rather drawn to proof the concept than to optimize for energy consumption or efficiency.
-In the design process a suitable load impedance and the right dimension of the used components had to be found.
+\gls{ab:gan} \glspl{ab:hemt} were used for the high speed switches  \cite{MaroldtHauptKieferEtAl2009}, \cite{HongMukaiGheidiEtAl2013}, \cite{MaroldtBruecknerQuayEtAl2014}, \cite{WentzelMelianiHeinrich2010}, \cite{MaroldtQuayHauptEtAl2011}, \cite{QuayMaroldt2011}, which served as voltage controlled current sources, in this concept.
+Based on the chosen technology, a suitable push-pull concept were found \cite{MaksimovicPaper} to show the feasibility of the concept.
+The attention was rather drawn to prove the concept than to optimize for energy consumption or efficiency.
+In the design process, a suitable load impedance and the right dimension of the used components had to be found.
 
 \section{Approach and implementation of the Riemann Pump}
-As stated in chapter \ref{IdeaRiemannPump} the circuit needed high speed switches, which were capable to drive power.
-In order to switch a \gls{ab:hemt} transistor to the high side power rail a driver circuit was needed, since in \gls{ab:gan} no complementary transistors were available.
-The absence of a p-type transistor in \gls{ab:gan} technology made it challenging to find a suitable concept to realize the push-pull stage.
-The n-type \glspl{ab:hemt} operating in depletion mode needed a negative gate source voltage \gls{sy:vgs} to switch the transistor off.
-For the on switching \gls{sy:vgs} had to be \SI{0}{\volt} and therefore a driver circuit was needed \cite{Y.Zhang2015}, \cite{MaksimovicPaper}, \cite{GhoshAltmannKerstenEtAl2014}, \cite{HongMukaiGheidiEtAl2013}, since the source potential of the high side switch varies between \gls{sy:Vdd} and \gls{sy:Vss}.
+As stated in chapter \ref{IdeaRiemannPump}, the circuit needed high speed switches, which were capable to drive power.
+In order to switch a \gls{ab:hemt} transistor to the high side power rail, a driver circuit was needed, since in \gls{ab:gan} technology no complementary transistors were available.
+The absence of a p-type transistor made it challenging to find a suitable concept to realize the push-pull stage.
+The n-type \glspl{ab:hemt} operating in depletion mode, needed a negative gate source voltage \gls{sy:vgs} to switch the transistor off.
+For the on switching, \gls{sy:vgs} had to be \SI{0}{\volt} and therefore a driver circuit was needed \cite{Y.Zhang2015}, \cite{MaksimovicPaper}, \cite{GhoshAltmannKerstenEtAl2014}, \cite{HongMukaiGheidiEtAl2013}, since the source potential of the high side switch varies between \gls{sy:Vdd} and \gls{sy:Vss}.
 The source contact of the high side switch, realized by a n-type \gls{ab:gan} \gls{ab:hemt}, was connected to the output of the test circuit and therefore the potential at the output was not constant.
 A suitable driver circuit was found in \cite{MaksimovicPaper}, where the principle of a push-pull stage for power applications is described.\\
 One possible approach to design a Riemann Pump is shown in Fig. \ref{fig:SchematicRiemannPump}.
@@ -26,23 +26,23 @@ One possible approach to design a Riemann Pump is shown in Fig. \ref{fig:Schemat
 \end{figure}
 
 %%%%%%%%%%%%%%% 00:40 Uhr 01.05.2016
-On the left side, as marked, is the driver circuit which was needed to switch the high side transistor without dissipating a huge amount of power.
+On the left side, as marked, the driver circuit is depicted which was needed to switch the high side transistor without dissipating a huge amount of power.
 As the timing is crucial for the switching process, the driver concept was implemented for the low side switch too.
-Each driver consisted of a base transistor, marked as $Qb1$ and $Qb2$, which served to operate as a inverter.
+Each driver consisted of a base transistor, marked as $Qb1$ and $Qb2$, which served to operate as an inverter.
 Also two load transistors, $Ql1$ and $Ql2$, were implemented with a source degeneration resistor which served as a current source.
 The resistors $R1$ and $R2$ were tuned to provide a proper current while maintaining a decent power consumption.
-If the resistors were set to a low value, the current source provides more current and hence the switching process is faster since the charging of the gate capacitance of the high and low side transistors is faster.
+If the resistors were set to a low value, the current source provides more current and hence the switching process is faster, since the charging of the gate capacitance of the high and low side transistors is faster.
 But a draw back was that for the higher current a higher power consumption occurred.
-In addition to the driver circuit two power transistors were implemented which demonstrated the one bit \gls{ab:dac}.
-These two transistors, $Q_{highside}$ and $Q_{lowside}$, represented two switches which switch the output to the high side power rail and low side power rail, respectively.
-Switching the high side transistor ($Q_{highside}$) to the on state required a gate-source voltage $V_{gs\_HS}$ of \SI{0}{\volt}.
-This is achieved by the feedback path from the output to the drain of the load transistor ($Q_{l1}$) which also turns on and in fact of the low on resistance the voltage drop of $Vds\_b1 \approx 0 V$ ($\equiv V_{gs\_HS}$).
-The transistor $Ql1$ is turned on because $Vgs\_b1 = 0 V$ since the base transistor $Qb1$ is turned off and hence no current is flowing.
-Switching from the on to the off state occurred when the base transistor $Qb1$ is switched on with a control voltage.
+In addition to the driver circuit, two power transistors were implemented, which represented the one bit \gls{ab:dac}.
+These two transistors, $Q_{highside}$ and $Q_{lowside}$, worked as switches which switch the output to the high side power rail and low side power rail, respectively.
+Switching the high side transistor $Q_{highside}$ to the on state required a gate-source voltage $V_{gs\_HS}$ of \SI{0}{\volt}.
+This is achieved by the feedback path from the output to the drain of the load transistor $Q_{l1}$ which also turns on and in fact of the low on resistance the voltage drop of $Vds\_b1 \approx 0 V$ ($\equiv V_{gs\_HS}$).
+The transistor $Ql1$ is turned on because $Vgs\_b1 = 0 V$, since the base transistor $Qb1$ is turned off and hence no current is flowing.
+Switching from the on to the off state happened, when the base transistor $Qb1$ is switched on with a control voltage.
 When the base transistor is turned on, the gate potential of the high side transistor is set to approximately \gls{sy:vdn}, by discharging the gate capacitance with $Ql1$ and $R1$ which served as a current source.
 The dimension of $Ql1$ and $R1$ determined the discharge current for $Q_{highside}$ and hence the switching speed and the power losses.
 Because $Q_{highside}$ is turned on if $Qb1$ is turned off and inversely, this act as a inverter structure.
-In addition to the presented principle of the high side switch the low side circuit operated in the same way but inversely.
+In addition to the presented principle of the high side switch, the low side circuit operated in the same way but inversely.
 When the high side switch is turned on, the low side is turned off and vice versa.
 The benefit of the integrated driver circuit was the improved efficiency of switching.
 The transistor switching speed was determined by the dimension of the driver circuit.
