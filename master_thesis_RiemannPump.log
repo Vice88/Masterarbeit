@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  9 MAY 2016 01:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.5)  9 MAY 2016 12:58
 entering extended mode
 **master_thesis_RiemannPump.tex
 (master_thesis_RiemannPump.tex
@@ -1742,10 +1742,6 @@ Package pdftex.def Info: graphics/simulation/Vout_sine_SigBWdifferent_SameSlope
 _73_TwoPeriods.pdf used on input line 71.
 (pdftex.def)             Requested size: 320.09355pt x 247.259pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--86
-
- []
-
 [26 <./graphics/simulation/RiemannCodeGenerationSineWave73_latest.pdf>]
 <graphics/simulation/Vout_sine_SigBW_05GHz_3bit_long.pdf, id=1236, 313.17pt x 2
 41.90375pt>
@@ -1757,34 +1753,32 @@ f used on input line 89.
 (pdftex.def)             Requested size: 320.09355pt x 247.259pt.
 
 [27 <./graphics/simulation/Vout_sine_SigBWdifferent_SameSlope_73_TwoPeriods.pdf
-, page is rotated 90 degrees>]
-<graphics/simulation/Vout_SynthVsTheo.pdf, id=1246, 313.17pt x 213.79875pt>
+, page is rotated 90 degrees> <./graphics/simulation/Vout_sine_SigBW_05GHz_3bit
+_long.pdf, page is rotated 90 degrees>]
+<graphics/simulation/Vout_SynthVsTheo.pdf, id=1252, 313.17pt x 213.79875pt>
 File: graphics/simulation/Vout_SynthVsTheo.pdf Graphic file (type pdf)
 
 <use graphics/simulation/Vout_SynthVsTheo.pdf>
 Package pdftex.def Info: graphics/simulation/Vout_SynthVsTheo.pdf used on input
  line 118.
 (pdftex.def)             Requested size: 320.09355pt x 218.53181pt.
-
-<graphics/simulation/SineCompare3.pdf, id=1247, 313.17pt x 213.79875pt>
+ [28 <./graphics/simulation/Vout_SynthVsTheo.pdf, page is rotated 90 degrees>]
+<graphics/simulation/SineCompare3.pdf, id=1262, 313.17pt x 213.79875pt>
 File: graphics/simulation/SineCompare3.pdf Graphic file (type pdf)
 
 <use graphics/simulation/SineCompare3.pdf>
 Package pdftex.def Info: graphics/simulation/SineCompare3.pdf used on input lin
 e 132.
 (pdftex.def)             Requested size: 426.79141pt x 291.37901pt.
- [28 <./graphics/simulation/Vout_sine_SigBW_05GHz_3bit_long.pdf, page is rotate
-d 90 degrees>] [29 <./graphics/simulation/Vout_SynthVsTheo.pdf, page is rotated
- 90 degrees> <./graphics/simulation/SineCompare3.pdf, page is rotated 90 degree
-s>]
-<graphics/snr/FullSine15GHz.pdf, id=1273, 312.98033pt x 234.73523pt>
+
+<graphics/snr/FullSine15GHz.pdf, id=1263, 312.98033pt x 234.73523pt>
 File: graphics/snr/FullSine15GHz.pdf Graphic file (type pdf)
 
 <use graphics/snr/FullSine15GHz.pdf>
 Package pdftex.def Info: graphics/snr/FullSine15GHz.pdf used on input line 150.
 
 (pdftex.def)             Requested size: 384.10966pt x 288.08862pt.
-
+ [29 <./graphics/simulation/SineCompare3.pdf, page is rotated 90 degrees>]
 <graphics/simulation/Vout_7sine_SameSigBWdifferent_DifferentSlope.pdf, id=1274,
  313.17pt x 213.79875pt>
 File: graphics/simulation/Vout_7sine_SameSigBWdifferent_DifferentSlope.pdf Grap
@@ -1868,7 +1862,7 @@ pt>
 File: graphics/layout/Layout_DDRiXY6_bonds_new.pdf Graphic file (type pdf)
  <use graphics/layout/Layout_DDRiXY6_bonds_new.pdf>
 Package pdftex.def Info: graphics/layout/Layout_DDRiXY6_bonds_new.pdf used on i
-nput line 105.
+nput line 104.
 (pdftex.def)             Requested size: 298.75319pt x 241.84785pt.
  [41]
 <graphics/photos/Photo_DDRi_XY6.png, id=1398, 178.86826pt x 227.6505pt>
@@ -1876,7 +1870,7 @@ File: graphics/photos/Photo_DDRi_XY6.png Graphic file (type png)
 
 <use graphics/photos/Photo_DDRi_XY6.png>
 Package pdftex.def Info: graphics/photos/Photo_DDRi_XY6.png used on input line 
-134.
+130.
 (pdftex.def)             Requested size: 178.86781pt x 227.64993pt.
  [42 <./graphics/layout/Layout_DDRiXY6_bonds_new.pdf>]
 <graphics/layout/Layout_DDRi2C_bonds.pdf, id=1415, 298.75392pt x 241.84843pt>
@@ -1884,21 +1878,16 @@ File: graphics/layout/Layout_DDRi2C_bonds.pdf Graphic file (type pdf)
 
 <use graphics/layout/Layout_DDRi2C_bonds.pdf>
 Package pdftex.def Info: graphics/layout/Layout_DDRi2C_bonds.pdf used on input 
-line 153.
+line 149.
 (pdftex.def)             Requested size: 298.75319pt x 241.84784pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--163
-
- []
-
-[43 <./graphics/photos/Photo_DDRi_XY6.png> <./graphics/layout/Layout_DDRi2C_bon
-ds.pdf>]
+ [43 <./graphics/photos/Photo_DDRi_XY6.png> <./graphics/layout/Layout_DDRi2C_bo
+nds.pdf>]
 <graphics/photos/Photo_DDRi_2C.png, id=1429, 178.86826pt x 227.6505pt>
 File: graphics/photos/Photo_DDRi_2C.png Graphic file (type png)
 
 <use graphics/photos/Photo_DDRi_2C.png>
 Package pdftex.def Info: graphics/photos/Photo_DDRi_2C.png used on input line 1
-75.
+70.
 (pdftex.def)             Requested size: 178.86781pt x 227.64993pt.
  [44 <./graphics/photos/Photo_DDRi_2C.png>]
 <graphics/photos/Demonstrator_edited_newScale.png, id=1434, 312.56775pt x 227.6
@@ -1906,7 +1895,7 @@ Package pdftex.def Info: graphics/photos/Photo_DDRi_2C.png used on input line 1
 File: graphics/photos/Demonstrator_edited_newScale.png Graphic file (type png)
  <use graphics/photos/Demonstrator_edited_newScale.png>
 Package pdftex.def Info: graphics/photos/Demonstrator_edited_newScale.png used 
-on input line 206.
+on input line 201.
 (pdftex.def)             Requested size: 312.56697pt x 227.64993pt.
  [45 <./graphics/photos/Demonstrator_edited_newScale.png>]
 <graphics/layout/Layout_DDRiXY6_AlN_pads.pdf, id=1439, 312.98033pt x 213.39566p
@@ -1914,7 +1903,7 @@ t>
 File: graphics/layout/Layout_DDRiXY6_AlN_pads.pdf Graphic file (type pdf)
  <use graphics/layout/Layout_DDRiXY6_AlN_pads.pdf>
 Package pdftex.def Info: graphics/layout/Layout_DDRiXY6_AlN_pads.pdf used on in
-put line 223.
+put line 219.
 (pdftex.def)             Requested size: 312.97955pt x 213.39514pt.
 ) [46 <./graphics/layout/Layout_DDRiXY6_AlN_pads.pdf>] (measurement.tex
 chapter 6.
@@ -2140,7 +2129,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  40339 strings out of 493673
  778020 string characters out of 3146818
- 867737 words of memory out of 3000000
+ 863738 words of memory out of 3000000
  42682 multiletter control sequences out of 15000+200000
  67271 words of font info for 227 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -2158,7 +2147,7 @@ nProgram/MikTEX/fonts/type1/urw/helvetic/uhvb8a.pfb><E:/WinProgram/MikTEX/fonts
 8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/Mi
 kTEX/fonts/type1/urw/times/utmr8a.pfb><E:/WinProgram/MikTEX/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on master_thesis_RiemannPump.pdf (86 pages, 11596017 bytes).
+Output written on master_thesis_RiemannPump.pdf (86 pages, 11602563 bytes).
 PDF statistics:
  1840 PDF objects out of 2073 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

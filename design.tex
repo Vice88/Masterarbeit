@@ -13,7 +13,7 @@ As stated in chapter \ref{IdeaRiemannPump}, the circuit needed high speed switch
 In order to switch a \gls{ab:hemt} transistor to the high side power rail, a driver circuit was needed, since in \gls{ab:gan} technology no complementary transistors were available.
 The absence of a p-type transistor made it challenging to find a suitable concept to realize the push-pull stage.
 The n-type \glspl{ab:hemt} operating in depletion mode, needed a negative gate source voltage \gls{sy:vgs} to switch the transistor off.
-For the on switching, \gls{sy:vgs} had to be \SI{0}{\volt} and therefore a driver circuit was needed \cite{Y.Zhang2015}, \cite{MaksimovicPaper}, \cite{GhoshAltmannKerstenEtAl2014}, \cite{HongMukaiGheidiEtAl2013}, since the source potential of the high side switch varies between \gls{sy:Vdd} and \gls{sy:Vss}.
+For the on switching, \gls{sy:vgs} had to be \SI{0}{\volt} and therefore a driver circuit was needed \cite{HongMukaiGheidiEtAl2013}, \cite{MaksimovicPaper}, \cite{Y.Zhang2015}, \cite{GhoshAltmannKerstenEtAl2014}, since the source potential of the high side switch varies between \gls{sy:Vdd} and \gls{sy:Vss}.
 The source contact of the high side switch, realized by a n-type \gls{ab:gan} \gls{ab:hemt}, was connected to the output of the test circuit and therefore the potential at the output was not constant.
 A suitable driver circuit was found in \cite{MaksimovicPaper}, where the principle of a push-pull stage for power applications is described.\\
 One possible approach to design a Riemann Pump is shown in Fig. \ref{fig:SchematicRiemannPump}.
@@ -36,8 +36,8 @@ But a draw back was that for the higher current a higher power consumption occur
 In addition to the driver circuit, two power transistors were implemented, which represented the one bit \gls{ab:dac}.
 These two transistors, $Q_{highside}$ and $Q_{lowside}$, worked as switches which switch the output to the high side power rail and low side power rail, respectively.
 Switching the high side transistor $Q_{highside}$ to the on state required a gate-source voltage $V_{gs\_HS}$ of \SI{0}{\volt}.
-This is achieved by the feedback path from the output to the drain of the load transistor $Q_{l1}$ which also turns on and in fact of the low on resistance the voltage drop of $Vds\_b1 \approx 0 V$ ($\equiv V_{gs\_HS}$).
-The transistor $Ql1$ is turned on because $Vgs\_b1 = 0 V$, since the base transistor $Qb1$ is turned off and hence no current is flowing.
+This is achieved by the feedback path from the output to the drain of the load transistor $Q_{l1}$, which also turns on and in fact of the low on resistance the voltage drop of $Vds\_b1 \equiv V_{gs\_HS}$ is $\approx 0 V$.
+The transistor $Ql1$ is turned on, because $Vgs\_b1 = 0 V$, since the base transistor $Qb1$ is turned off and hence no current is flowing.
 Switching from the on to the off state happened, when the base transistor $Qb1$ is switched on with a control voltage.
 When the base transistor is turned on, the gate potential of the high side transistor is set to approximately \gls{sy:vdn}, by discharging the gate capacitance with $Ql1$ and $R1$ which served as a current source.
 The dimension of $Ql1$ and $R1$ determined the discharge current for $Q_{highside}$ and hence the switching speed and the power losses.
@@ -54,14 +54,14 @@ The next step was the identification and calculation of a proper output capacita
 Due to the fact that the signal is generated at the input stage of a linear power amplifier, as described in chapter \ref{ch:fundamentals}, it was crucial to obtain its input impedance.
 The input impedance of the power amplifier was at the same moment the output impedance for the test circuit. 
 This output stage of the test circuit is modelled with a \gls{ab:gan} \gls{ab:hemt} with a gate length of \SI{0.25}{\micro \meter}.
-Considering a \SI{20}{\watt} power amplifier for transmission purposes, led to a \gls{ab:gan} \gls{ab:hemt} with a total gate periphery of \SI{4}{\milli \metre}, based on an approximation for the power density of \SI[per-mode=fraction]{5}{\watt\per\milli\metre} gate periphery  \cite{Maroldt2010}, \cite{GaNBook}.
+Considering a \SI{20}{\watt} power amplifier for transmission purposes in a base station, led to a \gls{ab:gan} \gls{ab:hemt} with a total gate periphery of \SI{4}{\milli \metre}, based on an approximation for the power density of \SI[per-mode=fraction]{5}{\watt\per\milli\metre} gate periphery  \cite{Maroldt2010}, \cite{GaNBook}.
 Simulations confirmed this approximation as an output power density of \SI[per-mode=fraction]{5.6}{\watt\per\milli\metre} at $V_{GS} = -1.5 V$, $V_{DS} = 25 V$ was measured.
 The transistor model used in \gls{ab:ads} were modelled at the \gls{ab:iaf} \cite{Model} and is based on a state-space approach. 
 For simulation purposes four transistors were modelled in parallel, each with 8 finger and \SI{125}{\micro \metre} gate width to reach the required gate periphery.
 The simulated power amplifier is biased with respect to the maximum \gls{ab:mag} \cite{DeltimpleLeyssenneKerherveEtAl2010}, which led to a bias of $V_{GS} = -1.5 V$ at $V_{DS} = 25 V$.
 After the determination of the bias point, a S-parameter simulation yielded the input reactance of the power amplifier.
 It is to note that the short analysis of the impedance was done with four power transistors in parallel representative for a power amplifier than a discrete model of a broadband amplifier.
-But since it was not the main goal to obtain a proper input impedance of a broadband amplifier this identification was sufficient.
+But since it was not the main goal to obtain a proper input impedance of a broadband amplifier, this identification was sufficient.
 Hence this was a short and effective way to obtain an output impedance according to the equivalent circuit of a \gls{ab:hemt} device as shown in Figure \ref{fig:eqcircuit}.
 
 \begin{figure}[H] % small signal equivalent circuit
@@ -71,7 +71,7 @@ Hence this was a short and effective way to obtain an output impedance according
 	\label{fig:eqcircuit}
 \end{figure}
 
-The input of the \gls{ab:hemt} is determined by the capacitances $C_{gs}$ and $C_{gd}$, since the inductance is effective only for high frequencies \cite{LSModel}.
+The input of the \gls{ab:hemt} is mainly determined by the capacitances $C_{gs}$ and $C_{gd}$, since the inductance is only effective for high frequencies \cite{LSModel}.
 This capacitive behaviour is seen in Figure \ref{fig:eqcircuit} for the gate node, which served as the input.
 As only the capacitive behaviour of the load impedance was of interest, the real part was neglected.
 The complex impedance is defined as
@@ -134,7 +134,7 @@ Consequently this capacitance is used for further investigation as a load impeda
 %%% 27.04.2016 01:34 Uhr
 \section{Dimension of the used components}
 An input capacitance of nearly \SI{20}{\pico \farad} was found for the output linear power amplifier stage.
-Based on this calculation a proper test circuit was investigated.
+Based on this calculation, a proper test circuit was investigated.
 To avoid immediate clipping of the signal at the output, the transistor dimension had to fit, since an oversized transistor would fully charge the capacitance and the signal would be clipped.
 Hence a transistor dimension was chosen which allowed to synthesize a decent signal.
 To synthesize a sine wave for the frequency of \SI{6}{\giga \hertz} with a voltage swing of $V_{swing} = 4V$, the two greatest slopes were chosen.
@@ -164,12 +164,12 @@ and solving for $i_0$ resulted in:
 i_0 = \frac{U*C}{12*\Delta t}.
 \end{equation}
 
-For the assumption to reach nearly a voltage of $U = 2V$ for two sampling intervals ($2 \Delta t$) and the capacitance of \SI{20}{\pico \farad} it resulted a reference current of $i_0 = \SI{160}{\milli \ampere}$.
+For the assumption to reach nearly a voltage of $U = 2V$ for two sampling intervals ($2 \Delta t$) and the capacitance of \SI{20}{\pico \farad}, it resulted a reference current of $i_0 = \SI{160}{\milli \ampere}$.
 %The dimension of the switching transistors, which represent a voltage controlled current source, determines the maximum current flowing.
 %This current source is controlled by a digital signal which determines it to be fully open or to be closed, as a switch.
 As simulations showed, a reference current of $\SI{151}{\milli \ampere}$ could be established with a dimension of the voltage controlled current source, high side switch, of UGW = 100 \si{\micro \meter} and gate finger number of eight.
 Hence the gate periphery for the reference current source is \SI{800}{\micro \meter}.
-To ensure proper switching the driver circuit dimension had to be optimized.
+To ensure proper switching, the driver circuit dimension had to be optimized.
 Since the driver circuit worked as a current source, the dimension of the transistors and resistors were tuned to achieve a proper current to switch the power transistors fast and efficient.
 The dimension of the driver transistors were approximately a quarter of the power transistors, the switching high and low side transistor.
 The resistor values were achieved by tuning with respect to power consumption.
@@ -188,7 +188,7 @@ For the full schematic it is to note that the dimension of the power transistors
 
 \section{Identified problems}
 During the design process some problems already occurred.
-The major problem was that the current sources could not be defined as necessary.
+The major problem was, that the current sources could not be defined as necessary.
 One requirement to use a \gls{ab:gan} \gls{ab:hemt} as a voltage controlled current source is depicted in Figure \ref{fig:OutputCharacteristic}.
 In this simulation an unloaded transistor with eight gate fingers and a gate unity width of \SI{125}{\micro \meter} was used.
 
@@ -210,22 +210,22 @@ For the linear region, $V_{ds} < V_{ds,sat}$, the transistor acts as a resistor 
 This condition made it difficult to generate a reference current.
 Therefore a requirement would be, that the output voltage only vary between $V_{ss} + V_{ds,sat}$ and $V_{dd} - V_{ds,sat}$.
 Once this limit is reached the current is not defined any more.
-As simulation showed, this problem occurred for both the high and the low side switching transistor and can be seen that the relative slopes do not scale with the presented slopes.
-In addition to this non ideal switching occurs which made it necessary to average the current over time.
-The problem of not perfect switching is, that the channel is opened and closed slowly in comparison to an ideal switch and hence the current do not switch from zero to $i_0$ rather slowly increase.
-A leakage current over the driver circuit is observed which further increase the problem.
-It is to mention that every push-pull stage had to handle this problem and therefore the relative slopes are considered, but the stages differed in the behaviour of switching and hence $3 i_0$ is not perfectly $3 * 1 i_0$.
+As simulation showed, this problem occurred for both, the high and the low side switching transistor and can be seen that the relative slopes do not scale with the presented slopes.
+In addition to this, non ideal switching occurs, which made it necessary to average the current over time.
+The problem of not perfect switching is, that the channel is opened and closed slowly in comparison to an ideal switch and hence the current do not switch from zero to $i_0$.
+A leakage current over the driver circuit is observed, which further increase the problem.
+It is to mention that every push-pull stage had to handle this problem and hence $3 i_0$ is not perfectly $3 * 1 i_0$.
 The different behaviour for the switching process of the separate push-pull stages led to a not precisely set of slopes. 
-Reason for this was the leakage current of the driver network for the discharging process of each bit.
+Reason for the different behaviour was the leakage current of the driver network, for the discharging process of each bit.
 
 
 \section{Circuit design summary}
 As no complementary transistors were available in III-V technology, a proper driver circuit had to be investigated.
 Further the speed of the switches was crucial as a broadband signal should be synthesized, which led to the implementation of a known concept \cite{MaksimovicPaper} for the driver circuit.
-A low loss, high speed, digital controlled driver circuit was implemented which had the advantage to be verified and validated.
-The circuit design and simulation combines the \gls{ab:dc} state with the \gls{ab:rf} state, since for a \gls{ab:dc} simulation the current through a capacitor is zero.
-The dimension of the used components with the sampling interval determined the resulting voltage step.
-A draw-back was that a small transistor dimension could synthesize signals to a very low signal frequency while a bigger one would fully charge the output capacitor which will clip the output signal.
+A low loss, high speed, digital controlled driver circuit was implemented, which had the advantage to be verified and validated.
+The circuit simulations combine the \gls{ab:dc} state with the \gls{ab:rf} state, since for a \gls{ab:dc} simulation the current through a capacitor is zero.
+The dimension of the used components and the sampling interval determined the resulting voltage step.
+A trade-off was that a small transistor dimension could synthesize signals to a very low signal frequency while, a bigger one would fully charge the output capacitor, which will clip the output signal.
 If the transistor dimension is chosen to be bigger, the higher signal frequency could be synthesized with a decent voltage swing but the low signal frequencies would turn into a rectangular shape. 
 Therefore the dimension of the used components already limit the bandwidth.
 The signal bandwidth was investigated to be smaller than \gls{ab:dc} to \SI{6}{\GHz}.

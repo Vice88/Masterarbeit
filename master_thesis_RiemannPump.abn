@@ -100,10 +100,10 @@
 \glossaryentry{OSR?\glossentry{ab:osr}|setentrycounter[]{page}\glsnumberformat}{25}
 \glossaryentry{OSR?\glossentry{ab:osr}|setentrycounter[]{page}\glsnumberformat}{26}
 \glossaryentry{OSR?\glossentry{ab:osr}|setentrycounter[]{page}\glsnumberformat}{26}
-\glossaryentry{SNR?\glossentry{ab:snr}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{DC?\glossentry{ab:dc}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{SNR?\glossentry{ab:snr}|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{SNR?\glossentry{ab:snr}|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{SNR?\glossentry{ab:snr}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{DC?\glossentry{ab:dc}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{SNR?\glossentry{ab:snr}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{SNR?\glossentry{ab:snr}|setentrycounter[]{page}\glsnumberformat}{29}
 \glossaryentry{SNR?\glossentry{ab:snr}|setentrycounter[]{page}\glsnumberformat}{30}
 \glossaryentry{SNR?\glossentry{ab:snr}|setentrycounter[]{page}\glsnumberformat}{30}
 \glossaryentry{DAC?\glossentry{ab:dac}|setentrycounter[]{page}\glsnumberformat}{30}
@@ -111,6 +111,7 @@
 \glossaryentry{SNR?\glossentry{ab:snr}|setentrycounter[]{page}\glsnumberformat}{31}
 \glossaryentry{DUT?\glossentry{ab:dut}|setentrycounter[]{page}\glsnumberformat}{34}
 \glossaryentry{ADS?\glossentry{ab:ads}|setentrycounter[]{page}\glsnumberformat}{34}
+\glossaryentry{DUT?\glossentry{ab:dut}|setentrycounter[]{page}\glsnumberformat}{36}
 \glossaryentry{OSR?\glossentry{ab:osr}|setentrycounter[]{page}\glsnumberformat}{38}
 \glossaryentry{OSR?\glossentry{ab:osr}|setentrycounter[]{page}\glsnumberformat}{38}
 \glossaryentry{SNR?\glossentry{ab:snr}|setentrycounter[]{page}\glsnumberformat}{38}
@@ -122,6 +123,7 @@
 \glossaryentry{Cu?\glossentry{ab:cu}|setentrycounter[]{page}\glsnumberformat}{39}
 \glossaryentry{ChemNiPdAu?\glossentry{ab:ChemNiPdAu}|setentrycounter[]{page}\glsnumberformat}{39}
 \glossaryentry{MSL?\glossentry{ab:msl}|setentrycounter[]{page}\glsnumberformat}{39}
+\glossaryentry{DC?\glossentry{ab:dc}|setentrycounter[]{page}\glsnumberformat}{40}
 \glossaryentry{RF?\glossentry{ab:rf}|setentrycounter[]{page}\glsnumberformat}{40}
 \glossaryentry{DC?\glossentry{ab:dc}|setentrycounter[]{page}\glsnumberformat}{40}
 \glossaryentry{SMD?\glossentry{ab:smd}|setentrycounter[]{page}\glsnumberformat}{40}
@@ -130,13 +132,14 @@
 \glossaryentry{DC?\glossentry{ab:dc}|setentrycounter[]{page}\glsnumberformat}{40}
 \glossaryentry{MMIC?\glossentry{ab:mmic}|setentrycounter[]{page}\glsnumberformat}{40}
 \glossaryentry{ESR?\glossentry{ab:esr}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{ADS?\glossentry{ab:ads}|setentrycounter[]{page}\glsnumberformat}{41}
 \glossaryentry{DC?\glossentry{ab:dc}|setentrycounter[]{page}\glsnumberformat}{42}
 \glossaryentry{Au?\glossentry{ab:au}|setentrycounter[]{page}\glsnumberformat}{42}
 \glossaryentry{DC?\glossentry{ab:dc}|setentrycounter[]{page}\glsnumberformat}{43}
 \glossaryentry{DC?\glossentry{ab:dc}|setentrycounter[]{page}\glsnumberformat}{43}
 \glossaryentry{GaN?\glossentry{ab:gan}|setentrycounter[]{page}\glsnumberformat}{44}
-\glossaryentry{MMIC?\glossentry{ab:mmic}|setentrycounter[]{page}\glsnumberformat}{45}
-\glossaryentry{SMD?\glossentry{ab:smd}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{MMIC?\glossentry{ab:mmic}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{SMD?\glossentry{ab:smd}|setentrycounter[]{page}\glsnumberformat}{44}
 \glossaryentry{MSL?\glossentry{ab:msl}|setentrycounter[]{page}\glsnumberformat}{45}
 \glossaryentry{MMIC?\glossentry{ab:mmic}|setentrycounter[]{page}\glsnumberformat}{45}
 \glossaryentry{QFN?\glossentry{ab:qfn}|setentrycounter[]{page}\glsnumberformat}{45}

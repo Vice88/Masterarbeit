@@ -6,63 +6,60 @@
 % CMOS driver + GaN power stage cite(A Package-Integrated 50W High-Efficiency RF CMOS-GaN Class-E
 %Power Amplifier)
 The implementation of the Riemann Pump in a system design has been presented.
-The design process from a charge pump to a custom \gls{ab:dac} has been described.
-In contrast to classical current steering topologies this concept used the benefit of differential coding, which saves energy and exhibits a better performance.
+Further, the design process from a charge pump to a custom \gls{ab:dac} has been described.
+In contrast to classical current steering topologies, this concept used the benefit of differential coding, which saves energy and exhibits a better performance.
 A concise evaluation states that the Riemann Pump is a great improvement for conventional digital-to-analog conversion concepts.\\
-The major problem was that the current sources could not be defined as necessary, since the transistors have to operate in their saturation region which could be established for all signals.
+The major problem in the design process was, that the current sources could not be defined as necessary, since the transistors have to operate in their saturation region, which could not be established for all signals.
 One requirement would be, that the output voltage only vary between $V_{ss} + V_{ds,sat}$ and $V_{dd} - V_{ds,sat}$.
 As simulation showed, this problem occurred for both the high and the low side switching transistor and can be seen that the relative slopes do not scale with the presented slopes.
-Non ideal switching occurs which made it necessary to average the current over time.
-The problem of not perfect switching is, that the channel is opened and closed slowly in comparison to an ideal switch since the gate of the switching transistor has to be charged which take impact on the driver circuit.
-A leakage current over the driver circuit is observed which further increase the problem.
-The different behaviour for the switching process of the separate push-pull stages led to a different set of slopes. \\
+Non ideal switching occurs, which made it necessary to average the current over time.
+The problem of not perfect switching is, that the channel is opened and closed slowly in comparison to an ideal switch, since the gate of the switching transistor has to be charged, which take impact on the driver circuit.
+A leakage current over the driver circuit is observed, which further increase the problem.
+The different behaviour for the switching process of the separate push-pull stages led to a different slopes. \\
 As no complementary transistors were available in III-V technology, a proper driver circuit had to be investigated.
-Implementation of a known concept \cite{MaksimovicPaper} for the driver circuit.
-The dimension of the used components were calibrated with respect to the resulting voltage step at an output capacitance which represent the input stage of a power amplifier.
-The dimension of the used components was a bottleneck since it limits the signal bandwidth.
-Small transistor dimensions could synthesize signals with low frequencies and big dimension with high frequencies.
-Therefore the signal bandwidth was investigated to be roughly \SI{1.5}{\GHz} to \SI{6}{\GHz}.\\
-Different wave forms could be synthesized (sine wave, rectified sine, triangular).
-With an \gls{ab:osr} of four \gls{sy:fsampling} is eight times \gls{sy:fsignal} which has to fit to the transistors unity gain frequency.
-For an increase of the \gls{ab:osr} the signal quality is better but the power consumption also linearly scale with it.
-The \gls{ab:osr} is limited to the fact that two successive samples have to be distinguished.
-A sampling interval which is too small can lead to a non detectable voltage step.\\
-Parasitic and loss effects distorted the waveforms.
-The highest \gls{ab:snr} (\SI{32.5}{\decibel}) found was for a sine wave at \SI{6}{\giga \hertz} with an amplitude of $\hat{v} = 1.75 V$, an DC-offset of $V_{DC} = 13 V$ and a phase shift of $\phi = -\pi/8$, see appendix \ref{app:snr}.
-The system is stable.
-The stability check was needed to validate that the circuit did not oscillate.
+Therefore a known concept \cite{MaksimovicPaper} for the driver circuit was implemented.
+The dimension of the used components were calibrated with respect to the resulting voltage step at an output capacitance, which represent the input stage of a power amplifier.
+The dimension of the used components was a bottleneck, since it limits the signal bandwidth.
+Small transistor dimensions could synthesize signals with low frequencies and big dimensions with high frequencies.
+Therefore the signal bandwidth was found to be roughly \SI{1.5}{\GHz} to \SI{6}{\GHz}.\\
+Different waveforms could be synthesized (sine wave, rectified sine, triangular).
+With an \gls{ab:osr} of four, \gls{sy:fsampling} is eight times \gls{sy:fsignal}, which has to fit to the transistors unity gain frequency.
+For an increase of the \gls{ab:osr}, the signal quality is improved but the power consumption also linearly scales with it.
+A sampling interval which is too small could lead to a non detectable voltage step, which effects the \gls{ab:osr}.\\
+Parasitic and loss effects of the driver circuit distorted the waveforms.
+The highest \gls{ab:snr} (\SI{32.5}{\decibel}) found, was for a sine wave at \SI{6}{\giga \hertz} with an amplitude of $\hat{v} = 1.75 V$, an DC-offset of $V_{DC} = 13 V$ and a phase shift of $\phi = -\pi/8$, see appendix \ref{app:snr}.
+The stability check proved that the system is stable and validated that the circuit did not oscillate.
 The energy consumption is critical and is rather in the range for base stations than for mobile devices.
-For an increase in signal quality, the resolution could be increased but the whole circuit would become more complex and the energy consumption would increase.
-Shifting the baseband to even higher frequencies is possible but the bandwidth stays constant while the power consumption is increased.
-The designed test circuit is a proof of concept.
-Nevertheless the simulation results confirmed the feasibility of generating different signals.\\
+For an increase in signal quality, the resolution could be increased, but the whole circuit would become more complex and the energy consumption would increase.
+Shifting the baseband to even higher frequencies is possible, but the bandwidth stays constant while the power consumption is increased.
+The designed test circuit proved the presented concept and simulation results confirmed the feasibility of generating different signals.\\
 In the realisation and layout process many things had to be considered.
-Important for the design of the input lines were that they are of the same length, due to timing issues, as for the bond wires of the in- and output.
+Important for the design of the input lines were, that they are of the same length, due to timing issues, as for the bond wires of the in- and output.
 The input timing is crucial due to the fact that the switches have to switch synchronous.
 One of the most important and crucial things was the dissipation of heat.
-Two concepts were presented to dissipate the heat in the most proper way which were fabricated by CONTAG AG.
-An improvement for the layout, could be to solder the chips on an electrical insulator while thermal good conductor, as AluminiumNitrid (AlN: 180-200 W/mK -> datasheet).\\
-In a first step the proper switching of the push pull stage were confirmed.
+Two concepts were presented to dissipate the heat in the most proper way, which were fabricated by CONTAG AG.
+An improvement for the layout, could be to solder the chips on an electrical insulator while thermal good conductor, as AluminiumNitrid.\\
+In a first measurement, the proper switching of the push pull stage were confirmed.
 After that, it was shown that different output signals could be synthesized.
-In fact it was shown that four different currents could be established, which corresponds to the theoretical achievable slopes.
+In fact, it was shown that four different currents could be established, which corresponds to the theoretical achievable slopes.
 It was possible to prove the demonstrated concept and show the feasibility of the designed demonstrator to synthesize signals with different amplitudes and frequencies.
 The signal integrity suffered from measurement errors, non ideal switching and leakage currents.
 Therefore the upper bound on the frequency range for the presented measurement setup with the realized circuit was at roughly \SI{150}{\mega \hertz}.
-In addition to the undesired effects of the circuit topology the problematic of the heat dissipation came into play.
+In addition to the undesired effects of the circuit topology, the problematic of the heat dissipation came into play.
 Hence the signal integrity was reduced by the degradation induced by the heat.
-Nevertheless the results demonstrate for the first time ever, the feasibility to convert digital signals into analog ones with this given concept and technology.
-It was the first time ever, building a concrete test circuit in \gls{ab:gan} technology which provides decent measurement results.
+Nevertheless, the results demonstrate for the first time ever, the feasibility to convert digital signals into analog ones with this given concept and technology.
+It was the first time ever, building a concrete test circuit in \gls{ab:gan} technology, which provides decent measurement results.
 Therefore it is to state, that the proof of concept was successfully demonstrated with the built test circuit.\\
-The design and processing of a \gls{ab:mmic} structure containing the Riemann Pump was beyond the scope of this thesis.
+The design and processing of a \gls{ab:mmic} structure, containing the Riemann Pump, was beyond the scope of this thesis.
 The calculation of the Riemann Code have to be done with an external signal processor, which has to compute this code in real time. 
-With the ability to change the reference current and the oversampling ratio it is possible to create arbitrary waveforms.\\
+With the ability to change the reference current and the oversampling ratio, it is possible to create arbitrary waveforms.\\
 The next steps would be to implement an algorithm which computes the Riemann Code.
 A MATLAB algorithm would compute this code by minimizing the deviation 
 between a theoretical signal and the synthesized signal.
 Then the used chips could be optimized regarding an efficient driver circuit.
-This would be to process a \gls{ab:mmic} which would reduce the leakage effects.
-Further the switching transistors had to operate in their saturation region, which could be implemented using some kind of diodes.
+This would be, to process a \gls{ab:mmic} which would reduce the leakage effects.
+Further, the switching transistors had to operate in their saturation region, which should be investigated in future researches.
 After optimizing the circuits aspects, some assembly aspect have to be considered.
-The implementation of a thermal conductor but electrical insulator for the high side switches would be a huge improvement regarding the heat dissipation.
+The implementation of a thermal conductor but electrical insulator for the high side switches, would be an improvement regarding the heat dissipation.
 
 
