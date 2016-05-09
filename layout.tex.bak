@@ -127,7 +127,7 @@ Figure \ref{fig:photoDDRiXY6bond} shows the assembling of the used chips with th
 
 \begin{figure}[htb!] %% DRucken pddf verwenden
 	\centering
-  \includegraphics{Photo_DDRi_XY6.png}
+  \includegraphics{Photo_DDRi_XY6.pdf}
 	\caption{Photograph of assembled DDRi\_X6 \& DDRi\_Y6 chips}
 	\label{fig:photoDDRiXY6bond}
 \end{figure}
@@ -167,7 +167,7 @@ The assembled chips for the second version are shown in Figure \ref{fig:photoDDR
 
 \begin{figure}[htb!] %% Drucken pdf verwenden!
 	\centering
-  \includegraphics{Photo_DDRi_2C.png}
+  \includegraphics{Photo_DDRi_2C.pdf}
 	\caption{Photograph of assembled DDRi\_2C chips}
 	\label{fig:photoDDRi2Cbond}
 \end{figure}
@@ -198,14 +198,14 @@ The finished demonstrator is shown in Figure \ref{fig:assembledDemonstrator} wit
 
 \begin{figure}[htb!] %% zum drucken pdf verwenden
 	\centering
-  \includegraphics{Demonstrator_edited_newScale.png}
+  \includegraphics{Demonstrator_edited_newScale.pdf}
 	\caption{Assembled demonstrator}
 	\label{fig:assembledDemonstrator}
 \end{figure}
 
 \section{Outlook on further realisation concepts}
-An improvement for the layout could be to solder the DDRi\_X6 and DDRi\_Y6 chips on an electrical insulator while thermal good conductor, as AluminiumNitrid.
-AlN has a thermal conductivity of approximately: 180-200 W/mK while a dielectric constant of approximately 8. 
+An improvement for the layout could be to solder the DDRi\_X6 and DDRi\_Y6 chips on an electrical insulator while thermal good conductor, as \gls{ab:aln}.
+\gls{ab:aln} has a thermal conductivity of approximately: 180-200 W/mK while a dielectric constant of approximately 8. 
 This is needed to ensure the isolation from the output port to ground potential, but still have a good thermal transfer.
 This pads would have needed a proper adhesive or solder which exhibit the same properties.
 The desired pads would have been cut in very precise shapes and sizes, since the size of the chips DDRi\_X6 and DDRi\_Y6 were \SI{1.25}{\milli \meter} x \SI{1}{\milli \meter} and \SI{1.25}{\milli \meter} x \SI{1.25}{\milli \meter}, respectively.

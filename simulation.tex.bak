@@ -121,7 +121,7 @@ The theoretical sine wave had an amplitude of $\widehat{v} = \SI{7.5}{\volt}$, a
 \end{figure}
 % 03:12 Uhr 29.04.2016
 Although the synthesized signal is clipped and the mentioned distortion came into play, the shape looked like a sine wave.
-The \gls{ab:snr} of the synthesized signal was calculated with MatLab and was $SNR = 15$\si{\decibel}.
+The \gls{ab:snr} of the synthesized signal was calculated with MATLAB and was $SNR = 15$\si{\decibel}.
 For a first evaluation of the signal quality after digital-to-analog conversion, the spectra were compared.
 The spectrum of a time signal demonstrates the frequency portions which are present in the signal.
 As the spectrum of a clear sine wave only consist of a \gls{ab:dc} component and its first harmonic, it was easy to obtain a comparable quantity compared to the synthesized signal.

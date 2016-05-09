@@ -1,6 +1,6 @@
 \begin{figure}[h] %% zum drucken pdf verwenden
 	\centering
-  \includegraphics{Demonstrator_publish.png}
+  \includegraphics{Demonstrator_publish.pdf}
 	\caption{Built demonstrator}
 	\label{fig:Demonstrator}
 \end{figure}

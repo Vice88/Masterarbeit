@@ -418,7 +418,7 @@
    \end{tabular}
    \par
    \vspace{2em}
-    Freiburg, \denn@me \@dateend
+    Freiburg, \denn@me \@datefinalend
 \end{center}
 %\vfill 
 %\adressblock
@@ -443,7 +443,7 @@ Literatur und Hilfsmittel, die von mir benutzt wurden, sind als solche gekennzei
 \fi
 
 \vspace*{2.0em}
-\noindent Freiburg, \denn@me\@dateend
+\noindent Freiburg, \denn@me\@datefinalend
 
 \vspace*{5.0em}
 \noindent \@author

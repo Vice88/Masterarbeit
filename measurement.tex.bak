@@ -139,7 +139,7 @@ The circuit under test was terminated with an \SI{50}{\ohm} attenuator to avoid 
 The light green signal presents the measured data while the dashed line describes the ideal behaviour.
 In an ideal world there would be neither rising nor falling time and the signal would switch between logical one and zero.
 As seen in Figure \ref{fig:measRload100M}, the output voltage switches between \gls{sy:Vdd} (here: \SI{5}{\volt}) and \gls{ab:gnd}. 
-The measured signal shows fast rising and falling edges which demonstrates the abilitiy of fast switching. 
+The measured signal shows fast rising and falling edges which demonstrates the ability of fast switching. 
 Due to measurement errors, process variations of the used components and parasitic effects the signal has some distortions.
 Nevertheless the measured output signal proves the proper functioning of the realized test circuit.
 The signal frequency matches with the digital input signal shown in figure \ref{fig:inputMeas}.
