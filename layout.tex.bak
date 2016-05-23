@@ -127,7 +127,7 @@ Figure \ref{fig:photoDDRiXY6bond} shows the assembling of the used chips with th
 
 \begin{figure}[htb!] %% DRucken pddf verwenden
 	\centering
-  \includegraphics{Photo_DDRi_XY6.pdf}
+  \includegraphics{Photo_DDRi_XY6.png}
 	\caption{Photograph of assembled DDRi\_X6 \& DDRi\_Y6 chips}
 	\label{fig:photoDDRiXY6bond}
 \end{figure}
@@ -167,7 +167,7 @@ The assembled chips for the second version are shown in Figure \ref{fig:photoDDR
 
 \begin{figure}[htb!] %% Drucken pdf verwenden!
 	\centering
-  \includegraphics{Photo_DDRi_2C.pdf}
+  \includegraphics{Photo_DDRi_2C.png}
 	\caption{Photograph of assembled DDRi\_2C chips}
 	\label{fig:photoDDRi2Cbond}
 \end{figure}
@@ -198,7 +198,7 @@ The finished demonstrator is shown in Figure \ref{fig:assembledDemonstrator} wit
 
 \begin{figure}[htb!] %% zum drucken pdf verwenden
 	\centering
-  \includegraphics{Demonstrator_edited_newScale.pdf}
+  \includegraphics{Demonstrator_edited_newScale.png}
 	\caption{Assembled demonstrator}
 	\label{fig:assembledDemonstrator}
 \end{figure}
