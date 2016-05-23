@@ -11,22 +11,20 @@
 \newpage
 \begin{figure}[H]
 	\centering
-  \includegraphics[scale = 1.25]{CircuitSchematic_portrait.pdf}
+  \includegraphics[scale = 1.35]{CircuitSchematic_portrait.pdf}
 	\caption{Circuit for simulation}
 	\label{fig:Circuitschematic}
 \end{figure}
 
-\newpage
 \section{Schematic of the realized Riemann Pump circuit}
 \label{app:schematicRealizedPump}
 \begin{figure}[H]
 	\centering
-  \includegraphics[scale=0.8]{realizedCircuit_full_DDRi_XY6.pdf}
+  \includegraphics[scale=0.75]{realizedCircuit_full_DDRi_XY6.pdf}
 	\caption{Realized test circuit with \gls{ab:ads}}
 	\label{fig:RealCircuitschematic}
 \end{figure}
 
-% (IAF\_GE\_MSL\_ A204/IAF\_GaN25\_HEMT\_CS\_LS\_SHfull)
 
 \newpage
 \section{Photography of the realized Demonstrator}
